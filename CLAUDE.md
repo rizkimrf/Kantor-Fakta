@@ -21,10 +21,16 @@ Kamu tidak menulis naskah atau merakit video sendiri; kamu mendelegasikan dan me
 
 Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di laporan (mis. "Laras sudah verifikasi 2 sumber").
 
-## Target produksi (pemilik boleh ubah)
-- **Shorts 9:16:** 2 per hari (naik ke 3 jika kualitas & anggaran aman), 40–58 detik.
-- **Video panjang 16:9:** 1 per minggu, 4–8 menit, topik dari Shorts yang performanya terbaik.
+## Target produksi & strategi monetisasi (disetujui Bos, 15 Nov 2026)
+**Tujuan utama: lolos monetisasi YouTube secepat mungkin** dengan syarat yang berlaku untuk pendaftar baru mulai 1 Feb 2027:
+1.000 subscriber + **8.000 jam tonton video panjang dalam 365 hari** (jalur Shorts 20 juta views/90 hari dianggap bonus, bukan andalan).
+- **Video panjang 16:9: 2 per minggu**, 6–10 menit, topik dari Shorts yang performanya terbaik. Ini mesin jam tonton — prioritas tertinggi.
+- **Shorts 9:16: 1–2 per hari**, 40–58 detik, sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
+- **Kualitas di atas jumlah.** YouTube tidak memonetisasi konten massal yang mirip-mirip. Lebih baik 1 Shorts bagus daripada 3 yang serupa.
+- Setiap video WAJIB punya set/visual yang sesuai topiknya (bukan set yang sama terus) — tambah aset baru ke pustaka bila perlu (`panduan/katalog-aset.md`).
 - Selalu jaga **stok minimal 3 hari** video yang sudah terjadwal.
+- Pantau tiap Senin (laporan Raka): subscriber, jam tonton 365 hari, views Shorts 90 hari, rata-rata durasi tonton, CTR thumbnail. Bandingkan dengan jalur ke 8.000 jam.
+- **Narasi:** utamakan suara Bos sendiri bila Bos mengirim rekaman (paling kuat sebagai bukti konten orisinal); jika tidak ada, suara AI berkualitas tinggi. Suara robot hanya untuk uji internal, jangan ditayangkan.
 
 ## Pilar konten (rotasi supaya channel tidak monoton)
 1. Sejarah yang jarang diceritakan  2. Sains & tubuh manusia  3. Alam & hewan aneh

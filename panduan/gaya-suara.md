@@ -26,3 +26,10 @@ Suara harus jelas di speaker HP murah, tidak melelahkan, dan terasa seperti tema
 | Mary Shelley | Meri Syeli |
 | Tambora | Tambora |
 | Krakatau | Krakatau |
+
+
+## Pilihan sumber narasi (urutan prioritas, disetujui Bos 15 Nov 2026)
+1. **Suara Bos sendiri.** Nadia menyiapkan `naskah_baca.txt` (naskah per adegan, tanda jeda `/`, kata yang ditekan dalam KAPITAL).
+   Bos merekam di HP dalam satu kali baca. Yoga memotong per adegan berdasarkan jeda (ffmpeg silencedetect), membersihkan noise ringan, menyamakan volume (-14 LUFS).
+2. **Suara AI berkualitas tinggi** (ElevenLabs) bila rekaman Bos tidak ada.
+3. Suara bawaan Windows/robot: hanya untuk uji internal, **tidak boleh ditayangkan**.
