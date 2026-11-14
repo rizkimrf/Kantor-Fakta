@@ -33,3 +33,25 @@ Suara harus jelas di speaker HP murah, tidak melelahkan, dan terasa seperti tema
    Bos merekam di HP dalam satu kali baca. Yoga memotong per adegan berdasarkan jeda (ffmpeg silencedetect), membersihkan noise ringan, menyamakan volume (-14 LUFS).
 2. **Suara AI berkualitas tinggi** (ElevenLabs) bila rekaman Bos tidak ada.
 3. Suara bawaan Windows/robot: hanya untuk uji internal, **tidak boleh ditayangkan**.
+
+## Gaya narasi acuan — "ngobrol santai, bukan menggurui" (referensi dari Bos, 15 Nov 2026) — WAJIB
+Acuan: video penjelasan bendungan yang dikirim Bos. Kesan yang dikejar: **enjoy, ada candanya, penonton merasa
+diajak ngobrol teman, tidak digurui, tidak kebanjiran informasi.**
+
+Contoh kalimat acuan (pola, bukan untuk disalin):
+> "Kalau kamu tumpuk batu sama tanah di tengah sungai, kamu udah punya bendungan. Tapi sungainya ngalir terus.
+> Baru numpuk dikit, tumpukannya kebawa arus. Jadi di samping sungainya kamu gali saluran, biar airnya lewat situ dulu.
+> Namanya saluran pengelak."
+
+Aturan turunan:
+1. **Sapa "kamu", ajak penonton jadi pelakunya.** "Kalau kamu…", "coba kamu bayangin…". Bukan "manusia melakukan…".
+2. **Bahasa sehari-hari:** udah, nggak, dikit, biar, kebawa, ngalir, gitu, ternyata. Bukan bahasa buku pelajaran.
+3. **Alur "masalah → tapi → jadi":** tiap ide lahir dari masalah sebelumnya, sehingga penonton merasa menemukan sendiri jawabannya.
+4. **Istilah belakangan.** Jelaskan idenya dulu pakai kata biasa, baru sebut namanya ("…namanya partenogenesis").
+5. **Satu ide per kalimat, kalimat pendek** (maks ±12 kata). Maksimal **3 fakta inti per Shorts**; sisanya buang atau jadikan video lain.
+6. **Mengalir nyaris tanpa jeda** (±150 kata/menit, jeda hanya di pergantian babak). Jangan ada kalimat pembuka kosong ("Halo teman-teman…").
+7. **Canda ringan 1–2 kali per Shorts, 1 tiap ±45 detik di video panjang:** perbandingan lucu dengan hal sehari-hari orang Indonesia,
+   reaksi jujur ("iya, serius"), atau melebih-lebihkan yang jelas bercanda. **Dilarang:** merendahkan orang/kelompok, SARA, candaan soal musibah.
+8. **Jangan menggurui:** hindari "kamu harus tahu", "perlu diketahui", "jadi pelajarannya adalah". Biarkan faktanya yang bikin kagum.
+9. **Teks di layar mengikuti suara:** 1–3 kata per potong, muncul bertambah seiring kata diucapkan, di tengah-bawah layar.
+10. **Arahan untuk perekam suara (Bos atau AI):** senyum saat membaca, nada naik di pertanyaan, tekan kata KAPITAL, jangan seperti membaca berita.

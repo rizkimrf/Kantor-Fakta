@@ -47,3 +47,11 @@ Aturan:
 - Judul & teks thumbnail mengikuti sudut yang disarankan di `rencana_marketing.md`.
 
 Lalu perbarui `status.json`: `tahap` → `cek_fakta`.
+
+## Tambahan wajib (15 Nov 2026)
+- Sebelum menulis, baca `seo.md` dari Raka dan `panduan/gaya-suara.md` bagian "Gaya narasi acuan".
+- Tulis dengan gaya ngobrol (sapa "kamu", bahasa sehari-hari, masalah → tapi → jadi, canda ringan, tidak menggurui).
+- Kata kunci utama terucap di 5 detik pertama dan ada di judul. Tambahkan ke `naskah.json`: `"seo": {"kata_kunci_utama", "kata_kunci_turunan": [...]}`.
+- Buat juga `naskah_baca.txt` untuk direkam Bos: satu adegan per baris, `/` untuk jeda napas, kata yang ditekan ditulis KAPITAL,
+  dan di baris paling atas arahan rasa (mis. "santai, senyum, seperti cerita ke teman").
+- Setelah `cek_seo.md` dari Raka keluar, kerjakan semua butir "wajib" dan pertimbangkan butir lainnya.

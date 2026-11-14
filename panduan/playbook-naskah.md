@@ -45,6 +45,15 @@ tidak clickbait palsu (janji hook WAJIB dibayar di akhir).
 - Tanda baca = jeda: koma (jeda pendek), titik (jeda), "…" (tahan napas sebelum kejutan).
 - Kata penekanan ditandai KAPITAL satu kata saja per kalimat (untuk pengisi suara & subtitle), mis. "bukan SALJU biasa".
 
+### Gaya ngobrol (acuan Bos) — lihat `panduan/gaya-suara.md` bagian "Gaya narasi acuan"
+Sapa "kamu", bahasa sehari-hari, alur masalah → tapi → jadi, istilah disebut belakangan, maks 3 fakta inti per Shorts,
+canda ringan 1–2 kali, tidak menggurui. Naskah yang terdengar seperti buku pelajaran = gagal, tulis ulang.
+
+### Kata kunci (dari Raka) — lihat `seo.md` di folder video
+Kata kunci utama **diucapkan dalam 5 detik pertama** dan muncul di teks layar pertama (YouTube, TikTok, dan Instagram
+membaca suara dan teks di video untuk menentukan topiknya). Sisipkan 2–3 kata kunci turunan secara wajar di narasi.
+Jangan dijejalkan; kalau terdengar aneh diucapkan, buang.
+
 ## 5. CTA & penutup
 - Kalimat khas channel di akhir: "…dan ternyata, memang begitu."
 - CTA dibungkus rasa penasaran, bukan permohonan: "Besok ada fakta yang lebih aneh soal makanan yang kamu makan hari ini."
@@ -61,3 +70,7 @@ tidak clickbait palsu (janji hook WAJIB dibayar di akhir).
 | Payoff memuaskan + janji hook terbayar | 0–1 |
 | Akurat sesuai riset | WAJIB (gagal = tolak) |
 **Lulus jika ≥ 8 dari 9.** Di bawah itu → tulis ulang (maks 2 putaran), sebutkan bagian yang diperbaiki.
+
+**Tambahan rubrik (15 Nov 2026) — keduanya wajib "ya" selain skor ≥ 8/9:**
+- Gaya ngobrol: enak diucapkan, ada minimal 1 canda ringan, tidak ada kalimat menggurui.
+- SEO: kata kunci utama dari `seo.md` terucap di 5 detik pertama dan ada di judul.

@@ -16,7 +16,7 @@ Kamu tidak menulis naskah atau merakit video sendiri; kamu mendelegasikan dan me
 |---|---|---|
 | **Laras** | riset | mencari & memverifikasi fakta, menyusun bank ide harian |
 | **Nadia** | copywriting | naskah, hook, CTA, judul, deskripsi, caption, teks thumbnail |
-| **Raka** | marketing | strategi views: pilih ide yang paling berpotensi, SEO, jadwal tayang, upload, analisa performa |
+| **Raka** | marketing | strategi views & SEO dari awal: pilih ide, brief kata kunci sebelum naskah, cek SEO naskah/caption/suara, paket unggah YouTube-TikTok-Instagram, jadwal, upload, analisa performa |
 | **Yoga** | editor | suara narasi, gambar & klip animasi, perakitan video, thumbnail |
 
 Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di laporan (mis. "Laras sudah verifikasi 2 sumber").
@@ -50,11 +50,12 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 | Tahap | Dikerjakan | Hasil |
 |---|---|---|
 | `ide` | riset | `riset.md` (fakta + sumber) |
-| `pilih` | marketing | `rencana_marketing.md` (lolos/tunda + sudut judul) |
-| `naskah` | copywriting | `naskah.json` |
+| `pilih` | marketing | `rencana_marketing.md` (lolos/tunda + sudut judul) + **`seo.md`** (brief kata kunci) |
+| `naskah` | copywriting | `naskah.json` + `naskah_baca.txt` (mengikuti `seo.md`) |
+| `cek_seo` | marketing | `cek_seo.md` (rekomendasi naskah, judul, caption, suara) → `cek_fakta`, atau kembali ke `naskah` 1x |
 | `cek_fakta` | **manajer** | `cek_fakta.md` lulus → `produksi`, gagal → kembali ke `naskah` |
 | `produksi` | editor | `audio/`, `visual/`, `final.mp4`, `thumbnail.png` |
-| `review` | **manajer** | `review.md` → `menunggu_persetujuan` |
+| `review` | **manajer** | `review.md` → `menunggu_persetujuan`; marketing menyiapkan `paket_unggah.md` (YouTube, TikTok, Instagram) |
 | `disetujui` | pemilik (perintah `/setujui`) | — |
 | `terjadwal` | marketing | upload + jadwal tayang |
 | `tayang` | marketing | catatan performa |
