@@ -1,0 +1,112 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="../tebe-rig.js"></script>
+<script src="../aset-set.js"></script>
+<style>
+*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#1F2E4A}
+.abs{position:absolute}.set{position:absolute;inset:0;overflow:hidden}
+.lbl{display:inline-block;font:700 30px Inter;letter-spacing:5px;padding:10px 20px 9px;border-radius:6px}
+.h{font:900 100px/1 'Inter Display';letter-spacing:-4px}
+.acc{font:italic 600 108px/1.02 Lora;letter-spacing:-2px}
+.sub{font:500 40px/1.38 Inter}
+.baris{display:block;overflow:hidden;padding-bottom:22px;margin-bottom:-14px}.baris>span{display:inline-block}
+.blok{position:absolute;left:72px;top:180px;width:940px;z-index:5}
+.judul{position:absolute;left:0;width:1080px;text-align:center;font:700 88px/1.08 Poppins;letter-spacing:-2px}
+.pil{display:inline-block;background:#FFC93C;color:#1E1E1E;border:7px solid #1E1E1E;border-radius:28px;padding:4px 30px 0;box-shadow:10px 12px 0 rgba(0,0,0,.35);transform:rotate(-2deg)}
+</style></head><body>
+<div id="S1" class="set"></div><div id="S2" class="set"></div><div id="S3" class="set"></div><div id="S4" class="set"></div>
+<div id="TX" class="blok"></div><div id="ST" class="set" style="z-index:8"></div>
+<svg class="abs" width="1080" height="1920" style="left:0;top:0;z-index:9;pointer-events:none"><defs><radialGradient id="vg" cx=".5" cy=".5" r=".78"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></radialGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="1" id="turb"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+<rect width="1080" height="1920" fill="url(#vg)"/><rect width="1080" height="1920" filter="url(#grain)" opacity=".045"/></svg>
+<div id="bar" class="abs" style="left:0;top:0;height:6px;background:#FFC93C;width:0;z-index:10"></div>
+<script>
+const $=i=>document.getElementById(i),cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),lin=(t,a,b)=>cl((t-a)/(b-a));
+const oExp=x=>x>=1?1:1-Math.pow(2,-10*x),ioS=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,oCub=x=>1-Math.pow(1-x,3),oBack=x=>{const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const P=ASET.PALET;
+const tebe=(p,w,gelap=0)=>`<div style="width:${w}px;filter:brightness(${1-gelap*.12}) saturate(${1-gelap*.1})">${tebeRigSVG(p).replace('width="400" height="520"','width="100%" height="auto"')}</div>`;
+// ---- teks editorial (siang: gelap + stabilo kuning, malam: terang + aksen kuning)
+const baris=(html,t,m,cls,warna)=>{const k=oExp(lin(t,m,m+.6));return `<span class="baris"><span class="${cls}" style="color:${warna};transform:translateY(${(1-k)*110}%)">${html}</span></span>`};
+const stabilo=(txt,t,m)=>{const k=oExp(lin(t,m+.25,m+.85));return `<span style="background:linear-gradient(#FFC93C,#FFC93C) no-repeat 0 82%/${k*100}% 34%;padding:0 6px">${txt}</span>`};
+const label=(txt,t,m,siang)=>`<div style="margin-bottom:24px;clip-path:inset(0 ${100-oExp(lin(t,m,m+.5))*100}% 0 0)"><span class="lbl" style="background:${siang?'#1E2A2A':'#FFC93C'};color:${siang?'#F4EEDC':'#1E2A2A'}">${txt}</span></div>`;
+
+// ===== animasi Tebe per adegan (kerangka gerak) =====
+const A1=tebeAnimasi([{t:0,pose:'penasaran'},{t:1.2,pose:'kaget',loncat:true,transisi:.18},{t:2.1,pose:'bingung',transisi:.4}],{benih:4});
+const A2=tebeAnimasi([{t:0,pose:'netral',jalan:[4.0,5.5]},{t:5.5,pose:'penasaran',transisi:.4},{t:6.2,pose:'menjelaskan',bicara:[6.3,7.0]}],{benih:7});
+const A3=tebeAnimasi([{t:8,pose:'bingung'},{t:9.35,pose:'menjelaskan',bicara:[9.45,10.7],transisi:.35},{t:10.75,pose:'menghitung',bicara:[10.85,12.0],transisi:.35},{t:12.1,pose:'tertawa',transisi:.3}],{benih:2});
+const A4=tebeAnimasi([{t:0,pose:'bangga'},{t:13.95,pose:'bangga',tanda:'!'}],{benih:9});
+
+// ===== SET 1 — Pulau Komodo, SIANG (set lebar 1700px, kamera menyapu + dorong)
+function set1(t){const p=P.siang,WW=1700,cx=-60-ioS(lin(t,0,3))*320,z=1.0+lin(t,0,3)*.08;
+ let s=ASET.langit(p,WW,1250,t,{suryaX:1280,suryaY:780})+ASET.awan(300,560,1.1,p,.95)+ASET.awan(900,700,.8,p,.85)+ASET.awan(1450,520,.9,p,.9)
+  +ASET.burung(700+t*40,700,1.5,t)+ASET.burung(760+t*40,730,1.1,t+.4)+ASET.burung(820+t*38,690,.9,t+.2)
+  +ASET.bukit(WW,980,240,3,p.jauh)+ASET.kabut(WW,880,200,p)+ASET.laut(WW,1020,70,p,t)+ASET.bukit(WW,1100,150,8,p.tengah)+ASET.tanah(WW,1170,p);
+ s+=ASET.lontar(260,1220,.85,p,t)+ASET.lontar(1250,1210,.7,p,t)+ASET.lontar(1420,1240,.95,p,t)+ASET.batu(1080,1360,.9,p)+ASET.semak(120,1400,1.1,p)+ASET.semak(1560,1380,1,p);
+ for(let i=0;i<18;i++)s+=ASET.rumput(30+i*96,1480+(i%3)*50,1.1,p,t);
+ const kx=-560+oCub(cl(t/2.4))*800;
+ const kom=`<div class="abs" style="left:${kx}px;top:1250px;width:880px">${ASET.komodo(p,{langkah:t<2.4?t*8.5:0,lidah:t>2.2?cl(Math.sin(t*11)*.5+.5):0,ekor:Math.sin(t*2)})}</div>`;
+ const tb=`<div class="abs" style="left:900px;top:1300px">${tebe(A1(t),380)}</div>`;
+ let depan='';for(let i=0;i<6;i++){const x=i*300+60;depan+=`<path d="M${x} 1920 q10 -220 26 -330 q8 160 10 290 q14 -200 36 -290 q-6 200 -4 330Z" fill="#6F7A3E"/>`;}
+ return `<div class="abs" style="left:0;top:0;width:${WW}px;height:1920px;transform:translateX(${cx}px) scale(${z});transform-origin:900px 1300px">
+  <svg class="abs" width="${WW}" height="1920">${s}</svg>${kom}${tb}<svg class="abs" width="${WW}" height="1920" style="filter:blur(7px);transform:translateX(${-t*60}px)">${depan}</svg></div>`}
+// ===== SET 2 — kebun binatang Inggris, MALAM (Tebe berjalan → kamera masuk ke jendela → telur)
+function set2(t){const p=P.malam,WW=1500,u=t-3.7;
+ const masuk=ioS(lin(t,6.9,7.7)),cx=-200+ioS(lin(t,3.7,6.9))*-40+masuk*110, z=1+masuk*2.6;
+ let s=ASET.langit(p,WW,1300,t,{suryaX:1220,suryaY:820})+ASET.awan(380,620,.9,p,.7)+ASET.awan(1200,760,.7,p,.6)
+  +ASET.bukit(WW,1000,200,5,p.jauh)+ASET.kabut(WW,920,200,p)+ASET.bukit(WW,1080,120,9,p.tengah)+ASET.tanah(WW,1150,p);
+ s+=ASET.pohon(200,1240,1.0,p,t)+ASET.pohon(1340,1230,.9,p,t)+ASET.rumahReptil(780,1300,.78,p,'RUMAH REPTIL')+ASET.pagar(-50,1600,1450,p)+ASET.lampuTaman(470,1440,1.0,p)+ASET.lampuTaman(1130,1440,1.0,p)+ASET.semak(320,1470,1.0,p)+ASET.semak(1250,1470,1.1,p);
+ for(let i=0;i<14;i++)s+=ASET.rumput(40+i*110,1560+(i%3)*45,1.1,p,t);
+ s+=ASET.kunangKunang(WW,1920,t,p,22);
+ const tx=-150+oCub(lin(t,4.0,5.5))*620;
+ const luar=`<div class="abs" style="left:0;top:0;width:${WW}px;height:1920px;transform:translateX(${cx}px) scale(${z});transform-origin:670px 1160px;opacity:${1-lin(t,7.35,7.7)}">
+  <svg class="abs" width="${WW}" height="1920">${s}</svg><div class="abs" style="left:${tx}px;top:1330px">${tebe(A2(t),360,1)}</div></div>`;
+ // interior (setelah menembus jendela)
+ const v=lin(t,7.35,7.7),k=ioS(lin(t,7.4,8.4)),eg=[[600,1250],[700,1262],[650,1186],[752,1192],[556,1182]];
+ const dalam=v<=0?'':`<div class="abs" style="inset:0;opacity:${v};transform:scale(${1.25-k*.25});transform-origin:650px 1220px"><svg class="abs" width="1080" height="1920">
+  <defs><radialGradient id="lmp" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#FFD38A" stop-opacity=".5"/><stop offset="1" stop-color="#FFD38A" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1080" height="1920" fill="#3A3A3E"/>${[...Array(10)].map((_,i)=>`<rect x="${i*112}" y="0" width="108" height="1130" fill="${i%2?'#46464A':'#424246'}"/>`).join('')}
+  <path d="M650 300 L1150 1400 L150 1400Z" fill="url(#lmp)"/><rect x="646" y="0" width="8" height="290" fill="#2A2A2E"/><path d="M590 300 h120 l-26 -40 h-68z" fill="#2E3136"/><ellipse cx="650" cy="304" rx="40" ry="10" fill="#FFE2A8"/>
+  <path d="M0 1130 Q540 1090 1080 1130 V1920 H0Z" fill="#A2845C"/><ellipse cx="660" cy="1250" rx="240" ry="70" fill="#86693F"/>
+  ${eg.map(([x,y],i)=>ASET.telur(x,y,.9*oCub(lin(t,7.7+i*.1,8.0+i*.1)))).join('')}
+  ${ASET.debuCahaya(1080,1920,t,30,4,'#FFE2A8')}</svg>
+  <div class="abs" style="left:-60px;top:990px;width:740px">${ASET.komodo(P.senja,{tidur:1,ekor:Math.sin(t)*.3})}</div></div>`;
+ return luar+dalam}
+// ===== SET 3 — studio penjelasan, MALAM lembut (luas)
+function set3(t){const p=P.malam,u=t-8.3,pan=-30+ioS(lin(u,0,4.9))*60;
+ const s1=oExp(lin(u,.5,1.0)),sp=ioS(lin(u,1.3,1.9)),dup=oExp(lin(u,2.1,2.6)),has=lin(u,2.9,3.2);
+ const diag=`<g transform="translate(560 830) scale(1.15)">
+  <text x="0" y="-160" text-anchor="middle" font-family="Inter" font-weight="700" font-size="28" letter-spacing="5" fill="#AFC6D8" opacity="${s1*(1-sp)}">INDUK BETINA</text>
+  ${sp<1?ASET.kromosom(-60-150*sp,0,'Z','#F2ECE1',s1)+ASET.kromosom(60+150*sp,0,'W','#F2ECE1',s1):''}
+  ${sp>=1?`<g transform="translate(-200 0)">${ASET.kromosom(-56*dup,0,'Z','#FFC93C')}${ASET.kromosom(56*dup,0,'Z','#FFC93C',1,dup)}</g><g transform="translate(200 0)" opacity="${1-has*.6}">${ASET.kromosom(-56*dup,0,'W','#8C9AA6')}${ASET.kromosom(56*dup,0,'W','#8C9AA6',1,dup)}</g>`:''}
+  <text x="0" y="180" text-anchor="middle" font-family="Inter" font-weight="600" font-size="34" fill="#F2ECE1" opacity="${lin(u,2.1,2.3)*(1-has)}">sel telur menggandakan dirinya</text>
+  <g opacity="${has}"><text x="-200" y="180" text-anchor="middle" font-family="Inter" font-weight="800" font-size="42" fill="#FFC93C">ZZ → jantan</text><text x="200" y="180" text-anchor="middle" font-family="Inter" font-weight="800" font-size="42" fill="#E08B76">WW → gagal</text>
+  <path d="M136 -70 L264 70 M264 -70 L136 70" stroke="#E08B76" stroke-width="12" stroke-linecap="round"/></g></g>`;
+ const tx=30-(1-oExp(lin(u,.1,.7)))*500;
+ return `<div class="abs" style="inset:0;transform:translateX(${-pan}px) scale(1.05)"><svg class="abs" width="1080" height="1920">${ASET.studio(1080,1920,p,t)}${ASET.debuCahaya(1080,1920,t,26,3,'#AFC6D8')}${diag}</svg>
+  <div class="abs" style="left:${tx}px;top:1170px">${tebe(A3(t),470,.4)}</div></div>`}
+// ===== SET 4 — OUTRO KHAS (asli), Tebe memakai kerangka gerak
+function sinar(t){let s='';for(let i=0;i<18;i++){const a=t*.15+i*Math.PI/9,b=a+Math.PI/18;s+=`<path d="M540 900 L${540+2400*Math.cos(a)} ${900+2400*Math.sin(a)} L${540+2400*Math.cos(b)} ${900+2400*Math.sin(b)}Z" fill="#fff" opacity=".06"/>`}return s}
+function set4(t){const u=t-13.25,e=oBack(lin(u,.1,.55)),s=oBack(lin(u,.55,.95)),f=lin(u,1.3,1.6);
+ return `<div class="abs" style="inset:0;transform:scale(${1.06-lin(u,0,3.5)*.06})"><svg width="1080" height="1920" class="abs"><rect width="1080" height="1920" fill="#1F8A8A"/>${sinar(t)}<circle cx="540" cy="900" r="${330*e}" fill="#FFC93C" stroke="#1E1E1E" stroke-width="12"/></svg>
+ <div class="abs" style="left:300px;top:560px;transform:scale(${e});transform-origin:240px 400px">${tebe(A4(t),480)}</div>
+ <div class="judul" style="top:1260px;color:#FFF4DC;font-size:104px;transform:scale(${s})">Ternyata<br><span class="pil" style="font-size:124px">Begitu!</span></div>
+ <div class="abs" style="top:1580px;width:1080px;text-align:center;font:600 40px Poppins;color:#FFF4DC;opacity:${f}">Ikuti untuk fakta berikutnya</div></div>`}
+// ===== INTRO KHAS (asli) & transisi
+function sting(t){const u=t-2.75;if(u<0||u>1.05)return '';
+ const R=ioS(lin(u,0,.3))*1500*(1-ioS(lin(u,.78,1.05)));const ds=1-lin(u,.15,.45);const lg=oBack(lin(u,.35,.6))*(1-lin(u,.8,.95));
+ return `<svg width="1080" height="1920" class="abs"><circle cx="760" cy="1260" r="${R}" fill="#FFC93C"/><circle cx="760" cy="1260" r="${R*.82}" fill="#1F8A8A"/>
+ <g transform="translate(540 760) scale(2.2)" opacity="${R>300?1:0}"><path d="M-30 -40 C-32 -78 44 -82 42 -42 C41 -18 4 -26 2 2" fill="none" stroke="#FFC93C" stroke-width="18" stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="${ds*200}"/><circle cx="2" cy="30" r="11" fill="#FFC93C" opacity="${lin(u,.4,.45)}"/></g></svg>
+ <div class="judul" style="top:1020px;color:#FFF4DC;font-size:120px;transform:scale(${lg});opacity:${lg>0?1:0}">Ternyata<br><span class="pil" style="font-size:140px">Begitu!</span></div>`}
+function wipe(t,m){const u=(t-m)/.5;if(u<0||u>1)return '';const x=-1400+ioS(u)*2900;return `<svg width="1080" height="1920" class="abs"><g transform="translate(${x} 0) skewX(-12)"><rect x="0" y="-100" width="14" height="2200" fill="#FFC93C"/><rect x="14" y="-100" width="1300" height="2200" fill="#1F2E4A"/></g></svg>`}
+window.setT=function(t){
+ $('turb').setAttribute('seed',Math.floor(t*30)%50);
+ const vis=(id,a,b,f)=>{const v=t>=a&&t<b;$(id).style.display=v?'block':'none';if(v)$(id).innerHTML=f(t)};
+ vis('S1',-1,3.0,set1);vis('S2',3.0,8.55,set2);vis('S3',8.55,13.45,set3);vis('S4',13.45,99,set4);
+ let tx='';
+ if(t<3.0) tx=label('PULAU KOMODO · NTT',t,.05,1)+baris('Komodo betina bisa',t,.2,'h','#1E2A2A')+baris('punya anak '+stabilo('tanpa pejantan.',t,1.05),t,.4,'h','#1E2A2A');
+ else if(t<8.55&&t>3.8) tx=label('KEBUN BINATANG · INGGRIS, 2006',t,4.0,0)+baris('Namanya',t,4.2,'h','#F2ECE1')+baris('partenogenesis.',t,4.45,'acc','#FFC93C')+`<div class="sub" style="margin-top:30px;max-width:820px;color:rgba(242,236,225,.88);opacity:${lin(t,5.2,5.6)*(1-lin(t,7.0,7.3))}">Reproduksi tanpa pembuahan. Tercatat pada dua komodo betina yang tak pernah bertemu pejantan.</div>`;
+ else if(t>=8.55&&t<13.45) tx=label('KENAPA BISA?',t,8.6,0)+baris('Dan anaknya',t,8.75,'h','#F2ECE1')+baris('selalu jantan.',t,9.0,'acc','#FFC93C');
+ $('TX').innerHTML=tx;
+ $('ST').innerHTML=sting(t)+wipe(t,8.3)+wipe(t,13.2);$('bar').style.width=(t/17*1080)+'px';
+};
+setT(0);
+</script></body></html>

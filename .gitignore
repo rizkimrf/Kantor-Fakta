@@ -1,0 +1,20 @@
+# ===== RAHASIA — jangan pernah diunggah =====
+.env
+.env.*
+!.env.example
+token.json
+client_secret*.json
+*.pem
+*.key
+credentials*.json
+
+# ===== file kerja besar =====
+antrean/*/audio/
+antrean/*/visual/
+antrean/*/final.mp4
+antrean/*/_kerja/
+studio/node_modules/
+node_modules/
+frames/
+__pycache__/
+*.pyc

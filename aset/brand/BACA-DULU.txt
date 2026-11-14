@@ -1,0 +1,12 @@
+IDENTITAS VISUAL "TERNYATA BEGITU"
+logo-ikon-1000.png            foto profil YouTube / TikTok / Instagram (aman dipotong lingkaran)
+logo-ikon.svg                 versi vektor ikon (untuk cetak / ukuran besar)
+logo-horizontal-terang.png    logo + tulisan, latar transparan (untuk latar terang)
+logo-horizontal-gelap.png     logo + tulisan di latar teal
+logo-tulisan.png              tulisan saja, transparan (watermark video, thumbnail)
+header-youtube-2560x1440.png  banner channel YouTube (isi penting sudah di area aman 1546x423)
+template-kolaborasi.png       contoh susunan "Ternyata Begitu x Brand"
+maskot/tebe-*.png             Tebe seluruh badan, latar transparan, 7 pose
+maskot/tebe-*.svg             versi vektor tiap pose
+Warna: kuning #FFC93C · teal #1F8A8A · krem #FFF4DC · hitam #1E1E1E   Font: Poppins Bold
+Aturan Tebe: jangan ubah warna/proporsi; jambul "?" selalu ada; beri ruang kosong di sekelilingnya.
