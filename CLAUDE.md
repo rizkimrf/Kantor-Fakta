@@ -64,7 +64,12 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
   menyesatkan. Tidak ada klaim kesehatan/keuangan yang bisa jadi nasihat berbahaya.
 - **Review (manajer):** jalankan `python scripts/cek_video.py antrean/<folder>`, lihat `thumbnail.png`
   dan 3 gambar adegan acak: maskot konsisten? ada tulisan aneh di gambar? Tulis `review.md`.
-- Jangan pernah mengubah status menjadi `disetujui` sendiri. Jangan pernah menampilkan isi `.env`.
+- Jangan pernah mengubah status menjadi `disetujui` sendiri. Satu-satunya jalan: perintah `/setujui` dari Bos, atau keputusan Bos di Kantor Visual HP (lihat di bawah). Jangan pernah menampilkan isi `.env`.
+
+## Kantor di cloud + Kantor Visual HP
+- Kantor ini berjalan di cloud (claude.ai/code) dari repo GitHub pribadi Bos. **Di akhir setiap sesi: commit semua perubahan dan push langsung ke branch `main`** (repo pribadi, tanpa pull request) supaya pekerjaan tidak hilang. Jangan pernah meng-commit `.env`, token, atau kunci.
+- **Kantor Visual HP**: https://claude.ai/artifact/3Foimf6mkjVzkA1X6vFhfx — Bos memantau, menonton video, menekan Setujui/Tolak, dan mengirim pesan dari sana.
+- **Di awal setiap sesi kerja** jalankan bagian A dari `.claude/commands/sinkron-visual.md` (ambil keputusan & pesan Bos). **Di akhir sesi** jalankan bagian B (perbarui laporan, unggah video yang menunggu persetujuan). Saat tim mulai/selesai mengerjakan sesuatu, perbarui `agen` agar Bos melihat siapa yang sedang bekerja.
 
 ## Laporan ke pemilik (selalu di akhir sesi, singkat)
 ```

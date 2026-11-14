@@ -1,0 +1,482 @@
+<title>Kantor Ternyata Begitu</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Tata letak: gedung kantor berpotongan vertikal (satu lantai = satu ruangan) di atas, panel kendali Bos di bawah. Satu tampilan malam-biru yang disengaja. */
+:root{
+  --bg:#141C2B; --panel:#1C2638; --panel2:#243149; --garis:#33425E;
+  --teks:#EEF1F6; --redup:#A9B4C8; --kuning:#FFC93C; --teal:#2BA6A6; --merah:#E58A78; --hijau:#7BC79A;
+  --f-judul:'Poppins',system-ui,sans-serif; --f-teks:'Inter',system-ui,sans-serif;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--teks);font-family:var(--f-teks);font-size:15px;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.bungkus{max-width:560px;margin:0 auto;padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px));padding-block:0 40px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;align-items:center;gap:10px;padding-block:10px;border-bottom:1px solid var(--garis)}
+.logo{width:34px;height:34px;border-radius:50%;background:var(--kuning);color:#1E1E1E;display:grid;place-items:center;font:700 22px/1 var(--f-judul);border:2px solid #1E1E1E;flex:none}
+header h1{font:700 16px/1.15 var(--f-judul);margin:0}
+header small{display:block;font:500 12px var(--f-teks);color:var(--redup)}
+.live{margin-left:auto;display:flex;align-items:center;gap:6px;font:600 12px var(--f-teks);color:var(--redup);white-space:nowrap}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--hijau);box-shadow:0 0 0 0 rgba(123,199,154,.6);animation:nadi 2s infinite}
+.live.mati i{background:#6B7690;animation:none}
+@keyframes nadi{70%{box-shadow:0 0 0 8px rgba(123,199,154,0)}100%{box-shadow:0 0 0 0 rgba(123,199,154,0)}}
+.status{margin:10px 0 8px;padding:10px 12px;border-radius:10px;background:var(--panel);font-size:13px;color:var(--redup)}
+.status b{color:var(--teks)}
+.adegan{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--garis);background:#0F1624}
+canvas{display:block;width:100%;touch-action:pan-y}
+.angka{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0}
+.angka div{background:var(--panel);border-radius:10px;padding:8px 6px;text-align:center;min-width:0}
+.angka b{display:block;font:700 20px/1.1 var(--f-judul);font-variant-numeric:tabular-nums}
+.angka span{font-size:11px;color:var(--redup)}
+section{margin-top:18px}
+h2{font:700 15px var(--f-judul);margin:0 0 8px;display:flex;align-items:center;gap:8px}
+h2 .hit{font:600 12px var(--f-teks);background:var(--panel2);color:var(--redup);padding:2px 8px;border-radius:20px}
+.kartu{background:var(--panel);border:1px solid var(--garis);border-radius:12px;padding:12px;margin-bottom:10px}
+.kosong{color:var(--redup);font-size:13px;padding:12px;border:1px dashed var(--garis);border-radius:12px}
+video{width:100%;max-height:60vh;border-radius:10px;background:#000;display:block;margin:8px 0}
+.vjudul{font-weight:700;font-size:15px}
+.meta{font-size:12px;color:var(--redup)}
+.baris{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+button{font:600 14px var(--f-teks);border-radius:10px;border:1px solid var(--garis);background:var(--panel2);color:var(--teks);padding:10px 14px;cursor:pointer}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--kuning);outline-offset:2px}
+button.ya{background:var(--kuning);color:#1E1E1E;border-color:var(--kuning)}
+button.tidak{background:transparent;border-color:var(--merah);color:var(--merah)}
+button[disabled]{opacity:.5}
+.chip{padding:7px 11px;font-size:13px;border-radius:20px}
+.chip[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+textarea{width:100%;box-sizing:border-box;min-height:70px;resize:vertical;background:#101826;color:var(--teks);border:1px solid var(--garis);border-radius:10px;padding:10px;font:14px/1.4 var(--f-teks)}
+.pill{display:inline-block;font:600 11px var(--f-teks);padding:3px 8px;border-radius:20px;background:var(--panel2);color:var(--redup)}
+.pill.kuning{background:rgba(255,201,60,.16);color:var(--kuning)}
+.pill.hijau{background:rgba(123,199,154,.16);color:var(--hijau)}
+.pill.merah{background:rgba(229,138,120,.16);color:var(--merah)}
+.alur{display:flex;gap:3px;margin-top:8px}
+.alur i{flex:1;height:5px;border-radius:3px;background:var(--panel2)}
+.alur i.ok{background:var(--teal)}.alur i.kini{background:var(--kuning)}
+.cmd{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cmd button{text-align:left;padding:10px 12px}
+.cmd button small{display:block;font:500 11px var(--f-teks);color:var(--redup);margin-top:2px}
+.cmd code{font:600 13px ui-monospace,monospace;color:var(--kuning)}
+a.buka{display:block;text-align:center;margin-top:10px;padding:12px;border-radius:10px;background:var(--teal);color:#fff;font-weight:700;text-decoration:none}
+.log li{list-style:none;padding:7px 0;border-bottom:1px solid var(--garis);font-size:13px}
+.log{margin:0;padding:0}
+.log time{color:var(--redup);font-size:11px;margin-right:6px;font-variant-numeric:tabular-nums}
+.lembar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--panel);border-top:1px solid var(--garis);border-radius:16px 16px 0 0;padding:16px max(16px,env(safe-area-inset-left,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right,0px));box-shadow:0 -10px 30px rgba(0,0,0,.4)}
+.lembar .isi{max-width:560px;margin:0 auto}
+.lembar h3{margin:0 0 2px;font:700 18px var(--f-judul)}
+.lembar .tutup{float:right;padding:6px 12px}
+.kutip{font-style:italic;color:var(--kuning);margin-top:6px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:#EEF1F6;color:#141C2B;font-weight:600;padding:10px 16px;border-radius:10px;z-index:30}
+.catatan{font-size:12px;color:var(--redup);margin-top:6px}
+@media (prefers-reduced-motion:reduce){.live i{animation:none}}
+</style>
+
+<div class="bungkus">
+  <header>
+    <div class="logo" aria-hidden="true">?</div>
+    <div><h1>Kantor Ternyata Begitu</h1><small>Pak Bima · Laras · Nadia · Raka · Yoga</small></div>
+    <div class="live mati" id="live"><i></i><span id="jam">--.--</span></div>
+  </header>
+
+  <div class="status" id="status">Menghubungkan ke kantor…</div>
+
+  <div class="adegan"><canvas id="kanvas" aria-label="Gedung kantor Ternyata Begitu dengan lima karyawan"></canvas></div>
+  <div class="catatan">Ketuk karyawan atau ruangan untuk melihat detail.</div>
+
+  <div class="angka">
+    <div><b id="aTunggu">0</b><span>Menunggu Bos</span></div>
+    <div><b id="aProses">0</b><span>Dikerjakan</span></div>
+    <div><b id="aStok">0</b><span>Stok (hari)</span></div>
+    <div><b id="aIde">0</b><span>Bank ide</span></div>
+  </div>
+
+  <section>
+    <h2>Tinjau video <span class="hit" id="hTinjau">0</span></h2>
+    <div id="tinjau"></div>
+  </section>
+
+  <section>
+    <h2>Papan produksi <span class="hit" id="hPapan">0</span></h2>
+    <div id="papan"></div>
+  </section>
+
+  <section>
+    <h2>Pesan ke Pak Bima</h2>
+    <div class="kartu">
+      <label for="teksPesan" class="meta">Ditampung di sini, lalu dikerjakan Pak Bima saat sesi berikutnya dibuka di claude.ai/code.</label>
+      <textarea id="teksPesan" placeholder="Mis. Minta Laras cari 5 fakta soal laut Indonesia"></textarea>
+      <div class="baris"><button class="ya" id="kirimPesan">Kirim pesan</button></div>
+      <ul class="log" id="daftarPesan"></ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Perintah cepat</h2>
+    <div class="cmd" id="cmd"></div>
+    <a class="buka" href="https://claude.ai/code" target="_blank" rel="noopener">Buka claude.ai/code, tempel perintah</a>
+    <div class="catatan">Ketuk perintah untuk menyalinnya, lalu tempel di sesi Kantor Fakta.</div>
+  </section>
+
+  <section>
+    <h2>Aktivitas terbaru</h2>
+    <ul class="log" id="log"></ul>
+  </section>
+</div>
+
+<div class="lembar" id="lembar" hidden><div class="isi" id="lembarIsi"></div></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+/* ================== DATA & TIM ================== */
+const TIM = {
+  bima:{nama:"Pak Bima",peran:"Manajer",sifat:"Tenang, visioner, tegas soal mutu, irit kata.",khas:"Benar dulu, baru menarik.",baju:"#2B3446",celana:"#3A4356",rambut:"#4A4A52",kulit:"#F1C9A5",ciri:"dasi"},
+  laras:{nama:"Laras",peran:"Riset",sifat:"Teliti, skeptis, kutu buku, pendiam tapi tajam.",khas:"Mana sumbernya?",baju:"#1F8A7E",celana:"#57534E",rambut:"#3B2416",kulit:"#E8B98F",ciri:"kacamata panjang"},
+  nadia:{nama:"Nadia",peran:"Copywriting",sifat:"Kreatif, jenaka, suka main kata.",khas:"Dua detik pertama itu segalanya.",baju:"#8B5CF6",celana:"#2B3446",rambut:"#1E1E1E",kulit:"#F3D2B3",ciri:"kuncir"},
+  raka:{nama:"Raka",peran:"Marketing",sifat:"Energik, ambisius, gila data dan tren.",khas:"Datanya bilang apa?",baju:"#3B82F6",celana:"#1E3A5F",rambut:"#3A2A1A",kulit:"#D9A47C",ciri:"topi"},
+  yoga:{nama:"Yoga",peran:"Editor",sifat:"Kalem, perfeksionis visual, suka begadang.",khas:"Sekali lagi, biar pas.",baju:"#56606E",celana:"#2B3446",rambut:"#6B3F2A",kulit:"#EFC19A",ciri:"headset"},
+};
+const TAHAP = ["ide","pilih","naskah","cek_fakta","produksi","review","menunggu_persetujuan","disetujui","terjadwal","tayang"];
+const NAMA_TAHAP = {ide:"Riset",pilih:"Dipilih",naskah:"Naskah",cek_fakta:"Cek fakta",produksi:"Produksi",review:"Review",menunggu_persetujuan:"Menunggu Bos",disetujui:"Disetujui",terjadwal:"Terjadwal",tayang:"Tayang",ditunda:"Ditunda"};
+const JADWAL_SHOLAT = [["Subuh","04:40"],["Dzuhur","12:05"],["Ashar","15:25"],["Maghrib","18:10"],["Isya","19:20"]];
+let DATA = {agen:{}, video:[], log:[], stokHari:0, bankIde:0, ringkasan:"", diperbarui:null};
+let KEPUTUSAN = {}, PESAN = [], db = null, terhubung = false;
+
+/* ================== GEDUNG (canvas) ================== */
+const cv = document.getElementById("kanvas"), ctx = cv.getContext("2d");
+let W = 360, H = 1000, DPR = 1;
+const LANTAI = [
+  {id:"atap", h:120},
+  {id:"manajer", h:150, nama:"Ruang Manajer", dinding:"#E7D9C2"},
+  {id:"rapat", h:150, nama:"Ruang Rapat", dinding:"#D9E3E1"},
+  {id:"lt3", h:150, kiri:"Riset", kanan:"Naskah", dk:"#E4DECF", dn:"#EFDDD2"},
+  {id:"lt4", h:150, kiri:"Marketing", kanan:"Studio Editor", dk:"#D8E1EC", dn:"#323A48"},
+  {id:"lt5", h:150, kiri:"Istirahat", kanan:"Musholla", dk:"#F0E3CB", dn:"#DDEBE1"},
+  {id:"lobi", h:140, nama:"Lobi"},
+  {id:"jalan", h:56},
+];
+let Y0 = [], BX, BX2, EX, RX0, RX1, MID;
+function tata(){
+  W = cv.parentElement.clientWidth; DPR = Math.min(2, window.devicePixelRatio || 1);
+  H = LANTAI.reduce((a, l) => a + l.h, 0);
+  cv.width = W * DPR; cv.height = H * DPR; cv.style.height = H + "px";
+  let y = 0; Y0 = LANTAI.map(l => { const v = y; y += l.h; return v; });
+  BX = 22; BX2 = W - 22; EX = BX2 - 42; RX0 = BX + 8; RX1 = EX - 6; MID = (RX0 + RX1) / 2;
+}
+const lantaiY = i => Y0[i] + LANTAI[i].h - 12;          // permukaan lantai
+const X = f => RX0 + f * (RX1 - RX0);
+
+function waktuWITA(){ const d = new Date(); const m = (d.getUTCHours() * 60 + d.getUTCMinutes() + 8 * 60) % 1440; return m; }
+function langit(){
+  const m = waktuWITA();
+  if (m >= 6 * 60 && m < 16.5 * 60) return {n:"siang", a:"#8FC6D8", b:"#DCEFEA", kota:"#A9C1C8", lampu:0};
+  if (m >= 16.5 * 60 && m < 18.6 * 60) return {n:"senja", a:"#4E6A86", b:"#F2C79A", kota:"#7C7385", lampu:.6};
+  if (m >= 4.8 * 60 && m < 6 * 60) return {n:"fajar", a:"#3E5878", b:"#E9B98F", kota:"#5E6478", lampu:.6};
+  return {n:"malam", a:"#1F2E4A", b:"#3E5878", kota:"#2B3A52", lampu:1};
+}
+function rr(x, y, w, h, r, warna){ ctx.fillStyle = warna; ctx.beginPath(); ctx.roundRect(x, y, w, h, r); ctx.fill(); }
+function teks(t, x, y, ukuran, warna, rata = "left", tebal = 600, huruf = "Inter"){ ctx.font = `${tebal} ${ukuran}px ${huruf}`; ctx.fillStyle = warna; ctx.textAlign = rata; ctx.fillText(t, x, y); }
+function glow(x, y, r, warna, kuat){ const g = ctx.createRadialGradient(x, y, 0, x, y, r); g.addColorStop(0, warna.replace("A", kuat)); g.addColorStop(1, warna.replace("A", 0)); ctx.fillStyle = g; ctx.fillRect(x - r, y - r, r * 2, r * 2); }
+
+let BINTANG = []; for (let i = 0; i < 60; i++) BINTANG.push([Math.random(), Math.random(), Math.random() * 1.6 + .4, Math.random() * 6]);
+function latar(t, L){
+  const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, L.a); g.addColorStop(.7, L.b); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  if (L.n === "malam") for (const [bx, by, r, f] of BINTANG){ ctx.globalAlpha = .4 + .4 * Math.sin(t / 900 + f); rr(bx * W, by * H * .5, r, r, r / 2, "#F4EEDC"); } ctx.globalAlpha = 1;
+  if (L.n === "malam"){ ctx.fillStyle = "#F2EAD0"; ctx.beginPath(); ctx.arc(W * .82, 60, 18, 0, 7); ctx.fill(); glow(W * .82, 60, 70, "rgba(175,192,216,A)", .35); }
+  else if (L.n === "siang"){ glow(W * .8, 70, 90, "rgba(255,246,218,A)", .7); ctx.fillStyle = "#FFF1C9"; ctx.beginPath(); ctx.arc(W * .8, 70, 22, 0, 7); ctx.fill(); }
+  else { glow(W * .8, 130, 110, "rgba(247,201,138,A)", .7); ctx.fillStyle = "#FFE2A6"; ctx.beginPath(); ctx.arc(W * .8, 130, 22, 0, 7); ctx.fill(); }
+  // gedung kota di samping (siluet), jendela menyala di malam hari
+  const kota = [[-10, 300, 46], [W - 30, 260, 50], [-14, 620, 40], [W - 24, 560, 40]];
+  for (const [x, y, w] of kota){ rr(x, y, w, H - y, 0, L.kota);
+    if (L.lampu) for (let yy = y + 14; yy < H - 70; yy += 22) for (let xx = x + 6; xx < x + w - 6; xx += 12) if ((xx * 7 + yy) % 5 < 2){ ctx.globalAlpha = .55 * L.lampu; rr(xx, yy, 5, 8, 1, "#FFD38A"); ctx.globalAlpha = 1; } }
+}
+function atap(t, L){
+  const y = Y0[0], fy = lantaiY(0);
+  rr(BX + 30, fy - 46, 34, 40, 4, "#5F6B7D"); rr(BX + 26, fy - 50, 42, 8, 3, "#727F92");             // tangki air
+  ctx.strokeStyle = "#8C97A8"; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(BX2 - 60, fy); ctx.lineTo(BX2 - 60, y + 14); ctx.stroke();
+  ctx.fillStyle = Math.sin(t / 400) > 0 ? "#FF6B6B" : "#7A3A3A"; ctx.beginPath(); ctx.arc(BX2 - 60, y + 12, 3.5, 0, 7); ctx.fill();
+  // papan neon nama channel
+  const px = W / 2, py = fy - 34; rr(px - 112, py - 26, 224, 44, 10, "#1E2533");
+  ctx.save(); ctx.shadowColor = "#FFC93C"; ctx.shadowBlur = 10 + 4 * Math.sin(t / 500);
+  teks("TERNYATA BEGITU", px + 12, py + 4, 17, "#FFC93C", "center", 700, "Poppins"); ctx.restore();
+  ctx.fillStyle = "#FFC93C"; ctx.beginPath(); ctx.arc(px - 92, py - 3, 12, 0, 7); ctx.fill(); teks("?", px - 92, py + 3, 16, "#1E1E1E", "center", 700, "Poppins");
+  rr(px - 80, py + 18, 6, 10, 0, "#3A4356"); rr(px + 74, py + 18, 6, 10, 0, "#3A4356");
+  for (const x of [BX + 90, BX2 - 100]){ rr(x - 10, fy - 16, 20, 16, 3, "#6E5A44"); ctx.fillStyle = "#5E9A6A"; ctx.beginPath(); ctx.arc(x, fy - 22, 12, 0, 7); ctx.fill(); }
+  rr(BX - 4, fy, BX2 - BX + 8, 12, 2, "#59647A");
+}
+function lampuPlafon(x, y, L){ ctx.strokeStyle = "#8994A6"; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x, y + 12); ctx.stroke(); rr(x - 9, y + 12, 18, 6, 3, "#3A4356"); glow(x, y + 22, 46, "rgba(255,226,168,A)", .22 + .1 * L.lampu); }
+function kaca(x, y1, y2){ ctx.fillStyle = "rgba(190,225,235,.22)"; ctx.fillRect(x - 3, y1, 6, y2 - y1); ctx.fillStyle = "rgba(255,255,255,.35)"; ctx.fillRect(x - 1, y1 + 6, 1.5, (y2 - y1) * .5); }
+function meja(x, fy, w = 50, warna = "#8A6A4A", monitor = true, layar = "#7FD3E6"){
+  rr(x - w / 2, fy - 24, w, 5, 2, warna); rr(x - w / 2 + 3, fy - 19, 4, 19, 1, warna); rr(x + w / 2 - 7, fy - 19, 4, 19, 1, warna);
+  if (monitor){ rr(x - 13, fy - 50, 26, 20, 3, "#202836"); rr(x - 11, fy - 48, 22, 16, 2, layar); rr(x - 2, fy - 30, 4, 6, 0, "#202836"); }
+}
+function rak(x, fy, w = 34, h = 64){ rr(x, fy - h, w, h, 2, "#6B4A32"); const c = ["#E06C5A","#5B8DD6","#E8B84A","#62A86F","#9A7BD0"]; for (let r = 0; r < 3; r++) for (let i = 0; i < 5; i++) rr(x + 3 + i * 6, fy - h + 6 + r * 20, 5, 15, 1, c[(i + r * 2) % 5]); }
+function tanaman(x, fy, s = 1){ rr(x - 8 * s, fy - 16 * s, 16 * s, 16 * s, 3, "#8A6A4A"); ctx.fillStyle = "#4E8F5C"; for (const [dx, dy, r] of [[-6, -24, 9], [6, -26, 10], [0, -34, 9]]){ ctx.beginPath(); ctx.arc(x + dx * s, fy + dy * s, r * s, 0, 7); ctx.fill(); } }
+function ruangan(t, L){
+  for (let i = 1; i <= 6; i++){
+    const l = LANTAI[i], y = Y0[i], fy = lantaiY(i), atas = y + 2;
+    if (l.dinding) rr(RX0 - 8, atas, EX - RX0 + 2, fy - atas, 0, l.dinding);
+    else { rr(RX0 - 8, atas, MID - RX0 + 8, fy - atas, 0, l.dk); rr(MID, atas, EX - MID - 6, fy - atas, 0, l.dn); }
+    // lantai & plafon
+    rr(BX - 4, fy, BX2 - BX + 8, 12, 0, "#59647A"); rr(RX0 - 8, fy - 3, EX - RX0 + 2, 3, 0, "rgba(0,0,0,.12)");
+    lampuPlafon(X(.25), atas, L); lampuPlafon(X(.75), atas, L);
+    // label ruangan
+    const lbl = (s, x) => { ctx.font = "700 10px Inter"; const w = ctx.measureText(s.toUpperCase()).width + 12; rr(x, atas + 6, w, 16, 4, "rgba(20,28,43,.78)"); teks(s.toUpperCase(), x + 6, atas + 17, 10, "#F2ECE1", "left", 700); };
+    if (l.nama) lbl(l.nama, RX0 - 2); else { lbl(l.kiri, RX0 - 2); lbl(l.kanan, MID + 6); kaca(MID, atas, fy); }
+  }
+  // perabot per lantai
+  let fy = lantaiY(1); // manajer
+  rr(X(.06), fy - 26, 64, 20, 8, "#7A4E3A"); rr(X(.06), fy - 36, 64, 12, 6, "#8C5E47");                 // sofa
+  meja(X(.62), fy, 64, "#5A3E2E", true, "#9BD7C8"); rr(X(.86) - 18, fy - 40, 36, 30, 4, "#3D7FA0"); glow(X(.86), fy - 25, 30, "rgba(127,211,230,A)", .3);  // akuarium
+  ctx.fillStyle = "#FFB347"; ctx.beginPath(); ctx.ellipse(X(.86) - 6 + Math.sin(t / 700) * 8, fy - 26, 4, 2.5, 0, 0, 7); ctx.fill();
+  rr(X(.38) - 20, Y0[1] + 34, 40, 28, 3, "#C9B79A"); teks("VISI", X(.38), Y0[1] + 52, 9, "#5A3E2E", "center", 700);
+  fy = lantaiY(2); // rapat
+  rr(X(.2), fy - 26, X(.8) - X(.2), 6, 3, "#6B5040"); rr(X(.48) - 3, fy - 20, 6, 20, 0, "#6B5040");
+  rr(X(.38), Y0[2] + 28, X(.62) - X(.38), 44, 4, "#202836"); rr(X(.38) + 3, Y0[2] + 31, X(.62) - X(.38) - 6, 38, 3, DATA.rapat ? "#FFC93C" : "#3B4D66");
+  if (DATA.rapat) teks("RAPAT", X(.5), Y0[2] + 55, 11, "#1E1E1E", "center", 700);
+  tanaman(X(.04), fy); tanaman(X(.96), fy);
+  fy = lantaiY(3); rak(X(.02), fy); meja(X(.24), fy); meja(X(.72), fy, 50, "#8A6A4A", true, "#F3D9A6");
+  rr(X(.86), Y0[3] + 34, 30, 40, 3, "#FFC93C"); teks("?", X(.86) + 15, Y0[3] + 62, 22, "#1E1E1E", "center", 700, "Poppins");
+  fy = lantaiY(4); meja(X(.24), fy, 50, "#7A6A5A", true, "#A9D18E"); rr(X(.04), Y0[4] + 30, 40, 30, 3, "#FFFFFF");
+  ctx.strokeStyle = "#3B82F6"; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(X(.04) + 4, Y0[4] + 54); ctx.lineTo(X(.04) + 14, Y0[4] + 46); ctx.lineTo(X(.04) + 24, Y0[4] + 50); ctx.lineTo(X(.04) + 36, Y0[4] + 36); ctx.stroke();
+  meja(X(.72), fy, 64, "#3A3F48", true, "#C8A2E8"); rr(X(.72) + 16, fy - 46, 18, 14, 2, "#202836");
+  glow(X(.72), fy - 40, 50, "rgba(200,162,232,A)", .25 + .1 * Math.sin(t / 600));
+  fy = lantaiY(5); // istirahat + musholla
+  rr(X(.04), fy - 52, 22, 52, 3, "#C2453A"); rr(X(.04) + 3, fy - 46, 16, 14, 2, `hsl(${(t / 20) % 360},70%,60%)`);  // arcade
+  rr(X(.18), fy - 22, 54, 16, 7, "#4E7A8C"); rr(X(.18), fy - 32, 54, 12, 6, "#5E8C9E");                         // sofa
+  rr(X(.36) - 22, fy - 24, 44, 5, 2, "#8A6A4A"); rr(X(.36) - 2, fy - 19, 4, 19, 0, "#8A6A4A");                  // meja makan
+  rr(X(.45), fy - 56, 20, 56, 3, "#3A4356"); rr(X(.45) + 3, fy - 50, 14, 30, 2, "#7FD3E6");                    // vending
+  ctx.fillStyle = "#C9A46A"; ctx.beginPath(); ctx.moveTo(X(.75) - 22, Y0[5] + 80); ctx.lineTo(X(.75) - 22, Y0[5] + 46); ctx.quadraticCurveTo(X(.75), Y0[5] + 22, X(.75) + 22, Y0[5] + 46); ctx.lineTo(X(.75) + 22, Y0[5] + 80); ctx.fill();  // mihrab
+  for (const f of [.6, .7, .8, .9]) rr(X(f) - 12, fy - 3, 24, 3, 1, "#2E7D5B");
+  const sh = sholatSekarang(); if (sh) teks(sh, X(.75), Y0[5] + 100, 11, "#2E5E48", "center", 700);
+  fy = lantaiY(6); // lobi
+  rr(X(.5) - 50, fy - 30, 100, 30, 6, "#2B3446"); ctx.fillStyle = "#FFC93C"; ctx.beginPath(); ctx.arc(X(.5), fy - 15, 9, 0, 7); ctx.fill(); teks("?", X(.5), fy - 10, 13, "#1E1E1E", "center", 700, "Poppins");
+  teks("TERNYATA BEGITU", X(.5), Y0[6] + 52, 15, "#2B3446", "center", 700, "Poppins"); teks("kantor fakta & edukasi", X(.5), Y0[6] + 70, 10, "#6B7690", "center", 500);
+  rr(RX0 - 8, Y0[6] + 30, 46, fy - Y0[6] - 30, 0, "rgba(190,225,235,.35)"); ctx.strokeStyle = "#8C97A8"; ctx.strokeRect(RX0 - 8, Y0[6] + 30, 46, fy - Y0[6] - 30);
+  tanaman(X(.86), fy, 1.2);
+  // rangka gedung & lift
+  ctx.fillStyle = "#4A566C"; ctx.fillRect(BX - 4, Y0[1], 8, lantaiY(6) - Y0[1] + 12); ctx.fillRect(BX2 - 4, Y0[1], 8, lantaiY(6) - Y0[1] + 12);
+  rr(EX, Y0[1], BX2 - EX - 4, lantaiY(6) - Y0[1], 0, "#2A3346");
+  ctx.strokeStyle = "#3D4860"; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(EX + 8, Y0[1]); ctx.lineTo(EX + 8, lantaiY(6)); ctx.moveTo(BX2 - 12, Y0[1]); ctx.lineTo(BX2 - 12, lantaiY(6)); ctx.stroke();
+  for (let i = 1; i <= 6; i++){ const f = lantaiY(i); rr(EX + 4, f - 50, BX2 - EX - 12, 50, 2, "#59647A"); rr(EX + 6, f - 48, BX2 - EX - 16, 46, 2, "#7A879C"); ctx.fillStyle = "#59647A"; ctx.fillRect((EX + BX2 - 4) / 2 - .5, f - 48, 1, 46); }
+}
+function jalanRaya(t, L){
+  const y = Y0[7]; rr(0, y, W, 56, 0, "#3A4150"); for (let x = (t / 20) % 40 - 40; x < W; x += 40) rr(x, y + 30, 20, 3, 1, "#C9CFD8");
+  const cx = ((t / 9) % (W + 160)) - 80; rr(cx, y + 8, 56, 16, 5, "#E06C5A"); rr(cx + 10, y + 2, 32, 10, 4, "#E88A7A"); for (const dx of [12, 44]){ ctx.fillStyle = "#1E1E1E"; ctx.beginPath(); ctx.arc(cx + dx, y + 25, 5, 0, 7); ctx.fill(); }
+  if (L.lampu) glow(cx + 58, y + 16, 26, "rgba(255,226,168,A)", .5 * L.lampu);
+}
+function sholatSekarang(){ const m = waktuWITA(); for (const [n, w] of JADWAL_SHOLAT){ const [h, mm] = w.split(":").map(Number); if (m >= h * 60 + mm && m < h * 60 + mm + 15) return n; } return null; }
+
+/* ================== KARYAWAN ================== */
+// tempat: [lantai, fraksi x]
+const TEMPAT = {
+  bima:{meja:[1, .62], santai:[[1, .14, "tidur"], [1, .84, "lihat"], [5, .26, "duduk"]]},
+  laras:{meja:[3, .24], santai:[[3, .07, "baca"], [5, .3, "duduk"]]},
+  nadia:{meja:[3, .72], santai:[[5, .36, "makan"], [5, .22, "duduk"]]},
+  raka:{meja:[4, .24], santai:[[5, .07, "main"], [5, .14, "main"]]},
+  yoga:{meja:[4, .72], santai:[[5, .37, "makan"], [5, .5, "lihat"]]},
+};
+const KURSI_RAPAT = {bima:.5, laras:.28, nadia:.39, raka:.61, yoga:.72};
+const MUSHOLLA = {bima:.6, laras:.7, nadia:.8, raka:.9, yoga:.66};
+const ORANG = {};
+let urut = 0; for (const k in TIM){ const m = TEMPAT[k].meja; ORANG[k] = {k, lantai:m[0], x:null, y:null, arah:1, tujuan:null, gaya:"diri", lift:null, ganti:0, i:urut++}; }
+function infoAgen(k){ return (DATA.agen && DATA.agen[k]) || {}; }
+function tentukanTujuan(o, t){
+  const a = infoAgen(o.k), sh = sholatSekarang();
+  if (a.status === "kerja"){ const m = TEMPAT[o.k].meja; return [m[0], m[1], "kerja"]; }
+  if (a.status === "rapat" || DATA.rapat && a.status !== "santai"){ return [2, KURSI_RAPAT[o.k], "rapat"]; }
+  if (sh) return [5, MUSHOLLA[o.k], "sholat"];
+  if (!o.santai || t > o.ganti){ const p = TEMPAT[o.k].santai; o.santai = p[Math.floor(Math.random() * p.length)]; o.ganti = t + 12000 + Math.random() * 14000; }
+  return o.santai;
+}
+function gerak(o, dt, t){
+  const tuj = tentukanTujuan(o, t), tx = X(tuj[1]) + (o.i % 2 ? 4 : -4), ty = tuj[0];
+  if (o.x === null){ o.lantai = ty; o.x = tx; }
+  const liftX = (EX + BX2 - 4) / 2;
+  if (o.lift){ // naik/turun lift
+    const target = lantaiY(o.lift.ke), arah = Math.sign(target - o.y); o.y += arah * Math.min(Math.abs(target - o.y), dt * .16);
+    if (Math.abs(target - o.y) < .5){ o.lantai = o.lift.ke; o.lift = null; } o.gaya = "lift"; return;
+  }
+  o.y = lantaiY(o.lantai);
+  if (o.lantai !== ty){ const d = liftX - o.x; if (Math.abs(d) < 2){ o.lift = {ke:ty}; return; } o.arah = Math.sign(d); o.x += o.arah * Math.min(Math.abs(d), dt * .06); o.gaya = "jalan"; return; }
+  const d = tx - o.x; if (Math.abs(d) > 1.5){ o.arah = Math.sign(d); o.x += o.arah * Math.min(Math.abs(d), dt * .06); o.gaya = "jalan"; return; }
+  o.gaya = tuj[2] || "diri"; if (o.gaya === "kerja" || o.gaya === "rapat") o.arah = o.gaya === "rapat" ? (o.x < X(.5) ? 1 : -1) : 1;
+}
+function gambarOrang(o, t){
+  const p = TIM[o.k], x = o.x, fy = o.y, g = o.gaya, s = 1;
+  if (g === "lift"){ rr((EX + BX2 - 4) / 2 - 15, fy - 52, 30, 52, 3, "#C9D2DE"); }
+  const duduk = ["kerja", "rapat", "duduk", "makan", "main"].includes(g) && g !== "main", tidur = g === "tidur", sujud = g === "sholat" && Math.sin(t / 1600 + o.i) > .3;
+  ctx.save(); ctx.translate(x, fy);
+  if (tidur){ ctx.rotate(-Math.PI / 2 * .98); ctx.translate(22, -6); }
+  const langkah = g === "jalan" ? Math.sin(t / 90) * 4 : 0, naik = sujud ? 12 : duduk ? 9 : 0;
+  // kaki
+  ctx.fillStyle = p.celana;
+  if (duduk && !tidur){ rr(-6, -13, 16 * o.arah > 0 ? 16 : 16, 6, 2, p.celana); rr(o.arah > 0 ? 8 : -12, -13, 5, 13, 2, p.celana); }
+  else if (sujud || g === "sholat"){ rr(-8, -8, 16, 8, 3, p.celana); }
+  else { rr(-6 + langkah * .5, -13, 5, 13, 2, p.celana); rr(1 - langkah * .5, -13, 5, 13, 2, p.celana); }
+  ctx.translate(0, naik - (sujud ? 0 : 0));
+  // badan
+  const by = -31, miring = sujud ? .9 * o.arah : 0;
+  ctx.save(); ctx.translate(0, -13); ctx.rotate(miring); ctx.translate(0, 13);
+  rr(-10, by, 20, 19, 6, p.baju);
+  if (p.ciri.includes("dasi")){ ctx.fillStyle = "#C2453A"; ctx.beginPath(); ctx.moveTo(-2, by + 2); ctx.lineTo(2, by + 2); ctx.lineTo(1, by + 12); ctx.lineTo(-1, by + 12); ctx.fill(); }
+  // lengan
+  const ketik = (g === "kerja") ? Math.sin(t / 80 + o.i) * 1.5 : 0, main = g === "main" ? Math.sin(t / 70) * 2 : 0;
+  ctx.fillStyle = p.baju; rr(o.arah > 0 ? 6 : -12, by + 4 + ketik + main, 6, 12, 3, p.baju);
+  ctx.fillStyle = p.kulit; ctx.beginPath(); ctx.arc(o.arah > 0 ? 10 : -9, by + 17 + ketik + main, 3, 0, 7); ctx.fill();
+  // kepala
+  const hy = by - 10; ctx.fillStyle = p.kulit; ctx.beginPath(); ctx.arc(0, hy, 11, 0, 7); ctx.fill();
+  ctx.fillStyle = p.rambut; ctx.beginPath(); ctx.arc(0, hy - 2, 11.5, Math.PI * 1.02, Math.PI * 1.98); ctx.fill();
+  if (p.ciri.includes("panjang")) rr(o.arah > 0 ? -12 : 4, hy - 4, 8, 18, 4, p.rambut);
+  if (p.ciri.includes("kuncir")){ ctx.beginPath(); ctx.arc(-11 * o.arah, hy - 6, 5, 0, 7); ctx.fill(); }
+  if (p.ciri.includes("topi")){ rr(-12, hy - 13, 24, 7, 4, "#E8B84A"); rr(o.arah > 0 ? 6 : -16, hy - 8, 10, 3, 1.5, "#E8B84A"); }
+  if (p.ciri.includes("headset")){ ctx.strokeStyle = "#202836"; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.arc(0, hy - 1, 12, Math.PI * 1.1, Math.PI * 1.9); ctx.stroke(); rr(-14, hy - 3, 5, 8, 2, "#202836"); rr(9, hy - 3, 5, 8, 2, "#202836"); }
+  const kedip = (t / 1000 + o.i * 1.3) % 3.6 < .12 || tidur;
+  ctx.fillStyle = "#1E1E1E";
+  if (kedip){ rr(2 * o.arah - 1.5, hy, 3, 1, .5, "#1E1E1E"); rr(6 * o.arah - 1.5, hy, 3, 1, .5, "#1E1E1E"); }
+  else { ctx.beginPath(); ctx.arc(2 * o.arah, hy, 1.5, 0, 7); ctx.arc(6.5 * o.arah, hy, 1.5, 0, 7); ctx.fill(); }
+  if (p.ciri.includes("kacamata")){ ctx.strokeStyle = "#1E1E1E"; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(2 * o.arah, hy, 3, 0, 7); ctx.moveTo(6.5 * o.arah + 3, hy); ctx.arc(6.5 * o.arah, hy, 3, 0, 7); ctx.stroke(); }
+  ctx.restore(); ctx.restore();
+  o.kepala = [x, fy + naik + (tidur ? -10 : -52)];
+}
+function balon(o, t){
+  const a = infoAgen(o.k); let s = null;
+  if (o.gaya === "kerja") s = a.tugas || "sedang bekerja";
+  else if (o.gaya === "tidur") s = "Zzz";
+  else if (o.gaya === "sholat") s = null;
+  else if (o.gaya === "rapat") s = a.tugas || "rapat";
+  if (!s) return;
+  if (s.length > 26) s = s.slice(0, 25) + "…";
+  ctx.font = "600 10px Inter"; const w = ctx.measureText(s).width + 12, [x, y] = o.kepala;
+  const bx = Math.max(RX0 - 6, Math.min(RX1 - w, x - w / 2)), byy = y - 22 - (o.i % 2) * 2;
+  rr(bx, byy, w, 18, 6, o.gaya === "kerja" ? "#FFF4DC" : "rgba(255,255,255,.85)");
+  ctx.fillStyle = o.gaya === "kerja" ? "#FFF4DC" : "rgba(255,255,255,.85)"; ctx.beginPath(); ctx.moveTo(x - 4, byy + 18); ctx.lineTo(x + 4, byy + 18); ctx.lineTo(x, byy + 23); ctx.fill();
+  teks(s, bx + 6, byy + 12.5, 10, "#1E1E1E", "left", 600);
+}
+
+let tLalu = performance.now();
+function frame(t){
+  const dt = Math.min(60, t - tLalu); tLalu = t;
+  const L = langit();
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  latar(t, L); atap(t, L); ruangan(t, L); jalanRaya(t, L);
+  const daftar = Object.values(ORANG); for (const o of daftar) gerak(o, dt, t);
+  for (const o of daftar) gambarOrang(o, t);
+  for (const o of daftar) balon(o, t);
+  // malam: sedikit nuansa biru di luar gedung
+  requestAnimationFrame(frame);
+}
+
+/* ================== INTERAKSI KANVAS ================== */
+cv.addEventListener("click", e => {
+  const r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+  let dekat = null, jarak = 30;
+  for (const o of Object.values(ORANG)){ if (!o.kepala) continue; const d = Math.hypot(o.kepala[0] - x, o.kepala[1] + 20 - y); if (d < jarak){ jarak = d; dekat = o; } }
+  if (dekat) return bukaOrang(dekat.k);
+  const i = Y0.findIndex((y0, j) => y >= y0 && y < y0 + LANTAI[j].h); if (i < 1 || i > 6) return;
+  const l = LANTAI[i], nama = l.nama || (x < MID ? l.kiri : l.kanan);
+  const isi = Object.values(ORANG).filter(o => o.lantai === i && !o.lift && (l.nama || (x < MID) === (o.x < MID))).map(o => TIM[o.k].nama);
+  bukaLembar(`<h3>${nama}</h3><div class="meta">Lantai ${7 - i}</div><p>${isi.length ? "Ada di sini: <b>" + isi.join(", ") + "</b>" : "Sedang kosong."}</p>`);
+});
+function bukaOrang(k){
+  const p = TIM[k], a = infoAgen(k), o = ORANG[k];
+  const kegiatan = {kerja:"Sedang bekerja", rapat:"Sedang rapat", sholat:"Sedang sholat", tidur:"Tidur siang sebentar", jalan:"Sedang berjalan", lift:"Naik lift", main:"Main game (katanya riset tren)", makan:"Istirahat makan", baca:"Membaca di rak buku", duduk:"Bersantai", lihat:"Bersantai"}[o.gaya] || "Bersantai";
+  bukaLembar(`<h3>${p.nama}</h3><div class="meta">${p.peran}</div><p>${p.sifat}</p><div class="kutip">"${p.khas}"</div>
+   <p><span class="pill ${a.status === "kerja" ? "kuning" : ""}">${kegiatan}</span></p>${a.tugas ? `<p><b>Tugas:</b> ${esc(a.tugas)}</p>` : ""}`);
+}
+function bukaLembar(html){ const l = document.getElementById("lembar"); document.getElementById("lembarIsi").innerHTML = `<button class="tutup" onclick="tutupLembar()">Tutup</button>` + html; l.hidden = false; }
+function tutupLembar(){ document.getElementById("lembar").hidden = true; }
+function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function toast(s){ const el = document.getElementById("toast"); el.textContent = s; el.hidden = false; clearTimeout(el._t); el._t = setTimeout(() => el.hidden = true, 3200); }
+
+/* ================== PANEL BOS ================== */
+function jamTeks(iso){ if (!iso) return "-"; const d = new Date(iso); if (isNaN(d)) return "-"; const m = (d.getUTCHours() * 60 + d.getUTCMinutes() + 480) % 1440; return String(Math.floor(m / 60)).padStart(2, "0") + "." + String(m % 60).padStart(2, "0"); }
+function relatif(iso){ if (!iso) return "belum pernah"; const s = (Date.now() - new Date(iso)) / 1000; if (s < 90) return "baru saja"; if (s < 3600) return Math.round(s / 60) + " menit lalu"; if (s < 86400) return Math.round(s / 3600) + " jam lalu"; return Math.round(s / 86400) + " hari lalu"; }
+function idDoc(folder){ return String(folder).replace(/[^A-Za-z0-9_-]/g, "-").slice(0, 120); }
+const PILIHAN_TOLAK = [["naskah","Perbaiki naskah"],["visual","Ganti visual"],["suara","Suara ulang"],["rakit","Rakit ulang"],["thumbnail","Thumbnail baru"],["tunda","Tunda dulu"]];
+const DRAF = {};
+function renderPanel(){
+  const v = DATA.video || [];
+  const tunggu = v.filter(x => x.tahap === "menunggu_persetujuan");
+  const proses = v.filter(x => !["menunggu_persetujuan","disetujui","terjadwal","tayang","ditunda"].includes(x.tahap));
+  document.getElementById("aTunggu").textContent = tunggu.length;
+  document.getElementById("aProses").textContent = proses.length;
+  document.getElementById("aStok").textContent = DATA.stokHari ?? 0;
+  document.getElementById("aIde").textContent = DATA.bankIde ?? 0;
+  document.getElementById("hTinjau").textContent = tunggu.length;
+  document.getElementById("hPapan").textContent = v.length;
+  const st = document.getElementById("status");
+  if (!terhubung) st.innerHTML = db === false ? "Penyimpanan kantor tidak tersedia di tampilan ini. Buka halaman ini dari akun Claude Anda." : "Menghubungkan ke kantor…";
+  else if (!DATA.diperbarui) st.innerHTML = "<b>Belum ada laporan dari Pak Bima.</b> Laporan muncul di sini setelah sesi berikutnya di claude.ai/code.";
+  else st.innerHTML = `<b>Laporan Pak Bima</b> · ${relatif(DATA.diperbarui)} (${jamTeks(DATA.diperbarui)} WITA)${DATA.ringkasan ? "<br>" + esc(DATA.ringkasan) : ""}`;
+  // tinjau
+  const el = document.getElementById("tinjau");
+  if (!tunggu.length) el.innerHTML = `<div class="kosong">Belum ada video yang menunggu persetujuan. Video yang lolos review Pak Bima muncul di sini lengkap dengan pemutarnya.</div>`;
+  else el.innerHTML = tunggu.map(x => kartuTinjau(x)).join("");
+  // papan
+  const pp = document.getElementById("papan");
+  if (!v.length) pp.innerHTML = `<div class="kosong">Belum ada video di antrean. Mulai dengan perintah <b>/isi-bank-ide 20</b> lalu <b>/video-baru 2</b>.</div>`;
+  else pp.innerHTML = v.map(x => { const i = TAHAP.indexOf(x.tahap);
+    return `<div class="kartu"><div class="vjudul">${esc(x.judul || x.folder)}</div><div class="meta">${esc(x.format || "")} · ${esc(x.folder)}</div>
+      <div style="margin-top:6px"><span class="pill ${x.tahap === "menunggu_persetujuan" ? "kuning" : x.tahap === "tayang" || x.tahap === "terjadwal" ? "hijau" : x.masalah ? "merah" : ""}">${NAMA_TAHAP[x.tahap] || esc(x.tahap)}</span>${x.masalah ? ` <span class="pill merah">${esc(x.masalah)}</span>` : ""}</div>
+      <div class="alur">${TAHAP.map((t, j) => `<i class="${j < i ? "ok" : j === i ? "kini" : ""}"></i>`).join("")}</div></div>`; }).join("");
+  // log
+  const lg = document.getElementById("log"); const L = (DATA.log || []).slice(0, 15);
+  lg.innerHTML = L.length ? L.map(l => `<li><time>${jamTeks(l.waktu)}</time><b>${esc(l.siapa || "")}</b> ${esc(l.teks || "")}</li>`).join("") : `<li class="meta">Belum ada aktivitas.</li>`;
+  renderPesan();
+}
+function kartuTinjau(x){
+  const id = idDoc(x.folder), k = KEPUTUSAN[id], d = DRAF[id] || (DRAF[id] = {mode:null, pilihan:[], catatan:""});
+  let aksi;
+  if (k && !k.diproses) aksi = `<p><span class="pill ${k.aksi === "setujui" ? "hijau" : "merah"}">${k.aksi === "setujui" ? "Disetujui Bos" : "Ditolak Bos"}</span> <span class="meta">menunggu diproses Pak Bima</span></p>
+      <div class="baris"><button onclick="batalKeputusan('${id}')">Batalkan keputusan</button></div>`;
+  else if (d.mode === "setujui") aksi = `<p>Setujui video ini untuk diupload dan dijadwalkan Raka?</p><div class="baris"><button class="ya" onclick="putuskan('${id}','setujui')">Ya, setujui</button><button onclick="mode('${id}',null)">Batal</button></div>`;
+  else if (d.mode === "tolak") aksi = `<p class="meta">Apa yang perlu diperbaiki?</p><div class="baris">${PILIHAN_TOLAK.map(([v, n]) => `<button class="chip" aria-pressed="${d.pilihan.includes(v)}" onclick="pilih('${id}','${v}')">${n}</button>`).join("")}</div>
+      <label class="meta" for="cat-${id}" style="display:block;margin-top:8px">Catatan untuk tim</label><textarea id="cat-${id}" oninput="DRAF['${id}'].catatan=this.value" placeholder="Mis. hook kurang nendang, suara terlalu cepat">${esc(d.catatan)}</textarea>
+      <div class="baris"><button class="tidak" onclick="putuskan('${id}','tolak')" ${d.pilihan.length || d.catatan ? "" : "disabled"}>Kirim penolakan</button><button onclick="mode('${id}',null)">Batal</button></div>`;
+  else aksi = `<div class="baris"><button class="ya" onclick="mode('${id}','setujui')">Setujui</button><button class="tidak" onclick="mode('${id}','tolak')">Tolak / minta revisi</button></div>`;
+  return `<div class="kartu" data-folder="${esc(x.folder)}"><div class="vjudul">${esc(x.judul || x.folder)}</div><div class="meta">${esc(x.format || "")}${x.skor ? " · skor naskah " + esc(x.skor) : ""}${x.durasi ? " · " + esc(x.durasi) : ""}</div>
+    ${x.video_url ? `<video controls playsinline preload="metadata" src="${esc(x.video_url)}" ${x.thumb_url ? `poster="${esc(x.thumb_url)}"` : ""}></video>` : x.thumb_url ? `<img src="${esc(x.thumb_url)}" alt="Thumbnail ${esc(x.judul || "")}" style="border-radius:10px;margin:8px 0">` : `<div class="kosong" style="margin:8px 0">Video belum diunggah ke halaman ini.</div>`}
+    ${x.review ? `<div class="meta">Catatan Pak Bima: ${esc(x.review)}</div>` : ""}${aksi}</div>`;
+}
+function mode(id, m){ DRAF[id].mode = m; renderPanel(); }
+function pilih(id, v){ const p = DRAF[id].pilihan; const i = p.indexOf(v); i < 0 ? p.push(v) : p.splice(i, 1); renderPanel(); }
+async function putuskan(id, aksi){
+  if (!db){ toast("Belum terhubung ke penyimpanan kantor."); return; }
+  const v = (DATA.video || []).find(x => idDoc(x.folder) === id), d = DRAF[id];
+  try { await db.collection("keputusan").doc(id).set({folder:v ? v.folder : id, judul:v ? (v.judul || "") : "", aksi, pilihan:aksi === "tolak" ? d.pilihan.slice() : [], catatan:aksi === "tolak" ? (d.catatan || "") : "", waktu:new Date().toISOString(), diproses:false});
+    DRAF[id] = {mode:null, pilihan:[], catatan:""}; toast(aksi === "setujui" ? "Disetujui. Raka akan mengupload di sesi berikutnya." : "Penolakan terkirim ke tim.");
+  } catch(e){ toast(e && e.code === "invalid_argument" ? "Anda tidak punya izin menulis di kantor ini." : "Gagal menyimpan, coba lagi."); }
+}
+async function batalKeputusan(id){ try { await db.collection("keputusan").doc(id).delete(); toast("Keputusan dibatalkan."); } catch(e){ toast("Gagal membatalkan."); } }
+function renderPesan(){
+  const ul = document.getElementById("daftarPesan");
+  ul.innerHTML = PESAN.slice(0, 6).map(p => `<li><time>${jamTeks(p.waktu)}</time>${esc(p.teks)} <span class="pill ${p.diproses ? "hijau" : "kuning"}">${p.diproses ? "dikerjakan" : "menunggu sesi"}</span></li>`).join("");
+}
+document.getElementById("kirimPesan").addEventListener("click", async () => {
+  const el = document.getElementById("teksPesan"), t = el.value.trim(); if (!t) return;
+  if (!db){ toast("Belum terhubung ke penyimpanan kantor."); return; }
+  try { await db.collection("pesan").add({teks:t.slice(0, 1000), waktu:new Date().toISOString(), diproses:false}); el.value = ""; toast("Pesan disimpan untuk Pak Bima."); }
+  catch(e){ toast("Gagal mengirim pesan."); }
+});
+const PERINTAH = [["/sinkron-visual","Ambil keputusan & pesan Bos, perbarui kantor ini"],["/kerjakan-antrean","Perintah utama harian"],["/video-baru 2","2 Shorts baru sampai naskah lolos"],["/isi-bank-ide 20","Laras riset, Raka urutkan"],["/produksi","Suara, visual, rakit, thumbnail"],["/status","Ringkasan + saran Pak Bima"],["/laporan-minggu","Performa minggu ini"],["/video-baru 1 panjang","Naskah video 16:9"]];
+document.getElementById("cmd").innerHTML = PERINTAH.map(([c, k]) => `<button data-c="${c}"><code>${c}</code><small>${k}</small></button>`).join("");
+document.getElementById("cmd").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return; const c = b.dataset.c;
+  try { navigator.clipboard.writeText(c).then(() => toast(`Disalin: ${c}`), () => toast(`Salin manual: ${c}`)); } catch(_){ toast(`Salin manual: ${c}`); }
+});
+
+/* ================== SAMBUNGAN DB ================== */
+async function hubungkan(){
+  let d = null; try { d = await claude.use("db"); } catch(_){ d = null; }
+  if (!d){ db = false; renderPanel(); return; }
+  db = d; const live = document.getElementById("live");
+  const batas = setTimeout(() => { if (!terhubung){ terhubung = true; renderPanel(); } }, 10000);
+  db.doc("kantor/status").onSnapshot(s => { clearTimeout(batas); terhubung = true; live.classList.remove("mati"); if (s.exists) DATA = Object.assign({agen:{}, video:[], log:[]}, s.data()); renderPanel(); },
+    () => { clearTimeout(batas); terhubung = true; live.classList.add("mati"); renderPanel(); });
+  db.collection("keputusan").onSnapshot(q => { KEPUTUSAN = {}; q.docs.forEach(x => KEPUTUSAN[x.id] = x.data()); renderPanel(); }, () => {});
+  db.collection("pesan").orderBy("waktu", "desc").limit(10).onSnapshot(q => { PESAN = q.docs.map(x => x.data()); renderPesan(); }, () => {});
+}
+function jam(){ const m = waktuWITA(); document.getElementById("jam").textContent = String(Math.floor(m / 60)).padStart(2, "0") + "." + String(m % 60).padStart(2, "0") + " WITA"; }
+tata(); addEventListener("resize", tata); jam(); setInterval(jam, 20000); renderPanel(); requestAnimationFrame(frame);
+if (window.claude && claude.use) hubungkan(); else { db = false; renderPanel(); }
+</script>
