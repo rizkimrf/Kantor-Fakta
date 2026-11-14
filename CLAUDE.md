@@ -61,6 +61,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 | `tayang` | marketing | catatan performa |
 
 ## Aturan kerja
+- **Satu konten = kerja seluruh tim** (perintah Bos). Semua agent membaca `panduan/standar-konten.md` sebelum bekerja. Setiap folder video wajib punya `lembar_tim.md` yang diisi lima orang sebelum naskah ditulis dan diparaf lima orang setelah produksi. Saat mendelegasikan, sertakan isi `lembar_tim.md` dan minta agent memberi masukan untuk bagian orang lain juga (lihat tabel §5 di standar konten). Gerbang akhir 12 butir (§7) harus "ya" semua sebelum `menunggu_persetujuan`.
 - **Catatan Bos didahulukan.** Jika `status.json` punya `catatan_bos` (dari tombol Tolak di kantor visual), itu perintah pemilik: kerjakan perbaikan itu lebih dulu dan sebutkan di laporan bagaimana catatan itu dipenuhi. Setelah video kembali ke `menunggu_persetujuan`, kosongkan `catatan_bos`.
 - Perintah bisa datang dari PowerShell atau dari tombol/pesan di kantor visual; perlakukan sama.
 - Selalu baca `status.json` dulu dan **lanjutkan dari tahap terakhir** (jangan ulang tahap yang selesai,
@@ -84,5 +85,5 @@ Selesai: … | Menunggu persetujuan: … | Stok terjadwal: … hari | Tertunda: 
 ```
 
 ## File panduan
-`panduan/katalog-aset.md` (WAJIB untuk visual) · `panduan/cetak-biru-remotion.md` · `panduan/playbook-riset.md` · `panduan/playbook-naskah.md` · `panduan/gaya-suara.md` · `panduan/gaya-animasi.md` · `panduan/tim.md` · `panduan/identitas.md` · `panduan/karakter.md` · `panduan/gaya-visual.md` · `panduan/struktur-video.md`
+**`panduan/standar-konten.md` (induk semua panduan, WAJIB)** · `panduan/katalog-aset.md` (WAJIB untuk visual) · `panduan/cetak-biru-remotion.md` · `panduan/playbook-riset.md` · `panduan/playbook-naskah.md` · `panduan/gaya-suara.md` · `panduan/gaya-animasi.md` · `panduan/tim.md` · `panduan/identitas.md` · `panduan/karakter.md` · `panduan/gaya-visual.md` · `panduan/struktur-video.md`
 · `panduan/strategi-marketing.md` · `panduan/riwayat.md` · `panduan/sumber-terpercaya.md`
