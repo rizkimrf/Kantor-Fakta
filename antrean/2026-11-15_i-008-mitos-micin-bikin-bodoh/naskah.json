@@ -1,0 +1,151 @@
+{
+  "format": "shorts",
+  "judul": "Micin Bikin Bodoh? Awalnya dari Surat yang Cuma Menebak",
+  "judul_opsi": [
+    "Micin Bikin Bodoh? Awalnya dari Surat yang Cuma Menebak",
+    "Generasi Micin? Asalnya Cuma dari Satu Surat Tahun 1968",
+    "Tikusnya Disuntik, Bukan Makan: Asal Mitos Micin"
+  ],
+  "thumbnail_teks": "MICIN BIKIN BODOH?",
+  "thumbnail_visual": "Cause-and-effect cover in flat cartoon style: on the right, a giant old-fashioned glass syringe and an ordinary metal spoon heaped with sparkling white MSG crystals face off over a cute cartoon brain with a big floating question mark; behind them an old typed letter drifts down, its lines drawn as blank squiggles; Tebe at bottom left, facing right, leaning back in shock with wide eyes and open mouth, question-mark hair curl clearly visible; cool teal and electric pink palette (different from the warm dusk cover of the previous video), strong contrast, no readable text in the image, empty space in the top third for the title.",
+  "deskripsi": "Cap \"micin bikin bodoh\" bermula dari satu surat pembaca di New England Journal of Medicine (1968) yang menebak beberapa penyebab: arak masak, garam, atau MSG. Setahun kemudian, riset yang MENYUNTIKKAN MSG ke bayi tikus memicu anggapan micin merusak otak. Kini JECFA (FAO/WHO), FDA, dan BPOM menggolongkan MSG sebagai bahan tambahan pangan yang diizinkan. Video ini membahas sejarah mitosnya, bukan saran makan.\n\nSumber:\n- Kwok, R.H.M., N Engl J Med 278(14):796 (1968): https://scilit.com/publications/349b454cf544a3d97ca351bfb48250c6\n- Science History Institute, Distillations: https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/\n- Olney, J.W., Science 164:719 (1969): https://ui.adsabs.harvard.edu/abs/1969Sci...164..719O/abstract\n- Geha dkk., J Nutr 130(4S) (2000): https://zendy.io/title/10.1093/jn/130.4.1058s\n- WHO JECFA, Monosodium L-glutamate: https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/2257\n- FDA, Questions and Answers on MSG: https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg\n- Hektoen International (2021): https://hekint.org/2021/06/04/a-bad-taste-in-the-mouth-over-fifty-years-of-doubt-about-msg/\n- JPNN, BPOM Klaim MSG Aman: https://www.jpnn.com/news/bpom-klaim-msg-aman\n- Kemenkes: https://keslan.kemkes.go.id/view_artikel/611/amankah-pemakaian-msgmonosodium-glutamat\n\n#Shorts #Micin #GenerasiMicin",
+  "caption_komentar": "Bonus: micin pertama kali diambil dari kaldu rumput laut kombu oleh profesor kimia Jepang Kikunae Ikeda tahun 1908. Dia juga yang menamai rasa kelima: umami. Nah, siapa yang pertama ngatain kamu 'generasi micin'? Teman, guru, atau orang tua?",
+  "caption_tiktok": "Micin bikin bodoh? Semua bermula dari satu surat yang cuma menebak, lalu bayi tikus yang DISUNTIK, bukan diberi makan. Tonton sampai akhir, ada fakta soal tomat dan keju. Siapa yang pertama ngatain kamu 'generasi micin'?\n#micin #generasimicin #faktasains #mitos #TernyataBegitu",
+  "caption_instagram": "\"Micin bikin bodoh\" ternyata punya asal-usul: satu surat pembaca tahun 1968 yang cuma menebak, lalu riset tikus yang menyuntikkan MSG. Kini lembaga pangan dunia dan BPOM menggolongkannya sebagai bahan tambahan pangan yang diizinkan. Ini cerita sejarah mitosnya, bukan saran makan.\nKirim ke teman yang hobi ngatain 'anak micin'. Siapa yang pertama ngatain kamu 'generasi micin'?\n#micin #generasimicin #mitosataufakta #faktaunik #TernyataBegitu",
+  "tag": ["micin bikin bodoh", "generasi micin", "asal mitos micin", "apakah micin berbahaya", "MSG bikin bodoh benarkah", "MSG", "micin", "chinese restaurant syndrome", "fakta sains", "ternyata begitu"],
+  "pola_hook": "cerita-asal (asal-usul sebuah anggapan) - usulan Raka, dibuka dengan frasa masyarakat 'micin bikin bodoh?'; beda dari kamu-salah + sensasi indra (bau hujan), dari pembalikan arah (ketchup), dan dari angka/tes otak/teka-teki",
+  "hook_kandidat": [
+    {"teks": "Micin bikin bodoh? Semua bermula dari satu surat yang cuma menebak.", "skor": 9, "alasan": "Frasa masyarakat di detik 0 (kata kunci utama utuh), lalu pola cerita-asal Raka tanpa tahun/nama ahli. 'Cuma menebak' adalah kata kunci Laras dan didukung F3. Riset: reputasi buruk MSG bermula dari SATU surat. TERPILIH."},
+    {"teks": "Cap generasi micin berawal dari satu surat yang cuma menebak.", "skor": 8, "alasan": "Usulan Raka, pola tepat. Tapi kata kunci utama 'micin bikin bodoh' tidak utuh, jadi frasa itu dipindah ke depan."},
+    {"teks": "Katanya micin bikin bodoh. Kamu percaya juga?", "skor": 7, "alasan": "Usulan arah kreatif, bahasa masyarakat. Tapi tanpa janji cerita, penonton bisa jawab 'nggak' lalu geser."},
+    {"teks": "Mitos micin bikin bodoh lahir dari tebak-tebakan.", "skor": 7, "alasan": "Ringkas, tapi tidak ada objek konkret (surat) yang bisa digambar di detik 0."},
+    {"teks": "Generasi micin? Ejekan itu warisan satu dokter Amerika.", "skor": 7, "alasan": "Cerita-asal, tapi menyederhanakan: jembatan ke 'bodoh' justru riset tikus 1969."},
+    {"teks": "Micin bikin bodoh? Buktinya cuma bayi tikus yang disuntik.", "skor": 7, "alasan": "Kejutan kuat, tapi membakar twist utama di detik pertama dan mengabaikan surat sebagai awal."},
+    {"teks": "Kamu dikatain generasi micin? Salahkan satu surat.", "skor": 6, "alasan": "Personal, tapi nadanya menyalahkan dan dekat pola kamu-salah dari video lalu."},
+    {"teks": "Dokter yang bikin micin dicurigai, dia sendiri nggak yakin micin pelakunya.", "skor": 6, "alasan": "Paradoks menarik, tapi 15 kata, kata kunci telat."},
+    {"teks": "Seribu sembilan ratus enam puluh delapan, satu surat bikin micin dicurigai.", "skor": 5, "alasan": "Tahun di hook melanggar arahan Bos dan polanya angka (sudah dipakai video lain hari ini)."},
+    {"teks": "Micin itu aman, ini buktinya.", "skor": 2, "alasan": "Klaim/nasihat kesehatan, dilarang Laras dan Raka. Dibuang."}
+  ],
+  "peta_retensi": "0–4,5 dtk → hook cerita-asal, kata kunci 'micin bikin bodoh' di kata pertama, visual surat jatuh ke mangkok bakso + micin slow-motion\n4,5–7 dtk → intro khas (pattern interrupt + jingle)\n7–13 dtk → taruhan personal ('ejekan generasi micin yang sering kamu dengar') + OPEN LOOP #1: 'bayi tikus yang diperlakukan… aneh'\n13–21 dtk → anak tangga 1: 1968, dokter curhat ke jurnal, gejala konkret (ganti set: meja kerja 1968)\n21–29 dtk → anak tangga 2: dia nggak yakin, tiga tebakan; tapi judulnya nempel (set: papan detektif)\n29–36,5 dtk → anak tangga 3: 1969 micin disuntik ke bayi tikus → lahir anggapan 'merusak otak' (klip lab)\n36,5–42 dtk → KEJUTAN KEDUA + payoff open loop #1: 'itu DISUNTIK, lho', canda sendok vs jarum (Tebe kaget = reaksi 1)\n42–50 dtk → kejujuran: uji tanpa dikasih tahu → reaksi nggak konsisten, ada yang bereaksi ke yang palsu (set: ruang uji)\n50–58 dtk → kesimpulan lembaga apa adanya: FAO-WHO bahaya rendah, FDA umumnya diakui aman, BPOM diizinkan dengan batas (set: ruang arsip)\n58–72 dtk → bonus kejutan: glutamat micin = glutamat tomat & keju (Tebe bengong = reaksi 2) → payoff hook ('warisan tebakan plus tikus yang disuntik') + kalimat khas + pertanyaan 'siapa yang pertama ngatain kamu?'",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 2, "bahasa_lisan": 1, "payoff": 1, "total": 9},
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "Kalimat yang diucapkan tiap tongkrongan, langsung disusul janji cerita asal-usul yang belum diketahui kebanyakan orang."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'fakta umum' ke 'tebakan di surat pembaca + tikus yang disuntik' adalah jarak besar, bersumber primer (NEJM 1968, Science 1969)."},
+    "retensi": {"skor": 1, "alasan": "Celah baru tiap ±7–8 dtk, tapi adegan 8 (tiga lembaga) paling datar; Yoga perlu tiga stempel yang jatuh bergantian supaya tetap bergerak."},
+    "layak_dibagikan": {"skor": 2, "alasan": "Senjata balasan untuk teman yang hobi bilang 'dasar generasi micin', membuat pengirim terlihat pintar."},
+    "pemicu_komentar": {"skor": 2, "alasan": "Pertanyaan 'siapa yang pertama ngatain kamu generasi micin?' mengundang cerita pribadi, bukan jawaban ya/tidak."},
+    "total": 9
+  },
+  "pelafalan": {
+    "Chinese Restaurant Syndrome": "chai-nis res-to-ran sin-drom",
+    "FAO-WHO": "ef-a-o, we-ha-o",
+    "FDA": "ef-de-a",
+    "BPOM": "be-pom",
+    "glutamat": "glu-ta-mat"
+  },
+  "seo": {
+    "kata_kunci_utama": "micin bikin bodoh",
+    "kata_kunci_turunan": ["generasi micin", "asal mitos micin", "apakah micin berbahaya", "MSG bikin bodoh benarkah", "chinese restaurant syndrome"]
+  },
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Micin bikin BODOH? Semua bermula dari satu surat yang cuma MENEBAK.",
+      "teks_layar": "MICIN BIKIN BODOH?",
+      "visual": "A steaming bowl of bakso on a warung table at noon; in slow motion, sparkling white MSG crystals rain down over the bowl while an old folded typed letter tumbles through the air and lands on the soup with a splash; Tebe ducks behind the bowl, eyes wide, curl turning into '!'; fast camera push-in, letter lines drawn as blank squiggles, no readable text.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 4.5,
+      "set": "meja warung bakso siang (micin slow-motion + surat jatuh)",
+      "tebe": "kaget"
+    },
+    {
+      "no": 2,
+      "narasi": "Ejekan 'generasi micin' yang sering kamu dengar? Akarnya surat, plus bayi tikus yang diperlakukan… ANEH.",
+      "teks_layar": "GENERASI MICIN",
+      "visual": "A lively night-time angkringan street stall with young friends laughing and playfully pointing at one another over cups of tea and skewers; a cartoon salt-shaker-shaped speech bubble pops above them; Tebe in the middle turns to the viewer and raises one eyebrow, then a tiny shadow of a lab mouse scurries across the lantern light; camera pans across the group, no written text.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.0,
+      "set": "angkringan malam, tongkrongan anak muda",
+      "tebe": "curiga"
+    },
+    {
+      "no": 3,
+      "narasi": "Seribu sembilan ratus enam puluh delapan. Dokter di Amerika curhat ke jurnal KEDOKTERAN. Habis makan di restoran Tiongkok, tengkuk kebas, jantung BERDEBAR.",
+      "teks_layar": "1968",
+      "visual": "A late-1960s American home office at night with a desk lamp, a heavy typewriter, and a coffee mug; a neutral generic doctor silhouette types a letter while rubbing the back of his neck, a small cartoon heart icon thumping fast above him; Tebe peeks over the desk edge, curious; slow camera dolly toward the typewriter, typed lines shown as blank squiggles.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.5,
+      "set": "meja kerja Amerika 1968 dengan mesin tik, malam",
+      "tebe": "penasaran"
+    },
+    {
+      "no": 4,
+      "narasi": "Penyebabnya? Dia nggak YAKIN: arak masak, garam, atau micin. Tapi suratnya dimuat dengan judul yang NEMPEL: Chinese Restaurant Syndrome.",
+      "teks_layar": "CUMA TEBAKAN",
+      "visual": "A cartoon detective cork board in a dim room with three suspects pinned up and connected by red string: a small bottle of cooking wine, a salt shaker, and a jar of MSG crystals, each with a big question mark; Tebe in a tiny detective cap shrugs at the board; then an old journal page slams onto the board like a headline stamp; camera snaps between the three suspects, no readable text.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.0,
+      "set": "papan detektif tiga tersangka, ruangan remang",
+      "tebe": "bingung"
+    },
+    {
+      "no": 5,
+      "narasi": "Setahun kemudian, peneliti menyuntikkan micin ke bawah kulit bayi TIKUS. Sel otaknya rusak. Lahirlah anggapan: micin merusak OTAK.",
+      "teks_layar": "DISUNTIK",
+      "visual": "A clean, simple 1969 research lab in cool white light with glassware and a small cage of tiny pink baby mice drawn cute and non-graphic; a gloved hand holds a small syringe near a mouse (no blood, no visible injury), then a glowing cartoon brain icon above the cage flickers and cracks; Tebe watches from behind a beaker, worried; slow camera push-in on the syringe.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 7.5,
+      "set": "lab riset 1969, cahaya putih dingin",
+      "tebe": "khawatir"
+    },
+    {
+      "no": 6,
+      "narasi": "Tunggu. Itu DISUNTIK, lho. Kamu kan makan micin pakai sendok, bukan JARUM.",
+      "teks_layar": "SENDOK ≠ JARUM",
+      "visual": "A bright home dining table: on the left a giant comical syringe, on the right an ordinary spoon of fried rice, both standing upright like rivals in a spotlight; Tebe jumps back in shock between them, curl turning into '!', then points at the spoon; quick whip-pan from syringe to spoon.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 5.5,
+      "set": "meja makan rumah terang, jarum raksasa vs sendok",
+      "tebe": "kaget"
+    },
+    {
+      "no": 7,
+      "narasi": "Terus pas diuji tanpa dikasih tahu mana yang micin, reaksinya nggak KONSISTEN. Ada yang malah bereaksi ke yang PALSU.",
+      "teks_layar": "NGGAK KONSISTEN",
+      "visual": "A calm modern testing room with soft blue walls; volunteers sit at a long table with two identical bowls of soup marked only by a circle and a triangle; one volunteer clutches his neck dramatically while eating from the plain bowl; Tebe, holding a clipboard, tilts his head and makes a tick mark; camera slides along the table, no written text.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.0,
+      "set": "ruang uji tersamar modern, dinding biru lembut",
+      "tebe": "mencatat"
+    },
+    {
+      "no": 8,
+      "narasi": "Kini komite ahli FAO-WHO menaruh micin di kategori bahaya RENDAH. FDA menyebutnya umumnya diakui aman. BPOM mengizinkannya, dengan batas yang DIATUR.",
+      "teks_layar": "FAO-WHO · FDA · BPOM",
+      "visual": "A tidy archive office with tall shelves of folders in warm afternoon light; three big round rubber stamps drop one after another onto a single folder on the desk with satisfying thumps (stamp faces shown as plain abstract symbols, no letters); Tebe nods thoughtfully with a hand on his chin; camera tilts down with each stamp.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.5,
+      "set": "ruang arsip lembaga, sore hangat",
+      "tebe": "berpikir"
+    },
+    {
+      "no": 9,
+      "narasi": "Lucunya, glutamat micin secara kimia SAMA dengan yang ada di tomat dan keju. Jadi cap itu warisan tebakan, plus tikus yang DISUNTIK. Dan ternyata, memang begitu. Siapa yang pertama ngatain kamu 'generasi micin'?",
+      "teks_layar": "SAMA KAYAK TOMAT",
+      "visual": "A bright cheerful kitchen counter with a ripe red tomato, a wedge of cheese, and a small pile of MSG crystals; identical simple glowing molecule shapes float up from all three and line up as twins; Tebe stares in surprise, then grins and points at the viewer as if asking; camera slowly pulls back to a wide shot.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 13.5,
+      "set": "meja dapur terang (tomat, keju, micin)",
+      "tebe": "bangga"
+    }
+  ]
+}

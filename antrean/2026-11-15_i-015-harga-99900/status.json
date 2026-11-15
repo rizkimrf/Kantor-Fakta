@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "I-015 harga 99900",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -14,6 +14,12 @@
       "oleh": "Raka (marketing)",
       "waktu": "2026-11-15",
       "hasil": "LANJUT, skor 16/20, slot Sen 16 Nov 18.00 WITA. rencana_marketing.md + seo.md selesai."
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook (tes otak): 'Harga sembilan puluh sembilan ribu sembilan ratus, atau seratus ribu. Mana TERASA lebih murah?' Judul: 'Kenapa Harga Rp 99.900 Terasa Murah? Coba Tes Otakmu'. 8 adegan, 141 kata, ±63 dtk, 1 klip. Skor naskah 9/9, skor viral 9/10. Twist meta-analisis 69 studi (efek kecil/nyaris nol); tanpa nasihat belanja, tanpa mitos kasir. Lanjut ke cek_seo (Raka)."
     }
   ],
   "masalah": null

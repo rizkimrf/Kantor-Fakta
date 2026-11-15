@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "I-008 mitos micin bikin bodoh",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -14,6 +14,12 @@
       "oleh": "Raka (marketing)",
       "waktu": "2026-11-15",
       "hasil": "LANJUT, skor 18/20, slot Rab 18 Nov 12.00 WITA. rencana_marketing.md + seo.md selesai."
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook cerita-asal (skor 9): 'Micin bikin bodoh? Semua bermula dari satu surat yang cuma menebak.' Judul: 'Micin Bikin Bodoh? Awalnya dari Surat yang Cuma Menebak'. Thumbnail: MICIN BIKIN BODOH? (tanpa '1 SURAT', arahan Bos). 9 adegan, 168 kata (±72 dtk), 1 klip. Skor naskah 9/9, viral 9/10. Tanpa dosis/nasihat; lembaga disebut apa adanya; surat tidak disebut hoaks."
     }
   ],
   "masalah": null

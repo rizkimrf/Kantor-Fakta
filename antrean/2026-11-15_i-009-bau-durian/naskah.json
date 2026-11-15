@@ -1,0 +1,150 @@
+{
+  "format": "shorts",
+  "judul": "Kenapa Durian Bau Banget? Jawabannya Ada di DNA-nya",
+  "judul_opsi": [
+    "Kenapa Durian Bau Banget? Jawabannya Ada di DNA-nya",
+    "Kenapa Durian Bau? Ada 4 Pabrik Bau di DNA-nya",
+    "Pantas Satu Pesawat Protes: Rahasia Bau Durian"
+  ],
+  "thumbnail_teks": "KENAPA DURIAN BAU BANGET?",
+  "thumbnail_visual": "Extreme close-up of a giant spiky durian filling almost the whole frame, cracked open at the top with creamy yellow flesh, four tiny factory chimneys sticking out of the flesh puffing thick lime-green stink clouds; far below in the bottom corner a tiny Tebe pinches his nose with wide shocked eyes and an open mouth, showing the huge scale; dominant lime green and durian yellow against a deep teal sky (different from the warm dusk tones of the last cover), strong contrast, empty space in the top third for text.",
+  "deskripsi": "Kenapa durian bau banget? Peneliti yang membaca DNA durian Musang King menemukan durian punya empat salinan gen pembuat senyawa belerang, dan gen itu paling aktif saat buahnya matang. Kejutannya: durian satu keluarga (Malvaceae) dengan kakao dan kapas.\n\nSumber:\n- Teh dkk., Nature Genetics 2017: https://www.nature.com/articles/ng.3972\n- Nature News, How the durian got its sulfuric stench: https://www.nature.com/news/how-the-durian-got-its-sulfuric-stench-1.22785\n- Reuters via SBS, Scientists crack smelly durian's DNA code: https://www.sbs.com.au/news/article/scientists-crack-smelly-durians-dna-code/f0t8x2whc\n- phys.org (rilis Duke-NUS): https://phys.org/news/2017-10-durian-fruit-cancer-scientists-genome.html\n- BioTechniques: https://biotechniques.com/molecular-biology/oh-king-durian-where-did-you-get-your-scent\n- Li, Schieberle & Steinhaus, J. Agric. Food Chem. 2012: https://portal.fis.leibniz-lsb.tum.de/en/publications/characterization-of-the-major-odor-active-compounds-in-thai-duria-4/\n- Britannica, durian: https://www.britannica.com/plant/durian · Britannica, cacao: https://www.britannica.com/plant/cacao\n- CNN Indonesia (Sriwijaya Air 2018): https://www.cnnindonesia.com/nasional/20181106141632-20-344360/sriwijaya-luruskan-kabar-pesawat-angkut-3-ton-durian · The Jakarta Post: https://www.thejakartapost.com/news/2018/11/06/smell-of-durian-delays-flight-after-passengers-protest\n\n#Shorts #Durian #FaktaSains",
+  "caption_komentar": "Fakta bonus: dulu buku pelajaran memasukkan durian ke famili randu-randuan (Bombacaceae). Sekarang famili itu sudah digabung ke Malvaceae, keluarga yang sama dengan kakao dan kapas. Jujur, kamu tim durian atau tim tutup hidung?",
+  "caption_tiktok": "Kenapa durian bau banget? Ternyata DNA-nya punya empat \"pabrik bau\" yang baru ngebut pas buahnya matang. Tonton sampai akhir, durian ternyata satu keluarga sama cokelat. Kamu tim durian atau tim tutup hidung?\n#kenapadurianbau #durian #faktasains #faktaunik #TernyataBegitu",
+  "caption_instagram": "Bau durian ternyata \"tertulis\" di DNA-nya: empat salinan gen pembuat bau belerang yang paling aktif saat buah matang. Dan si raja buah ini satu keluarga dengan kakao dan kapas.\nKirim ke teman yang selalu protes tiap ada durian di mobil. Kamu tim durian atau tim tutup hidung?\n#durian #faktasains #faktaunik #musimdurian #TernyataBegitu",
+  "tag": ["kenapa durian bau", "penyebab bau durian", "bau durian", "gen durian", "durian satu keluarga cokelat", "durian di pesawat", "musang king", "fakta sains", "fakta unik", "ternyata begitu"],
+  "pola_hook": "angka aneh (pertanyaan warung + angka: 'empat pabrik bau')",
+  "hook_kandidat": [
+    {"teks": "Kenapa durian bau BANGET? Ternyata DNA-nya punya EMPAT pabrik bau.", "skor": 9, "alasan": "Gabungan pertanyaan warung (frasa populer 'bau banget', kata kunci di kata ke-1–3) dengan pola angka usulan Raka. 'Pabrik bau' bahasa awam, bukan istilah ahli; angkanya bikin penasaran 'kok empat?'. Beda dari pola kamu-salah + sensasi indra. TERPILIH."},
+    {"teks": "Durian punya empat pabrik bau di DNA-nya.", "skor": 8, "alasan": "Usulan asli Raka. Padat dan berpola angka, tapi kata kunci 'kenapa durian bau' tidak utuh dan kurang terdengar seperti omongan sehari-hari."},
+    {"teks": "Kenapa sih durian baunya separah itu?", "skor": 8, "alasan": "Usulan arah kreatif. Bahasa masyarakat paling kuat, tapi tanpa angka/janji jawaban, jadi kurang memberi alasan menunggu."},
+    {"teks": "Satu durian pernah bikin satu pesawat protes. Ini sebabnya.", "skor": 8, "alasan": "Konsekuensi nyata dan lucu, tapi kata kunci terlambat dan membakar sudut Indonesia di detik pertama."},
+    {"teks": "Durian itu saudara cokelat. Terus kenapa baunya begini?", "skor": 7, "alasan": "Kontradiksi kuat, tapi membakar kejutan kedua di awal."},
+    {"teks": "Bau durian itu bukan busuk. Itu disengaja DNA-nya.", "skor": 6, "alasan": "Pola kamu-salah, sama dengan video lalu; 'disengaja' juga terlalu mutlak."},
+    {"teks": "Yang bikin durian bau? Empat koki di dalam DNA-nya.", "skor": 7, "alasan": "Visual kuat, tapi metafora 'koki' butuh penjelasan dulu baru lucu."},
+    {"teks": "Tim durian atau tim tutup hidung? DNA-nya punya jawaban.", "skor": 7, "alasan": "Memancing kubu, tapi jawabannya kabur dan kata kunci tidak utuh."},
+    {"teks": "Ilmuwan kanker pernah meneliti durian. Hasilnya bikin hidung protes.", "skor": 6, "alasan": "Detail ahli/unik, cocok untuk isi, bukan hook (aturan Bos: bahasa masyarakat dulu)."},
+    {"teks": "Makin matang durianmu, makin ngebut pabrik baunya.", "skor": 6, "alasan": "Benar dan menarik, tapi tanpa konteks penonton belum tahu ada 'pabrik'."}
+  ],
+  "peta_retensi": "0–4,3 dtk → HOOK pertanyaan warung + angka ('empat pabrik bau'), kata kunci 'kenapa durian bau' di kata pertama, visual kamera menyelam ke dalam durian (klip)\n4,3–6,7 dtk → intro khas 2,4 dtk (pattern interrupt)\n6,7–13 dtk → TARUHAN nyata Indonesia: pesawat Sriwijaya Air tertunda sampai durian diturunkan (ganti set ke kabin pesawat)\n13–19 dtk → OPEN LOOP 'siapa yang membongkar?' + canda: ilmuwan KANKER yang cinta durian (set lab)\n19–26,5 dtk → payoff janji angka: empat salinan gen belerang vs tumbuhan lain satu atau dua (set untai DNA)\n26,5–34 dtk → celah baru 'anehnya…': empat koki baru NGEBUT pas buah matang (set dapur di dalam buah)\n34–41,5 dtk → kenapa ada yang suka dan benci: surga vs got (layar terbelah = pattern interrupt)\n41,5–47 dtk → 'Buat apa?' + jujur: peneliti MENDUGA memanggil hewan (set hutan malam, nada berbisik)\n47–53 dtk → KEJUTAN KEDUA: satu keluarga dengan kakao, kerabat terdekatnya KAPAS (klip pohon keluarga, Tebe kaget = reaksi 2)\n53–62,5 dtk → PAYOFF + lingkaran: raja buah = saudara jauh cokelat dan kaus katunmu, kalimat khas, pertanyaan kubu 'tim durian atau tim tutup hidung?'",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 2, "bahasa_lisan": 1, "payoff": 1, "total": 9},
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "Pertanyaan yang semua orang pernah ucapkan + angka 'empat pabrik' yang tidak terduga."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'bau busuk biasa' ke gen yang ngebut saat matang, lalu ke 'saudara cokelat dan kapas'."},
+    "retensi": {"skor": 2, "alasan": "Celah baru tiap ±6–8 dtk: pesawat → ilmuwan kanker → empat salinan → ngebut pas matang → surga/got → diduga → keluarga."},
+    "layak_dibagikan": {"skor": 2, "alasan": "Musim durian + 'durian saudara cokelat' gampang dikirim ke grup keluarga."},
+    "pemicu_komentar": {"skor": 1, "alasan": "Pertanyaan kubu memancing jawaban cepat, tapi belum memancing tonton ulang."},
+    "total": 9
+  },
+  "pelafalan": {
+    "DNA": "de-en-a",
+    "Sriwijaya Air": "sriwijaya er",
+    "Musang King": "musang king",
+    "kakao": "ka-ka-o"
+  },
+  "seo": {
+    "kata_kunci_utama": "kenapa durian bau",
+    "kata_kunci_turunan": ["penyebab bau durian", "durian satu keluarga cokelat", "gen durian", "durian di pesawat", "bau durian"]
+  },
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Kenapa durian bau BANGET? Ternyata DNA-nya punya EMPAT pabrik bau.",
+      "teks_layar": "KENAPA DURIAN BAU BANGET?",
+      "visual": "Fast camera dive from a spiky durian on a roadside durian stall at dusk straight into its creamy yellow flesh, revealing four tiny factory chimneys puffing thick lime-green stink clouds; a shrunken Tebe stands between the chimneys pinching his nose with wide shocked eyes.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 4.3,
+      "set": "dalam daging durian: empat cerobong pabrik bau",
+      "tebe": "kaget, menutup hidung"
+    },
+    {
+      "no": 2,
+      "narasi": "Baunya bisa bikin PESAWAT tertunda. Penumpang Sriwijaya Air dari Bengkulu pernah protes, sampai duriannya DITURUNKAN.",
+      "teks_layar": "PESAWAT TERTUNDA",
+      "visual": "Interior of a generic unbranded passenger airplane cabin at night, faceless silhouette passengers in their seats fanning their noses as a faint green scent cloud seeps out of the cargo hold vents; Tebe sits in an aisle seat holding his nose and glancing at the viewer; camera tracks slowly down the aisle.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.5,
+      "set": "kabin pesawat penumpang (tanpa logo maskapai)",
+      "tebe": "menutup hidung, melirik penonton"
+    },
+    {
+      "no": 3,
+      "narasi": "Peneliti Singapura membaca DNA durian Musang King. Lucunya, mereka ilmuwan KANKER yang cinta durian.",
+      "teks_layar": "ILMUWAN KANKER?",
+      "visual": "A clean modern genetics lab at night with a city skyline glowing through the window; two friendly scientist silhouettes in lab coats happily hug a big durian beside a DNA sequencing machine; Tebe peeks from behind the machine, grinning; camera slowly pushes in.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.1,
+      "set": "lab genetika malam dengan kaca jendela kota",
+      "tebe": "geli, mengintip"
+    },
+    {
+      "no": 4,
+      "narasi": "Mereka nemu gen pembuat bau BELERANG. Durian punya empat salinan, tumbuhan lain umumnya cuma satu atau dua.",
+      "teks_layar": "4 SALINAN",
+      "visual": "Inside a glowing plant cell, a giant double-helix DNA strand with four identical segments lit up in yellow, each puffing a small green cloud, next to a dimmer strand from another plant with only one or two lit segments; Tebe counts on his fingers; camera pans along the helix.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.4,
+      "set": "dalam sel tumbuhan: untai DNA raksasa bercahaya",
+      "tebe": "menghitung dengan jari"
+    },
+    {
+      "no": 5,
+      "narasi": "Bayangin empat KOKI memotong zat belerang di daging buah jadi gas. Anehnya, mereka baru NGEBUT pas buahnya matang.",
+      "teks_layar": "NGEBUT PAS MATANG",
+      "visual": "A cozy cartoon kitchen built inside ripe durian flesh; four simple round blob-shaped chefs chop glowing yellow droplets into little green gas puffs; as the flesh turns a deeper ripe yellow they speed up wildly; Tebe fans his face, amazed; camera does a quick zoom in.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.8,
+      "set": "dapur mungil di dalam daging durian matang",
+      "tebe": "takjub, mengipas muka"
+    },
+    {
+      "no": 6,
+      "narasi": "Campurannya: belerang mirip telur busuk, plus aroma BUAH. Makanya ada yang nyium surga, ada yang nyium GOT.",
+      "teks_layar": "SURGA ATAU GOT?",
+      "visual": "Split screen: the left half is a dreamy pastel garden with sparkles and fruit, the right half a murky street gutter with buzzing flies; one scent cloud flows down the middle, half pink and half green; Tebe stands on the dividing line, smiling on one side and grimacing on the other; camera slides from left to right.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.4,
+      "set": "layar terbelah: taman pastel vs selokan",
+      "tebe": "bingung, dua ekspresi"
+    },
+    {
+      "no": 7,
+      "narasi": "Buat apa? Peneliti MENDUGA, baunya memanggil hewan untuk makan buah dan menyebarkan bijinya.",
+      "teks_layar": "DIDUGA",
+      "visual": "Night rainforest floor under a tall durian tree; a fallen, split-open durian glows faintly, wavy scent lines drifting into the dark where vague, unidentifiable animal silhouettes with glowing eyes slowly approach; Tebe crouches behind a fern with a finger on his lips; camera slowly cranes down.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 5.7,
+      "set": "lantai hutan hujan malam di bawah pohon durian",
+      "tebe": "berbisik, jari di bibir"
+    },
+    {
+      "no": 8,
+      "narasi": "Kejutannya: durian satu KELUARGA dengan kakao, bahan cokelat. Menurut analisis genom, kerabat terdekatnya malah KAPAS.",
+      "teks_layar": "SAUDARA COKELAT?!",
+      "visual": "A giant family tree grows rapidly out of a sunny forest clearing; on its branches pop up a durian, a cacao pod and a fluffy cotton boll, with the cotton boll on the branch closest to the durian; Tebe jumps back in shock, his hair curl flipping from a question mark to an exclamation mark; camera tilts up following the growing tree.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 6.1,
+      "set": "hutan siang dengan pohon keluarga raksasa",
+      "tebe": "kaget, jambul berubah ? ke !"
+    },
+    {
+      "no": 9,
+      "narasi": "Jadi raja buah bau itu saudara jauh cokelat dan kaus katunmu. Dan ternyata, memang begitu. Kamu tim durian, atau tim tutup hidung?",
+      "teks_layar": "TIM DURIAN?",
+      "visual": "A roadside durian stall at night under warm string bulbs, piles of durians, a mug of hot cocoa and a folded cotton t-shirt on the wooden table; Tebe holds a durian in one hand and pinches his nose with the other, then shrugs playfully at the viewer; camera slowly pulls back.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 9.6,
+      "set": "lapak durian pinggir jalan malam",
+      "tebe": "geli, mengangkat bahu ke penonton"
+    }
+  ]
+}

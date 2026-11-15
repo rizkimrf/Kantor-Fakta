@@ -1,0 +1,154 @@
+{
+  "format": "shorts",
+  "judul": "Asal Nama Indonesia: Ditulis Orang Inggris di Singapura",
+  "judul_opsi": [
+    "Asal Nama Indonesia: Ditulis Orang Inggris di Singapura",
+    "Nama Indonesia Pertama Ditulis di Singapura, Tahun 1850",
+    "Indonesia Hampir Bernama Malayunesia, Ini Ceritanya"
+  ],
+  "thumbnail_teks": "INDONESIA BUKAN DARI KITA?",
+  "thumbnail_visual": "Mystery mood: an old leather-bound 19th-century journal lies open on a dark wooden desk, lit only by a single candle flame; a feather quill is frozen mid-stroke above the page with a fresh wet ink line glowing gold (the written word added later as overlay), dust floating in the candle light, a faint archipelago map silhouette in the shadows behind; no mascot on this cover (per creative brief); dominant amber and sepia against a near-black vignette background (different from the lime-green and yellow-red covers), strong contrast, empty space in the top third for text.",
+  "deskripsi": "Asal nama Indonesia ternyata bukan dari tokoh pergerakan. George Earl mengusulkan \"Indu-nesians\" (dan lebih condong ke \"Malayunesians\"), lalu James Logan yang pertama menulis kata \"Indonesia\" di jurnal ilmiah terbitan Singapura tahun 1850 sebagai label geografi. Pelajar Hindia di Belanda kemudian merebutnya jadi nama politik, dan Sumpah Pemuda 1928 menguncinya.\n\nSumber:\n- Russell Jones, \"Earl, Logan and 'Indonesia'\", Archipel 6 (1973): https://www.youscribe.com/catalogue/documents/savoirs/earl-logan-and-indonesia-article-n-1-vol-6-pg-93-118-1015659\n- Chris Ballard dalam Foreign Bodies (ANU E Press 2008): https://press.anu.edu.au/downloads/press/p53561/mobile/ch03s03.html\n- NLB Singapore, BiblioAsia \"Logan's Journal\": https://biblioasia.nlb.gov.sg/vol-11/issue-4/jan-mar-2016/indian-archipelago-eastern-asia-logan-journal/\n- NLB Infopedia, James Richardson Logan: https://eresources.nlb.gov.sg/infopedia/articles/SIP_1146_2009-10-27.html\n- Republika, \"Asal Mula Nama Indonesia\" (2019): https://news.republika.co.id/berita/pwdls2458/asal-mula-nama-indonesia\n- CNN Indonesia, Sejarah Sumpah Pemuda: https://www.cnnindonesia.com/edukasi/20241015133233-569-1155508/sejarah-sumpah-pemuda-28-oktober-dan-isi-teksnya\n\n#Shorts #AsalNamaIndonesia #SejarahIndonesia",
+  "caption_komentar": "Fakta bonus: George Earl sebenarnya lebih condong ke \"Malayunesians\". Kalau usulan favoritnya yang menang, mungkin kita orang \"Malayunesia\" (ini andaian ya). Kamu lebih suka yang mana: Indonesia atau Malayunesia?",
+  "caption_tiktok": "Asal nama Indonesia dari mana? Yang pertama nulis ternyata bukan orang kita, dan namanya hampir jadi lain. Tonton sampai akhir, bagian pelajar yang merebut nama itu bikin merinding. Indonesia atau Malayunesia, kamu pilih mana?\n#asalnamaindonesia #sejarahindonesia #faktaunik #sejarah #TernyataBegitu",
+  "caption_instagram": "Nama \"Indonesia\" pertama ditulis di jurnal ilmiah terbitan Singapura, awalnya cuma label geografi. Pelajar kita di Belanda yang merebutnya jadi nama perjuangan, lalu Sumpah Pemuda menguncinya.\nSimpan dan kirim ke teman yang suka sejarah. Indonesia atau Malayunesia, kamu pilih mana?\n#asalnamaindonesia #sejarahindonesia #sumpahpemuda #faktaunik #TernyataBegitu",
+  "tag": ["asal nama indonesia", "sejarah nama indonesia", "siapa yang menciptakan nama indonesia", "arti kata indonesia", "earl dan logan", "malayunesia", "sumpah pemuda", "sejarah indonesia", "fakta unik", "ternyata begitu"],
+  "pola_hook": "pertanyaan teka-teki ('siapa yang pertama menulis?' + jawaban setengah: 'bukan orang kita')",
+  "hook_kandidat": [
+    {"teks": "Asal nama Indonesia dari mana, sih? Yang pertama nulis, ternyata BUKAN orang kita.", "skor": 9, "alasan": "Teka-teki usulan Raka dalam bahasa warung ('nama Indonesia dari mana?' ada di daftar bahasa populer). Kata kunci di 3 kata pertama, jawaban sengaja setengah agar penonton menunggu 'terus siapa?'. Tanpa tahun di hook (aturan Bos). TERPILIH."},
+    {"teks": "Nama \"Indonesia\" ternyata bukan bikinan orang Indonesia. Terus siapa?", "skor": 8, "alasan": "Usulan arah kreatif, kuat, tapi berpola kamu-salah yang dekat dengan video lalu."},
+    {"teks": "Siapa yang pertama menulis nama Indonesia? Bukan orang kita.", "skor": 8, "alasan": "Usulan Raka, padat, tapi kata kunci 'asal nama Indonesia' tidak utuh."},
+    {"teks": "Nama negaramu ditulis pertama kali oleh orang Inggris, di Singapura.", "skor": 8, "alasan": "Usulan aman Laras, mengejutkan, tapi membuka semua kartu di detik pertama."},
+    {"teks": "Kita hampir jadi orang Malayunesia. Serius.", "skor": 7, "alasan": "Lucu dan aneh, tapi kata 'Malayunesia' belum dikenal; lebih kuat sebagai kejutan di isi."},
+    {"teks": "Nama Indonesia lahir di catatan kaki jurnal.", "skor": 6, "alasan": "Detail paling unik, tapi status 'catatan kaki' belum dicocokkan ke pindaian (Laras). Ditunda."},
+    {"teks": "Kalau tiap kamu teriak 'Indonesia!' di GBK, kamu lagi ngucapin kata buatan orang asing.", "skor": 7, "alasan": "Konsekuensi personal kuat, tapi kepanjangan (15 kata) dan nadanya bisa terasa merendahkan."},
+    {"teks": "Seribu delapan ratus lima puluh, sebuah jurnal di Singapura menulis satu kata baru.", "skor": 5, "alasan": "In medias res dengan tahun: detail ahli di hook (dilarang aturan Bos), lambat."},
+    {"teks": "Kenapa negara kita namanya Indonesia, bukan Nusantara?", "skor": 6, "alasan": "Pertanyaan warung, tapi 'Nusantara' belum diverifikasi Laras untuk dibahas."},
+    {"teks": "Yang kasih nama negaramu, makamnya di Malaysia.", "skor": 6, "alasan": "Kejutan cadangan, tapi bisa memancing ejekan antarnegara dan kredit 'pencipta' masih diperdebatkan."}
+  ],
+  "peta_retensi": "0–5,7 dtk → HOOK teka-teki dalam bahasa warung, kata kunci 'asal nama Indonesia' di kata pertama, jawaban setengah 'bukan orang kita' (klip pena bulu + stempel + kamera mundur ke peta)\n5,7–8,1 dtk → intro khas 2,4 dtk (pattern interrupt)\n8,1–15 dtk → jawaban pertama: orang Inggris, jurnal Singapura, seribu delapan ratus lima puluh + OPEN LOOP 'namanya hampir BEDA' (set pelabuhan 1850)\n15–20,3 dtk → 'kok bisa?': nama wilayah kita dulu panjang dan ganti-ganti (set ruang peta kusut, Tebe terlilit pita = canda visual)\n20,3–27,3 dtk → rumus Yunani Indos + nesos (klip kepingan puzzle menyatu = momen 'wah')\n27,3–35 dtk → BAYAR open loop: Earl condong ke Malayunesians, 'kita mungkin orang MALAYUNESIA' (Tebe kaget = reaksi 1)\n35–41,5 dtk → Logan yang pertama menulis 'Indonesia' + debat jujur 'sejarawan masih DEBAT' (Tebe jadi wasit = reaksi 2)\n41,5–49,3 dtk → KEJUTAN KEDUA yang emosional: label geografi direbut pelajar kita di Belanda karena 'Hindia Belanda' nama penjajah (ganti suasana ke hangat)\n49,3–55,4 dtk → Sumpah Pemuda seribu sembilan ratus dua puluh delapan mengunci (haru)\n55,4–65 dtk → PAYOFF hook: lahir di jurnal orang asing, kita yang menjadikannya milik kita; kalimat khas; pertanyaan pilihan 'Indonesia atau Malayunesia?' (lingkaran ke kejutan Earl)",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 2, "bahasa_lisan": 1, "payoff": 1, "total": 9},
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "Pertanyaan yang semua orang pernah pikirkan, ditutup jawaban setengah yang menggelitik identitas."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'pasti ciptaan tokoh bangsa' ke 'ditulis orang Inggris di Singapura' lalu 'hampir Malayunesia'."},
+    "retensi": {"skor": 1, "alasan": "Celah tiap ±7 dtk, tapi adegan 3 (nama panjang) sedikit datar; ditolong canda visual Tebe terlilit pita."},
+    "layak_dibagikan": {"skor": 2, "alasan": "Menyentuh identitas dan bangga, gampang dikirim ke grup keluarga/kelas."},
+    "pemicu_komentar": {"skor": 2, "alasan": "Pilihan 'Indonesia atau Malayunesia' memancing kubu dan tonton ulang bagian Earl."},
+    "total": 9
+  },
+  "pelafalan": {
+    "George Earl": "jorj erl",
+    "James Logan": "jeims lo-gen",
+    "Indu-nesians": "in-du-ni-syens",
+    "Malayunesians": "ma-la-yu-ni-syens",
+    "Malayunesia": "ma-la-yu-ne-sia",
+    "Indos": "in-dos",
+    "nesos": "ne-sos"
+  },
+  "seo": {
+    "kata_kunci_utama": "asal nama Indonesia",
+    "kata_kunci_turunan": ["siapa yang menciptakan nama Indonesia", "sejarah nama Indonesia", "Earl dan Logan Indonesia", "Malayunesia", "arti kata Indonesia"]
+  },
+  "catatan_fakta": "Kutipan Inggris Logan TIDAK dipakai (hanya parafrase 'label geografi'). 'Catatan kaki' dan 'halaman 254' tidak dipakai sampai pindaian BHL dicocokkan. Kredit dirumuskan aman: Earl mengusulkan, Logan yang pertama menulis, sejarawan masih debat. 'Malayunesia' sebagai nama wilayah disebut sebagai andaian ('mungkin').",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Asal nama Indonesia dari mana, sih? Yang pertama nulis, ternyata BUKAN orang kita.",
+      "teks_layar": "NAMA INDONESIA DARI MANA?",
+      "visual": "Candle-lit 19th-century writing desk at night; a feather quill writes a single word on the page of an old printed journal (word added later as overlay), a heavy ink stamp slams down beside it, then the camera pulls back fast through the window to reveal a glowing map of the archipelago below; Tebe peeks over the desk edge with wide eyes.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 5.7,
+      "set": "meja tulis abad ke-19 diterangi lilin",
+      "tebe": "kaget, mengintip dari tepi meja"
+    },
+    {
+      "no": 2,
+      "narasi": "Pelakunya orang INGGRIS, di jurnal terbitan Singapura, tahun seribu delapan ratus lima puluh. Dan namanya hampir BEDA.",
+      "teks_layar": "SINGAPURA, 1850",
+      "visual": "A busy 1850s harbour town with tall sailing ships, white warehouses and a small printing shop by the waterfront in soft morning light; a stack of freshly printed journals rides on a hand cart; Tebe in a tiny explorer hat walks beside the cart; camera tracks to the right.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.9,
+      "set": "pelabuhan kota tahun 1850-an, pagi",
+      "tebe": "penasaran, berjalan di samping gerobak"
+    },
+    {
+      "no": 3,
+      "narasi": "Dulu wilayah kita namanya panjang dan ganti-ganti. Ilmuwan butuh satu nama PENDEK.",
+      "teks_layar": "BUTUH NAMA PENDEK",
+      "visual": "A cluttered old map room where many long blank banner ribbons tangle around a globe and an island map, unrolling and swapping places; Tebe is wrapped up in the ribbons, struggling and rolling his eyes; camera spins slowly around him.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 5.3,
+      "set": "ruang peta kuno yang kusut oleh pita nama",
+      "tebe": "kewalahan, terlilit pita"
+    },
+    {
+      "no": 4,
+      "narasi": "Mereka pakai bahasa YUNANI, niru Polinesia. Indos itu India, nesos itu PULAU. Pulau-pulau India.",
+      "teks_layar": "INDOS + NESOS",
+      "visual": "Sunny classical Greek-style courtyard with white columns; two glowing puzzle pieces float in, one showing a simple India-shaped silhouette and one showing a small island icon, and they click together into one piece with a burst of light; Tebe claps excitedly; camera pushes in on the joining pieces.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 6.1,
+      "set": "halaman bergaya Yunani klasik bertiang putih",
+      "tebe": "takjub, bertepuk tangan"
+    },
+    {
+      "no": 5,
+      "narasi": "George Earl ngusulin Indu-nesians atau Malayunesians, dan condong ke yang KEDUA. Kalau itu menang, kita mungkin orang MALAYUNESIA.",
+      "teks_layar": "MALAYUNESIA?!",
+      "visual": "A Victorian study with two blank wooden name signs on easels; a scholar seen only from behind (no recognisable face) leans toward the second sign; Tebe gasps and hugs the first sign protectively; camera whip-pans between the two signs.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.8,
+      "set": "ruang kerja era Victoria dengan dua papan nama",
+      "tebe": "kaget, memeluk papan pertama"
+    },
+    {
+      "no": 6,
+      "narasi": "Tapi rekannya, James Logan, yang pertama MENULIS kata Indonesia. Siapa penciptanya? Sejarawan masih DEBAT.",
+      "teks_layar": "SIAPA PENCIPTANYA?",
+      "visual": "An editor's desk piled with printing proofs; two shadowy scholar silhouettes on either side gently tug a single glowing journal page in a friendly tug-of-war; Tebe sits in the middle like a referee with a whistle, shrugging; camera slowly circles the desk.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.5,
+      "set": "meja editor jurnal penuh lembar cetakan",
+      "tebe": "jadi wasit, mengangkat bahu"
+    },
+    {
+      "no": 7,
+      "narasi": "Awalnya cuma label GEOGRAFI. Sampai pelajar kita di Belanda merebutnya, karena Hindia Belanda itu nama PENJAJAH.",
+      "teks_layar": "DIREBUT PELAJAR",
+      "visual": "A dusty European library shelf where a thin old journal sleeps under cobwebs; a young student in 1920s clothing pulls it off the shelf, blows away the dust and holds it up proudly, rainy canal houses visible through the window behind him; Tebe beside him raises a fist; camera racks focus from the shelf to the student.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.8,
+      "set": "rak perpustakaan Eropa berdebu, jendela kota kanal hujan",
+      "tebe": "semangat, mengepalkan tangan"
+    },
+    {
+      "no": 8,
+      "narasi": "Lalu Sumpah Pemuda, seribu sembilan ratus dua puluh delapan, menguncinya: tanah air, bangsa, bahasa INDONESIA.",
+      "teks_layar": "1928",
+      "visual": "A simple 1920s meeting hall with wooden chairs and a lectern, young men and women in period clothing standing together, warm light pouring through tall windows, a plain banner without text above them; Tebe stands among them with his hand on his chest, moved; camera slowly cranes up.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.1,
+      "set": "aula pertemuan pemuda tahun 1920-an",
+      "tebe": "haru, tangan di dada"
+    },
+    {
+      "no": 9,
+      "narasi": "Jadi lahirnya di jurnal orang asing, tapi kita yang menjadikannya MILIK kita. Dan ternyata, memang begitu. Indonesia atau Malayunesia, kamu pilih mana?",
+      "teks_layar": "PILIH MANA?",
+      "visual": "A packed stadium stand at night, crowds in red cheering and waving scarves under bright floodlights; Tebe in the front row cheers with both arms raised, then turns to the viewer and tilts his head with a playful questioning look; camera pulls back to reveal the whole crowd.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 9.6,
+      "set": "tribun stadion malam penuh suporter",
+      "tebe": "bangga, lalu bertanya ke penonton"
+    }
+  ]
+}
