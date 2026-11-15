@@ -137,6 +137,9 @@ for st_path in sorted((ROOT / "antrean").glob("*/status.json")):
             continue  # sudah terbit, atau gagal 2x -> dilaporkan ke Bos, tidak dicoba terus
         if not all(os.environ.get(k) for k in kunci):
             terbit[nama] = {"catatan": "kunci belum diisi - unggah manual"}; continue
+        if nama == "youtube" and os.environ.get("YT_AUDIT_LOLOS", "").lower() != "ya":
+            # Sebelum audit YouTube lolos, video hasil API terkunci privat selamanya -> jangan diunggah otomatis.
+            terbit[nama] = {"catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"}; continue
         if nama != "youtube" and SEKARANG < jadwal - datetime.timedelta(minutes=15):
             continue  # TikTok & Instagram menunggu jamnya
         if CEK:
