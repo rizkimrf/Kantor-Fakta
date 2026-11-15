@@ -12,6 +12,9 @@ Rotasi konsep di bawah, dipilih yang paling cocok dengan ISI konten. Yang paling
 5. **Benda tak terduga** — benda sehari-hari Indonesia di tempat yang aneh.
 6. **Wajah reaksi + misteri** — Tebe besar bereaksi pada sesuatu yang separuh tersembunyi (di balik tirai, bayangan).
 
+## Teks sampul
+Pakai bahasa masyarakat yang sudah relate (sama dengan hook): "MICIN BIKIN BODOH?" lebih kuat daripada "GENERASI MICIN DARI 1 SURAT?". Fakta ahli disimpan untuk isi video.
+
 ## Tata letak
 - Teks: atas, y 250–520, maks 2 baris; kontur 14 px gelap; 1 kata berwarna aksen.
 - Subjek utama: tengah, mengisi 40–60% bingkai, boleh terpotong tepi (terasa dekat).

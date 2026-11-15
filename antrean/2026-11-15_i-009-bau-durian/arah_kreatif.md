@@ -1,7 +1,8 @@
 # Arah kreatif dari Bos/manajer (15 Nov 2026) — titik awal, boleh diperkuat tim
-- Pola hook: Angka mengejutkan
-- Usulan hook: "Durian punya empat salinan gen pembuat bau. Tumbuhan lain cuma satu atau dua."
-- Teks layar 0–3 dtk: 4X LIPAT GEN BAU
+> Revisi Bos: hook & sampul memakai bahasa yang sudah hidup di masyarakat (mis. "micin bikin bodoh?"), detail mengejutkan (surat 1968, gen, tahun 1850) disimpan untuk ISI video.
+- Pola hook: Pertanyaan yang semua orang pernah pikirkan
+- Usulan hook: "Kenapa sih durian baunya separah itu?"
+- Teks layar 0–3 dtk & judul sampul: KENAPA DURIAN BAU BANGET?
 - Visual 0–3 dtk: Kamera menyelam ke dalam durian, empat "cerobong pabrik" kecil menyemburkan asap bau hijau.
 - Sampul: Close-up raksasa — durian memenuhi layar (acuan: acuan_sampul.png — buat versi final sendiri, judul sampul boleh disesuaikan dengan hook final)
 - Posisi Tebe di sampul: Kecil di kejauhan (menunjukkan skala), menutup hidung

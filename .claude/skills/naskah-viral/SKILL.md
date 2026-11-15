@@ -7,6 +7,10 @@ Penonton memutuskan dalam 1–2 detik. Tugasmu: membuat mereka TIDAK BISA geser.
 
 ## Struktur Shorts (45–90 dtk, ±2,3 kata/dtk)
 1. **Hook 0–3 dtk — tugas nomor satu.** Penonton harus berhenti menggulir sebelum detik ke-3. Hook = kalimat + visual pembuka bekerja bersama.
+   - **Bahasa masyarakat dulu (keputusan Bos):** hook & judul sampul memakai kalimat yang SUDAH diucapkan/dicari orang Indonesia sehari-hari
+     — mitos, ejekan, pertanyaan warung, istilah viral ("micin bikin bodoh?", "generasi micin", "kenapa durian bau banget?").
+     Detail ahli yang belum dikenal orang (nama peneliti, "1 surat 1968", "4 salinan gen", tahun) TIDAK di hook/sampul — itu bahan kejutan di ISI video.
+     Uji: "Apakah teman tongkrongan saya pernah mengucapkan kalimat ini?" Kalau tidak, ganti. Cek daftar `panduan/bahasa-populer.md`.
    - Kalimat pertama ≤ 12 kata, kata kunci SEO terucap, langsung ke inti (tanpa "halo", "tahukah kamu", "di video ini").
    - Pakai salah satu pola dan putar terus (catat di `panduan/riwayat.md`, tidak sama dengan 5 video terakhir):
      **Kamu salah** ("Bau hujan yang kamu suka itu bukan bau air.") · **Mustahil tapi nyata** ("Komodo ini hamil tanpa pernah ketemu pejantan.") ·

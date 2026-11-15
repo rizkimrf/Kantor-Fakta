@@ -1,7 +1,8 @@
 # Arah kreatif dari Bos/manajer (15 Nov 2026) — titik awal, boleh diperkuat tim
-- Pola hook: Kamu salah
-- Usulan hook: "Ejekan "generasi micin" itu berawal dari satu surat dokter yang cuma menebak-nebak."
-- Teks layar 0–3 dtk: CUMA 1 SURAT?
+> Revisi Bos: hook & sampul memakai bahasa yang sudah hidup di masyarakat (mis. "micin bikin bodoh?"), detail mengejutkan (surat 1968, gen, tahun 1850) disimpan untuk ISI video.
+- Pola hook: Mitos yang semua orang percaya
+- Usulan hook: "Katanya micin bikin bodoh. Kamu percaya juga?"
+- Teks layar 0–3 dtk & judul sampul: MICIN BIKIN BODOH?
 - Visual 0–3 dtk: Surat bercap 1968 melayang jatuh ke mangkok bakso, butiran micin bertaburan slow-motion.
 - Sampul: Sebab–akibat — micin ditabur, surat 1968, otak bertanda tanya (acuan: acuan_sampul.png — buat versi final sendiri, judul sampul boleh disesuaikan dengan hook final)
 - Posisi Tebe di sampul: Kiri bawah, menghadap ke kanan, kaget

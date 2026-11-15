@@ -6,6 +6,11 @@ description: Cara Raka memilih ide, menyusun SEO, mengecek naskah, dan menyiapka
 ## Pilih ide (skor ≥15/20 lanjut)
 Penasaran 0–5 · relevan untuk 17–35 th Indonesia 0–5 · layak dibagikan 0–5 · momentum/tren/musim 0–5.
 
+## Bahasa populer (tugas tetap Raka)
+Pelihara `panduan/bahasa-populer.md`: frasa, mitos, ejekan, dan pertanyaan yang sedang dipakai orang Indonesia (kolom komentar TikTok/IG/YouTube,
+saran pencarian "kenapa…/apakah…", tren). Perbarui tiap Senin (+5–10 frasa) dan pasangkan dengan topik di bank ide.
+Saat memilih ide & cek SEO: pastikan hook/judul sampul memakai frasa dari daftar ini, bukan istilah ahli.
+
 ## seo.md (maks 15 baris)
 Kata kunci utama (cara orang Indonesia mengetik di pencarian) + 3 turunan · celah dari video pesaing · 3 sudut judul · alasan orang membagikan.
 

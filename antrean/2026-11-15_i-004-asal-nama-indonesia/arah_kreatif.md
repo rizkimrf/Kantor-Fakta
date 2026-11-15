@@ -1,7 +1,8 @@
 # Arah kreatif dari Bos/manajer (15 Nov 2026) — titik awal, boleh diperkuat tim
-- Pola hook: Mustahil tapi nyata
-- Usulan hook: "Nama "Indonesia" pertama kali ditulis orang Inggris — 78 tahun sebelum Sumpah Pemuda."
-- Teks layar 0–3 dtk: DITULIS ORANG INGGRIS?
+> Revisi Bos: hook & sampul memakai bahasa yang sudah hidup di masyarakat (mis. "micin bikin bodoh?"), detail mengejutkan (surat 1968, gen, tahun 1850) disimpan untuk ISI video.
+- Pola hook: Kamu salah
+- Usulan hook: "Nama "Indonesia" ternyata bukan bikinan orang Indonesia. Terus siapa?"
+- Teks layar 0–3 dtk & judul sampul: NAMA INDONESIA BUKAN DARI KITA?
 - Visual 0–3 dtk: Pena bulu menulis "Indonesia" di jurnal tua, stempel 1850 menghantam halaman, kamera mundur cepat memperlihatkan peta Nusantara.
 - Sampul: Misteri — gulungan jurnal disorot cahaya lilin (acuan: acuan_sampul.png — buat versi final sendiri, judul sampul boleh disesuaikan dengan hook final)
 - Posisi Tebe di sampul: Tidak ada (benda kuno lebih kuat sendiri)
