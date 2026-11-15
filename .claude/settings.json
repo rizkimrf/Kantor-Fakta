@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/*)",
+      "Bash(python3 scripts/*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git pull:*)",
+      "Bash(git push:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./client_secret*.json)",
+      "Read(./token.json)",
+      "Bash(env)",
+      "Bash(printenv:*)",
+      "Bash(git push --force:*)",
+      "Bash(rm -rf:*)"
+    ]
+  }
+}
