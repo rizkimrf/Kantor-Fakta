@@ -32,6 +32,14 @@ Suara harus jelas di speaker HP murah, tidak melelahkan, dan terasa seperti tema
 1. **Suara Bos sendiri.** Nadia menyiapkan `naskah_baca.txt` (naskah per adegan, tanda jeda `/`, kata yang ditekan dalam KAPITAL).
    Bos merekam di HP dalam satu kali baca. Yoga memotong per adegan berdasarkan jeda (ffmpeg silencedetect), membersihkan noise ringan, menyamakan volume (-14 LUFS).
 2. **Suara AI berkualitas tinggi** (ElevenLabs) bila rekaman Bos tidak ada.
+   **Suara resmi channel (dipilih Bos 15 Nov 2026): "Dakocan - Expressive, Cheerful and Clear"** (Voice Library, bahasa Indonesia),
+   model **Eleven v4**, stability 50, similarity 75. Akun ElevenLabs paket Starter (lisensi komersial).
+   Cara menulis teks untuk ElevenLabs (`naskah_suara.txt`, turunan dari `naskah_baca.txt`):
+   - Tag emosi v4 di depan kalimat: `[excited]` untuk hook & penutup, `[laughs]` setelah candaan, `[whispers]` untuk bocoran kejutan, `[curious]` untuk "Kok bisa?". Maksimal 5 tag per Shorts.
+   - Angka & singkatan ditulis seperti diucapkan: "2006" → "dua ribu enam", "ZZ" → "zet zet", "WW" → "we we". DNA boleh tetap "DNA".
+   - Jeda pakai "..." (bukan "/"); hapus tanda KAPITAL.
+   - Buat 2 versi, Bos/Pak Bima memilih yang terbaik. Suara ditaruh mengikuti waktu asli (jangan dipercepat); visual yang menyesuaikan suara.
+   - Wajib centang label "konten sintetis/AI" saat unggah (YouTube, TikTok, Instagram).
 3. Suara bawaan Windows/robot: hanya untuk uji internal, **tidak boleh ditayangkan**.
 
 ## Gaya narasi acuan — "ngobrol santai, bukan menggurui" (referensi dari Bos, 15 Nov 2026) — WAJIB
