@@ -1,0 +1,74 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Poppins;font-weight:100 900;src:url("../../aset/font/Poppins-Bold.ttf")}
+body{margin:0;background:#000}.f{position:relative;width:1080px;height:1920px;overflow:hidden}.a{position:absolute}
+.judul{position:absolute;left:24px;right:24px;top:250px;text-align:center;font:900 124px/1.0 Poppins,sans-serif;color:#fff;letter-spacing:-3px;-webkit-text-stroke:14px #14182a;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.35)}
+.merek{position:absolute;left:56px;top:1560px;display:flex;gap:10px;align-items:center;font:800 32px Poppins;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.7)}
+</style><script src="../../studio-aset/tebe-rig.js"></script></head><body><div id="o"></div><script>
+const tebe=(p,w,css='')=>`<div class="a" style="width:${w}px;filter:drop-shadow(0 20px 26px rgba(0,0,0,.4));${css}">${tebeRigSVG(p).replace('width="400" height="520"','width="100%" height="auto"')}</div>`;
+const vig=(k=.7)=>`<div class="a" style="inset:0;background:radial-gradient(ellipse at 50% 55%,rgba(0,0,0,0) 42%,rgba(0,0,0,${k}) 100%)"></div>`;
+const merek=`<div class="merek"><svg width="44" height="44" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#FFC93C" stroke="#1E1E1E" stroke-width="2.5"/><path d="M14 15 C14 8 27 8 26 15 C25.5 19 20 18.5 20 23" fill="none" stroke="#1E1E1E" stroke-width="3.6" stroke-linecap="round"/><circle cx="20" cy="29" r="2.3" fill="#1E1E1E"/></svg>TernyataBegitu</div>`;
+const svg=(isi)=>`<svg class="a" width="1080" height="1920" style="left:0;top:0;overflow:visible"><defs>
+ <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter><filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+ <radialGradient id="sorot" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF2C0" stop-opacity=".9"/><stop offset="1" stop-color="#FFF2C0" stop-opacity="0"/></radialGradient></defs>${isi}</svg>`;
+const judul=(a,b,w)=>`<div class="judul">${a}<br><span style="color:${w}">${b}</span></div>`;
+
+const C={
+// 1 SEBAB-AKIBAT: micin
+micin:()=>`<div class="f"><div class="a" style="inset:0;background:linear-gradient(#5a1d12,#b8461f 55%,#2b120b)"></div>
+ ${svg(`<g filter="url(#blur8)" opacity=".55"><rect x="0" y="900" width="1080" height="40" fill="#3b1a10"/><circle cx="180" cy="760" r="90" fill="#ffcf7a"/><circle cx="900" cy="700" r="70" fill="#ffcf7a"/></g>
+ <ellipse cx="560" cy="1090" rx="420" ry="330" fill="url(#sorot)" opacity=".75"/>
+ <g transform="translate(560 1330)"><ellipse cx="0" cy="40" rx="330" ry="56" fill="#000" opacity=".3"/><path d="M-320 -60 Q-300 170 0 190 Q300 170 320 -60 Z" fill="#E8EEF2" stroke="#1E1E1E" stroke-width="12"/><path d="M-300 -10 Q0 40 300 -10" fill="none" stroke="#2C7DA0" stroke-width="22"/>
+  <ellipse cx="0" cy="-60" rx="320" ry="70" fill="#C97B3A" stroke="#1E1E1E" stroke-width="12"/>
+  <circle cx="-120" cy="-80" r="58" fill="#A8683A" stroke="#1E1E1E" stroke-width="8"/><circle cx="20" cy="-96" r="62" fill="#A8683A" stroke="#1E1E1E" stroke-width="8"/><circle cx="150" cy="-70" r="54" fill="#A8683A" stroke="#1E1E1E" stroke-width="8"/>
+  <path d="M-200 -150 q20 -60 -10 -110 M0 -180 q25 -60 -5 -120 M190 -150 q20 -60 -10 -110" stroke="#fff" stroke-width="12" fill="none" opacity=".6" stroke-linecap="round"/></g>
+ <g transform="translate(330 860) rotate(-28)"><rect x="-40" y="-260" width="80" height="300" rx="14" fill="#fff" stroke="#1E1E1E" stroke-width="10"/><rect x="-40" y="-160" width="80" height="110" fill="#E63946"/><text x="0" y="-92" font-family="Poppins" font-weight="900" font-size="34" fill="#fff" text-anchor="middle" transform="rotate(90 0 -100)">MSG</text><rect x="-30" y="-300" width="60" height="50" rx="10" fill="#f2f2f2" stroke="#1E1E1E" stroke-width="10"/></g>
+ ${Array.from({length:26},(_,i)=>`<rect x="${380+Math.sin(i*1.7)*60+i*5}" y="${930+i*13}" width="12" height="12" rx="2" fill="#fff" stroke="#bbb" transform="rotate(${i*37} ${386+i*5} ${936+i*13})"/>`).join('')}
+ <g transform="translate(560 760)" filter="url(#glow)" opacity=".8"><circle r="120" fill="#FF4D6D"/></g>
+ <g transform="translate(860 1040) rotate(8)"><rect x="-150" y="-190" width="300" height="380" fill="#F4EBD0" stroke="#1E1E1E" stroke-width="10"/><path d="M-110 -120 h220 M-110 -80 h220 M-110 -40 h180 M-110 0 h220 M-110 40 h150" stroke="#9a8a6a" stroke-width="10"/><text x="0" y="140" font-family="Georgia" font-size="56" font-weight="700" text-anchor="middle" fill="#7a2e1e">1968</text><circle cx="100" cy="-150" r="34" fill="#E63946" opacity=".85"/></g><g transform="translate(560 760)"><path d="M-95 10 C-110 -70 -40 -110 0 -90 C40 -115 115 -70 95 10 C105 80 30 105 0 85 C-30 105 -105 80 -95 10Z" fill="#FFB3C1" stroke="#1E1E1E" stroke-width="10"/><path d="M0 -88 V85 M-60 -40 q30 20 0 50 M60 -40 q-30 20 0 50" stroke="#C9184A" stroke-width="8" fill="none"/><text x="120" y="-70" font-family="Poppins" font-weight="900" font-size="110" fill="#FFC93C" stroke="#1E1E1E" stroke-width="8" paint-order="stroke">?</text></g>`)}
+ ${tebe({alisK:1,alisN:1,mataBesar:1,mulutBuka:.9,mulutLebar:.45,senyum:0,tanganK:[86,246],tanganN:[314,246],bentukK:'buka',bentukN:'buka',tekukK:-1,tekukN:1,efek:'kaget',kepalaMiring:6},600,'left:-60px;top:1060px;transform:scaleX(-1);')}
+ ${vig(.65)}${judul('GENERASI MICIN','DARI 1 SURAT?','#FFC93C')}${merek}</div>`,
+// 2 CLOSE-UP EKSTREM: durian
+durian:()=>`<div class="f"><div class="a" style="inset:0;background:radial-gradient(circle at 45% 60%,#2f6b3a,#0d2414 75%)"></div>
+ ${svg(`<g filter="url(#glow)" opacity=".7"><path d="M120 1500 C300 1200 200 1000 480 900 S900 760 980 520" stroke="#B8FF5C" stroke-width="150" fill="none" stroke-linecap="round" opacity=".5"/></g>
+ <path d="M140 1480 C300 1200 220 1010 480 920 S880 780 960 540" stroke="#D9FF9E" stroke-width="10" fill="none" stroke-dasharray="4 40" stroke-linecap="round"/>
+ <g transform="translate(470 1130) scale(1.25)"><ellipse cx="0" cy="300" rx="380" ry="60" fill="#000" opacity=".35"/><ellipse rx="380" ry="330" fill="#9BAA2E" stroke="#1E1E1E" stroke-width="14"/>
+ ${Array.from({length:7},(_,r)=>Array.from({length:9},(_,c)=>{const y=-250+r*80, w=Math.sqrt(Math.max(0,1-(y/330)**2))*370; const x=-w+ (c+ (r%2)*.5)*(2*w/8.5); if(Math.abs(x)>w-20) return ''; return `<path d="M${x-26} ${y+22} Q${x} ${y-52} ${x+26} ${y+22} Z" fill="#7C8A1C" stroke="#1E1E1E" stroke-width="6" stroke-linejoin="round"/>`}).join('')).join('')}
+ <path d="M-10 -330 q-10 -80 40 -120" stroke="#5B4126" stroke-width="30" fill="none" stroke-linecap="round"/>
+ </g>
+ <g fill="#C6F36B" stroke="#1E1E1E" stroke-width="7"><path d="M600 740 c-30 -40 20 -80 50 -50 c20 -40 80 -20 70 20 c40 0 50 60 10 70 c10 40 -50 60 -70 30 c-30 30 -90 0 -60 -70z"/><path d="M800 560 c-20 -30 15 -60 40 -40 c15 -30 60 -15 55 15 c30 0 35 45 5 50 c5 30 -40 45 -55 20 c-25 20 -70 0 -45 -45z"/></g>`)}
+ ${tebe({mataSenyum:0,alisK:-.6,alisN:-.6,alisMiringK:.6,alisMiringN:.6,mataBesar:0,senyum:-.8,mulutBuka:.3,mulutLebar:.5,tanganK:[160,210],bentukK:'buka',tekukK:-1,tanganN:[248,212],bentukN:'kepal',tekukN:1,kepalaMiring:-12,efek:'bingung',condong:6},230,'left:800px;top:1330px;')}
+ ${vig(.6)}${judul('BAU DURIAN','ADA DI GENNYA?','#C6F36B')}${merek}</div>`,
+// 3 BENDA TAK TERDUGA: harga 99.900
+harga:()=>`<div class="f"><div class="a" style="inset:0;background:linear-gradient(#123a7a,#1d63c9 55%,#0b2350)"></div>
+ ${svg(`<g filter="url(#blur8)" opacity=".5">${[0,1,2,3].map(r=>`<rect x="0" y="${640+r*230}" width="1080" height="24" fill="#0b2350"/>`+[0,1,2,3,4,5].map(c=>`<rect x="${40+c*180}" y="${520+r*230}" width="120" height="120" rx="12" fill="${['#FFC93C','#FF6B6B','#7AE582','#fff'][(r+c)%4]}"/>`).join('')).join('')}</g>
+ <ellipse cx="540" cy="1060" rx="460" ry="380" fill="url(#sorot)" opacity=".5"/>
+ <g transform="translate(560 960) rotate(-10)"><path d="M-380 -170 H300 L420 0 L300 170 H-380 Z" fill="#FFC93C" stroke="#1E1E1E" stroke-width="16"/><circle cx="300" cy="0" r="32" fill="#123a7a" stroke="#1E1E1E" stroke-width="10"/>
+  <text x="-40" y="62" font-family="Poppins" font-weight="900" font-size="180" fill="#1E1E1E" text-anchor="middle" letter-spacing="-6">99.<tspan fill="#E63946">900</tspan></text><text x="-330" y="-90" font-family="Poppins" font-weight="900" font-size="56" fill="#1E1E1E">Rp</text></g>
+ <path d="M860 760 Q980 700 990 560" stroke="#fff" stroke-width="8" fill="none"/>
+ <g transform="translate(600 1000) rotate(10)"><circle r="150" fill="#ffffff22" stroke="#1E1E1E" stroke-width="22"/><circle r="150" fill="none" stroke="#E8E8E8" stroke-width="10"/><path d="M100 110 L220 240" stroke="#5B4126" stroke-width="44" stroke-linecap="round"/><path d="M100 110 L220 240" stroke="#1E1E1E" stroke-width="56" stroke-linecap="round" opacity=".25"/></g>`)}
+ ${tebe({alisK:-.2,alisN:.9,lihatX:-5,lihatY:-3,senyum:.4,mulutLebar:.45,kepalaMiring:-10,tanganN:[330,120],bentukN:'kepal',tekukN:1,tanganK:[120,330]},1250,'left:560px;top:760px;')}
+ ${vig(.55)}${judul('TRIK HARGA','99.900','#FFC93C')}${merek}</div>`,
+// 4 DUEL: ketchup vs kecap
+kecap:()=>`<div class="f"><div class="a" style="inset:0;background:#3a1a10"></div><div class="a" style="inset:0;background:#b3141f;clip-path:polygon(58% 0,100% 0,100% 100%,42% 100%)"></div>
+ ${svg(`<path d="M600 520 L470 900 L600 900 L450 1320" stroke="#FFC93C" stroke-width="34" fill="none" stroke-linejoin="round" filter="url(#glow)"/><path d="M600 520 L470 900 L600 900 L450 1320" stroke="#FFF4C2" stroke-width="16" fill="none" stroke-linejoin="round"/>
+ <g transform="translate(250 1080) rotate(-8)"><rect x="-110" y="-260" width="220" height="460" rx="40" fill="#2a1408" stroke="#1E1E1E" stroke-width="14"/><rect x="-50" y="-360" width="100" height="120" rx="14" fill="#2a1408" stroke="#1E1E1E" stroke-width="14"/><rect x="-60" y="-400" width="120" height="50" rx="10" fill="#FFC93C" stroke="#1E1E1E" stroke-width="10"/>
+  <rect x="-100" y="-110" width="200" height="190" rx="14" fill="#F6E7C1" stroke="#1E1E1E" stroke-width="10"/><text x="0" y="-25" font-family="Poppins" font-weight="900" font-size="58" text-anchor="middle" fill="#2a1408">KECAP</text><text x="0" y="40" font-family="Poppins" font-weight="800" font-size="34" text-anchor="middle" fill="#8a4b20">MANIS</text>
+  <circle cx="-30" cy="-180" r="18" fill="#fff"/><circle cx="40" cy="-180" r="18" fill="#fff"/><circle cx="-26" cy="-176" r="9" fill="#111"/><circle cx="44" cy="-176" r="9" fill="#111"/><path d="M-60 -215 l40 15 M70 -215 l-40 15" stroke="#fff" stroke-width="10" stroke-linecap="round"/></g>
+ <g transform="translate(830 1060) rotate(8)"><path d="M-120 -200 Q-130 200 -100 220 H100 Q130 200 120 -200 Q60 -260 40 -320 H-40 Q-60 -260 -120 -200Z" fill="#E11D2E" stroke="#1E1E1E" stroke-width="14"/><rect x="-46" y="-400" width="92" height="90" rx="14" fill="#fff" stroke="#1E1E1E" stroke-width="12"/>
+  <rect x="-100" y="-60" width="200" height="150" rx="14" fill="#fff" stroke="#1E1E1E" stroke-width="10"/><text x="0" y="35" font-family="Poppins" font-weight="900" font-size="50" text-anchor="middle" fill="#E11D2E">KETCHUP</text>
+  <circle cx="-34" cy="-140" r="18" fill="#fff"/><circle cx="34" cy="-140" r="18" fill="#fff"/><circle cx="-38" cy="-136" r="9" fill="#111"/><circle cx="30" cy="-136" r="9" fill="#111"/><path d="M-64 -175 l40 15 M64 -175 l-40 15" stroke="#fff" stroke-width="10" stroke-linecap="round"/></g>`)}
+ ${tebe({alisK:1,alisN:1,mataBesar:1,mulutBuka:.85,mulutLebar:.45,senyum:.2,tanganK:[60,200],tanganN:[340,200],bentukK:'buka',bentukN:'buka',tekukK:-1,tekukN:1,efek:'kaget'},520,'left:280px;top:1250px;filter:brightness(0) drop-shadow(0 0 22px #FFC93C);')}
+ ${vig(.55)}${judul('KETCHUP ITU','DARI KECAP?!','#FFC93C')}${merek}</div>`,
+// 5 MISTERI: asal nama Indonesia
+nama:()=>`<div class="f"><div class="a" style="inset:0;background:radial-gradient(circle at 55% 62%,#7a4a1e,#1b0f07 72%)"></div>
+ ${svg(`<g filter="url(#blur8)" opacity=".55"><rect x="60" y="560" width="220" height="700" fill="#3a220f"/><rect x="820" y="520" width="220" height="760" fill="#3a220f"/>${[0,1,2,3,4,5].map(i=>`<rect x="${80+(i%2)*20}" y="${600+i*110}" width="180" height="70" fill="${['#7a2e1e','#2e4a6b','#5b6b2e'][i%3]}"/>`).join('')}</g>
+ <ellipse cx="560" cy="1140" rx="470" ry="360" fill="url(#sorot)" opacity=".8"/>
+ <g transform="translate(560 1170) rotate(-6)"><rect x="-400" y="-230" width="800" height="460" rx="20" fill="#EAD7A8" stroke="#1E1E1E" stroke-width="12"/><ellipse cx="-400" cy="0" rx="40" ry="235" fill="#D9C08A" stroke="#1E1E1E" stroke-width="12"/><ellipse cx="400" cy="0" rx="40" ry="235" fill="#D9C08A" stroke="#1E1E1E" stroke-width="12"/>
+  <path d="M-300 60 q60 -60 120 -10 t140 0 t120 20 t110 -30" stroke="#8a6a3a" stroke-width="10" fill="none"/><path d="M-260 -110 q40 -30 90 0 M60 -140 q50 -40 120 -10 M-80 140 q80 -30 160 10" stroke="#8a6a3a" stroke-width="8" fill="none"/>
+  <text x="0" y="10" font-family="Lora,Georgia,serif" font-style="italic" font-weight="700" font-size="104" text-anchor="middle" fill="#3a220f">Indonesia</text><text x="0" y="90" font-family="Georgia,serif" font-size="40" text-anchor="middle" fill="#6b4a22">— 1850 —</text>
+  <path d="M260 120 L420 -160" stroke="#fff" stroke-width="12"/><path d="M420 -160 q60 -80 20 -150 q-80 40 -100 120 z" fill="#fff" stroke="#1E1E1E" stroke-width="8"/></g>
+ <g transform="translate(160 980)"><rect x="-30" y="0" width="60" height="140" rx="10" fill="#F4EBD0" stroke="#1E1E1E" stroke-width="8"/><path d="M0 0 q-24 -40 0 -80 q24 40 0 80" fill="#FFC93C" stroke="#1E1E1E" stroke-width="6"/><circle cy="-30" r="80" fill="#FFC93C" opacity=".3" filter="url(#glow)"/></g>`)}
+ ${vig(.7)}${judul('SIAPA PEMBERI','NAMA INDONESIA?','#FFC93C').replace('<div class="judul">','<div class="judul" style="font-size:100px">')}${merek}</div>`,
+};
+window.tampil=k=>{document.getElementById('o').innerHTML=C[k]();};
+</script></body></html>
