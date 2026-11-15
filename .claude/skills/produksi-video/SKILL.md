@@ -1,0 +1,38 @@
+---
+name: produksi-video
+description: Cara Yoga memproduksi video Ternyata Begitu yang mulus dan profesional - suara, animasi Tebe, transisi, teks di zona aman, musik/SFX, sampul momen dramatis, render, dan cek kemulusan.
+---
+# Produksi Video (Yoga) — "Sekali lagi, biar pas."
+Contoh acuan: `studio-aset/contoh-1menit/v8-final.html` (struktur) · `studio-aset/contoh-sampul/` (sampul).
+Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py` + `scripts/cek_video.py`.
+
+## Urutan kerja
+1. **Suara dulu**: `python scripts/suara.py antrean/<folder>` → `audio/narasi.mp3` + `audio/waktu_kata.json`. Semua waktu visual mengikuti waktu kata, bukan sebaliknya. Simpan kedua file ini (ikut di-commit) supaya revisi tidak membayar kredit lagi.
+2. **Rencana adegan** di `visual/video.html` (kontrak `window.render(T)`): tiap babak = set baru + 1 gerak kamera + aksi Tebe.
+3. **Uji cepat** tiap transisi: `python scripts/render_html.py antrean/<folder> --mulai <t-1> --durasi 3 --skala 0.5`.
+4. Render penuh → `cek_mulus.py` → lihat lembar cek → baru serahkan ke Pak Bima.
+
+## Kemulusan (wajib — detail: referensi/kemulusan.md)
+- Transisi 12–18 frame (0,4–0,6 dtk) dengan easing in-out, di celah antar-kalimat. Tidak ada frame warna polos, tidak ada wipe < 6 frame.
+- Intro khas langsung masuk ke set babak berikutnya (jangan kembali sebentar ke set lama).
+- Gerak Tebe & kamera selalu fungsi waktu kontinu (smootherstep), tidak pernah lompat posisi antar-frame.
+- Narasi TIDAK dipotong di tengah kata: `window.JEDA` hanya di akhir kalimat (skrip juga menjepret ke celah kata + fade 25 ms).
+- Musik: −12 s/d −15 dB di bawah narasi, ducking halus (sudah diatur skrip). SFX maks 4–6 di luar intro/outro, mendarat tepat di aksi visual, tidak menutupi kata.
+
+## Zona aman 1080×1920 (wajib — detail: referensi/zona-aman.md)
+- Area tertutup UI: atas 0–220, bawah 1480–1920, kanan 900–1080 pada y 800–1480.
+- Teks layar: di pita y 900–1400, x 80–880, 2–4 kata per kelompok, muncul dengan fade/scale 120 ms dan bertahan sampai kelompok berikutnya (bukan kata per kata yang berkedip).
+- Wajah Tebe & objek inti selalu di dalam zona aman. Label kecil babak di y 240–300.
+- Watermark bergiliran di (40, 236), (40, 1400), (kanan 200, 236) — di dalam zona aman, 70% opasitas.
+
+## Sampul = momen dramatis, bukan template (wajib — detail: referensi/sampul.md)
+Gaya acuan seperti channel animasi edukasi besar: satu ADEGAN ilustrasi yang menangkap momen paling menegangkan/aneh dari cerita.
+- Subjek cerita BESAR & dekat kamera, Tebe ikut beraksi di adegan dengan ekspresi kuat (bukan stiker kecil di pojok).
+- Pencahayaan dramatis (sorot/rim light/glow), 3 lapis kedalaman (latar diburamkan), vinyet.
+- Teks atas 2 baris, maks 4–5 kata, huruf putih tebal berkontur gelap, 1 kata berwarna; berbentuk pertanyaan/klaim.
+- Maks 1 grafis penunjuk (panah merah / lingkaran).
+- Semua inti di y 260–1660 (grid profil memotong jadi 3:4). Beda konsep & warna dominan dari 2 sampul terakhir.
+- Frame 0 video = sampul ini, lalu bertransisi halus ke hook.
+
+## Selesai bila
+`cek_mulus.py` LULUS, `cek_video.py` LULUS, ukuran ≤ 18 MB, lembar cek sudah dilihat, paraf di lembar_tim.md.

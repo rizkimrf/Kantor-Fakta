@@ -9,8 +9,12 @@ client_secret*.json
 credentials*.json
 
 # ===== file kerja besar =====
-antrean/*/audio/
-antrean/*/visual/
+antrean/*/audio/*
+!antrean/*/audio/narasi.mp3
+!antrean/*/audio/waktu_kata.json
+antrean/*/visual/*
+!antrean/*/visual/video.html
+!antrean/*/visual/efek.json
 antrean/*/final.mp4
 antrean/*/_kerja/
 studio/node_modules/

@@ -191,7 +191,7 @@ function sting2(T){const u=T-5.15;if(u<0||u>2.4)return '';
  <g transform="translate(540 760) scale(${2.2*ng})" opacity="${R>300?1:0}"><path d="M-30 -40 C-32 -78 44 -82 42 -42 C41 -18 4 -26 2 2" fill="none" stroke="#FFC93C" stroke-width="18" stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="${ds*200}"/><circle cx="2" cy="30" r="11" fill="#FFC93C" opacity="${lin(u,.6,.65)}"/></g></svg>
  <div class="judul" style="top:1020px;color:#FFF4DC;font-size:120px;transform:scale(${lg*ng});opacity:${lg>0?1:0}">Ternyata<br><span class="pil" style="font-size:140px">Begitu!</span></div>`}
 // ===== WATERMARK berpindah (tiap 12 dtk, pudar halus; tidak tampil di sampul, intro, outro)
-const WM_POS=[{left:40,top:236},{left:40,top:1846},{right:40,top:236}];
+const WM_POS=[{left:40,top:236},{left:40,top:1400},{right:200,top:236}];
 function watermark(T){if(T<0.9||(T>5.0&&T<7.7)||T>55.1)return '';
  const i=Math.floor(T/12),u=T-i*12,a=Math.min(lin(u,0,.5),1-lin(u,11.5,12))*.72,p=WM_POS[i%WM_POS.length];
  const pos=Object.entries(p).map(([k,v])=>`${k}:${v}px`).join(';');

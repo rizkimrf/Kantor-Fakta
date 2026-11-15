@@ -1,3 +1,5 @@
+> **Catatan 15 Nov 2026:** versi ringkas & wajib ada di `.claude/skills/` (tebe-inti + skill per peran). File ini arsip rinci.
+
 # STANDAR KONTEN "TERNYATA BEGITU" — dibaca SEMUA agent sebelum menyentuh video apa pun
 Perintah Bos (15 Nov 2026): **setiap konten dikerjakan oleh seluruh tim, bukan estafet.**
 Riset, naskah, marketing/SEO, suara, visual, sampai caption harus saling menguatkan dalam SATU konten.

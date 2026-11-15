@@ -92,6 +92,22 @@ def pilih_musik(nama):
     return (bawaan or semua or [None])[0]
 
 
+def jepret_ke_hening(folder: Path, t: float) -> float:
+    """Geser titik jeda ke tengah celah antar-kata terdekat (dari audio/waktu_kata.json), maks ±0,6 dtk."""
+    wk = folder / "audio/waktu_kata.json"
+    if not wk.exists():
+        return t
+    kata = json.loads(wk.read_text(encoding="utf-8")).get("kata", [])
+    celah = [((a["selesai"] + b["mulai"]) / 2, b["mulai"] - a["selesai"]) for a, b in zip(kata, kata[1:]) if b["mulai"] - a["selesai"] > 0.04]
+    calon = [c for c, lebar in celah if abs(c - t) <= 0.6]
+    if not calon:
+        print(f"  ! jeda di {t:.2f} dtk tidak dekat celah kata — periksa naskah/JEDA"); return t
+    baru = min(calon, key=lambda c: abs(c - t))
+    if abs(baru - t) > 0.01:
+        print(f"  jeda {t:.2f} -> {baru:.2f} dtk (dijepret ke celah antar-kata)")
+    return baru
+
+
 def rakit_audio(folder: Path, kerja: Path, D: float, mulai: float, efek, musik, musik_vol: float, jeda=None) -> Path:
     narasi = folder / "audio/narasi.mp3"
     inp, fil, lbl = [], [], []
@@ -102,13 +118,17 @@ def rakit_audio(folder: Path, kerja: Path, D: float, mulai: float, efek, musik, 
         inp += ["-f", "lavfi", "-t", f"{D + mulai:.3f}", "-i", "anullsrc=r=48000:cl=stereo"]
     rantai = "[0:a]aresample=48000,aformat=channel_layouts=stereo"
     jd = sorted((float(j["t"]), float(j["d"])) for j in (jeda or []) if float(j["d"]) > 0)
+    jd = [(jepret_ke_hening(folder, t), d) for t, d in jd]  # jangan pernah memotong di tengah kata
     if jd:  # sisipkan hening ke rekaman narasi (intro & napas antar babak)
         titik = [0.0] + [t for t, _ in jd]
         fil.append(f"{rantai},asplit={len(titik)}" + "".join(f"[s{i}]" for i in range(len(titik))))
         bag = []
         for i, a in enumerate(titik):
             b = f":end={titik[i + 1]:.3f}" if i + 1 < len(titik) else ""
-            fil.append(f"[s{i}]atrim=start={a:.3f}{b},asetpts=PTS-STARTPTS[p{i}]"); bag.append(f"[p{i}]")
+            fd = []  # fade 25 ms di setiap sambungan supaya tidak ada bunyi "klik" / suara terpotong
+            if i > 0: fd.append("afade=t=in:d=0.025")
+            if i + 1 < len(titik): fd.append(f"afade=t=out:st={max(0.0, titik[i + 1] - a - 0.025):.3f}:d=0.025")
+            fil.append(f"[s{i}]atrim=start={a:.3f}{b},asetpts=PTS-STARTPTS{(',' + ','.join(fd)) if fd else ''}[p{i}]"); bag.append(f"[p{i}]")
             if i < len(jd):
                 fil.append(f"aevalsrc=0|0:s=48000:d={jd[i][1]:.3f},aformat=channel_layouts=stereo[h{i}]"); bag.append(f"[h{i}]")
         fil.append(f"{''.join(bag)}concat=n={len(bag)}:v=0:a=1[narj]")
@@ -121,7 +141,7 @@ def rakit_audio(folder: Path, kerja: Path, D: float, mulai: float, efek, musik, 
         fade0 = max(0.0, D - 1.5)
         fil.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,atrim={mulai:.3f}:{mulai + D:.3f},asetpts=PTS-STARTPTS,"
                    f"volume={musik_vol},afade=t=in:d=0.6,afade=t=out:st={fade0:.3f}:d=1.5[m0]")
-        fil.append("[m0][sc]sidechaincompress=threshold=0.02:ratio=3:attack=30:release=500:makeup=1[mus]")
+        fil.append("[m0][sc]sidechaincompress=threshold=0.03:ratio=2.5:attack=80:release=900:makeup=1[mus]")
         lbl.append("[mus]")
         n += 1
     else:
