@@ -9,3 +9,4 @@ Rasa yang dikejar (kagum / kaget / geli / haru): kaget (bakteri?) → geli ("bak
 - Pak Bima (manajer): Hook "Cium deh, BAU HUJAN yang kamu kangenin. Itu bukan bau AIRNYA." dan sudut "dibuat bakteri / bakteri pasang iklan" DIPUTUSKAN. Risiko mutu yang dijaga: "salah satu bahan utamanya" & "MIT menduga" tidak boleh hilang, tanpa angka ppt, springtail mungil (bukan serangga seram), suara "menduga" jelas, sumber lengkap di deskripsi. Cek fakta LULUS, skor manajer 8/9.
 
 ## Paraf setelah produksi
+- Yoga: final.mp4 71,6 dtk / 14,9 MB / −14 LUFS, cek_video LULUS; sampul frame 0, intro 2,4 dtk, watermark berpindah, outro khas terpasang; teks layar sinkron dengan suara (dicek di "kangenin", "GEOSMIN", "MIT MENDUGA", "IKLAN"); momen soda di dtk 20,8–28,4; Tebe utuh di semua adegan yang dicek; musik di bawah narasi ✔

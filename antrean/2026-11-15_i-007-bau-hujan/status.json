@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "I-007 bau hujan",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -33,9 +33,18 @@
       "waktu": "2026-11-15T10:52",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS, skor manajer 8/9"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "waktu": "2026-11-15T11:08"
     }
   ],
   "masalah": null,
   "skor_manajer": 8,
-  "jadwal_tayang_usulan": "2026-11-15T20:00:00+08:00"
+  "jadwal_tayang_usulan": "2026-11-15T20:00:00+08:00",
+  "video_asset_id": "9d1f819ef047b2a9510e0aa68e1f54ba",
+  "thumb_asset_id": "309daf5cab4174810b93c12a5ab062d5",
+  "video_url": "/_blob/9d1f819ef047b2a9510e0aa68e1f54ba",
+  "thumb_url": "/_blob/309daf5cab4174810b93c12a5ab062d5"
 }
