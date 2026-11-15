@@ -27,5 +27,8 @@ Ikut menilai konsep sampul: apakah orang di grid profil/beranda berhenti? Bandin
 - Instagram: kalimat pembuka kuat, 2–3 baris, ajakan simpan/kirim ke teman, 5–8 hashtag.
 Label konten AI selalu dinyalakan. Jam tayang: 12.00 & 18.00 WITA (Shorts), 19.00 (panjang).
 
-## Mingguan (Senin)
-Subscriber, jam tonton 365 hari, views Shorts 90 hari, rata-rata durasi tonton, CTR sampul → 3 pelajaran untuk tim.
+## Analisa (harian ringan & Senin lengkap) — data dari Supermetrics (diambil Pak Bima, lihat /laporan-minggu)
+Yang paling menentukan distribusi, urut prioritas: **% ditonton sampai habis / rata-rata durasi tonton** → share & save → komentar → views.
+- Bandingkan per video dengan pola yang dicatat di riwayat.md (pola hook, konsep sampul, posisi Tebe, durasi, pilar, jam tayang). Cari pola yang berulang di ≥2 video, jangan menyimpulkan dari 1 video.
+- Video yang ditonton < 50% → periksa 3 detik pertama & titik penonton pergi. Video dengan share/save tinggi → topik/pola untuk diulang & dijadikan video panjang.
+- Keluaran selalu berupa LANGKAH (apa yang tim lakukan besok/minggu depan), bukan sekadar angka. Jangan mengarang angka yang tidak ada di data.
