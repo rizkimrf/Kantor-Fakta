@@ -1,0 +1,10 @@
+# Cek riset naskah — I-018 Ketchup/kecap (Laras, 15 Nov 2026)
+Hasil: akurat di inti (Hokkien, "diduga kuat" lewat Melayu, jamur/kenari/tiram, Mease 1812, Heinz). 3 butir WAJIB, sisanya saran.
+## WAJIB
+1. Adegan 1 (narasi + hook_kandidat terpilih) dan caption_tiktok: "ketchup yang niru KECAP". Riset hanya mendukung "kata ketchup diduga dipinjam dari kata Melayu kecap" (bag. 6-7). "Niru" membuat penonton mengira saus tomat menjiplak kecap manis, padahal riset bag. 8 melarang "ketchup aslinya kecap manis". Ganti narasi: "Kecap bukan tiruan KETCHUP. Asal usulnya kebalik: kemungkinan besar, nama 'ketchup' justru dipinjam dari kata KECAP." Caption TikTok: "...dan nama ketchup kemungkinan besar dipinjam dari kata kecap."
+2. Adegan 6 + deskripsi: "Tomat baru nyemplung di AMERIKA" / "tomat baru masuk di Amerika". Riset hanya menyebut resep tertulis PERTAMA YANG DIKETAHUI (Mease 1812); tidak ada bukti tomat belum dipakai di tempat lain. Ganti: "Tomat masuk resep ketchup di AMERIKA. Resep tertulisnya yang pertama diketahui: tahun seribu delapan ratus dua belas." Deskripsi: "tomat masuk resep di Amerika (resep tertulis pertama yang diketahui: ...)".
+3. Adegan 7: "Persis arti LUAS aslinya". Arti asli Hokkien = air garam ikan/kerang (bag. 4); makna luas itu pelebaran kemudian (bag. 6.5). Ganti: "Kata itu memang melebar jadi nama banyak saus." Thumbnail_teks "KECAP & KETCHUP DARI IKAN?!" menyiratkan produknya kini dari ikan: ganti "NAMA KECAP & KETCHUP: SAUS IKAN?!". Judul opsi 1 "Lahir dari Ikan" -> "Lahir dari Kata untuk Saus Ikan".
+## Saran
+- Adegan 5 "resepnya nggak bisa ditiru": mekanisme dari riset 6.2, belum kuat bersumber; lunakkan "resepnya susah ditiru".
+- Adegan 8 "versi aslinya pakai ikan teri": hanya Britannica; cari sumber kedua (Lea & Perrins) sebelum rilis. Adegan 2 "botol LAIN" memang mengarah ke kecap inggris, aman.
+- Komentar tersemat Lockyer 1711: boleh, tambah "(dikutip dari sumber sekunder)". Adegan 1 teks layar "SIAPA DULUAN?" aman sebagai pertanyaan, jangan dijawab dengan tahun.
