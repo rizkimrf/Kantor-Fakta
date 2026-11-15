@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "terjadwal",
   "topik": "I-007 bau hujan",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -45,6 +45,19 @@
       "waktu": "2026-11-15T11:11",
       "oleh": "Pak Bima",
       "hasil": "review LULUS, gerbang 12 butir ya, paraf lengkap"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "waktu": "2026-11-15T11:15",
+      "oleh": "Bos (tombol Setujui di Kantor Visual HP, 11:13 UTC)"
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "waktu": "2026-11-15T11:15",
+      "oleh": "Raka",
+      "hasil": "jadwal 21.00 WITA; YouTube/TikTok/IG unggah manual oleh Bos"
     }
   ],
   "masalah": null,
@@ -53,5 +66,17 @@
   "video_asset_id": "9d1f819ef047b2a9510e0aa68e1f54ba",
   "thumb_asset_id": "309daf5cab4174810b93c12a5ab062d5",
   "video_url": "/_blob/9d1f819ef047b2a9510e0aa68e1f54ba",
-  "thumb_url": "/_blob/309daf5cab4174810b93c12a5ab062d5"
+  "thumb_url": "/_blob/309daf5cab4174810b93c12a5ab062d5",
+  "jadwal_tayang": "2026-11-15T21:00:00+08:00",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "catatan": "kunci belum diisi - unggah manual"
+    },
+    "instagram": {
+      "catatan": "kunci belum diisi - unggah manual"
+    }
+  }
 }
