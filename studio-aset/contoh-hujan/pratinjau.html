@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Pratinjau aset set HUJAN (I-007). Buka dengan ?adegan=1..6 ; tiap adegan digambar di 3 palet (siang/senja/malam). -->
+<script src="../tebe-rig.js"></script><script src="../aset-set.js"></script>
+<style>*{margin:0;box-sizing:border-box}body{background:#14181f;font:700 22px Inter,sans-serif;color:#eee;width:1340px}
+.baris{display:flex;gap:22px;padding:22px}.panel{width:432px;height:768px;overflow:hidden;position:relative;border-radius:10px}
+.panel>div{width:1080px;height:1920px;transform:scale(.4);transform-origin:0 0;position:absolute}.lbl{position:absolute;left:10px;top:8px;z-index:3;background:rgba(0,0,0,.5);padding:4px 10px;border-radius:6px;font-size:18px}
+h1{font-size:26px;padding:18px 22px 0}</style></head><body><h1 id="jd"></h1><div class="baris" id="B"></div>
+<script>
+const A=ASET,q=new URLSearchParams(location.search),N=+(q.get('adegan')||1),T=+(q.get('t')||1.3);
+const tebe=(p,w,gelap=0)=>`<div style="width:${w}px;filter:brightness(${1-gelap*.12})">${tebeRigSVG(p).replace('width="400" height="520"','width="100%" height="auto"')}</div>`;
+const anim=tebeAnimasi([{t:0,pose:'penasaran'}],{benih:3});
+const ADEGAN={
+1:['Teras & gang kampung saat gerimis',(P,t)=>{const W=1500;let s=A.langitMendung(P,W,1300,t,{suryaX:1100,suryaY:700})+A.bukit(W,980,140,4,P.jauh)+A.kabut(W,860,240,P)
+ +A.tiangListrik(1320,1170,1,P)+A.kabel(-100,560,1265,575,P,70)+A.kabel(1375,575,1700,560,P,40)
+ +A.rumahKampung(560,1170,1,P)+A.potTanaman(80,1170,1,P,t)+A.potTanaman(1040,1170,.8,P,t)+A.tetesAtap(80,1050,934,t,P,{n:9,jatuh:236})
+ +A.jalanKampung(W,1200,P,t,{hujan:1})+A.gerimis(W,1920,t,P,{y1:1900});
+ return `<svg width="1500" height="1920" style="position:absolute;left:-120px">${s}</svg><div style="position:absolute;left:520px;top:1300px">${tebe(anim(t),360,P.nama=='malam'?1:0)}</div>`}],
+2:['Kemarau: tanah retak + awan hujan datang + tetes pertama',(P,t)=>{const W=1500;let s=A.langit(P,W,1250,t,{suryaX:1150,suryaY:520})+A.awanHujan(380,420,1.2,P,t)+A.awanHujan(1000,300,.9,P,t,.9)
+ +A.bukit(W,1000,180,3,P.jauh)+A.kabut(W,900,200,P)+A.tanahKering(W,1080,P)+A.bercakBasah(0,W,1090,1900,P,.35)+A.gerimis(W,1920,t,P,{y0:440,y1:1500,deras:.1})
+ +A.rumput(200,1200,1.2,P,t)+A.rumput(900,1300,1.4,P,t)+A.batu(1180,1320,.9,P);
+ return `<svg width="1500" height="1920" style="position:absolute;left:-200px">${s}</svg>`}],
+3:['Tanah basah + genangan + hujan deras',(P,t)=>{const W=1500;let s=A.langitMendung(P,W,1250,t)+A.bukit(W,1000,180,5,P.jauh)+A.kabut(W,880,260,P)+A.pohon(1200,1120,1,P,t)
+ +A.tanahBasah(W,1080,P,t,{hujan:1})+A.semak(300,1150,1.1,P)+A.hujan(W,1920,t,P,{deras:.8,sudut:12});
+ return `<svg width="1500" height="1920" style="position:absolute;left:-200px">${s}</svg>`}],
+4:['MOMEN WAH: tetes slow-motion → gelembung → kabut (fase .78)',(P,t)=>{let s=A.langitMendung(P,1080,1920,t)+A.tetesSlowmo(540,1240,1.25,P,+(q.get('fase')||.78),{t})+A.gelasSoda(890,560,.8,P,t);
+ return `<svg width="1080" height="1920">${s}</svg>`}],
+5:['Dunia mikro: Streptomyces + spora + springtail + aroma',(P,t)=>{let s=A.tanahDekat(1080,1920,P,t,{permukaan:820})+A.streptomyces(420,1150,1.3,P,t,{spora:.8})+A.spora(0,300,1080,800,t,P,16)
+ +A.springtail(840,812,.7,P,t,{jalan:1})+A.springtail(160,812,.55,P,t,{arah:-1,loncat:.35})+A.aroma(420,1000,700,200,t,P,{n:3})+A.molekulGeosmin(760,420,.9,P,t);
+ return `<svg width="1080" height="1920">${s}</svg>`}],
+6:['Kolam lele + pecel lele + hidung mengendus',(P,t)=>{let s=A.langitMendung(P,1080,1100,t)+A.bukit(1080,820,120,6,P.jauh)+A.tanah(1080,860,P)+A.kolam(540,1060,860,300,P,t,{hujan:1,muncul:.5})+A.gerimis(1080,1920,t,P,{y1:1300})
+ +A.piringPecelLele(560,1560,1.2,P)+A.kepalaProfil(250,520,.9,P,t,{endus:1})+A.aroma(800,700,440,540,t,P,{n:2,amp:24});
+ return `<svg width="1080" height="1920">${s}</svg>`}],
+7:['Urutan slow-motion (siang): jatuh .15 → hantam .36 → gelembung naik .55 → pecah jadi kabut .85',null],
+};
+const [judul,f]=ADEGAN[N];document.getElementById('jd').textContent=`Adegan ${N}: ${judul}`;
+if(N==7){document.body.style.width='1780px';document.getElementById('B').innerHTML=[.15,.36,.55,.85].map(fs=>`<div class="panel"><span class="lbl">fase ${fs}</span><div><svg width="1080" height="1920">${A.studio(1080,1920,A.PALET.malam,T)}${A.tetesSlowmo(540,1240,1.4,A.PALET.siang,fs,{t:T})}</svg></div></div>`).join('')}else document.getElementById('B').innerHTML=['siang','senja','malam'].map(n=>`<div class="panel"><span class="lbl">${n}</span><div>${f(A.PALET[n],T)}</div></div>`).join('');
+</script></body></html>
