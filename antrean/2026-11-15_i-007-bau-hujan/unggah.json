@@ -12,12 +12,21 @@
       "aroma hujan",
       "fakta sains",
       "ternyata begitu"
-    ]
+    ],
+    "komentar_tersemat": "Bonus fakta: lalat buah punya jalur saraf khusus cuma buat KABUR dari bau geosmin (Stensmyr dkk., Cell 2012). Kita kangen, mereka kabur. Hujan pertama di daerahmu turun bulan apa?"
   },
   "tiktok": {
     "caption": "Bau hujan yang kamu kangenin itu bukan bau air. Salah satu bahan utamanya dibuat bakteri tanah, dan bakterinya lagi pasang iklan. Tonton sampai bagian lele, itu plot twist-nya. Hujan pertama di daerahmu turun bulan apa?\n#faktasains #bauhujan #petrichor #geosmin #TernyataBegitu"
   },
   "instagram": {
     "caption": "Bau hujan pertama ternyata ada \"iklannya\". Salah satu bahan utamanya, geosmin, dibuat bakteri tanah untuk memanggil hewan mungil penyebar spora. Dan geosmin juga salah satu biang bau lumpur di lele kolam.\nSimpan buat bahan ngobrol pas hujan turun, kirim ke teman yang paling suka bau hujan. Hujan pertama di daerahmu turun bulan apa?\n#bauhujan #petrichor #faktaunik #sains #TernyataBegitu"
-  }
+  },
+  "jadwal_tayang_usulan": "2026-11-15T21:00:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-15T22:00:00+08:00",
+    "2026-11-16T12:00:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): BAU HUJAN · DIBUAT BAKTERI?!",
+  "_catatan": "jadwal_tayang_usulan hanya catatan; terbitkan.py membaca jadwal dari status.json -> jadwal_tayang. komentar_tersemat dipasang manual."
 }

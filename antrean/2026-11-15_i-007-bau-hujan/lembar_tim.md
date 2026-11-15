@@ -10,3 +10,7 @@ Rasa yang dikejar (kagum / kaget / geli / haru): kaget (bakteri?) → geli ("bak
 
 ## Paraf setelah produksi
 - Yoga: final.mp4 71,6 dtk / 14,9 MB / −14 LUFS, cek_video LULUS; sampul frame 0, intro 2,4 dtk, watermark berpindah, outro khas terpasang; teks layar sinkron dengan suara (dicek di "kangenin", "GEOSMIN", "MIT MENDUGA", "IKLAN"); momen soda di dtk 20,8–28,4; Tebe utuh di semua adegan yang dicek; musik di bawah narasi ✔
+- Laras: fakta di video sesuai riset — 133 kata terucap cocok dengan naskah final; "salah satu bahan utamanya", "MIT menduga", "masih menebak-nebak", "salah satu biang" terjaga; tanpa ppt/klaim kesehatan; sumber lengkap di deskripsi ✔
+- Nadia: suara cocok kata per kata dengan naskah final, pelafalan sesuai; gaya ngobrol + canda; celah penasaran tiap ±10 dtk; teks layar 1–3 kata mengikuti suara, terbaca di HP; sampul = thumbnail_teks ✔ (catatan perbaikan berikutnya: takarir tanpa titik, kata pengisi "tempat" diganti kata kunci)
+- Raka: sampul frame 0 = thumbnail.png, "bau hujan" terucap ±1,0–1,7 dtk, judul/deskripsi bersumber/tag/caption TikTok-IG/komentar tersemat di unggah.json sama dengan naskah.json, label AI menyala, jadwal 21.00 WITA (cadangan 22.00) ✔
+- Pak Bima: gerbang 12 butir §7 semua "ya" (cek_video LULUS, review.md, skor naskah 8/9, semua paraf ada) → menunggu persetujuan Bos ✔
