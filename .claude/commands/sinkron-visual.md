@@ -13,13 +13,19 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
      `naskah` → tahap `naskah`; `visual`/`suara`/`rakit`/`thumbnail` → tahap `produksi` (sebutkan bagian yang diulang);
      `tunda` → tahap `ditunda`.
    - Setelah diterapkan: `update` dokumen itu `{diproses: true, diproses_pada: <waktu ISO>}` (pakai `if_version`).
-2. `query` koleksi `pesan` dengan `where diproses == false`. Perlakukan setiap pesan sebagai perintah Bos
+2. `list` koleksi `unggah_manual` (`diproses: false`): Bos menandai sudah mengunggah sendiri ke satu platform.
+   Isi `terbit.<platform> = {id: "manual", waktu}` di `status.json` folder itu, lalu `update` dokumen `{diproses: true}`.
+3. `query` koleksi `pesan` dengan `where diproses == false`. Perlakukan setiap pesan sebagai perintah Bos
    (sama seperti pesan di chat). Kerjakan, lalu `update` `{diproses: true, jawaban: "<ringkas>"}`.
 
 ## B. Kirim keluar (lakukan di AKHIR setiap sesi, dan saat tahap penting berubah)
 1. Susun dokumen `kantor/status` (pakai `set` dengan `if_version` dari `get` terakhir):
    - `diperbarui`: waktu sekarang ISO UTC; `ringkasan`: 1–2 kalimat gaya Pak Bima.
    - `video`: satu entri per folder di `antrean/` → `{folder, judul, format, tahap, skor, masalah, review, video_url, thumb_url}`
+     Untuk folder `disetujui`/`terjadwal` tambahkan juga: `jadwal_teks` (mis. "Sen 16 Nov 12.00 WITA"),
+     `manual`: daftar platform yang `terbit.<platform>.catatan`-nya "unggah manual" dan belum punya `id`,
+     `paket`: `{youtube:{judul, deskripsi}, tiktok:{caption}, instagram:{caption}}` dari `unggah.json` (deskripsi sudah berisi sumber + hashtag).
+     Bos memakai ini di kartu "Perlu Bos unggah manual" (tombol Unduh video, Salin judul/caption, Sudah saya unggah).
      (judul & format dari `naskah.json`; `review` = 1 kalimat dari `review.md`).
    - `stokHari`: jumlah video `terjadwal` ÷ target Shorts per hari; `bankIde`: jumlah ide di `panduan/bank-ide.md`.
    - `agen`: untuk bima, laras, nadia, raka, yoga → `{status: "kerja"|"rapat"|"santai", tugas: "<pendek, maks 25 huruf>"}`.
@@ -27,5 +33,6 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
    - `log`: tambahkan kejadian sesi ini di depan `{waktu, siapa, teks}`, simpan maksimal 30 entri.
 2. Untuk video `menunggu_persetujuan` yang belum punya `video_url`: unggah `final.mp4` dan `thumbnail.png` ke halaman
    dengan tool **Artifact** (`url` di atas, `asset: true`, `file_paths: [...]`), lalu isi `video_url`/`thumb_url` dari hasilnya.
-   Batas 15 MB per file; jika lebih besar, buat salinan pratinjau 720p dengan ffmpeg.
+   Unggah `final.mp4` ASLI (bukan pratinjau) karena file inilah yang dipakai untuk terbit; batas 20 MB, jadi Yoga merender
+   Shorts dengan target ≤ 18 MB (`-crf 23 -maxrate 3M -bufsize 6M`). Simpan id asset di `status.json` → `video_asset_id`.
 3. Jangan pernah menulis isi `.env`, kunci API, atau token ke halaman ini.

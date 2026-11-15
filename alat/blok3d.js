@@ -1,0 +1,302 @@
+/* ================== KANTOR 3D (mesin 3D ringan di canvas) ================== */
+const cv = document.getElementById("kanvas"), ctx = cv.getContext("2d");
+let W = 360, H = 400, DPR = 1;
+const KAM = {yaw: -0.62, yawT: -0.62, zoom: 1, zoomT: 1, tx: 15, tz: 11, txT: 15, tzT: 11, ikut: null, diam: 0};
+const PITCH = 0.66, SP = Math.sin(PITCH), CP = Math.cos(PITCH);
+function tata(){
+  W = cv.parentElement.clientWidth; DPR = Math.min(2, window.devicePixelRatio || 1);
+  H = Math.round(Math.min(W * 1.12, 620)); cv.width = W * DPR; cv.height = H * DPR; cv.style.height = H + "px";
+}
+function waktuWITA(){ const d = new Date(); return (d.getUTCHours() * 60 + d.getUTCMinutes() + 480) % 1440; }
+function sholatSekarang(){ const m = waktuWITA(); for (const [n, w] of JADWAL_SHOLAT){ const [h, mm] = w.split(":").map(Number); if (m >= h * 60 + mm && m < h * 60 + mm + 15) return n; } return null; }
+function suasana(){
+  const m = waktuWITA();
+  if (m >= 6 * 60 && m < 16.5 * 60) return {n:"siang", tint:[1, 1, 1], langit:["#8FC6D8", "#DCEFEA"], malam:0};
+  if ((m >= 16.5 * 60 && m < 18.6 * 60) || (m >= 4.8 * 60 && m < 6 * 60)) return {n:"senja", tint:[1, .86, .76], langit:["#4E6A86", "#F2C79A"], malam:.45};
+  return {n:"malam", tint:[.44, .5, .74], langit:["#141C30", "#2A3B5C"], malam:1};
+}
+let SUA = suasana();
+// ---- warna berbayang (di-cache)
+const _c = new Map();
+function warna(hex, k = 1, emis = false){
+  const key = hex + k.toFixed(2) + (emis ? "e" : SUA.n); let v = _c.get(key); if (v) return v;
+  const n = parseInt(hex.slice(1), 16), t = emis ? [1, 1, 1] : SUA.tint;
+  v = `rgb(${Math.min(255, (n >> 16 & 255) * k * t[0]) | 0},${Math.min(255, (n >> 8 & 255) * k * t[1]) | 0},${Math.min(255, (n & 255) * k * t[2]) | 0})`;
+  _c.set(key, v); return v;
+}
+// ---- proyeksi
+let CY = 1, SY = 0, S = 10, OX = 0, OY = 0;
+function siapKamera(){ CY = Math.cos(KAM.yaw); SY = Math.sin(KAM.yaw); S = W / 36 * KAM.zoom; OX = W / 2; OY = H * 0.52; }
+function pr(x, y, z){ const dx = x - KAM.tx, dz = z - KAM.tz, xr = dx * CY - dz * SY, zr = dx * SY + dz * CY; return [OX + xr * S, OY + (zr * SP - y * CP) * S, zr]; }
+
+/* ---------- daftar benda ---------- */
+const STATIS = [], LANTAI_DATAR = [], LAMPU = [];
+let DIN = [];
+const B = (L, x, y, z, w, h, d, col, o = {}) => L.push({t:"b", x, y, z, w, h, d, col, rot:o.rot || 0, a:o.a ?? 1, e:o.e || false, top:o.top});
+const Sf = (L, x, y, z, r, col, o = {}) => L.push({t:"s", x, y, z, r, col, e:o.e || false, a:o.a ?? 1});
+const Tx = (L, x, y, z, s, ukuran, col, o = {}) => L.push({t:"t", x, y, z, s, ukuran, col, bg:o.bg, tebal:o.tebal || 700});
+const datar = (x0, z0, x1, z1, col, o = {}) => LANTAI_DATAR.push({x0, z0, x1, z1, col, bulat:o.bulat, e:o.e});
+
+const RUANG = {
+  manajer:{n:"Ruang Manajer", x0:1, z0:0.5, x1:8, z1:7, lantai:"#C9A77C", pintu:[5, 7]},
+  rapat:{n:"Ruang Rapat", x0:9.5, z0:0.5, x1:20.5, z1:7, lantai:"#B9C7C4", pintu:[15, 7]},
+  riset:{n:"Riset", x0:22, z0:0.5, x1:29, z1:7, lantai:"#D8CFB8", pintu:[25, 7]},
+  naskah:{n:"Naskah", x0:1, z0:8.5, x1:8, z1:14.5, lantai:"#E3CDBE", pintu:[5, 8.5]},
+  marketing:{n:"Marketing", x0:22, z0:8.5, x1:29, z1:14.5, lantai:"#C4D2E3", pintu:[25, 8.5]},
+  studio:{n:"Studio Editor", x0:1, z0:16, x1:9, z1:22, lantai:"#5A5470", pintu:[5, 16]},
+  istirahat:{n:"Ruang Istirahat", x0:10.5, z0:16, x1:20, z1:22, lantai:"#E6D3A8", pintu:[15, 16]},
+  musholla:{n:"Musholla", x0:21.5, z0:16, x1:29, z1:22, lantai:"#9CC7AE", pintu:[25, 16]},
+  taman:{n:"Taman Tengah", x0:9.5, z0:8.5, x1:20.5, z1:14.5, lantai:"#7DB56B", taman:true, pintu:[15, 8.5]},
+};
+function dinding(r){
+  const seg = (x, z, hor) => {
+    const [px, pz] = r.pintu; if (Math.hypot(x - px, z - pz) < 1.05) return;
+    const w = hor ? 1 : 0.16, d = hor ? 0.16 : 1;
+    B(STATIS, x, 0, z, w, 0.55, d, "#E9E2D2"); B(STATIS, x, 0.55, z, w * (hor ? 1 : .5), 1.25, d * (hor ? .5 : 1), "#BFE3EE", {a:.2});
+    if ((hor ? x : z) % 3 < 1) B(STATIS, x, 0.55, z, hor ? .12 : .16, 1.25, hor ? .16 : .12, "#8C97A8");
+  };
+  for (let x = r.x0 + .5; x < r.x1; x++){ seg(x, r.z0, true); seg(x, r.z1, true); }
+  for (let z = r.z0 + .5; z < r.z1; z++){ seg(r.x0, z, false); seg(r.x1, z, false); }
+}
+function meja(x, z, rot = 0, col = "#B98A5A", layar = "#7FD3E6", lebar = 1.7){
+  B(STATIS, x, 0.62, z, lebar, 0.1, 0.85, col, {rot}); B(STATIS, x, 0, z, lebar - .3, 0.62, 0.6, warnaGelap(col), {rot});
+  const c = Math.cos(rot), s = Math.sin(rot);
+  B(STATIS, x - s * -0.22, 0.72, z + c * -0.22, 0.75, 0.5, 0.06, "#20283A", {rot}); B(STATIS, x - s * -0.18, 0.76, z + c * -0.18, 0.66, 0.42, 0.02, layar, {rot, e:true});
+  B(STATIS, x + c * .55 - s * .1, 0.72, z + s * .55 + c * .1, 0.16, 0.14, 0.16, "#2BA6A6", {rot});
+}
+function warnaGelap(hex){ const n = parseInt(hex.slice(1), 16); return "#" + [n >> 16 & 255, n >> 8 & 255, n & 255].map(v => Math.round(v * .72).toString(16).padStart(2, "0")).join(""); }
+function kursi(x, z, rot = 0, col = "#E8963A"){ const c = Math.cos(rot), s = Math.sin(rot); B(STATIS, x, 0.36, z, 0.5, 0.1, 0.5, col, {rot}); B(STATIS, x, 0, z, 0.12, 0.36, 0.12, "#2B3446", {rot}); B(STATIS, x - s * .24, 0.46, z + c * .24, 0.5, 0.5, 0.08, col, {rot}); }
+function tanaman(x, z, s = 1){ B(STATIS, x, 0, z, .36 * s, .34 * s, .36 * s, "#B5654A"); Sf(STATIS, x, .62 * s, z, .34 * s, "#4E9A5E"); Sf(STATIS, x + .12 * s, .86 * s, z - .05, .24 * s, "#62B070"); }
+function pohon(x, z, s = 1){ B(STATIS, x, 0, z, .34 * s, 1.3 * s, .34 * s, "#8A6A4A"); Sf(STATIS, x, 1.9 * s, z, 1.05 * s, "#4E9A5E"); Sf(STATIS, x - .7 * s, 1.6 * s, z + .2, .75 * s, "#3F8A52"); Sf(STATIS, x + .65 * s, 1.7 * s, z - .2, .8 * s, "#5CAB68"); Sf(STATIS, x + .1, 2.55 * s, z, .7 * s, "#6BBB76"); }
+function lampuTaman(x, z){ B(STATIS, x, 0, z, .08, 1.5, .08, "#3A4356"); Sf(STATIS, x, 1.6, z, .16, "#FFE2A8", {e:true}); LAMPU.push([x, z, 2.6]); }
+function payung(x, z, col){ B(STATIS, x, 0, z, .07, 1.5, .07, "#EEE"); B(STATIS, x, 1.45, z, 1.7, .12, 1.7, col, {top:"#fff"}); B(STATIS, x, .5, z, .8, .06, .8, "#F2ECE1"); B(STATIS, x, 0, z, .1, .5, .1, "#C9B79A"); }
+function sofa(x, z, rot, col){ const c = Math.cos(rot), s = Math.sin(rot); B(STATIS, x, 0, z, 1.9, .4, .8, col, {rot}); B(STATIS, x - s * .32, .4, z + c * .32, 1.9, .45, .2, warnaGelap(col), {rot}); }
+
+function bangun(){
+  datar(-14, -12, 44, 34, "#6FA862"); datar(-1, -1, 31, 23.5, "#D9D2C2");            // rumput & paving kampus
+  for (const k in RUANG){ const r = RUANG[k]; datar(r.x0, r.z0, r.x1, r.z1, r.lantai); if (!r.taman){ dinding(r); LAMPU.push([(r.x0 + r.x1) / 2, (r.z0 + r.z1) / 2, 3.6]); } }
+  // --- Ruang Manajer
+  meja(5, 2.6, 0, "#7A5236", "#9BD7C8", 2.1); kursi(5, 1.7, Math.PI, "#3A4356"); sofa(2.2, 5.6, Math.PI / 2, "#8C5E47"); datar(3, 3.6, 7, 6.4, "#A8473C");
+  B(STATIS, 7.2, 0, 1.4, .9, .7, .5, "#5A3E2E"); B(STATIS, 7.2, .7, 1.4, .8, .55, .4, "#3D9FC0", {e:true, a:.85}); tanaman(1.6, 1.2, 1.2);
+  // --- Ruang Rapat (besar)
+  B(STATIS, 15, .62, 3.7, 5.2, .12, 1.7, "#8A6A4A"); B(STATIS, 15, 0, 3.7, .5, .62, .5, "#6B5040");
+  for (const x of [13, 14.3, 15.7, 17]){ kursi(x, 2.4, Math.PI, "#2BA6A6"); kursi(x, 5, 0, "#2BA6A6"); }
+  B(STATIS, 15, .5, .8, 3.4, 1.5, .1, "#20283A"); B(STATIS, 15, .58, .86, 3.2, 1.34, .02, "#3B4D66", {e:true}); tanaman(10.2, 1.2, 1.2); tanaman(19.8, 1.2, 1.2);
+  // --- Riset
+  meja(25, 3, 0, "#B98A5A", "#F3D9A6"); kursi(25, 2.1, Math.PI, "#1F8A7E");
+  for (const x of [22.8, 24, 25.2]){ B(STATIS, x, 0, 1, 1, 1.5, .4, "#6B4A32"); for (let i = 0; i < 4; i++) B(STATIS, x - .3 + i * .2, .2 + (i % 2) * .5, 1.02, .14, .4, .3, ["#E06C5A", "#5B8DD6", "#E8B84A", "#62A86F"][i]); }
+  B(STATIS, 27.8, 0, 5.4, 1.3, .45, 1.3, "#C9B79A"); Sf(STATIS, 27.8, .85, 5.4, .42, "#3D9FC0"); tanaman(22.7, 6.2);
+  // --- Naskah
+  meja(4.5, 11, 0, "#C79A6B", "#F3D9A6"); kursi(4.5, 10.1, Math.PI, "#8B5CF6"); B(STATIS, 1.4, .3, 11.5, .1, 1.3, 2.4, "#FFF4DC"); for (let i = 0; i < 6; i++) B(STATIS, 1.46, .5 + (i % 3) * .34, 10.7 + (i >> 1) * .7, .02, .26, .3, ["#FFC93C", "#F58A7A", "#7FD3E6"][i % 3], {e:true});
+  sofa(6.6, 13.4, 0, "#B89BEB"); tanaman(7.3, 9.2);
+  // --- Marketing
+  meja(25.5, 11, 0, "#A8B4C4", "#A9D18E"); kursi(25.5, 10.1, Math.PI, "#3B82F6"); B(STATIS, 28.6, .3, 11.5, .1, 1.4, 2.6, "#FFFFFF"); B(STATIS, 28.54, .6, 11, .02, .8, .14, "#3B82F6", {e:true}); B(STATIS, 28.54, .6, 11.5, .02, .5, .14, "#FFC93C", {e:true}); B(STATIS, 28.54, .6, 12, .02, 1.05, .14, "#2BA6A6", {e:true});
+  tanaman(22.7, 13.8); B(STATIS, 23.2, 0, 9.3, .8, .9, .5, "#7A879C");
+  // --- Studio Editor (gelap, neon ungu)
+  meja(5, 19, 0, "#3A3F48", "#C8A2E8", 2.4); kursi(5, 18.1, Math.PI, "#56606E"); B(STATIS, 6.1, .72, 19.22, .7, .48, .06, "#20283A"); B(STATIS, 6.1, .76, 19.26, .62, .4, .02, "#F58AC8", {e:true});
+  B(STATIS, 2, 0, 16.8, .5, 1.5, .5, "#20283A"); B(STATIS, 8, 0, 16.8, .5, 1.5, .5, "#20283A"); datar(3, 17.2, 7.4, 20.6, "#7B5CC8", {e:true}); sofa(2.2, 20.6, Math.PI / 2, "#6B4FB5");
+  // --- Istirahat
+  B(STATIS, 11.6, 0, 17, .8, 1.6, .7, "#C2453A"); B(STATIS, 11.6, 1, 17.36, .6, .45, .02, "#FFC93C", {e:true});
+  B(STATIS, 12.9, 0, 17, .8, 1.6, .7, "#2B6CB0"); B(STATIS, 12.9, 1, 17.36, .6, .45, .02, "#7FD3E6", {e:true});
+  sofa(13, 20.8, 0, "#4E8C9E"); B(STATIS, 13, 0, 19.6, 1.1, .34, .6, "#8A6A4A"); B(STATIS, 17, .6, 19, 1.8, .1, 1.1, "#C79A6B"); B(STATIS, 17, 0, 19, .3, .6, .3, "#8A6A4A");
+  kursi(16.3, 19.9, 0, "#FFC93C"); kursi(17.7, 19.9, 0, "#FFC93C"); kursi(17, 18.1, Math.PI, "#FFC93C");
+  B(STATIS, 19.3, 0, 17, .8, 1.8, .7, "#3A4356"); B(STATIS, 19.3, .5, 17.36, .6, 1.1, .02, "#7FD3E6", {e:true}); B(STATIS, 18.2, 0, 16.8, 1, .9, .5, "#EDE6DA"); tanaman(10.9, 21.3, 1.1);
+  // --- Musholla
+  datar(22.3, 17, 28.3, 21.4, "#2E7D5B"); for (let i = 0; i < 5; i++) datar(22.6, 17.3 + i * .82, 24.1, 17.9 + i * .82, "#F2ECE1");
+  B(STATIS, 22, .0, 19.2, .3, 1.9, 1.6, "#C9A46A"); B(STATIS, 22.12, .3, 19.2, .1, 1.3, 1, "#8A6A3A"); B(STATIS, 28.2, 0, 16.7, .9, .9, .4, "#8A6A4A");
+  // --- Taman tengah
+  pohon(15, 11.4, 1.25); datar(11, 9.4, 13.6, 11.4, "#4DA3C7", {bulat:true}); datar(11.3, 9.65, 13.3, 11.15, "#7CC4DE", {bulat:true});
+  payung(18.3, 9.9, "#F58A7A"); payung(18.6, 13, "#2BA6A6"); B(STATIS, 12, 0, 13.4, 1.6, .4, .5, "#B98A5A"); B(STATIS, 12, .4, 13.62, 1.6, .4, .08, "#8A6A4A");
+  for (const [x, z] of [[10, 9], [20, 9], [10, 14], [20, 14], [15, 8.9]]) lampuTaman(x, z);
+  for (const [x, z] of [[10.3, 12], [19.9, 11.3], [16.6, 14]]) tanaman(x, z, 1.1);
+  // patung "?" ikon channel
+  B(STATIS, 15.9, 0, 13.6, .7, .3, .7, "#F2ECE1"); Sf(STATIS, 15.9, .8, 13.6, .5, "#FFC93C", {e:true}); Tx(STATIS, 15.9, .8, 13.6, "?", .7, "#1E1E1E");
+  // --- luar: pohon, gerbang, papan nama
+  for (const [x, z, s] of [[-3, 2, 1.3], [-4, 12, 1.1], [-3, 21, 1.4], [33.5, 3, 1.2], [34, 13, 1.4], [33, 21, 1.1], [6, -4, 1.2], [24, -4.5, 1.3], [8, 26.5, 1.2], [22, 27, 1.1]]) pohon(x, z, s);
+  B(STATIS, 12.4, 0, 23.4, .4, 1.7, .4, "#3A4356"); B(STATIS, 17.6, 0, 23.4, .4, 1.7, .4, "#3A4356"); B(STATIS, 15, 1.7, 23.4, 5.8, .9, .3, "#1E2533");
+  Tx(STATIS, 15, 2.15, 23.6, "TERNYATA BEGITU", .52, "#FFC93C"); datar(13.4, 23.4, 16.6, 28, "#CFC7B4");
+  for (const x of [11, 19]) lampuTaman(x, 24.2);
+}
+
+/* ---------- karyawan 3D ---------- */
+const TEMPAT = {
+  bima:{meja:["manajer", 5, 1.75, Math.PI], santai:[["manajer", 2.9, 5.6, -Math.PI / 2, "tidur"], ["taman", 12, 12.9, 0, "duduk"], ["manajer", 6.6, 2.2, Math.PI / 2, "lihat"]]},
+  laras:{meja:["riset", 25, 2.15, Math.PI], santai:[["riset", 24, 1.9, Math.PI, "baca"], ["taman", 18.3, 10.9, Math.PI, "duduk"], ["riset", 27, 5.2, Math.PI / 2, "lihat"]]},
+  nadia:{meja:["naskah", 4.5, 10.15, Math.PI], santai:[["istirahat", 17, 18.15, Math.PI, "makan"], ["naskah", 6.6, 13, Math.PI, "duduk"], ["taman", 13.9, 11.9, -Math.PI / 2, "lihat"]]},
+  raka:{meja:["marketing", 25.5, 10.15, Math.PI], santai:[["istirahat", 11.6, 18, Math.PI, "main"], ["istirahat", 12.9, 18, Math.PI, "main"], ["taman", 18.6, 13.9, Math.PI, "duduk"]]},
+  yoga:{meja:["studio", 5, 18.15, Math.PI], santai:[["istirahat", 16.3, 19.85, 0, "makan"], ["istirahat", 19.3, 18, Math.PI, "lihat"], ["studio", 2.9, 20.6, -Math.PI / 2, "tidur"]]},
+};
+const KURSI_RAPAT = {bima:[15.7, 2.45, Math.PI], laras:[13, 2.45, Math.PI], nadia:[14.3, 4.95, 0], raka:[17, 2.45, Math.PI], yoga:[15.7, 4.95, 0]};
+const SAF = {bima:0, laras:1, nadia:2, raka:3, yoga:4};
+const ORANG = {}; let urut = 0;
+for (const k in TIM){ const m = TEMPAT[k].meja; ORANG[k] = {k, x:m[1], z:m[2], hd:m[3], ruang:m[0], jalur:[], gaya:"diri", ganti:0, i:urut++, fase:Math.random() * 6}; }
+function infoAgen(k){ return (DATA.agen && DATA.agen[k]) || {}; }
+function tujuan(o, t){
+  const a = infoAgen(o.k), sh = sholatSekarang();
+  if (a.status === "kerja"){ const m = TEMPAT[o.k].meja; return [m[0], m[1], m[2], m[3], "kerja"]; }
+  if (a.status === "rapat" || (DATA.rapat && a.status !== "santai")){ const r = KURSI_RAPAT[o.k]; return ["rapat", r[0], r[1], r[2], "rapat"]; }
+  if (sh) return ["musholla", 23.4, 17.6 + SAF[o.k] * .82, -Math.PI / 2, "sholat"];
+  if (!o.santai || t > o.ganti){ const p = TEMPAT[o.k].santai; o.santai = p[Math.floor(Math.random() * p.length)]; o.ganti = t + 14000 + Math.random() * 16000; }
+  return o.santai;
+}
+// jalur lewat pintu & koridor (dua lorong mendatar z=7.75 dan z=15.25, penghubung x=8.75 / x=21.25)
+function lorong(r){ const p = RUANG[r].pintu; return [p[0], p[1] < 8 ? 7.75 : p[1] < 10 ? 7.75 : 15.25]; }
+function rute(o, tj){
+  if (o.ruang === tj[0]) return [[tj[1], tj[2]]];
+  const A = RUANG[o.ruang].pintu, Bp = RUANG[tj[0]].pintu, la = lorong(o.ruang), lb = lorong(tj[0]), j = [];
+  const dalam = (r, p) => RUANG[r].taman ? [p[0], p[1] + .8] : [p[0], p[1] + (p[1] <= RUANG[r].z0 + .1 ? .7 : -.7)];
+  j.push(dalam(o.ruang, A), la);
+  if (la[1] !== lb[1]){ const c = Math.abs(la[0] - 8.75) + Math.abs(lb[0] - 8.75) < Math.abs(la[0] - 21.25) + Math.abs(lb[0] - 21.25) ? 8.75 : 21.25; j.push([c, la[1]], [c, lb[1]]); }
+  j.push(lb, dalam(tj[0], Bp), [tj[1], tj[2]]); return j;
+}
+function gerak(o, dt, t){
+  const tj = tujuan(o, t), kunci = tj[0] + tj[1] + tj[2];
+  if (o.kunci !== kunci){ o.kunci = kunci; o.jalur = rute(o, tj); o.ruangTuju = tj[0]; }
+  if (o.jalur.length){
+    const [x, z] = o.jalur[0], dx = x - o.x, dz = z - o.z, d = Math.hypot(dx, dz), v = dt * 0.0021;
+    if (d <= v){ o.x = x; o.z = z; o.jalur.shift(); if (!o.jalur.length) o.ruang = o.ruangTuju; }
+    else { o.x += dx / d * v; o.z += dz / d * v; const target = Math.atan2(dx, -dz); let s = target - o.hd; s = Math.atan2(Math.sin(s), Math.cos(s)); o.hd += s * Math.min(1, dt * .012); }
+    o.gaya = "jalan"; return;
+  }
+  let s = tj[3] - o.hd; s = Math.atan2(Math.sin(s), Math.cos(s)); o.hd += s * Math.min(1, dt * .01); o.gaya = tj[4] || "diri";
+}
+function orang(o, t){
+  const p = TIM[o.k], g = o.gaya, L = DIN, c = Math.cos(o.hd), s = Math.sin(o.hd), T = t / 1000 + o.fase;
+  const duduk = ["kerja", "rapat", "duduk", "makan"].includes(g), tidur = g === "tidur", sujud = g === "sholat" && Math.sin(T * .5) > .35;
+  const maju = (f, sisi) => [o.x + s * f + c * sisi, o.z - c * f + s * sisi];       // f = ke depan, sisi = ke kanan
+  if (tidur){ const [bx, bz] = maju(0, 0); B(L, bx, .46, bz, 1.25, .26, .42, p.baju, {rot:o.hd + Math.PI / 2}); const [hx, hz] = maju(0, .72); Sf(L, hx, .66, hz, .25, p.kulit); Sf(L, hx, .74, hz, .24, p.rambut);
+    Tx(L, hx, 1.3 + Math.sin(T * 2) * .08, hz, "z z", .3, "#FFFFFF"); o.atas = [hx, 1.2, hz]; return; }
+  const langkah = g === "jalan" ? Math.sin(T * 9) : 0, naik = g === "jalan" ? Math.abs(Math.sin(T * 9)) * .05 : Math.sin(T * 2) * .008;
+  const yB = (duduk ? .42 : sujud ? .22 : .5) + naik;
+  // kaki
+  if (duduk){ for (const sd of [-.12, .12]){ const [x, z] = maju(.2, sd); B(L, x, .34, z, .15, .13, .42, p.celana, {rot:o.hd}); const [x2, z2] = maju(.38, sd); B(L, x2, 0, z2, .14, .36, .14, p.celana, {rot:o.hd}); } }
+  else if (g === "sholat"){ const [x, z] = maju(-.12, 0); B(L, x, 0, z, .42, .2, .5, p.celana, {rot:o.hd}); }
+  else for (const sd of [-.12, .12]){ const [x, z] = maju(langkah * .16 * (sd < 0 ? 1 : -1), sd); B(L, x, 0, z, .15, .5, .16, p.celana, {rot:o.hd}); }
+  // badan
+  const condong = sujud ? .42 : g === "kerja" ? .05 : 0, [bx, bz] = maju(condong, 0);
+  B(L, bx, yB, bz, .5, sujud ? .3 : .52, .3, p.baju, {rot:o.hd});
+  if (p.ciri.includes("dasi")){ const [dx, dz] = maju(condong + .16, 0); B(L, dx, yB + .14, dz, .09, .34, .03, "#C2453A", {rot:o.hd}); }
+  // lengan
+  const ketik = g === "kerja" ? Math.sin(T * 14) * .03 : 0, main = g === "main" ? Math.sin(T * 11) * .04 : 0, ayun = langkah * .14;
+  for (const sd of [-.32, .32]){
+    const depan = (g === "kerja" || g === "main" || g === "makan") ? .22 : sujud ? .5 : ayun * (sd < 0 ? -1 : 1);
+    const [ax, az] = maju(condong + depan, sd), tinggi = (g === "kerja" || g === "main" || g === "makan") ? yB + .16 + (sd < 0 ? ketik : -ketik) + main : sujud ? .08 : yB + .06;
+    B(L, ax, tinggi, az, .13, (g === "kerja" || g === "main" || g === "makan" || sujud) ? .13 : .42, (g === "kerja" || g === "main" || g === "makan" || sujud) ? .4 : .14, p.baju, {rot:o.hd});
+    if (g === "kerja" || g === "main" || g === "makan"){ const [tx2, tz2] = maju(condong + depan + .22, sd); Sf(L, tx2, tinggi + .06, tz2, .07, p.kulit); }
+  }
+  // kepala
+  const [hx, hz] = maju(condong + (sujud ? .5 : .02), 0), hy = sujud ? .3 : yB + .78 + (g === "kerja" ? Math.sin(T * 1.3) * .012 : 0);
+  Sf(L, hx, hy, hz, .3, p.kulit);
+  const [rx, rz] = maju(condong - .07 + (sujud ? .5 : 0), 0); Sf(L, rx, hy + .07, rz, .3, p.rambut);
+  if (p.ciri.includes("panjang")){ const [qx, qz] = maju(condong - .2, 0); B(L, qx, hy - .42, qz, .46, .45, .14, p.rambut, {rot:o.hd}); }
+  if (p.ciri.includes("kuncir")){ const [qx, qz] = maju(condong - .36, 0); Sf(L, qx, hy + .12, qz, .14, p.rambut); }
+  if (p.ciri.includes("topi")){ const [qx, qz] = maju(condong + .2, 0); B(L, hx, hy + .2, hz, .56, .12, .56, "#E8B84A", {rot:o.hd}); B(L, qx, hy + .2, qz, .4, .05, .3, "#E8B84A", {rot:o.hd}); }
+  if (p.ciri.includes("headset")){ for (const sd of [-.3, .3]){ const [qx, qz] = maju(condong, sd); Sf(L, qx, hy, qz, .11, "#7B5CC8"); } B(L, hx, hy + .3, hz, .6, .05, .08, "#20283A", {rot:o.hd}); }
+  if (p.ciri.includes("kacamata")){ const [qx, qz] = maju(condong + .29, 0); B(L, qx, hy - .02, qz, .4, .09, .03, "#20283A", {rot:o.hd}); }
+  // mata (hanya terlihat dari depan)
+  for (const sd of [-.1, .1]){ const [ex, ez] = maju(condong + .285 + (sujud ? .5 : 0), sd); Sf(L, ex, hy - .01, ez, .035, "#1E1E1E"); }
+  o.atas = [hx, hy + .55, hz];
+}
+
+/* ---------- gambar ---------- */
+function gambarKotak(b){
+  const c = Math.cos(b.rot), s = Math.sin(b.rot), hw = b.w / 2, hd = b.d / 2;
+  const P = [[-hw, -hd], [hw, -hd], [hw, hd], [-hw, hd]].map(([lx, lz]) => [b.x + lx * c - lz * s, b.z + lx * s + lz * c]);
+  const bw = P.map(([x, z]) => pr(x, b.y, z)), at = P.map(([x, z]) => pr(x, b.y + b.h, z));
+  if (b.a < 1) ctx.globalAlpha = b.a;
+  const normal = [-Math.PI / 2, 0, Math.PI / 2, Math.PI];                       // sisi 0:-z, 1:+x, 2:+z, 3:-x
+  for (let i = 0; i < 4; i++){
+    const a = b.rot + normal[i], nx = Math.cos(a), nz = Math.sin(a), nzr = nx * SY + nz * CY; if (nzr <= 0.01) continue;
+    const j = (i + 1) % 4, nxr = nx * CY - nz * SY;
+    ctx.fillStyle = warna(b.col, b.e ? 1 : .74 + nxr * .12, b.e); ctx.beginPath(); ctx.moveTo(bw[i][0], bw[i][1]); ctx.lineTo(bw[j][0], bw[j][1]); ctx.lineTo(at[j][0], at[j][1]); ctx.lineTo(at[i][0], at[i][1]); ctx.fill();
+  }
+  ctx.fillStyle = warna(b.top || b.col, 1, b.e); ctx.beginPath(); ctx.moveTo(at[0][0], at[0][1]); for (let i = 1; i < 4; i++) ctx.lineTo(at[i][0], at[i][1]); ctx.fill();
+  if (b.a < 1) ctx.globalAlpha = 1;
+}
+function gambarBola(b){
+  const [x, y] = pr(b.x, b.y, b.z), r = b.r * S;
+  if (b.e){ ctx.fillStyle = warna(b.col, 1, true); ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fill(); return; }
+  const g = ctx.createRadialGradient(x + r * .3, y - r * .4, r * .1, x, y, r); g.addColorStop(0, warna(b.col, 1.12)); g.addColorStop(1, warna(b.col, .78));
+  ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fill();
+}
+function gambarTeks(b){ const [x, y] = pr(b.x, b.y, b.z); ctx.font = `${b.tebal} ${Math.max(7, b.ukuran * S)}px Poppins`; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillStyle = b.col; ctx.fillText(b.s, x, y); ctx.textBaseline = "alphabetic"; }
+function gambarDatar(f){
+  if (f.bulat){ const [x, y] = pr((f.x0 + f.x1) / 2, 0, (f.z0 + f.z1) / 2); ctx.fillStyle = warna(f.col, 1, f.e); ctx.beginPath(); ctx.ellipse(x, y, (f.x1 - f.x0) / 2 * S, (f.z1 - f.z0) / 2 * S * SP, 0, 0, 7); ctx.fill(); return; }
+  const p = [[f.x0, f.z0], [f.x1, f.z0], [f.x1, f.z1], [f.x0, f.z1]].map(([x, z]) => pr(x, 0, z));
+  ctx.fillStyle = warna(f.col, 1, f.e && SUA.malam > .5); ctx.beginPath(); ctx.moveTo(p[0][0], p[0][1]); for (let i = 1; i < 4; i++) ctx.lineTo(p[i][0], p[i][1]); ctx.fill();
+}
+function label(o, t){
+  const a = infoAgen(o.k); if (!o.atas) return; let judul = null, sub = null;
+  if (o.gaya === "kerja"){ judul = TIM[o.k].nama + " · " + TIM[o.k].peran; sub = a.tugas || "sedang bekerja"; }
+  else if (o.gaya === "rapat"){ judul = TIM[o.k].nama; sub = a.tugas || "rapat"; }
+  else if (KAM.ikut === o.k){ judul = TIM[o.k].nama; sub = TIM[o.k].peran; }
+  if (!judul) return;
+  if (sub.length > 24) sub = sub.slice(0, 23) + "…";
+  const [x, y] = pr(o.atas[0], o.atas[1] + .1, o.atas[2]);
+  ctx.font = "700 11px Poppins"; const w1 = ctx.measureText(judul).width; ctx.font = "600 10px Inter"; const w = Math.max(w1, ctx.measureText(sub).width + 22) + 26, h = 34;
+  const bx = Math.max(4, Math.min(W - w - 4, x - w / 2)), by = Math.max(4, y - h - 8);
+  ctx.fillStyle = "rgba(16,22,36,.88)"; ctx.beginPath(); ctx.roundRect(bx, by, w, h, 10); ctx.fill();
+  ctx.strokeStyle = o.gaya === "kerja" ? "#FFC93C" : "#4CC3C3"; ctx.lineWidth = 1.5; ctx.stroke();
+  ctx.fillStyle = "rgba(16,22,36,.88)"; ctx.beginPath(); ctx.moveTo(x - 5, by + h); ctx.lineTo(x + 5, by + h); ctx.lineTo(x, by + h + 6); ctx.fill();
+  ctx.fillStyle = o.gaya === "kerja" ? "#FFC93C" : "#4CC3C3"; ctx.beginPath(); ctx.arc(bx + 11, by + 12, 3.5, 0, 7); ctx.fill();
+  ctx.textAlign = "left"; ctx.font = "700 11px Poppins"; ctx.fillStyle = "#FFFFFF"; ctx.fillText(judul, bx + 20, by + 15.5);
+  ctx.font = "600 10px Inter"; ctx.fillStyle = o.gaya === "kerja" ? "#FFC93C" : "#9FD8D8"; ctx.fillText(sub, bx + 20, by + 27.5);
+  if (o.gaya === "kerja"){ const sx = bx + 24 + ctx.measureText(sub).width; for (let i = 0; i < 3; i++){ ctx.globalAlpha = .3 + .7 * Math.max(0, Math.sin(t / 260 - i * .9)); ctx.beginPath(); ctx.arc(sx + i * 6, by + 24, 1.8, 0, 7); ctx.fill(); } ctx.globalAlpha = 1; }
+}
+let tLalu = performance.now(), semua = [];
+function frame(t){
+  const dt = Math.min(60, t - tLalu); tLalu = t; SUA = suasana();
+  // kamera halus + putar pelan saat didiamkan
+  KAM.diam += dt; if (KAM.diam > 9000 && !KAM.ikut) KAM.yawT += dt * 0.00003;
+  if (KAM.ikut){ const o = ORANG[KAM.ikut]; KAM.txT = o.x; KAM.tzT = o.z; }
+  const k = Math.min(1, dt * .006); KAM.yaw += (KAM.yawT - KAM.yaw) * k; KAM.zoom += (KAM.zoomT - KAM.zoom) * k; KAM.tx += (KAM.txT - KAM.tx) * k; KAM.tz += (KAM.tzT - KAM.tz) * k;
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0); siapKamera();
+  const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, SUA.langit[0]); g.addColorStop(1, SUA.langit[1]); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  for (const f of LANTAI_DATAR) gambarDatar(f);
+  // genangan cahaya hangat di malam hari
+  if (SUA.malam > 0){ ctx.globalCompositeOperation = "lighter";
+    for (const [x, z, r] of LAMPU){ const [px, py] = pr(x, 0, z), R = r * S; ctx.save(); ctx.translate(px, py); ctx.scale(1, SP); const gr = ctx.createRadialGradient(0, 0, 0, 0, 0, R); gr.addColorStop(0, `rgba(255,196,120,${.34 * SUA.malam})`); gr.addColorStop(1, "rgba(255,196,120,0)"); ctx.fillStyle = gr; ctx.beginPath(); ctx.arc(0, 0, R, 0, 7); ctx.fill(); ctx.restore(); }
+    ctx.globalCompositeOperation = "source-over"; }
+  DIN = []; const daftar = Object.values(ORANG); for (const o of daftar){ gerak(o, dt, t); orang(o, t); }
+  // bayangan lantai karyawan
+  ctx.fillStyle = "rgba(0,0,0,.18)"; for (const o of daftar){ const [x, y] = pr(o.x, 0, o.z); ctx.beginPath(); ctx.ellipse(x, y, .36 * S, .36 * S * SP, 0, 0, 7); ctx.fill(); }
+  semua = STATIS.concat(DIN);
+  for (const b of semua){ const dx = b.x - KAM.tx, dz = b.z - KAM.tz; b.k = dx * SY + dz * CY + (b.y + (b.h || b.r || 0) * .5) * .32 + (b.t === "t" ? .6 : 0); }
+  semua.sort((a, b) => a.k - b.k);
+  const batas = 60; for (const b of semua){ if (b.t === "b") gambarKotak(b); else if (b.t === "s") gambarBola(b); else gambarTeks(b); }
+  for (const o of daftar) label(o, t);
+  requestAnimationFrame(frame);
+}
+
+/* ---------- kendali kamera & ketuk ---------- */
+let seret = null;
+cv.addEventListener("pointerdown", e => { seret = {x:e.clientX, y:e.clientY, yaw:KAM.yawT, geser:false}; });
+cv.addEventListener("pointermove", e => { if (!seret) return; const dx = e.clientX - seret.x; if (Math.abs(dx) > 6) seret.geser = true; if (seret.geser){ KAM.yawT = seret.yaw - dx * .008; KAM.diam = 0; } });
+addEventListener("pointerup", e => {
+  if (!seret) return; const s = seret; seret = null; if (s.geser) return;
+  const r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top; KAM.diam = 0;
+  let dekat = null, jarak = 34;
+  for (const o of Object.values(ORANG)){ if (!o.atas) continue; const [px, py] = pr(o.x, .7, o.z); const d = Math.hypot(px - x, py - y); if (d < jarak){ jarak = d; dekat = o; } }
+  if (dekat){ fokus(dekat.k); return bukaOrang(dekat.k); }
+  // ketuk ruangan: balik proyeksi ke lantai
+  const xr = (x - OX) / S, zr = (y - OY) / S / SP, wx = KAM.tx + xr * CY + zr * SY, wz = KAM.tz - xr * SY + zr * CY;
+  for (const k in RUANG){ const R = RUANG[k]; if (wx > R.x0 && wx < R.x1 && wz > R.z0 && wz < R.z1){ const isi = Object.values(ORANG).filter(o => o.ruang === k && !o.jalur.length).map(o => TIM[o.k].nama);
+    KAM.ikut = null; KAM.txT = (R.x0 + R.x1) / 2; KAM.tzT = (R.z0 + R.z1) / 2; KAM.zoomT = 2.1;
+    return bukaLembar(`<h3>${R.n}</h3><p>${isi.length ? "Ada di sini: <b>" + isi.join(", ") + "</b>" : "Sedang kosong."}</p>`); } }
+});
+function fokus(k){ KAM.ikut = k; KAM.zoomT = 3.1; }
+function lihatSemua(){ KAM.ikut = null; KAM.txT = 15; KAM.tzT = 11; KAM.zoomT = 1; KAM.diam = 0; tutupLembar(); }
+function putar(arah){ KAM.yawT += arah * Math.PI / 4; KAM.diam = 0; }
+function zum(f){ KAM.zoomT = Math.max(.7, Math.min(4, KAM.zoomT * f)); KAM.diam = 0; }
+function bukaOrang(k){
+  const p = TIM[k], a = infoAgen(k), o = ORANG[k];
+  const kegiatan = {kerja:"Sedang bekerja", rapat:"Sedang rapat", sholat:"Sedang sholat", tidur:"Tidur sebentar", jalan:"Sedang berjalan", main:"Main game (katanya riset tren)", makan:"Istirahat makan", baca:"Membaca di rak buku", duduk:"Bersantai", lihat:"Bersantai"}[o.gaya] || "Bersantai";
+  bukaLembar(`<h3>${p.nama}</h3><div class="meta">${p.peran}</div><p>${p.sifat}</p><div class="kutip">"${p.khas}"</div>
+   <p><span class="pill ${a.status === "kerja" ? "kuning" : ""}">${kegiatan}</span></p>${a.tugas ? `<p><b>Tugas:</b> ${esc(a.tugas)}</p>` : ""}`);
+}
+function bukaLembar(html){ const l = document.getElementById("lembar"); document.getElementById("lembarIsi").innerHTML = `<button class="tutup" onclick="lihatSemua()">Tutup</button>` + html; l.hidden = false; }
+function tutupLembar(){ document.getElementById("lembar").hidden = true; }
+function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function toast(s){ const el = document.getElementById("toast"); el.textContent = s; el.hidden = false; clearTimeout(el._t); el._t = setTimeout(() => el.hidden = true, 3200); }
+bangun();
+
