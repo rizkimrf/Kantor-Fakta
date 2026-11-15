@@ -1,0 +1,129 @@
+{
+  "format": "shorts",
+  "judul": "Bau Hujan Ternyata \"Dibuat\" Bakteri, Ini Alasannya",
+  "thumbnail_teks": "DIBUAT BAKTERI?!",
+  "thumbnail_visual": "Tebe crouching over a patch of dark wet soil, sniffing the air with wide surprised eyes and an 'O' mouth, a single big raindrop splashing on the ground in front of him, tiny friendly thread-like bacteria waving up from the soil, warm dusk light, strong contrast, the question-mark hair curl clearly visible, empty space in the top third.",
+  "deskripsi": "Bau hujan pertama itu bukan bau air. Salah satu bahan utamanya, geosmin, dibuat bakteri tanah Streptomyces, dan baunya memanggil springtail, hewan mungil yang ikut menyebarkan spora bakteri. Bonusnya: geosmin juga salah satu biang bau lumpur di lele kolam.\nSumber: https://doi.org/10.1038/201993a0 · https://www.smithsonianmag.com/science-nature/what-makes-rain-smell-so-good-13806085/ · https://pmc.ncbi.nlm.nih.gov/articles/PMC1058374 · https://www.jic.ac.uk/blog/meet-the-molecules-geosmin/ · https://doi.org/10.1038/s41564-020-0697-x · https://www.smithsonianmag.com/smart-news/smell-rain-explained-180974692/ · https://dspace.mit.edu/handle/1721.1/107381 · https://news.mit.edu/2015/rainfall-can-release-aerosols-0114 · https://www.globalseafood.org/advocate/off-flavors-in-salmonids-raised-in-ras/ · https://jai.ipb.ac.id/index.php/jai/article/view/10333\n#Shorts #BauHujan #Petrichor",
+  "caption_komentar": "Fakta cadangan: lalat buah punya saraf khusus cuma buat KABUR dari bau geosmin. Kita kangen, mereka kabur. Hujan pertama di daerahmu turun bulan apa?",
+  "tag": ["bau hujan", "kenapa hujan bau tanah", "petrichor", "geosmin", "bau tanah setelah hujan", "aroma hujan", "fakta sains", "ternyata begitu"],
+  "pola_hook": "kamu-salah",
+  "hook_kandidat": [
+    {"teks": "Cium deh, bau hujan yang kamu kangenin. Itu bukan bau airnya.", "skor": 9, "alasan": "Sensasi indra + kamu-salah. Kata kunci di kata ketiga, ada 'kamu', klaim didukung riset (air hujan nyaris tak berbau). Usulan Raka versi indra. TERPILIH."},
+    {"teks": "Bau hujan yang kamu suka itu, salah satu bahannya dibuat bakteri.", "skor": 8, "alasan": "Kejutan langsung dan aman secara fakta, tapi membuka kartu terlalu cepat sehingga tidak ada sisa celah."},
+    {"teks": "Bau hujan itu sebenarnya iklan. Yang pasang, bakteri.", "skor": 7, "alasan": "Paling unik, tapi terlalu mutlak (bau hujan itu campuran). Dipakai sebagai payoff, bukan hook."},
+    {"teks": "Tiap gerimis pertama, kamu lagi nyium kerjaan bakteri.", "skor": 7, "alasan": "Personal, tapi kata kunci 'bau hujan' tidak terucap dan klaimnya agak mutlak."},
+    {"teks": "Apa hubungan bau hujan dengan lele yang bau lumpur?", "skor": 7, "alasan": "Pertanyaan mustahil yang kuat, tapi membakar kejutan kedua di detik pertama."},
+    {"teks": "Bau hujan punya nama estetik. Pembuatnya? Bakteri tanah.", "skor": 7, "alasan": "Ada canda kontras estetik lawan bakteri, tapi 'pembuatnya' terlalu mutlak dan tanpa 'kamu'."},
+    {"teks": "Air hujan nyaris nggak berbau. Terus yang kamu cium apa?", "skor": 7, "alasan": "Kontradiksi bagus, tapi kata kunci utama tidak utuh dan terasa seperti soal ujian."},
+    {"teks": "Bakteri di bawah kakimu lagi pasang iklan, dan kamu ikut nyium.", "skor": 6, "alasan": "Lucu, tapi kata kunci terlambat dan objeknya kurang jelas."},
+    {"teks": "Tahun seribu sembilan ratus enam puluh empat, dua ilmuwan menyuling batu demi bau hujan.", "skor": 5, "alasan": "In medias res, tapi lebih dari 14 kata saat diucapkan dan lambat di telinga."},
+    {"teks": "Kalau nggak ada bakteri, bau hujan nggak akan seperti ini.", "skor": 4, "alasan": "Klaim kontrafaktual yang tidak ada di riset. Dibuang."}
+  ],
+  "peta_retensi": "0–4,3 dtk → hook sensasi indra + kamu-salah ('bukan bau airnya'), kata kunci 'bau hujan' di kata ketiga\n4,3–6,7 dtk → intro khas (pattern interrupt visual + jingle)\n7–12 dtk → taruhan + istilah belakangan (petrichor), 'salah satu bahan utamanya dibuat bakteri', OPEN LOOP #1: 'bakterinya punya maksud'\n12–18 dtk → anak tangga 1: bakteri benang bikin geosmin saat bikin spora (ganti set ke bawah tanah = pattern interrupt)\n18–24,5 dtk → anak tangga 2: momen 'wah' tetes hujan → gelembung → kabut kayak soda (klip)\n25–31,5 dtk → kejujuran: 'peneliti MIT menduga', pertanyaan pendek 'Kenapa?' + OPEN LOOP jujur 'ilmuwan masih menebak-nebak'\n32–35 dtk → payoff open loop #1: 'baunya itu IKLAN' (Tebe bingung = reaksi 1)\n35–43 dtk → anak tangga 3: springtail + canda 'bayar ongkir pakai badan sendiri'\n43–50,5 dtk → KEJUTAN KEDUA (twist Indonesia): geosmin juga salah satu biang bau lumpur lele kolam, callback 'dikangenin' (Tebe kaget = reaksi 2)\n51–59 dtk → payoff hook ('di balik bau hujan ada bakteri pasang iklan') + kalimat khas + pertanyaan komentar",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 2, "bahasa_lisan": 1, "payoff": 1, "total": 9},
+  "pelafalan": {
+    "petrichor": "pe-tri-kor",
+    "geosmin": "ge-os-min",
+    "springtail": "spring-teil",
+    "MIT": "em-ai-ti",
+    "plot twist": "plot twist (Inggris, seperti diucapkan sehari-hari)"
+  },
+  "seo": {
+    "kata_kunci_utama": "bau hujan",
+    "kata_kunci_turunan": ["petrichor", "geosmin", "bau tanah", "aroma hujan", "kenapa hujan bau tanah", "bau tanah setelah hujan"]
+  },
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Cium deh, BAU HUJAN yang kamu kangenin. Itu bukan bau AIRNYA.",
+      "teks_layar": "BAU HUJAN?",
+      "visual": "Tebe stands on the porch of a simple Indonesian house at dusk, eyes half closed and nose lifted, sniffing the first drizzle falling on the dry front yard; slow camera push-in from wide shot to medium shot.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "teras rumah senja saat gerimis pertama",
+      "tebe": "penasaran"
+    },
+    {
+      "no": 2,
+      "narasi": "Namanya PETRICHOR. Salah satu bahan utamanya dibuat… BAKTERI. Dan bakterinya punya MAKSUD.",
+      "teks_layar": "DIBUAT BAKTERI",
+      "visual": "Tebe crouches beside cracked dry soil in a sunny yard during the dry season, pointing at the ground as the first raindrops darken small spots on it; camera tilts down from Tebe to the soil.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "halaman tanah kering retak, siang kemarau, tetes pertama jatuh",
+      "tebe": "menjelaskan"
+    },
+    {
+      "no": 3,
+      "narasi": "Di tanah, ada bakteri mirip BENANG. Pas bikin spora, dia ngeluarin zat bau tanah: GEOSMIN.",
+      "teks_layar": "GEOSMIN",
+      "visual": "Cutaway cross-section of soil with warm brown layers and small pebbles; long branching thread-like bacteria colonies weave between soil grains, with tiny round spores forming at their tips and faint wavy scent puffs rising; a shrunken Tebe stands on a soil grain pointing at them; camera pans slowly along the threads.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "penampang bawah tanah hangat (lapisan tanah + benang bakteri)",
+      "tebe": "menjelaskan"
+    },
+    {
+      "no": 4,
+      "narasi": "Terus hujan turun. Tetesnya menjebak gelembung mungil di tanah. Gelembungnya pecah jadi kabut halus, kayak SODA.",
+      "teks_layar": "KAYAK SODA",
+      "visual": "Extreme close-up in slow motion: a big raindrop lands on porous soil, tiny air bubbles get trapped, rise up through the drop and burst into a fine fizzy mist like soda; a small Tebe stands at the side for scale, watching in awe; camera slowly orbits the drop.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "set": "close-up tetes hujan slow-motion, latar teal lembut",
+      "tebe": "penasaran"
+    },
+    {
+      "no": 5,
+      "narasi": "Peneliti MIT MENDUGA, kabut inilah pembawa aromanya. Hidung kita peka BANGET sama geosmin. Kenapa? Ilmuwan masih MENEBAK-nebak.",
+      "teks_layar": "MASIH DITEBAK",
+      "visual": "A simple flat-style science lab at night with a high-speed camera aimed at a tray of soil under falling drops; a thin fizzy mist drifts up toward Tebe, who sniffs it and then taps his chin, thinking; camera dollies slowly to the right.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "lab sederhana malam dengan kamera kecepatan tinggi",
+      "tebe": "berpikir"
+    },
+    {
+      "no": 6,
+      "narasi": "Nah, maksudnya apa? Ternyata baunya itu IKLAN.",
+      "teks_layar": "IKLAN?!",
+      "visual": "Ground-level view of damp soil after rain; a tiny cartoon billboard woven from bacteria threads pops up out of the soil, blank and glowing softly, sending out wavy scent lines; Tebe scratches his head, confused; camera pushes in toward the billboard.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "permukaan tanah lembap sehabis hujan, papan iklan mini dari benang bakteri",
+      "tebe": "bingung"
+    },
+    {
+      "no": 7,
+      "narasi": "Targetnya springtail, hewan sekecil butir PASIR. Mereka makan sedikit bakterinya, sporanya NEBENG ke tempat baru. Bayar ONGKIR pakai badan sendiri.",
+      "teks_layar": "BAYAR ONGKIR",
+      "visual": "Miniature mossy forest floor with fallen leaves in soft daylight; tiny round springtails, each the size of a sand grain, hop toward the bacteria threads, nibble them, and tiny spores cling to their bodies as they hop away; Tebe laughs at the side; camera follows one hopping springtail.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "hutan mini lumut dan daun gugur, siang lembap",
+      "tebe": "tertawa"
+    },
+    {
+      "no": 8,
+      "narasi": "Plot twist: geosmin juga salah satu biang bau LUMPUR di lele kolam. Dikangenin pas hujan, diprotes di warung PECEL lele.",
+      "teks_layar": "BAU LUMPUR",
+      "visual": "A roadside food tent at night with warm hanging bulbs and a plate of fried catfish with sambal on a wooden table; behind it a murky green freshwater fish pond; Tebe jumps back in surprise; camera whip-pans from the pond to the plate.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "warung tenda pecel lele malam + kolam lele di belakang",
+      "tebe": "kaget"
+    },
+    {
+      "no": 9,
+      "narasi": "Jadi, di balik bau hujan, ada bakteri pasang IKLAN. Dan ternyata, memang begitu. Hujan pertama di daerahmu turun bulan apa?",
+      "teks_layar": "PASANG IKLAN",
+      "visual": "The same house porch at night after the rain, puddles reflecting warm lamp light and a fresh wet garden; Tebe stands proudly and then waves at the viewer; camera slowly pulls back.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "set": "teras rumah malam sehabis hujan, genangan memantulkan lampu",
+      "tebe": "bangga"
+    }
+  ],
+  "caption_tiktok": "Bau hujan yang kamu kangenin itu bukan bau air. Salah satu bahan utamanya dibuat bakteri, dan bakterinya lagi pasang iklan. Tonton sampai bagian lele, itu plot twist-nya. #bauhujan #petrichor #geosmin #faktasains #TernyataBegitu",
+  "caption_instagram": "Bau hujan pertama ternyata ada \"iklannya\". Salah satu bahan utamanya, geosmin, dibuat bakteri tanah untuk memanggil hewan mungil penyebar spora. Dan geosmin juga salah satu biang bau lumpur di lele kolam.\nSimpan buat bahan ngobrol pas hujan turun, kirim ke teman yang paling suka bau hujan.\n#bauhujan #petrichor #faktaunik #sains #TernyataBegitu"
+}

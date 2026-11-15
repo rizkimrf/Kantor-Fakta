@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "I-007 bau hujan",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -14,6 +14,12 @@
       "tahap": "pilih",
       "oleh": "Raka (marketing)",
       "hasil": "LANJUT, skor 18/20 (penasaran 4/relevansi 5/dibagikan 4/tren 5). Format Shorts, slot batch 1 Hari 3 18.00 WITA. Kata kunci utama 'bau hujan' (volume tanpa data, Semrush tidak tersedia). Judul utama: Bau Hujan Ternyata \"Dibuat\" Bakteri, Ini Alasannya. rencana_marketing.md + seo.md selesai, baris Raka di lembar_tim.md terisi. Catatan: 3 video pesaing Indonesia belum terverifikasi (kuota pencarian habis), dilengkapi saat cek_seo. Lanjut ke Nadia (naskah)."
+    },
+    {
+      "waktu": "2026-11-15",
+      "tahap": "naskah",
+      "oleh": "Nadia (copywriting)",
+      "hasil": "naskah.json (9 adegan, 137 kata, ±59 dtk dengan intro, 1 klip), naskah_baca.txt, naskah_suara.txt (5 tag v4) selesai. Hook kamu-salah/sensasi indra: 'Cium deh, bau hujan yang kamu kangenin. Itu bukan bau airnya.' Skor rubrik 9/9. Wajib terpenuhi: 'salah satu bahan utamanya', tanpa angka ppt, 'salah satu biang bau lumpur', MIT hanya menduga, 'ilmuwan masih menebak-nebak'. Field set/tebe tiap adegan, caption_tiktok & caption_instagram ada. Baris Nadia di lembar_tim.md terisi. Lanjut ke Raka (cek_seo)."
     }
   ],
   "masalah": null
