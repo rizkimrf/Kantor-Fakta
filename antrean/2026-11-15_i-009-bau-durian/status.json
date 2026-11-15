@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "I-009 bau durian",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -33,6 +33,13 @@
       "waktu": "2026-11-15T22:03",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 9/10"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "waktu": "2026-11-15T22:45",
+      "oleh": "Yoga (editor)",
+      "hasil": "Video final: 70,4 dtk, 13,5 MB (crf 23 = 19,3 MB, jadi skrip otomatis kompres ulang ke crf 26). cek_mulus & cek_video LULUS. Suara 1.011 huruf (sekali). 10 set baru + pose Tebe baru + musik jenaka-ringan. Sampul: close-up durian raksasa, hijau-limau, Tebe kecil tengah bawah."
     }
   ],
   "masalah": null,

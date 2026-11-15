@@ -48,6 +48,13 @@
     berpikir: { alisK: -0.3, alisN: 0.5, lihatX: -4, lihatY: -5, senyum: 0.1, mulutLebar: 0.3, kepalaMiring: -6, tanganN: [236, 288], bentukN: "tunjuk", tekukN: 1 },
     menghitung: { alisK: 0.4, alisN: 0.4, senyum: 0.6, tanganK: [100, 300], bentukK: "buka", tekukK: -1, tanganN: [300, 300], bentukN: "tunjuk", tekukN: 1 },
     sedih: { alisK: 0.5, alisN: 0.5, alisMiringK: 0.8, alisMiringN: 0.8, lihatY: 3, senyum: -0.8, mulutLebar: 0.4, kepalaMiring: 4, kepalaAngguk: 4, pipi: 0.3 },
+    // pose tambahan (Yoga, 15 Nov 2026 — video durian & harga 99.900); hanya angka, bentuk Tebe tidak berubah
+    tutupHidung: { alisK: 0.7, alisN: 0.7, alisMiringK: 0.7, alisMiringN: 0.7, mataBuka: 0.42, senyum: -0.5, mulutLebar: 0.35, kepalaMiring: -6, condong: -2, tanganN: [204, 226], bentukN: "kepal", tekukN: 1, tanganK: [96, 330], bentukK: "buka", tekukK: -1 },
+    mengipas: { alisK: 0.6, alisN: 0.6, mataBesar: 0.6, mulutBuka: 0.35, mulutLebar: 0.4, senyum: 0.2, tanganN: [312, 214], bentukN: "buka", tekukN: 1, kepalaMiring: 5 },
+    berbisik: { alisK: 0.5, alisN: 0.2, lihatX: 4, senyum: 0.2, mulutLebar: 0.25, kepalaMiring: -4, condong: 2, tanganN: [216, 268], bentukN: "tunjuk", tekukN: 1 },
+    angkatBahu: { alisK: 0.8, alisN: 0.8, senyum: 0.4, mulutLebar: 0.6, kepalaMiring: 7, tanganK: [92, 292], bentukK: "buka", tekukK: -1, tanganN: [308, 292], bentukN: "buka", tekukN: 1 },
+    curiga: { alisK: -0.6, alisN: 0.8, alisMiringK: -0.5, mataBuka: 0.55, lihatX: 4, senyum: -0.1, mulutLebar: 0.3, kepalaMiring: -7, condong: 2, tanganN: [232, 286], bentukN: "kepal", tekukN: 1 },
+    menarikTuas: { alisK: 0.4, alisN: 0.4, senyum: 0.7, mulutLebar: 0.6, mulutBuka: 0.2, tanganN: [326, 300], bentukN: "kepal", tekukN: 1, tanganK: [300, 330], bentukK: "kepal", tekukK: -1, condong: 3 },
   };
   const ambilPose = (n) => Object.assign({}, NETRAL, POSE[n] || {});
 

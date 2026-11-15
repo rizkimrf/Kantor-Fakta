@@ -25,6 +25,7 @@ Disepakati Bos pada 15 Nov 2026. Baca ini SEBELUM membuat aset atau video baru.
 | `contoh-v5/v5.html` | Contoh video lengkap (komodo, 17 dtk) | Salin strukturnya untuk video baru |
 | `contoh-v5/pratinjau-*.png` | Lembar pose Tebe & set siang/senja/malam | Acuan visual |
 | `contoh-hujan/pratinjau.html` + `pratinjau-*.png` | Uji aset hujan di 3 palet + urutan slow-motion | `?adegan=1..7` |
+| `kerangka-shorts.js` | Mesin bersama Shorts (intro/outro, teks, transisi, peta waktu) | muat setelah tebe-rig.js & aset-set.js |
 
 **Pose Tebe (tebe-rig):** netral, penasaran, kaget, menjelaskan, tertawa, bingung, bangga, melambai, berpikir, menghitung, sedih.
 Otomatis: kedip, napas, goyang badan, pegas jambul, mulut bicara.
@@ -44,6 +45,33 @@ Otomatis: kedip, napas, goyang badan, pegas jambul, mulut bicara.
 | `rumahKampung(x,y,s,P)` · `potTanaman` · `tiangListrik` · `kabel` · `jalanKampung(w,y,P,t,{hujan,genangan})` · `pantulanCahaya` | rumah genteng Indonesia + teras, jendela menyala otomatis malam, gang basah memantulkan lampu | set kampung senja/malam |
 | `kepalaProfil(x,y,s,P,t,{endus})` · `redup(P)` | kepala manusia tampak samping mengendus (bukan Tebe) · filter peredup benda berwarna asli | close-up hidung |
 Kunci palet baru: `mendung, awanH, awanHB, hujan, air, airKilau, airKolam, tanahBasah, tanahRetak, bakteri, bakteriB, spora, springtail, springtailB, lele, leleB, jalan, jalanB, aroma, redup`.
+
+**Aset set DURIAN (Yoga, 15 Nov 2026, video I-009) — di `aset-set.js` (blok perluasan):**
+| Fungsi | Isi | Cara pakai singkat |
+|---|---|---|
+| `durian(x,y,s,P,{belah,goyang})` · `durianBelah(x,y,s,P,{matang})` · `pohonDurian` | durian berduri (belah 0..1 memperlihatkan daging) · durian terbuka · pohon tinggi berbuah | warna asli diredupkan otomatis per palet |
+| `cerobongMini(x,y,s,P,t,{tumbuh,nyala,asap})` · `asapBau(x,y,s,t,k)` · `gelombangBau(x0,y0,x1,y1,t,k)` | "pabrik bau" mungil + kepulan hijau + garis bau bergelombang | metafora gen/zat berbau |
+| `lapakDurian(x,y,s,P,t)` · `keranjangDurian` · `mugKakao` · `kausLipat` | lapak pinggir jalan (terpal, bohlam menyala malam), keranjang, cokelat panas, kaus katun | set pasar/kuliner |
+| `kabinPesawat(w,h,P,t)` · `kursiPesawat(x,y,s,P,t,{kipas,penumpang})` | kabin generik tanpa logo, penumpang siluet tanpa wajah | adegan transportasi |
+| `labGenetika(w,h,P,t)` · `mesinSekuensing` · `ilmuwan(x,y,s,P,t,{peluk})` · `selTumbuhan` · `untaiDNA(x,y,panjang,t,{segmen})` | lab dengan jendela kota, mesin pembaca DNA tanpa tulisan, ilmuwan sederhana, dalam sel, DNA dengan segmen menyala | set sains |
+| `kokiBlob(x,y,s,t,{laju})` · `tetesBelerang` · `dalamDurian(w,h,t,{matang})` | koki gumpal mencincang (laju = kecepatan), gua daging buah | metafora proses kimia |
+| `tamanPastel` · `got` · `hutanMalam` · `pakis` · `mataGelap` · `pohonKeluarga(x,y,s,P,t,k)` · `buahKakao` · `kapasMekar` | "surga vs got", hutan malam + mata hewan tanpa spesies, pohon kekerabatan yang tumbuh | perbandingan & kekerabatan |
+
+**Aset set BELANJA & HARGA (Yoga, 15 Nov 2026, video I-015):**
+| Fungsi | Isi | Cara pakai singkat |
+|---|---|---|
+| `labelHarga(x,y,s,"99.900",{redupKanan,kiriBesar,tali,putar,rp})` | label harga, angka ditulis kode (selalu rapi); digit kanan bisa diredupkan tapi tetap terbaca | jangan menggambar angka dengan gambar |
+| `rakMinimarket` · `mejaKasir` · `koin(x,y,s,t)` · `tokoMalam` · `kantongBelanja` · `hpRaksasa` | minimarket tanpa merek, kasir, koin berputar, depan toko malam, layar aplikasi belanja kosong | set belanja |
+| `kacaPembesar(x,y,s,{r,isi})` | lensa yang memperbesar isi SVG apa pun | sampul & penekanan |
+| `ruangSortir` · `banBerjalan` · `keranjang` · `lenganRobot` | "pabrik di dalam kepala" | metafora cara otak memilah |
+| `mobil` · `panggungLelang` · `dasbor` · `odometer(x,y,s,nilai,{digit})` · `panahTurun` | lelang mobil, odometer menggulir mulus (nilai pecahan) | angka yang berubah |
+| `perpustakaan` · `tumpukanJurnal(x,y,s,k,{n})` · `timbangan(x,y,s,{miring,kiri,kanan})` · `awanMerahMuda` · `kerikil` | riset/meta-analisis, timbangan perbandingan | penjelasan "efeknya kecil" |
+
+**Pose Tebe baru (tebe-rig.js):** tutupHidung, mengipas, berbisik, angkatBahu, curiga, menarikTuas.
+
+**Mesin bersama Shorts — `studio-aset/kerangka-shorts.js` (`KS`):** peta waktu narasi↔video + JEDA terjepret ke celah kata, teks layar berkelompok dari `waktu_kata.json` (penggantian ejaan: de-en-a → DNA), komposisi babak + transisi 0,6 dtk (dorong/geser/silang, easing sinus), intro & outro khas, label babak, watermark bergiliran, vinyet+butiran. Contoh pakai: `antrean/2026-11-15_i-009-bau-durian/visual/video.html`.
+
+**Musik baru (tanpa desir hujan):** `aset/musik/jenaka-ringan.wav` (98 BPM, marimba jenaka) · `aset/musik/belanja-ceria.wav` (108 BPM). Dibuat `scripts/buat_audio_aset.py --musik-baru`; punya lapisan pad berkelanjutan agar latar tidak pernah hening di sela kata (penyebab "audio terpotong" palsu di cek_mulus). Render dengan `--musik-vol 0.2`.
 
 **Alat produksi:** `scripts/render_html.py` (HTML gaya v8 → `final.mp4` + `thumbnail.png`, lihat docstring) · `scripts/buat_audio_aset.py` (musik & efek disintesis sendiri, daftar di `aset/sfx/SUMBER.md`).
 

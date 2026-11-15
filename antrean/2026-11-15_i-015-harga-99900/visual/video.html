@@ -1,0 +1,191 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- I-015 Kenapa Harga Rp 99.900 Terasa Murah? — Yoga, 15 Nov 2026. Waktu mengikuti audio/waktu_kata.json. Render: python scripts/render_html.py antrean/2026-11-15_i-015-harga-99900 --musik-vol 0.2
+     Catatan fakta (Pak Bima/Nadia): digit kanan hanya DIREDUPKAN, tetap terbaca; contoh rupiah ditandai "CONTOH" (ilustrasi, bukan hasil studi). -->
+<script src="../../../studio-aset/tebe-rig.js"></script>
+<script src="../../../studio-aset/aset-set.js"></script>
+<script src="../../../studio-aset/kerangka-shorts.js"></script>
+<style>*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#7A1E1E}.abs{position:absolute}#V{position:absolute;inset:0;overflow:hidden}</style></head><body><div id="V"></div>
+<script>
+const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp}=KS, P=ASET.PALET, A=ASET;
+const tebe=(p,w,g=0,o)=>KS.tebe(p,w,g,o);
+const W=KS.waktu(window.WAKTU_KATA||[],[{t:6.2,d:2.4},{t:36.355,d:0.35},{t:43.88,d:0.15},{t:52.75,d:0.2},{t:58.04,d:0.3}]);
+window.JEDA=W.JEDA;
+const J=W.JEDA, tengah=i=>W.vt(J[i].t)+J[i].d/2, k=(w,n=1)=>W.cari(w,n);
+const AKHIR=W.kata.length?W.kata[W.kata.length-1].s:66;
+window.DURASI=+(AKHIR+1.7).toFixed(2); window.MUSIK='belanja-ceria';
+const T_INTRO=W.vt(J[0].t)-0.02, T_OUTRO=tengah(4);
+const GRUP=KS.teks(W,{gabung:[['sembilan puluh sembilan ribu sembilan ratus','Rp99.900'],['enam puluh sembilan','69'],['sepuluh ribu','10.000'],['seratus ribu','Rp100.000'],['seratus perak','Rp100'],['sembilan ratus','900']],
+  ganti:{'dijit':'digit','cek-aut.':'checkout'},tekan:['terasa','murah?','kiri.','ratusan','paling','berubah.','melompat','kecil.','nol.','sihir.','cek-aut.','menaksir...'],maks:3});
+const tag=(x,y,txt,c,a,tinta='#1E1E1E',uk=30)=>a<=0?'':`<g opacity="${Math.min(1,a)}" transform="translate(${x} ${y}) scale(${.85+.15*oBack(cl(a))})"><rect x="${-txt.length*uk*.36-24}" y="${-uk-6}" width="${txt.length*uk*.72+48}" height="${uk*1.7}" rx="${uk*.85}" fill="${c}"/><text y="${uk*.3}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${uk}" letter-spacing="2" fill="${tinta}">${txt}</text></g>`;
+const stempel=(txt,T,t0,x,y,uk=86,rot=-6,warna='#FFC93C')=>{const s=oBack(lin(T,t0,t0+.35));if(s<=0)return '';return `<div class="abs" style="left:${x}px;top:${y}px;transform:rotate(${rot}deg) scale(${s});transform-origin:0 50%"><span style="display:inline-block;padding:6px 26px 2px;border:8px solid ${warna};border-radius:20px;font:700 ${uk}px/1.05 Poppins;color:${warna};background:rgba(20,24,34,.55);text-shadow:0 6px 14px rgba(0,0,0,.4)">${txt}</span></div>`};
+
+// ===== SAMPUL — label harga raksasa miring, kaca pembesar di "900", separuh wajah Tebe curiga dari bawah (merah + kuning promo)
+const ATS=tebeAnimasi([{t:0,pose:'curiga'}],{benih:3});
+function sampulGambar(T){const t=T+2;
+ let sinar='';for(let i=0;i<20;i++){const a=i*Math.PI/10+t*.05,b=a+Math.PI/20;sinar+=`<path d="M540 760 L${540+2000*Math.cos(a)} ${760+2000*Math.sin(a)} L${540+2000*Math.cos(b)} ${760+2000*Math.sin(b)}Z" fill="#FFD84A" opacity=".13"/>`}
+ const label=A.labelHarga(500,770,1.55,'99.900',{putar:-8,lebar:440,tinggi:210,ukuran:112});
+ const dalam=`<g transform="scale(1.12) translate(-712 -800)">${label}</g>`;
+ return `<svg class="abs" width="1080" height="1920"><defs><radialGradient id="sr" cx=".5" cy=".42" r=".8"><stop offset="0" stop-color="#F0483A"/><stop offset=".6" stop-color="#B92424"/><stop offset="1" stop-color="#6E1414"/></radialGradient></defs>
+ <rect width="1080" height="1920" fill="url(#sr)"/>${sinar}<g style="filter:blur(6px)" opacity=".55">${A.rakMinimarket(-80,1100,300,700,P.siang,{benih:4})}${A.rakMinimarket(880,1100,300,700,P.siang,{benih:9})}</g>
+ <circle cx="540" cy="780" r="380" fill="#FFE45C" opacity=".22"/>${label}${A.kacaPembesar(740,800,1,{r:200,isi:dalam,putar:-10})}
+ <path d="M880 470 Q960 560 900 640" stroke="#FFFFFF" stroke-width="12" fill="none" stroke-linecap="round" opacity="0"/></svg>
+ <div class="abs" style="left:40px;top:1060px;width:1000px;height:600px;overflow:hidden"><div style="position:absolute;left:-45px;top:-130px">${tebe(ATS(1.2),1080)}</div></div>
+ <svg class="abs" width="1080" height="1920"><defs><radialGradient id="sv" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#sv)"/></svg>`}
+function judulHook(T){
+ const a=1-sinIO(lin(T,2.6,3.0)),b=oBack(lin(T,k('mana').m-.05,k('mana').m+.3))*(1-sinIO(lin(T,T_INTRO,T_INTRO+.2)));
+ const gaya='position:absolute;left:0;width:1080px;text-align:center;font:700 112px/1.04 Poppins;letter-spacing:-2px;color:#fff;-webkit-text-stroke:16px #2A0E0E;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.35)';
+ return (a>0?`<div style="${gaya};top:262px;opacity:${a}"><span style="color:#FFE45C">99.900</span> VS<br>100.000?</div>`:'')+(b>0?`<div style="${gaya};top:300px;font-size:100px;transform:scale(${b})">MANA LEBIH<br><span style="color:#FFE45C">MURAH?</span></div>`:'')}
+
+// ===== B1 HOOK — lorong minimarket SIANG, dua label raksasa berayun, mata Tebe melirik kiri-kanan
+const AH=tebeAnimasi([{t:0,pose:'berpikir'},{t:k('mana').m,pose:'curiga',transisi:.3}],{benih:4});
+function setHook(T){const p=P.siang,at=k('atau').m,z=1.08-ioS(lin(T,0,1.4))*.04+ioS(lin(T,at-.2,at+.6))*.06+ioS(lin(T,k('mana').m,6.2))*.05,fx=T<at?420:lerp(420,640,ioS(lin(T,at,at+.8)));
+ let s=`<rect width="1200" height="1920" fill="#EEF2F4"/><rect y="0" width="1200" height="120" fill="#DCE3E8"/>${[...Array(5)].map((_,i)=>`<rect x="${80+i*240}" y="60" width="160" height="22" rx="11" fill="#FFFFFF"/>`).join('')}`;
+ s+=A.rakMinimarket(-40,480,420,900,p,{benih:3,tingkat:6})+A.rakMinimarket(820,480,420,900,p,{benih:7,tingkat:6})+A.rakMinimarket(380,620,440,640,p,{benih:11,tingkat:4});
+ s+=`<rect x="0" y="1380" width="1200" height="540" fill="#D9DEE2"/>${[...Array(9)].map((_,i)=>`<path d="M${i*150} 1380 L${-300+i*220} 1920" stroke="#C6CDD3" stroke-width="4"/>`).join('')}<path d="M0 1520 H1200 M0 1700 H1200" stroke="#C6CDD3" stroke-width="4"/>`;
+ const ay1=Math.sin(T*2.2)*5,ay2=Math.sin(T*2.2+1.3)*5,turun=oBack(lin(T,at-.15,at+.45));
+ s+=A.labelHarga(330,720,.92,'99.900',{tali:520,putar:ay1,lebar:380})+(turun>0?A.labelHarga(800,-300+turun*1020,.92,'100.000',{tali:520,putar:ay2,lebar:380}):'');
+ const pa=AH(T);pa.lihatX=T<at?-4+Math.sin(T*3)*2:Math.sin(T*6)*5;
+ return `<div class="abs" style="left:0;top:0;width:1200px;height:1920px;transform:translateX(${-40-(fx-420)*.08}px) scale(${z});transform-origin:${fx}px 900px"><svg class="abs" width="1200" height="1920">${s}</svg>
+ <div class="abs" style="left:${440}px;top:${1010}px">${tebe(pa,330)}</div></div>`}
+
+// ===== B2 MEJA KASIR — koin Rp100 berputar; otak menaksir sebelum selesai membaca
+const AK=tebeAnimasi([{t:0,pose:'curiga'},{t:k('otakmu').m,pose:'menjelaskan',bicara:[k('otakmu').m,k('membaca.').s],transisi:.3}],{benih:5});
+function setKasir(T){const p=P.senja,u=T-T_INTRO,orb=Math.sin(u*.6)*50,z=1.05+lin(u,0,8)*.06,ot=k('otakmu').m,mn=k('menaksir...').m,sb=k('sebelum').m,mb=k('membaca.').s;
+ let s=`<rect width="1200" height="1920" fill="#F2D9B8"/><g style="filter:blur(5px)" opacity=".7">${A.rakMinimarket(40,260,500,760,P.siang,{benih:13})}${A.rakMinimarket(640,260,500,760,P.siang,{benih:17})}</g>`+A.mejaKasir(1200,1180,p,T,{mx:950});
+ const tampil=oBack(lin(T,ot-.1,ot+.3)),sapu=lin(T,mn-.2,mb);
+ let baca='';if(tampil>0){baca=A.labelHarga(560,620,tampil*1.05,'99.900',{lebar:440});
+  baca+=`<rect x="${560-230}" y="${560}" width="${460*sapu}" height="14" rx="7" fill="#1F8A8A" opacity=".85"/><circle cx="${560-230+460*sapu}" cy="567" r="16" fill="#1F8A8A"/>`;}
+ const ap=oBack(lin(T,mn+.25,mn+.6));
+ return `<div class="abs" style="left:0;top:0;width:1200px;height:1920px;transform:translateX(${-60+orb}px) scale(${z});transform-origin:520px 1100px"><svg class="abs" width="1200" height="1920">${s}${A.koin(480,1060,1,T)}${tag(480,880,'Rp100',"#FFC93C",lin(T,k('seratus',2).m,k('seratus',2).m+.3))}${baca}</svg>
+ <div class="abs" style="left:${700}px;top:${780}px">${tebe(AK(T),330,.1)}</div></div>`+stempel('MURAH!',T,mn+.25,560,470,80,-10,'#E8463C')}
+
+// ===== B3 MATA TEBE membaca dari KIRI → ruang sortir di dalam kepala (2 keranjang)
+const AE=tebeAnimasi([{t:0,pose:'penasaran'}],{benih:6});
+const AR=tebeAnimasi([{t:0,pose:'menarikTuas'},{t:k('keranjang',1).m,pose:'menarikTuas',loncat:true},{t:k('keranjang',2).m,pose:'menjelaskan',transisi:.3}],{benih:7});
+const T3=k('kita').m-.05,T3b=k('sembilan',4).m-.35;
+function mataTebe(T){const u=T-T3,p=AE(T),sc=lin(T,T3,T3b);p.lihatX=-6+((u*1.4)%1)*12;p.lihatY=-2;p.mataBuka=Math.max(.2,p.mataBuka);
+ const z=1+ioS(lin(T,T3b-.6,T3b+.1))*1.6;
+ return `<div class="abs" style="inset:0;background:#2B6E7A;transform:scale(${z});transform-origin:420px 1010px"><div class="abs" style="left:-560px;top:-10px">${tebe(p,2200)}</div>
+ <svg class="abs" width="1080" height="1920">${A.labelHarga(540,500,1.05,'99.900',{lebar:470})}<rect x="${540-245}" y="${600}" width="${490*((u*1.4)%1)}" height="14" rx="7" fill="#FFC93C"/></svg></div>`}
+function sortir(T){const s1=k('keranjang',1).m,s2=k('keranjang',2).m,r1=k('sembilan',4).m,r2=k('seratus',3).m;
+ let s=A.ruangSortir(1080,1920,T)+A.banBerjalan(-40,1120,1010,T);
+ // label A: 99.900 berjalan lalu diangkat ke keranjang biru kecil
+ const xa=lerp(-220,330,ioS(lin(T,r1-.3,r1+1.2))),angkatA=ioS(lin(T,s1-.4,s1+.2)),jatuhA=ioS(lin(T,s1+.2,s1+.8));
+ const posA=[lerp(xa,250,jatuhA),lerp(lerp(950,760,angkatA),1330,jatuhA)];
+ const xb=lerp(-220,560,ioS(lin(T,r2-.3,r2+.9))),angkatB=ioS(lin(T,s2-.35,s2+.2)),jatuhB=ioS(lin(T,s2+.2,s2+.8));
+ const posB=[lerp(xb,690,jatuhB),lerp(lerp(950,760,angkatB),1320,jatuhB)];
+ s+=A.keranjang(250,1450,.8,'#4E8FE0')+A.keranjang(690,1470,1.3,'#F28C38');
+ s+=tag(250,1530,'PULUHAN RIBU','#4E8FE0',1,'#FFFFFF',28)+tag(690,1540,'RATUSAN RIBU','#F28C38',1,'#1E1E1E',28);
+ const lab=(x,y,txt,sk)=>A.labelHarga(x,y,sk,txt,{lebar:400,kiriBesar:1,redupKanan:.6});
+ s+=(T<r2+1.3||jatuhB<1?lab(posB[0],posB[1],'100.000',.62*(1-jatuhB*.35)):'')+lab(posA[0],posA[1],'99.900',.62*(1-jatuhA*.35));
+ const aktif=T<s1+.9?posA:posB;
+ s+=A.lenganRobot(1000,240,aktif[0]+30,aktif[1]-110,{tekuk:-80});
+ const tuas=Math.sin(Math.min(1,Math.max(0,(T-s1+.4)))*Math.PI)*30+Math.sin(Math.min(1,Math.max(0,(T-s2+.4)))*Math.PI)*30;
+ s+=`<rect x="140" y="830" width="40" height="180" rx="10" fill="#3B4656"/><g transform="rotate(${-20+tuas} 160 840)"><rect x="152" y="700" width="16" height="140" rx="8" fill="#9CA3AE"/><circle cx="160" cy="696" r="24" fill="#E8463C"/></g>`;
+ return `<div class="abs" style="inset:0;transform:scale(${1.06-lin(T,T3b,T3b+5)*.06})"><svg class="abs" width="1080" height="1920">${s}</svg>
+ <div class="abs" style="left:${-30}px;top:${640}px">${tebe(AR(T),290)}</div></div>`}
+function setMata(T){const v=sinIO(lin(T,T3b-.15,T3b+.3));return (v<1?mataTebe(T):'')+(v>0?`<div class="abs" style="inset:0;opacity:${v}">${sortir(T)}</div>`:'')}
+
+// ===== B4 HP RAKSASA — syarat: digit PALING KIRI berubah (contoh ilustrasi)
+const AP=tebeAnimasi([{t:0,pose:'menjelaskan',bicara:[k('syaratnya,').m,k('klasik:').s]},{t:k('berubah.').m,pose:'bangga',transisi:.3},{t:k('melemah.').m-.2,pose:'angkatBahu',transisi:.35}],{benih:8});
+function setHP(T){const u=T-k('syaratnya,').m,ty=-60+ioS(lin(u,0,5))*60,pk=k('paling').m,br=k('berubah.').m,kl=k('kalau').m,sm=k('sama,').m,ml=k('melemah.').m;
+ let s=`<rect width="1080" height="1920" fill="#2A6F86"/>${[...Array(14)].map((_,i)=>`<circle cx="${(i*173)%1080}" cy="${(i*311)%1920}" r="${40+(i%4)*30}" fill="#3B86A0" opacity=".5"/>`).join('')}`+A.hpRaksasa(560,1000,.8,T);
+ const pop1=oBack(lin(T,k('angka').m-.1,k('angka').m+.3)),pop2=oBack(lin(T,kl-.1,kl+.3));
+ if(pop1>0)s+=A.labelHarga(420,800,.62*pop1,'29.900',{lebar:400})+A.labelHarga(700,800,.62*pop1,'30.000',{lebar:400});
+ if(pop2>0)s+=A.labelHarga(420,1150,.62*pop2,'35.900',{lebar:400})+A.labelHarga(700,1150,.62*pop2,'36.000',{lebar:400});
+ const c1=lin(T,pk,pk+.4),c2=lin(T,sm-.2,sm+.2);
+ const ling=(x,y,c,a)=>a<=0?'':`<circle cx="${x}" cy="${y}" r="38" fill="none" stroke="${c}" stroke-width="8" stroke-dasharray="240" stroke-dashoffset="${240*(1-a)}"/>`;
+ s+=ling(375,822,'#E8463C',c1)+ling(655,822,'#E8463C',c1)+ling(375,1172,'#7C8794',c2)+ling(655,1172,'#7C8794',c2);
+ const sp1=oBack(lin(T,br-.1,br+.3)),sp2=lin(T,ml-.2,ml+.3);
+ const kilau=(x,y,r,a,c)=>a<=0?'':`<g transform="translate(${x} ${y}) rotate(${T*40}) scale(${a})"><path d="M0 ${-r} L${r*.22} ${-r*.22} L${r} 0 L${r*.22} ${r*.22} L0 ${r} L${-r*.22} ${r*.22} L${-r} 0 L${-r*.22} ${-r*.22}Z" fill="${c}"/></g>`;
+ s+=kilau(560,800,70,sp1,'#FFC93C')+kilau(560,1150,30,sp2,'#E7D9A8');
+ s+=tag(560,640,'CONTOH',"#1E2A2A",lin(T,k('angka').m,k('angka').m+.3),'#F4EEDC',26)+tag(560,1000,'BEDA',"#E8463C",lin(T,br,br+.3),'#FFFFFF',26)+tag(560,1350,'SAMA',"#7C8794",c2,'#FFFFFF',26);
+ return `<div class="abs" style="inset:0;transform:translateY(${ty}px)"><svg class="abs" width="1080" height="1920">${s}</svg>
+ <div class="abs" style="left:${10}px;top:${1010}px">${tebe(AP(T),290)}</div></div>`}
+
+// ===== B5 LELANG MOBIL BEKAS (SENJA) → dasbor: odometer 09.999 → 10.000, harga melompat turun
+const AM=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('melompat').m,pose:'kaget',loncat:true,transisi:.18}],{benih:9});
+const T5=k('efek').m-.03,T5b=k('odometer').m-.35;
+function lapangan(T){const p=P.senja,u=T-T5,cx=-80-ioS(lin(u,0,4))*260;
+ let s=A.langit(p,1600,1300,T,{suryaX:1300,suryaY:700})+A.awan(300,520,1,p,.8)+A.bukit(1600,980,120,4,p.jauh)+A.tanah(1600,1060,p)+`<rect x="-100" y="1080" width="1800" height="900" fill="${p.jalan}"/>`;
+ for(let i=0;i<9;i++)s+=`<path d="M${i*200} 1250 l120 0" stroke="#F4EEDC" stroke-width="8" opacity=".6"/>`;
+ s+=A.panggungLelang(240,1180,.95,p,T);
+ const war=['#4E8FE0','#E8E2D6','#5FB37A','#F2B33D','#C46FD1','#D9534F'];
+ for(let i=0;i<6;i++)s+=A.mobil(560+i*190,1170,.62,p,{warna:war[i],warnaG:'#5A5A60'});
+ for(let i=0;i<5;i++)s+=A.mobil(620+i*230,1480,.85,p,{warna:war[(i+3)%6],warnaG:'#4E4E54',arah:-1});
+ let bendera='M0 760';for(let i=0;i<=16;i++)bendera+=` Q${i*100-50} ${800} ${i*100} 760`;
+ s+=`<path d="${bendera}" stroke="#5A4636" stroke-width="4" fill="none"/>`+[...Array(16)].map((_,i)=>`<path d="M${i*100+30} ${775} l20 40 l20 -40Z" fill="${['#E8463C','#FFC93C','#4E8FE0'][i%3]}"/>`).join('');
+ return `<div class="abs" style="left:0;top:0;width:1600px;height:1920px;transform:translateX(${cx}px)"><svg class="abs" width="1600" height="1920">${s}</svg>
+ <div class="abs" style="left:${560}px;top:${990}px">${tebe(AM(T),280,.2)}</div></div>`}
+function dasborSet(T){const sp=k('sepuluh').m,ml=k('melompat').m,z=1.12-oCub(lin(T,T5b,T5b+1.4))*.12;
+ const v=T<sp?9990+9*ioS(lin(T,T5b,sp-.1)):9999+ioS(lin(T,sp,sp+.7));
+ const turun=oBack(lin(T,ml-.05,ml+.4));
+ let s=A.dasbor(1080,1920,T)+A.odometer(500,960,1.15,v,{digit:5,titik:2});
+ s+=`<g opacity="${lin(T,ml-.3,ml)}">`+A.labelHarga(300,560,.62,'HARGA',{rp:false,lebar:380,ukuran:80})+A.panahTurun(640,520,.9,turun)+`</g>`;
+ return `<div class="abs" style="inset:0;transform:scale(${z});transform-origin:540px 960px"><svg class="abs" width="1080" height="1920">${s}</svg>
+ <div class="abs" style="left:${80}px;top:${1050+(1-oBack(lin(T,T5b+.3,T5b+.9)))*600}px">${tebe(AM(T),290,.3)}</div></div>`}
+function setMobil(T){const v=sinIO(lin(T,T5b-.3,T5b+.3));return (v<1?lapangan(T):'')+(v>0?`<div class="abs" style="inset:0;opacity:${v}">${dasborSet(T)}</div>`:'')}
+
+// ===== B6 PERPUSTAKAAN RISET — 69 studi bertumpuk, kaca pembesar raksasa, "KECIL"
+const AB=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('enam').m,pose:'berpikir',transisi:.3},{t:k('efeknya',2).m,pose:'bingung',transisi:.3}],{benih:10});
+function setPustaka(T){const en=k('enam').m,st=k('studi.',2).m,kc=k('kecil.').m,m=lin(T,k('ilmuwan').m,st+.3),top=2700-14*Math.round(69*m),ty=1150-top;
+ let s=A.perpustakaan(1080,3000,T)+A.debuCahaya(1080,3000,T,30,5,'#FFE2A8')+A.tumpukanJurnal(540,2700,1,m,{n:69});
+ const lens=oBack(lin(T,st-.1,st+.5));
+ if(lens>0)s+=`<circle cx="540" cy="${top-650}" r="${260*lens}" fill="#FFE27A" opacity=".18"/>`+A.kacaPembesar(540,top-650,lens*1.2,{r:150,isi:`<rect x="-200" y="-200" width="400" height="400" fill="#FFF4C8" opacity=".5"/>`});
+ const n=Math.round(69*lin(T,en-.2,st+.2));
+ s+=n>0?`<g transform="translate(830 ${top-420})"><circle r="90" fill="#FFC93C"/><text y="30" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="86" fill="#1E1E1E">${n}</text></g>`:'';
+ return `<div class="abs" style="left:0;top:0;width:1080px;height:3000px;transform:translateY(${Math.max(-1080,Math.min(0,ty))}px)"><svg class="abs" width="1080" height="3000">${s}</svg>
+ <div class="abs" style="left:${395}px;top:${top-372}px">${tebe(AB(T),290,.2)}</div></div>`+stempel('KECIL',T,kc,300,520,110,-6,'#FFC93C')}
+
+// ===== B7 EFEK MENCIUT → para ahli berdebat → timbangan: kesan murah vs checkout (jalur kasir sepi)
+const AW=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('nyaris').m,pose:'kaget',transisi:.2},{t:k('jago').m,pose:'menjelaskan',transisi:.3},{t:k('cek-aut.').s+.05,pose:'tertawa',transisi:.25}],{benih:11});
+function setTimbang(T){const p=P.senja,ny=k('nyaris').m,nl=k('nol.').m,pr=k('para').m,jg=k('jago').m;
+ const v=sinIO(lin(T,jg-.4,jg));
+ let s=`<rect width="1080" height="1920" fill="#3A4660"/><g opacity="${1-v}">`;
+ const r=lerp(230,18,ioS(lin(T,ny-.3,nl+.4)));
+ s+=`<circle cx="540" cy="820" r="${r*1.6}" fill="#FFE27A" opacity=".15"/><circle cx="540" cy="820" r="${r}" fill="#FFC93C"/>`+(r>90?`<text x="540" y="${820+r*.14}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${r*.42}" fill="#1E1E1E">EFEK</text>`:tag(540,820-r-60,'EFEK','#FFC93C',1,'#1E1E1E',30));
+ const deb=lin(T,pr-.2,pr+.3);
+ if(deb>0)s+=`<g opacity="${deb}">`+A.ilmuwan(170,1560,.75,p,T)+A.ilmuwan(910,1560,.75,p,T+1,{rambut:'#4A3020',kulit:'#C98F6A'})+
+  `<g transform="translate(250 1000) scale(${.6+.4*oBack(deb)})"><path d="M-80 -70 H80 Q100 -70 100 -50 V30 Q100 50 80 50 H-10 L-40 90 L-30 50 H-80 Q-100 50 -100 30 V-50 Q-100 -70 -80 -70Z" fill="#F4EEDC"/><text y="22" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="80" fill="#E8463C">!</text></g>
+  <g transform="translate(830 960) scale(${.6+.4*oBack(lin(T,pr+.2,pr+.6))})"><path d="M-80 -70 H80 Q100 -70 100 -50 V30 Q100 50 80 50 H40 L30 90 L10 50 H-80 Q-100 50 -100 30 V-50 Q-100 -70 -80 -70Z" fill="#F4EEDC"/><text y="22" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="80" fill="#1F8A8A">?</text></g></g>`;
+ s+=`</g>`;
+ let b='';if(v>0){const mir=2+Math.sin(T*1.6)*1.2;
+  b=`<g opacity="${v}"><rect width="1080" height="1920" fill="#E9D3B4"/><g style="filter:blur(5px)" opacity=".6">${A.rakMinimarket(-60,300,420,700,P.siang,{benih:21})}${A.rakMinimarket(720,300,420,700,P.siang,{benih:23})}</g>${A.mejaKasir(1080,1360,p,T,{mx:880})}
+  ${A.timbangan(520,760,1,{miring:mir,kiri:A.awanMerahMuda(0,-10,.95,T),kanan:A.kerikil(0,-4,1)})}
+  ${tag(220,1180,'KESAN MURAH','#F7A8C4',lin(T,jg,jg+.3),'#1E1E1E',28)}${tag(820,1140,'CHECKOUT','#F4EEDC',lin(T,k('cek-aut.').m-.1,k('cek-aut.').m+.2),'#1E1E1E',28)}</g>`}
+ const tx=v>0?600:420,ty=v>0?1020:1000;
+ return `<div class="abs" style="inset:0;transform:scale(${1.04-lin(T,ny,ny+6)*.04})"><svg class="abs" width="1080" height="1920">${s}${b}</svg>
+ <div class="abs" style="left:${lerp(380,330,v)}px;top:${lerp(1060,1080,v)}px">${tebe(AW(T),280,.2)}</div></div>`+stempel('BISA NYARIS NOL',T,nl-.05,120,430,76,-5,'#FFC93C')}
+
+// ===== B8 DEPAN MINIMARKET MALAM — Tebe keluar membawa belanjaan, digit kiri "ditimbang"
+const AT=tebeAnimasi([{t:0,pose:'netral',jalan:[tengah(3)-.3,tengah(3)+1.6]},{t:tengah(3)+1.7,pose:'menjelaskan',bicara:[k('otak').m,k('kiri.',2).s],transisi:.3}],{benih:12});
+function setToko(T){const p=P.malam,u=T-tengah(3),z=1.16-ioS(lin(u,0,5))*.14,jl=oCub(lin(u,-.3,1.6)),kk=lin(T,k('dijit',2).m-.2,k('kiri.',2).s);
+ let s=A.tokoMalam(1080,1920,p,T)+A.labelHarga(540,560,.7,'99.900',{kiriBesar:kk,redupKanan:kk*.5,lebar:420});
+ const tebeX=lerp(420,250,jl);
+ return `<div class="abs" style="inset:0;transform:scale(${z});transform-origin:540px 1200px"><svg class="abs" width="1080" height="1920">${s}${A.kantongBelanja(tebeX+300,1310,.8)}</svg>
+ <div class="abs" style="left:${tebeX}px;top:${930}px">${tebe(AT(T),300,1)}</div></div>`+stempel('BUKAN SIHIR',T,k('sihir.').m-.05,200,760,80,-5,'#FFC93C')}
+
+// ===== OUTRO
+const AO=tebeAnimasi([{t:0,pose:'bangga'},{t:T_OUTRO+.3,pose:'bangga',tanda:'!'},{t:k('barang').m,pose:'melambai',transisi:.4}],{benih:13});
+function setOutro(T){return KS.outro(T,T_OUTRO,{anim:AO,cta:'Barang terakhir yang kamu beli berakhiran <span style="color:#FFC93C">900</span>, apa?',ctaMulai:k('barang').m-T_OUTRO-.1})}
+
+const BABAK=[{a:0,f:setHook},{a:T_INTRO+.42,f:setKasir,tr:'tanpa'},{a:T3,f:setMata,tr:'dorong'},{a:k('syaratnya,').m-.03,f:setHP,tr:'geser'},{a:T5,f:setMobil,tr:'dorong'},
+ {a:tengah(1),f:setPustaka,tr:'dorong'},{a:tengah(2),f:setTimbang,tr:'silang'},{a:tengah(3),f:setToko,tr:'geser'},{a:T_OUTRO,f:setOutro,tr:'dorong'}];
+function labelBabak(T){return KS.label('CUMA BEDA Rp100',T,T_INTRO+2.5,T3-.1)+KS.label('DIBACA DARI KIRI',T,T3+.3,k('syaratnya,').m-.1)+KS.label('STUDI KLASIK: DIGIT KIRI',T,k('syaratnya,').m+.3,T5-.1)
+ +KS.label('LELANG MOBIL BEKAS · AS',T,T5+.3,tengah(1)-.1)+KS.label('MENGGABUNGKAN 69 STUDI',T,tengah(1)+.3,tengah(2)-.1)+KS.label('PARA AHLI MASIH BERDEBAT',T,k('para').m,tengah(3)-.1)+KS.label('JADI, KENAPA 900?',T,tengah(3)+.3,T_OUTRO-.1)}
+window.EFEK=[{t:k('atau').m,sfx:'pop',vol:.45},{t:k('menaksir...').m+.25,sfx:'pop',vol:.45},{t:T_INTRO+.02,sfx:'jingle',vol:.55},{t:T3b-.5,sfx:'whoosh',vol:.4},
+ {t:k('melompat').m+.12,sfx:'boing',vol:.45},{t:k('nol.').m+.1,sfx:'ding',vol:.35},{t:T_OUTRO+.35,sfx:'ding_ganda',vol:.5}];
+
+window.render=function(T){
+ let h=KS.komposisi(T,BABAK);
+ const intro=T>=T_INTRO&&T<T_INTRO+2.4, outro=T>=T_OUTRO-.3;
+ h+=KS.vinyet(T,.3)+labelBabak(T);
+ if(T>T_INTRO&&!intro&&!outro)h+=KS.teksLayar(T,GRUP,{y:1305});
+ h+=KS.intro(T,T_INTRO)+KS.watermark(T,(T>1.2&&!intro&&!outro)?1:0);
+ if(T<0.95){const kk=1-oCub(lin(T,.55,.95));h+=`<div class="abs" style="inset:0;opacity:${kk};transform:scale(${1+(1-kk)*.08})">${sampulGambar(T)}<div style="position:absolute;left:-220px;top:20px">${KS.logoKecil}</div></div>`;}
+ h+=judulHook(T);
+ h+=`<div class="abs" style="left:0;top:0;height:6px;background:#FFC93C;width:${(T/window.DURASI*1080).toFixed(1)}px"></div>`;
+ document.getElementById('V').innerHTML=h;
+};
+window.render(0);
+</script></body></html>

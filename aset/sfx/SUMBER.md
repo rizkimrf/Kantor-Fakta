@@ -15,3 +15,5 @@ Buat ulang: `/usr/bin/python3 scripts/buat_audio_aset.py` (hasil identik, benih 
 | `tetes.wav` | "plink" tetes air | tetes hujan jatuh |
 | `gelembung.wav` | gelembung naik lalu desis pecah (seperti soda) | momen tetes → kabut |
 | `hujan.wav`, `gerimis.wav` | suasana hujan / gerimis, loop 19,5 dtk | latar adegan hujan |
+| `musik/jenaka-ringan.wav` | 98 BPM, C–Am–F–G, marimba + bas petik + pad lembut, loop | latar video jenaka (I-009 durian) |
+| `musik/belanja-ceria.wav` | 108 BPM, D–Bm–G–A, marimba + bas petik + pad lembut, loop | latar video belanja/uang (I-015) |

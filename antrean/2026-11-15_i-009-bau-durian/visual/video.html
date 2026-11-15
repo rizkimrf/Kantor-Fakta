@@ -1,0 +1,192 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- I-009 Kenapa Durian Bau Banget? — Yoga, 15 Nov 2026. Kontrak window.render(T), waktu mengikuti audio/waktu_kata.json. Render: python scripts/render_html.py antrean/2026-11-15_i-009-bau-durian --musik-vol 0.2 -->
+<script src="../../../studio-aset/tebe-rig.js"></script>
+<script src="../../../studio-aset/aset-set.js"></script>
+<script src="../../../studio-aset/kerangka-shorts.js"></script>
+<style>*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#173A44}
+.abs{position:absolute}#V{position:absolute;inset:0;overflow:hidden}
+.cap{font:900 92px/1 'Inter Display',Poppins;letter-spacing:-3px}</style></head><body><div id="V"></div>
+<script>
+const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp}=KS, P=ASET.PALET, A=ASET;
+const tebe=(p,w,g=0,o)=>KS.tebe(p,w,g,o);
+// ---------- peta waktu: intro 2,4 dtk setelah hook + napas 0,15–0,35 dtk di tiap pergantian babak ----------
+const W=KS.waktu(window.WAKTU_KATA||[],[{t:5.24,d:2.4},{t:12.04,d:0.35},{t:19.86,d:0.15},{t:26.86,d:0.35},{t:33.6,d:0.35},{t:40.85,d:0.35},{t:47.02,d:0.35},{t:59.24,d:0.3}]);
+window.JEDA=W.JEDA;
+const J=W.JEDA, tengah=i=>W.vt(J[i].t)+J[i].d/2, k=(w,n=1)=>W.cari(w,n);
+const AKHIR=W.kata.length?W.kata[W.kata.length-1].s:68;
+window.DURASI=+(AKHIR+1.7).toFixed(2);
+window.MUSIK='jenaka-ringan';
+const T_INTRO=W.vt(J[0].t)-0.02, T_OUTRO=tengah(7);
+// ---------- teks layar ----------
+const GRUP=KS.teks(W,{ganti:{'de-en-a-nya':'DNA-nya','de-en-a':'DNA','Er':'Air'},
+  tekan:['banget?','empat','pesawat','diturunkan.','kanker...','belerang.','ngebut','matang.','buah.','got.','surga,','menduga,','keluarga','kapas.','cokelat.'],maks:3});
+
+// ===== SAMPUL (frame 0) — close-up ekstrem: durian terbelah raksasa, 4 cerobong bau, Tebe kecil tengah bawah menutup hidung
+const ATS=tebeAnimasi([{t:0,pose:'tutupHidung'}],{benih:2});
+function sampulGambar(T){const p=P.siang,t=T+3;
+ return `<svg class="abs" width="1080" height="1920"><defs><linearGradient id="sl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B3B48"/><stop offset=".6" stop-color="#145A5C"/><stop offset="1" stop-color="#0E3640"/></linearGradient>
+ <radialGradient id="sg" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#D8F26A" stop-opacity=".85"/><stop offset=".55" stop-color="#9BD34A" stop-opacity=".35"/><stop offset="1" stop-color="#9BD34A" stop-opacity="0"/></radialGradient></defs>
+ <rect width="1080" height="1920" fill="url(#sl)"/>
+ <g style="filter:blur(7px)" opacity=".75">${A.pakis(80,1700,1.6,P.malam,t,{warna:'#1D4C4A',warnaB:'#163E3D'})}${A.pakis(1000,1650,1.8,P.malam,t,{warna:'#1D4C4A',warnaB:'#163E3D'})}<rect x="60" y="0" width="90" height="1920" fill="#0F3A42"/><rect x="930" y="0" width="120" height="1920" fill="#0F3A42"/></g>
+ <ellipse cx="540" cy="1000" rx="560" ry="640" fill="url(#sg)"/>
+ ${A.asapBau(430,640,2.2,t,1,{benih:4,tinggi:200,lebar:90,n:9})}${A.asapBau(650,630,2.3,t+.5,1,{benih:9,tinggi:210,lebar:100,n:9})}
+ <ellipse cx="540" cy="1110" rx="420" ry="480" fill="none" stroke="#E4FF6E" stroke-width="40" opacity=".8" style="filter:blur(16px)"/>${A.durian(540,1110,2.6,p,{belah:1,benih:5})}
+ ${A.cerobongMini(392,830,.6,p,t,{nyala:1,asap:1})}${A.cerobongMini(492,800,.7,p,t+.3,{nyala:1,asap:1})}${A.cerobongMini(596,802,.68,p,t+.6,{nyala:1,asap:1})}${A.cerobongMini(690,834,.58,p,t+.9,{nyala:1,asap:1})}
+ ${A.gelombangBau(160,1080,40,980,t,1,{n:3,warna:'#C6E05A',tebal:12})}${A.gelombangBau(920,1060,1060,960,t+1,1,{n:3,warna:'#C6E05A',tebal:12})}
+ <ellipse cx="540" cy="1660" rx="300" ry="40" fill="#000" opacity=".25"/>${A.asapBau(300,1640,1.6,t+1,.8,{benih:15,tinggi:160,lebar:120,n:8})}${A.asapBau(800,1650,1.6,t+2,.8,{benih:17,tinggi:160,lebar:120,n:8})}</svg>
+ <div class="abs" style="left:420px;top:1220px">${tebe(ATS(.6),240)}</div>
+ <svg class="abs" width="1080" height="1920"><defs><radialGradient id="sv" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#sv)"/></svg>`}
+function judulHook(T){ // judul sampul tetap tampil sebagai teks hook sampai "banget?" selesai
+ const a=1-sinIO(lin(T,k('banget?').s+0.1,k('banget?').s+0.45));if(a<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:262px;text-align:center;opacity:${a};font:700 108px/1.04 Poppins;letter-spacing:-2px;color:#fff;-webkit-text-stroke:16px #10202A;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.35)">KENAPA DURIAN<br><span style="color:#D8F26A">BAU</span> BANGET?</div>`}
+
+// ===== B1 HOOK — lapak durian SENJA → kamera menyelam ke daging durian → 4 cerobong bau
+const AH=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('banget?').m,pose:'kaget',loncat:true,transisi:.18},{t:1.9,pose:'tutupHidung',transisi:.3}],{benih:4});
+const AH2=tebeAnimasi([{t:2,pose:'kaget'},{t:k('pabrik').m,pose:'tutupHidung',transisi:.3}],{benih:5});
+function hookLuar(T){const p=P.senja,WW=1600,dorong=ioS(lin(T,0,1.9)),selam=Math.pow(lin(T,1.85,2.55),2.2);
+ const z=1+dorong*.42+selam*5.5, ox=800, oy=1180;
+ let s=A.langit(p,WW,1300,T,{suryaX:1250,suryaY:760})+A.awan(320,560,1,p,.85)+A.awan(1180,640,.8,p,.8)+A.bukit(WW,1000,170,4,p.jauh)+A.kabut(WW,900,220,p)+A.bukit(WW,1080,110,7,p.tengah)+A.tanah(WW,1180,p);
+ s+=A.lontar(140,1250,.8,p,T)+A.lontar(1480,1240,.9,p,T)+A.lapakDurian(800,1560,1.05,p,T);
+ s+=A.durian(800,1240,.95,p,{belah:oCub(lin(T,k('banget?').m-.1,k('banget?').s+.2)),benih:5,goyang:Math.sin(T*9)*2*(1-lin(T,1,1.6))});
+ s+=A.asapBau(800,1080,1.2,T,lin(T,1.2,1.8),{benih:6,tinggi:300});
+ for(let i=0;i<12;i++)s+=A.rumput(40+i*135,1700+(i%3)*40,1.2,p,T);
+ const tb=`<div class="abs" style="left:${850+(1-oExp(lin(T,.1,.8)))*400}px;top:1000px">${tebe(AH(T),300,.2)}</div>`;
+ return `<div class="abs" style="left:0;top:0;width:${WW}px;height:1920px;transform:translateX(${-260-dorong*80}px) scale(${z});transform-origin:${ox}px ${oy}px"><svg class="abs" width="${WW}" height="1920">${s}</svg>${tb}</div>`}
+function hookDalam(T){const u=T-2.2, z=1.35-oCub(lin(T,2.2,3.4))*.3, m=1;
+ const em=k('empat').m, pb=k('pabrik').m, pos=[[250,1250,.9],[455,1180,1],[650,1190,.95],[850,1260,.85]];
+ let s=A.dalamDurian(1080,1920,T,{matang:m});
+ pos.forEach(([x,y,sc],i)=>{const tb=oBack(lin(T,em-.05+i*.12,em+.3+i*.12));s+=A.cerobongMini(x,y,sc,P.siang,T+i*.4,{tumbuh:tb,nyala:lin(T,pb+i*.1,pb+.3+i*.1),asap:lin(T,pb+i*.12,pb+.5+i*.12)})});
+ s+=A.debuCahaya(1080,1920,T,26,5,'#FFF6C8');
+ return `<div class="abs" style="inset:0;transform:scale(${z}) translateY(${Math.sin(u*.8)*10}px);transform-origin:540px 1150px"><svg class="abs" width="1080" height="1920">${s}</svg>
+ <div class="abs" style="left:${390}px;top:${890+(1-oBack(lin(T,2.5,3.0)))*700}px">${tebe(AH2(T),300)}</div></div>`}
+function setHook(T){const v=sinIO(lin(T,2.2,2.6));
+ return (v<1?`<div class="abs" style="inset:0">${hookLuar(T)}</div>`:'')+(v>0?`<div class="abs" style="inset:0;opacity:${v}">${hookDalam(T)}</div>`:'')}
+
+// ===== B2 KABIN PESAWAT MALAM — penumpang siluet mengipas, keranjang durian diturunkan
+const t2=tengah(0)-2.4+0.4;
+const AP=tebeAnimasi([{t:0,pose:'tutupHidung'},{t:k('protes,').m,pose:'tutupHidung',bicara:[k('protes,').m,k('protes,').s]},{t:k('diturunkan.').m,pose:'angkatBahu',transisi:.35}],{benih:7});
+function setPesawat(T){const p=P.malam,u=T-T_INTRO,z=1.02+lin(u,0,9)*.12,ty=lin(u,0,9)*-40,pr=k('protes,').m,tu=k('diturunkan.').m;
+ let s=A.kabinPesawat(1080,1920,p,T,{vx:540,vy:820});
+ const baris=[[.42,950],[.58,1060],[.8,1230],[1.15,1520]];
+ baris.forEach(([sc,y],i)=>{const kp=lin(T,pr-.3+i*.15,pr+.2+i*.15);s+=A.kursiPesawat(540-120-300*sc,y,sc,p,T,{kipas:kp*(i%2?1:.7)})+A.kursiPesawat(540-120-130*sc*1.9,y,sc,p,T,{kipas:i===2?kp:0,penumpang:i!==3})+A.kursiPesawat(540+120+300*sc,y,sc,p,T,{kipas:kp})+A.kursiPesawat(540+120+130*sc*1.9,y,sc,p,T,{kipas:i===1?kp:0})});
+ s+=A.gelombangBau(610,1300,560,760,T,lin(T,T_INTRO+.6,T_INTRO+2.2),{n:3,jarak:90,amp:34,warna:'#B8D85A',tebal:10});
+ const kr=ioS(lin(T,tu-.1,tu+1.1));
+ s+=A.keranjangDurian(610,1500+kr*620,1.0,p,T)+A.asapBau(610,1280+kr*620,1.3,T,1-kr,{benih:8,tinggi:380});
+ return `<div class="abs" style="inset:0;transform:translateY(${ty}px) scale(${z});transform-origin:540px 900px"><svg class="abs" width="1080" height="1920">${s}</svg>
+ <div class="abs" style="left:${190}px;top:${880}px">${tebe(AP(T),340,1)}</div></div>`}
+
+// ===== B3 LAB GENETIKA MALAM — ilmuwan memeluk durian, Tebe mengintip dari balik mesin
+const AL=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('lucunya,').m,pose:'tertawa',transisi:.3},{t:k('cinta').m,pose:'tertawa',bicara:[k('cinta').m,k('durian',3).s]}],{benih:3});
+function setLab(T){const p=P.malam,u=T-tengah(1),z=1+ioS(lin(u,0,7))*.1,pk=k('cinta').m,intip=oBack(lin(T,k('lucunya,').m-.1,k('lucunya,').m+.4));
+ let s=A.labGenetika(1080,1920,p,T)+A.debuCahaya(1080,1920,T,22,3,'#AFC6D8');
+ s+=A.ilmuwan(250,1560,.9,p,T,{peluk:T>pk-.2,kulit:'#E0AC84'})+A.ilmuwan(470,1580,.86,p,T+1,{rambut:'#4A3020',kulit:'#C98F6A'});
+ const mesin=A.mesinSekuensing(790,1560,1.05,p,T);
+ const hati=T>pk?[0,1,2].map(i=>{const q=((T-pk)*.7+i/3)%1;return `<path transform="translate(${360+i*30} ${720-q*200}) scale(${.8+q*.4})" d="M0 10 C-30 -20 -10 -40 0 -22 C10 -40 30 -20 0 10Z" fill="#F58A9A" opacity="${Math.sin(Math.PI*q)*.9}"/>`}).join(''):'';
+ return `<div class="abs" style="inset:0;transform:scale(${z});transform-origin:540px 1100px"><svg class="abs" width="1080" height="1920">${s}${hati}</svg>
+ <div class="abs" style="left:${600-intip*30}px;top:${1110-intip*170}px">${tebe(AL(T),300,1)}</div><svg class="abs" width="1080" height="1920">${mesin}</svg></div>`}
+
+// ===== B4 DALAM SEL — untai DNA durian 4 salinan menyala vs tumbuhan lain 1–2
+const AD=tebeAnimasi([{t:0,pose:'menjelaskan',bicara:[tengah(2)+.2,tengah(2)+1.6]},{t:k('salinan,').m-.4,pose:'menghitung',transisi:.3},{t:k('satu').m,pose:'menjelaskan',transisi:.3}],{benih:6});
+function setDNA(T){const u=T-tengah(2),pan=-ioS(lin(u,0,7))*110,em=k('empat',2).m,sa=k('satu').m,du=k('dua.').m;
+ const seg=[[.08,.16],[.3,.38],[.52,.6],[.74,.82]].map(([a,b],i)=>[a,b,oCub(lin(T,em+i*.28,em+.3+i*.28))]);
+ const seg2=[[.44,.52,oCub(lin(T,sa,sa+.3))],[.78,.86,.55*oCub(lin(T,du,du+.3))]];
+ let s=A.selTumbuhan(1500,1920,T)+A.untaiDNA(100,600,1000,T,{segmen:seg,amp:90})+A.untaiDNA(100,960,1000,T*.8+1,{segmen:seg2,amp:60,redup:true});
+ seg.forEach(([a,b,kk],i)=>{const x=100+(a+b)/2*1000;s+=A.asapBau(x,520,.8,T+i,kk,{benih:i+2,tinggi:200,n:5})+(kk>0?`<g transform="translate(${x} 410) scale(${oBack(cl(kk*1.4))})"><circle r="40" fill="#FFC93C"/><text y="16" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="46" fill="#1E1E1E">${i+1}</text></g>`:'')});
+ const tag=(x,y,txt,c,a)=>`<g opacity="${a}"><rect x="${x}" y="${y-38}" width="${txt.length*21+40}" height="52" rx="26" fill="${c}"/><text x="${x+20}" y="${y}" font-family="Poppins" font-weight="700" font-size="32" letter-spacing="2" fill="#10202A">${txt}</text></g>`;
+ s+=tag(130,760,'DURIAN','#FFC93C',lin(u,.3,.7))+tag(130,862,'TUMBUHAN LAIN','#AFC6D8',lin(T,k('tumbuhan').m-.2,k('tumbuhan').m+.2));
+ return `<div class="abs" style="left:0;top:0;width:1500px;height:1920px;transform:translateX(${pan}px)"><svg class="abs" width="1500" height="1920">${s}</svg></div>
+ <div class="abs" style="left:${90-(1-oExp(lin(u,.1,.7)))*500}px;top:1010px">${tebe(AD(T),310,.4)}</div>`}
+
+// ===== B5 DAPUR MINI DI DALAM DURIAN — 4 koki mencincang belerang jadi gas, makin ngebut saat matang
+const AK=tebeAnimasi([{t:0,pose:'berpikir'},{t:k('anehnya,').m,pose:'mengipas',transisi:.3}],{benih:8});
+function setKoki(T){const u=T-tengah(3),ma=k('matang.').m,ng=k('ngebut').m,mt=lin(T,k('anehnya,').m,ma+.2),laju=1+2.4*ioS(lin(T,ng-.4,ng+.4));
+ const z=1.04+lin(u,0,6)*.05+ioS(lin(T,ng-.2,ng+.25))*.1;
+ let s=A.dalamDurian(1080,1920,T,{matang:.35+mt*.65,benih:62});
+ s+=`<rect x="80" y="1170" width="920" height="40" rx="14" fill="#B07A3E"/><rect x="100" y="1210" width="880" height="200" rx="10" fill="#946433"/><rect x="100" y="1210" width="880" height="16" fill="#7E5328"/>`;
+ [190,380,570,760].forEach((x,i)=>{const fase=i*1.3,ph=T*6*laju+fase;
+  s+=`<rect x="${x-80}" y="1150" width="160" height="26" rx="8" fill="#E7D2A6"/>`;
+  const kk=((T*laju*.9+i*.37)%1);s+=A.tetesBelerang(x+60,1135,.7,T,kk>.55?(kk-.55)/.45:0);
+  s+=A.kokiBlob(x-30,1150,1.05,T,{laju,fase})});
+ const meter=`<g transform="translate(140 760)"><rect width="520" height="40" rx="20" fill="#7E5328" opacity=".55"/><rect width="${20+500*mt}" height="40" rx="20" fill="#F2A33C"/><text x="0" y="-18" font-family="Poppins" font-weight="700" font-size="32" letter-spacing="3" fill="#5A3A1A">MATANG</text></g>`;
+ return `<div class="abs" style="inset:0;transform:scale(${z});transform-origin:540px 1160px"><svg class="abs" width="1080" height="1920">${s}${meter}${A.asapBau(540,1100,1.6,T,lin(T,ng,ng+.6),{benih:12,tinggi:600,lebar:200,n:10})}</svg>
+ <div class="abs" style="left:${640}px;top:${560+(1-oBack(lin(u,.1,.6)))*-400}px">${tebe(AK(T),300)}</div></div>`}
+
+// ===== B6 SURGA ATAU GOT — layar terbelah, satu awan bau setengah merah muda setengah hijau
+const AS=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('surga,').m-.1,pose:'bangga',transisi:.3},{t:k('got.').m-.1,pose:'tutupHidung',transisi:.25}],{benih:9});
+function setSplit(T){const u=T-tengah(4),geser=ioS(lin(T,k('surga,').m-.2,k('got.').m+.2)),cx=-60+geser*-240,be=k('belerang',3).m,bu=k('buah.').m;
+ const kiri=`<svg class="abs" width="760" height="1920">${A.tamanPastel(760,1920,T)}</svg>`,kanan=`<svg class="abs" width="760" height="1920">${A.got(760,1920,T)}</svg>`;
+ let awan='';for(let i=0;i<9;i++){const q=((T*.35+i/9)%1),y=300+q*1000,x=700+Math.sin(q*6+i)*40;awan+=`<circle cx="${x-50}" cy="${y}" r="${60+q*30}" fill="#F7A8C4" opacity="${Math.sin(Math.PI*q)*.7}"/><circle cx="${x+50}" cy="${y}" r="${60+q*30}" fill="#A9D04E" opacity="${Math.sin(Math.PI*q)*.7}"/>`}
+ const tag=(x,y,txt,c,a)=>`<g opacity="${a}" transform="translate(${x} ${y}) scale(${.8+.2*oBack(cl(a))})"><rect x="${-txt.length*11-26}" y="-36" width="${txt.length*22+52}" height="54" rx="27" fill="${c}"/><text y="4" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="32" letter-spacing="2" fill="#1E1E1E">${txt}</text></g>`;
+ return `<div class="abs" style="left:0;top:0;width:1500px;height:1920px;transform:translateX(${cx}px)">
+ <div class="abs" style="left:0;top:0;width:760px;height:1920px;overflow:hidden">${kiri}</div><div class="abs" style="left:740px;top:0;width:760px;height:1920px;overflow:hidden;clip-path:polygon(4% 0,100% 0,100% 100%,0 100%)">${kanan}</div>
+ <svg class="abs" width="1500" height="1920"><path d="M760 0 Q730 480 760 960 T760 1920" stroke="#FFF4DC" stroke-width="10" fill="none" opacity=".8"/>${awan}
+ ${tag(560,560,'AROMA BUAH','#F7A8C4',lin(T,bu-.2,bu+.2))}${tag(960,640,'BELERANG','#C6E05A',lin(T,be-.2,be+.2))}</svg>
+ <div class="abs" style="left:590px;top:880px">${tebe(AS(T),330,.1)}</div></div>`}
+
+// ===== B7 HUTAN HUJAN MALAM — durian jatuh berbau, mata hewan (siluet tanpa spesies), "DIDUGA"
+const AM=tebeAnimasi([{t:0,pose:'berbisik'},{t:k('peneliti',2).m,pose:'berbisik',bicara:[k('peneliti',2).m,k('menduga,').s]}],{benih:10});
+function setHutan(T){const p=P.malam,u=T-tengah(5),turun=ioS(lin(u,0,5.5)),me=k('memanggil').m,du=k('menduga,').m;
+ let s=A.hutanMalam(1500,2300,p,T)+A.pohonDurian(760,1640,1,p,T)+A.durianBelah(700,1580,.9,p,{matang:1});
+ s+=`<ellipse cx="700" cy="1560" rx="300" ry="120" fill="#E8F59A" opacity="${.12+.05*Math.sin(T*3)}"/>`;
+ s+=A.gelombangBau(640,1520,140,1300,T,lin(u,.2,1.6),{n:3,warna:'#C6E05A'})+A.gelombangBau(780,1520,1380,1280,T+1,lin(u,.5,1.9),{n:3,warna:'#C6E05A'});
+ [[200,1260,1],[330,1330,.8],[1180,1240,1],[1330,1320,.85],[1040,1180,.7]].forEach(([x,y,sc],i)=>s+=A.mataGelap(x,y,sc,T,lin(T,me+i*.25,me+.4+i*.25),{benih:i+1}));
+ s+=A.pakis(470,1800,1.5,p,T)+A.pakis(1100,1820,1.4,p,T)+A.kunangKunang(1500,2300,T,p,14);
+ const cap=oBack(lin(T,du-.05,du+.35));
+ return `<div class="abs" style="left:0;top:0;width:1500px;height:2300px;transform:translate(${-210-turun*40}px,${-380+turun*0}px) translateY(${(1-turun)*-200}px) scale(${1+turun*.05})"><svg class="abs" width="1500" height="2300">${s}</svg>
+ <div class="abs" style="left:${300}px;top:${1340}px">${tebe(AM(T),300,1)}</div><svg class="abs" width="1500" height="2300">${A.pakis(380,1720,1.3,p,T+2)}</svg></div>
+ <div class="abs" style="left:0;width:1000px;top:520px;text-align:center;transform:rotate(-5deg) scale(${cap});opacity:${cap>0?1:0}"><span style="display:inline-block;padding:4px 40px 18px;border:9px solid #FFC93C;border-radius:24px;font:italic 600 150px/1 Lora,serif;color:#FFC93C;text-shadow:0 8px 20px rgba(0,0,0,.5)">diduga</span></div>`}
+
+// ===== B8 POHON KELUARGA (hutan SIANG) — durian, kakao, kapas; jambul Tebe ? → !
+const kps=k('kapas.').m;
+const AF=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('kakao,').m,pose:'kaget',transisi:.25},{t:k('genomnya').m,pose:'berpikir',transisi:.35},{t:kps,pose:'kaget',loncat:true,tanda:'!',transisi:.18}],{benih:11});
+function setKeluarga(T){const p=P.siang,u=T-tengah(6),tumbuh=ioS(lin(u,0,2.6)),naik=ioS(lin(u,0,3.2)),ka=k('kakao,').m,co=k('cokelat.').m,dr=k('durian',5).m;
+ let s=A.langit(p,1080,2400,T,{suryaX:860,suryaY:520})+A.awan(220,420,1,p,.9)+A.awan(860,620,.8,p,.85)+A.bukit(1080,1500,200,3,p.jauh)+A.kabut(1080,1380,220,p)+A.bukit(1080,1620,140,9,p.tengah)+A.tanah(1080,1700,p);
+ s+=A.pohon(80,1760,.9,p,T)+A.pohon(1010,1740,.8,p,T)+A.semak(240,1830,1,p)+A.semak(880,1840,1.1,p);
+ s+=A.pohonKeluarga(500,1760,1.05,p,T,tumbuh);
+ const buah=(f,a)=>a<=0?'':f(a);
+ s+=buah(a=>A.durian(520,1010,.46*oBack(a),p,{benih:4}),lin(T,dr-.1,dr+.3))+buah(a=>A.buahKakao(185,1180,.62*oBack(a),p,{putar:12}),lin(T,ka-.1,ka+.3))+buah(a=>A.kapasMekar(860,1010,.62*oBack(a),p),lin(T,kps-.15,kps+.25));
+ const sorot=lin(T,kps,kps+.4);
+ if(sorot>0)s+=`<path d="M590 1000 Q695 920 790 990" stroke="#E05A4A" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="300" stroke-dashoffset="${300*(1-sorot)}"/><circle cx="860" cy="1000" r="${110+6*Math.sin(T*6)}" fill="none" stroke="#E05A4A" stroke-width="10" opacity="${sorot}"/>`;
+ const tag=(x,y,txt,a,c='#1E2A2A')=>a<=0?'':`<g opacity="${a}"><rect x="${x-txt.length*10-22}" y="${y-34}" width="${txt.length*20+44}" height="48" rx="24" fill="${c}"/><text x="${x}" y="${y}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="28" letter-spacing="2" fill="#F4EEDC">${txt}</text></g>`;
+ s+=tag(520,880,'DURIAN',lin(T,dr+.1,dr+.4))+tag(185,1290,'KAKAO',lin(T,ka+.1,ka+.4))+tag(860,1180,'KAPAS',lin(T,kps+.1,kps+.4),'#E05A4A');
+ const st=oBack(lin(T,co-.1,co+.3))*(1-lin(T,kps-.4,kps-.1));
+ return `<div class="abs" style="left:0;top:0;width:1080px;height:2400px;transform:translateY(${-480+naik*0-(1-naik)*-260}px) scale(${1.02-naik*.02})"><svg class="abs" width="1080" height="2400">${s}</svg>
+ <div class="abs" style="left:${40}px;top:${1380}px">${tebe(AF(T),320)}</div></div>
+ <div class="abs" style="left:400px;width:470px;top:690px;text-align:center;transform:rotate(-4deg) scale(${st});opacity:${st>0?1:0}"><span style="display:inline-block;background:#FFC93C;color:#1E1E1E;border:7px solid #1E1E1E;border-radius:24px;padding:8px 26px 4px;font:700 74px/1.08 Poppins;box-shadow:8px 10px 0 rgba(0,0,0,.3)">SAUDARA<br>COKELAT?!</span></div>`}
+
+// ===== B9 LAPAK DURIAN MALAM — cokelat panas & kaus katun di meja
+const AT=tebeAnimasi([{t:0,pose:'menjelaskan',bicara:[k('jadi',2).m,k('katunmu.').s]},{t:k('katunmu.').m,pose:'angkatBahu',transisi:.3}],{benih:12});
+function setLapak(T){const p=P.malam,u=T-k('jadi',2).m,z=1.18-ioS(lin(u,-.3,4.2))*.16;
+ let s=A.langit(p,1400,1400,T,{suryaX:1100,suryaY:420})+A.bukit(1400,1060,140,5,p.jauh)+A.tanah(1400,1180,p)+A.lapakDurian(700,1500,1.05,p,T,{tumpuk:[[-380,-290,.5],[-250,-290,.52],[-315,-380,.48],[380,-290,.5],[250,-290,.52],[315,-380,.5]]});
+ s+=A.mugKakao(640,1270,.75,p,T)+A.kausLipat(820,1278,.7,p)+A.durian(470,1220,.5,p,{benih:3});
+ s+=A.kunangKunang(1400,1920,T,p,10);
+ return `<div class="abs" style="left:0;top:0;width:1400px;height:1920px;transform:translateX(-170px) scale(${z});transform-origin:700px 1250px"><svg class="abs" width="1400" height="1920">${s}</svg>
+ <div class="abs" style="left:${250}px;top:${900}px">${tebe(AT(T),330,1)}</div></div>`}
+
+// ===== B10 OUTRO KHAS
+const AO=tebeAnimasi([{t:0,pose:'bangga'},{t:T_OUTRO+.3,pose:'bangga',tanda:'!'},{t:k('kamu',1).m,pose:'melambai',transisi:.4}],{benih:13});
+function setOutro(T){return KS.outro(T,T_OUTRO,{anim:AO,cta:'Kamu <span style="color:#FFC93C">tim durian</span> atau tim tutup hidung?',ctaMulai:k('kamu').m-T_OUTRO-.1})}
+
+const BABAK=[{a:0,f:setHook},{a:T_INTRO+.42,f:setPesawat,tr:'tanpa'},{a:tengah(1),f:setLab,tr:'dorong'},{a:tengah(2),f:setDNA,tr:'dorong'},{a:tengah(3),f:setKoki,tr:'geser'},
+ {a:tengah(4),f:setSplit,tr:'dorong'},{a:tengah(5),f:setHutan,tr:'silang'},{a:tengah(6),f:setKeluarga,tr:'geser'},{a:k('jadi',2).m-.02,f:setLapak,tr:'dorong'},{a:T_OUTRO,f:setOutro,tr:'dorong'}];
+// ---------- label babak ----------
+function labelBabak(T){return KS.label('SRIWIJAYA AIR · 2018',T,T_INTRO+2.5,tengah(1)-.1)+KS.label('PENELITI SINGAPURA · 2017',T,tengah(1)+.3,k('kanker...').m-.1)+KS.label('ILMUWAN KANKER?',T,k('kanker...').m,tengah(2)-.1)
+ +KS.label('GEN PEMBUAT BAU BELERANG',T,tengah(2)+.3,tengah(3)-.1)+KS.label('NGEBUT PAS MATANG',T,k('ngebut').m,tengah(4)-.1)+KS.label('SURGA ATAU GOT?',T,tengah(4)+.3,tengah(5)-.1)
+ +KS.label('DUGAAN PENELITI',T,tengah(5)+.3,tengah(6)-.1)+KS.label('KELUARGA MALVACEAE',T,tengah(6)+.4,k('jadi',2).m-.1)}
+// ---------- efek suara (maks 6 di luar intro/outro) ----------
+window.EFEK=[{t:1.9,sfx:'whoosh',vol:.45},{t:k('empat').m,sfx:'pop',vol:.5},{t:T_INTRO+.02,sfx:'jingle',vol:.55},{t:k('diturunkan.').m+.1,sfx:'whoosh',vol:.3},
+ {t:k('menduga,').m,sfx:'pop',vol:.45},{t:tengah(6)-.3,sfx:'whoosh',vol:.4},{t:kps+.14,sfx:'boing',vol:.45},{t:T_OUTRO+.35,sfx:'ding_ganda',vol:.5}];
+
+window.render=function(T){
+ let h=KS.komposisi(T,BABAK);
+ const intro=T>=T_INTRO&&T<T_INTRO+2.4, outro=T>=T_OUTRO-.3;
+ h+=KS.vinyet(T,.3)+labelBabak(T);
+ if(T>1.9&&!intro&&!outro)h+=KS.teksLayar(T,GRUP,{y:1305});
+ h+=KS.intro(T,T_INTRO)+KS.watermark(T,(T>1.2&&!intro&&!outro)?1:0);
+ if(T<0.95){const kk=1-oCub(lin(T,.55,.95));h+=`<div class="abs" style="inset:0;opacity:${kk};transform:scale(${1+(1-kk)*.08})">${sampulGambar(T)}${`<div style="position:absolute;left:-220px;top:20px">${KS.logoKecil}</div>`}</div>`;}
+ h+=judulHook(T);
+ h+=`<div class="abs" style="left:0;top:0;height:6px;background:#FFC93C;width:${(T/window.DURASI*1080).toFixed(1)}px"></div>`;
+ document.getElementById('V').innerHTML=h;
+};
+window.render(0);
+</script></body></html>

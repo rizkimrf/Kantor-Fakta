@@ -1,6 +1,7 @@
 """Membuat musik & efek suara khas channel dengan sintesis (tanpa unduhan, tanpa lisensi pihak lain).
 Pemakaian: /usr/bin/python3 scripts/buat_audio_aset.py   (butuh numpy)
-Keluaran : aset/musik/tenang-hujan.wav (loop 72 dtk) · aset/sfx/{jingle,ding,ding_ganda,whoosh,pop,boing,langkah,langkah1,
+           /usr/bin/python3 scripts/buat_audio_aset.py --musik-baru   (hanya membuat musik tambahan 15 Nov 2026, file lain tidak disentuh)
+Keluaran : aset/musik/tenang-hujan.wav (loop 72 dtk) · jenaka-ringan.wav · belanja-ceria.wav (loop, tanpa desir hujan) · aset/sfx/{jingle,ding,ding_ganda,whoosh,pop,boing,langkah,langkah1,
            tetes,gelembung,hujan,gerimis}.wav — 48 kHz, 16-bit stereo."""
 import wave
 from pathlib import Path
@@ -161,7 +162,64 @@ def hujan(deras, d=20.0):
     b[:fade] = b[:fade] * w + b[-fade:] * (1 - w); return b[:-fade]
 
 
+
+# ---------------- MUSIK TAMBAHAN (Yoga, 15 Nov 2026): tanpa desir hujan, untuk tema non-hujan ----------------
+def marimba(f, d):  # pukulan kayu lembut
+    t = t_(d); e = np.exp(-9 * t) * np.minimum(1, t / 0.002)
+    return e * (np.sin(2 * np.pi * f * t) + 0.25 * np.sin(2 * np.pi * 4 * f * t) * np.exp(-30 * t))
+
+
+def pizz(f, d=0.5):  # bas petik
+    t = t_(d); return np.sin(2 * np.pi * f * t) * np.exp(-7 * t) * np.minimum(1, t / 0.004) + 0.3 * np.sin(4 * np.pi * f * t) * np.exp(-12 * t)
+
+
+def musik_ringan(bpm, birama, akor, bas, melodi, benih, nada_marimba=0.11, swing=0.0):
+    r = np.random.default_rng(benih); ketuk = 60 / bpm; L = birama * 4 * ketuk
+    buf = np.zeros((int(L * SR), 2))
+    for b in range(birama):
+        k = b % len(akor); t0 = b * 4 * ketuk
+        for j, n in enumerate(akor[k]):  # akor e-piano tipis
+            taruh(buf, ep(hz(n), 4 * ketuk + 0.8), t0 + j * 0.01, 0.09, pan=(j - 1.5) * 0.3, ulang=True)
+        for s in range(4):  # bas petik di tiap ketuk (1 & 3 akar, 2 & 4 kelima)
+            n = bas[k] + (7 if s % 2 else 0)
+            taruh(buf, pizz(hz(n)), t0 + s * ketuk, 0.26 if s % 2 == 0 else 0.17, ulang=True)
+        if b % 8 >= 1:  # marimba bermain pola melodi riang (acak tetap)
+            for s in range(8):
+                if r.random() < 0.55:
+                    tt = t0 + s * ketuk / 2 + (swing * ketuk / 2 if s % 2 else 0)
+                    taruh(buf, marimba(hz(melodi[r.integers(len(melodi))]), 0.6), tt, nada_marimba, pan=r.uniform(-.4, .4), ulang=True)
+        for s in range(8):  # klik ringan (rim) + shaker
+            if s % 4 == 2:
+                cl = r.standard_normal(int(0.03 * SR)) * np.exp(-np.arange(int(0.03 * SR)) / SR * 160)
+                taruh(buf, bp_cepat(cl, 1500, 6000), t0 + s * ketuk / 2, 0.05, ulang=True)
+            sh = r.standard_normal(int(0.04 * SR)) * np.exp(-np.arange(int(0.04 * SR)) / SR * 80)
+            taruh(buf, sh, t0 + s * ketuk / 2 + (swing * ketuk / 2 if s % 2 else 0), 0.01 if s % 2 else 0.016, pan=0.35, ulang=True)
+    # pad lembut berkelanjutan (akor ditahan, masuk-keluar pelan) → latar musik tidak pernah hening di sela kata
+    for b in range(birama):
+        k = b % len(akor); t0 = b * 4 * ketuk; d = 4 * ketuk + 0.5; t = t_(d)
+        env = np.minimum(1, t / 0.35) * np.minimum(1, (d - t) / 0.5)
+        for j, n in enumerate(akor[k][:3]):
+            f = hz(n - 12)
+            w = (np.sin(2 * np.pi * f * t) + 0.3 * np.sin(2 * np.pi * 2 * f * t) + 0.12 * np.sin(2 * np.pi * 3 * f * t)) * (1 + 0.05 * np.sin(2 * np.pi * 0.5 * t + j))
+            taruh(buf, w * env, t0, 0.05, pan=(j - 1) * 0.4, ulang=True)
+    for c in range(2): buf[:, c] = lp_cepat(buf[:, c], 8000)
+    return buf
+
+
+def musik_baru():
+    m = ROOT / "aset/musik"
+    # jenaka-ringan: 98 BPM, C – Am – F – G, marimba pentatonik, sedikit swing (lucu, penasaran) — I-009 durian
+    simpan(m / "jenaka-ringan.wav", musik_ringan(98, 28, [[60, 64, 67, 72], [57, 60, 64, 69], [53, 57, 60, 65], [55, 59, 62, 67]], [36, 33, 41, 43],
+                                                  [72, 74, 76, 79, 81, 84], 11, swing=0.18), 0.7)
+    # belanja-ceria: 108 BPM, D – Bm – G – A, marimba lebih rapat (suasana toko) — I-015 harga 99.900
+    simpan(m / "belanja-ceria.wav", musik_ringan(108, 30, [[62, 66, 69, 74], [59, 62, 66, 71], [55, 59, 62, 67], [57, 61, 64, 69]], [38, 35, 43, 45],
+                                                  [74, 76, 78, 81, 83, 86], 23, nada_marimba=0.1), 0.7)
+
+
 if __name__ == "__main__":
+    import sys
+    if "--musik-baru" in sys.argv:
+        musik_baru(); print("musik baru selesai"); raise SystemExit
     s = ROOT / "aset/sfx"
     simpan(ROOT / "aset/musik/tenang-hujan.wav", musik(), 0.7)
     for nama, f in [("jingle", jingle), ("ding", ding), ("ding_ganda", ding_ganda), ("whoosh", whoosh), ("pop", pop), ("boing", boing),
