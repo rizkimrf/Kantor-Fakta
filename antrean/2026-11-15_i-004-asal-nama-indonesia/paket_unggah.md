@@ -9,7 +9,7 @@ Tag: asal nama indonesia, sejarah nama indonesia, siapa yang menciptakan nama in
 Komentar tersemat: pakai `caption_komentar` Nadia + tautan ke video panjang terkait bila sudah ada.
 
 ## TikTok (153 karakter, kata kunci di awal)
-Asal nama Indonesia: siapa yang pertama menulisnya? Bukan orang kita. Indonesia atau Malayunesia, pilih mana? #asalnamaindonesia #sejarah #TernyataBegitu
+Asal nama Indonesia: siapa yang pertama menulisnya? Bukan orang kita. Indonesia atau Malayunesia? #asalnamaindonesia #sejarah #TernyataBegitu
 
 ## Instagram Reels
 Nama "Indonesia" pertama ditulis di jurnal ilmiah terbitan Singapura, awalnya cuma label geografi. Pelajar kita di Belanda yang merebutnya jadi nama perjuangan, lalu Sumpah Pemuda menguncinya.
