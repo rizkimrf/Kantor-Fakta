@@ -44,11 +44,12 @@ Shorts yang sama ditayangkan di tiga tempat; tiap platform punya cara baca berbe
   (1 luas, 2–3 spesifik, 1 khas channel #TernyataBegitu), saran teks sampul.
 - **Instagram Reels:** caption dengan kalimat pertama sebagai hook + kata kunci, ajakan simpan/bagikan, 3–5 hashtag, saran teks sampul.
 - Jam tayang yang disarankan per platform (berdasarkan data kita sendiri bila sudah ada; kalau belum, tulis sebagai dugaan).
-Upload TikTok dan Instagram saat ini dilakukan Bos secara manual dari HP dengan menyalin paket ini (belum ada sambungan otomatis).
+Dari paket ini tulis juga `unggah.json` (format di awal `scripts/terbitkan.py`) supaya bisa diterbitkan otomatis ke ketiga platform.
+Sampul TIDAK diatur terpisah: frame pertama video sudah berupa sampul (Tebe + hook), jadi teks sampul di paket = teks di frame pertama.
 
 ## Tahap `disetujui` (upload)
-HANYA folder dengan `tahap: disetujui`. Jalankan `python scripts/upload.py antrean/<folder>`
-(jadwal tayang otomatis di slot kosong berikutnya, label konten AI dicentang).
+HANYA folder dengan `tahap: disetujui` (keputusan Bos). Jalankan `python scripts/terbitkan.py` (lihat `/terbitkan`):
+jadwal tayang otomatis di slot kosong berikutnya, YouTube dijadwalkan, TikTok & Instagram diunggah saat jamnya, label konten AI menyala.
 Setelah sukses, tambahkan baris ke `panduan/riwayat.md` dan pastikan `tahap` → `terjadwal`.
 
 ## Laporan mingguan (perintah /laporan-minggu)

@@ -1,0 +1,156 @@
+"""Raka - TERBITKAN video yang SUDAH DISETUJUI Bos ke YouTube, TikTok, Instagram sesuai jam tayang.
+Pemakaian: python scripts/terbitkan.py            (semua folder antrean)
+           python scripts/terbitkan.py --cek      (hanya tampilkan rencana, tidak mengunggah)
+Dijalankan otomatis oleh tugas terjadwal di cloud (lihat .claude/commands/terbitkan.md).
+
+Aturan:
+- Hanya folder dengan tahap "disetujui" atau "terjadwal". Status "disetujui" HANYA dari Bos.
+- Jadwal: slot berikutnya dari JAM_TAYANG_SHORTS / JAM_TAYANG_PANJANG (WITA) bila belum ada `jadwal_tayang`.
+- YouTube diunggah segera dengan publishAt = jadwal (YouTube yang menayangkan tepat waktu).
+- TikTok & Instagram diunggah saat jadwal sudah tiba (paling cepat 15 menit sebelum).
+- Sampul = frame pertama video (video_cover_timestamp_ms=0 / thumb_offset=0). Label konten AI selalu dinyalakan.
+- Data teks dari antrean/<folder>/unggah.json (ditulis Raka):
+  {"youtube":{"judul":"","deskripsi":"","tag":[]}, "tiktok":{"caption":""}, "instagram":{"caption":""}}
+- Platform yang kuncinya belum diisi dilewati (dicatat di status.json -> "terbit")."""
+import datetime, json, os, sys, time, urllib.parse, urllib.request, urllib.error
+from pathlib import Path
+from _umum import ROOT, muat_env, set_status
+
+muat_env()
+CEK = "--cek" in sys.argv
+WITA = datetime.timezone(datetime.timedelta(hours=8))
+SEKARANG = datetime.datetime.now(WITA)
+
+
+def http(url, data=None, headers=None, method=None, raw=False):
+    if isinstance(data, dict):
+        data = json.dumps(data).encode(); headers = {"Content-Type": "application/json", **(headers or {})}
+    req = urllib.request.Request(url, data=data, headers=headers or {}, method=method or ("POST" if data else "GET"))
+    try:
+        with urllib.request.urlopen(req, timeout=600) as r:
+            body = r.read()
+            return r if raw else (json.loads(body) if body else {})
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"{e.code} {url.split('?')[0]}: {e.read()[:400]!r}")
+
+
+def form(url, **f):
+    return http(url, urllib.parse.urlencode(f).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
+
+
+# ---------- YouTube ----------
+def youtube(folder, u, jadwal):
+    tok = form("https://oauth2.googleapis.com/token", client_id=os.environ["YT_CLIENT_ID"],
+               client_secret=os.environ["YT_CLIENT_SECRET"], refresh_token=os.environ["YT_REFRESH_TOKEN"],
+               grant_type="refresh_token")["access_token"]
+    auth = {"Authorization": f"Bearer {tok}"}
+    y = u["youtube"]
+    status = {"privacyStatus": "public", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
+    if jadwal > SEKARANG + datetime.timedelta(minutes=20):
+        status.update(privacyStatus="private", publishAt=jadwal.isoformat())
+    meta = {"snippet": {"title": y["judul"][:100], "description": y["deskripsi"], "tags": y.get("tag", []),
+                        "categoryId": "27", "defaultLanguage": "id"}, "status": status}
+    r = http("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+             meta, auth, raw=True)
+    video = (folder / "final.mp4").read_bytes()
+    vid = http(r.headers["Location"], video, {**auth, "Content-Type": "video/mp4"}, "PUT")["id"]
+    thumb = folder / "thumbnail.png"
+    if thumb.exists():
+        try:  # butuh channel terverifikasi HP; untuk Shorts, sampul tetap frame pertama video
+            http(f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={vid}", thumb.read_bytes(),
+                 {**auth, "Content-Type": "image/png"})
+        except RuntimeError as e:
+            print("  thumbnail YouTube belum terpasang:", e)
+    return vid
+
+
+# ---------- TikTok ----------
+def tiktok(folder, u):
+    tok = form("https://open.tiktokapis.com/v2/oauth/token/", client_key=os.environ["TIKTOK_CLIENT_KEY"],
+               client_secret=os.environ["TIKTOK_CLIENT_SECRET"], grant_type="refresh_token",
+               refresh_token=os.environ["TIKTOK_REFRESH_TOKEN"])["access_token"]
+    auth = {"Authorization": f"Bearer {tok}"}
+    video = (folder / "final.mp4").read_bytes()
+    src = {"source": "FILE_UPLOAD", "video_size": len(video), "chunk_size": len(video), "total_chunk_count": 1}
+    if os.environ.get("TIKTOK_MODE", "inbox") == "direct":   # setelah aplikasi TikTok lolos audit
+        body = {"post_info": {"title": u["tiktok"]["caption"][:2200], "privacy_level": "PUBLIC_TO_EVERYONE",
+                              "video_cover_timestamp_ms": 0, "is_aigc": True}, "source_info": src}
+        url = "https://open.tiktokapis.com/v2/post/publish/video/init/"
+    else:  # sebelum audit: masuk kotak masuk TikTok, Bos tinggal tekan Posting di aplikasi
+        body, url = {"source_info": src}, "https://open.tiktokapis.com/v2/post/publish/inbox/video/init/"
+    d = http(url, body, auth)["data"]
+    http(d["upload_url"], video, {"Content-Type": "video/mp4",
+                                 "Content-Range": f"bytes 0-{len(video) - 1}/{len(video)}"}, "PUT")
+    return d["publish_id"]
+
+
+# ---------- Instagram (Instagram API dengan login Instagram) ----------
+def instagram(folder, u):
+    tok, uid = os.environ["IG_ACCESS_TOKEN"], os.environ["IG_USER_ID"]
+    g = "https://graph.instagram.com/v21.0"
+    c = form(f"{g}/{uid}/media", media_type="REELS", upload_type="resumable", caption=u["instagram"]["caption"],
+             share_to_feed="true", thumb_offset="0", access_token=tok)
+    video = (folder / "final.mp4").read_bytes()
+    http(c["uri"], video, {"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(video))})
+    for _ in range(60):
+        st = http(f"{g}/{c['id']}?fields=status_code&access_token={tok}").get("status_code")
+        if st == "FINISHED": break
+        if st == "ERROR": raise RuntimeError("Instagram gagal memproses video")
+        time.sleep(10)
+    return form(f"{g}/{uid}/media_publish", creation_id=c["id"], access_token=tok)["id"]
+
+
+PLATFORM = {"youtube": (youtube, ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"]),
+            "tiktok": (tiktok, ["TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN"]),
+            "instagram": (instagram, ["IG_ACCESS_TOKEN", "IG_USER_ID"])}
+
+
+def slot_berikut(panjang):
+    jam = [int(j) for j in os.environ.get("JAM_TAYANG_PANJANG" if panjang else "JAM_TAYANG_SHORTS",
+                                          "19" if panjang else "12,18").split(",")]
+    terpakai = {json.loads(p.read_text(encoding="utf-8")).get("jadwal_tayang") for p in (ROOT / "antrean").glob("*/status.json")}
+    hari = SEKARANG.date()
+    while True:
+        for j in sorted(jam):
+            k = datetime.datetime.combine(hari, datetime.time(j), WITA)
+            if k > SEKARANG + datetime.timedelta(minutes=45) and k.isoformat() not in terpakai:
+                return k
+        hari += datetime.timedelta(days=1)
+
+
+laporan = []
+for st_path in sorted((ROOT / "antrean").glob("*/status.json")):
+    folder, s = st_path.parent, json.loads(st_path.read_text(encoding="utf-8"))
+    if s.get("tahap") not in ("disetujui", "terjadwal"):
+        continue
+    if not (folder / "final.mp4").exists() or not (folder / "unggah.json").exists():
+        laporan.append(f"{folder.name}: final.mp4 / unggah.json belum ada"); continue
+    u = json.loads((folder / "unggah.json").read_text(encoding="utf-8"))
+    if s.get("jadwal_tayang"):
+        jadwal = datetime.datetime.fromisoformat(s["jadwal_tayang"])
+    else:
+        jadwal = slot_berikut(s.get("format") == "panjang")
+        if not CEK: set_status(folder, "terjadwal", jadwal_tayang=jadwal.isoformat())
+    terbit = s.get("terbit", {})
+    for nama, (fungsi, kunci) in PLATFORM.items():
+        if terbit.get(nama, {}).get("id") or terbit.get(nama, {}).get("gagal", 0) >= 2:
+            continue  # sudah terbit, atau gagal 2x -> dilaporkan ke Bos, tidak dicoba terus
+        if not all(os.environ.get(k) for k in kunci):
+            terbit[nama] = {"catatan": "kunci belum diisi - unggah manual"}; continue
+        if nama != "youtube" and SEKARANG < jadwal - datetime.timedelta(minutes=15):
+            continue  # TikTok & Instagram menunggu jamnya
+        if CEK:
+            laporan.append(f"{folder.name}: akan unggah {nama} (jadwal {jadwal:%d %b %H:%M} WITA)"); continue
+        try:
+            terbit[nama] = {"id": fungsi(folder, u), "waktu": datetime.datetime.now(WITA).isoformat(timespec="minutes")}
+            laporan.append(f"{folder.name}: {nama} OK")
+        except Exception as e:  # satu platform gagal tidak menghentikan yang lain
+            gagal = terbit.get(nama, {}).get("gagal", 0) + 1
+            terbit[nama] = {"gagal": gagal, "error": str(e)[:300]}
+            laporan.append(f"{folder.name}: {nama} GAGAL ({gagal}x) {e}")
+    if CEK:
+        continue
+    selesai = all(v.get("id") or v.get("catatan") or v.get("gagal", 0) >= 2 for k, v in terbit.items()) and len(terbit) == 3
+    set_status(folder, "tayang" if selesai and SEKARANG >= jadwal else None, terbit=terbit)
+
+print("\n".join(laporan) or "Tidak ada video yang perlu diterbitkan sekarang.")

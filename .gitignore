@@ -18,3 +18,4 @@ node_modules/
 frames/
 __pycache__/
 *.pyc
+youtube_refresh_token.txt

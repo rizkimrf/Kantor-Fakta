@@ -25,7 +25,7 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 **Tujuan utama: lolos monetisasi YouTube secepat mungkin** dengan syarat yang berlaku untuk pendaftar baru mulai 1 Feb 2027:
 1.000 subscriber + **8.000 jam tonton video panjang dalam 365 hari** (jalur Shorts 20 juta views/90 hari dianggap bonus, bukan andalan).
 - **Video panjang 16:9: 2 per minggu**, 6–10 menit, topik dari Shorts yang performanya terbaik. Ini mesin jam tonton — prioritas tertinggi.
-- **Shorts 9:16: 1–2 per hari**, 40–58 detik, sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
+- **Shorts 9:16: 1–2 per hari**, 45–90 detik (durasi mengikuti isi, jangan terburu-buru), sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
 - **Kualitas di atas jumlah.** YouTube tidak memonetisasi konten massal yang mirip-mirip. Lebih baik 1 Shorts bagus daripada 3 yang serupa.
 - Setiap video WAJIB punya set/visual yang sesuai topiknya (bukan set yang sama terus) — tambah aset baru ke pustaka bila perlu (`panduan/katalog-aset.md`).
 - Selalu jaga **stok minimal 3 hari** video yang sudah terjadwal.
@@ -56,8 +56,8 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 | `cek_fakta` | **manajer** | `cek_fakta.md` lulus → `produksi`, gagal → kembali ke `naskah` |
 | `produksi` | editor | `audio/`, `visual/`, `final.mp4`, `thumbnail.png` |
 | `review` | **manajer** | `review.md` → `menunggu_persetujuan`; marketing menyiapkan `paket_unggah.md` (YouTube, TikTok, Instagram) |
-| `disetujui` | pemilik (perintah `/setujui`) | — |
-| `terjadwal` | marketing | upload + jadwal tayang |
+| `disetujui` | pemilik (`/setujui` atau tombol Setujui di Kantor Visual HP) | — |
+| `terjadwal` | marketing (`/terbitkan`, otomatis) | `unggah.json` → YouTube dijadwalkan, TikTok & Instagram diunggah saat jamnya |
 | `tayang` | marketing | catatan performa |
 
 ## Aturan kerja
@@ -78,6 +78,11 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 - Kantor ini berjalan di cloud (claude.ai/code) dari repo GitHub pribadi Bos. **Di akhir setiap sesi: commit semua perubahan dan push langsung ke branch `main`** (repo pribadi, tanpa pull request) supaya pekerjaan tidak hilang. Jangan pernah meng-commit `.env`, token, atau kunci.
 - **Kantor Visual HP**: https://claude.ai/artifact/3Foimf6mkjVzkA1X6vFhfx — Bos memantau, menonton video, menekan Setujui/Tolak, dan mengirim pesan dari sana.
 - **Di awal setiap sesi kerja** jalankan bagian A dari `.claude/commands/sinkron-visual.md` (ambil keputusan & pesan Bos). **Di akhir sesi** jalankan bagian B (perbarui laporan, unggah video yang menunggu persetujuan). Saat tim mulai/selesai mengerjakan sesuatu, perbarui `agen` agar Bos melihat siapa yang sedang bekerja.
+
+## Jadwal otomatis di cloud (perintah `/pasang-jadwal`, sekali saja)
+- 05.41 WITA produksi pagi: ambil keputusan Bos, kerjakan antrean, jaga stok, kirim pratinjau ke Kantor Visual HP.
+- 11.47 & 17.47 WITA `/terbitkan`: terapkan Setujui/Tolak dari HP, lalu unggah yang disetujui sesuai jam tayang (12.00 & 18.00).
+- Kunci API & token hanya di pengaturan environment claude.ai/code (lihat `.env.example` untuk daftar namanya), tidak pernah di repo atau chat.
 
 ## Laporan ke pemilik (selalu di akhir sesi, singkat)
 ```

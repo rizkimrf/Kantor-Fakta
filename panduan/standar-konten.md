@@ -65,6 +65,20 @@ Paraf hanya boleh diberikan setelah benar-benar memeriksa hasil akhirnya (naskah
 - Maksimal 4–6 efek per Shorts di luar intro/outro; efek harus menandai sesuatu (kejutan, perpindahan, angka penting), bukan hiasan.
 - Volume efek di bawah narasi; tidak ada efek yang menutupi kata. Semua audio hasil buatan sendiri atau berlisensi bebas — catat sumbernya.
 
+## 6b. Format wajib setiap video (keputusan Bos, 15 Nov 2026) — contoh: `studio-aset/contoh-1menit/v8-final.html`
+- **Sampul di dalam video:** frame pertama (0–0,9 dtk) = sampul: set hook digelapkan, judul hook besar (kata kunci di pil kuning,
+  kata kejutan kuning), Tebe berekspresi sesuai hook, logo kecil di kiri bawah. Narasi sudah mulai di 0,15 dtk; sampul lalu
+  bergeser naik & memudar. Karena itu sampul tidak perlu diatur saat unggah (TikTok/Instagram/YouTube memakai frame pertama).
+  `thumbnail.png` = tangkapan frame 0 (untuk video panjang & arsip).
+- **Intro khas lega:** 2,4 detik setelah hook (lingkaran kuning-teal, jambul "?" tergambar, "Ternyata Begitu!" bertahan
+  ±1,2 dtk penuh supaya terbaca) + jingle & "ding".
+- **Watermark berpindah:** ikon "?" + tulisan TernyataBegitu, putih 70% berbayang, 30 px. Pindah tiap **12 detik** dengan pudar
+  halus, bergiliran kiri-atas → kiri-bawah → kanan-atas. Tidak tampil di sampul, intro, dan outro. Tidak menutupi teks layar,
+  label, atau wajah Tebe.
+- **Durasi mengikuti isi, bukan dipaksa 60 detik.** Shorts boleh 60–90 detik bila perlu agar poin tersampaikan dan tidak
+  terburu-buru. Suara tidak boleh dipercepat; beri jeda napas ±0,4 dtk di setiap pergantian babak. Teks layar mengikuti
+  waktu kata dari `audio/waktu_kata.json`.
+
 ## 7. Gerbang akhir — 12 hal yang harus "ya" sebelum minta persetujuan Bos
 1. Fakta benar, ≥ 2 sumber, sumber ada di deskripsi (Laras).
 2. Ada jarak kejutan yang jelas dan janji hook dibayar (Nadia, Laras).
@@ -73,7 +87,7 @@ Paraf hanya boleh diberikan setelah benar-benar memeriksa hasil akhirnya (naskah
 5. Ada celah penasaran baru tiap ±10 detik (Nadia).
 6. Tebe asli, bergerak mulus, ada di dalam set (Yoga).
 7. Set berbeda tiap babak, minimal satu gerak kamera per adegan, tidak memakai set yang sama dengan 3 video terakhir tanpa variasi (Yoga).
-8. Intro & outro khas terpasang; suara, musik, dan efek seimbang (Yoga).
+8. Sampul di frame pertama, intro lega, watermark berpindah, outro khas terpasang; suara, musik, dan efek seimbang (Yoga).
 9. Teks layar 1–3 kata mengikuti suara, terbaca di HP (Yoga, Nadia).
 10. Judul, deskripsi, tag, thumbnail sesuai `cek_seo.md`; judul tidak menyesatkan (Raka, Pak Bima).
 11. `paket_unggah.md` lengkap untuk YouTube, TikTok, Instagram (Raka).

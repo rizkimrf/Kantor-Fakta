@@ -7,8 +7,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def muat_env():
     env = ROOT / ".env"
-    if not env.exists():
-        raise SystemExit("File .env belum ada. Salin .env.example menjadi .env lalu isi kuncinya.")
+    if not env.exists():  # di cloud, kunci datang dari pengaturan environment claude.ai/code (bukan file .env)
+        return
     for baris in env.read_text(encoding="utf-8").splitlines():
         baris = baris.strip()
         if baris and not baris.startswith("#") and "=" in baris:
@@ -19,7 +19,7 @@ def muat_env():
 def wajib(nama):
     nilai = os.environ.get(nama)
     if not nilai:
-        raise SystemExit(f"{nama} belum diisi di .env")
+        raise SystemExit(f"{nama} belum diisi (di .env laptop atau di pengaturan environment cloud)")
     return nilai
 
 
