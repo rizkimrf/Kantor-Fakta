@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "I-015 harga 99900",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -40,6 +40,13 @@
       "waktu": "2026-11-15T22:45",
       "oleh": "Yoga (editor)",
       "hasil": "Video final: 68,5 dtk, 16,0 MB (crf 23). cek_mulus & cek_video LULUS. Suara 1.024 huruf (sekali). 9 set baru + musik belanja-ceria. Digit kanan redup tetapi terbaca; contoh rupiah ditandai CONTOH. Sampul: label harga + kaca pembesar '900' + separuh wajah Tebe curiga, merah-kuning."
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-15T22:48",
+      "oleh": "Pak Bima",
+      "hasil": "review LULUS, gerbang 10 butir ya, paraf lengkap"
     }
   ],
   "masalah": null,
