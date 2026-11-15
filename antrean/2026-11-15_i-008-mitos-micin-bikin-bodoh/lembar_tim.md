@@ -1,0 +1,11 @@
+# Lembar Tim — "Generasi micin" ternyata warisan satu surat dokter tahun 1968
+Janji konten (1 kalimat, apa yang penonton dapat): penonton tahu bahwa cap "micin bikin bodoh" bermula dari satu surat pembaca yang menebak-nebak (NEJM, 4 April 1968) dan riset bayi tikus yang DISUNTIK MSG (1969), lalu paham kenapa dua hal itu tidak membuktikan micin merusak otak manusia.
+Rasa yang dikejar (kagum / kaget / geli / haru): kaget → geli → kagum.
+
+- Laras (riset)     : Fakta inti: (1) 4 Apr 1968, dr. Robert Ho Man Kwok menulis surat pembaca di NEJM soal tengkuk kebas, lemas, dan berdebar setelah makan di restoran Tiongkok utara di AS. Ia MENEBAK arak masak, garam/natrium, atau MSG, dan suratnya dimuat dengan judul "Chinese-Restaurant Syndrome". (2) 1969, John W. Olney (*Science* 164:719): MSG DISUNTIKKAN di bawah kulit bayi tikus merusak sel otak. Inilah jembatan dari "pusing" ke "bodoh". (3) Uji tersamar kemudian tidak menemukan reaksi yang konsisten. JECFA FAO/WHO (1987), FDA (GRAS), dan BPOM (Permenkes 033/2012) menggolongkan MSG sebagai bahan tambahan pangan yang diizinkan. Paling mengejutkan: tikusnya disuntik, bukan diberi makan. Bonus akhir: glutamat micin secara kimia sama dengan glutamat di tomat & keju (FDA), dan micin pertama diambil dari rumput laut kombu (Ikeda, 1908). Sumber: NEJM 278:796 (1968); *Science* 164:719 (1969); Science History Institute *Distillations*; database JECFA WHO; FDA Q&A MSG; BPOM via JPNN/Kemenkes. TIDAK boleh diklaim: angka dosis apa pun; "100% aman berapa pun jumlahnya"; "surat itu hoaks" (klaim Howard Steel dibantah keluarga Kwok, jadi kalau disebut, sebut DIPERDEBATKAN); "Kwok menuduh MSG"/"Kwok menamai sindromnya"; "tikus diberi makan"; "glutamat sama sekali tidak bisa masuk otak"; replikasi monyet; "15–20 menit"; asal kata micin/vetsin; Ajinomoto Indonesia (1969) sebagai sebab-akibat; candaan yang menyindir orang/masakan Tionghoa; "MSG bikin pintar". Masukan untuk tim: Nadia, kata "menebak" dan "disuntik" adalah dua kata kunci yang tidak boleh hilang saat dipadatkan. Yoga, momen "wah" yang aman adalah jarum suntik vs sendok (perbandingan jalur). Raka, judul jangan "micin aman!" karena itu nasihat kesehatan; sudut asal-usul ("satu surat 1968") sudah tepat.
+- Raka (marketing)  :
+- Nadia (naskah)    :
+- Yoga (editor)     :
+- Pak Bima (manajer):
+
+## Paraf setelah produksi

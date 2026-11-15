@@ -1,0 +1,14 @@
+{
+  "tahap": "pilih",
+  "topik": "I-015 harga 99900",
+  "dibuat": "2026-11-15T07:58",
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras (riset)",
+      "tanggal": "2026-11-15",
+      "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10. Klaim inti terverifikasi di >=2 sumber (JCR 2005, AER 2012, ReStud 2023, QME 2003). Twist: meta-analisis JCP 2023 dan PLOS ONE 2022 menunjukkan efek kecil/tidak selalu muncul. Mitos anti-maling kasir dan angka $34->$39 (sumber tunggal) dibuang. lembar_tim.md baris Laras terisi. Catatan: WebFetch diblokir, verifikasi lewat abstrak/ringkasan, teks lengkap jurnal tidak dibaca langsung."
+    }
+  ],
+  "masalah": null
+}
