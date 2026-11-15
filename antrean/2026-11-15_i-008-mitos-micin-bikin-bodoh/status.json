@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "I-008 mitos micin bikin bodoh",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -20,7 +20,21 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-15",
       "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook cerita-asal (skor 9): 'Micin bikin bodoh? Semua bermula dari satu surat yang cuma menebak.' Judul: 'Micin Bikin Bodoh? Awalnya dari Surat yang Cuma Menebak'. Thumbnail: MICIN BIKIN BODOH? (tanpa '1 SURAT', arahan Bos). 9 adegan, 168 kata (±72 dtk), 1 klip. Skor naskah 9/9, viral 9/10. Tanpa dosis/nasihat; lembaga disebut apa adanya; surat tidak disebut hoaks."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "Butir WAJIB cek_riset (Laras) & keputusan Pak Bima dikerjakan. Hook: 'Micin bikin BODOH? Ketakutan itu bermula dari satu surat yang cuma MENEBAK.' Adegan 2: 'Anggapan di baliknya makin kuat gara-gara bayi tikus...' (bukan 'akarnya surat'). Adegan 7: 'nggak konsisten saat diulang. Bahkan sebagian peserta bereaksi ke yang palsu.' Adegan 8: 'Sejak evaluasi tahun 1987, badan pangan FAO-WHO menilai bahayanya rendah. FDA: umumnya diakui aman. BPOM: diizinkan dengan batas.' Adegan 9: glutamat diberi atribusi 'menurut FDA' (1 sumber), 'nggak bisa dibedain' menggantikan 'sama'; penutup 'Balik ke anggapan micin bikin bodoh tadi: itu warisan tebakan, plus tikus yang disuntik.' Deskripsi & IG: peran JECFA/FDA/BPOM dipisah + kalimat Geha 2000. Judul tetap. TikTok 140 huruf. 188 kata (±80 dtk). Skor ulang: naskah 8/9 (penahan turun, adegan 8 lebih panjang), viral 9/10. unggah.json & paket_unggah.md diselaraskan."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-15T22:02",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }

@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "I-015 harga 99900",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -20,7 +20,21 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-15",
       "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook (tes otak): 'Harga sembilan puluh sembilan ribu sembilan ratus, atau seratus ribu. Mana TERASA lebih murah?' Judul: 'Kenapa Harga Rp 99.900 Terasa Murah? Coba Tes Otakmu'. 8 adegan, 141 kata, ±63 dtk, 1 klip. Skor naskah 9/9, skor viral 9/10. Twist meta-analisis 69 studi (efek kecil/nyaris nol); tanpa nasihat belanja, tanpa mitos kasir. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "4 butir WAJIB Laras dikerjakan: adegan 7 'setelah dikoreksi bias penerbitan, efeknya bisa nyaris NOL. Para ahli masih berdebat.' (teks layar BISA NYARIS NOL); adegan 4 'biasanya efeknya melemah'; visual adegan 3 digit kanan redup tapi terbaca; komentar tersemat diatribusikan ke Busse dkk. ('rata-rata sekitar'). Saran Laras dipakai semua; saran Raka dipakai (teks layar hook MANA LEBIH MURAH?). Raka: tidak ada WAJIB. 140 kata, ±64 dtk. Skor naskah 9/9, viral 8/10 (turun 1, twist berpagar). naskah_baca/suara, unggah.json, paket_unggah.md diselaraskan. Lanjut ke cek_fakta."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-15T22:03",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }

@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "I-009 bau durian",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -20,7 +20,21 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-15",
       "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook (pertanyaan warung + angka): 'Kenapa durian bau BANGET? Ternyata DNA-nya punya EMPAT pabrik bau.' Judul: 'Kenapa Durian Bau Banget? Jawabannya Ada di DNA-nya'. 9 adegan, 140 kata, ±62 dtk, 2 klip. Skor naskah 9/9, skor viral 9/10. Fungsi bau 'diduga'; tanpa tonase/klaim kesehatan. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "2 butir WAJIB Laras dikerjakan: adegan 8 'di antara tanaman yang genomnya dibandingkan, yang terdekat malah KAPAS'; komentar tersemat Bombacaceae dibuang, diganti fakta kelelawar penyerbuk Sulawesi (riset §9). Saran Laras dipakai (pemimpinnya ilmuwan kanker, makin ngebut). Raka: tidak ada WAJIB. 140 kata. Skor naskah 9/9, viral 9/10. naskah_baca/suara, unggah.json, paket_unggah.md diselaraskan. Lanjut ke cek_fakta."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-15T22:03",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 9/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }

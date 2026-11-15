@@ -1,10 +1,10 @@
 # Paket Unggah — 2026-11-15_i-008-mitos-micin-bikin-bodoh
-Oleh: Raka · 15 Nov 2026 · Mengikuti naskah.json (status masih cek_seo; final dicek ulang setelah produksi). Sama persis dengan unggah.json.
+Oleh: Raka · 15 Nov 2026 · Diselaraskan Nadia dengan naskah revisi 1 (status cek_fakta; final dicek ulang setelah produksi). Sama persis dengan unggah.json.
 
 ## YouTube Shorts
 Judul (55 huruf): Micin Bikin Bodoh? Awalnya dari Surat yang Cuma Menebak
 Deskripsi:
-Cap "micin bikin bodoh" bermula dari satu surat pembaca di New England Journal of Medicine (1968) yang menebak beberapa penyebab: arak masak, garam, atau MSG. Setahun kemudian, riset yang MENYUNTIKKAN MSG ke bayi tikus memicu anggapan micin merusak otak. Kini JECFA (FAO/WHO), FDA, dan BPOM menggolongkan MSG sebagai bahan tambahan pangan yang diizinkan. Video ini membahas sejarah mitosnya, bukan saran makan.
+Anggapan "micin bikin bodoh" punya asal-usul: ketakutan pada MSG bermula dari satu surat pembaca di New England Journal of Medicine (1968) yang menebak beberapa penyebab: arak masak, garam, atau MSG. Setahun kemudian, riset yang MENYUNTIKKAN MSG ke bayi tikus memicu anggapan micin merusak otak. Sebagian orang mengaku sensitif, tetapi uji tersamar (Geha dkk., 2000) belum menemukan pola yang konsisten. JECFA (komite ahli FAO/WHO, evaluasi 1987) menilai bahayanya rendah, FDA menggolongkannya GRAS (umumnya diakui aman), dan BPOM mengizinkannya sebagai penguat rasa dengan batas yang diatur. Video ini membahas sejarah mitosnya, bukan saran makan.
 
 Sumber:
 - Kwok, R.H.M., N Engl J Med 278(14):796 (1968): https://scilit.com/publications/349b454cf544a3d97ca351bfb48250c6
@@ -22,12 +22,12 @@ Sumber:
 Tag: micin bikin bodoh, generasi micin, asal mitos micin, apakah micin berbahaya, MSG bikin bodoh benarkah, MSG, micin, chinese restaurant syndrome, fakta sains, ternyata begitu
 Komentar tersemat: Bonus: micin pertama kali diambil dari kaldu rumput laut kombu oleh profesor kimia Jepang Kikunae Ikeda tahun 1908. Dia juga yang menamai rasa kelima: umami. Nah, siapa yang pertama ngatain kamu 'generasi micin'? Teman, guru, atau orang tua?
 
-## TikTok
-Micin bikin bodoh? Mitos ini bermula dari satu surat yang cuma menebak, plus tikus yang DISUNTIK. Siapa yang pertama ngatain kamu generasi micin?
+## TikTok (140 huruf sebelum hashtag)
+Micin bikin bodoh? Ketakutannya berawal dari surat yang cuma menebak, plus tikus yang DISUNTIK. Siapa yang pertama ngatain kamu generasi micin?
 #micin #generasimicin #faktasains #mitos #TernyataBegitu
 
 ## Instagram Reels
-"Micin bikin bodoh" ternyata punya asal-usul: satu surat pembaca tahun 1968 yang cuma menebak, lalu riset tikus yang menyuntikkan MSG. Kini lembaga pangan dunia dan BPOM menggolongkannya sebagai bahan tambahan pangan yang diizinkan. Ini cerita sejarah mitosnya, bukan saran makan.
+"Micin bikin bodoh" ternyata punya asal-usul: ketakutan pada MSG bermula dari satu surat pembaca tahun 1968 yang cuma menebak, lalu riset tikus yang menyuntikkan MSG. Lembaga pangan dunia menilainya berisiko rendah dan BPOM mengizinkannya dengan batas. Ini cerita sejarah mitosnya, bukan saran makan.
 Kirim ke teman yang hobi ngatain 'anak micin'. Siapa yang pertama ngatain kamu 'generasi micin'?
 #micin #generasimicin #mitosataufakta #faktaunik #TernyataBegitu
 

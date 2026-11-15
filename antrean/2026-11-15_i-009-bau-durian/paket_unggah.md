@@ -6,7 +6,7 @@ Raka - 15 Nov 2026 - Shorts 9:16 - label konten AI: NYALA (semua platform) - sam
 Judul (52 huruf): Kenapa Durian Bau? Ada 4 Salinan Satu Gen di DNA-nya
 Deskripsi + sumber + 3 hashtag: sama dengan `naskah.json` -> deskripsi (disalin ke unggah.json).
 Tag: kenapa durian bau, penyebab bau durian, bau durian, gen durian, durian satu keluarga cokelat, durian di pesawat, musang king, fakta sains, fakta unik, ternyata begitu
-Komentar tersemat: pakai `caption_komentar` Nadia + tautan ke video panjang terkait bila sudah ada.
+Komentar tersemat (revisi 1, Nadia): "Fakta bonus: di Sulawesi Barat, peneliti menemukan bunga durian yang bisa dijangkau kelelawar menghasilkan buah jauh lebih banyak. Penyerbuk paling seringnya? Kelelawar gua. Jujur, kamu tim durian atau tim tutup hidung?" + tautan ke video panjang terkait bila sudah ada. (Fakta Bombacaceae dibuang, keputusan Pak Bima.)
 
 ## TikTok (143 karakter, kata kunci di awal)
 Kenapa durian bau? DNA-nya punya 4 salinan gen belerang. Kamu tim durian atau tutup hidung? #kenapadurianbau #faktaunik #durian #TernyataBegitu

@@ -1,16 +1,16 @@
-Arahan rasa: santai, iseng, seperti ngetes teman di depan rak minimarket. Senyum pas "seratus perak", nada "eh tunggu dulu" di bagian enam puluh sembilan studi.
-NASKAH BACA — Kenapa harga Rp 99.900 terasa murah? (±63 detik, 141 kata)
+Arahan rasa: santai, iseng, seperti ngetes teman di depan rak minimarket. Senyum pas "seratus perak", nada "eh tunggu dulu" di bagian enam puluh sembilan studi, jujur dan tenang di "para ahli masih berdebat".
+NASKAH BACA — Kenapa harga Rp 99.900 terasa murah? (±64 detik, 140 kata) — revisi 1
 Tanda "/" = jeda napas pendek. Kata KAPITAL = ditekan. Angka di kiri = detik mulai (patokan, tidak harus persis).
 
 00  Harga sembilan puluh sembilan ribu sembilan ratus, / atau seratus ribu. / Mana TERASA lebih murah?
     (jeda 1 detik — musik intro)
-08  Pasti yang pertama, kan? / Padahal bedanya cuma SERATUS perak. / Ternyata otakmu sudah MENAKSIR / sebelum selesai membaca angkanya.
-16  Kita membaca angka dari KIRI. / Sembilan puluh sekian ribu / masuk keranjang puluhan ribu. / Seratus ribu? / Keranjang RATUSAN ribu.
-24  Tapi ada syaratnya: / angka PALING KIRI harus berubah. / Kalau digit kirinya sama, / efek ini nggak muncul.
-31  Efek ini bahkan terlihat / di jutaan transaksi lelang mobil bekas Amerika. / Odometer lewat sepuluh ribu mil, / harganya MELOMPAT turun.
-39  Tapi tunggu. / Ilmuwan menggabungkan enam puluh sembilan studi. / Efeknya ke keputusan membeli? / Ternyata… KECIL.
-45  Dihitung lebih ketat, / malah nyaris NOL. / Triknya lebih jago bikin kesan murah, / daripada bikin kamu CHECKOUT.
-52  Jadi trik sembilan ratus itu bukan SIHIR, / cuma otak yang buru-buru baca dari kiri. / Dan ternyata, / memang begitu. / Barang terakhir yang kamu beli / berakhiran sembilan ratus, / apa?
+08  Kayaknya yang pertama, kan? / Padahal bedanya cuma SERATUS perak. / Otakmu sudah MENAKSIR / sebelum selesai membaca.
+15  Kita baca dari KIRI. / Sembilan puluh sekian ribu / seolah masuk keranjang puluhan ribu. / Seratus ribu? / Keranjang RATUSAN ribu.
+23  Syaratnya, / menurut studi klasik: / angka PALING KIRI harus berubah. / Kalau digit kirinya sama, / biasanya efeknya melemah.
+30  Efek serupa muncul / di jutaan lelang mobil bekas Amerika. / Odometer lewat sepuluh ribu mil, / harganya MELOMPAT turun.
+37  Tapi tunggu. / Ilmuwan menggabungkan enam puluh sembilan studi. / Efeknya ke keputusan membeli? / Ternyata… KECIL.
+43  Setelah dikoreksi bias penerbitan, / efeknya bisa nyaris NOL. / Para ahli masih berdebat. / Jago bikin kesan murah, / belum tentu bikin CHECKOUT.
+52  Jadi trik sembilan ratus itu bukan SIHIR. / Otak cuma lebih menimbang digit KIRI. / Dan ternyata, / memang begitu. / Barang terakhir yang kamu beli / berakhiran sembilan ratus, / apa?
 
 Cara baca: checkout = "cek-aut" · digit = "di-jit" · odometer = "o-do-me-ter".
 Cara rekam: HP, ruangan sepi (kamar dengan gorden/kasur meredam gema), jarak mulut ±15 cm, satu kali baca tanpa berhenti.

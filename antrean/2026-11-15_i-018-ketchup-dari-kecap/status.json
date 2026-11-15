@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "I-018 ketchup dari kecap",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -20,7 +20,21 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-15",
       "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook pembalikan arah (skor 9): 'Kecap bukan tiruan ketchup. Asal usulnya kebalik: kemungkinan besar, ketchup yang niru kecap.' Judul: 'Asal Usul Kecap dan Ketchup: Saudara yang Lahir dari Ikan'. Thumbnail: KECAP & KETCHUP DARI IKAN?!. 9 adegan, 177 kata (±75 dtk), 2 klip. Skor naskah 9/9, viral 9/10. Jalur Melayu dipagari 'menduga kuat'."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "Butir WAJIB cek_riset (Laras) & keputusan Pak Bima dikerjakan. Hook: 'Kecap bukan tiruan KETCHUP. Asal usulnya kebalik: nama ketchup kemungkinan besar dipinjam dari kata KECAP.' Adegan 2: open loop jadi 'ada botol lain yang resep aslinya juga pakai ikan'. Adegan 5: 'susah ditiru'. Adegan 6: 'Tomat baru nyemplung ke resep ketchup di Amerika. Resep tertulis pertama yang diketahui: 1812' (teks layar 1812: RESEP TOMAT). Adegan 7: 'kata kecap memang melebar jadi nama banyak saus'. Adegan 8: teri diberi atribusi 'menurut ensiklopedia Britannica' (masih 1 sumber). Judul: 'Asal Usul Kecap dan Ketchup: Namanya Lahir dari Saus Ikan' (57). Sampul: NAMA KECAP & KETCHUP: SAUS IKAN?!. Lockyer ditandai sumber sekunder. TikTok 142 huruf. 178 kata (±76 dtk). Skor ulang: naskah 8/9 (kejutan kedua turun ke 1), viral 9/10. unggah.json & paket_unggah.md diselaraskan."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-15T22:02",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }
