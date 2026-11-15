@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "produksi",
   "topik": "I-007 bau hujan",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -58,6 +58,13 @@
       "waktu": "2026-11-15T11:15",
       "oleh": "Raka",
       "hasil": "jadwal 21.00 WITA; YouTube/TikTok/IG unggah manual oleh Bos"
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "produksi",
+      "waktu": "2026-11-15T12:00",
+      "oleh": "Pak Bima",
+      "hasil": "Revisi perintah Bos (nyendat, zona aman, sampul). Versi lama sudah diunggah manual Bos ke YouTube & TikTok."
     }
   ],
   "masalah": null,
@@ -65,18 +72,21 @@
   "jadwal_tayang_usulan": "2026-11-15T21:00:00+08:00",
   "video_asset_id": "9d1f819ef047b2a9510e0aa68e1f54ba",
   "thumb_asset_id": "309daf5cab4174810b93c12a5ab062d5",
-  "video_url": "/_blob/9d1f819ef047b2a9510e0aa68e1f54ba",
-  "thumb_url": "/_blob/309daf5cab4174810b93c12a5ab062d5",
   "jadwal_tayang": "2026-11-15T21:00:00+08:00",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio",
+      "id": "manual",
+      "waktu": "2026-11-15T11:15:39Z"
     },
     "tiktok": {
-      "catatan": "kunci belum diisi - unggah manual"
+      "catatan": "kunci belum diisi - unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-15T11:22:37Z"
     },
     "instagram": {
       "catatan": "kunci belum diisi - unggah manual"
     }
-  }
+  },
+  "catatan_bos": "REVISI (perintah Bos 15 Nov): 1) nyendat: narasi terpotong 37,3/42,6/61,3 dtk; wipe 3 frame layar biru ±37,9 dtk; setelah intro kembali ke set kampung lalu potong keras ke kemarau ±9,5 dtk -> transisi 12-18 frame easing, JEDA hanya akhir kalimat. 2) zona aman: Tebe & teks di kanan/bawah -> teks 2-4 kata pita y 900-1400, wajah Tebe zona aman, watermark (40,236)/(40,1400)/(kanan 200,236). 3) sampul kaku -> momen dramatis (referensi/sampul.md), Tebe besar & beraksi, konsep sendiri lebih kuat dari contoh-bau-hujan.png. Narasi dibuat ulang dari naskah_suara.txt."
 }

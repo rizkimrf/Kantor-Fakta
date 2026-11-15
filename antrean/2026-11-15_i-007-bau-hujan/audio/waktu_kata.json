@@ -1,0 +1,710 @@
+{
+ "model": "eleven_v4",
+ "kata": [
+  {
+   "kata": "Cium",
+   "mulai": 0.067,
+   "selesai": 0.24
+  },
+  {
+   "kata": "deh,",
+   "mulai": 0.32,
+   "selesai": 0.68
+  },
+  {
+   "kata": "bau",
+   "mulai": 0.88,
+   "selesai": 1.04
+  },
+  {
+   "kata": "hujan",
+   "mulai": 1.12,
+   "selesai": 1.52
+  },
+  {
+   "kata": "yang",
+   "mulai": 1.56,
+   "selesai": 1.6
+  },
+  {
+   "kata": "kamu",
+   "mulai": 1.68,
+   "selesai": 1.84
+  },
+  {
+   "kata": "kangenin.",
+   "mulai": 1.88,
+   "selesai": 2.56
+  },
+  {
+   "kata": "Itu",
+   "mulai": 2.8,
+   "selesai": 3.04
+  },
+  {
+   "kata": "bukan",
+   "mulai": 3.12,
+   "selesai": 3.28
+  },
+  {
+   "kata": "bau",
+   "mulai": 3.36,
+   "selesai": 3.44
+  },
+  {
+   "kata": "airnya.",
+   "mulai": 3.52,
+   "selesai": 4.2
+  },
+  {
+   "kata": "Namanya",
+   "mulai": 4.4,
+   "selesai": 4.8
+  },
+  {
+   "kata": "petrikor.",
+   "mulai": 4.88,
+   "selesai": 5.8
+  },
+  {
+   "kata": "Salah",
+   "mulai": 6.0,
+   "selesai": 6.16
+  },
+  {
+   "kata": "satu",
+   "mulai": 6.2,
+   "selesai": 6.4
+  },
+  {
+   "kata": "bahan",
+   "mulai": 6.44,
+   "selesai": 6.64
+  },
+  {
+   "kata": "utamanya",
+   "mulai": 6.72,
+   "selesai": 7.2
+  },
+  {
+   "kata": "dibuat...",
+   "mulai": 7.28,
+   "selesai": 8.08
+  },
+  {
+   "kata": "bakteri.",
+   "mulai": 8.24,
+   "selesai": 9.12
+  },
+  {
+   "kata": "Dan",
+   "mulai": 9.2,
+   "selesai": 9.28
+  },
+  {
+   "kata": "bakterinya",
+   "mulai": 9.32,
+   "selesai": 9.92
+  },
+  {
+   "kata": "punya",
+   "mulai": 10.08,
+   "selesai": 10.32
+  },
+  {
+   "kata": "maksud.",
+   "mulai": 10.4,
+   "selesai": 11.2
+  },
+  {
+   "kata": "Di",
+   "mulai": 11.28,
+   "selesai": 11.36
+  },
+  {
+   "kata": "tanah,",
+   "mulai": 11.48,
+   "selesai": 11.92
+  },
+  {
+   "kata": "ada",
+   "mulai": 12.0,
+   "selesai": 12.08
+  },
+  {
+   "kata": "bakteri",
+   "mulai": 12.16,
+   "selesai": 12.56
+  },
+  {
+   "kata": "mirip",
+   "mulai": 12.64,
+   "selesai": 12.8
+  },
+  {
+   "kata": "benang.",
+   "mulai": 12.88,
+   "selesai": 13.6
+  },
+  {
+   "kata": "Pas",
+   "mulai": 13.68,
+   "selesai": 13.76
+  },
+  {
+   "kata": "bikin",
+   "mulai": 13.8,
+   "selesai": 14.0
+  },
+  {
+   "kata": "spora,",
+   "mulai": 14.08,
+   "selesai": 14.64
+  },
+  {
+   "kata": "dia",
+   "mulai": 14.72,
+   "selesai": 14.8
+  },
+  {
+   "kata": "ngeluarin",
+   "mulai": 14.84,
+   "selesai": 15.2
+  },
+  {
+   "kata": "zat",
+   "mulai": 15.28,
+   "selesai": 15.52
+  },
+  {
+   "kata": "bau",
+   "mulai": 15.6,
+   "selesai": 15.68
+  },
+  {
+   "kata": "tanah:",
+   "mulai": 15.76,
+   "selesai": 16.32
+  },
+  {
+   "kata": "geosmin.",
+   "mulai": 16.4,
+   "selesai": 17.36
+  },
+  {
+   "kata": "Terus",
+   "mulai": 17.44,
+   "selesai": 17.68
+  },
+  {
+   "kata": "hujan",
+   "mulai": 17.76,
+   "selesai": 18.08
+  },
+  {
+   "kata": "turun.",
+   "mulai": 18.16,
+   "selesai": 18.88
+  },
+  {
+   "kata": "Tetesnya",
+   "mulai": 18.987,
+   "selesai": 19.36
+  },
+  {
+   "kata": "menjebak",
+   "mulai": 19.44,
+   "selesai": 19.76
+  },
+  {
+   "kata": "gelembung",
+   "mulai": 19.84,
+   "selesai": 20.16
+  },
+  {
+   "kata": "mungil",
+   "mulai": 20.24,
+   "selesai": 20.56
+  },
+  {
+   "kata": "di",
+   "mulai": 20.64,
+   "selesai": 20.72
+  },
+  {
+   "kata": "tanah.",
+   "mulai": 20.8,
+   "selesai": 21.52
+  },
+  {
+   "kata": "Gelembungnya",
+   "mulai": 21.56,
+   "selesai": 22.0
+  },
+  {
+   "kata": "pecah",
+   "mulai": 22.08,
+   "selesai": 22.44
+  },
+  {
+   "kata": "jadi",
+   "mulai": 22.48,
+   "selesai": 22.64
+  },
+  {
+   "kata": "kabut",
+   "mulai": 22.68,
+   "selesai": 22.96
+  },
+  {
+   "kata": "halus,",
+   "mulai": 23.04,
+   "selesai": 23.44
+  },
+  {
+   "kata": "kayak",
+   "mulai": 23.467,
+   "selesai": 23.6
+  },
+  {
+   "kata": "soda.",
+   "mulai": 23.68,
+   "selesai": 24.56
+  },
+  {
+   "kata": "Peneliti",
+   "mulai": 24.64,
+   "selesai": 24.96
+  },
+  {
+   "kata": "em",
+   "mulai": 25.04,
+   "selesai": 25.2
+  },
+  {
+   "kata": "ai",
+   "mulai": 25.32,
+   "selesai": 25.44
+  },
+  {
+   "kata": "ti...",
+   "mulai": 25.56,
+   "selesai": 25.84
+  },
+  {
+   "kata": "menduga,",
+   "mulai": 25.92,
+   "selesai": 26.56
+  },
+  {
+   "kata": "kabut",
+   "mulai": 26.6,
+   "selesai": 26.88
+  },
+  {
+   "kata": "inilah",
+   "mulai": 26.96,
+   "selesai": 27.28
+  },
+  {
+   "kata": "pembawa",
+   "mulai": 27.32,
+   "selesai": 27.6
+  },
+  {
+   "kata": "aromanya.",
+   "mulai": 27.68,
+   "selesai": 28.64
+  },
+  {
+   "kata": "Hidung",
+   "mulai": 28.693,
+   "selesai": 28.88
+  },
+  {
+   "kata": "kita",
+   "mulai": 28.96,
+   "selesai": 29.2
+  },
+  {
+   "kata": "peka",
+   "mulai": 29.28,
+   "selesai": 29.6
+  },
+  {
+   "kata": "banget",
+   "mulai": 29.76,
+   "selesai": 30.08
+  },
+  {
+   "kata": "sama",
+   "mulai": 30.12,
+   "selesai": 30.24
+  },
+  {
+   "kata": "geosmin.",
+   "mulai": 30.32,
+   "selesai": 31.12
+  },
+  {
+   "kata": "Kenapa?",
+   "mulai": 31.2,
+   "selesai": 31.92
+  },
+  {
+   "kata": "Ilmuwan",
+   "mulai": 32.0,
+   "selesai": 32.4
+  },
+  {
+   "kata": "masih",
+   "mulai": 32.48,
+   "selesai": 32.6
+  },
+  {
+   "kata": "menebak-nebak.",
+   "mulai": 32.64,
+   "selesai": 33.76
+  },
+  {
+   "kata": "Nah,",
+   "mulai": 33.8,
+   "selesai": 34.16
+  },
+  {
+   "kata": "maksud",
+   "mulai": 34.213,
+   "selesai": 34.4
+  },
+  {
+   "kata": "bakterinya",
+   "mulai": 34.48,
+   "selesai": 34.96
+  },
+  {
+   "kata": "apa?",
+   "mulai": 35.16,
+   "selesai": 35.76
+  },
+  {
+   "kata": "Ternyata",
+   "mulai": 35.8,
+   "selesai": 36.48
+  },
+  {
+   "kata": "baunya",
+   "mulai": 36.56,
+   "selesai": 36.96
+  },
+  {
+   "kata": "itu...",
+   "mulai": 37.2,
+   "selesai": 37.52
+  },
+  {
+   "kata": "iklan.",
+   "mulai": 37.68,
+   "selesai": 38.56
+  },
+  {
+   "kata": "Targetnya",
+   "mulai": 38.76,
+   "selesai": 39.12
+  },
+  {
+   "kata": "springteil,",
+   "mulai": 39.2,
+   "selesai": 40.0
+  },
+  {
+   "kata": "hewan",
+   "mulai": 40.04,
+   "selesai": 40.32
+  },
+  {
+   "kata": "sekecil",
+   "mulai": 40.4,
+   "selesai": 40.8
+  },
+  {
+   "kata": "butir",
+   "mulai": 40.88,
+   "selesai": 41.12
+  },
+  {
+   "kata": "pasir.",
+   "mulai": 41.24,
+   "selesai": 41.92
+  },
+  {
+   "kata": "Mereka",
+   "mulai": 41.973,
+   "selesai": 42.24
+  },
+  {
+   "kata": "makan",
+   "mulai": 42.28,
+   "selesai": 42.56
+  },
+  {
+   "kata": "sedikit",
+   "mulai": 42.64,
+   "selesai": 42.88
+  },
+  {
+   "kata": "bakterinya,",
+   "mulai": 42.96,
+   "selesai": 43.76
+  },
+  {
+   "kata": "sporanya",
+   "mulai": 43.84,
+   "selesai": 44.32
+  },
+  {
+   "kata": "nebeng",
+   "mulai": 44.44,
+   "selesai": 44.72
+  },
+  {
+   "kata": "ke",
+   "mulai": 44.76,
+   "selesai": 44.8
+  },
+  {
+   "kata": "tempat",
+   "mulai": 44.88,
+   "selesai": 45.04
+  },
+  {
+   "kata": "baru.",
+   "mulai": 45.12,
+   "selesai": 45.68
+  },
+  {
+   "kata": "Bayar",
+   "mulai": 45.76,
+   "selesai": 45.92
+  },
+  {
+   "kata": "ongkir",
+   "mulai": 46.04,
+   "selesai": 46.24
+  },
+  {
+   "kata": "pakai",
+   "mulai": 46.32,
+   "selesai": 46.48
+  },
+  {
+   "kata": "badan",
+   "mulai": 46.56,
+   "selesai": 46.72
+  },
+  {
+   "kata": "sendiri.",
+   "mulai": 46.8,
+   "selesai": 47.44
+  },
+  {
+   "kata": "Plot",
+   "mulai": 48.36,
+   "selesai": 48.4
+  },
+  {
+   "kata": "twist:",
+   "mulai": 48.48,
+   "selesai": 49.04
+  },
+  {
+   "kata": "geosmin",
+   "mulai": 49.333,
+   "selesai": 49.68
+  },
+  {
+   "kata": "juga",
+   "mulai": 49.76,
+   "selesai": 49.92
+  },
+  {
+   "kata": "salah",
+   "mulai": 50.0,
+   "selesai": 50.16
+  },
+  {
+   "kata": "satu",
+   "mulai": 50.2,
+   "selesai": 50.4
+  },
+  {
+   "kata": "biang",
+   "mulai": 50.48,
+   "selesai": 50.72
+  },
+  {
+   "kata": "bau",
+   "mulai": 50.8,
+   "selesai": 50.96
+  },
+  {
+   "kata": "lumpur",
+   "mulai": 51.0,
+   "selesai": 51.36
+  },
+  {
+   "kata": "di",
+   "mulai": 51.44,
+   "selesai": 51.52
+  },
+  {
+   "kata": "lele",
+   "mulai": 51.56,
+   "selesai": 51.76
+  },
+  {
+   "kata": "kolam.",
+   "mulai": 51.88,
+   "selesai": 52.64
+  },
+  {
+   "kata": "Dikangenin",
+   "mulai": 52.693,
+   "selesai": 53.04
+  },
+  {
+   "kata": "pas",
+   "mulai": 53.12,
+   "selesai": 53.28
+  },
+  {
+   "kata": "hujan,",
+   "mulai": 53.32,
+   "selesai": 53.92
+  },
+  {
+   "kata": "diprotes",
+   "mulai": 53.96,
+   "selesai": 54.48
+  },
+  {
+   "kata": "di",
+   "mulai": 54.56,
+   "selesai": 54.64
+  },
+  {
+   "kata": "warung",
+   "mulai": 54.72,
+   "selesai": 54.84
+  },
+  {
+   "kata": "pecel",
+   "mulai": 54.88,
+   "selesai": 55.08
+  },
+  {
+   "kata": "lele.",
+   "mulai": 55.12,
+   "selesai": 55.84
+  },
+  {
+   "kata": "Jadi,",
+   "mulai": 55.88,
+   "selesai": 56.32
+  },
+  {
+   "kata": "di",
+   "mulai": 56.4,
+   "selesai": 56.48
+  },
+  {
+   "kata": "balik",
+   "mulai": 56.56,
+   "selesai": 56.8
+  },
+  {
+   "kata": "bau",
+   "mulai": 56.88,
+   "selesai": 57.04
+  },
+  {
+   "kata": "hujan,",
+   "mulai": 57.08,
+   "selesai": 57.6
+  },
+  {
+   "kata": "ada",
+   "mulai": 57.72,
+   "selesai": 57.84
+  },
+  {
+   "kata": "bakteri",
+   "mulai": 57.92,
+   "selesai": 58.28
+  },
+  {
+   "kata": "pasang",
+   "mulai": 58.32,
+   "selesai": 58.64
+  },
+  {
+   "kata": "iklan.",
+   "mulai": 58.76,
+   "selesai": 59.44
+  },
+  {
+   "kata": "Dan",
+   "mulai": 59.52,
+   "selesai": 59.6
+  },
+  {
+   "kata": "ternyata,",
+   "mulai": 59.68,
+   "selesai": 60.4
+  },
+  {
+   "kata": "memang",
+   "mulai": 60.48,
+   "selesai": 60.64
+  },
+  {
+   "kata": "begitu.",
+   "mulai": 60.72,
+   "selesai": 61.44
+  },
+  {
+   "kata": "Hujan",
+   "mulai": 61.68,
+   "selesai": 61.92
+  },
+  {
+   "kata": "pertama",
+   "mulai": 62.0,
+   "selesai": 62.24
+  },
+  {
+   "kata": "di",
+   "mulai": 62.32,
+   "selesai": 62.4
+  },
+  {
+   "kata": "daerahmu",
+   "mulai": 62.44,
+   "selesai": 62.88
+  },
+  {
+   "kata": "turun",
+   "mulai": 63.04,
+   "selesai": 63.28
+  },
+  {
+   "kata": "bulan",
+   "mulai": 63.36,
+   "selesai": 63.52
+  },
+  {
+   "kata": "apa?",
+   "mulai": 63.6,
+   "selesai": 64.16
+  }
+ ]
+}
