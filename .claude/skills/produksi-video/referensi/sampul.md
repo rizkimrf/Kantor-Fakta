@@ -1,5 +1,5 @@
 # Sampul — resep "momen dramatis"
-Contoh: `studio-aset/contoh-sampul/contoh-komodo.png`, `contoh-bau-hujan.png` (kode: `adegan.html`).
+Contoh: `studio-aset/contoh-sampul/` — konsep-micin (sebab-akibat), konsep-durian (close-up), konsep-harga (benda tak terduga), konsep-kecap (duel), konsep-nama (misteri); kode di `lima-konsep.html`.
 
 ## 6 konsep visual (rotasi, catat di riwayat.md; tidak boleh sama 2× berturut)
 1. **Momen ketegangan** — detik sebelum sesuatu terjadi (telur retak, mata menyala di gelap).
