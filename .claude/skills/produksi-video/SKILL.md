@@ -27,7 +27,8 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 
 ## Sampul = momen dramatis, bukan template (wajib — detail: referensi/sampul.md)
 Gaya acuan seperti channel animasi edukasi besar: satu ADEGAN ilustrasi yang menangkap momen paling menegangkan/aneh dari cerita.
-- Subjek cerita BESAR & dekat kamera, Tebe ikut beraksi di adegan dengan ekspresi kuat (bukan stiker kecil di pojok).
+- Tujuan sampul: penonton MERASA HARUS membuka video. Tunjukkan momen paling aneh/menegangkan, tapi jangan beri jawabannya.
+- Subjek cerita BESAR & dekat kamera. Tebe opsional: kalau ada, ia beraksi dengan ekspresi kuat; posisinya bervariasi (kiri, kanan, tengah, dari atas/bawah, siluet, hanya tangan/mata, bahkan tidak ada bila subjek cerita lebih kuat sendiri).
 - Pencahayaan dramatis (sorot/rim light/glow), 3 lapis kedalaman (latar diburamkan), vinyet.
 - Teks atas 2 baris, maks 4–5 kata, huruf putih tebal berkontur gelap, 1 kata berwarna; berbentuk pertanyaan/klaim.
 - Maks 1 grafis penunjuk (panah merah / lingkaran).

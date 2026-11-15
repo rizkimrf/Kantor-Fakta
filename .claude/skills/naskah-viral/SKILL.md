@@ -6,8 +6,14 @@ description: Cara Nadia menulis naskah Shorts/video panjang Ternyata Begitu yang
 Penonton memutuskan dalam 1–2 detik. Tugasmu: membuat mereka TIDAK BISA geser.
 
 ## Struktur Shorts (45–90 dtk, ±2,3 kata/dtk)
-1. **Hook 0–3 dtk** — klaim mustahil / "kamu salah" / pertanyaan yang terasa pribadi. Kata kunci SEO terucap. Visualnya langsung aneh/menarik.
-   Tulis 10 kandidat, pilih 1. Pola hook tidak sama dengan 5 video terakhir (`panduan/riwayat.md`).
+1. **Hook 0–3 dtk — tugas nomor satu.** Penonton harus berhenti menggulir sebelum detik ke-3. Hook = kalimat + visual pembuka bekerja bersama.
+   - Kalimat pertama ≤ 12 kata, kata kunci SEO terucap, langsung ke inti (tanpa "halo", "tahukah kamu", "di video ini").
+   - Pakai salah satu pola dan putar terus (catat di `panduan/riwayat.md`, tidak sama dengan 5 video terakhir):
+     **Kamu salah** ("Bau hujan yang kamu suka itu bukan bau air.") · **Mustahil tapi nyata** ("Komodo ini hamil tanpa pernah ketemu pejantan.") ·
+     **Bahaya/tabu** ("Jangan cium tanah setelah hujan… atau cium?") · **Angka mengejutkan** · **Pertanyaan pribadi** ("Kenapa kamu selalu beli yang 99.900?") ·
+     **Rahasia/bocoran** ("Penjual nggak mau kamu tahu ini.") · **Mulai dari akhir** (tunjukkan akibatnya dulu, sebabnya nanti).
+   - Visual detik 0–3 harus bergerak dan aneh/menegangkan (bukan Tebe berdiri menyapa). Teks layar hook = 2–4 kata paling memancing.
+   - Tulis 10 kandidat, beri nilai 1–10 "apakah saya berhenti menggulir kalau melihat ini di beranda?", pakai yang tertinggi (≥ 8). Raka ikut menilai 3 teratas.
 2. **Intro khas** (2,4 dtk, tanpa narasi).
 3. **Isi**: 2–3 fakta inti, tiap ±10 dtk buka celah baru ("tapi ada masalah…", "dan anehnya…"). Jawab "kok bisa?" dengan mekanisme sederhana + perbandingan sehari-hari Indonesia.
 4. **Bayar janji hook** sebelum detik terakhir, lalu **lingkaran**: kalimat penutup yang membuat ingin menonton ulang atau berkomentar (pertanyaan pilihan, bukan "like & subscribe").

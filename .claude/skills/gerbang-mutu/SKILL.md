@@ -10,8 +10,8 @@ Setiap kalimat didukung riset.md · judul tidak menyesatkan · tidak ada nasihat
 1. `python scripts/cek_video.py antrean/<folder>` dan `python scripts/cek_mulus.py antrean/<folder>` → keduanya LULUS.
 2. Lihat `_kerja/cek_transisi.jpg`, `_kerja/cek_zona_aman.jpg`, `thumbnail.png`.
 3. Daftar periksa 10 butir — semua "ya":
-   1. Sampul = momen dramatis (lihat skill produksi-video §Sampul), beda konsep dari 2 video terakhir, Tebe besar & ekspresif.
-   2. 3 dtk pertama: kata kunci terucap + visual langsung aneh/menarik.
+   1. Sampul = momen dramatis yang membuat penasaran (skor uji 3 detik ≥ 8), konsep & posisi Tebe beda dari 2 video terakhir.
+   2. 3 dtk pertama menghentikan scroll: kalimat hook ≤ 12 kata dengan kata kunci, visual bergerak & aneh, skor hook ≥ 8.
    3. Tidak ada suara terpotong, tidak ada kedip/potongan kasar, musik tidak "memompa".
    4. Teks layar & wajah Tebe di zona aman; teks 2–4 kata, terbaca di HP.
    5. Set berbeda tiap babak, kamera bergerak, Tebe beraksi (bukan berdiri diam).
