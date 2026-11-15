@@ -24,11 +24,28 @@ Disepakati Bos pada 15 Nov 2026. Baca ini SEBELUM membuat aset atau video baru.
 | `aset-set.js` | Pustaka set + palet | `ASET.PALET.siang/senja/malam`, lalu panggil aset di bawah |
 | `contoh-v5/v5.html` | Contoh video lengkap (komodo, 17 dtk) | Salin strukturnya untuk video baru |
 | `contoh-v5/pratinjau-*.png` | Lembar pose Tebe & set siang/senja/malam | Acuan visual |
+| `contoh-hujan/pratinjau.html` + `pratinjau-*.png` | Uji aset hujan di 3 palet + urutan slow-motion | `?adegan=1..7` |
 
 **Pose Tebe (tebe-rig):** netral, penasaran, kaget, menjelaskan, tertawa, bingung, bangga, melambai, berpikir, menghitung, sedih.
 Otomatis: kedip, napas, goyang badan, pegas jambul, mulut bicara.
 
 **Aset set (aset-set.js):** langit (matahari/bulan/bintang), awan, burung, bukit, kabut, laut, tanah, lontar, pohon, semak, rumput, batu, pagar, lampuTaman, rumahReptil, kunangKunang, debuCahaya, komodo, telur, kromosom, studio (latar penjelasan).
+
+**Aset set HUJAN / TANAH / MIKRO / KAMPUNG (Yoga, 15 Nov 2026, video I-007; pratinjau 3 palet di `studio-aset/contoh-hujan/`):**
+| Fungsi | Isi | Cara pakai singkat |
+|---|---|---|
+| `langitMendung(P,w,h,t,o)` · `awanHujan(x,y,s,P,t,op)` | langit berawan berlapis bergeser · awan hujan gelap | ganti `langit` saat mendung |
+| `hujan(w,h,t,P,{deras,sudut,y0,y1})` · `gerimis(...)` · `riakHujan(x0,x1,y0,y1,t,P,n)` · `tetesAtap(x0,x1,y,t,P,{n,jatuh})` | garis hujan bergerak, gerimis, riak genangan, tetes dari tepi genteng | taruh paling depan |
+| `tanahKering(w,y,P,o)` · `bercakBasah(x0,x1,y0,y1,P,k)` · `tanahBasah(w,y,P,t,{genangan,hujan})` | tanah retak kemarau (perspektif) · bercak basah muncul (k 0→1) · tanah basah + genangan | kemarau → tetes pertama |
+| `tetes(x,y,s,P,{regang})` · `gelembung(x,y,r,P,{pecah})` · `aerosol(x,y,P,k,o)` · `tetesSlowmo(x,y,s,P,fase,{t})` · `gelasSoda(x,y,s,P,t)` | MOMEN WAH: tetes jatuh → menghantam → gelembung naik → pecah jadi kabut (fase 0..1); gelas soda pembanding | `tetesSlowmo` skala ±1,9 untuk close-up |
+| `streptomyces(x,y,s,P,t,{tumbuh,spora,wajah,benih})` · `spora(...)` · `molekulGeosmin(x,y,s,P,t)` · `aroma(x0,y0,x1,y1,t,P,{n,amp,k})` | bakteri benang bercabang (wajah kecil opsional) + rantai spora · spora melayang · molekul geosmin · pita aroma mengalir | dunia mikro |
+| `springtail(x,y,s,P,t,{arah,loncat,jalan})` · `tanahDekat(w,h,P,t,{permukaan,butir})` | springtail mungil (seukuran butir pasir di set mikro, bisa salto) · penampang tanah close-up | skala springtail ±0,6 |
+| `lele(...)` · `leleMuncul(x,y,s,P,t,k,mangap)` · `kolam(x,y,w,h,P,t,{lele,hujan,muncul})` · `piringPecelLele(x,y,s,P)` | lele berenang, kepala lele menyembul, kolam tanah, pecel lele (warna diredupkan otomatis) | momen "bau lumpur" |
+| `rumahKampung(x,y,s,P)` · `potTanaman` · `tiangListrik` · `kabel` · `jalanKampung(w,y,P,t,{hujan,genangan})` · `pantulanCahaya` | rumah genteng Indonesia + teras, jendela menyala otomatis malam, gang basah memantulkan lampu | set kampung senja/malam |
+| `kepalaProfil(x,y,s,P,t,{endus})` · `redup(P)` | kepala manusia tampak samping mengendus (bukan Tebe) · filter peredup benda berwarna asli | close-up hidung |
+Kunci palet baru: `mendung, awanH, awanHB, hujan, air, airKilau, airKolam, tanahBasah, tanahRetak, bakteri, bakteriB, spora, springtail, springtailB, lele, leleB, jalan, jalanB, aroma, redup`.
+
+**Alat produksi:** `scripts/render_html.py` (HTML gaya v8 → `final.mp4` + `thumbnail.png`, lihat docstring) · `scripts/buat_audio_aset.py` (musik & efek disintesis sendiri, daftar di `aset/sfx/SUMBER.md`).
 
 **Aset brand (di `aset/brand/`):** logo-ikon (foto profil), logo horizontal terang/gelap, logo-tulisan, header YouTube 2560×1440, template kolaborasi, 7 pose Tebe PNG/SVG.
 

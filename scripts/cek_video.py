@@ -13,11 +13,12 @@ dur = float(info["format"]["duration"]); mb = int(info["format"]["size"]) / 1e6
 video = [s for s in info["streams"] if s["codec_type"] == "video"]
 audio = [s for s in info["streams"] if s["codec_type"] == "audio"]
 target = (1920, 1080) if panjang else (1080, 1920)
-batas = (180, 720) if panjang else (15, 59)
+batas = (180, 720) if panjang else (15, 90)  # keputusan Bos (standar-konten §6b): Shorts boleh 60–90 dtk
 masalah = []
 if not video or (video[0]["width"], video[0]["height"]) != target: masalah.append(f"resolusi bukan {target[0]}x{target[1]}")
 if not audio: masalah.append("tidak ada audio")
 if not batas[0] <= dur <= batas[1]: masalah.append(f"durasi {dur:.0f} dtk di luar {batas[0]}-{batas[1]} dtk")
 if not (folder / "thumbnail.png").exists(): masalah.append("thumbnail.png belum ada")
 print(f"{'Video panjang' if panjang else 'Shorts'} | {dur:.1f} dtk | {mb:.1f} MB | audio: {'ada' if audio else 'TIDAK ADA'}")
+if not panjang and mb > 20: print(f"PERINGATAN: ukuran {mb:.1f} MB > 20 MB (target ≤ 18 MB) — kompres ulang: python scripts/render_html.py <folder>")
 print("LULUS" if not masalah else "MASALAH: " + "; ".join(masalah))

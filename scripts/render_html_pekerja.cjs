@@ -51,7 +51,7 @@ async function pekerja(browser, idx, f0, f1) {
   const info = {};
   try {
     const { page } = await bukaHalaman(browser);
-    Object.assign(info, await page.evaluate(() => ({ durasi: window.DURASI ?? null, efek: window.EFEK ?? null, musik: window.MUSIK ?? null })));
+    Object.assign(info, await page.evaluate(() => ({ durasi: window.DURASI ?? null, efek: window.EFEK ?? null, musik: window.MUSIK ?? null, jeda: window.JEDA ?? null })));
     if (K.thumbnail) { // sampul = frame 0, ukuran penuh PNG
       const p2 = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
       await p2.goto(K.url, { waitUntil: "load" });
