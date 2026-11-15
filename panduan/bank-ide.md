@@ -78,3 +78,6 @@ Cadangan panjang: I-013 Toba. Sesuai strategi, pilihan final video panjang mingg
 | 3 | I-015 Rp 99.900 (Uang) | I-007 bau hujan (Sains) |
 Komposisi pilar: Sains 2/6 (33%), pilar lain masing-masing 1/6, jadi semuanya di bawah batas 40%. Dua ide Sains sengaja dipisah ke hari 1 dan hari 3. Geografi belum masuk karena dua dari tiga idenya masih TAHAN. I-013 Toba menjadi Shorts pertama batch 2.
 Usul variasi pola hook untuk Nadia: micin = luruskan mitos · ketchup = "ternyata kebalikannya" · nama Indonesia = pertanyaan identitas · durian = angka/gen · Rp 99.900 = ajak penonton tes otak sendiri · bau hujan = sensasi indra ("cium ini…").
+
+## Sudah dipakai (Pak Bima, 15 Nov 2026)
+I-008, I-018, I-004, I-009, I-015, I-007 → masuk `antrean/2026-11-15_*` (Shorts batch pertama). Jangan dipilih ulang.
