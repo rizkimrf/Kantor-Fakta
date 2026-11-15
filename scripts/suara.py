@@ -8,7 +8,8 @@ from pathlib import Path
 from _umum import muat_env, wajib, set_status
 
 muat_env()
-kunci, suara_id = wajib("ELEVENLABS_API_KEY"), wajib("ELEVENLABS_VOICE_ID")
+# Kunci boleh berupa "network secret" di environment cloud (dipasang otomatis oleh proxy, tidak terlihat di sesi).
+kunci, suara_id = os.environ.get("ELEVENLABS_API_KEY", ""), wajib("ELEVENLABS_VOICE_ID")
 folder = Path(sys.argv[1])
 (folder / "audio").mkdir(exist_ok=True)
 keluar, waktu = folder / "audio" / "narasi.mp3", folder / "audio" / "waktu_kata.json"
@@ -19,7 +20,7 @@ if keluar.exists():
 def api(path, data=None):
     req = urllib.request.Request(f"https://api.elevenlabs.io{path}", data=json.dumps(data).encode() if data else None,
                                  method="POST" if data else "GET",
-                                 headers={"xi-api-key": kunci, "Content-Type": "application/json"})
+                                 headers={"Content-Type": "application/json", **({"xi-api-key": kunci} if kunci else {})})
     with urllib.request.urlopen(req, timeout=300) as r:
         return json.loads(r.read())
 

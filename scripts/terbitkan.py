@@ -84,10 +84,10 @@ def tiktok(folder, u):
     return d["publish_id"]
 
 
-# ---------- Instagram (Instagram API dengan login Instagram) ----------
+# ---------- Instagram (lewat Halaman Facebook + Graph API; unggah langsung tanpa link publik) ----------
 def instagram(folder, u):
     tok, uid = os.environ["IG_ACCESS_TOKEN"], os.environ["IG_USER_ID"]
-    g = "https://graph.instagram.com/v21.0"
+    g = "https://graph.facebook.com/v21.0"  # IG_ACCESS_TOKEN = token Halaman Facebook (tidak kedaluwarsa)
     c = form(f"{g}/{uid}/media", media_type="REELS", upload_type="resumable", caption=u["instagram"]["caption"],
              share_to_feed="true", thumb_offset="0", access_token=tok)
     video = (folder / "final.mp4").read_bytes()
