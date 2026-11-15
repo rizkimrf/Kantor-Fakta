@@ -1,8 +1,11 @@
-# Lembar Tim — (judul kerja diisi Laras)
-Janji konten (1 kalimat, apa yang penonton dapat):
-Rasa yang dikejar (kagum / kaget / geli / haru):
+# Lembar Tim — Ketchup ternyata saudara kecap: dua-duanya lahir dari saus ikan
+Janji konten (1 kalimat, apa yang penonton dapat): penonton tahu kata "ketchup" dan "kecap" sama-sama turunan kata Hokkien untuk air garam ikan, dan paham kenapa ketchup akhirnya jadi saus tomat manis.
+Rasa yang dikejar (kagum / kaget / geli / haru): kaget → geli → kagum.
 
-- Laras (riset)     :
+- Laras (riset)     : Kata *ketchup* berasal dari Hokkien *kê-tsiap*/*kôe-chiap* = air garam ikan/kerang asin (OED via Grammarphobia; Smithsonian mengutip linguis Dan Jurafsky; National Geographic 2014). Kata Melayu/Indonesia *kecap* dari akar yang sama, dan ahli bahasa DIDUGA KUAT ketchup masuk ke bahasa Inggris lewat kata Melayu itu (OED "perhaps partly via Malay"; Victor Mair, Language Log UPenn). Tercetak di Inggris ±1690 sebagai "catchup" (Merriam-Webster). Kok bisa jadi tomat: yang menyeberang hanya namanya. Inggris meniru pakai jamur/kenari/tiram/teri, Amerika pakai tomat (resep tertulis pertama yang diketahui: James Mease, 1812), lalu Heinz (1876) dan era tanpa pengawet benzoat membuat saus manis-asam-kental jadi standar. Bagian paling mengejutkan: "kecap inggris" (Worcestershire) aslinya pakai ikan teri (Britannica), jadi rasa ikan si leluhur masih ada di botol yang namanya "kecap". 2 sumber inti: Smithsonian + National Geographic (didukung OED/Merriam-Webster). TIDAK boleh diklaim: "300 SM"/"3.000 tahun lalu"; "kecap manis dari kata Belanda ketchup"; "dari Kanton 茄汁 = saus tomat"; "saus terong"; jalur Melayu tanpa kata "diduga"; "ketchup aslinya kecap manis/kedelai" (aslinya IKAN); "kecap inggris keturunan ketchup"; "Heinz penemu saus tomat"; klaim kesehatan soal pengawet; tahun pasti kata kecap masuk Melayu.
+  - Masukan Laras untuk Raka: sudut judul "anak kecap" hanya aman kalau ada kata "diduga/kemungkinan" di naskah. Untuk judul, "saudara" lebih aman ("Ketchup & Kecap Ternyata Saudara"). Kalau tetap "anak", beri tanda tanya. Kata kunci alami: ketchup, kecap, asal-usul ketchup, saus tomat.
+  - Masukan Laras untuk Nadia: maksimal 3 fakta inti (akar Hokkien saus ikan → resep berganti jamur/tomat → kecap inggris berisi teri). Kalimat aman: "ahli bahasa menduga kuat…". Fakta cadangan untuk komentar tersemat: catatan pedagang Charles Lockyer (1711) "ketchup terbaik dari Tonquin (Vietnam)", sebut "menurut catatan", karena sumbernya sekunder.
+  - Masukan Laras untuk Yoga: momen visual yang bisa dibuat "wah" adalah satu botol yang isinya berganti: ikan → jamur → kenari → tomat, sementara labelnya berubah ejaan (kê-tsiap → catchup → ketchup). Jangan tulis aksara Hanzi di gambar AI (rawan salah); kalau perlu, tulis lewat teks layar.
 - Raka (marketing)  :
 - Nadia (naskah)    :
 - Yoga (editor)     :

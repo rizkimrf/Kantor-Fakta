@@ -1,7 +1,14 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "I-007 bau hujan",
   "dibuat": "2026-11-15T07:58",
-  "riwayat": [],
+  "riwayat": [
+    {
+      "waktu": "2026-11-15",
+      "tahap": "ide",
+      "oleh": "Laras (riset)",
+      "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10 (K2/D3/B2/V2). Klaim inti terverifikasi 2+ sumber: petrichor (Bear & Thomas, Nature 1964), geosmin dari Streptomyces (Gerber & Lechevalier 1965), springtail penyebar spora (Nature Microbiology 2020), aerosol tetes hujan (MIT, Nature Comms 2015). Angka ppt dibuang (sumber tidak konsisten). lembar_tim.md baris Laras terisi. Lanjut ke Raka (pilih)."
+    }
+  ],
   "masalah": null
 }
