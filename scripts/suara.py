@@ -56,5 +56,12 @@ if al:  # gabungkan huruf menjadi kata; tag [excited] dll tidak ikut
             buf += c; mulai = a if mulai is None else mulai; akhir = b
     if buf: kata.append({"kata": buf, "mulai": round(mulai, 3), "selesai": round(akhir, 3)})
 waktu.write_text(json.dumps({"model": model, "kata": kata}, ensure_ascii=False, indent=1), encoding="utf-8")
+# catat pemakaian huruf untuk perkiraan kredit (eleven_v4 ±0,5 kredit/huruf)
+log = Path(__file__).resolve().parent.parent / "aset/log_kredit.csv"
+baru = not log.exists()
+with open(log, "a", encoding="utf-8") as f:
+    if baru: f.write("tanggal,folder,model,huruf,perkiraan_kredit\n")
+    import datetime
+    f.write(f"{datetime.date.today()},{folder.name},{model},{len(teks)},{round(len(teks) * 0.52)}\n")
 set_status(folder, masalah=None)
 print(f"Suara selesai ({model}), {len(kata)} kata bertanda waktu.")
