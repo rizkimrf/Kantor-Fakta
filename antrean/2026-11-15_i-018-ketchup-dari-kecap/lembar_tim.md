@@ -8,7 +8,10 @@ Rasa yang dikejar (kagum / kaget / geli / haru): kaget → geli → kagum.
   - Masukan Laras untuk Yoga: momen visual yang bisa dibuat "wah" adalah satu botol yang isinya berganti: ikan → jamur → kenari → tomat, sementara labelnya berubah ejaan (kê-tsiap → catchup → ketchup). Jangan tulis aksara Hanzi di gambar AI (rawan salah); kalau perlu, tulis lewat teks layar.
 - Raka (marketing)  : Skor 17/20 LANJUT, slot Sel 17 Nov 18.00 WITA. Kata kunci "asal usul kecap dan ketchup" harus terucap di 5 detik pertama; hook pola berbeda dari bau hujan: pembalikan arah: "Kecap duluan, ketchup belakangan." Nadia: akhiri dengan pertanyaan spesifik pemancing komentar; Yoga: frame 0 = "KECAP = SAUDARA KETCHUP?" dengan Tebe dramatis, warna dominan beda dari 2 sampul terakhir.
 - Nadia (naskah)    :
-- Yoga (editor)     :
+- Yoga (editor)     : Set per babak: (1) hook: meja makan warung SIANG, botol saus tomat berputar lalu berubah jadi tong saus ikan; (2) dermaga dagang Asia Tenggara abad 17 SENJA: tong air garam ikan dimuat ke kapal, kamera mengikuti tong; (3) dapur Inggris MALAM: SATU botol yang isinya berganti ikan → jamur → kenari → tomat, ejaan label berganti (kê-tsiap → catchup → ketchup lewat teks layar); (4) pabrik saus Amerika 1876 SIANG, botol berderet di ban berjalan; (5) twist: botol kecap inggris dibuka, ikan teri melompat keluar; outro meja warung (kecap & saus berdampingan).
+  Aset baru: botolSaus, botolKecap, tongIkan, kapalDagang, dermagaLama, ikanTeri, jamur, kenari, tomat, dapurKuno, banBerjalan, mejaWarung, petirDuel.
+  Sampul: duel botol kecap (kiri) vs botol saus tomat (kanan) besar dengan petir biru di tengah, Tebe SILUET di tengah bawah menonton (beda dari Tebe kanan bau hujan); warna dominan merah tomat vs hitam-cokelat kecap. Teks: "KETCHUP ITU / DARI KECAP?!" (KECAP berwarna).
+  Risiko: JANGAN aksara Hanzi/ejaan di gambar—semua ejaan lewat teks layar (pita y 900–1400); label botol polos tanpa merek (tanpa logo Heinz/ABC); jalur Melayu ditandai "DIDUGA" bila tampil di layar; ikan digambar lucu, bukan menjijikkan.
 - Pak Bima (manajer):
 
 ## Paraf setelah produksi
