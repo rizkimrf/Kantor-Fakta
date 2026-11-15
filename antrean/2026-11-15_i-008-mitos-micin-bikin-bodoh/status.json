@@ -1,5 +1,5 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "I-008 mitos micin bikin bodoh",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -8,6 +8,12 @@
       "oleh": "Laras (riset)",
       "waktu": "2026-11-15",
       "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10 (K2/D3/B2/V2). Klaim inti: surat Kwok NEJM 4 Apr 1968 (menebak arak masak/natrium/MSG) + Olney Science 1969 (MSG disuntik ke bayi tikus) + JECFA/FDA/BPOM. Klaim dibuang/dilemahkan: dosis, 'surat hoaks', replikasi monyet, 95% usus, 15-20 menit, asal kata micin/vetsin. Catatan: WebFetch diblokir, verifikasi via WebSearch/abstrak."
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka (marketing)",
+      "waktu": "2026-11-15",
+      "hasil": "LANJUT, skor 18/20, slot Rab 18 Nov 12.00 WITA. rencana_marketing.md + seo.md selesai."
     }
   ],
   "masalah": null

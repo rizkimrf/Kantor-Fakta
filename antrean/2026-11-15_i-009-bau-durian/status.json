@@ -1,5 +1,5 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "I-009 bau durian",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -8,6 +8,12 @@
       "oleh": "Laras (riset)",
       "tahap": "ide",
       "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10. Klaim inti terverifikasi 2+ sumber; fungsi bau ditandai DUGAAN; angka 2.000x, tonase Sriwijaya, denda MRT, dan 65 juta tahun dibuang. lembar_tim.md baris Laras terisi. Lanjut ke pilih (Raka)."
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka (marketing)",
+      "waktu": "2026-11-15",
+      "hasil": "LANJUT, skor 18/20, slot Sen 16 Nov 12.00 WITA. rencana_marketing.md + seo.md selesai."
     }
   ],
   "masalah": null

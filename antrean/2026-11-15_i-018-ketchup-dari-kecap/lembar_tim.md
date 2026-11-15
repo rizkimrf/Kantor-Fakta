@@ -6,7 +6,7 @@ Rasa yang dikejar (kagum / kaget / geli / haru): kaget → geli → kagum.
   - Masukan Laras untuk Raka: sudut judul "anak kecap" hanya aman kalau ada kata "diduga/kemungkinan" di naskah. Untuk judul, "saudara" lebih aman ("Ketchup & Kecap Ternyata Saudara"). Kalau tetap "anak", beri tanda tanya. Kata kunci alami: ketchup, kecap, asal-usul ketchup, saus tomat.
   - Masukan Laras untuk Nadia: maksimal 3 fakta inti (akar Hokkien saus ikan → resep berganti jamur/tomat → kecap inggris berisi teri). Kalimat aman: "ahli bahasa menduga kuat…". Fakta cadangan untuk komentar tersemat: catatan pedagang Charles Lockyer (1711) "ketchup terbaik dari Tonquin (Vietnam)", sebut "menurut catatan", karena sumbernya sekunder.
   - Masukan Laras untuk Yoga: momen visual yang bisa dibuat "wah" adalah satu botol yang isinya berganti: ikan → jamur → kenari → tomat, sementara labelnya berubah ejaan (kê-tsiap → catchup → ketchup). Jangan tulis aksara Hanzi di gambar AI (rawan salah); kalau perlu, tulis lewat teks layar.
-- Raka (marketing)  :
+- Raka (marketing)  : Skor 17/20 LANJUT, slot Sel 17 Nov 18.00 WITA. Kata kunci "asal usul kecap dan ketchup" harus terucap di 5 detik pertama; hook pola berbeda dari bau hujan: pembalikan arah: "Kecap duluan, ketchup belakangan." Nadia: akhiri dengan pertanyaan spesifik pemancing komentar; Yoga: frame 0 = "KECAP = SAUDARA KETCHUP?" dengan Tebe dramatis, warna dominan beda dari 2 sampul terakhir.
 - Nadia (naskah)    :
 - Yoga (editor)     :
 - Pak Bima (manajer):
