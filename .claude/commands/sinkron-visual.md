@@ -21,7 +21,7 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
 ## B. Kirim keluar (lakukan di AKHIR setiap sesi, dan saat tahap penting berubah)
 1. Susun dokumen `kantor/status` (pakai `set` dengan `if_version` dari `get` terakhir):
    - `diperbarui`: waktu sekarang ISO UTC; `ringkasan`: 1–2 kalimat gaya Pak Bima.
-   - `video`: satu entri per folder di `antrean/` → `{folder, judul, format, tahap, skor, masalah, review, video_url, thumb_url}`
+   - `video`: satu entri per folder di `antrean/` yang tahapnya BUKAN `tayang` (video yang sudah tayang tidak ditampilkan lagi) → `{folder, judul, format, tahap, skor, masalah, review, video_url, thumb_url}`
      Untuk folder `disetujui`/`terjadwal` tambahkan juga: `jadwal_teks` (mis. "Sen 16 Nov 12.00 WITA"),
      `manual`: daftar platform yang `terbit.<platform>.catatan`-nya "unggah manual" dan belum punya `id`,
      `paket`: `{youtube:{judul, deskripsi}, tiktok:{caption}, instagram:{caption}}` dari `unggah.json` (deskripsi sudah berisi sumber + hashtag).
