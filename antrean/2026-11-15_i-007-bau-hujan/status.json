@@ -1,5 +1,5 @@
 {
-  "tahap": "ditunda",
+  "tahap": "tayang",
   "topik": "I-007 bau hujan",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -72,9 +72,15 @@
       "waktu": "2026-11-15T12:15",
       "oleh": "Bos (chat)",
       "hasil": "Hentikan semua progres konten hujan"
+    },
+    {
+      "waktu": "2026-11-15",
+      "tahap": "tayang",
+      "oleh": "Pak Bima",
+      "hasil": "Sudah diunggah manual oleh Bos (versi pertama). Revisi dibatalkan; pelajaran dipakai untuk konten berikutnya (skill produksi-video/referensi/kemulusan.md)."
     }
   ],
-  "masalah": "Dihentikan Bos (15 Nov): semua progres revisi bau hujan berhenti. Jangan dikerjakan/diunggah lagi sampai ada perintah Bos.",
+  "masalah": null,
   "skor_manajer": 8,
   "jadwal_tayang_usulan": "2026-11-15T21:00:00+08:00",
   "video_asset_id": "9d1f819ef047b2a9510e0aa68e1f54ba",
