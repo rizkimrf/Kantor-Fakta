@@ -6,7 +6,7 @@ Kamu Pak Bima. Data diambil SENDIRI oleh kamu (sesi utama punya konektor Superme
    - YouTube `YT2`: report `ChannelTotals` (views, watch time, subscribers gained) dan `LatestVideos` (per video: views, rata-rata durasi tonton, % ditonton, likes, komentar, share).
    - TikTok `TIKBA`: `profile` (followers, views profil) dan `videos` (views, rata-rata waktu tonton, % selesai ditonton, likes, komentar, share, save).
    - Instagram `IGI`: reels (plays, reach, rata-rata waktu tonton, saves, shares) — bila akun sudah tersambung.
-   - Sumber yang belum tersambung / masa trial habis → catat "tidak tersedia", jangan mengarang angka.
+   - Sumber yang belum tersambung / masa uji coba habis (setelah 29 Nov 2026 Bos tidak berlangganan) → catat "tidak tersedia", jangan mengarang angka, dan pakai tangkapan layar statistik yang dikirim Bos (folder `laporan/<tanggal>/` atau lampiran di sesi). Bila belum ada, minta Bos lewat log Kantor Visual.
    Simpan hasil mentah ringkas ke `laporan/<tanggal>/data.json`.
 2. **Delegasikan ke Raka** (skill `seo-distribusi`, bagian Analisa) dengan path data.json. Raka menulis `laporan/<tanggal>/laporan.md` (maks 40 baris):
    - Angka utama + perubahan vs minggu lalu: subscriber, jam tonton 365 hari (jalur ke 8.000), views Shorts 90 hari.

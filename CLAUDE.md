@@ -84,6 +84,13 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 - **Kantor Visual HP**: https://claude.ai/artifact/3Foimf6mkjVzkA1X6vFhfx — Bos memantau, menonton video, menekan Setujui/Tolak, dan mengirim pesan dari sana.
 - **Di awal setiap sesi kerja** jalankan bagian A dari `.claude/commands/sinkron-visual.md` (ambil keputusan & pesan Bos). **Di akhir sesi** jalankan bagian B (perbarui laporan, unggah video yang menunggu persetujuan). Saat tim mulai/selesai mengerjakan sesuatu, perbarui `agen` agar Bos melihat siapa yang sedang bekerja.
 
+## Siklus wajib: buat → tayang → ANALISA → perbaiki (perintah Bos, 16 Nov 2026)
+Konten selesai bukan berarti berhenti. Setiap video yang tayang wajib dianalisa dan hasilnya mengubah konten berikutnya:
+- Harian (sesi 17.47): performa 3 hari terakhir → `laporan/harian.md` berisi 3 langkah → dibaca produksi 05.41.
+- Mingguan (Senin 08.23): `/laporan-minggu` → 5 langkah minggu depan + perkembangan akun menuju target monetisasi.
+- Data: konektor Supermetrics (uji coba gratis s.d. **29 Nov 2026**, Bos memutuskan TIDAK berlangganan). Mulai 30 Nov atau bila konektor tidak tersedia:
+  Pak Bima meminta Bos lewat log Kantor Visual mengirim tangkapan layar statistik (YouTube Studio, TikTok, Instagram) setiap Senin, lalu Raka menganalisa dari gambar itu. Jangan pernah mengarang angka.
+
 ## Jadwal otomatis di cloud (perintah `/pasang-jadwal`, sekali saja)
 - 05.41 WITA produksi pagi: ambil keputusan Bos, kerjakan antrean, jaga stok, kirim pratinjau ke Kantor Visual HP.
 - 11.47 & 17.47 WITA `/terbitkan`: terapkan Setujui/Tolak dari HP, lalu unggah yang disetujui sesuai jam tayang (12.00 & 18.00).
