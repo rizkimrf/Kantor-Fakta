@@ -37,7 +37,7 @@ Kolom "kenapa menarik" memuat: tambang ide (T1–T7 dari playbook), mekanisme "k
 Datanya bilang apa? Belum ada data channel (riwayat masih kosong) dan tool Semrush tidak tersedia di sesi ini, jadi **tidak ada angka volume pencarian**. Skor di bawah adalah penilaian Raka, bukan hasil pengukuran.
 Skor potensi = Kejutan + Kedekatan (Indonesia) + Sinyal pencarian + Momen, masing-masing 1–5 (maks 20).
 "Sinyal pencarian" diambil dari cek WebSearch 15 Nov 2026 (seberapa sering topik dibahas media/edukasi Indonesia), sifatnya kualitatif.
-Aturan "Benar dulu, baru menarik": ide yang fakta intinya masih goyah ditaruh di bawah dan diberi tanda **TAHAN**, berapa pun skornya. Ide dengan skor sama atau selisih 1 disusun berselang pilar.
+Aturan "Benar dulu, baru menarik": ide yang fakta intinya masih goyah ditaruh di bawah dan diberi tanda **TAHAN**, berapa pun skornya. Ide dengan skor sama atau selisih 1 disusun berselang pilar. Peringkat 1–6 adalah batch Shorts pertama. Ide PANJANG (peringkat 7, 8, 10) sengaja ditaruh setelahnya karena dipakai untuk video panjang, bukan karena potensinya lebih rendah.
 
 | Peringkat | ID | Judul kerja / sudut judul | Pilar | Skor potensi (K/D/S/M) + alasan | Format |
 |---|---|---|---|---|---|
