@@ -3,9 +3,9 @@
   "judul": "Bau Hujan Ternyata \"Dibuat\" Bakteri, Ini Alasannya",
   "thumbnail_teks": "DIBUAT BAKTERI?!",
   "thumbnail_visual": "Tebe crouching over a patch of dark wet soil, sniffing the air with wide surprised eyes and an 'O' mouth, a single big raindrop splashing on the ground in front of him, tiny friendly thread-like bacteria waving up from the soil, warm dusk light, strong contrast, the question-mark hair curl clearly visible, empty space in the top third.",
-  "deskripsi": "Bau hujan pertama itu bukan bau air. Salah satu bahan utamanya, geosmin, dibuat bakteri tanah Streptomyces, dan baunya memanggil springtail, hewan mungil yang ikut menyebarkan spora bakteri. Bonusnya: geosmin juga salah satu biang bau lumpur di lele kolam.\nSumber: https://doi.org/10.1038/201993a0 · https://www.smithsonianmag.com/science-nature/what-makes-rain-smell-so-good-13806085/ · https://pmc.ncbi.nlm.nih.gov/articles/PMC1058374 · https://www.jic.ac.uk/blog/meet-the-molecules-geosmin/ · https://doi.org/10.1038/s41564-020-0697-x · https://www.smithsonianmag.com/smart-news/smell-rain-explained-180974692/ · https://dspace.mit.edu/handle/1721.1/107381 · https://news.mit.edu/2015/rainfall-can-release-aerosols-0114 · https://www.globalseafood.org/advocate/off-flavors-in-salmonids-raised-in-ras/ · https://jai.ipb.ac.id/index.php/jai/article/view/10333\n#Shorts #BauHujan #Petrichor",
-  "caption_komentar": "Fakta cadangan: lalat buah punya saraf khusus cuma buat KABUR dari bau geosmin. Kita kangen, mereka kabur. Hujan pertama di daerahmu turun bulan apa?",
-  "tag": ["bau hujan", "kenapa hujan bau tanah", "petrichor", "geosmin", "bau tanah setelah hujan", "aroma hujan", "fakta sains", "ternyata begitu"],
+  "deskripsi": "Bau hujan pertama itu bukan bau air. Salah satu bahan utamanya, geosmin, dibuat bakteri tanah Streptomyces, dan baunya memanggil springtail, hewan mungil yang ikut menyebarkan spora bakteri.\nTetes hujan menjebak gelembung udara yang pecah jadi kabut halus, dan peneliti MIT menduga kabut itulah pembawa aromanya. Bonus: geosmin juga salah satu biang bau lumpur di lele kolam.\n\nSumber:\n- Bear & Thomas (CSIRO), Nature 1964 (petrichor): https://doi.org/10.1038/201993a0\n- Smithsonian Magazine: https://www.smithsonianmag.com/science-nature/what-makes-rain-smell-so-good-13806085/\n- Gerber & Lechevalier, Applied Microbiology 1965 (geosmin): https://pmc.ncbi.nlm.nih.gov/articles/PMC1058374\n- John Innes Centre, Meet the Molecules: Geosmin: https://www.jic.ac.uk/blog/meet-the-molecules-geosmin/\n- Becher dkk., Nature Microbiology 2020 (springtail): https://doi.org/10.1038/s41564-020-0697-x · Smithsonian 2020: https://www.smithsonianmag.com/smart-news/smell-rain-explained-180974692/\n- Joung & Buie (MIT), Nature Communications 2015 (gelembung tetes hujan): https://dspace.mit.edu/handle/1721.1/107381 · MIT News: https://news.mit.edu/2015/rainfall-can-release-aerosols-0114\n- Ikan bau lumpur: Jurnal Ilmu-ilmu Perikanan & Budidaya Perairan: https://jurnal.univpgri-palembang.ac.id/index.php/ikan/article/view/1670 · SRAC 192 (lele kolam): https://srac.tamu.edu/fact-sheets/serve/33\n- Stensmyr dkk., Cell 2012 (lalat buah & geosmin): https://www.mpg.de/6656708/odour-activation-geosmin-fly\n\n#Shorts #BauHujan #Petrichor",
+  "caption_komentar": "Bonus fakta: lalat buah punya jalur saraf khusus cuma buat KABUR dari bau geosmin (Stensmyr dkk., Cell 2012). Kita kangen, mereka kabur. Hujan pertama di daerahmu turun bulan apa?",
+  "tag": ["bau hujan", "kenapa hujan bau tanah", "petrichor", "geosmin", "bau tanah setelah hujan", "bau tanah basah", "aroma hujan", "fakta sains", "ternyata begitu"],
   "pola_hook": "kamu-salah",
   "hook_kandidat": [
     {"teks": "Cium deh, bau hujan yang kamu kangenin. Itu bukan bau airnya.", "skor": 9, "alasan": "Sensasi indra + kamu-salah. Kata kunci di kata ketiga, ada 'kamu', klaim didukung riset (air hujan nyaris tak berbau). Usulan Raka versi indra. TERPILIH."},
@@ -85,7 +85,7 @@
     },
     {
       "no": 6,
-      "narasi": "Nah, maksudnya apa? Ternyata baunya itu IKLAN.",
+      "narasi": "Nah, maksud bakterinya apa? Ternyata baunya itu IKLAN.",
       "teks_layar": "IKLAN?!",
       "visual": "Ground-level view of damp soil after rain; a tiny cartoon billboard woven from bacteria threads pops up out of the soil, blank and glowing softly, sending out wavy scent lines; Tebe scratches his head, confused; camera pushes in toward the billboard.",
       "maskot": true,
@@ -124,6 +124,6 @@
       "tebe": "bangga"
     }
   ],
-  "caption_tiktok": "Bau hujan yang kamu kangenin itu bukan bau air. Salah satu bahan utamanya dibuat bakteri, dan bakterinya lagi pasang iklan. Tonton sampai bagian lele, itu plot twist-nya. #bauhujan #petrichor #geosmin #faktasains #TernyataBegitu",
-  "caption_instagram": "Bau hujan pertama ternyata ada \"iklannya\". Salah satu bahan utamanya, geosmin, dibuat bakteri tanah untuk memanggil hewan mungil penyebar spora. Dan geosmin juga salah satu biang bau lumpur di lele kolam.\nSimpan buat bahan ngobrol pas hujan turun, kirim ke teman yang paling suka bau hujan.\n#bauhujan #petrichor #faktaunik #sains #TernyataBegitu"
+  "caption_tiktok": "Bau hujan yang kamu kangenin itu bukan bau air. Salah satu bahan utamanya dibuat bakteri tanah, dan bakterinya lagi pasang iklan. Tonton sampai bagian lele, itu plot twist-nya. Hujan pertama di daerahmu turun bulan apa?\n#faktasains #bauhujan #petrichor #geosmin #TernyataBegitu",
+  "caption_instagram": "Bau hujan pertama ternyata ada \"iklannya\". Salah satu bahan utamanya, geosmin, dibuat bakteri tanah untuk memanggil hewan mungil penyebar spora. Dan geosmin juga salah satu biang bau lumpur di lele kolam.\nSimpan buat bahan ngobrol pas hujan turun, kirim ke teman yang paling suka bau hujan. Hujan pertama di daerahmu turun bulan apa?\n#bauhujan #petrichor #faktaunik #sains #TernyataBegitu"
 }

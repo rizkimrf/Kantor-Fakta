@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "I-007 bau hujan",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -20,7 +20,22 @@
       "tahap": "naskah",
       "oleh": "Nadia (copywriting)",
       "hasil": "naskah.json (9 adegan, 137 kata, ±59 dtk dengan intro, 1 klip), naskah_baca.txt, naskah_suara.txt (5 tag v4) selesai. Hook kamu-salah/sensasi indra: 'Cium deh, bau hujan yang kamu kangenin. Itu bukan bau airnya.' Skor rubrik 9/9. Wajib terpenuhi: 'salah satu bahan utamanya', tanpa angka ppt, 'salah satu biang bau lumpur', MIT hanya menduga, 'ilmuwan masih menebak-nebak'. Field set/tebe tiap adegan, caption_tiktok & caption_instagram ada. Baris Nadia di lembar_tim.md terisi. Lanjut ke Raka (cek_seo)."
+    },
+    {
+      "waktu": "2026-11-15",
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "hasil": "Revisi dari cek_seo.md (Raka) & cek_riset.md (Laras). Adegan 6 jadi 'Nah, maksud bakterinya apa?' (138 kata) di naskah.json, naskah_baca.txt, naskah_suara.txt. naskah_suara: pembuka [curious], '[whispers] Plot twist: [excited] geosmin…', jeda '...' sebelum 'menduga', tetap 5 tag. Deskripsi: nama sumber sebelum URL, sumber lele diganti jurnal Univ. PGRI Palembang + SRAC 192, tambah Max Planck (lalat buah). caption_komentar 'Bonus fakta:', tag tambah 'bau tanah basah', caption TikTok/IG ditutup pertanyaan video. paket_unggah.md & unggah.json diselaraskan. Lanjut ke Pak Bima (cek_fakta)."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-15T10:52",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8,
+  "jadwal_tayang_usulan": "2026-11-15T20:00:00+08:00"
 }

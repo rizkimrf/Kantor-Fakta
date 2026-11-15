@@ -5,25 +5,22 @@ Oleh: Raka (marketing) · 15 Nov 2026 · Mengikuti `cek_seo.md`. Bila naskah ber
 Judul (50 huruf): Bau Hujan Ternyata "Dibuat" Bakteri, Ini Alasannya
 Deskripsi:
 Bau hujan pertama itu bukan bau air. Salah satu bahan utamanya, geosmin, dibuat bakteri tanah Streptomyces, dan baunya memanggil springtail, hewan mungil yang ikut menyebarkan spora bakteri.
-Tetes hujan menjebak gelembung udara yang pecah jadi kabut halus, dan peneliti MIT menduga kabut itulah pembawa aromanya. Bonus: geosmin juga salah satu biang bau lumpur pada ikan budidaya air tawar seperti lele.
+Tetes hujan menjebak gelembung udara yang pecah jadi kabut halus, dan peneliti MIT menduga kabut itulah pembawa aromanya. Bonus: geosmin juga salah satu biang bau lumpur di lele kolam.
 
 Sumber:
-- Bear & Thomas (1964), Nature 201:993, istilah "petrichor": https://doi.org/10.1038/201993a0
-- Smithsonian Magazine, What Makes Rain Smell So Good?: https://www.smithsonianmag.com/science-nature/what-makes-rain-smell-so-good-13806085/
-- Gerber & Lechevalier (1965), Applied Microbiology 13:935, geosmin: https://pmc.ncbi.nlm.nih.gov/articles/PMC1058374
+- Bear & Thomas (CSIRO), Nature 1964 (petrichor): https://doi.org/10.1038/201993a0
+- Smithsonian Magazine: https://www.smithsonianmag.com/science-nature/what-makes-rain-smell-so-good-13806085/
+- Gerber & Lechevalier, Applied Microbiology 1965 (geosmin): https://pmc.ncbi.nlm.nih.gov/articles/PMC1058374
 - John Innes Centre, Meet the Molecules: Geosmin: https://www.jic.ac.uk/blog/meet-the-molecules-geosmin/
-- Becher dkk. (2020), Nature Microbiology, springtail & spora: https://doi.org/10.1038/s41564-020-0697-x
-- Smithsonian (2020), How Rain Evolved Its Distinct Scent: https://www.smithsonianmag.com/smart-news/smell-rain-explained-180974692/
-- Joung & Buie (2015), Nature Communications 6:6083, aerosol tetes hujan: https://dspace.mit.edu/handle/1721.1/107381
-- MIT News (2015), Rainfall can release aerosols: https://news.mit.edu/2015/rainfall-can-release-aerosols-0114
-- Global Seafood Alliance, off-flavor geosmin & 2-MIB: https://www.globalseafood.org/advocate/off-flavors-in-salmonids-raised-in-ras/
-- Univ. Copenhagen (2023), muddy flavors in fish: https://news.ku.dk/all_news/2023/10/pinpointing-the-emergence-of-muddy-flavors-in-your-fish/
-- Jurnal Ilmu-ilmu Perikanan & Budidaya Perairan, ikan bercita rasa lumpur: https://jurnal.univpgri-palembang.ac.id/index.php/ikan/article/view/1670
+- Becher dkk., Nature Microbiology 2020 (springtail): https://doi.org/10.1038/s41564-020-0697-x · Smithsonian 2020: https://www.smithsonianmag.com/smart-news/smell-rain-explained-180974692/
+- Joung & Buie (MIT), Nature Communications 2015 (gelembung tetes hujan): https://dspace.mit.edu/handle/1721.1/107381 · MIT News: https://news.mit.edu/2015/rainfall-can-release-aerosols-0114
+- Ikan bau lumpur: Jurnal Ilmu-ilmu Perikanan & Budidaya Perairan: https://jurnal.univpgri-palembang.ac.id/index.php/ikan/article/view/1670 · SRAC 192 (lele kolam): https://srac.tamu.edu/fact-sheets/serve/33
+- Stensmyr dkk., Cell 2012 (lalat buah & geosmin): https://www.mpg.de/6656708/odour-activation-geosmin-fly
 
 #Shorts #BauHujan #Petrichor
 
 Tag: bau hujan, kenapa hujan bau tanah, petrichor, geosmin, bau tanah setelah hujan, bau tanah basah, aroma hujan, fakta sains, ternyata begitu
-Komentar tersemat: Fakta cadangan: lalat buah punya jalur saraf khusus cuma buat KABUR dari bau geosmin (Stensmyr dkk., Cell 2012). Kita kangen, mereka kabur. Hujan pertama di daerahmu turun bulan apa?
+Komentar tersemat: Bonus fakta: lalat buah punya jalur saraf khusus cuma buat KABUR dari bau geosmin (Stensmyr dkk., Cell 2012). Kita kangen, mereka kabur. Hujan pertama di daerahmu turun bulan apa?
 
 ## TikTok
 Caption: Bau hujan yang kamu kangenin itu bukan bau air. Salah satu bahan utamanya dibuat bakteri tanah, dan bakterinya lagi pasang iklan. Tonton sampai bagian lele, itu plot twist-nya. Hujan pertama di daerahmu turun bulan apa?
