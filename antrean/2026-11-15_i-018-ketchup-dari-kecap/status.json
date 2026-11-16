@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "I-018 ketchup dari kecap",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -46,8 +46,20 @@
       "waktu": "2026-11-16T22:41",
       "oleh": "Yoga (editor)",
       "hasil": "final.mp4 80,9 dtk / 13,7 MB, thumbnail.png (duel kecap vs saus tomat + ikan melompat, ungu-plum, Tebe besar kiri bawah) teks 'KECAP VS KETCHUP: SIAPA DULUAN?'. Suara Dakocan eleven_v4 sekali (1.240 huruf, ±645 kredit); letupan 'p' di 56,36 dtk dihaluskan fade 50 ms (asli disimpan di audio/narasi_asli.mp3). 10 set baru + outro pendek. cek_mulus LULUS, cek_video LULUS."
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-17T08:30",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul duel botol ungu, 10 butir gerbang mutu ya."
     }
   ],
   "masalah": null,
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "catatan_bos": null,
+  "video_asset_id": "a1741f4e77ef051e29585e2144d5f3c1",
+  "thumb_asset_id": "75bcc99844c5496390c1259f59bd5d6e",
+  "video_url": "/_blob/a1741f4e77ef051e29585e2144d5f3c1",
+  "thumb_url": "/_blob/75bcc99844c5496390c1259f59bd5d6e"
 }

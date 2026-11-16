@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "I-004 asal nama Indonesia",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -46,8 +46,20 @@
       "waktu": "2026-11-16T22:41",
       "oleh": "Yoga (editor)",
       "hasil": "final.mp4 68,0 dtk / 13,0 MB, thumbnail.png (misteri: jurnal + tangan tanpa wajah, amber, tanpa Tebe). Suara Dakocan eleven_v4 sekali (998 huruf, ±519 kredit). 9 set baru (meja lilin, pelabuhan 1850, ruang peta, halaman Yunani, ruang Victoria, meja editor, perpustakaan hujan, aula 1928, stadion) + outro pendek berkalimat menggantung. cek_mulus LULUS, cek_video LULUS. Tidak ada jeda > 0,3 dtk selain intro 2,4 dtk."
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-17T08:30",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul misteri amber, 10 butir gerbang mutu ya."
     }
   ],
   "masalah": null,
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "catatan_bos": null,
+  "video_asset_id": "b0721e3455e03e636966ea5d45554b93",
+  "thumb_asset_id": "ee67f327da03a194ff19a14fce5372a6",
+  "video_url": "/_blob/b0721e3455e03e636966ea5d45554b93",
+  "thumb_url": "/_blob/ee67f327da03a194ff19a14fce5372a6"
 }
