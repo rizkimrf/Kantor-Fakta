@@ -11,7 +11,7 @@
 - Pin 1 pertanyaan di kolom komentar setiap video.
 - Topik Shorts yang ramai → dijadikan video panjang dalam 1–2 minggu; Shorts mengarah ke video panjang terkait.
 - Uji A/B judul/thumbnail video panjang dengan fitur "Test & Compare" di YouTube Studio.
-- Jam tayang (Bos, 16 Nov): 13.00 dan 18.00 WITA (slot ke-3 20.45) (Shorts), 19.00 WITA (video panjang) — diubah sesuai data.
+- Jam tayang (Bos, 16 Nov): 13.00 dan 18.00 WITA (slot ke-3 19.45) (Shorts), 19.00 WITA (video panjang) — diubah sesuai data.
 
 ## Pelajaran yang sudah terbukti
 (diisi agent marketing dari laporan mingguan)

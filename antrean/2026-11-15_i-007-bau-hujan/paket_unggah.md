@@ -43,7 +43,7 @@ Alasan (dugaan, belum ada data channel sendiri karena ini video pertama):
 
 **Catatan teknis untuk Pak Bima (supaya benar-benar tayang malam ini):**
 1. Tanpa `jadwal_tayang` di `status.json`, `terbitkan.py` memilih slot otomatis (12 & 18 WITA) dan video ini jatuh ke **Senin 16 Nov 12.00**. Saat tahap `disetujui`, isi `"jadwal_tayang": "2026-11-15T21:00:00+08:00"` (atau `...T22:00:00+08:00` untuk cadangan 1). `jadwal_tayang_usulan` di `status.json` (masih 20.00) TIDAK dibaca script; nilai di `unggah.json` juga hanya catatan.
-2. TikTok & Instagram baru diunggah bila `terbitkan.py` dijalankan paling cepat 15 menit sebelum jadwal. Jadwal cloud hanya 11.47 & 17.47, jadi **`/terbitkan` dijalankan manual sekitar 20.45–21.00 WITA** (cadangan 1: 21.45–22.00). YouTube boleh lebih awal (langsung dijadwalkan).
+2. TikTok & Instagram baru diunggah bila `terbitkan.py` dijalankan paling cepat 15 menit sebelum jadwal. Jadwal cloud hanya 11.47 & 17.47, jadi **`/terbitkan` dijalankan manual sekitar 19.45–21.00 WITA** (cadangan 1: 21.45–22.00). YouTube boleh lebih awal (langsung dijadwalkan).
 3. TikTok mode `inbox` (sebelum audit TikTok): video masuk kotak masuk, **Bos tinggal tekan Posting di aplikasi TikTok** pada jam tayang, dengan caption dari paket ini dan label AI dinyalakan manual.
 4. YouTube: kalau `YT_AUDIT_LOLOS` belum "ya", script tidak mengunggah YouTube. Unggah manual dari YouTube Studio dengan judul/deskripsi/tag di atas, jadwalkan 21.00 WITA, dan centang "Konten diubah atau sintetis".
 5. Setelah YouTube tayang, sematkan komentar di atas (manual; script tidak memasang komentar tersemat).
