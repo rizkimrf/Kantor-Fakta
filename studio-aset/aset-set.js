@@ -1405,3 +1405,219 @@
   Object.assign(A, { lilin, ruangKerjaTua, jurnalTerbuka, penaBulu, stempelLilin, petaNusantara, kapalLayar, pelabuhanLama, siluetBertopi, gerobakJurnal, ruangPeta, tiangYunani, halamanYunani,
     kepinganPuzzle, ruangVictoria, papanEasel, lampuMeja, lembarCetak, jendelaKanal, orang, bukuPolos, aula1928, tribunStadion });
 })(typeof window !== "undefined" ? window : globalThis);
+
+/* ===== Aset KULINER KECAP & KETCHUP (Yoga, 17 Nov 2026, video I-018) =====
+ * Botol saus/kecap (label polos atau teks kode, mata kartun opsional, isi kaca bisa berganti), tong air garam ikan + ekor ikan,
+ * ikan/teri, mangkuk bakso, warung bakso, gerobak gorengan, jung Tiongkok + tempayan, rumah panggung, geladak kapal Eropa,
+ * dapur pondok Inggris berhujan, jamur/kenari/tiram/tomat, dapur pertanian Amerika, pabrik saus, dapur rumah Indonesia,
+ * gerobak nasi goreng + wajan. Tanpa merek/logo asli; aksara Hanzi tidak digambar (ejaan lewat teks layar).
+ */
+(function (root) {
+  const A = (typeof module !== "undefined" && module.exports && module.exports.PALET) ? module.exports : root.ASET;
+  let _n = 0; const uid = (p) => `${p}k${++_n}`;
+  const f1 = (v) => Math.round(v * 10) / 10, f2 = (v) => Math.round(v * 100) / 100;
+  const acak = (b) => { let s = b; return () => (s = (s * 9301 + 49297) % 233280) / 233280; };
+  const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+  const g = (x, y, s, isi, rot = 0) => `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${f2(rot)}) scale(${f2(s)})">${isi}</g>`;
+  const malam = (P) => P.nama === "malam";
+
+  // mata kartun untuk benda. jenis: 'marah' | 'kaget' | 'senang'
+  function mata(x, y, s, jenis = "senang", lihat = 0) {
+    const al = jenis === "marah" ? `<path d="M-46 -40 L-12 -24 M46 -40 L12 -24" stroke="#1E1E1E" stroke-width="9" stroke-linecap="round"/>` : jenis === "kaget" ? `<path d="M-44 -44 Q-28 -56 -12 -46 M44 -44 Q28 -56 12 -46" stroke="#1E1E1E" stroke-width="7" fill="none" stroke-linecap="round"/>` : "";
+    const r = jenis === "kaget" ? 22 : 18;
+    return g(x, y, s, `${al}<circle cx="-28" cy="0" r="${r}" fill="#FFF"/><circle cx="28" cy="0" r="${r}" fill="#FFF"/><circle cx="${-26 + lihat * 6}" cy="2" r="9" fill="#1E1E1E"/><circle cx="${30 + lihat * 6}" cy="2" r="9" fill="#1E1E1E"/>
+      ${jenis === "senang" ? `<path d="M-16 34 Q0 46 16 34" stroke="#1E1E1E" stroke-width="6" fill="none" stroke-linecap="round"/>` : jenis === "kaget" ? `<ellipse cx="0" cy="40" rx="10" ry="13" fill="#1E1E1E"/>` : `<path d="M-14 40 L14 38" stroke="#1E1E1E" stroke-width="6" stroke-linecap="round"/>`}`);
+  }
+  // botol saus tomat (plastik pencet) — dasar di (x,y). o: {label (teks), mata, lihat, sarung (sarung tinju 0..1)}
+  function botolSaus(x, y, s, o = {}) {
+    const lb = o.label ? `<rect x="-78" y="-250" width="156" height="110" rx="14" fill="#F4EEDC"/><text y="${-182}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${o.label.length > 6 ? 30 : 40}" fill="#B3262E">${o.label}</text>` : `<rect x="-78" y="-250" width="156" height="110" rx="14" fill="#F4EEDC" opacity=".9"/>`;
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="110" ry="18" fill="#000" opacity=".22"/><path d="M-100 0 Q-110 -200 -96 -300 Q-90 -360 -46 -390 L-40 -440 L40 -440 L46 -390 Q90 -360 96 -300 Q110 -200 100 0Z" fill="#D7282F"/>
+      <path d="M40 -380 Q80 -350 84 -290 Q96 -180 86 -10 L100 0 Q110 -200 96 -300 Q90 -360 46 -390Z" fill="#B01E24"/><path d="M-70 -320 Q-80 -200 -74 -60" stroke="#FF7A7A" stroke-width="14" fill="none" stroke-linecap="round" opacity=".6"/>
+      <rect x="-48" y="-500" width="96" height="66" rx="12" fill="#F4EEDC"/><path d="M-20 -500 L0 -540 L20 -500Z" fill="#F4EEDC"/>${lb}${o.mata ? mata(0, -320, 0.95, o.mata, o.lihat || 0) : ""}`, o.rot || 0);
+  }
+  // botol kaca kecap. o: {isi warna, kental (botol gemuk), label, mata, tutup warna, tinggi}
+  function botolKecap(x, y, s, o = {}) {
+    const isi = o.isi || "#2A140C", tp = o.tutup || "#E8B23A", tg = o.tinggi || 1, w = o.kental ? 96 : 76;
+    const lb = o.label !== undefined ? `<rect x="${-w + 14}" y="${-250 * tg}" width="${(w - 14) * 2}" height="${110 * tg}" rx="10" fill="#F2E6C8"/>${o.label ? `<text y="${-185 * tg}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${o.label.length > 6 ? 28 : 36}" fill="#3A2412">${o.label}</text>` : ""}` : "";
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="${w + 14}" ry="16" fill="#000" opacity=".22"/><path d="M${-w} 0 L${-w} ${-300 * tg} Q${-w} ${-360 * tg} -30 ${-390 * tg} L-28 ${-500 * tg} L28 ${-500 * tg} L30 ${-390 * tg} Q${w} ${-360 * tg} ${w} ${-300 * tg} L${w} 0Z" fill="${isi}"/>
+      <path d="M${w - 26} ${-300 * tg} L${w - 26} -20" stroke="#FFFFFF" stroke-width="10" opacity=".18" stroke-linecap="round"/><path d="M${-w + 18} ${-310 * tg} Q${-w + 18} ${-350 * tg} -20 ${-372 * tg}" stroke="#FFFFFF" stroke-width="10" opacity=".25" fill="none" stroke-linecap="round"/>
+      <rect x="-34" y="${-560 * tg}" width="68" height="${66 * tg}" rx="8" fill="${tp}"/>${lb}${o.mata ? mata(0, -330 * tg, 0.85, o.mata, o.lihat || 0) : ""}`, o.rot || 0);
+  }
+  // botol kaca bening (dapur kuno) berisi konten SVG. o: {konten (svg di area isi), label, isiWarna, tingkat 0..1}
+  function botolKaca(x, y, s, o = {}) {
+    const id = uid("bk"), tk = cl(o.tingkat ?? 1);
+    return g(x, y, s, `<defs><clipPath id="${id}"><path d="M-110 0 L-110 -300 Q-110 -360 -40 -390 L-36 -470 L36 -470 L40 -390 Q110 -360 110 -300 L110 0Z"/></clipPath></defs>
+      <ellipse cx="0" cy="8" rx="130" ry="20" fill="#000" opacity=".25"/><path d="M-110 0 L-110 -300 Q-110 -360 -40 -390 L-36 -470 L36 -470 L40 -390 Q110 -360 110 -300 L110 0Z" fill="#CFE3E0" opacity=".45"/>
+      <g clip-path="url(#${id})">${o.isiWarna ? `<rect x="-120" y="${f1(-330 * tk)}" width="240" height="${f1(330 * tk + 10)}" fill="${o.isiWarna}" opacity=".85"/>` : ""}${o.konten || ""}</g>
+      <path d="M-110 0 L-110 -300 Q-110 -360 -40 -390 L-36 -470 L36 -470 L40 -390 Q110 -360 110 -300 L110 0Z" fill="none" stroke="#E8F4F2" stroke-width="8" opacity=".7"/><path d="M-80 -300 L-80 -40" stroke="#FFF" stroke-width="12" opacity=".35" stroke-linecap="round"/>
+      <rect x="-42" y="-500" width="84" height="40" rx="8" fill="#9A6A3A"/>${o.label ? o.label : ""}`, o.rot || 0);
+  }
+  // tong kayu berisi air garam ikan. o: {ekor 0..1 (ekor ikan mengibas keluar), bau 0..1, t}
+  function tongIkan(x, y, s, t = 0, o = {}) {
+    const ek = cl(o.ekor ?? 1), kb = Math.sin(t * 8) * 18 * ek, bau = cl(o.bau || 0);
+    let garis = ""; for (let i = -2; i <= 2; i++) garis += `<path d="M${i * 44} -230 Q${i * 52} -115 ${i * 44} 0" stroke="#6A4224" stroke-width="5" fill="none" opacity=".5"/>`;
+    const ekor = ek > 0 ? `<g transform="translate(30 -236) rotate(${f1(-20 + kb)}) scale(${f2(ek)})"><path d="M0 0 Q10 -50 0 -90 L-40 -150 Q0 -130 10 -110 Q30 -140 60 -150 Q30 -100 20 -80 Q14 -40 18 0Z" fill="#A9B8C4"/><path d="M4 -10 Q12 -50 4 -86" stroke="#D9E4EA" stroke-width="8" fill="none" stroke-linecap="round"/></g>` : "";
+    let bs = ""; if (bau > 0) for (let i = 0; i < 3; i++) { const q = (t * 0.5 + i / 3) % 1; bs += `<path d="M${-60 + i * 60} ${f1(-260 - q * 160)} q-20 -30 0 -60 q20 -30 0 -60" stroke="#A9C27A" stroke-width="10" fill="none" stroke-linecap="round" opacity="${f2(bau * Math.sin(Math.PI * q) * 0.8)}"/>`; }
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="140" ry="22" fill="#000" opacity=".25"/><path d="M-120 0 Q-140 -115 -120 -230 L120 -230 Q140 -115 120 0Z" fill="#9A6A3E"/>${garis}
+      <rect x="-134" y="-196" width="268" height="18" rx="6" fill="#5A5E66"/><rect x="-134" y="-48" width="268" height="18" rx="6" fill="#5A5E66"/>
+      <ellipse cx="0" cy="-230" rx="120" ry="26" fill="#7A5230"/><ellipse cx="0" cy="-230" rx="104" ry="20" fill="#3A2414"/><ellipse cx="-30" cy="-234" rx="40" ry="6" fill="#8A6A4A" opacity=".5"/>${ekor}${bs}`, o.rot || 0);
+  }
+  // ikan kecil (teri) atau ikan perak. o: {warna, kibas (t)}
+  function ikan(x, y, s, rot = 0, o = {}) {
+    const w = o.warna || "#B9C6D0", k = Math.sin((o.kibas || 0) * 14) * 10;
+    return g(x, y, s, `<path d="M-60 0 Q-20 -26 40 -10 Q60 -4 64 0 Q60 4 40 10 Q-20 26 -60 0Z" fill="${w}"/><path d="M-56 0 L-96 ${f1(-22 + k)} L-90 0 L-96 ${f1(22 + k)}Z" fill="${w}"/><path d="M-40 4 Q0 12 40 4" stroke="#FFFFFF" stroke-width="5" fill="none" opacity=".6"/><circle cx="40" cy="-4" r="5" fill="#1E1E1E"/>`, rot);
+  }
+  // mangkuk bakso berkuah + uap
+  function mangkukBakso(x, y, s, t = 0) {
+    const uap = [0, 1, 2].map((i) => { const u = ((t * 0.4 + i / 3) % 1); return `<path d="M${-50 + i * 50} ${f1(-110 - u * 140)} q-16 -34 0 -68 q16 -34 0 -68" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" opacity="${f2(Math.sin(Math.PI * u) * 0.45)}"/>`; }).join("");
+    return g(x, y, s, `<ellipse cx="0" cy="8" rx="190" ry="26" fill="#000" opacity=".2"/><path d="M-190 -90 Q-180 10 0 14 Q180 10 190 -90Z" fill="#F4EEDC"/><path d="M-190 -90 Q-180 10 0 14 Q180 10 190 -90" stroke="#3E8AC2" stroke-width="10" fill="none"/>
+      <ellipse cx="0" cy="-90" rx="190" ry="40" fill="#E9DDC0"/><ellipse cx="0" cy="-90" rx="170" ry="32" fill="#C98A4A"/><path d="M-130 -96 Q-60 -70 0 -98 Q60 -70 130 -96" stroke="#F2D38A" stroke-width="10" fill="none"/>
+      ${[[-70, -112, 40], [10, -118, 44], [84, -108, 38], [-20, -96, 34]].map(([a, b, r]) => `<circle cx="${a}" cy="${b}" r="${r}" fill="#9A6A4A"/><circle cx="${a - r * 0.3}" cy="${b - r * 0.3}" r="${r * 0.3}" fill="#B88A64"/>`).join("")}
+      ${[-110, -40, 50, 120].map((a) => `<circle cx="${a}" cy="-84" r="7" fill="#5FA05A"/>`).join("")}${uap}`);
+  }
+  // warung bakso: dinding keramik, rak, meja kayu, lampu untai (menyala senja/malam). o: {meja (y)}
+  function warungBakso(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.66, m = malam(P), sj = P.nama !== "siang", id = uid("wb");
+    let s = `<rect width="${w}" height="${h}" fill="${m ? "#3A4A5A" : sj ? "#C9A88A" : "#EDE6D6"}"/>`;
+    // jendela/bukaan ke jalan
+    s += `<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${P.langit[0]}"/><stop offset="1" stop-color="${P.langit[1]}"/></linearGradient></defs><rect x="${w * 0.08}" y="${my - 1050}" width="${w * 0.84}" height="560" rx="12" fill="url(#${id})"/>`;
+    s += A.rumahKampung(w * 0.3, my - 500, 0.7, P) + A.rumahKampung(w * 0.78, my - 500, 0.6, P);
+    s += `<rect x="${w * 0.08}" y="${my - 500}" width="${w * 0.84}" height="20" fill="${m ? "#2A3440" : "#8A6A4A"}"/>`;
+    for (let i = 0; i < w / 60; i++) for (let j = 0; j < 7; j++) s += `<rect x="${i * 60 + 2}" y="${my - 470 + j * 60 + 2}" width="56" height="56" fill="${(i + j) % 2 ? (m ? "#4A6A7A" : "#DCEBF0") : (m ? "#55788A" : "#F4FAFB")}"/>`;
+    // tenda/kanopi atas
+    s += `<rect x="0" y="${my - 1180}" width="${w}" height="120" fill="#2E7A5A"/>${[...Array(Math.ceil(w / 120))].map((_, i) => `<path d="M${i * 120} ${my - 1060} q60 50 120 0" fill="${i % 2 ? "#2E7A5A" : "#F4EEDC"}"/>`).join("")}`;
+    // lampu untai
+    if (sj) { let d = `M0 ${my - 1030}`; for (let i = 0; i <= 10; i++) d += ` Q${i * w / 10 - w / 20} ${my - 990} ${i * w / 10} ${my - 1030}`; s += `<path d="${d}" stroke="#2A2A2A" stroke-width="4" fill="none"/>`;
+      for (let i = 0; i < 20; i++) { const lx = i * w / 20 + w / 40, ly = my - 1012 + Math.abs(Math.sin(i * 1.6)) * 4; s += `<circle cx="${f1(lx)}" cy="${f1(ly)}" r="26" fill="#FFD38A" opacity="${f2(0.25 + 0.1 * Math.sin(t * 3 + i))}"/><circle cx="${f1(lx)}" cy="${f1(ly)}" r="10" fill="#FFF1C0"/>`; } }
+    // meja kayu
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="${m ? "#5A3E2A" : "#B07A46"}"/><rect x="0" y="${my}" width="${w}" height="22" fill="${m ? "#7A5638" : "#C99460"}"/>`;
+    for (let i = 0; i < 6; i++) s += `<path d="M0 ${my + 70 + i * 90} Q${w / 2} ${my + 50 + i * 90} ${w} ${my + 80 + i * 90}" stroke="#000" stroke-width="3" opacity=".1" fill="none"/>`;
+    return s;
+  }
+  // gerobak gorengan: etalase kaca berisi tahu, tempe, bakwan; atap terpal
+  function gerobakGorengan(x, y, s, P, t = 0) {
+    const m = malam(P), kayu = m ? "#6A4A34" : "#B5784A";
+    let gor = ""; const r = acak(5);
+    for (let i = 0; i < 14; i++) { const gx = -240 + (i % 7) * 76, gy = -250 - Math.floor(i / 7) * 46, j = i % 3;
+      gor += j === 0 ? `<rect x="${gx}" y="${gy}" width="60" height="38" rx="6" fill="#E2A64A"/>` : j === 1 ? `<rect x="${gx}" y="${gy}" width="62" height="34" rx="4" fill="#C98A3A"/><rect x="${gx + 6}" y="${gy + 6}" width="50" height="6" fill="#F2C060"/>` : `<ellipse cx="${gx + 30}" cy="${gy + 18}" rx="36" ry="22" fill="#D9963A"/><circle cx="${gx + 20}" cy="${gy + 14}" r="6" fill="#7A9A3A"/>`; }
+    return g(x, y, s, `<ellipse cx="0" cy="10" rx="360" ry="26" fill="#000" opacity=".22"/><rect x="-320" y="-200" width="640" height="180" rx="10" fill="${kayu}"/><rect x="-300" y="-180" width="600" height="20" fill="#000" opacity=".12"/>
+      <rect x="-300" y="-360" width="600" height="160" fill="#CFE3E0" opacity=".35"/>${gor}<rect x="-300" y="-360" width="600" height="160" fill="none" stroke="#E8F4F2" stroke-width="8" opacity=".8"/>
+      <rect x="-330" y="-560" width="14" height="560" fill="#7A7A7A"/><rect x="316" y="-560" width="14" height="560" fill="#7A7A7A"/><path d="M-380 -560 L380 -560 L340 -640 L-340 -640Z" fill="#2F7AC2"/><path d="M-380 -560 L380 -560 L380 -530 L-380 -530Z" fill="#1F5A9A"/>
+      <circle cx="-220" cy="0" r="52" fill="#3A3A3A"/><circle cx="-220" cy="0" r="18" fill="#9A9A9A"/><circle cx="220" cy="0" r="52" fill="#3A3A3A"/><circle cx="220" cy="0" r="18" fill="#9A9A9A"/>`);
+  }
+  // jung Tiongkok dengan layar bertulang (tanpa tulisan)
+  function jung(x, y, s, P, t = 0, o = {}) {
+    const bob = Math.sin(t * 1.2 + x * 0.02) * 6, m = malam(P), lm = m ? "#4A3A30" : "#7A4A2A", ly = P.nama === "senja" || o.pagi ? "#C9603A" : "#B5523A";
+    const layar = (mx, tg, lw) => { let d = `<rect x="${mx - 5}" y="${-tg}" width="10" height="${tg}" fill="${lm}"/><path d="M${mx} ${-tg + 10} Q${mx + lw} ${-tg + 20} ${mx + lw * 1.1} ${-tg * 0.25} L${mx} ${-tg * 0.25}Z" fill="${ly}"/>`;
+      for (let i = 1; i < 6; i++) { const yy = -tg + 10 + i * (tg * 0.75 - 10) / 6; d += `<path d="M${mx} ${f1(yy)} L${f1(mx + lw * (1 + i * 0.02))} ${f1(yy + 6)}" stroke="#7A2E1A" stroke-width="5"/>`; } return d; };
+    return g(x, y + bob, s, `<ellipse cx="0" cy="36" rx="280" ry="22" fill="#000" opacity=".15"/>${layar(-120, 420, 150)}${layar(40, 500, 170)}${layar(170, 300, 110)}
+      <path d="M-280 -60 Q-250 40 -200 40 L220 40 Q280 20 300 -90 L240 -40 L-220 -40Z" fill="${lm}"/><rect x="-230" y="-60" width="460" height="20" fill="${m ? "#5A4636" : "#9A6A3A"}"/><circle cx="250" cy="-30" r="14" fill="#F2D38A"/>`, 0);
+  }
+  // tempayan tanah liat
+  function tempayan(x, y, s, o = {}) {
+    const w = o.warna || "#B0683E";
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="110" ry="18" fill="#000" opacity=".2"/><path d="M-60 0 Q-130 -80 -100 -170 Q-80 -220 -50 -230 L50 -230 Q80 -220 100 -170 Q130 -80 60 0Z" fill="${w}"/>
+      <path d="M40 -220 Q100 -170 96 -90 Q90 -30 50 0 L60 0 Q130 -80 100 -170 Q80 -220 50 -230Z" fill="#000" opacity=".15"/><rect x="-56" y="-252" width="112" height="28" rx="10" fill="${w}"/><path d="M-90 -150 Q0 -130 90 -150" stroke="#E2A07A" stroke-width="8" fill="none" opacity=".6"/>`);
+  }
+  // rumah panggung Melayu
+  function rumahPanggung(x, y, s, P) {
+    const m = malam(P);
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="200" ry="20" fill="${P.bayang}"/>${[-150, -50, 50, 150].map((a) => `<rect x="${a - 8}" y="-200" width="16" height="200" fill="${P.batang}"/>`).join("")}
+      <rect x="-180" y="-380" width="360" height="190" fill="${m ? "#6A5444" : "#C99A6A"}"/><path d="M-220 -370 L0 -520 L220 -370Z" fill="${m ? "#5A4A3A" : "#9A6A3A"}"/><rect x="-60" y="-330" width="80" height="80" fill="${m ? P.jendela : "#7A5232"}" opacity="${m ? .8 : 1}"/><rect x="60" y="-330" width="70" height="140" fill="#7A5232"/>
+      <path d="M100 -190 L160 0" stroke="${P.batang}" stroke-width="10"/>`);
+  }
+  // geladak kapal Eropa: papan geladak perspektif, pagar, tiang, tali, laut di cakrawala
+  function dekKapal(w, h, P, t = 0, o = {}) {
+    const hz = o.cakrawala ?? h * 0.42, ay = Math.sin(t * 0.9) * 10;
+    let s = A.langit(P, w, h, t, { suryaX: w * 0.7, suryaY: h * 0.12 }) + A.awan(w * 0.25, h * 0.14, 1, P, .85) + A.awan(w * 0.75, h * 0.24, .7, P, .8);
+    s += `<g transform="translate(0 ${f1(ay)})">${A.laut(w, hz, h - hz, P, t)}</g>`;
+    s += `<path d="M-100 ${hz + 120} L${w + 100} ${hz + 120} L${w + 100} ${h} L-100 ${h}Z" fill="#A27650"/>`;
+    for (let i = -6; i <= 6; i++) s += `<path d="M${w / 2 + i * 70} ${hz + 120} L${w / 2 + i * 320} ${h}" stroke="#7A5232" stroke-width="5" opacity=".6"/>`;
+    for (let j = 1; j < 8; j++) s += `<rect x="-100" y="${f1(hz + 120 + Math.pow(j / 8, 1.5) * (h - hz - 120))}" width="${w + 200}" height="4" fill="#7A5232" opacity=".35"/>`;
+    s += `<rect x="-100" y="${hz + 20}" width="${w + 200}" height="16" fill="#6A4630"/><rect x="-100" y="${hz + 100}" width="${w + 200}" height="24" fill="#6A4630"/>${[...Array(Math.ceil(w / 90) + 2)].map((_, i) => `<rect x="${-60 + i * 90}" y="${hz + 30}" width="12" height="76" fill="#7A5232"/>`).join("")}`;
+    const mx = o.tiangX ?? w * 0.7;
+    s += `<rect x="${mx - 24}" y="0" width="48" height="${hz + 300}" fill="#6A4630"/><path d="M${mx} 80 L${mx - 600} ${hz + 40} M${mx} 80 L${mx + 500} ${hz + 40} M${mx} 300 L${mx - 400} ${hz + 40}" stroke="#4A3A2A" stroke-width="5"/>
+      <path d="M${mx - 300} 120 Q${mx} 90 ${mx + 300} 120 L${mx + 280} 420 Q${mx} 470 ${mx - 280} 420Z" fill="#F4EEDC" opacity=".95"/>`;
+    return s;
+  }
+  // dapur pondok Inggris abad ke-18, hari hujan: dinding batu, perapian + panci tembaga, jendela berhujan, meja kayu
+  function dapurPondok(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.66, r = acak(29);
+    let s = `<rect width="${w}" height="${h}" fill="#8A8278"/>`;
+    for (let j = 0; j < 22; j++) for (let i = 0; i < w / 120 + 1; i++) { const bx = i * 120 + (j % 2) * 60 - 60; s += `<rect x="${bx + 3}" y="${j * 60 + 3}" width="114" height="54" rx="10" fill="${["#9A9288", "#8E867C", "#A39B90"][Math.floor(r() * 3)]}"/>`; }
+    const jx = o.jendelaX ?? w * 0.58, jy = my - 900;
+    s += `<rect x="${jx - 20}" y="${jy - 20}" width="400" height="460" rx="8" fill="#5A4232"/><g>${`<svg x="${jx}" y="${jy}" width="360" height="420"><rect width="360" height="420" fill="#8A98A6"/>${A.bukit(360, 300, 60, 3, "#6E7E78")}${A.hujan(360, 420, t, P, { deras: .7 })}</svg>`}</g>
+      <rect x="${jx + 174}" y="${jy}" width="12" height="420" fill="#5A4232"/><rect x="${jx}" y="${jy + 200}" width="360" height="12" fill="#5A4232"/>`;
+    const fx = o.apiX ?? w * 0.2, fl = 1 + 0.08 * Math.sin(t * 9);
+    s += `<rect x="${fx - 220}" y="${my - 700}" width="440" height="700" fill="#6E665C"/><rect x="${fx - 250}" y="${my - 720}" width="500" height="40" fill="#5A4A3A"/><rect x="${fx - 160}" y="${my - 460}" width="320" height="460" rx="30" fill="#2A1E18"/>
+      <g transform="translate(${fx} ${my - 20}) scale(${f2(fl)})"><path d="M-80 0 Q-90 -100 -30 -180 Q-10 -110 14 -130 Q50 -190 40 -240 Q110 -140 80 0Z" fill="#F28C38"/><path d="M-40 0 Q-40 -70 0 -120 Q14 -70 40 -80 Q50 -50 40 0Z" fill="#FFD36A"/></g>
+      <path d="M${fx} ${my - 460} L${fx} ${my - 300}" stroke="#3A3A3A" stroke-width="6"/><path d="M${fx - 90} ${my - 300} L${fx + 90} ${my - 300} L${fx + 70} ${my - 180} Q${fx} ${my - 160} ${fx - 70} ${my - 180}Z" fill="#B8703A"/>`;
+    for (let i = 0; i < 3; i++) s += `<path d="M${jx - 260 + i * 80} ${my - 980} L${jx - 260 + i * 80} ${my - 900}" stroke="#3A3A3A" stroke-width="4"/><circle cx="${jx - 260 + i * 80}" cy="${my - 860}" r="${36 - i * 4}" fill="#C27A42"/><rect x="${jx - 262 + i * 80}" y="${my - 900}" width="4" height="20" fill="#3A3A3A"/>`;
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="#7A5232"/><rect x="0" y="${my}" width="${w}" height="20" fill="#9A6A42"/>`;
+    return s + `<rect width="${w}" height="${h}" fill="#4A5A6A" opacity=".12"/>`;
+  }
+  function jamur(x, y, s) { return g(x, y, s, `<rect x="-14" y="-50" width="28" height="56" rx="12" fill="#EADCC4"/><path d="M-60 -40 Q-60 -100 0 -104 Q60 -100 60 -40Z" fill="#9A6A44"/><circle cx="-20" cy="-70" r="8" fill="#B88A62"/>`); }
+  function kenari(x, y, s) { return g(x, y, s, `<ellipse cx="0" cy="0" rx="40" ry="34" fill="#B88A54"/><path d="M0 -34 Q-8 0 0 34 M-30 -14 Q-10 -6 -30 6 M30 -14 Q10 -6 30 6" stroke="#8A5E30" stroke-width="5" fill="none"/>`); }
+  function tiram(x, y, s) { return g(x, y, s, `<path d="M-60 0 Q-50 -50 0 -46 Q56 -44 60 0 Q30 30 0 26 Q-34 28 -60 0Z" fill="#9AA0A0"/><path d="M-40 -6 Q0 -30 40 -6 Q0 14 -40 -6Z" fill="#E9E1D4"/><circle cx="4" cy="-6" r="8" fill="#F4EEDC"/>`); }
+  function tomat(x, y, s, rot = 0) { return g(x, y, s, `<circle r="60" fill="#E2362E"/><circle cx="-22" cy="-22" r="16" fill="#FF7A6A" opacity=".7"/><path d="M0 -58 L-20 -76 M0 -58 L20 -76 M0 -58 L-30 -54 M0 -58 L30 -54 M0 -58 L0 -84" stroke="#3E8A3A" stroke-width="9" stroke-linecap="round"/>`, rot); }
+  // dapur pertanian Amerika awal 1800-an: dinding papan terang, jendela ladang, tungku besi, panci
+  function dapurAmerika(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.68;
+    let s = `<rect width="${w}" height="${h}" fill="#E6D2AE"/>`;
+    for (let i = 0; i < w / 80; i++) s += `<rect x="${i * 80}" y="0" width="4" height="${my}" fill="#C9AE84"/>`;
+    const jx = o.jendelaX ?? w * 0.1;
+    s += `<rect x="${jx - 16}" y="${my - 980}" width="452" height="512" fill="#8A5A34"/><svg x="${jx}" y="${my - 964}" width="420" height="480">${A.langit(P, 420, 480, t, { suryaX: 320, suryaY: 90 })}${A.bukit(420, 300, 60, 6, P.tengah, 480)}<rect y="330" width="420" height="150" fill="#D9C46A"/>${[...Array(9)].map((_, i) => `<path d="M${i * 50} 340 L${i * 50 + 10} 480" stroke="#B8A04A" stroke-width="6"/>`).join("")}</svg>
+      <rect x="${jx + 204}" y="${my - 964}" width="12" height="480" fill="#8A5A34"/><rect x="${jx}" y="${my - 730}" width="420" height="12" fill="#8A5A34"/>`;
+    const sx = o.tungkuX ?? w * 0.7;
+    s += `<rect x="${sx - 30}" y="0" width="60" height="${my - 520}" fill="#3A3A3E"/><rect x="${sx - 200}" y="${my - 520}" width="400" height="520" rx="12" fill="#2E2E34"/><rect x="${sx - 160}" y="${my - 300}" width="320" height="180" rx="10" fill="#1E1E22"/><rect x="${sx - 140}" y="${my - 280}" width="280" height="140" fill="#F28C38" opacity="${f2(0.5 + 0.15 * Math.sin(t * 7))}"/>`;
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="#9A6A3E"/><rect x="0" y="${my}" width="${w}" height="20" fill="#B8844E"/>`;
+    return s;
+  }
+  // panci masak berisi saus (warna), uap
+  function panci(x, y, s, t = 0, o = {}) {
+    const uap = [0, 1, 2].map((i) => { const u = ((t * 0.45 + i / 3) % 1); return `<path d="M${-60 + i * 60} ${f1(-170 - u * 140)} q-16 -34 0 -68 q16 -34 0 -68" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" opacity="${f2(Math.sin(Math.PI * u) * 0.5)}"/>`; }).join("");
+    return g(x, y, s, `<ellipse cx="0" cy="8" rx="200" ry="22" fill="#000" opacity=".22"/><path d="M-170 -160 L170 -160 L150 0 L-150 0Z" fill="#5A5E66"/><path d="M90 -160 L170 -160 L150 0 L80 0Z" fill="#4A4E56"/><rect x="-200" y="-140" width="40" height="16" rx="8" fill="#3A3A3E"/><rect x="160" y="-140" width="40" height="16" rx="8" fill="#3A3A3E"/>
+      <ellipse cx="0" cy="-160" rx="170" ry="30" fill="#6A6E76"/><ellipse cx="0" cy="-160" rx="150" ry="22" fill="${o.isi || "#C8332A"}"/>${uap}`);
+  }
+  // pabrik saus awal 1900-an: dinding bata, ketel tembaga besar, pipa, jendela tinggi
+  function pabrikSaus(w, h, P, t = 0, o = {}) {
+    const lt = o.lantai ?? h * 0.7, r = acak(33);
+    let s = `<rect width="${w}" height="${h}" fill="#9A5A42"/>`;
+    for (let j = 0; j < 40; j++) for (let i = 0; i < w / 80 + 1; i++) s += `<rect x="${i * 80 + (j % 2) * 40 - 40 + 2}" y="${j * 40 + 2}" width="76" height="36" fill="${["#A6644A", "#94553E", "#AE6E52"][Math.floor(r() * 3)]}"/>`;
+    for (let i = 0; i < 3; i++) s += `<rect x="${120 + i * (w - 240) / 3}" y="${lt - 1200}" width="260" height="520" rx="130" fill="#F4E6C8" opacity=".85"/>`;
+    for (let i = 0; i < 3; i++) { const kx = 220 + i * (w - 300) / 3; s += `<ellipse cx="${kx}" cy="${lt - 150}" rx="190" ry="260" fill="#C27A42"/><ellipse cx="${kx - 60}" cy="${lt - 230}" rx="40" ry="140" fill="#E2A06A" opacity=".6"/><rect x="${kx - 14}" y="${lt - 700}" width="28" height="300" fill="#7A7A80"/><rect x="${kx - 120}" y="${lt - 40}" width="240" height="40" fill="#5A5A60"/>`; }
+    s += `<path d="M0 ${lt - 760} H${w}" stroke="#6A6A70" stroke-width="30"/><rect x="0" y="${lt}" width="${w}" height="${h - lt}" fill="#6E6A66"/><rect x="0" y="${lt}" width="${w}" height="16" fill="#8A8682"/>`;
+    return s;
+  }
+  // dapur rumah Indonesia malam: dinding keramik, jendela malam, rak kayu, kompor
+  function dapurRumah(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.68, m = malam(P);
+    let s = `<rect width="${w}" height="${h}" fill="${m ? "#7A8A82" : "#D9E2D6"}"/>`;
+    for (let i = 0; i < w / 80 + 1; i++) for (let j = 0; j < 6; j++) s += `<rect x="${i * 80 + 2}" y="${my - 480 + j * 80 + 2}" width="76" height="76" fill="${m ? "#8EA096" : "#E9F0E6"}"/>`;
+    const jx = o.jendelaX ?? w * 0.62;
+    s += `<rect x="${jx - 16}" y="${my - 1000}" width="372" height="432" fill="#6A4A30"/><svg x="${jx}" y="${my - 984}" width="340" height="400">${A.langit(P, 340, 400, t, { suryaX: 260, suryaY: 90 })}${A.rumahKampung(170, 400, 0.45, P)}</svg><rect x="${jx + 164}" y="${my - 984}" width="12" height="400" fill="#6A4A30"/>`;
+    s += `<rect x="${o.rakX ?? 80}" y="${my - 640}" width="${o.rakW ?? 640}" height="22" fill="#8A5A34"/><rect x="${o.rakX ?? 80}" y="${my - 620}" width="${o.rakW ?? 640}" height="10" fill="#000" opacity=".15"/>`;
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="${m ? "#5E5048" : "#C9B49A"}"/><rect x="0" y="${my}" width="${w}" height="20" fill="${m ? "#7A6A60" : "#E2D2BC"}"/>`;
+    s += `<rect width="${w}" height="${h}" fill="#FFB860" opacity="${m ? .08 : 0}"/>`;
+    return s;
+  }
+  // gerobak nasi goreng malam: lampu bohlam gantung, kompor + wajan berapi, etalase
+  function gerobakNasgor(x, y, s, P, t = 0, o = {}) {
+    const id = uid("gn"), fl = 1 + 0.1 * Math.sin(t * 11);
+    return g(x, y, s, `<defs><radialGradient id="${id}"><stop offset="0" stop-color="#FFE6A0" stop-opacity=".6"/><stop offset="1" stop-color="#FFE6A0" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="0" cy="-700" r="520" fill="url(#${id})"/><path d="M0 -900 L0 -760" stroke="#2A2A2A" stroke-width="5"/><circle cx="0" cy="-736" r="30" fill="#FFF1C0"/>
+      <ellipse cx="0" cy="10" rx="420" ry="26" fill="#000" opacity=".25"/><rect x="-380" y="-260" width="760" height="250" rx="10" fill="#C24A3A"/><rect x="-380" y="-260" width="760" height="30" fill="#E8D2A0"/><rect x="-360" y="-200" width="300" height="150" fill="#CFE3E0" opacity=".3"/>
+      <rect x="-400" y="-900" width="16" height="900" fill="#5A5A5A"/><rect x="384" y="-900" width="16" height="900" fill="#5A5A5A"/><path d="M-440 -900 L440 -900 L400 -960 L-400 -960Z" fill="#E8D2A0"/>
+      <circle cx="-260" cy="0" r="54" fill="#2E2E2E"/><circle cx="260" cy="0" r="54" fill="#2E2E2E"/>
+      <g transform="translate(180 -270) scale(${f2(fl)})"><path d="M-80 0 Q-70 -50 -30 -70 Q-20 -30 0 -50 Q20 -80 40 -60 Q60 -40 80 0Z" fill="#4A8AE8" opacity=".85"/><path d="M-50 0 Q-40 -30 -10 -40 Q0 -20 20 -30 Q40 -20 50 0Z" fill="#F28C38"/></g>`);
+  }
+  // wajan berisi nasi goreng + uap & percikan (pusat dasar wajan di x,y)
+  function wajan(x, y, s, t = 0) {
+    const uap = [0, 1, 2, 3].map((i) => { const u = ((t * 0.6 + i / 4) % 1); return `<path d="M${-90 + i * 60} ${f1(-60 - u * 200)} q-16 -34 0 -68 q16 -34 0 -68" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" opacity="${f2(Math.sin(Math.PI * u) * 0.5)}"/>`; }).join("");
+    let nasi = ""; const r = acak(9); for (let i = 0; i < 26; i++) { const a = r() * Math.PI, d = r() * 150; nasi += `<circle cx="${f1(Math.cos(a) * d)}" cy="${f1(-36 - Math.sin(a) * d * 0.25 - Math.abs(Math.sin(t * 9 + i)) * 4)}" r="${f1(9 + r() * 7)}" fill="${["#C9843E", "#B5702E", "#E2A050", "#E86A3A", "#5FA05A"][Math.floor(r() * 5)]}"/>`; }
+    return g(x, y, s, `<path d="M-230 -40 Q0 70 230 -40Z" fill="#3A3A3E"/><path d="M230 -40 L360 -90" stroke="#3A3A3E" stroke-width="18" stroke-linecap="round"/><ellipse cx="0" cy="-40" rx="230" ry="36" fill="#4A4A50"/>${nasi}${uap}`);
+  }
+
+  Object.assign(A, { mata, botolSaus, botolKecap, botolKaca, tongIkan, ikan, mangkukBakso, warungBakso, gerobakGorengan, jung, tempayan, rumahPanggung, dekKapal, dapurPondok,
+    jamur, kenari, tiram, tomat, dapurAmerika, panci, pabrikSaus, dapurRumah, gerobakNasgor, wajan });
+})(typeof window !== "undefined" ? window : globalThis);

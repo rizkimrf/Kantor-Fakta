@@ -15,3 +15,5 @@
 |---|---|---|---|---|
 | 2026-11-15 | 2026-11-15_i-009-bau-durian | Close-up ekstrem: durian terbelah raksasa + 4 cerobong bau | kecil, tengah bawah, menutup hidung (skala) | hijau-limau + teal tua |
 | 2026-11-15 | 2026-11-15_i-015-harga-99900 | Benda tak terduga: label harga raksasa miring, kaca pembesar di "900" | sangat dekat: separuh wajah curiga dari bawah | merah promo + kuning lemon |
+| 2026-11-17 | 2026-11-15_i-004-asal-nama-indonesia | Misteri: jurnal tua raksasa disorot lilin, kata "Indonesia" bersinar, tangan tanpa wajah memegang pena bulu, panah merah | tidak ada (subjek benda kuno) | amber/sepia + hitam |
+| 2026-11-17 | 2026-11-15_i-018-ketchup-dari-kecap | Duel: botol kecap vs saus tomat bermata marah, petir kuning, ikan perak melompat dari cipratan air garam | besar, kiri bawah, kaget (terpotong tepi) | ungu-plum + kuning petir |

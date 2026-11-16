@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "I-004 asal nama Indonesia",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -39,6 +39,13 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-17",
       "hasil": "Langkah 2 & 3 laporan/harian.md dikerjakan, tanpa fakta baru. Judul: 'Asal Nama Indonesia: Siapa yang Pertama Menulisnya?' (jawaban tidak dibocorkan). Caption TikTok/IG + awal deskripsi YouTube jadi pertanyaan pancingan; ringkasan dipindah ke bagian spoiler. Adegan 2: tahun 1850 tidak diucapkan (tetap teks layar) → 'kok bisa' mulai ±13,4 dtk; celah 'namanya bisa saja BEDA' di ±11–13 dtk. CTA: 'Indonesia atau Malayunesia, kamu pilih mana?' → 'Kirim ke teman yang paling kencang teriak INDONESIA di stadion, terus tanya dia...' (loop ke kalimat pertama). Pertanyaan Indonesia/Malayunesia pindah ke komentar tersemat. 140 kata, ±65 dtk. Hook tidak diubah. naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md diselaraskan. Tahap tetap produksi."
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "waktu": "2026-11-16T22:41",
+      "oleh": "Yoga (editor)",
+      "hasil": "final.mp4 68,0 dtk / 13,0 MB, thumbnail.png (misteri: jurnal + tangan tanpa wajah, amber, tanpa Tebe). Suara Dakocan eleven_v4 sekali (998 huruf, ±519 kredit). 9 set baru (meja lilin, pelabuhan 1850, ruang peta, halaman Yunani, ruang Victoria, meja editor, perpustakaan hujan, aula 1928, stadion) + outro pendek berkalimat menggantung. cek_mulus LULUS, cek_video LULUS. Tidak ada jeda > 0,3 dtk selain intro 2,4 dtk."
     }
   ],
   "masalah": null,

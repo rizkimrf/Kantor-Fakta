@@ -69,6 +69,29 @@ Kunci palet baru: `mendung, awanH, awanHB, hujan, air, airKilau, airKolam, tanah
 
 **Pose Tebe baru (tebe-rig.js):** tutupHidung, mengipas, berbisik, angkatBahu, curiga, menarikTuas.
 
+**Aset set SEJARAH NAMA (Yoga, 17 Nov 2026, video I-004):**
+| Fungsi | Isi | Cara pakai singkat |
+|---|---|---|
+| `ruangKerjaTua(w,h,P,t,{meja,cx,cy,jendelaX})` · `lilin(x,y,s,t,{glow})` · `lampuMeja` · `lembarCetak` | ruang kerja tua (rak buku, jendela opsional, meja kayu, cahaya terpusat), lilin berkedip, lampu kuningan, kertas cetakan | set malam/misteri |
+| `jurnalTerbuka(x,y,s,{kata,tulis,sinar,ukuran})` · `penaBulu(x,y,s,rot)` · `stempelLilin(x,y,s,{isi})` · `bukuPolos` | jurnal terbuka (kata ditulis kode, bisa "tertulis" pelan & bersinar), pena bulu (ujung di x,y), stempel lilin merah, buku tanpa judul | sampul misteri & momen "pertama ditulis" |
+| `petaNusantara(x,y,s,{warna,sorot,bayang})` | peta Nusantara datar tanpa batas negara (kotak ±1000×420), garis bercahaya menggambar diri (sorot 0..1) | jangan tambah batas/label negara |
+| `pelabuhanLama` · `kapalLayar(x,y,s,P,t,{arah,layar})` · `siluetBertopi(x,y,s,{tarik,condong,arah})` · `gerobakJurnal` | pelabuhan abad 19, kapal tiang tiga, tokoh sejarah TANPA wajah, gerobak buku | tokoh nyata selalu siluet |
+| `ruangPeta` · `halamanYunani` · `tiangYunani` · `kepinganPuzzle(x,y,s,warna,'kanan'|'kiri',{teks,sub,ikon,sinar})` | ruang peta kuno + bola dunia, halaman bertiang, kepingan puzzle yang pas bila jarak pusat 340×s | perakitan kata (Indos + nesos) |
+| `ruangVictoria` · `papanEasel(x,y,s,{teks,coret,sorot})` · `jendelaKanal(x,y,w,h,P,t)` | ruang kerja era Victoria (perapian, jendela lengkung), papan nama di kuda-kuda, jendela kota kanal berhujan | pilihan nama, Eropa |
+| `orang(x,y,s,P,t,{baju,celana,kulit,peci,kebaya,angkat 0..1,tanpaWajah})` · `aula1928` · `tribunStadion(w,h,P,t,{sorak})` | orang generik (lengan naik mulus), aula pertemuan (spanduk polos), tribun stadion malam bersorak | kerumunan & sejarah pergerakan |
+
+**Aset set KULINER KECAP & KETCHUP (Yoga, 17 Nov 2026, video I-018):**
+| Fungsi | Isi | Cara pakai singkat |
+|---|---|---|
+| `botolSaus(x,y,s,{label,mata,lihat,rot})` · `botolKecap(x,y,s,{isi,tutup,kental,tinggi,label,mata})` · `botolKaca(x,y,s,{konten,isiWarna})` · `mata(x,y,s,jenis)` | botol saus tomat, botol kecap (manis/asin/ikan lewat warna isi), botol kaca bening berisi SVG apa pun, mata kartun (marah/kaget/senang) | label polos/teks kode, tanpa merek |
+| `tongIkan(x,y,s,t,{ekor,bau})` · `ikan(x,y,s,rot,{warna,kibas})` · `tempayan` | tong air garam ikan + ekor mengibas + garis bau, ikan/teri, tempayan tanah liat | "amis" dibuat lucu, bukan menjijikkan |
+| `warungBakso(w,h,P,t,{meja})` · `mangkukBakso` · `gerobakGorengan` · `gerobakNasgor` · `wajan` | warung keramik + lampu untai (menyala senja/malam), bakso berasap, gerobak gorengan, gerobak nasi goreng + wajan berapi | kuliner Indonesia |
+| `jung(x,y,s,P,t)` · `rumahPanggung` · `dekKapal(w,h,P,t,{cakrawala,tiangX})` | jung bertulang layar, rumah panggung Melayu, geladak kapal Eropa | jalur dagang |
+| `dapurPondok` · `jamur` · `kenari` · `tiram` · `dapurAmerika` · `panci` · `tomat` · `pabrikSaus` · `dapurRumah` | dapur Inggris berhujan, bahan isi botol, dapur pertanian + tungku, pabrik bata + ketel tembaga, dapur rumah Indonesia (rak) | sejarah resep |
+
+**Pose Tebe baru (17 Nov):** semangat (kepal tangan ke atas), sorak (dua tangan naik), haru (tangan di dada). `KS.outro` kini menerima `sub` & `subMulai` (baris kecil di bawah CTA; bawaan "Tulis jawabanmu di komentar").
+**Catatan kemulusan (17 Nov):** loncatan (`loncat:true`) pada Tebe besar (≥ 380 px) terbaca "frame dobel" oleh `cek_mulus.py` di titik puncaknya → untuk Tebe besar cukup ganti pose tanpa loncat. JEDA yang tidak tepat di celah > 0,04 dtk bisa terjepret ke celah lain di tengah frasa: periksa dulu (mis. "George | Earl").
+
 **Mesin bersama Shorts — `studio-aset/kerangka-shorts.js` (`KS`):** peta waktu narasi↔video + JEDA terjepret ke celah kata, teks layar berkelompok dari `waktu_kata.json` (penggantian ejaan: de-en-a → DNA), komposisi babak + transisi 0,6 dtk (dorong/geser/silang, easing sinus), intro & outro khas, label babak, watermark bergiliran, vinyet+butiran. Contoh pakai: `antrean/2026-11-15_i-009-bau-durian/visual/video.html`.
 
 **Musik baru (tanpa desir hujan):** `aset/musik/jenaka-ringan.wav` (98 BPM, marimba jenaka) · `aset/musik/belanja-ceria.wav` (108 BPM). Dibuat `scripts/buat_audio_aset.py --musik-baru`; punya lapisan pad berkelanjutan agar latar tidak pernah hening di sela kata (penyebab "audio terpotong" palsu di cek_mulus). Render dengan `--musik-vol 0.2`.

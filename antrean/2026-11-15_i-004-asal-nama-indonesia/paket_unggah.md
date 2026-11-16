@@ -1,7 +1,7 @@
 # Paket unggah - 2026-11-15_i-004-asal-nama-indonesia
 Raka - 15 Nov 2026 - Shorts 9:16 - label konten AI: NYALA (semua platform) - sampul = frame 0 (SIAPA YANG NAMAIN INDONESIA? (frame 0, revisi 1: versi lama "INDONESIA BUKAN DARI KITA?" dibuang, keputusan Pak Bima)), tanpa sampul terpisah.
 Revisi 2 (Nadia, 17 Nov, penyesuaian harian): judul, caption, awal deskripsi, dan komentar tersemat tidak lagi membocorkan jawaban. Sama persis dengan unggah.json.
-**Jadwal (dari rencana_marketing):** Selasa 17 Nov 2026, 12.00 WITA. Jadwal resmi ditulis saat `/terbitkan`.
+**Jadwal (usulan, 17 Nov):** Selasa 17 Nov 2026, 13.00 WITA (cadangan Rabu 18 Nov 13.00). Jadwal resmi ditulis saat `/terbitkan`.
 
 ## YouTube Shorts
 Judul (52 huruf, revisi 2): Asal Nama Indonesia: Siapa yang Pertama Menulisnya?
@@ -18,4 +18,4 @@ Kirim ke teman yang paling kencang teriak "Indonesia!" di stadion.
 #asalnamaindonesia #sejarahindonesia #sumpahpemuda #faktaunik #TernyataBegitu #TahukahKamu
 
 ## Jam tayang
-YouTube 12.00 (dugaan); TikTok & Reels 12.00 (dugaan). Semua dugaan, belum ada data kita sendiri.
+YouTube 13.00 (dugaan); TikTok & Reels 13.00 (dugaan). i-018 tayang 18.00 di hari yang sama (beda slot). Semua dugaan, belum ada data kita sendiri.

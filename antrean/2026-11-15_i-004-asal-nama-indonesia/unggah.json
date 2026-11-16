@@ -21,5 +21,12 @@
   },
   "instagram": {
     "caption": "Kata \"Indonesia\" pertama kali ditulis siapa, dan di mana? Tebak dulu sebelum nonton, lalu cocokkan di video.\nKirim ke teman yang paling kencang teriak \"Indonesia!\" di stadion.\n#asalnamaindonesia #sejarahindonesia #sumpahpemuda #faktaunik #TernyataBegitu #TahukahKamu"
-  }
+  },
+  "jadwal_tayang_usulan": "2026-11-17T13:00:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-18T13:00:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): SIAPA YANG NAMAIN INDONESIA?",
+  "_catatan": "jadwal dibaca terbitkan.py dari status.json -> jadwal_tayang. komentar_tersemat dipasang manual. Revisi 2 (Nadia, 17 Nov): judul, caption, dan awal deskripsi tidak membocorkan jawaban."
 }

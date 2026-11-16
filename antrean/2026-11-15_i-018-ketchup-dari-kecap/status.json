@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "I-018 ketchup dari kecap",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -39,6 +39,13 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-17",
       "hasil": "Langkah 2 & 3 laporan/harian.md dikerjakan, tanpa fakta baru. Hook: 'Kecap bukan tiruan KETCHUP. Asal usulnya kebalik: nama ketchup kemungkinan besar dipinjam dari kata KECAP.' → 'Kecap bukan tiruan KETCHUP. Asal usul namanya... ternyata AMIS.' (arah peminjaman baru dibuka di adegan 4). Judul: 'Asal Usul Kecap dan Ketchup: Siapa Pinjam Nama Siapa?' (54). Sampul: 'KECAP VS KETCHUP: SIAPA DULUAN?' (= teks layar adegan 1). Caption TikTok/IG + awal deskripsi jadi pertanyaan pancingan; ringkasan dipindah ke bagian spoiler. Celah 'ada botol LAIN...' sudah ada di ±11–14 dtk (dibiarkan). CTA: 'Menurutmu, siapa kakaknya: kecap atau saus tomat?' → 'Kirim ke teman yang baksonya wajib pakai saus TOMAT, terus bilang ke dia...' (loop ke kalimat pertama). 178 kata, ±77 dtk, 'kok bisa' mulai ±14,9 dtk. naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md diselaraskan. Tahap tetap produksi."
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "waktu": "2026-11-16T22:41",
+      "oleh": "Yoga (editor)",
+      "hasil": "final.mp4 80,9 dtk / 13,7 MB, thumbnail.png (duel kecap vs saus tomat + ikan melompat, ungu-plum, Tebe besar kiri bawah) teks 'KECAP VS KETCHUP: SIAPA DULUAN?'. Suara Dakocan eleven_v4 sekali (1.240 huruf, ±645 kredit); letupan 'p' di 56,36 dtk dihaluskan fade 50 ms (asli disimpan di audio/narasi_asli.mp3). 10 set baru + outro pendek. cek_mulus LULUS, cek_video LULUS."
     }
   ],
   "masalah": null,
