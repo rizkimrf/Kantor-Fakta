@@ -1,9 +1,20 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "i-019 odol merek jerman",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
-    {"tahap": "ide", "oleh": "Laras (riset)", "waktu": "2026-11-16", "catatan": "riset.md selesai, skor FT 8/10; tahun masuk Hindia Belanda & klaim 'pasta gigi pertama' dibuang"}
+    {
+      "tahap": "ide",
+      "oleh": "Laras (riset)",
+      "waktu": "2026-11-16",
+      "catatan": "riset.md selesai, skor FT 8/10; tahun masuk Hindia Belanda & klaim 'pasta gigi pertama' dibuang"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka (marketing)",
+      "waktu": "2026-11-16",
+      "catatan": "LANJUT, skor 15/20; slot 19 Nov 13.00; seo.md & rencana_marketing.md siap"
+    }
   ],
   "masalah": null
 }
