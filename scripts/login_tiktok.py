@@ -50,6 +50,7 @@ req = urllib.request.Request("https://open.tiktokapis.com/v2/oauth/token/", data
 tok = json.loads(urllib.request.urlopen(req, timeout=60).read())
 if "refresh_token" not in tok:
     raise SystemExit(f"Gagal menukar kode: {tok.get('error_description') or tok}")
-(ROOT / "tiktok_refresh_token.txt").write_text(tok["refresh_token"], encoding="utf-8")
+(Path.cwd() / "tiktok_refresh_token.txt").write_text(tok["refresh_token"], encoding="utf-8")
 print(f"Selesai. Berlaku {tok.get('refresh_expires_in', 0) // 86400} hari.")
+print(f"File: {Path.cwd() / 'tiktok_refresh_token.txt'}")
 print("Salin isi tiktok_refresh_token.txt ke TIKTOK_REFRESH_TOKEN (pengaturan environment), lalu hapus filenya.")
