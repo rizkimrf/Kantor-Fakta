@@ -87,7 +87,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 ## Siklus wajib: buat → tayang → ANALISA → perbaiki (perintah Bos, 16 Nov 2026)
 Konten selesai bukan berarti berhenti. Setiap video yang tayang wajib dianalisa dan hasilnya mengubah konten berikutnya:
 - Harian (sesi 17.47): performa 3 hari terakhir → `laporan/harian.md` berisi 3 langkah → dibaca produksi 05.41.
-- Mingguan (Senin 08.23): `/laporan-minggu` → 5 langkah minggu depan + perkembangan akun menuju target monetisasi.
+- Mingguan (Senin, di awal sesi produksi 05.41): `/laporan-minggu` → 5 langkah minggu depan + perkembangan akun menuju target monetisasi.
 - Data: konektor Supermetrics (uji coba gratis s.d. **29 Nov 2026**, Bos memutuskan TIDAK berlangganan). Mulai 30 Nov atau bila konektor tidak tersedia:
   Pak Bima meminta Bos lewat log Kantor Visual mengirim tangkapan layar statistik (YouTube Studio, TikTok, Instagram) setiap Senin, lalu Raka menganalisa dari gambar itu. Jangan pernah mengarang angka.
 
