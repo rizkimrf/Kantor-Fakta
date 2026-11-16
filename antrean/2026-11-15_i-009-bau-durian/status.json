@@ -1,85 +1,80 @@
 {
-  "tahap": "terjadwal",
-  "topik": "I-009 bau durian",
-  "dibuat": "2026-11-15T07:58",
-  "riwayat": [
-    {
-      "waktu": "2026-11-15",
-      "oleh": "Laras (riset)",
-      "tahap": "ide",
-      "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10. Klaim inti terverifikasi 2+ sumber; fungsi bau ditandai DUGAAN; angka 2.000x, tonase Sriwijaya, denda MRT, dan 65 juta tahun dibuang. lembar_tim.md baris Laras terisi. Lanjut ke pilih (Raka)."
-    },
-    {
-      "tahap": "pilih",
-      "oleh": "Raka (marketing)",
-      "waktu": "2026-11-15",
-      "hasil": "LANJUT, skor 18/20, slot Sen 16 Nov 12.00 WITA. rencana_marketing.md + seo.md selesai."
-    },
-    {
-      "tahap": "naskah",
-      "oleh": "Nadia (copywriting)",
-      "waktu": "2026-11-15",
-      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook (pertanyaan warung + angka): 'Kenapa durian bau BANGET? Ternyata DNA-nya punya EMPAT pabrik bau.' Judul: 'Kenapa Durian Bau Banget? Jawabannya Ada di DNA-nya'. 9 adegan, 140 kata, ±62 dtk, 2 klip. Skor naskah 9/9, skor viral 9/10. Fungsi bau 'diduga'; tanpa tonase/klaim kesehatan. Lanjut ke cek_seo (Raka)."
-    },
-    {
-      "tahap": "naskah (revisi 1)",
-      "oleh": "Nadia (copywriting)",
-      "waktu": "2026-11-15",
-      "hasil": "2 butir WAJIB Laras dikerjakan: adegan 8 'di antara tanaman yang genomnya dibandingkan, yang terdekat malah KAPAS'; komentar tersemat Bombacaceae dibuang, diganti fakta kelelawar penyerbuk Sulawesi (riset §9). Saran Laras dipakai (pemimpinnya ilmuwan kanker, makin ngebut). Raka: tidak ada WAJIB. 140 kata. Skor naskah 9/9, viral 9/10. naskah_baca/suara, unggah.json, paket_unggah.md diselaraskan. Lanjut ke cek_fakta."
-    },
-    {
-      "dari": "cek_fakta",
-      "ke": "produksi",
-      "waktu": "2026-11-15T22:03",
-      "oleh": "Pak Bima",
-      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 9/10"
-    },
-    {
-      "dari": "produksi",
-      "ke": "review",
-      "waktu": "2026-11-15T22:45",
-      "oleh": "Yoga (editor)",
-      "hasil": "Video final: 70,4 dtk, 13,5 MB (crf 23 = 19,3 MB, jadi skrip otomatis kompres ulang ke crf 26). cek_mulus & cek_video LULUS. Suara 1.011 huruf (sekali). 10 set baru + pose Tebe baru + musik jenaka-ringan. Sampul: close-up durian raksasa, hijau-limau, Tebe kecil tengah bawah."
-    },
-    {
-      "dari": "review",
-      "ke": "menunggu_persetujuan",
-      "waktu": "2026-11-15T22:48",
-      "oleh": "Pak Bima",
-      "hasil": "review LULUS, gerbang 10 butir ya, paraf lengkap"
-    },
-    {
-      "dari": "menunggu_persetujuan",
-      "ke": "disetujui",
-      "waktu": "2026-11-16T11:28",
-      "oleh": "Bos (Kantor Visual HP)",
-      "hasil": "Disetujui Bos lewat tombol Setujui"
-    },
-    {
-      "dari": "disetujui",
-      "ke": "terjadwal",
-      "waktu": "2026-11-16T03:29"
-    },
-    {
-      "waktu": "2026-11-16T11:38+08:00",
-      "oleh": "Bos (chat)",
-      "hasil": "Bos memutuskan unggah manual SEKARANG ke 3 platform; jadwal dimajukan"
-    }
-  ],
-  "masalah": null,
-  "skor_manajer": 8,
-  "video_asset_id": "af0fb211afe98ee1fa71fbb6d2cbd8bc",
-  "thumb_asset_id": "f099774fc9cbfad9dc5780c5686755aa",
-  "jadwal_tayang": "2026-11-16T11:38:00+08:00",
-  "terbit": {
-    "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
-    },
-    "tiktok": {
-      "catatan": "kunci belum diisi - unggah manual"
-    },
-    "instagram": {
-      "catatan": "kunci belum diisi - unggah manual"
-    }
+ "tahap": "terjadwal",
+ "topik": "I-009 bau durian",
+ "dibuat": "2026-11-15T07:58",
+ "riwayat": [
+  {
+   "waktu": "2026-11-15",
+   "oleh": "Laras (riset)",
+   "tahap": "ide",
+   "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10. Klaim inti terverifikasi 2+ sumber; fungsi bau ditandai DUGAAN; angka 2.000x, tonase Sriwijaya, denda MRT, dan 65 juta tahun dibuang. lembar_tim.md baris Laras terisi. Lanjut ke pilih (Raka)."
+  },
+  {
+   "tahap": "pilih",
+   "oleh": "Raka (marketing)",
+   "waktu": "2026-11-15",
+   "hasil": "LANJUT, skor 18/20, slot Sen 16 Nov 12.00 WITA. rencana_marketing.md + seo.md selesai."
+  },
+  {
+   "tahap": "naskah",
+   "oleh": "Nadia (copywriting)",
+   "waktu": "2026-11-15",
+   "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook (pertanyaan warung + angka): 'Kenapa durian bau BANGET? Ternyata DNA-nya punya EMPAT pabrik bau.' Judul: 'Kenapa Durian Bau Banget? Jawabannya Ada di DNA-nya'. 9 adegan, 140 kata, ±62 dtk, 2 klip. Skor naskah 9/9, skor viral 9/10. Fungsi bau 'diduga'; tanpa tonase/klaim kesehatan. Lanjut ke cek_seo (Raka)."
+  },
+  {
+   "tahap": "naskah (revisi 1)",
+   "oleh": "Nadia (copywriting)",
+   "waktu": "2026-11-15",
+   "hasil": "2 butir WAJIB Laras dikerjakan: adegan 8 'di antara tanaman yang genomnya dibandingkan, yang terdekat malah KAPAS'; komentar tersemat Bombacaceae dibuang, diganti fakta kelelawar penyerbuk Sulawesi (riset §9). Saran Laras dipakai (pemimpinnya ilmuwan kanker, makin ngebut). Raka: tidak ada WAJIB. 140 kata. Skor naskah 9/9, viral 9/10. naskah_baca/suara, unggah.json, paket_unggah.md diselaraskan. Lanjut ke cek_fakta."
+  },
+  {
+   "dari": "cek_fakta",
+   "ke": "produksi",
+   "waktu": "2026-11-15T22:03",
+   "oleh": "Pak Bima",
+   "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 9/10"
+  },
+  {
+   "dari": "produksi",
+   "ke": "review",
+   "waktu": "2026-11-15T22:45",
+   "oleh": "Yoga (editor)",
+   "hasil": "Video final: 70,4 dtk, 13,5 MB (crf 23 = 19,3 MB, jadi skrip otomatis kompres ulang ke crf 26). cek_mulus & cek_video LULUS. Suara 1.011 huruf (sekali). 10 set baru + pose Tebe baru + musik jenaka-ringan. Sampul: close-up durian raksasa, hijau-limau, Tebe kecil tengah bawah."
+  },
+  {
+   "dari": "review",
+   "ke": "menunggu_persetujuan",
+   "waktu": "2026-11-15T22:48",
+   "oleh": "Pak Bima",
+   "hasil": "review LULUS, gerbang 10 butir ya, paraf lengkap"
+  },
+  {
+   "dari": "menunggu_persetujuan",
+   "ke": "disetujui",
+   "waktu": "2026-11-16T11:28",
+   "oleh": "Bos (Kantor Visual HP)",
+   "hasil": "Disetujui Bos lewat tombol Setujui"
+  },
+  {
+   "dari": "disetujui",
+   "ke": "terjadwal",
+   "waktu": "2026-11-16T03:29"
+  },
+  {
+   "waktu": "2026-11-16T11:38+08:00",
+   "oleh": "Bos (chat)",
+   "hasil": "Bos memutuskan unggah manual SEKARANG ke 3 platform; jadwal dimajukan"
   }
+ ],
+ "masalah": null,
+ "skor_manajer": 8,
+ "video_asset_id": "af0fb211afe98ee1fa71fbb6d2cbd8bc",
+ "thumb_asset_id": "f099774fc9cbfad9dc5780c5686755aa",
+ "jadwal_tayang": "2026-11-16T18:00:00+08:00",
+ "terbit": {
+  "youtube": {
+   "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+  }
+ },
+ "catatan_uji": "Uji coba unggah otomatis pertama (perintah Bos 16 Nov 14.59): Instagram + TikTok (inbox) di sesi 17.47. Bos memantau."
 }
