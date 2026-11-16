@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "terjadwal",
   "topik": "I-015 harga 99900",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -47,10 +47,34 @@
       "waktu": "2026-11-15T22:48",
       "oleh": "Pak Bima",
       "hasil": "review LULUS, gerbang 10 butir ya, paraf lengkap"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "waktu": "2026-11-16T11:28",
+      "oleh": "Bos (Kantor Visual HP)",
+      "hasil": "Disetujui Bos lewat tombol Setujui"
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "waktu": "2026-11-16T03:29"
     }
   ],
   "masalah": null,
   "skor_manajer": 8,
   "video_asset_id": "628bf34d0d1668c7d4ec91f0e9d00441",
-  "thumb_asset_id": "6d6ba9a1d7bc50e0056600044166b772"
+  "thumb_asset_id": "6d6ba9a1d7bc50e0056600044166b772",
+  "jadwal_tayang": "2026-11-17T12:00:00+08:00",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "catatan": "kunci belum diisi - unggah manual"
+    },
+    "instagram": {
+      "catatan": "kunci belum diisi - unggah manual"
+    }
+  }
 }
