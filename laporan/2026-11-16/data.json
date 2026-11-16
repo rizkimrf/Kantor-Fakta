@@ -1,0 +1,18 @@
+{
+  "tanggal": "2026-11-16",
+  "periode": ["last_7_days", "last_28_days"],
+  "sumber": {
+    "youtube_YT2": {"status": "tidak tersedia", "alasan": "Supermetrics NOT_AUTHENTICATED - Bos perlu login sumber YouTube di Supermetrics"},
+    "tiktok_TIKBA": {"status": "tidak tersedia", "alasan": "Supermetrics NOT_AUTHENTICATED"},
+    "instagram_IGI": {"status": "tidak tersedia", "alasan": "Supermetrics NOT_AUTHENTICATED"}
+  },
+  "tangkapan_layar_bos": "belum ada",
+  "catatan": "Tidak ada angka performa. Jangan mengarang. Video tayang sejauh ini: 1 (bau hujan, unggah manual YouTube & TikTok 15 Nov 2026).",
+  "data_internal": {
+    "tayang": ["2026-11-15_i-007-bau-hujan"],
+    "menunggu_persetujuan": ["2026-11-15_i-009-bau-durian", "2026-11-15_i-015-harga-99900"],
+    "produksi": ["2026-11-15_i-004-asal-nama-indonesia", "2026-11-15_i-008-mitos-micin-bikin-bodoh", "2026-11-15_i-018-ketchup-dari-kecap"],
+    "terjadwal": 0,
+    "kredit_elevenlabs_bulan_ini": 1058
+  }
+}
