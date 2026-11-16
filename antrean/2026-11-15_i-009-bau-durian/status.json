@@ -1,5 +1,5 @@
 {
- "tahap": "terjadwal",
+ "tahap": "tayang",
  "topik": "I-009 bau durian",
  "dibuat": "2026-11-15T07:58",
  "riwayat": [
@@ -69,16 +69,25 @@
    "waktu": "2026-11-16T17:51+08:00",
    "oleh": "Raka (marketing)",
    "hasil": "terbitkan sore: TikTok OK (kotak masuk), Instagram GAGAL 2x -> unggah manual Bos, YouTube manual (audit)"
+  },
+  {
+   "dari": "terjadwal",
+   "ke": "tayang",
+   "waktu": "2026-11-16T21:38+08:00",
+   "oleh": "Pak Bima",
+   "hasil": "Bos menandai YouTube & Instagram sudah diunggah manual; TikTok di kotak masuk"
   }
  ],
- "masalah": "Instagram otomatis gagal di tahap unggah video (rupload). Diagnosa: terbitkan.py --uji kini mengunggah video uji 3 dtk tanpa terbit dan mencatat pesan error lengkap.",
+ "masalah": null,
  "skor_manajer": 8,
  "video_asset_id": "af0fb211afe98ee1fa71fbb6d2cbd8bc",
  "thumb_asset_id": "f099774fc9cbfad9dc5780c5686755aa",
  "jadwal_tayang": "2026-11-16T18:00:00+08:00",
  "terbit": {
   "youtube": {
-   "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+   "id": "manual",
+   "waktu": "2026-11-16T11:21:47.051Z",
+   "catatan": "Bos unggah manual (YouTube Studio)"
   },
   "tiktok": {
    "id": "v_inbox_file~v2.7708703935787534357",
@@ -88,7 +97,8 @@
   "instagram": {
    "id": "manual",
    "catatan": "otomatis gagal 2x (ProcessingFailedError rupload) - Bos unggah manual 16 Nov malam",
-   "error_otomatis": "ProcessingFailedError (rupload, non-retriable)"
+   "error_otomatis": "ProcessingFailedError (rupload, non-retriable)",
+   "waktu": "2026-11-16T11:21:48.249Z"
   }
  },
  "catatan_uji": "Uji coba unggah otomatis pertama (perintah Bos 16 Nov 14.59): Instagram + TikTok (inbox) di sesi 17.47. Bos memantau."

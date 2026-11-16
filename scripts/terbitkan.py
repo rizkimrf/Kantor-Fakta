@@ -19,6 +19,23 @@ from pathlib import Path
 from _umum import ROOT, muat_env, set_status
 
 muat_env()
+
+def http(url, data=None, headers=None, method=None, raw=False):
+    if isinstance(data, dict):
+        data = json.dumps(data).encode(); headers = {"Content-Type": "application/json", **(headers or {})}
+    req = urllib.request.Request(url, data=data, headers=headers or {}, method=method or ("POST" if data else "GET"))
+    try:
+        with urllib.request.urlopen(req, timeout=600) as r:
+            body = r.read()
+            return r if raw else (json.loads(body) if body else {})
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"{e.code} {url.split('?')[0]}: {e.read()[:400]!r}")
+
+
+def form(url, **f):
+    return http(url, urllib.parse.urlencode(f).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
+
+
 CEK = "--cek" in sys.argv
 if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah mencetak kunci/token
     def _uji(nama, f):
@@ -71,21 +88,6 @@ if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah me
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 SEKARANG = datetime.datetime.now(WITA)
 
-
-def http(url, data=None, headers=None, method=None, raw=False):
-    if isinstance(data, dict):
-        data = json.dumps(data).encode(); headers = {"Content-Type": "application/json", **(headers or {})}
-    req = urllib.request.Request(url, data=data, headers=headers or {}, method=method or ("POST" if data else "GET"))
-    try:
-        with urllib.request.urlopen(req, timeout=600) as r:
-            body = r.read()
-            return r if raw else (json.loads(body) if body else {})
-    except urllib.error.HTTPError as e:
-        raise RuntimeError(f"{e.code} {url.split('?')[0]}: {e.read()[:400]!r}")
-
-
-def form(url, **f):
-    return http(url, urllib.parse.urlencode(f).encode(), {"Content-Type": "application/x-www-form-urlencoded"})
 
 
 # ---------- YouTube ----------
