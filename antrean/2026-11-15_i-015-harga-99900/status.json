@@ -64,6 +64,11 @@
       "waktu": "2026-11-16T11:38+08:00",
       "oleh": "Bos (chat)",
       "hasil": "Bos memutuskan unggah manual SEKARANG ke 3 platform; jadwal dimajukan"
+    },
+    {
+      "waktu": "2026-11-16T11:49+08:00",
+      "oleh": "Bos (Kantor Visual HP)",
+      "hasil": "Bos menandai sudah unggah manual TikTok & Instagram; YouTube belum ditandai"
     }
   ],
   "masalah": null,
@@ -76,10 +81,12 @@
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
     },
     "tiktok": {
-      "catatan": "kunci belum diisi - unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-16T03:48:28.491Z"
     },
     "instagram": {
-      "catatan": "kunci belum diisi - unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-16T03:48:30.840Z"
     }
   }
 }
