@@ -1,9 +1,9 @@
 # SEO I-019 Odol (Raka, 16 Nov 2026) — volume: TANPA DATA (Semrush tidak dipakai; hanya hasil pencarian web)
-**Kata kunci utama:** "odol bahasa apa" / "kenapa pasta gigi disebut odol" (pola hasil teratas: Tirto "Semua Pasta Gigi adalah Odol", Wiktionary, Stekom).
+**Kata kunci utama (diselaraskan 17 Nov, disetujui Raka di cek_seo):** "odol itu apa" (judul + sampul + hook). Turunan terucap: "kenapa pasta gigi disebut odol". "odol bahasa apa" hanya di tag/turunan (tidak di judul/sampul karena bisa menyesatkan). Pola hasil teratas: Tirto "Semua Pasta Gigi adalah Odol", Wiktionary, Stekom.
 **Turunan:** "asal kata odol", "odol itu apa", "arti odol", "beda odol dan pasta gigi", "sejarah odol".
 **Pertanyaan penonton:** 1) Odol itu bahasa apa? 2) Kenapa semua pasta gigi disebut odol? 3) Odol aslinya apa?
 **Kalimat pembuka disarankan:** "Odol itu bahasa apa sih? Kok semua pasta gigi disebut odol?" (kata kunci <3 dtk).
-**Teks layar pertama:** "ODOL = BAHASA APA?" · **Teks sampul:** "ODOL = BAHASA APA?" (judul YouTube beda kata: "Kamu Pakai Tiap Hari Tanpa Tahu").
+**Teks layar pertama & teks sampul (diselaraskan 17 Nov):** "ODOL ITU APA?" · judul YouTube: "Odol Itu Apa? Kamu Sebut Tiap Pagi Tanpa Tahu".
 **Caption (pertanyaan pancingan, tanpa jawaban):**
 - TikTok: "Odol itu bahasa apa, coba tebak? Jawabanmu pasti meleset. #TernyataBegitu #Odol #FaktaUnik #AsalKata"
 - IG: pembuka "Kamu pasti bilang 'ambil odol' tiap pagi." lalu ajak "kirim ke temanmu yang bilang 'odol Pepsodent'".

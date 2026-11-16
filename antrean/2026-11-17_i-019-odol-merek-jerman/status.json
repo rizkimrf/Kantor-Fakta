@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "i-019 odol merek jerman",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
@@ -20,7 +20,21 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-17",
       "catatan": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (in medias res): 'Mulut penuh busa, tiba-tiba kepikiran: odol itu sebenarnya APA, sih?'. Judul: 'Odol Itu Sebenarnya Apa? Kamu Sebut Tiap Pagi Tanpa Tahu' (56, tanpa 'bahasa apa'). Sampul: 'ODOL ITU APA?' (ganti 'ODOL = BAHASA APA?'). Kata kunci utama diganti 'odol itu apa'. 8 adegan, 155 kata, ±68 dtk, 1 klip. Indonesia = dugaan; tanpa tahun Hindia Belanda, tanpa 'pertama', tanpa logo asli, tanpa klaim kesehatan. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-17",
+      "catatan": "WAJIB Laras W1: 'pasta giginya baru nyusul belakangan' → 'Yang dijual pertama itu obat KUMUR. Pasta giginya juga DIBUAT.' (narasi, baca/suara, deskripsi, catatan_fakta). WAJIB Raka: caption TikTok ±124 huruf. Judul saran Raka: 'Odol Itu Apa? Kamu Sebut Tiap Pagi Tanpa Tahu' (45). Caption IG 'Kamu pernah bilang ...'. Puccini tetap 'bikin lagu' (bukan jingle/lagu iklan resmi). lembar_tim.md & seo.md diselaraskan ke 'odol itu apa'. W2 (sumber kedua mekanisme merek generik) = tugas Laras di riset.md. 160 kata, ±70 dtk. Skor ulang: naskah 8/9, viral 8/10. Lanjut ke cek_fakta (Pak Bima)."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-17T07:00",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }

@@ -11,7 +11,7 @@
   "caption_komentar": "Bonus: di gua Pinnacle Point, Afrika Selatan, peneliti menemukan lebih dari 400.000 artefak, termasuk tanda api di bawah, di dalam, DAN di atas lapisan abu Toba. Jujur, sebelum nonton kamu kira Danau Toba terbentuk dari apa? Dan yang pernah ke Samosir, absen dulu di sini.",
   "caption_tiktok": "Danau Toba terbentuk dari apa? Kalau kamu pernah berenang di sana, tebak dulu: kamu berenang di atas apa? #danautoba #TernyataBegitu #FaktaUnik #Sumut",
   "caption_instagram": "Danau Toba bukan cuma danau cantik. Terbentuk dari apa, coba tebak dulu sebelum nonton.\nKirim ke temanmu yang pernah ke Samosir.\n#danautoba #samosir #faktaunik #Sumut #TernyataBegitu",
-  "tag": ["danau toba terbentuk dari apa", "letusan gunung toba", "kenapa danau toba bisa terbentuk", "pulau samosir terbentuk dari apa", "supervulkan toba", "toba supervolcano", "gunung toba meletus manusia punah", "kaldera toba", "danau toba", "fakta unik", "ternyata begitu"],
+  "tag": ["danau toba terbentuk dari apa", "letusan gunung toba", "kenapa danau toba bisa terbentuk", "pulau samosir terbentuk dari apa", "supervulkan toba","gunung toba meletus manusia punah", "kaldera toba", "danau toba", "fakta unik", "ternyata begitu"],
   "pola_hook": "konsekuensi personal ('Liburan ke Toba? Kamu berenang di atas LUBANG.') + pertanyaan kata kunci; jenis ini belum dipakai di 5 video terakhir (pembalikan arah, cerita-asal, pertanyaan+angka, tes penonton, pertanyaan+pembalikan pelaku)",
   "hook_kandidat": [
     {"teks": "Liburan ke Toba? Kamu berenang di atas LUBANG. Danau Toba terbentuk dari apa?", "skor": 9, "alasan": "Konsekuensi personal: penonton langsung jadi tokohnya (liburan, berenang). Objek konkret, 'lubang' bikin janggal tanpa membocorkan letusan/kaldera, kata kunci utama terucap ±3-5 dtk, nyambung ke sampul 'DANAU APA LUBANG?'. 13 kata. TERPILIH."},
@@ -46,7 +46,8 @@
     "kata_kunci_utama": "danau toba terbentuk dari apa",
     "kata_kunci_turunan": ["pulau samosir terbentuk dari apa", "letusan gunung toba", "gunung toba meletus manusia punah", "kenapa danau toba bisa terbentuk", "supervulkan toba"]
   },
-  "catatan_fakta": "Setiap kalimat dari riset.md. Angka terucap hanya dua: 'sekitar tujuh puluh empat ribu tahun lalu' (aman per riset) dan 'lebih dari tujuh ribu kilometer' (Danau Malawi, PNAS 2013). TIDAK dipakai: volume letusan, lebar kaldera, tebal abu, 'terbesar sepanjang sejarah', angka musim dingin vulkanik, 'memusnahkan manusia', 'tak berdampak sama sekali', 'pasti meletus lagi'. Teori punah disebut 'katanya' dan 'ada ilmuwan yang ngira' (Ambrose 1998: ±3.000-10.000 individu = 'beberapa ribu'). Kesimpulan dirumuskan aman: 'bukti terbaru nggak dukung cerita nyaris punah' + 'dampak ke iklim? masih debat'. Bukti gua: Pinnacle Point (Nature 2018), aktivitas manusia (api, alat batu) berlanjut sebelum, saat, sesudah abu jatuh; frasa 'di lapisan abu Toba ada bekas api unggun' mengikuti rumusan riset. 'Berenang di KAWAH gunung api' = kiasan yang disetujui Laras (Toba = kaldera). 'Manusianya malah BANDEL' = kiasan untuk 'tetap bertahan'. 'Endapan danau' di atas Samosir = ±100 m sedimen danau (Frontiers 2015), tanpa angka.",
+  "catatan_fakta": "Setiap kalimat dari riset.md. Angka terucap hanya dua: 'sekitar tujuh puluh empat ribu tahun lalu' (aman per riset) dan 'lebih dari tujuh ribu kilometer' (Danau Malawi, PNAS 2013). TIDAK dipakai: volume letusan, lebar kaldera, tebal abu, 'terbesar sepanjang sejarah', angka musim dingin vulkanik, 'memusnahkan manusia', 'tak berdampak sama sekali', 'pasti meletus lagi'. Teori punah disebut 'katanya' dan 'ada ilmuwan yang ngira' (Ambrose 1998: ±3.000-10.000 individu = 'beberapa ribu'). Kesimpulan dirumuskan aman: 'bukti terbaru nggak dukung cerita nyaris punah' + 'dampak ke iklim? masih debat'. Bukti gua: Pinnacle Point (Nature 2018), aktivitas manusia (api, alat batu) berlanjut sebelum, saat, sesudah abu jatuh; revisi 1: 'api unggun' → 'bekas API' (sumber: signs of fire); abu = serpihan kaca mikroskopis, divisualkan garis tipis. 'Berenang di KAWAH raksasa gunung api' = kiasan yang disetujui Laras (Toba = kaldera), 'raksasa' supaya tidak terdengar gunung aktif. 'Manusia di sana malah BANDEL' = kiasan 'tetap bertahan', dibatasi ke situs itu (tidak menggeneralisasi). Komentar tersemat memakai fakta Pinnacle Point >400.000 artefak (UCT, ScienceDaily, NatGeo), bukan Jwalapuram (atribusi sumber diragukan). 'Endapan danau' di atas Samosir = ±100 m sedimen danau (Frontiers 2015), tanpa angka.",
+  "revisi_1": "17 Nov 2026 (Nadia): WAJIB Laras dikerjakan: W1 komentar tersemat Jwalapuram → Pinnacle Point >400.000 artefak + tanda api di bawah/di dalam/di atas lapisan abu; W2 visual adegan 7 = garis abu tipis + inset serpihan kaca mikroskopis (catatan_yoga). Saran Laras dipakai: 'Manusia di sana malah BANDEL', 'KAWAH raksasa gunung api', 'bekas API' (tanpa 'unggun'), deskripsi 'terutama dibentuk letusan super ±74.000 tahun lalu', opsi judul 'Ilmuwan Salah Duga' dibuang. Saran Raka dipakai: tag 'kaldera toba' (ganti 'toba supervolcano', tetap 10 tag), teks layar kutipan viral ('KAYAK KARDUS DIDUDUKIN', 'BERENANG DI KAWAH!'). Malawi dipertahankan (durasi ±80 dtk, tidak lewat). 187 kata. Tanpa fakta baru di narasi. Skor ulang jujur: naskah 9/9, viral 9/10 (tetap; 'bekas api' sedikit kurang hangat dari 'api unggun', diimbangi visual).",
   "adegan": [
     {
       "no": 1,
@@ -116,9 +117,10 @@
     },
     {
       "no": 7,
-      "narasi": "Tapi di gua Afrika Selatan, di lapisan abu Toba... ada bekas API unggun. Manusia di sana tetap bikin alat batu, sebelum, saat, dan sesudah abunya jatuh.",
-      "teks_layar": "ADA API UNGGUN",
-      "visual": "The map zooms into the mouth of a coastal sea cave at sunset in South Africa; inside, a cut-away of the cave floor shows a thin pale ash layer, and at that same level a warm campfire glows next to simple stone tools and a few animal bones; ancient people (simple silhouettes) keep working stones around the fire; Tebe crouches by the fire warming his hands, proud smile; camera pushes in toward the flame; flat style, no text in the image.",
+      "narasi": "Tapi di gua Afrika Selatan, di lapisan abu Toba... ada bekas API. Manusia di sana tetap bikin alat batu, sebelum, saat, dan sesudah abunya jatuh.",
+      "teks_layar": "ADA BEKAS API",
+      "visual": "The map zooms into the mouth of a coastal sea cave at sunset in South Africa; inside, a cut-away of the cave floor shows soil strata where the Toba ash is only a very THIN, barely visible hairline band (NOT a thick white layer); a small circular microscope inset pops up showing tiny sharp transparent volcanic glass shards; small fire traces (charcoal, a modest hearth glow), simple stone tools and a few animal bones appear BELOW, WITHIN and ABOVE that thin band; ancient people (simple silhouettes) keep working stones; Tebe crouches by the small fire warming his hands, proud smile; camera pushes in toward the flame; flat style, no text in the image.",
+      "catatan_yoga": "WAJIB (Laras, cek_riset W2): abu Toba di Pinnacle Point berupa serpihan kaca mikroskopis (cryptotephra), bukan lapisan abu tebal. Gambar garis tipis + inset mikroskop; jangan lapisan putih tebal. Jejak api & alat batu ada di bawah, di dalam, dan di atas garis itu.",
       "maskot": true,
       "jenis_visual": "gambar",
       "durasi": 10.2,
@@ -138,8 +140,8 @@
     },
     {
       "no": 9,
-      "narasi": "Jadi bukti terbaru nggak dukung cerita nyaris punah. Manusianya malah BANDEL. Dan ternyata, memang begitu. Kirim ke temanmu yang pernah ke Samosir dan ngira itu cuma danau. Bilangin: dia berenang di KAWAH gunung api. Terus tanya dia...",
-      "teks_layar": "KIRIM KE TEMANMU...",
+      "narasi": "Jadi bukti terbaru nggak dukung cerita nyaris punah. Manusia di sana malah BANDEL. Dan ternyata, memang begitu. Kirim ke temanmu yang pernah ke Samosir dan ngira itu cuma danau. Bilangin: dia berenang di KAWAH raksasa gunung api. Terus tanya dia...",
+      "teks_layar": "BERENANG DI KAWAH!",
       "visual": "Back at Lake Toba at golden hour with Samosir island in the middle; Tebe floats in a swim ring, gives a cheeky wink, then holds up a phone and mimes sending a message to the viewer; camera cranes up high to reveal the whole lake as a giant water-filled bowl ringed by steep cliffs, then drifts back down to the water surface exactly like the opening shot (for the loop); flat style, no text in the image.",
       "maskot": true,
       "jenis_visual": "gambar",

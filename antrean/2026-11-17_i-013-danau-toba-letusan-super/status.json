@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "i-013 danau toba letusan super",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
@@ -20,7 +20,21 @@
       "oleh": "Nadia (copywriting)",
       "waktu": "2026-11-17",
       "catatan": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (konsekuensi personal): 'Liburan ke Toba? Kamu berenang di atas LUBANG. Danau Toba terbentuk dari apa?'. Judul: 'Danau Toba Terbentuk dari Apa? Kamu Berenang di Atas Lubang' (59). Sampul: 'DANAU APA LUBANG?' (belah dua, usul Yoga). 9 adegan, 185 kata, ±80 dtk, 2 klip, 2 angka. Celah 7,7-12,6 dtk, 'kok bisa' mulai ±12,6 dtk, penutup share Samosir + loop. Skor naskah 9/9, viral 9/10. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-17",
+      "catatan": "WAJIB Laras: komentar tersemat Jwalapuram → Pinnacle Point >400.000 artefak + tanda api di bawah/dalam/atas lapisan abu; visual adegan 7 = garis abu tipis + inset serpihan kaca mikroskopis (catatan_yoga). Saran Laras: 'Manusia di sana malah BANDEL', 'KAWAH raksasa gunung api', 'bekas API' (tanpa unggun), deskripsi 'terutama dibentuk letusan super', opsi judul 'Ilmuwan Salah Duga' dibuang. Saran Raka: tag 'kaldera toba', teks layar kutipan viral. Semua file diselaraskan. 187 kata, ±80 dtk. Skor ulang: naskah 9/9, viral 9/10. Lanjut ke cek_fakta (Pak Bima)."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-17T07:00",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }
