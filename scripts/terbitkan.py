@@ -8,7 +8,9 @@ Aturan:
 - Jadwal: slot berikutnya dari JAM_TAYANG_SHORTS / JAM_TAYANG_PANJANG (WITA) bila belum ada `jadwal_tayang`.
 - YouTube diunggah segera dengan publishAt = jadwal (YouTube yang menayangkan tepat waktu).
 - TikTok & Instagram diunggah saat jadwal sudah tiba (paling cepat 15 menit sebelum).
-- Sampul = frame pertama video (video_cover_timestamp_ms=0 / thumb_offset=0). Label konten AI selalu dinyalakan.
+- Sampul = frame pertama video (video_cover_timestamp_ms=0 / thumb_offset=0). Label AI: YouTube containsSyntheticMedia,
+  TikTok is_aigc (mode direct; mode inbox: Bos menyalakan saat Posting). Instagram API TIDAK punya tombol label AI ->
+  ingatkan Bos menyalakan "Label AI" di aplikasi setelah Reels terbit.
 - Data teks dari antrean/<folder>/unggah.json (ditulis Raka):
   {"youtube":{"judul":"","deskripsi":"","tag":[]}, "tiktok":{"caption":""}, "instagram":{"caption":""}}
 - Platform yang kuncinya belum diisi dilewati (dicatat di status.json -> "terbit")."""
