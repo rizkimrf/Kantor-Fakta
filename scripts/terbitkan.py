@@ -24,7 +24,7 @@ if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah me
     def _uji(nama, f):
         try: print(f"{nama}: OK - {f()}")
         except Exception as e: print(f"{nama}: GAGAL - {str(e)[:200]}")
-    for k in ["IG_ACCESS_TOKEN", "IG_USER_ID", "TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN",
+    for k in ["ELEVENLABS_API_KEY", "ELEVENLABS_VOICE_ID", "IG_ACCESS_TOKEN", "IG_USER_ID", "TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN",
               "TIKTOK_MODE", "YT_AUDIT_LOLOS"]:
         print(f"{k}: {'terisi' if os.environ.get(k) else 'KOSONG'}")
     def _ig():
@@ -46,7 +46,11 @@ if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah me
             headers={"Authorization": f"Bearer {t['access_token']}"}), timeout=60).read())
         sama = "refresh token tetap" if t.get("refresh_token") == os.environ["TIKTOK_REFRESH_TOKEN"] else "REFRESH TOKEN BERGANTI"
         return f"akun {u['data']['user']['display_name']}, scope {t.get('scope')}, {sama}"
-    _uji("Instagram", _ig); _uji("Instagram unggah", _ig_unggah); _uji("TikTok", _tt)
+    def _el():  # cek kunci ElevenLabs tanpa memakai kredit suara
+        r = urllib.request.Request("https://api.elevenlabs.io/v1/voices/" + os.environ.get("ELEVENLABS_VOICE_ID", ""),
+                                   headers={"xi-api-key": os.environ.get("ELEVENLABS_API_KEY", "")})
+        return "suara " + json.loads(urllib.request.urlopen(r, timeout=60).read()).get("name", "?")
+    _uji("Instagram", _ig); _uji("Instagram unggah", _ig_unggah); _uji("TikTok", _tt); _uji("ElevenLabs", _el)
     raise SystemExit(0)
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 SEKARANG = datetime.datetime.now(WITA)

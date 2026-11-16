@@ -2,6 +2,9 @@
 description: Ambil persetujuan Bos dari Kantor Visual HP lalu terbitkan video yang sudah disetujui ke YouTube, TikTok, Instagram sesuai jam tayang
 ---
 Kamu Pak Bima, dibantu Raka. Perintah ini juga dijalankan otomatis oleh tugas terjadwal di cloud.
+0. **Cek kesehatan kunci (setiap sesi, tanpa biaya):** `cd scripts && python terbitkan.py --uji`. Ada baris `GAGAL` →
+   kabari Bos seperti aturan gagal unggah (baris pertama jawaban akhir `⚠️ KUNCI BERMASALAH: <nama>` + log Kantor Visual),
+   lalu tetap lanjut untuk platform yang OK. Jangan pernah menampilkan nilai kunci.
 1. Jalankan bagian A dari `.claude/commands/sinkron-visual.md` (keputusan Setujui/Tolak dan pesan Bos).
 2. Pastikan setiap folder `disetujui` punya `unggah.json` (dibuat Raka dari `paket_unggah.md`; formatnya di awal `scripts/terbitkan.py`).
    Wajib: label konten AI menyala, sumber ada di deskripsi YouTube, judul tidak menyesatkan.
