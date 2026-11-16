@@ -1621,3 +1621,254 @@
   Object.assign(A, { mata, botolSaus, botolKecap, botolKaca, tongIkan, ikan, mangkukBakso, warungBakso, gerobakGorengan, jung, tempayan, rumahPanggung, dekKapal, dapurPondok,
     jamur, kenari, tiram, tomat, dapurAmerika, panci, pabrikSaus, dapurRumah, gerobakNasgor, wajan });
 })(typeof window !== "undefined" ? window : globalThis);
+
+/* ---------- Tambahan Yoga, 17 Nov 2026 — video mitos micin (I-008) ----------
+ * butir & hujan micin, toples micin TANPA merek, surat 1968 (baris = coretan abstrak), gerobak angkringan malam, mesin tik,
+ * papan detektif + botol arak + pengocok garam, lab 1969 (cahaya putih dingin), tikus lab imut (tanpa luka), kandang,
+ * jarum suntik kartun (tanpa darah), sendok, otak kartun, ruang uji tersamar + mangkuk sup bertanda ○/△, papan klip,
+ * ruang arsip + stempel karet (simbol abstrak, tanpa huruf), map arsip, keju, molekul kembar, dapur terang, panggung sorot.
+ */
+(function (root) {
+  const A = (typeof module !== "undefined" && module.exports && module.exports.PALET) ? module.exports : root.ASET;
+  let _n = 0; const uid = (p) => `${p}m${++_n}`;
+  const f1 = (v) => Math.round(v * 10) / 10, f2 = (v) => Math.round(v * 100) / 100;
+  const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+  const acak = (b) => { let s = b; return () => (s = (s * 9301 + 49297) % 233280) / 233280; };
+  const g = (x, y, s, isi, rot = 0) => `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${f2(rot)}) scale(${f2(s)})">${isi}</g>`;
+  const malam = (P) => P.nama === "malam";
+
+  // butir kristal micin (jarum heksagonal pendek, berkilau). o: {kilau 0..1}
+  function butirMicin(x, y, s, rot = 0, o = {}) {
+    const k = o.kilau ?? 0.6;
+    return g(x, y, s, `<path d="M-7 -20 L7 -22 L11 18 L-3 22 L-11 16Z" fill="#F4FAFF"/><path d="M7 -22 L11 18 L-3 22Z" fill="#CFE2EE"/><path d="M-7 -20 L-3 -4 L-11 16Z" fill="#FFFFFF" opacity=".9"/>
+      ${k > 0 ? `<path d="M0 -34 L3 -24 L13 -21 L3 -18 L0 -8 L-3 -18 L-13 -21 L-3 -24Z" fill="#FFFFFF" opacity="${f2(k)}"/>` : ""}`, rot);
+  }
+  // hujan micin slow-motion: butir jatuh pelan & berputar di kotak (x0..x0+w, y0..y0+h). o: {n, cepat, benih, skala}
+  function hujanMicin(x0, y0, w, h, t = 0, o = {}) {
+    const r = acak(o.benih || 41), n = o.n || 40, v = o.cepat ?? 0.12; let s = "";
+    for (let i = 0; i < n; i++) {
+      const bx = r() * w, fase = r(), sc = (o.skala || 1) * (0.6 + r() * 0.9), rs = (r() - 0.5) * 120, q = (fase + t * v * (0.7 + r() * 0.6)) % 1;
+      s += butirMicin(x0 + bx + Math.sin(t * 0.8 + i) * 14, y0 + q * h, sc, rs * t + i * 37, { kilau: 0.3 + 0.7 * Math.abs(Math.sin(t * 2.4 + i)) });
+    }
+    return s;
+  }
+  // tumpukan butir micin (di sendok/piring). lebar ~w
+  function gunungMicin(x, y, s, w = 120, benih = 5) {
+    const r = acak(benih); let q = `<path d="M${-w / 2} 0 Q0 ${-w * 0.55} ${w / 2} 0Z" fill="#EAF3F8"/>`;
+    for (let i = 0; i < 30; i++) { const a = r() * 2 - 1, hgt = (1 - a * a) * w * 0.36; q += butirMicin(a * w * 0.42, -r() * hgt, 0.32 + r() * 0.22, r() * 360, { kilau: r() < 0.2 ? 0.7 : 0 }); }
+    return g(x, y, s, q);
+  }
+  // toples micin polos (tanpa merek, label kosong)
+  function toplesMicin(x, y, s, o = {}) {
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="110" ry="16" fill="#000" opacity=".18"/><rect x="-96" y="-250" width="192" height="250" rx="34" fill="#DDEEF4" opacity=".55"/>
+      <rect x="-84" y="-170" width="168" height="160" rx="26" fill="#F6FBFF"/>${gunungMicin(0, -150, 1, 150, 9)}<rect x="-70" y="-120" width="140" height="70" rx="12" fill="${o.label || "#FFC93C"}" opacity=".9"/>
+      <rect x="-104" y="-292" width="208" height="54" rx="18" fill="${o.tutup || "#E2483E"}"/><rect x="-104" y="-292" width="208" height="14" rx="7" fill="#FFFFFF" opacity=".25"/><path d="M-80 -230 L-80 -30" stroke="#FFFFFF" stroke-width="12" opacity=".5" stroke-linecap="round"/>`, o.rot || 0);
+  }
+  // surat 1968: kertas ketik, baris = coretan abstrak, cap pos merah "1968". o: {rot, cap 0..1, lipat 0..1, gosong 0..1}
+  function surat1968(x, y, s, o = {}) {
+    const r = acak(o.benih || 19), cap = cl(o.cap ?? 1), gs = cl(o.gosong || 0); let baris = "";
+    for (let i = 0; i < 9; i++) { const yy = -140 + i * 34, pj = i === 8 ? 90 : 170 + r() * 60; let d = `M-120 ${yy}`; for (let xx = -120; xx < -120 + pj; xx += 18) d += ` q4 ${f1(-5 - r() * 4)} 9 0 t9 0`; baris += `<path d="${d}" stroke="#4A4A5A" stroke-width="5" fill="none" opacity=".55" stroke-linecap="round"/>`; }
+    const sobek = gs > 0 ? `<path d="M150 ${f1(200 - gs * 140)} Q110 ${f1(170 - gs * 120)} 90 200 L150 200Z" fill="#2A1A10" opacity=".85"/><path d="M150 ${f1(196 - gs * 140)} Q112 ${f1(166 - gs * 120)} 94 196" stroke="#FF8A3A" stroke-width="5" fill="none"/>` : "";
+    return g(x, y, s, `<rect x="-150" y="-200" width="300" height="400" rx="6" fill="#000" opacity=".18" transform="translate(8 10)"/><rect x="-150" y="-200" width="300" height="400" rx="6" fill="#F6EFDC"/>
+      <path d="M-150 ${f1(-20 + (o.lipat || 0) * 0)} L150 -20" stroke="#D9CFB4" stroke-width="3"/>${baris}
+      ${cap > 0 ? `<g transform="translate(78 132) rotate(-14) scale(${f2(cap)})" opacity="${f2(cap)}"><circle r="58" fill="none" stroke="#C2333A" stroke-width="7"/><circle r="44" fill="none" stroke="#C2333A" stroke-width="3"/><text y="14" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="34" fill="#C2333A">1968</text></g>` : ""}${sobek}`, o.rot || 0);
+  }
+  // gerobak angkringan malam: atap terpal, lampu teplok, ceret, nasi bungkus, sate; o: {}
+  function gerobakAngkringan(x, y, s, P, t = 0) {
+    const id = uid("ak"), fl = 1 + 0.06 * Math.sin(t * 9) + 0.03 * Math.sin(t * 23);
+    let sate = ""; for (let i = 0; i < 7; i++) sate += `<path d="M${-250 + i * 26} -300 L${-262 + i * 26} -390" stroke="#C9A46A" stroke-width="5"/><circle cx="${-256 + i * 26}" cy="-366" r="10" fill="#9A4A2A"/><circle cx="${-258 + i * 26}" cy="-344" r="10" fill="#B0602E"/>`;
+    let bks = ""; for (let i = 0; i < 6; i++) bks += `<path d="M${40 + (i % 3) * 64} ${-300 - Math.floor(i / 3) * 34} l28 -26 l28 26 l-28 14Z" fill="${i % 2 ? "#C9B07A" : "#8FB07A"}"/>`;
+    return g(x, y, s, `<defs><radialGradient id="${id}"><stop offset="0" stop-color="#FFD38A" stop-opacity=".55"/><stop offset="1" stop-color="#FFD38A" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="0" cy="-560" r="${f1(560 * fl)}" fill="url(#${id})"/><ellipse cx="0" cy="12" rx="470" ry="30" fill="#000" opacity=".25"/>
+      <path d="M-470 -820 L470 -820 L420 -720 L-420 -720Z" fill="#3E7A9A"/><path d="M-470 -820 L470 -820 L470 -800 L-470 -800Z" fill="#5A9AB8"/><path d="M-420 -720 L-420 0 M420 -720 L420 0" stroke="#5A4030" stroke-width="18"/>
+      <rect x="-440" y="-300" width="880" height="34" fill="#8A5A34"/><rect x="-420" y="-266" width="840" height="230" fill="#6A4428"/><rect x="-420" y="-266" width="840" height="20" fill="#000" opacity=".15"/>
+      <circle cx="-300" cy="0" r="46" fill="#2E2E2E"/><circle cx="300" cy="0" r="46" fill="#2E2E2E"/>${sate}${bks}
+      <g transform="translate(300 -300)"><ellipse cx="0" cy="-6" rx="70" ry="16" fill="#2A2A2A"/><path d="M-60 -10 Q-66 -120 0 -126 Q66 -120 60 -10Z" fill="#9AA0A6"/><path d="M58 -70 Q110 -84 120 -130" stroke="#9AA0A6" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M-40 -110 Q0 -150 40 -110" stroke="#6A7076" stroke-width="10" fill="none"/></g>
+      <path d="M0 -720 L0 -640" stroke="#3A3A3A" stroke-width="4"/><g transform="translate(0 -600) scale(${f2(fl)})"><ellipse cx="0" cy="0" rx="34" ry="44" fill="#FFE6A0" opacity=".9"/><path d="M-8 6 Q-10 -20 0 -32 Q10 -20 8 6Z" fill="#FF9A3A"/></g><rect x="-26" y="34" width="52" height="30" rx="6" fill="#B08A4A" transform="translate(0 -600)"/>`);
+  }
+  // mesin tik 1960-an (kertas keluar dari rol). o: {ketik 0..1 (baris tumbuh), warna}
+  function mesinTik(x, y, s, t = 0, o = {}) {
+    const kt = cl(o.ketik ?? 0.5); let baris = ""; for (let i = 0; i < 6; i++) { const pj = cl(kt * 6 - i) * 200; if (pj > 0) baris += `<path d="M-100 ${-330 + i * 26} h${f1(pj)}" stroke="#5A5A66" stroke-width="5" stroke-dasharray="10 6" opacity=".6"/>`; }
+    let tuts = ""; for (let r = 0; r < 3; r++) for (let c = 0; c < 9; c++) { const tk = Math.sin(t * 17 + r * 3 + c * 7) > 0.92 ? 4 : 0; tuts += `<circle cx="${-160 + c * 40 + r * 14}" cy="${-70 + r * 34 + tk}" r="13" fill="#2E2E34"/><circle cx="${-160 + c * 40 + r * 14}" cy="${-72 + r * 34 + tk}" r="9" fill="#E9E2D0"/>`; }
+    const geser = (kt * 6 % 1) * 30;
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="260" ry="20" fill="#000" opacity=".22"/><rect x="${-130 + geser}" y="-380" width="260" height="210" fill="#F6EFDC"/>${baris.replace(/M-100/g, `M${-100 + geser}`)}
+      <path d="M-230 0 L-200 -150 L200 -150 L230 0Z" fill="${o.warna || "#4E7A6A"}"/><rect x="${-250 + geser}" y="-190" width="500" height="48" rx="22" fill="#2E3A36"/><circle cx="${-262 + geser}" cy="-166" r="20" fill="#C9C2B0"/>
+      <path d="M-200 -150 L200 -150 L190 -120 L-190 -120Z" fill="#000" opacity=".15"/>${tuts}`);
+  }
+  // papan gabus detektif (pusat x,y). o: {w, h}
+  function papanDetektif(x, y, s, o = {}) {
+    const w = o.w || 820, h = o.h || 620, r = acak(o.benih || 23); let bintik = "";
+    for (let i = 0; i < 90; i++) bintik += `<circle cx="${f1(-w / 2 + 30 + r() * (w - 60))}" cy="${f1(-h / 2 + 30 + r() * (h - 60))}" r="${f1(2 + r() * 3)}" fill="#9A6A3A" opacity=".5"/>`;
+    return g(x, y, s, `<rect x="${-w / 2 - 26}" y="${-h / 2 - 26}" width="${w + 52}" height="${h + 52}" rx="14" fill="#6A4428"/><rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" fill="#C99A62"/>${bintik}`);
+  }
+  // paku pines + kartu foto kosong di papan
+  function kartuPin(x, y, s, isi = "", o = {}) {
+    return g(x, y, s, `<rect x="-120" y="-130" width="240" height="260" rx="8" fill="#000" opacity=".18" transform="translate(6 8)"/><rect x="-120" y="-130" width="240" height="260" rx="8" fill="${o.warna || "#F6EFDC"}"/>${isi}<circle cx="0" cy="-118" r="16" fill="#D63A3A"/><circle cx="-5" cy="-123" r="5" fill="#FFFFFF" opacity=".6"/>`, o.rot || 0);
+  }
+  // botol arak masak polos (tanpa label huruf)
+  function botolArak(x, y, s, o = {}) {
+    return g(x, y, s, `<ellipse cx="0" cy="4" rx="56" ry="10" fill="#000" opacity=".2"/><path d="M-50 0 L-50 -150 Q-50 -190 -22 -210 L-22 -270 L22 -270 L22 -210 Q50 -190 50 -150 L50 0Z" fill="${o.warna || "#7A4A2A"}"/>
+      <rect x="-26" y="-296" width="52" height="30" rx="6" fill="#C2333A"/><rect x="-42" y="-130" width="84" height="80" rx="8" fill="#F2E2B8"/><circle cx="0" cy="-90" r="22" fill="#C2333A" opacity=".8"/><path d="M-34 -170 L-34 -20" stroke="#FFFFFF" stroke-width="10" opacity=".25" stroke-linecap="round"/>`, o.rot || 0);
+  }
+  // pengocok garam
+  function pengocokGaram(x, y, s, o = {}) {
+    let lub = ""; for (let i = 0; i < 5; i++) lub += `<circle cx="${-24 + i * 12}" cy="${-206 + (i % 2) * 8}" r="4" fill="#5A5A66"/>`;
+    return g(x, y, s, `<ellipse cx="0" cy="4" rx="56" ry="10" fill="#000" opacity=".2"/><path d="M-46 0 L-40 -170 L40 -170 L46 0Z" fill="#E6F0F4" opacity=".8"/><path d="M-42 -10 L-38 -110 L38 -110 L42 -10Z" fill="#FFFFFF"/>
+      <path d="M-44 -170 Q-44 -220 0 -224 Q44 -220 44 -170Z" fill="#B8BEC6"/>${lub}<path d="M-28 -150 L-30 -20" stroke="#FFFFFF" stroke-width="10" opacity=".6" stroke-linecap="round"/>`, o.rot || 0);
+  }
+  // lab riset 1969: dinding putih kebiruan, lampu neon, rak kaca labu; o: {meja (y)}
+  function lab1969(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.66, id = uid("lb"), r = acak(o.benih || 29);
+    let s = `<defs><radialGradient id="${id}" cx=".5" cy=".3" r=".8"><stop offset="0" stop-color="#F4FBFF" stop-opacity=".5"/><stop offset="1" stop-color="#0A1A2A" stop-opacity=".35"/></radialGradient></defs>
+      <rect width="${w}" height="${h}" fill="#C9DCE4"/>`;
+    for (let i = 0; i < w / 120 + 1; i++) s += `<rect x="${i * 120}" y="${my - 520}" width="116" height="520" fill="#BCD2DC"/>`;
+    for (let i = 0; i < 3; i++) { const lx = w * (0.2 + i * 0.3); s += `<rect x="${f1(lx - 150)}" y="120" width="300" height="26" rx="13" fill="#F4FBFF"/><path d="M${f1(lx - 150)} 146 L${f1(lx - 260)} ${my} L${f1(lx + 260)} ${my} L${f1(lx + 150)} 146Z" fill="#F4FBFF" opacity="${f2(0.08 + 0.02 * Math.sin(t * 40 + i))}"/>`; }
+    for (const ry of [my - 860, my - 640]) { s += `<rect x="60" y="${ry}" width="${w - 120}" height="18" fill="#8AA4B2"/>`;
+      for (let xx = 100; xx < w - 140; xx += 70 + r() * 60) { const tp = Math.floor(r() * 3), c = ["#7CCFC4", "#F28CB0", "#9AD0F0", "#FFE08A"][Math.floor(r() * 4)];
+        s += tp === 0 ? `<path d="M${f1(xx)} ${ry} l-26 0 l8 -60 l0 -40 l36 0 l0 40 l8 60Z" fill="#E6F2F6" opacity=".8"/><path d="M${f1(xx - 20)} ${ry} l40 0 l-6 -40 l-28 0Z" fill="${c}" opacity=".8"/>`
+          : tp === 1 ? `<rect x="${f1(xx - 22)}" y="${ry - 90}" width="44" height="90" rx="6" fill="#E6F2F6" opacity=".8"/><rect x="${f1(xx - 22)}" y="${ry - 50}" width="44" height="50" rx="6" fill="${c}" opacity=".75"/>`
+          : `<circle cx="${f1(xx)}" cy="${ry - 34}" r="34" fill="#E6F2F6" opacity=".8"/><path d="M${f1(xx - 30)} ${ry - 30} a30 30 0 0 0 60 0Z" fill="${c}" opacity=".8"/><rect x="${f1(xx - 9)}" y="${ry - 100}" width="18" height="40" fill="#E6F2F6" opacity=".8"/>`; } }
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="#E8F0F2"/><rect x="0" y="${my}" width="${w}" height="24" fill="#FFFFFF"/><rect x="0" y="${my + 24}" width="${w}" height="16" fill="#000" opacity=".06"/>`;
+    return s + `<rect width="${w}" height="${h}" fill="url(#${id})"/>`;
+  }
+  // labu erlenmeyer berisi cairan (untuk Tebe bersembunyi)
+  function labu(x, y, s, o = {}) {
+    return g(x, y, s, `<path d="M-30 -260 L30 -260 L30 -170 L120 -10 Q126 0 110 0 L-110 0 Q-126 0 -120 -10 L-30 -170Z" fill="#E6F2F6" opacity=".55"/><path d="M-84 -70 L84 -70 L118 -8 Q120 0 108 0 L-108 0 Q-120 0 -118 -8Z" fill="${o.isi || "#7CCFC4"}" opacity=".85"/>
+      <rect x="-38" y="-280" width="76" height="22" rx="8" fill="#E6F2F6"/><path d="M-14 -240 L-14 -170 L-90 -20" stroke="#FFFFFF" stroke-width="10" fill="none" opacity=".6" stroke-linecap="round"/>`);
+  }
+  // tikus lab bayi imut (merah muda, tanpa luka). o: {lihat -1..1, kedip, tidur}
+  function tikusLab(x, y, s, t = 0, o = {}) {
+    const ek = Math.sin(t * 3 + x) * 10, kd = Math.sin(t * 1.7 + x * 0.1) > 0.96 ? 0.15 : 1, lx = (o.lihat || 0) * 4, nap = Math.sin(t * 5 + x) * 2;
+    return g(x, y, s, `<ellipse cx="0" cy="4" rx="70" ry="10" fill="#000" opacity=".18"/><path d="M-50 -16 Q-110 ${f1(-10 + ek)} -130 ${f1(-40 + ek)}" stroke="#F2A6B4" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-6" cy="${f1(-34 - nap * 0.3)}" rx="62" ry="${f1(38 + nap * 0.4)}" fill="#F9C9D2"/><ellipse cx="-14" cy="-22" rx="40" ry="16" fill="#FBDDE3"/>
+      <circle cx="44" cy="-54" r="34" fill="#F9C9D2"/><circle cx="30" cy="-86" r="20" fill="#F9C9D2"/><circle cx="30" cy="-86" r="12" fill="#F2A6B4"/><circle cx="62" cy="-82" r="16" fill="#F9C9D2"/><circle cx="62" cy="-82" r="9" fill="#F2A6B4"/>
+      <ellipse cx="${f1(52 + lx)}" cy="-56" rx="6" ry="${f1(7 * kd)}" fill="#2A1A24"/><circle cx="${f1(54 + lx)}" cy="-59" r="2" fill="#FFFFFF"/><circle cx="78" cy="-46" r="7" fill="#E27A8E"/>
+      <path d="M78 -44 l22 -6 M78 -44 l22 4" stroke="#C98A96" stroke-width="2"/><ellipse cx="-34" cy="-2" rx="12" ry="7" fill="#F2A6B4"/><ellipse cx="30" cy="-2" rx="12" ry="7" fill="#F2A6B4"/>`, o.rot || 0);
+  }
+  // kandang lab kawat (pusat bawah x,y)
+  function kandangLab(x, y, s, isi = "", o = {}) {
+    const w = o.w || 460, h = o.h || 260; let kawat = "";
+    for (let xx = -w / 2 + 20; xx < w / 2; xx += 24) kawat += `<path d="M${xx} ${-h} L${xx} -20" stroke="#AEB8C0" stroke-width="3" opacity=".8"/>`;
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="${w / 2 + 30}" ry="18" fill="#000" opacity=".18"/><rect x="${-w / 2}" y="-40" width="${w}" height="40" rx="6" fill="#8AA4B2"/><rect x="${-w / 2 + 10}" y="-50" width="${w - 20}" height="16" fill="#E9D7A8"/>
+      ${isi}${kawat}<path d="M${-w / 2} -20 L${-w / 2} ${-h} Q0 ${-h - 70} ${w / 2} ${-h} L${w / 2} -20" stroke="#9AA6AE" stroke-width="8" fill="none"/>`);
+  }
+  // jarum suntik kartun (kaca + plunger biru), mendatar menghadap kanan; tidak ada darah. o: {isi 0..1, warnaIsi, plunger 0..1}
+  function jarumSuntik(x, y, s, rot = 0, o = {}) {
+    const isi = cl(o.isi ?? 0.7), pl = cl(o.plunger ?? 0) * 90;
+    return g(x, y, s, `<ellipse cx="0" cy="70" rx="260" ry="16" fill="#000" opacity="${o.bayang === false ? 0 : 0.15}"/>
+      <rect x="${-290 + pl}" y="-14" width="120" height="28" rx="8" fill="#5A9AD0"/><rect x="${-320 + pl}" y="-56" width="30" height="112" rx="10" fill="#3E7AB8"/>
+      <rect x="-180" y="-52" width="300" height="104" rx="22" fill="#E8F4FA" opacity=".85"/><rect x="${f1(-170 + pl * 0.6)}" y="-42" width="${f1((280 - pl * 0.6) * isi)}" height="84" rx="16" fill="${o.warnaIsi || "#BFE3F2"}"/>
+      ${[0, 1, 2, 3, 4].map((i) => `<path d="M${-120 + i * 50} -52 L${-120 + i * 50} -26" stroke="#5A7A90" stroke-width="5"/>`).join("")}
+      <rect x="-196" y="-70" width="24" height="140" rx="10" fill="#5A9AD0"/><path d="M120 -26 L170 -14 L170 14 L120 26Z" fill="#9ACAE0"/><path d="M170 -5 L320 -1 L320 1 L170 5Z" fill="#B8C4CC"/>
+      <path d="M-150 -34 L90 -34" stroke="#FFFFFF" stroke-width="10" opacity=".7" stroke-linecap="round"/>`, rot);
+  }
+  // sendok makan (cekung menghadap atas, gagang ke kiri-bawah); o: {isi: "micin" | "nasi" | null}
+  function sendok(x, y, s, rot = 0, o = {}) {
+    let isi = "";
+    if (o.isi === "micin") isi = gunungMicin(70, -12, 1.1, 170, 7);
+    if (o.isi === "nasi") { const r = acak(3); for (let i = 0; i < 20; i++) isi += `<circle cx="${f1(10 + r() * 120)}" cy="${f1(-14 - r() * 34)}" r="${f1(9 + r() * 6)}" fill="${["#C9843E", "#E2A050", "#B5702E", "#5FA05A"][Math.floor(r() * 4)]}"/>`; }
+    return g(x, y, s, `<path d="M-300 30 Q-140 6 -10 -4 L-10 8 Q-140 22 -300 44Z" fill="#B8C4CC"/><path d="M-300 30 Q-140 6 -10 -4" stroke="#E6EEF2" stroke-width="6" fill="none"/>
+      <ellipse cx="70" cy="0" rx="110" ry="40" fill="#C9D4DA"/><ellipse cx="70" cy="-6" rx="96" ry="28" fill="#E6EEF2"/>${isi}<path d="M0 -20 Q40 -30 80 -26" stroke="#FFFFFF" stroke-width="7" fill="none" opacity=".7"/>`, rot);
+  }
+  // otak kartun imut (merah muda). o: {retak 0..1, kedip 0..1 (redup), mata, tanya 0..1}
+  function otakKartun(x, y, s, t = 0, o = {}) {
+    const rt = cl(o.retak || 0), red = cl(o.kedip || 0), id = uid("ot");
+    const retak = rt > 0 ? `<path d="M10 -150 L-6 -100 L22 -70 L-4 -20 L18 20" stroke="#7A2A3A" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="320" stroke-dashoffset="${f1(320 * (1 - rt))}"/>` : "";
+    const tn = cl(o.tanya || 0);
+    return g(x, y, s, `<defs><radialGradient id="${id}"><stop offset="0" stop-color="#FF9AC0" stop-opacity=".6"/><stop offset="1" stop-color="#FF9AC0" stop-opacity="0"/></radialGradient></defs>
+      <circle r="${f1(260 * (1 - red * 0.6))}" fill="url(#${id})" opacity="${f2(1 - red * 0.7)}"/>
+      <g opacity="${f2(1 - red * 0.35)}"><path d="M-150 30 Q-200 -40 -150 -100 Q-140 -170 -60 -180 Q0 -220 60 -180 Q140 -170 150 -100 Q200 -40 150 30 Q120 90 40 80 Q0 110 -40 80 Q-120 90 -150 30Z" fill="#F7A9C2"/>
+      <path d="M0 -190 Q-10 -60 0 84" stroke="#E07C9C" stroke-width="10" fill="none"/><path d="M-120 -90 Q-80 -110 -60 -70 Q-40 -30 -90 -10 M-110 30 Q-70 0 -40 40 M60 -140 Q100 -120 90 -80 Q80 -40 120 -30 M40 0 Q80 -10 100 30" stroke="#E07C9C" stroke-width="9" fill="none" stroke-linecap="round"/>
+      ${o.mata !== false ? `<circle cx="-50" cy="-30" r="16" fill="#2A1A24"/><circle cx="50" cy="-30" r="16" fill="#2A1A24"/><circle cx="-45" cy="-36" r="5" fill="#FFFFFF"/><circle cx="55" cy="-36" r="5" fill="#FFFFFF"/><path d="M-26 14 Q0 ${f1(30 - rt * 34)} 26 14" stroke="#2A1A24" stroke-width="7" fill="none" stroke-linecap="round"/>` : ""}${retak}</g>
+      ${tn > 0 ? `<g transform="translate(0 ${f1(-290 - Math.sin(t * 2) * 10)}) scale(${f2(tn)})"><circle r="70" fill="#FFF4DC"/><text y="34" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="100" fill="#B3262E">?</text></g>` : ""}`);
+  }
+  // ruang uji tersamar modern: dinding biru lembut, panel akustik, meja panjang; o: {meja (y)}
+  function ruangUji(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.66;
+    let s = `<rect width="${w}" height="${h}" fill="#BFD6E6"/>`;
+    for (let i = 0; i < w / 220 + 1; i++) s += `<rect x="${i * 220 + 30}" y="${my - 980}" width="160" height="420" rx="18" fill="#AFC9DC"/>`;
+    s += `<rect x="0" y="${my - 520}" width="${w}" height="520" fill="#A9C4D8"/><rect x="${w * 0.62}" y="${my - 900}" width="280" height="200" rx="16" fill="#E8F2F8"/><circle cx="${w * 0.62 + 140}" cy="${my - 800}" r="60" fill="#FFFFFF" opacity=".6"/><path d="M${w * 0.62 + 140} ${my - 800} l0 -40 M${w * 0.62 + 140} ${my - 800} l26 10" stroke="#5A7A90" stroke-width="7" stroke-linecap="round" transform="rotate(${f1(t * 6)} ${w * 0.62 + 140} ${my - 800})"/>`;
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="#E9EEF0"/><rect x="0" y="${my}" width="${w}" height="26" fill="#FFFFFF"/><rect x="0" y="${my + 26}" width="${w}" height="14" fill="#000" opacity=".06"/>`;
+    return s;
+  }
+  // mangkuk sup polos bertanda ○ / △ (tanpa huruf). o: {tanda: "lingkaran"|"segitiga", uap}
+  function mangkukSup(x, y, s, t = 0, o = {}) {
+    const tanda = o.tanda === "segitiga" ? `<path d="M0 -76 L22 -38 L-22 -38Z" fill="none" stroke="#2F7AC2" stroke-width="7" stroke-linejoin="round"/>` : `<circle cx="0" cy="-54" r="20" fill="none" stroke="#E2483E" stroke-width="7"/>`;
+    const uap = [0, 1].map((i) => { const u = ((t * 0.4 + i / 2) % 1); return `<path d="M${-24 + i * 48} ${f1(-110 - u * 110)} q-12 -26 0 -52 q12 -26 0 -52" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linecap="round" opacity="${f2(Math.sin(Math.PI * u) * 0.55)}"/>`; }).join("");
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="130" ry="16" fill="#000" opacity=".16"/><path d="M-130 -100 Q-120 10 0 12 Q120 10 130 -100Z" fill="#FFFFFF"/><ellipse cx="0" cy="-100" rx="130" ry="26" fill="#E9EEF0"/><ellipse cx="0" cy="-100" rx="114" ry="19" fill="#E8C27A"/>${tanda}${uap}`);
+  }
+  // papan klip (dipegang Tebe). o: {centang 0..1}
+  function papanKlip(x, y, s, o = {}) {
+    const c = cl(o.centang || 0);
+    return g(x, y, s, `<rect x="-70" y="-90" width="140" height="180" rx="10" fill="#B07A46"/><rect x="-58" y="-74" width="116" height="152" rx="4" fill="#FFFFFF"/><rect x="-30" y="-100" width="60" height="26" rx="8" fill="#8A9AA6"/>
+      ${[0, 1, 2].map((i) => `<rect x="-40" y="${-46 + i * 40}" width="20" height="20" rx="4" fill="none" stroke="#8A9AA6" stroke-width="4"/><rect x="-8" y="${-40 + i * 40}" width="54" height="8" rx="4" fill="#C9D0D6"/>`).join("")}
+      ${c > 0 ? `<path d="M-44 -36 L-32 -24 L-12 -56" stroke="#2E9A5A" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="60" stroke-dashoffset="${f1(60 * (1 - c))}"/>` : ""}`, o.rot || 0);
+  }
+  // ruang arsip sore: rak tinggi berisi map, sinar jendela hangat; o: {meja (y)}
+  function ruangArsip(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.68, r = acak(o.benih || 37), id = uid("ra");
+    let s = `<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD9A0" stop-opacity=".45"/><stop offset="1" stop-color="#FFD9A0" stop-opacity="0"/></linearGradient></defs><rect width="${w}" height="${h}" fill="#C9B497"/>`;
+    for (let k = 0; k < Math.ceil(w / 360); k++) { const x0 = k * 360 + 20;
+      s += `<rect x="${x0}" y="${my - 1260}" width="320" height="1260" fill="#8A6444"/>`;
+      for (let yy = my - 1230; yy < my - 60; yy += 160) { s += `<rect x="${x0}" y="${yy + 130}" width="320" height="18" fill="#6A4A30"/>`;
+        let xx = x0 + 14; while (xx < x0 + 300) { const bw = 26 + r() * 20, bh = 100 + r() * 26; s += `<rect x="${f1(xx)}" y="${f1(yy + 130 - bh)}" width="${f1(bw)}" height="${f1(bh)}" fill="${["#D9B46A", "#C98A5A", "#9AB08A", "#E2CDA0", "#B8A07A"][Math.floor(r() * 5)]}"/><rect x="${f1(xx + bw / 2 - 6)}" y="${f1(yy + 130 - bh + 16)}" width="12" height="24" rx="3" fill="#FFFFFF" opacity=".55"/>`; xx += bw + 4; } } }
+    s += `<path d="M${w * 0.15} 0 L${w * 0.55} 0 L${w * 0.95} ${my} L${w * 0.45} ${my}Z" fill="url(#${id})"/>`;
+    for (let i = 0; i < 12; i++) { const u = (t * 0.05 + i / 12) % 1; s += `<circle cx="${f1(w * 0.3 + i * 60 + u * 200)}" cy="${f1(200 + ((i * 137) % 900) + Math.sin(t + i) * 20)}" r="4" fill="#FFF1C9" opacity="${f2(0.5 * Math.sin(Math.PI * u))}"/>`; }
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="#7A5232"/><rect x="0" y="${my}" width="${w}" height="20" fill="#9A6A42"/>`;
+    return s;
+  }
+  // map arsip (tampak atas sedikit miring). isi = jejak stempel
+  function mapArsip(x, y, s, isi = "") {
+    return g(x, y, s, `<ellipse cx="0" cy="10" rx="330" ry="40" fill="#000" opacity=".2"/><path d="M-300 -10 L-260 -140 L-100 -140 L-80 -170 L60 -170 L80 -140 L300 -140 L320 -10Z" fill="#D9A94A"/><path d="M-320 0 L-280 -120 L300 -120 L330 0Z" fill="#F2C86A"/>
+      <path d="M-260 -100 L270 -100" stroke="#FFFFFF" stroke-width="6" opacity=".35"/>${isi}`);
+  }
+  // stempel karet bergagang; o: {simbol: "bola"|"bintang"|"perisai", warna}
+  function simbolStempel(jenis, warna) {
+    if (jenis === "bintang") return `<path d="M0 -40 L11 -12 L40 -12 L17 6 L26 36 L0 18 L-26 36 L-17 6 L-40 -12 L-11 -12Z" fill="${warna}"/>`;
+    if (jenis === "perisai") return `<path d="M0 -42 L36 -28 Q34 20 0 42 Q-34 20 -36 -28Z" fill="none" stroke="${warna}" stroke-width="9"/><path d="M-14 0 L-2 12 L18 -14" stroke="${warna}" stroke-width="9" fill="none" stroke-linecap="round"/>`;
+    return `<circle r="36" fill="none" stroke="${warna}" stroke-width="9"/><path d="M-36 0 L36 0 M0 -36 Q-22 0 0 36 M0 -36 Q22 0 0 36" stroke="${warna}" stroke-width="6" fill="none"/>`;
+  }
+  function stempelKaret(x, y, s, o = {}) {
+    const w = o.warna || "#2F7AC2";
+    return g(x, y, s, `<rect x="-90" y="-30" width="180" height="30" rx="6" fill="#3A3A40"/><rect x="-80" y="-4" width="160" height="10" rx="4" fill="${w}"/><path d="M-30 -30 L-22 -120 L22 -120 L30 -30Z" fill="#8A5A34"/><ellipse cx="0" cy="-150" rx="58" ry="42" fill="#A86E40"/><ellipse cx="-14" cy="-162" rx="18" ry="10" fill="#FFFFFF" opacity=".3"/>`, o.rot || 0);
+  }
+  function jejakStempel(x, y, s, o = {}) {
+    const w = o.warna || "#2F7AC2", a = cl(o.tampak ?? 1);
+    return g(x, y, s, `<g opacity="${f2(a * 0.85)}"><circle r="72" fill="none" stroke="${w}" stroke-width="8"/>${simbolStempel(o.simbol || "bola", w)}</g>`, o.rot || -8);
+  }
+  // keju segitiga berlubang
+  function keju(x, y, s, rot = 0) {
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="110" ry="14" fill="#000" opacity=".16"/><path d="M-110 0 L-110 -90 L110 -40 L110 0Z" fill="#F2C24A"/><path d="M-110 -90 L60 -150 L110 -40Z" fill="#FFD966"/>
+      <circle cx="-60" cy="-40" r="14" fill="#D9A62E"/><circle cx="30" cy="-24" r="10" fill="#D9A62E"/><circle cx="70" cy="-14" r="7" fill="#D9A62E"/><circle cx="-10" cy="-96" r="9" fill="#E8B83A"/>`, rot);
+  }
+  // molekul sederhana bercahaya (bentuk SAMA untuk semua sumber = "kembar"). o: {warna, cahaya 0..1}
+  function molekulKembar(x, y, s, t = 0, o = {}) {
+    const w = o.warna || "#7CE0D0", c = cl(o.cahaya ?? 0.6), id = uid("mk"), rt = Math.sin(t * 1.3 + x * 0.01) * 10;
+    const at = [[-60, 20, 26], [0, -20, 32], [60, 16, 26], [0, 50, 20], [104, -20, 18]];
+    return g(x, y, s, `<defs><radialGradient id="${id}"><stop offset="0" stop-color="${w}" stop-opacity=".7"/><stop offset="1" stop-color="${w}" stop-opacity="0"/></radialGradient></defs><circle r="150" fill="url(#${id})" opacity="${f2(c)}"/>
+      <path d="M-60 20 L0 -20 L60 16 L104 -20 M0 -20 L0 50" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>${at.map(([a, b, r], i) => `<circle cx="${a}" cy="${b}" r="${r}" fill="${i === 1 ? w : i % 2 ? "#FFFFFF" : "#F7A9C2"}"/><circle cx="${a - r * 0.3}" cy="${b - r * 0.3}" r="${r * 0.3}" fill="#FFFFFF" opacity=".6"/>`).join("")}`, rt);
+  }
+  // dapur terang: dinding hijau mint berubin, jendela pagi, gantungan perkakas; o: {meja (y)}
+  function dapurTerang(w, h, P, t = 0, o = {}) {
+    const my = o.meja ?? h * 0.68, jx = o.jendelaX ?? w * 0.55;
+    let s = `<rect width="${w}" height="${h}" fill="#CFEAE0"/>`;
+    for (let i = 0; i < w / 70 + 1; i++) for (let j = 0; j < 7; j++) s += `<rect x="${i * 70 + 3}" y="${my - 500 + j * 70 + 3}" width="64" height="64" rx="6" fill="${(i + j) % 2 ? "#E2F4EC" : "#D8EFE6"}"/>`;
+    s += `<rect x="${jx - 16}" y="${my - 1100}" width="452" height="460" rx="14" fill="#F4EEDC"/><svg x="${jx}" y="${my - 1084}" width="420" height="428">${A.langit(P, 420, 428, t, { suryaX: 320, suryaY: 100 })}${A.awan ? A.awan(140, 160, 0.5, P, 0.8) : ""}${A.rumahKampung(210, 428, 0.45, P)}</svg><rect x="${jx + 204}" y="${my - 1084}" width="12" height="428" fill="#F4EEDC"/>`;
+    s += `<rect x="60" y="${my - 900}" width="380" height="14" rx="7" fill="#8A9AA6"/>${[0, 1, 2, 3].map((i) => `<path d="M${110 + i * 90} ${my - 886} l0 ${60 + (i % 2) * 30}" stroke="#8A9AA6" stroke-width="6"/><circle cx="${110 + i * 90}" cy="${my - 806 + (i % 2) * 30}" r="${22 + (i % 2) * 6}" fill="${["#E2483E", "#F2C24A", "#2F7AC2", "#5FA05A"][i]}"/>`).join("")}`;
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="#F2E6CC"/><rect x="0" y="${my}" width="${w}" height="24" fill="#FFFFFF"/><rect x="0" y="${my + 140}" width="${w}" height="${h - my - 140}" fill="#5FA08A"/>`;
+    for (let i = 0; i < w / 260; i++) s += `<rect x="${i * 260 + 20}" y="${my + 160}" width="220" height="${h - my - 180}" rx="10" fill="#6AAE96"/><rect x="${i * 260 + 110}" y="${my + 200}" width="40" height="10" rx="5" fill="#F4EEDC"/>`;
+    return s;
+  }
+  // panggung sorot: lantai+latar gradasi gelap, dua lampu sorot. o: {warna1, warna2, kiri, kanan (x sorot)}
+  function panggungSorot(w, h, t = 0, o = {}) {
+    const id = uid("ps"), sk = uid("sk"), lantai = o.lantai ?? h * 0.7, a = o.kiri ?? w * 0.3, b = o.kanan ?? w * 0.7;
+    return `<defs><radialGradient id="${id}" cx=".5" cy=".45" r=".8"><stop offset="0" stop-color="${o.warna1 || "#2E6A78"}"/><stop offset="1" stop-color="${o.warna2 || "#0E2630"}"/></radialGradient>
+      <linearGradient id="${sk}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6DA" stop-opacity=".0"/><stop offset="1" stop-color="#FFF6DA" stop-opacity=".28"/></linearGradient></defs>
+      <rect width="${w}" height="${h}" fill="url(#${id})"/><rect x="0" y="${lantai}" width="${w}" height="${h - lantai}" fill="#0E2630" opacity=".5"/>
+      ${[a, b].map((x, i) => `<path d="M${f1(x + (i ? 1 : -1) * 120 + Math.sin(t * 0.7 + i) * 20)} 0 L${f1(x - 230)} ${lantai + 40} L${f1(x + 230)} ${lantai + 40}Z" fill="url(#${sk})"/><ellipse cx="${f1(x)}" cy="${lantai + 40}" rx="240" ry="46" fill="#FFF6DA" opacity=".22"/>`).join("")}`;
+  }
+
+  Object.assign(A, { butirMicin, hujanMicin, gunungMicin, toplesMicin, surat1968, gerobakAngkringan, mesinTik, papanDetektif, kartuPin, botolArak, pengocokGaram,
+    lab1969, labu, tikusLab, kandangLab, jarumSuntik, sendok, otakKartun, ruangUji, mangkukSup, papanKlip, ruangArsip, mapArsip, stempelKaret, jejakStempel, simbolStempel,
+    keju, molekulKembar, dapurTerang, panggungSorot });
+})(typeof window !== "undefined" ? window : globalThis);
