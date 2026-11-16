@@ -28,7 +28,7 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 - **Video panjang 16:9: 1 per minggu (Minggu 19.00)**, dirakit HEMAT dari Shorts minggu itu yang setema/terbaik: pakai ulang narasi & visual yang sudah ada, tambah narasi penghubung + intro/penutup baru (maks ±1.500 huruf baru). Naik ke 2/minggu setelah kuota memungkinkan.
 - **Hemat kuota (wajib):** 1 sesi produksi pagi membuat 2 Shorts sekaligus · suara dibuat sekali (tanpa versi kedua kecuali Bos menolak) · Laras & Raka memakai model Sonnet, Nadia/Yoga/Pak Bima tetap model utama.
 - **Rem otomatis:** di laporan, Pak Bima mencatat perkiraan pemakaian kredit ElevenLabs bulan ini (`aset/log_kredit.csv`). Bila kredit tersisa < 15% sebelum tanggal 25, atau Bos menulis "hemat" di Kantor Visual → turun ke 1 Shorts/hari dan laporkan.
-- **Shorts 9:16**, 45–90 detik (durasi mengikuti isi, jangan terburu-buru), sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
+- **Shorts 9:16**, 45–90 detik (Bos 16 Nov: 60–90 dtk boleh asal fakta + candaan utuh; durasi mengikuti isi, tanpa bagian "nunggu" saat ganti set/transisi), sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
 - **Kualitas di atas jumlah.** YouTube tidak memonetisasi konten massal yang mirip-mirip. Lebih baik 1 Shorts bagus daripada 3 yang serupa.
 - Setiap video WAJIB punya set/visual yang sesuai topiknya (bukan set yang sama terus) — tambah aset baru ke pustaka bila perlu (`panduan/katalog-aset.md`).
 - Selalu jaga **stok minimal 3 hari** video yang sudah terjadwal.

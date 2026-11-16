@@ -1,6 +1,6 @@
 # Struktur Naskah
 
-## Shorts (40–58 detik, 110–140 kata)
+## Shorts (60–90 detik, ±140–200 kata — durasi mengikuti isi, tanpa bagian "nunggu"; keputusan Bos 16 Nov)
 1. **Hook (0–2 dtk):** 1 kalimat yang membuka rasa penasaran.
 2. **Konteks (2–10 dtk):** apa/di mana/kapan.
 3. **"Kok bisa?" (10–40 dtk):** 2–3 langkah penjelasan yang makin menarik; perbandingan yang mudah dibayangkan orang Indonesia.

@@ -5,11 +5,13 @@ description: Cara Nadia menulis naskah Shorts/video panjang Ternyata Begitu yang
 # Naskah Viral (Nadia)
 Penonton memutuskan dalam 1–2 detik. Tugasmu: membuat mereka TIDAK BISA geser.
 
-## Memadatkan tanpa kehilangan inti (keputusan Bos, 16 Nov 2026)
-Data awal: penonton pergi di detik 10–20 dari video 60–70 dtk. Target sementara **40–55 dtk**, TAPI:
-- Semua **fakta inti** di riset.md (klaim + "kok bisa" + kejutan utama) WAJIB tetap ada. Yang dipotong: pengantar, pengulangan, kalimat transisi kosong, fakta pelengkap ke-3/ke-4.
-- Kecepatan bicara tidak dinaikkan dan jeda napas antar babak tetap ada — padat bukan berarti tergesa atau patah-patah.
-- Bila inti tidak muat di 55 dtk, boleh lebih panjang; laporkan alasannya di lembar_tim.md.
+## Durasi: isi yang menentukan, bukan angka (keputusan Bos, 16 Nov 2026 sore)
+**Shorts boleh 60–90 dtk** selama fakta inti, penjelasan "kok bisa", DAN candaannya tersampaikan utuh. Jangan memotong paksa
+sampai kalimat/candaan hilang atau terasa patah. Yang tetap DILARANG: bagian **"nunggu"** — tidak ada detik tanpa isi.
+- Fakta inti di riset.md (klaim + "kok bisa" + kejutan utama) + 1–2 candaan WAJIB ada. Yang dibuang hanya yang kosong: pengantar, pengulangan, kalimat transisi tanpa isi.
+- Setiap 5–8 dtk ada hal baru (fakta, visual, candaan, atau pertanyaan) supaya durasi panjang tetap terasa cepat.
+- Kecepatan bicara tidak dinaikkan; jeda napas antar babak maks ±0,5 dtk. Ganti set terjadi SAMBIL narasi berjalan, tidak menunggu.
+- Data penonton tetap jadi hakim: Raka membandingkan % ditonton & rata-rata detik tonton video ≤60 dtk vs >60 dtk tiap Senin; bila yang panjang kalah jauh di ≥3 video, Pak Bima mengusulkan penyesuaian ke Bos.
 
 ## Struktur Shorts (±2,3 kata/dtk)
 1. **Hook 0–3 dtk — tugas nomor satu.** Penonton harus berhenti menggulir sebelum detik ke-3. Hook = kalimat + visual pembuka bekerja bersama.

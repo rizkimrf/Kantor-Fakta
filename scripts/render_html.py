@@ -119,6 +119,17 @@ def rakit_audio(folder: Path, kerja: Path, D: float, mulai: float, efek, musik, 
     rantai = "[0:a]aresample=48000,aformat=channel_layouts=stereo"
     jd = sorted((float(j["t"]), float(j["d"])) for j in (jeda or []) if float(j["d"]) > 0)
     jd = [(jepret_ke_hening(folder, t), d) for t, d in jd]  # jangan pernah memotong di tengah kata
+    try:  # catat lama "menunggu tanpa narasi" per jeda (celah alami + hening sisipan) untuk cek_mulus.py
+        wk = folder / "audio/waktu_kata.json"
+        kata = json.loads(wk.read_text(encoding="utf-8")).get("kata", []) if wk.exists() else []
+        def celah(t):
+            for a, b in zip(kata, kata[1:]):
+                if a["selesai"] - 0.05 <= t <= b["mulai"] + 0.05: return b["mulai"] - a["selesai"]
+            return 0.0
+        (folder / "_kerja").mkdir(exist_ok=True)
+        (folder / "_kerja" / "jeda.json").write_text(json.dumps([{"t": round(t, 2), "sisipan": d, "total": round(d + celah(t), 2)} for t, d in jd]), encoding="utf-8")
+    except Exception as e:
+        print("  ! gagal mencatat jeda:", e)
     if jd:  # sisipkan hening ke rekaman narasi (intro & napas antar babak)
         titik = [0.0] + [t for t, _ in jd]
         fil.append(f"{rantai},asplit={len(titik)}" + "".join(f"[s{i}]" for i in range(len(titik))))

@@ -5,6 +5,7 @@ Memeriksa:
   2. Hening mati di tengah video (> 0,6 dtk di bawah -50 dB).
   3. Kilatan/potongan kasar: transisi yang berganti total dalam < 4 frame (wipe terlalu cepat) atau frame warna polos.
   4. Gambar beku > 1,2 dtk saat narasi berjalan.
+  5. Menunggu tanpa narasi: jeda antar babak > 0,9 dtk (intro > 2,6 dtk) atau suara AI diam > 1,2 dtk.
 Juga membuat lembar cek: _kerja/cek_transisi.jpg (6 frame di setiap transisi) dan _kerja/cek_zona_aman.jpg
 (4 frame acak dengan garis zona aman) untuk dilihat dengan mata sebelum review."""
 import subprocess, sys
@@ -59,6 +60,18 @@ diam = 0
 for k, x in enumerate(d):
     diam = diam + 1 if x < 0.02 else 0
     if diam == int(1.2 * fps): masalah.append(f"gambar beku > 1,2 dtk di {(k - diam) / fps:.2f} dtk")
+# --- menunggu terlalu lama tanpa narasi (keputusan Bos 16 Nov: durasi boleh panjang, tapi tidak boleh ada "nunggu")
+import json
+jf = kerja / "jeda.json"
+if jf.exists():
+    for n, j in enumerate(json.loads(jf.read_text(encoding="utf-8"))):
+        batas = 2.6 if n == 0 else 0.9   # jeda pertama = intro logo; jeda lain = napas antar babak
+        if j["total"] > batas: masalah.append(f"menunggu tanpa narasi {j['total']:.1f} dtk (narasi detik {j['t']}) - maks {batas} dtk; ganti set/transisi harus jalan sambil narasi")
+wk = folder / "audio/waktu_kata.json"
+if wk.exists():
+    kt = json.loads(wk.read_text(encoding="utf-8")).get("kata", [])
+    for a, b in zip(kt, kt[1:]):
+        if b["mulai"] - a["selesai"] > 1.2: masalah.append(f"suara AI diam {b['mulai'] - a['selesai']:.1f} dtk setelah kata '{a['kata']}' (narasi detik {a['selesai']:.1f}) - potong/padatkan celahnya")
 # --- lembar cek
 titik = [g[0] for g in grup][:8]
 if titik:
