@@ -23,7 +23,7 @@ CEK = "--cek" in sys.argv
 if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah mencetak kunci/token
     def _uji(nama, f):
         try: print(f"{nama}: OK - {f()}")
-        except Exception as e: print(f"{nama}: GAGAL - {str(e)[:200]}")
+        except Exception as e: print(f"{nama}: GAGAL - {str(e)[:600]}")
     for k in ["ELEVENLABS_API_KEY", "ELEVENLABS_VOICE_ID", "IG_ACCESS_TOKEN", "IG_USER_ID", "TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN",
               "TIKTOK_MODE", "YT_AUDIT_LOLOS"]:
         print(f"{k}: {'terisi' if os.environ.get(k) else 'KOSONG'}")
@@ -50,7 +50,23 @@ if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah me
         r = urllib.request.Request("https://api.elevenlabs.io/v1/voices/" + os.environ.get("ELEVENLABS_VOICE_ID", ""),
                                    headers={"xi-api-key": os.environ.get("ELEVENLABS_API_KEY", "")})
         return "suara " + json.loads(urllib.request.urlopen(r, timeout=60).read()).get("name", "?")
-    _uji("Instagram", _ig); _uji("Instagram unggah", _ig_unggah); _uji("TikTok", _tt); _uji("ElevenLabs", _el)
+    def _ig_coba():  # unggah video uji 3 dtk ke kontainer Reels TANPA diterbitkan (kontainer kedaluwarsa sendiri 24 jam)
+        import subprocess, tempfile
+        f = Path(tempfile.mkdtemp()) / "uji.mp4"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=c=0x1E88E5:s=1080x1920:r=30:d=3",
+                        "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", "3", "-c:v", "libx264", "-pix_fmt", "yuv420p",
+                        "-c:a", "aac", "-movflags", "+faststart", str(f)], check=True)
+        tok, uid = os.environ["IG_ACCESS_TOKEN"], os.environ["IG_USER_ID"]
+        c = form(f"https://graph.facebook.com/v21.0/{uid}/media", media_type="REELS", upload_type="resumable",
+                 caption="uji", access_token=tok)
+        b = f.read_bytes()
+        try:
+            r = http(c["uri"], b, {"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(b)),
+                                   "Content-Type": "application/octet-stream"})
+        except RuntimeError as e:
+            raise RuntimeError(str(e).replace(tok, "[token]")[:600])
+        return f"kontainer {c['id']} diterima: {r}"
+    _uji("Instagram", _ig); _uji("Instagram unggah", _ig_unggah); _uji("Instagram unggah video uji", _ig_coba); _uji("TikTok", _tt); _uji("ElevenLabs", _el)
     raise SystemExit(0)
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 SEKARANG = datetime.datetime.now(WITA)
@@ -186,7 +202,10 @@ for st_path in sorted((ROOT / "antrean").glob("*/status.json")):
             laporan.append(f"{folder.name}: {nama} OK")
         except Exception as e:  # satu platform gagal tidak menghentikan yang lain
             gagal = terbit.get(nama, {}).get("gagal", 0) + 1
-            terbit[nama] = {"gagal": gagal, "error": str(e)[:300]}
+            pesan = str(e)
+            for k in ("IG_ACCESS_TOKEN", "TIKTOK_REFRESH_TOKEN", "YT_REFRESH_TOKEN"):
+                if os.environ.get(k): pesan = pesan.replace(os.environ[k], "[token]")
+            terbit[nama] = {"gagal": gagal, "error": pesan[:600]}
             laporan.append(f"{folder.name}: {nama} GAGAL ({gagal}x) {e}")
     if CEK:
         continue
