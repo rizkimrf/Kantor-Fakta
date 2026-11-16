@@ -1,0 +1,194 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- I-004 Asal Nama Indonesia — Yoga, 17 Nov 2026. Kontrak window.render(T), waktu mengikuti audio/waktu_kata.json.
+     Render: python scripts/render_html.py antrean/2026-11-15_i-004-asal-nama-indonesia --musik-vol 0.2 -->
+<script src="../../../studio-aset/tebe-rig.js"></script>
+<script src="../../../studio-aset/aset-set.js"></script>
+<script src="../../../studio-aset/kerangka-shorts.js"></script>
+<style>*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#2A1C14}
+.abs{position:absolute}#V{position:absolute;inset:0;overflow:hidden}</style></head><body><div id="V"></div>
+<script>
+const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp}=KS, P=ASET.PALET, A=ASET;
+const tebe=(p,w,g=0,o)=>KS.tebe(p,w,g,o);
+// ---------- peta waktu: intro 2,4 dtk setelah hook + napas pendek (≤0,2 dtk) di beberapa pergantian babak ----------
+const W=KS.waktu(window.WAKTU_KATA||[],[{t:5.62,d:2.4},{t:10.92,d:0.2},{t:15.94,d:0.15},{t:24.02,d:0.2},{t:41.56,d:0.15}]);
+window.JEDA=W.JEDA;
+const J=W.JEDA, tengah=i=>W.vt(J[i].t)+J[i].d/2, k=(w,n=1)=>W.cari(w,n), V=n=>W.vt(n);
+const AKHIR=W.kata.length?W.kata[W.kata.length-1].s:67;
+window.DURASI=+(AKHIR+0.5).toFixed(2);   // ekor pendek: loop langsung ke kalimat pertama
+window.MUSIK='jenaka-ringan';
+const T_INTRO=W.vt(J[0].t)-0.02, T_OUTRO=V(58.16);
+const B6=V(33.72), B8=V(48.24), B9=V(53.83);
+// ---------- teks layar ----------
+const GRUP=KS.teks(W,{ganti:{'Jorj':'George','Erl':'Earl','Jeims':'James','Logen':'Logan','Indu-nisyens':'Indu-nesians','Malayu-nisyens':'Malayu-nesians'},
+  tekan:['bukan','Britania,','Singapura.','beda.','pendek.','Yunani,','pulau.','India.','kedua.','Malayunesia.','menulis','debat.','geografi.','penjajah.','menguncinya:','milik'],maks:3});
+const cap=(txt,T,a,b,o={})=>{const kk=oBack(lin(T,a-.05,a+.35),1.2)*(1-sinIO(lin(T,b-.3,b)));if(kk<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:${o.y||500}px;text-align:center;transform:rotate(${o.rot??-4}deg) scale(${kk.toFixed(3)});opacity:${Math.min(1,kk*1.4).toFixed(3)}"><span style="display:inline-block;padding:6px 36px 16px;border:9px solid ${o.warna||'#FFC93C'};border-radius:24px;background:${o.bg||'rgba(20,14,10,.35)'};font:italic 600 ${o.uk||120}px/1 Lora,serif;color:${o.warna||'#FFC93C'};text-shadow:0 8px 20px rgba(0,0,0,.5)">${txt}</span></div>`};
+
+// ===== SAMPUL (frame 0) — MISTERI: jurnal tua raksasa disorot lilin, kata "Indonesia" bersinar, pena bulu baru terangkat. Tanpa Tebe. Amber/sepia.
+function sampulGambar(T){const t=T+2;
+ return `<svg class="abs" width="1080" height="1920"><defs><radialGradient id="sgc" cx=".5" cy=".58" r=".62"><stop offset="0" stop-color="#7A4A1E"/><stop offset=".55" stop-color="#3A2210"/><stop offset="1" stop-color="#120A06"/></radialGradient></defs>
+ <rect width="1080" height="1920" fill="url(#sgc)"/>
+ <g style="filter:blur(9px)" opacity=".55">${A.petaNusantara(70,520,.94,{warna:'#8A6A3A',bayang:false,sorot:.6})}</g>
+ ${A.debuCahaya(1080,1920,t,40,7,'#FFD98A')}
+ <g transform="translate(540 1180) rotate(-6) scale(1.42)" >${A.jurnalTerbuka(0,0,1,{kata:'Indonesia',sinar:1,benih:3})}</g>
+ ${A.penaBulu(905,1050,1.5,24)}
+ <g style="filter:blur(5px)">${A.lilin(120,1700,1.9,t,{glow:700})}</g>
+ <path d="M300 1500 Q230 1350 330 1240" stroke="#E8343C" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M296 1214 L364 1236 L318 1290Z" fill="#E8343C"/>
+ <rect width="1080" height="1920" fill="url(#sgc)" opacity=".0"/></svg>
+ <svg class="abs" width="1080" height="1920"><defs><radialGradient id="sv" cx=".5" cy=".55" r=".72"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#sv)"/></svg>`}
+function judulHook(T){const a=1-sinIO(lin(T,k('sih').s+0.05,k('sih').s+0.4));if(a<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:262px;text-align:center;opacity:${a};font:700 106px/1.06 Poppins;letter-spacing:-2px;color:#fff;-webkit-text-stroke:16px #1A0F08;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.35)">SIAPA YANG NAMAIN<br><span style="color:#FFB648">INDONESIA?</span></div>`}
+
+// ===== B1 HOOK — meja tulis MALAM diterangi lilin; kata "Indonesia" bersinar, peta Nusantara di dinding menyala, stempel "?" menghantam
+const AH=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('bukan').m-.05,pose:'kaget',loncat:true,transisi:.18},{t:k('kita').s+.2,pose:'curiga',transisi:.3}],{benih:4});
+function setHook(T){const p=P.malam,z=1.5-0.5*ioS(lin(T,0.25,3.3))+0.05*ioS(lin(T,T_INTRO-.8,T_INTRO+.3)),bk=k('bukan').m;
+ let s=A.ruangKerjaTua(1080,1920,p,T,{meja:1080,cx:540,cy:900,jendelaX:false,benih:5});
+ s+=`<rect x="120" y="360" width="840" height="430" rx="10" fill="#6A4424"/><rect x="140" y="380" width="800" height="390" fill="#D9C49A"/>`+A.petaNusantara(150,400,.78,{warna:'#8A9A62',bayang:false,sorot:ioS(lin(T,k('Indonesia').m,k('Indonesia').m+2.2))});
+ s+=A.lilin(150,1150,1.05,T,{glow:640});
+ s+=A.jurnalTerbuka(540,1240,1,{kata:'Indonesia',sinar:.5+.5*ioS(lin(T,.6,1.6)),benih:3});
+ const angkat=ioS(lin(T,.2,1.4));s+=A.penaBulu(880-angkat*40,1170-angkat*170,1,22+angkat*14);
+ const st=lin(T,bk-.25,bk+.02),sk=1+1.4*(1-oCub(st));
+ if(st>0)s+=`<g opacity="${Math.min(1,st*3).toFixed(3)}">${A.stempelLilin(350,1250,.95*sk,{isi:'?'})}</g>`+(T>bk?`<circle cx="350" cy="1250" r="${(120+lin(T,bk,bk+.4)*160).toFixed(1)}" fill="none" stroke="#FFD98A" stroke-width="10" opacity="${(1-lin(T,bk,bk+.4)).toFixed(3)}"/>`:'');
+ s+=A.debuCahaya(1080,1920,T,30,5,'#FFD98A');
+ const naik=oCub(lin(T,1.0,1.7)),gt=Math.sin(Math.PI*cl((T-bk)/.25))*14*(T>bk?1:0);
+ return `<div class="abs" style="inset:0;transform:scale(${z.toFixed(4)}) translateY(${gt.toFixed(1)}px);transform-origin:540px 1180px"><svg class="abs" width="1080" height="1920">${s}</svg>
+ <div class="abs" style="left:640px;top:${(1180+(1-naik)*500).toFixed(1)}px">${tebe(AH(T),330,1)}</div></div>`}
+
+// ===== B2 PELABUHAN 1850 PAGI — kapal layar, gudang putih, dua siluet bertopi (tanpa wajah), gerobak jurnal & Tebe berjalan
+const t2=T_INTRO+0.42;
+const AP=tebeAnimasi([{t:0,pose:'penasaran',jalan:[t2,k('beda').m-.3]},{t:k('beda').m-.1,pose:'bingung',transisi:.3}],{benih:7});
+function setPelabuhan(T){const p=P.siang,u=lin(T,t2,tengah(1)+.3),cam=-120-ioS(u)*520,gx=640+ioS(lin(T,t2,k('beda').m))*520;
+ let s=A.pelabuhanLama(1900,1920,p,T,{lautY:880,dermagaY:1400,suryaX:1500,suryaY:330});
+ s+=A.kapalLayar(380,1010,.62,p,T,{arah:-1})+A.kapalLayar(1080,960,.42,p,T+1)+A.kapalLayar(1700,990,.5,p,T+2);
+ s+=A.siluetBertopi(300,1440,.5,{warna:'#3A3240'})+A.siluetBertopi(400,1446,.5,{warna:'#2E2834',arah:-1,tarik:.4});
+ s+=A.gerobakJurnal(gx,1560,.95,p,T,{putar:gx/160});
+ const bd=oBack(lin(T,k('beda').m-.05,k('beda').m+.3));
+ const gel=bd>0?`<g transform="translate(${gx-300} 1060) scale(${bd.toFixed(3)})"><circle r="70" fill="#FFF4DC"/><circle cx="-60" cy="70" r="16" fill="#FFF4DC"/><text y="32" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="96" fill="#1F8A8A">?</text></g>`:'';
+ return `<div class="abs" style="left:0;top:0;width:1900px;height:1920px;transform:translateX(${cam.toFixed(1)}px)"><svg class="abs" width="1900" height="1920">${s}</svg>
+ <div class="abs" style="left:${(gx-470).toFixed(1)}px;top:1140px">${tebe(AP(T),300)}</div><svg class="abs" width="1900" height="1920" style="overflow:visible">${gel}</svg></div>
+ ${tagTahun('SINGAPURA, 1850',T,t2+1.9,tengah(1)-.15)}`}
+function tagTahun(txt,T,a,b){const kk=oExp(lin(T,a,a+.5))*(1-sinIO(lin(T,b-.3,b)));if(kk<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:330px;text-align:center;opacity:${kk.toFixed(3)};transform:translateY(${((1-kk)*-30).toFixed(1)}px)"><span style="display:inline-block;font:700 74px Poppins;letter-spacing:1px;color:#1E2A2A;background:linear-gradient(transparent 52%,#FFC93C 52%,#FFC93C 92%,transparent 92%);padding:0 18px">${txt}</span></div>`}
+
+// ===== B3 RUANG PETA — pita nama panjang (Indian Archipelago, Malay Archipelago, East Indies) melilit Tebe, lalu digunting jadi pendek
+const AR=tebeAnimasi([{t:0,pose:'bingung'},{t:k('ganti-ganti').m,pose:'sedih',transisi:.3},{t:k('pendek').m,pose:'penasaran',loncat:true,transisi:.25}],{benih:9});
+function pita(id,d,warna,teks,off,k1,lebar=74){return `<path id="${id}" d="${d}" fill="none" stroke="${warna}" stroke-width="${lebar}" stroke-linecap="round" stroke-dasharray="3000" stroke-dashoffset="${(3000*(1-k1)).toFixed(1)}"/>
+ <text font-family="Poppins" font-weight="700" font-size="40" letter-spacing="3" fill="#1E1E1E" dy="14" opacity="${k1>.6?1:0}"><textPath href="#${id}" startOffset="${off.toFixed(1)}">${teks}</textPath></text>`}
+function setPeta(T){const p=P.siang,u=T-tengah(1),pd=k('pendek').m,putus=ioS(lin(T,pd-.1,pd+.5)),z=1+ioS(lin(u,0,5))*.08,rot=Math.sin(u*.7)*2.2;
+ let s=A.ruangPeta(1300,1920,p,T,{lantai:1560,petaX:130,petaY:330,globeX:1120});
+ const tumbuh=ioS(lin(u,0,1.2)), gs=(T*90);
+ const w1=`M-100 ${980+Math.sin(T*1.3)*30} C300 ${820} 500 ${1180} 760 ${1000+Math.sin(T)*20} S1200 ${900} 1450 ${1040}`;
+ const w2=`M-100 ${1230} C260 ${1360+Math.sin(T*1.1)*30} 520 ${1080} 820 ${1260} S1150 ${1380} 1450 ${1200+Math.sin(T*1.4)*25}`;
+ const w3=`M-100 ${1440+Math.sin(T*.9)*25} C300 ${1320} 600 ${1520} 900 ${1400} S1250 ${1300} 1450 ${1460}`;
+ const kk=tumbuh*(1-putus);
+ let belakang=pita('pt1',w1,'#F2D58A','INDIAN ARCHIPELAGO · MALAY ARCHIPELAGO · EAST INDIES ·',(gs%600)-600,kk);
+ let depan=pita('pt2',w2,'#9FD3C7','EAST INDIES · INDIAN ARCHIPELAGO · MALAY ARCHIPELAGO ·',-((gs*1.2)%600),kk)+pita('pt3',w3,'#F2A08A','MALAY ARCHIPELAGO · EAST INDIES · INDIAN ARCHIPELAGO ·',(gs*.8%600)-600,kk);
+ const pk=oBack(lin(T,pd+.15,pd+.55));
+ const pendek=pk>0?`<g transform="translate(650 760) scale(${pk.toFixed(3)})"><rect x="-150" y="-50" width="300" height="100" rx="50" fill="#FFC93C"/><text y="20" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="60" fill="#1E1E1E">? ? ?</text></g>`:'';
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(-110px) rotate(${rot.toFixed(2)}deg) scale(${z.toFixed(4)});transform-origin:650px 1150px"><svg class="abs" width="1300" height="1920">${s}${belakang}</svg>
+ <div class="abs" style="left:480px;top:${(900+Math.sin(T*2)*8).toFixed(1)}px;transform:rotate(${(Math.sin(T*1.6)*6*(1-putus)).toFixed(2)}deg)">${tebe(AR(T),340)}</div><svg class="abs" width="1300" height="1920">${depan}${pendek}</svg></div>`}
+
+// ===== B4 HALAMAN YUNANI SIANG — kepingan INDOS (India) + NESOS (pulau) menyatu
+const KL=k('Pulau-pulau').m;
+const AY=tebeAnimasi([{t:0,pose:'berpikir'},{t:k('Indos').m,pose:'menjelaskan',transisi:.3},{t:KL-.05,pose:'tertawa',loncat:true,transisi:.2}],{benih:12});
+function setYunani(T){const p=P.siang,u=T-tengah(2),z=1+ioS(lin(u,0,8))*.12;
+ let s=A.halamanYunani(1080,1920,p,T,{lantai:1540});
+ const ma=ioS(lin(T,k('Indos').m-.15,k('Indos').m+.5)),mb=ioS(lin(T,k('nesos').m-.15,k('nesos').m+.5)),kl=ioS(lin(T,KL-.25,KL+.05));
+ const xa=lerp(-300,330,ma)+kl*57, xb=lerp(1400,750,mb)-kl*57, fl=lin(T,KL,KL+.6);
+ const pulau=`<g transform="translate(30 -60)"><ellipse cx="0" cy="10" rx="70" ry="16" fill="#E9D59A"/><path d="M0 10 Q4 -30 -6 -60" stroke="#7A5A38" stroke-width="8" fill="none"/><path d="M-6 -60 q-40 -10 -60 10 M-6 -60 q40 -14 56 8 M-6 -60 q-10 -30 -40 -36 M-6 -60 q20 -30 46 -30" stroke="#3E8A5A" stroke-width="12" fill="none" stroke-linecap="round"/></g>`;
+ s+=A.kepinganPuzzle(xa,900,.9,'#FFC93C','kanan',{teks:'INDOS',sub:'= INDIA',sinar:fl>0?1-fl:0});
+ s+=A.kepinganPuzzle(xb,900,.9,'#7CCFC4','kiri',{teks:'NESOS',sub:'= PULAU',ikon:pulau,sinar:fl>0?1-fl:0});
+ if(fl>0)s+=`<circle cx="540" cy="900" r="${(80+fl*520).toFixed(1)}" fill="none" stroke="#FFF4DC" stroke-width="${(18*(1-fl)).toFixed(1)}" opacity="${(1-fl).toFixed(3)}"/>`;
+ const hs=oBack(lin(T,KL+.15,KL+.55));
+ if(hs>0)s+=`<g transform="translate(540 650) scale(${hs.toFixed(3)})"><rect x="-330" y="-62" width="660" height="110" rx="55" fill="#1F8A8A"/><text y="20" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="58" fill="#FFF4DC">PULAU-PULAU INDIA</text></g>`;
+ const pl=oExp(lin(T,k('Polinesia').m-.1,k('Polinesia').m+.4))*(1-sinIO(lin(T,k('Indos').m-.3,k('Indos').m)));
+ if(pl>0)s+=`<g opacity="${pl.toFixed(3)}" transform="translate(540 700)"><rect x="-300" y="-60" width="600" height="104" rx="52" fill="#FFF4DC"/><text y="14" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="54" fill="#1E2A2A">POLY·<tspan fill="#1F8A8A">NESIA</tspan></text></g>`;
+ return `<div class="abs" style="inset:0;transform:scale(${z.toFixed(4)});transform-origin:540px 950px"><svg class="abs" width="1080" height="1920">${s}</svg>
+ <div class="abs" style="left:80px;top:1130px">${tebe(AY(T),300)}</div></div>`}
+
+// ===== B5 RUANG KERJA VICTORIA SENJA — dua papan nama; siluet ilmuwan condong ke papan kedua; MALAYUNESIA?!
+const KM=k('Malayunesia').m;
+const AV=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('condong').m,pose:'curiga',transisi:.3},{t:KM-.1,pose:'kaget',loncat:true,transisi:.18},{t:KM+.9,pose:'tertawa',transisi:.35}],{benih:14});
+function setVictoria(T){const p=P.senja,km=KM,pi=ioS(lin(T,k('Malayu-nisyens').m-.35,k('Malayu-nisyens').m+.15)),mund=ioS(lin(T,k('Kalau').m-.2,k('Kalau').m+.8));
+ const cam=lerp(lerp(-170,-560,pi),-330,mund), z=lerp(1.06,.94,mund)+ioS(lin(T,km-.2,km+.3))*.05;
+ let s=A.ruangVictoria(1700,1920,p,T,{lantai:1540,jendelaX:1180,apiX:170});
+ const cd=ioS(lin(T,k('condong').m-.2,k('condong').m+.6));
+ s+=A.papanEasel(540,1560,.92,{teks:'INDU-NESIANS',ukuran:54,sorot:lin(T,k('Indu-nisyens').m,k('Indu-nisyens').m+.3)*(1-pi)})+A.papanEasel(1180,1560,.92,{teks:'MALAYU-NESIANS',ukuran:48,sorot:Math.max(pi*.5,cd)});
+ s+=A.siluetBertopi(870,1600,.9,{warna:'#2E2232',condong:cd*10,tarik:cd});
+ return `<div class="abs" style="left:0;top:0;width:1700px;height:1920px;transform:translateX(${cam.toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:850px 1150px"><svg class="abs" width="1700" height="1920">${s}</svg>
+ <div class="abs" style="left:${(300+ioS(lin(T,km-.2,km+.2))*60).toFixed(1)}px;top:1110px">${tebe(AV(T),320,.3)}</div></div>
+ ${cap('Malayunesia?!',T,km,tengah(3)>km?km+2:B6-.05,{y:470,uk:116})}`}
+
+// ===== B6 MEJA EDITOR (lampu hangat) — Logan menulis "Indonesia"; tarik-tambang ramah dua siluet, Tebe jadi wasit
+const AE=tebeAnimasi([{t:0,pose:'menjelaskan'},{t:k('Siapa').m,pose:'curiga',transisi:.3},{t:k('debat').m-.1,pose:'angkatBahu',transisi:.3}],{benih:15});
+function setEditor(T){const p=P.senja,u=T-B6,z=1.04+ioS(lin(u,0,7.5))*.08,sp=k('Siapa').m,tug=lin(T,sp-.2,sp+.4),gy=Math.sin((T-sp)*5)*36*tug,tl=ioS(lin(T,k('menulis').m,k('Indonesia',2).s));
+ let s=A.ruangKerjaTua(1300,1920,p,T,{meja:1300,cx:650,cy:1000,jendelaX:930,benih:8})+A.lampuMeja(1110,1300,1,T)+A.lembarCetak(650,1520,1.1,{n:7});
+ s+=A.siluetBertopi(230,1640,.92,{warna:'#2A2230',tarik:1,condong:-tug*6-gy*.08})+A.siluetBertopi(1070,1640,.92,{warna:'#2A2230',tarik:1,arah:-1,condong:tug*6-gy*.08});
+ const hal=`<g transform="translate(${(650+gy).toFixed(1)} 1240) rotate(${(gy*.05).toFixed(2)})"><rect x="-200" y="-150" width="400" height="300" rx="6" fill="#FFE08A" opacity=".55" style="filter:blur(20px)"/><rect x="-180" y="-130" width="360" height="260" fill="#F4EEDC"/>
+  ${[0,1,4,5].map(i=>`<rect x="-140" y="${-96+i*40}" width="${200+(i*37)%80}" height="8" rx="4" fill="#8A7A60" opacity=".35"/>`).join('')}
+  <clipPath id="tlc"><rect x="-150" y="-40" width="${(300*tl).toFixed(1)}" height="80"/></clipPath><text x="-140" y="22" font-family="Lora,serif" font-style="italic" font-weight="600" font-size="60" fill="#5A2E0A" clip-path="url(#tlc)">Indonesia</text></g>`;
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(-110px) scale(${z.toFixed(4)});transform-origin:650px 1150px"><svg class="abs" width="1300" height="1920">${s}</svg>
+ <div class="abs" style="left:500px;top:${(740+Math.sin(T*3)*4).toFixed(1)}px">${tebe(AE(T),300,.2)}</div><svg class="abs" width="1300" height="1920">${hal}</svg></div>`}
+
+// ===== B7 PERPUSTAKAAN EROPA, HUJAN — buku ilmiah polos berdebu diambil pelajar; "HINDIA BELANDA" dicoret
+const AB=tebeAnimasi([{t:0,pose:'berpikir'},{t:k('merebutnya').m-.1,pose:'semangat',transisi:.3}],{benih:16});
+function setPustaka(T){const p=P.malam,u=T-tengah(4),z=1+ioS(lin(u,0,6.5))*.1,rb=k('merebutnya').m,am=ioS(lin(T,rb-.7,rb+.3)),hb=k('Hindia').m,pj=k('penjajah').m;
+ let s=A.perpustakaan(1300,1920,T)+A.jendelaKanal(380,330,540,720,p,T);
+ s+=`<rect x="300" y="1350" width="700" height="570" fill="#3E2A1E"/><rect x="0" y="1560" width="1300" height="360" fill="#4A3224"/>`;
+ const bx=lerp(1120,820,am),by=lerp(820,880,am)-Math.sin(Math.PI*am)*120;
+ s+=A.orang(760,1720,.95,p,T,{baju:'#3A4A62',bajuG:'#2E3C52',celana:'#2A2A34',kulit:'#B47A56',peci:true,angkat:am*.55});
+ s+=A.bukuPolos(bx,by,.85,{debu:1-lin(T,rb,rb+.8),sinar:lin(T,rb+.2,rb+1),rot:lerp(90,-8,am)});
+ for(let i=0;i<14;i++){const q=lin(T,rb+.05,rb+1.4);if(q>0&&q<1)s+=`<circle cx="${(bx+40+i*9+q*120*Math.cos(i)).toFixed(1)}" cy="${(by-40+q*-80*Math.sin(i*1.3)).toFixed(1)}" r="${(6+i%4*3).toFixed(0)}" fill="#D9CFC0" opacity="${((1-q)*.6).toFixed(3)}"/>`}
+ const hk=oExp(lin(T,hb-.1,hb+.4)),ct=ioS(lin(T,pj-.05,pj+.35));
+ const spanduk=hk>0?`<div class="abs" style="left:0;width:1080px;top:470px;text-align:center;opacity:${hk.toFixed(3)};transform:scale(${(.9+.1*hk).toFixed(3)})"><span style="position:relative;display:inline-block;padding:10px 34px;font:700 78px Poppins;color:#FFF4DC;background:rgba(30,20,14,.6);border-radius:16px">HINDIA BELANDA<span style="position:absolute;left:20px;top:50%;height:14px;border-radius:7px;background:#E8343C;width:${(ct*92).toFixed(1)}%"></span></span></div>`:'';
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(-110px) scale(${z.toFixed(4)});transform-origin:800px 1100px"><svg class="abs" width="1300" height="1920">${s}</svg>
+ <div class="abs" style="left:180px;top:1110px">${tebe(AB(T),320,.6)}</div></div>${spanduk}`}
+
+// ===== B8 AULA PEMUDA 1928 — cahaya hangat, spanduk polos, pemuda-pemudi mengangkat tangan bergiliran: tanah air, bangsa, bahasa
+const AA=tebeAnimasi([{t:0,pose:'penasaran'},{t:k('tanah').m-.2,pose:'haru',transisi:.4}],{benih:17});
+function setAula(T){const p=P.siang,u=T-B8,ty=-420+ioS(lin(u,0,5.2))*300;
+ let s=A.aula1928(1080,2300,p,T,{lantai:1900});
+ const ang=[k('tanah').m,k('bangsa').m,k('bahasa').m];
+ const baris=[[150,1960,'#F4EEDC',1,0],[330,1990,'#E9D2B8',0,1],[520,1970,'#F4EEDC',1,2],[730,1990,'#D7C2E0',0,0],[920,1960,'#F4EEDC',1,1]];
+ baris.forEach(([x,y,b,pc,g],i)=>{s+=A.orang(x,y,.78,p,T+i,{baju:pc?'#F4EEDC':b,bajuG:'#D9D0BC',celana:pc?'#3A3A4A':'#7A3A3A',kulit:['#B47A56','#C98F6A','#A86E4C'][i%3],peci:!!pc,kebaya:!pc,angkat:ioS(lin(T,ang[g]-.2,ang[g]+.35))})});
+ const th=oExp(lin(T,k('Sumpah').m-.1,k('Sumpah').m+.5));
+ return `<div class="abs" style="left:0;top:0;width:1080px;height:2300px;transform:translateY(${ty.toFixed(1)}px)"><svg class="abs" width="1080" height="2300">${s}</svg>
+ <div class="abs" style="left:390px;top:1520px">${tebe(AA(T),300)}</div></div>
+ ${th>0?`<div class="abs" style="left:0;width:1080px;top:${(380+(1-th)*30).toFixed(1)}px;text-align:center;opacity:${th.toFixed(3)};font:700 190px/1 Poppins;letter-spacing:4px;color:#B3262E;-webkit-text-stroke:10px #FFF4DC;paint-order:stroke fill;text-shadow:0 10px 26px rgba(90,40,10,.35)">1928</div>`:''}`}
+
+// ===== B9 TRIBUN STADION MALAM — sorak "Indonesia!", bendera raksasa merah putih naik dari tribun
+const AS=tebeAnimasi([{t:0,pose:'sorak'},{t:k('menjadikannya').m,pose:'semangat',transisi:.35}],{benih:18});
+function setStadion(T){const p=P.malam,u=T-B9,z=1.16-ioS(lin(u,0,4.4))*.16,bn=ioS(lin(T,k('tapi',1)&&k('tapi',2).m-.1,k('kita',6).s+.2));
+ let s=A.tribunStadion(1300,1920,p,T,{sorak:1});
+ let d=`M150 ${(1500-bn*780).toFixed(1)}`;for(let i=0;i<=10;i++)d+=` L${150+i*100} ${(1500-bn*780+Math.sin(T*4+i*.8)*24).toFixed(1)}`;
+ const tinggi=440;let d2=d.replace('M','L').split(' L').slice(1).reverse().map(q=>{const [x,y]=q.split(' ');return `L${x} ${(+y+tinggi).toFixed(1)}`}).join(' ');
+ const tengahB=d.split(' L').map(q=>q.replace('M','')).map(q=>{const [x,y]=q.split(' ');return `${x} ${(+y+tinggi/2).toFixed(1)}`});
+ const bendera=bn>0?`<path d="${d} ${tengahB.slice().reverse().map(q=>'L'+q).join(' ')}Z" fill="#D7282F"/><path d="${tengahB.map((q,i)=>(i?'L':'M')+q).join(' ')} ${d2}Z" fill="#F4EEDC"/>`:'';
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(-110px) scale(${z.toFixed(4)});transform-origin:650px 1200px"><svg class="abs" width="1300" height="1920">${s}${bendera}</svg>
+ <div class="abs" style="left:490px;top:1120px">${tebe(AS(T),330,.6)}</div></div>`}
+
+// ===== OUTRO KHAS — pendek; CTA kirim ke teman, kalimat menggantung "terus tanya dia…" → loop ke "Asal nama Indonesia dari mana, sih?"
+const AO=tebeAnimasi([{t:0,pose:'bangga'},{t:T_OUTRO+.3,pose:'bangga',tanda:'!'},{t:k('Kirim').m,pose:'menjelaskan',transisi:.35},{t:k('terus').m,pose:'penasaran',transisi:.35}],{benih:19});
+function setOutro(T){return KS.outro(T,T_OUTRO,{anim:AO,cta:'Kirim ke teman yang paling kencang teriak <span style="color:#FFC93C">INDONESIA!</span>',ctaMulai:k('Kirim').m-T_OUTRO-.1,sub:'…terus tanya dia: dari mana nama itu?',subMulai:k('terus').m-T_OUTRO-.1})}
+
+const BABAK=[{a:0,f:setHook},{a:t2,f:setPelabuhan,tr:'tanpa'},{a:tengah(1),f:setPeta,tr:'dorong'},{a:tengah(2),f:setYunani,tr:'geser'},{a:tengah(3),f:setVictoria,tr:'dorong'},
+ {a:B6,f:setEditor,tr:'geser'},{a:tengah(4),f:setPustaka,tr:'dorong'},{a:B8,f:setAula,tr:'silang'},{a:B9,f:setStadion,tr:'dorong'},{a:T_OUTRO,f:setOutro,tr:'dorong'}];
+function labelBabak(T){return KS.label('BUTUH NAMA PENDEK',T,k('Ilmuwan').m,tengah(2)-.1)+KS.label('BAHASA YUNANI',T,tengah(2)+.3,KL-.1)
+ +KS.label('GEORGE EARL',T,k('Jorj').m,B6-.1)+KS.label('JAMES LOGAN',T,k('Jeims').m,k('Siapa').m-.1)+KS.label('SIAPA PENCIPTANYA?',T,k('Siapa').m,tengah(4)-.1)
+ +KS.label('LABEL GEOGRAFI',T,tengah(4)+.3,k('pelajar').m-.1)+KS.label('DIREBUT PELAJAR',T,k('pelajar').m,B8-.1)+KS.label('SUMPAH PEMUDA',T,B8+.4,B9-.1)}
+window.EFEK=[{t:k('bukan').m-.02,sfx:'pop',vol:.55},{t:T_INTRO+.02,sfx:'jingle',vol:.55},{t:k('pendek').m,sfx:'pop',vol:.35},{t:KL,sfx:'ding',vol:.5},
+ {t:k('Malayu-nisyens').m-.4,sfx:'whoosh',vol:.4},{t:KM,sfx:'boing',vol:.45},{t:T_OUTRO+.35,sfx:'ding_ganda',vol:.5}];
+
+window.render=function(T){
+ let h=KS.komposisi(T,BABAK);
+ const intro=T>=T_INTRO&&T<T_INTRO+2.4, outro=T>=T_OUTRO-.3;
+ h+=KS.vinyet(T,.3)+labelBabak(T);
+ if(T>k('sih').s+.1&&!intro&&!outro)h+=KS.teksLayar(T,GRUP,{y:1305});
+ h+=KS.intro(T,T_INTRO)+KS.watermark(T,(T>1.2&&!intro&&!outro)?1:0);
+ if(T<0.95){const kk=1-oCub(lin(T,.55,.95));h+=`<div class="abs" style="inset:0;opacity:${kk};transform:scale(${1+(1-kk)*.08})">${sampulGambar(T)}<div style="position:absolute;left:-220px;top:20px">${KS.logoKecil}</div></div>`;}
+ h+=judulHook(T);
+ h+=`<div class="abs" style="left:0;top:0;height:6px;background:#FFC93C;width:${(T/window.DURASI*1080).toFixed(1)}px"></div>`;
+ document.getElementById('V').innerHTML=h;
+};
+window.render(0);
+</script></body></html>
