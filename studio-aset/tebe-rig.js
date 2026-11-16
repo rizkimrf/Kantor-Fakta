@@ -123,9 +123,12 @@
     const naik = -loncat * 60 + bobJalan, sx = 1 + squash * 0.08, sy = 1 - squash * 0.08;
     const LK = lengan(BAHU_K, p.tanganK, p.tekukK), LN = lengan(BAHU_N, p.tanganN, p.tekukN);
     const jg = (p.jambul || 0) + p.kepalaMiring * 0.4;
-    const jambul = (p.tanda || 0) < 0.5
-      ? `<g transform="rotate(${jg.toFixed(2)} 204 84)"><path d="M172 44 C170 6 246 2 244 42 C243 66 206 58 204 86" fill="none" stroke="${W.garis}" stroke-width="27" stroke-linecap="round"/><path d="M172 44 C170 6 246 2 244 42 C243 66 206 58 204 86" fill="none" stroke="${W.rambut}" stroke-width="16" stroke-linecap="round"/></g>`
-      : `<g transform="rotate(${jg.toFixed(2)} 204 84)"><path d="M204 84 L210 30" fill="none" stroke="${W.garis}" stroke-width="29" stroke-linecap="round"/><path d="M204 84 L210 30" fill="none" stroke="${W.rambut}" stroke-width="18" stroke-linecap="round"/></g>`;
+    // jambul "?" -> "!" berganti HALUS (silang-pudar + sedikit membesar), tidak lompat dalam 1 frame
+    const td = Math.max(0, Math.min(1, p.tanda || 0)), tanya = 1 - td, seru = td;
+    const jambul = `<g transform="rotate(${jg.toFixed(2)} 204 84)">`
+      + (tanya > 0.001 ? `<g opacity="${tanya.toFixed(3)}"><path d="M172 44 C170 6 246 2 244 42 C243 66 206 58 204 86" fill="none" stroke="${W.garis}" stroke-width="27" stroke-linecap="round"/><path d="M172 44 C170 6 246 2 244 42 C243 66 206 58 204 86" fill="none" stroke="${W.rambut}" stroke-width="16" stroke-linecap="round"/></g>` : "")
+      + (seru > 0.001 ? `<g opacity="${seru.toFixed(3)}" transform="translate(204 84) scale(${(0.85 + 0.15 * seru).toFixed(3)}) translate(-204 -84)"><path d="M204 84 L210 30" fill="none" stroke="${W.garis}" stroke-width="29" stroke-linecap="round"/><path d="M204 84 L210 30" fill="none" stroke="${W.rambut}" stroke-width="18" stroke-linecap="round"/></g>` : "")
+      + `</g>`;
     const kaki = (x, rot) => `<g transform="rotate(${rot.toFixed(1)} ${x + 15} 426)"><rect x="${x}" y="424" width="30" height="52" rx="12" fill="${W.kulit}" ${G}/>
       ${x < 200 ? `<path d="M146 500 Q146 470 176 470 L194 470 Q198 500 194 500 Z" fill="${W.sepatu}" ${G}/><path d="M150 492 L194 492" stroke="${W.celana}" stroke-width="5"/>`
                  : `<path d="M254 500 Q254 470 224 470 L206 470 Q202 500 206 500 Z" fill="${W.sepatu}" ${G}/><path d="M206 492 L250 492" stroke="${W.celana}" stroke-width="5"/>`}</g>`;
@@ -227,9 +230,9 @@
       p.loncat = tinggi(t); p.squash = squash(t);
       p.lambai = p.bentukN === "buka" && p.tanganN[1] < 260 ? Math.sin(t * 12) * 18 : t * 1;
       // jambul berubah "!" dengan kilat kecil
-      let tanda = 0; for (const tt of tandaT) if (t >= tt) tanda = 1;
+      let tanda = 0; for (const tt of tandaT) { const x = Math.max(0, Math.min(1, (t - tt) / 0.28)); tanda = Math.max(tanda, x * x * (3 - 2 * x)); }
       p.tanda = tanda;
-      p.jambul = jambulPegas(t) + (tandaT.some((tt) => t > tt && t < tt + 0.7) ? Math.sin((t - tandaT[0]) * 22) * 14 * (1 - (t - tandaT[0]) / 0.7) : 0);
+      p.jambul = jambulPegas(t) + (tandaT.some((tt) => t > tt && t < tt + 0.9) ? Math.sin((t - tandaT[0]) * 14) * 9 * Math.pow(1 - (t - tandaT[0]) / 0.9, 2) : 0);
       p.efekK = 0.6 + 0.4 * Math.sin(t * 10);
       return p;
     };

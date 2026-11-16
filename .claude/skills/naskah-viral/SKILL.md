@@ -5,7 +5,13 @@ description: Cara Nadia menulis naskah Shorts/video panjang Ternyata Begitu yang
 # Naskah Viral (Nadia)
 Penonton memutuskan dalam 1–2 detik. Tugasmu: membuat mereka TIDAK BISA geser.
 
-## Struktur Shorts (45–90 dtk, ±2,3 kata/dtk)
+## Memadatkan tanpa kehilangan inti (keputusan Bos, 16 Nov 2026)
+Data awal: penonton pergi di detik 10–20 dari video 60–70 dtk. Target sementara **40–55 dtk**, TAPI:
+- Semua **fakta inti** di riset.md (klaim + "kok bisa" + kejutan utama) WAJIB tetap ada. Yang dipotong: pengantar, pengulangan, kalimat transisi kosong, fakta pelengkap ke-3/ke-4.
+- Kecepatan bicara tidak dinaikkan dan jeda napas antar babak tetap ada — padat bukan berarti tergesa atau patah-patah.
+- Bila inti tidak muat di 55 dtk, boleh lebih panjang; laporkan alasannya di lembar_tim.md.
+
+## Struktur Shorts (±2,3 kata/dtk)
 1. **Hook 0–3 dtk — tugas nomor satu.** Penonton harus berhenti menggulir sebelum detik ke-3. Hook = kalimat + visual pembuka bekerja bersama.
    - **Bahasa masyarakat dulu (keputusan Bos):** hook & judul sampul memakai kalimat yang SUDAH diucapkan/dicari orang Indonesia sehari-hari
      — mitos, ejekan, pertanyaan warung, istilah viral ("micin bikin bodoh?", "generasi micin", "kenapa durian bau banget?").

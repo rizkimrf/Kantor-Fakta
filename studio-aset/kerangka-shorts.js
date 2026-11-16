@@ -13,7 +13,7 @@
 (function (root) {
   const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), lin = (t, a, b) => cl((t - a) / (b - a));
   const oExp = (x) => (x >= 1 ? 1 : 1 - Math.pow(2, -10 * x)), ioS = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
-  const oCub = (x) => 1 - Math.pow(1 - x, 3), oBack = (x) => { const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+  const oCub = (x) => 1 - Math.pow(1 - x, 3), oBack = (x, c = 1.7) => { return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
   const sinIO = (x) => 0.5 - 0.5 * Math.cos(Math.PI * cl(x)), halus = (x) => { x = cl(x); return x * x * x * (x * (x * 6 - 15) + 10); };
   const lerp = (a, b, k) => a + (b - a) * k;
   const norm = (s) => s.toLowerCase().replace(/[^a-z0-9\-]/g, "");
@@ -114,7 +114,7 @@
   // ---------- intro khas lega (2,4 dtk) ----------
   function intro(T, t0) {
     const u = T - t0; if (u < 0 || u > 2.4) return "";
-    const R = ioS(lin(u, 0, 0.35)) * 1500 * (1 - ioS(lin(u, 2.05, 2.4))), ds = 1 - lin(u, 0.2, 0.65), lg = oBack(lin(u, 0.5, 0.85)) * (1 - lin(u, 2.0, 2.2)), ng = 1 + lin(u, 0.85, 2.0) * 0.04;
+    const R = ioS(lin(u, 0, 0.35)) * 1500 * (1 - ioS(lin(u, 2.05, 2.4))), ds = 1 - lin(u, 0.2, 0.65), lg = oBack(lin(u, 0.5, 0.9), 0.5) * (1 - ioS(lin(u, 1.95, 2.25))), ng = 1 + lin(u, 0.85, 2.0) * 0.04;
     return `<svg width="1080" height="1920" style="position:absolute;left:0;top:0"><circle cx="760" cy="1260" r="${R.toFixed(1)}" fill="#FFC93C"/><circle cx="760" cy="1260" r="${(R * 0.82).toFixed(1)}" fill="#1F8A8A"/>
  <g transform="translate(540 700) scale(${(2.2 * ng).toFixed(3)})" opacity="${R > 300 ? 1 : 0}"><path d="M-30 -40 C-32 -78 44 -82 42 -42 C41 -18 4 -26 2 2" fill="none" stroke="#FFC93C" stroke-width="18" stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="${(ds * 200).toFixed(1)}"/><circle cx="2" cy="30" r="11" fill="#FFC93C" opacity="${lin(u, 0.6, 0.65)}"/></g></svg>
  <div style="position:absolute;left:0;width:1080px;text-align:center;top:960px;font:700 120px/1.08 Poppins;letter-spacing:-2px;color:#FFF4DC;transform:scale(${(lg * ng).toFixed(3)});opacity:${lg > 0 ? 1 : 0}">Ternyata<br><span style="display:inline-block;background:#FFC93C;color:#1E1E1E;border:7px solid #1E1E1E;border-radius:28px;padding:4px 30px 0;box-shadow:10px 12px 0 rgba(0,0,0,.35);transform:rotate(-2deg);font-size:140px">Begitu!</span></div>`;
@@ -122,10 +122,12 @@
   // ---------- outro khas ----------
   function sinar(t) { let s = ""; for (let i = 0; i < 18; i++) { const a = t * 0.15 + (i * Math.PI) / 9, b = a + Math.PI / 18; s += `<path d="M540 820 L${(540 + 2400 * Math.cos(a)).toFixed(0)} ${(820 + 2400 * Math.sin(a)).toFixed(0)} L${(540 + 2400 * Math.cos(b)).toFixed(0)} ${(820 + 2400 * Math.sin(b)).toFixed(0)}Z" fill="#fff" opacity=".06"/>`; } return s; }
   function outro(T, t0, o = {}) {
-    const u = T - t0, e = oBack(lin(u, 0.1, 0.55)), s = oBack(lin(u, 0.45, 0.85)), f = oExp(lin(u, o.ctaMulai ?? 1.9, (o.ctaMulai ?? 1.9) + 0.5));
-    return `<div style="position:absolute;inset:0;transform:scale(${(1.06 - lin(u, 0, 6) * 0.06).toFixed(4)})"><svg width="1080" height="1920" style="position:absolute;left:0;top:0"><rect width="1080" height="1920" fill="#1F8A8A"/>${sinar(T)}<circle cx="490" cy="720" r="${(310 * e).toFixed(1)}" fill="#FFC93C" stroke="#1E1E1E" stroke-width="12"/></svg>
+    // Masuk outro tanpa pantulan (overshoot) & tanpa arah gerak yang berbalik: lingkaran+Tebe tumbuh mulus dari 55%, judul menyusul,
+    // kamera terus maju pelan (searah transisi 'dorong'). Pakai transisi masuk 'silang' atau 'dorong' 0,6 dtk.
+    const u = T - t0, e = 0.55 + 0.45 * ioS(lin(u, 0, 0.7)), s = ioS(lin(u, 0.45, 1.0)), f = oExp(lin(u, o.ctaMulai ?? 1.9, (o.ctaMulai ?? 1.9) + 0.5));
+    return `<div style="position:absolute;inset:0;transform:scale(${(1 + lin(u, 0, 8) * 0.03).toFixed(4)})"><svg width="1080" height="1920" style="position:absolute;left:0;top:0"><rect width="1080" height="1920" fill="#1F8A8A"/>${sinar(T)}<circle cx="490" cy="720" r="${(310 * e).toFixed(1)}" fill="#FFC93C" stroke="#1E1E1E" stroke-width="12"/></svg>
  <div style="position:absolute;left:270px;top:400px;transform:scale(${e.toFixed(3)});transform-origin:220px 320px">${tebe(o.anim(T), 440)}</div>
- <div style="position:absolute;left:0;width:980px;text-align:center;top:1040px;font:700 96px/1.08 Poppins;letter-spacing:-2px;color:#FFF4DC;transform:scale(${s.toFixed(3)})">Ternyata <span style="display:inline-block;background:#FFC93C;color:#1E1E1E;border:7px solid #1E1E1E;border-radius:26px;padding:2px 24px 0;box-shadow:8px 10px 0 rgba(0,0,0,.35);transform:rotate(-2deg)">Begitu!</span></div>
+ <div style="position:absolute;left:0;width:980px;text-align:center;top:1040px;font:700 96px/1.08 Poppins;letter-spacing:-2px;color:#FFF4DC;opacity:${s.toFixed(3)};transform:translateY(${((1 - s) * 40).toFixed(1)}px) scale(${(0.9 + 0.1 * s).toFixed(3)})">Ternyata <span style="display:inline-block;background:#FFC93C;color:#1E1E1E;border:7px solid #1E1E1E;border-radius:26px;padding:2px 24px 0;box-shadow:8px 10px 0 rgba(0,0,0,.35);transform:rotate(-2deg)">Begitu!</span></div>
  <div style="position:absolute;left:90px;width:790px;top:1222px;text-align:center;font:700 50px/1.22 Poppins;color:#FFF4DC;opacity:${f.toFixed(3)};transform:translateY(${((1 - f) * 30).toFixed(1)}px);text-shadow:0 4px 10px rgba(0,0,0,.35)">${o.cta || ""}<div style="font:600 34px Poppins;color:#FFE7A6;margin-top:12px">Tulis jawabanmu di komentar</div></div></div>`;
   }
   // ---------- watermark bergiliran ----------

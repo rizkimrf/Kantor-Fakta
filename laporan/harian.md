@@ -3,7 +3,8 @@ Temuan: penonton rata-rata hanya bertahan 9–21 dtk dari video 60–72 dtk; yan
 Video 99.900 paling cepat ditinggal (9 dtk) — caption & isinya membocorkan jawaban ("ternyata efeknya kecil") sehingga rasa penasaran hilang.
 
 ## 3 langkah untuk produksi besok
-1. **Padatkan:** target 35–50 dtk selama akun masih baru. Buang kalimat pengantar; jawaban "kok bisa" harus mulai sebelum detik 15. Lebih pendek tidak berarti terburu-buru — kurangi jumlah fakta, bukan kecepatan bicara.
+1. **Padatkan tanpa membuang inti:** target 40–55 dtk. Fakta inti (klaim, "kok bisa", kejutan utama) tetap utuh; yang dibuang pengantar, pengulangan, fakta pelengkap. Jawaban "kok bisa" mulai sebelum detik 15. Kecepatan bicara & jeda napas tetap — jangan patah-patah.
+   + **Outro wajib mulus:** pakai kerangka-shorts.js terbaru (tanpa efek pantul, jambul ?→! halus) dan pastikan `cek_mulus.py` LULUS — versi baru sudah mendeteksi patah di outro durian & 99.900.
 2. **Jangan bocorkan jawaban** di hook, teks layar, maupun caption. Caption = pertanyaan pancingan, bukan ringkasan. Buka celah baru di detik 8–12 ("tapi ada yang aneh…").
 3. **Pemicu share & simpan** di detik terakhir: "kirim ke teman yang…" yang spesifik dan lucu, plus 1 kalimat yang membuat orang ingin menonton ulang (loop ke awal).
 Ukur lagi besok: rata-rata tonton naik di atas 50% durasi? share > 0?

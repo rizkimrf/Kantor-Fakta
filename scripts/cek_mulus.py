@@ -44,6 +44,15 @@ for k in lonjak:
 for g in grup:
     if len(g) < 4 and sum(d[k] for k in g) > 30 and not (len(g) == 1):
         masalah.append(f"transisi terlalu cepat/kasar di {g[0] / fps:.2f} dtk ({len(g)} frame) - pakai transisi 12-18 frame dengan easing")
+# frame "tersendat": di tengah gerakan, satu frame hampir tidak berubah lalu gerak lanjut (frame dobel / animasi patah)
+for k in range(2, len(d) - 2):
+    kiri, kanan = max(d[k - 2], d[k - 1]), max(d[k + 1], d[k + 2])
+    if min(kiri, kanan) > 1.2 and d[k] < 0.35 * min(kiri, kanan):
+        masalah.append(f"gerak tersendat (frame dobel) di {k / fps:.2f} dtk")
+# gerak berbalik arah tiba-tiba (mis. membesar lalu mengecil = efek pantul) terdeteksi sebagai dua lonjakan beruntun
+for k in range(3, len(d) - 3):
+    if d[k] > 2 and d[k - 1] > 2 and d[k] > 1.8 * d[k - 1] and d[k - 2] > 1.8 * d[k - 1]:
+        masalah.append(f"gerak patah/berbalik arah di {k / fps:.2f} dtk")
 polos = [k for k in range(len(f)) if f[k].std() < 3]
 if polos: masalah.append(f"{len(polos)} frame warna polos (mis. di {polos[0] / fps:.2f} dtk) - layar kosong terlihat seperti kedip")
 diam = 0
