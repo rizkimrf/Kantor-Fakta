@@ -137,20 +137,38 @@ def tiktok(folder, u):
 
 
 # ---------- Instagram (lewat Halaman Facebook + Graph API; unggah langsung tanpa link publik) ----------
+def _ig_aman(src):
+    """Salinan video dengan spesifikasi aman Reels (H.264 high 30fps yuv420p, AAC 128k 48 kHz stereo, faststart)."""
+    import subprocess
+    out = src.with_name("final_ig.mp4")
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p",
+                    "-r", "30", "-g", "60", "-crf", "21", "-maxrate", "8M", "-bufsize", "16M", "-c:a", "aac", "-b:a", "128k",
+                    "-ar", "48000", "-ac", "2", "-movflags", "+faststart", str(out)], check=True)
+    return out
+
+
 def instagram(folder, u):
     tok, uid = os.environ["IG_ACCESS_TOKEN"], os.environ["IG_USER_ID"]
     g = "https://graph.facebook.com/v21.0"  # IG_ACCESS_TOKEN = token Halaman Facebook (tidak kedaluwarsa)
-    c = form(f"{g}/{uid}/media", media_type="REELS", upload_type="resumable", caption=u["instagram"]["caption"],
-             share_to_feed="true", thumb_offset="0", access_token=tok)
-    video = (folder / "final.mp4").read_bytes()
-    http(c["uri"], video, {"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(video)),
-                            "Content-Type": "application/octet-stream"})  # cegah urllib mengirim form-urlencoded default
-    for _ in range(60):
-        st = http(f"{g}/{c['id']}?fields=status_code&access_token={tok}").get("status_code")
-        if st == "FINISHED": break
-        if st == "ERROR": raise RuntimeError("Instagram gagal memproses video")
-        time.sleep(10)
-    return form(f"{g}/{uid}/media_publish", creation_id=c["id"], access_token=tok)["id"]
+
+    def coba(berkas):
+        c = form(f"{g}/{uid}/media", media_type="REELS", upload_type="resumable", caption=u["instagram"]["caption"],
+                 share_to_feed="true", thumb_offset="0", access_token=tok)
+        video = berkas.read_bytes()
+        http(c["uri"], video, {"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(video)),
+                                "Content-Type": "application/octet-stream"})  # cegah urllib mengirim form-urlencoded default
+        for _ in range(60):
+            st = http(f"{g}/{c['id']}?fields=status_code,status&access_token={tok}")
+            if st.get("status_code") == "FINISHED": break
+            if st.get("status_code") == "ERROR": raise RuntimeError(f"Instagram gagal memproses video: {st.get('status')}")
+            time.sleep(10)
+        return form(f"{g}/{uid}/media_publish", creation_id=c["id"], access_token=tok)["id"]
+
+    try:
+        return coba(folder / "final.mp4")
+    except RuntimeError as e:  # 16 Nov: durian ditolak (ProcessingFailedError) padahal video uji diterima -> coba salinan spesifikasi aman
+        print("  Instagram menolak file asli, mencoba ulang dengan salinan spesifikasi aman Reels:", str(e)[:200])
+        return coba(_ig_aman(folder / "final.mp4"))
 
 
 PLATFORM = {"youtube": (youtube, ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"]),
