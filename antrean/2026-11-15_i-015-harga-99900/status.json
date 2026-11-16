@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "I-015 harga 99900",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -69,6 +69,16 @@
       "waktu": "2026-11-16T11:49+08:00",
       "oleh": "Bos (Kantor Visual HP)",
       "hasil": "Bos menandai sudah unggah manual TikTok & Instagram; YouTube belum ditandai"
+    },
+    {
+      "waktu": "2026-11-16T15:17+08:00",
+      "oleh": "Bos (Kantor Visual HP)",
+      "hasil": "Bos menandai sudah unggah manual YouTube"
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "waktu": "2026-11-16T07:18"
     }
   ],
   "masalah": null,
@@ -78,7 +88,8 @@
   "jadwal_tayang": "2026-11-16T11:38:00+08:00",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "id": "manual",
+      "waktu": "2026-11-16T03:55:08.120Z"
     },
     "tiktok": {
       "id": "manual",
