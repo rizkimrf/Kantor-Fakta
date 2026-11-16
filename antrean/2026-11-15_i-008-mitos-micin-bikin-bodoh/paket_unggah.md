@@ -35,4 +35,4 @@ Kirim ke teman yang tiap kamu salah ngomong langsung bilang "dasar generasi mici
 
 ## Sampul (= frame pertama video): MICIN BIKIN BODOH? (tanpa '1 SURAT', arahan Bos)
 ## Label konten AI: NYALA di ketiga platform
-## Jadwal (dugaan, belum ada data channel): 2026-11-18T12:00:00+08:00 WITA; cadangan 2026-11-18T18:00:00+08:00. Sesuai rencana_marketing.md.
+## Jadwal (dugaan, belum ada data channel): 2026-11-18T13:00:00+08:00 WITA (Rab 18 Nov 13.00); cadangan 2026-11-18T18:00:00+08:00. Teaser TikTok/Reels: momen jarum suntik vs sendok micin (±42–47 dtk) sebagai potongan pratinjau.
