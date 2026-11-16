@@ -24,7 +24,7 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 ## Target produksi & strategi monetisasi (disetujui Bos, 15 Nov 2026)
 **Tujuan utama: lolos monetisasi YouTube secepat mungkin** dengan syarat yang berlaku untuk pendaftar baru mulai 1 Feb 2027:
 1.000 subscriber + **8.000 jam tonton video panjang dalam 365 hari** (jalur Shorts 20 juta views/90 hari dianggap bonus, bukan andalan).
-- **Keputusan Bos (15 Nov 2026): kejar kuantitas harian supaya akun terlihat aktif di niche.** Shorts **2 per hari, setiap hari** (12.00 & 18.00) adalah target utama. Kuantitas tidak boleh menurunkan gerbang mutu.
+- **Keputusan Bos (15 Nov 2026): kejar kuantitas harian supaya akun terlihat aktif di niche.** Shorts **2 per hari, setiap hari** (13.00 & 18.00 WITA; slot ke-3 20.45 bila 3 Shorts/hari — lihat `jam_tayang.json`) adalah target utama. Kuantitas tidak boleh menurunkan gerbang mutu.
 - **Video panjang 16:9: 1 per minggu (Minggu 19.00)**, dirakit HEMAT dari Shorts minggu itu yang setema/terbaik: pakai ulang narasi & visual yang sudah ada, tambah narasi penghubung + intro/penutup baru (maks ±1.500 huruf baru). Naik ke 2/minggu setelah kuota memungkinkan.
 - **Hemat kuota (wajib):** 1 sesi produksi pagi membuat 2 Shorts sekaligus · suara dibuat sekali (tanpa versi kedua kecuali Bos menolak) · Laras & Raka memakai model Sonnet, Nadia/Yoga/Pak Bima tetap model utama.
 - **Rem otomatis:** di laporan, Pak Bima mencatat perkiraan pemakaian kredit ElevenLabs bulan ini (`aset/log_kredit.csv`). Bila kredit tersisa < 15% sebelum tanggal 25, atau Bos menulis "hemat" di Kantor Visual → turun ke 1 Shorts/hari dan laporkan.
@@ -93,7 +93,7 @@ Konten selesai bukan berarti berhenti. Setiap video yang tayang wajib dianalisa 
 
 ## Jadwal otomatis di cloud (perintah `/pasang-jadwal`, sekali saja)
 - 05.41 WITA produksi pagi: ambil keputusan Bos, kerjakan antrean, jaga stok, kirim pratinjau ke Kantor Visual HP.
-- 11.47 & 17.47 WITA `/terbitkan`: terapkan Setujui/Tolak dari HP, lalu unggah yang disetujui sesuai jam tayang (12.00 & 18.00).
+- 12.47 & 17.47 WITA `/terbitkan` (+ 20.32 bila 3 Shorts/hari): terapkan Setujui/Tolak dari HP, lalu unggah yang disetujui sesuai jam tayang di `jam_tayang.json` (13.00 & 18.00, slot ke-3 20.45).
 - Kunci API & token hanya di pengaturan environment claude.ai/code (lihat `.env.example` untuk daftar namanya), tidak pernah di repo atau chat.
 
 ## Laporan ke pemilik (selalu di akhir sesi, singkat)

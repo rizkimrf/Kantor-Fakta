@@ -1,0 +1,6 @@
+{
+ "_catatan": "Jam tayang WITA (perintah Bos 16 Nov 2026). Shorts 2/hari: 13:00 & 18:00. Slot ke-3 20:45 dipakai hanya bila produksi 3 Shorts/hari (ubah 'shorts_per_hari' ke 3). Video panjang Minggu 19:00.",
+ "shorts_per_hari": 2,
+ "shorts": ["13:00", "18:00", "20:45"],
+ "panjang": ["19:00"]
+}

@@ -25,7 +25,7 @@ Ikut menilai konsep sampul: apakah orang di grid profil/beranda berhenti? Bandin
 - YouTube: deskripsi = 2 kalimat penasaran + sumber (judul + URL) + 3–5 hashtag.
 - TikTok: caption ≤150 karakter, pertanyaan pancingan + 3–5 hashtag (1 luas, 2 niche, 1 Indonesia).
 - Instagram: kalimat pembuka kuat, 2–3 baris, ajakan simpan/kirim ke teman, 5–8 hashtag.
-Label konten AI selalu dinyalakan. Jam tayang: 12.00 & 18.00 WITA (Shorts), 19.00 (panjang).
+Label konten AI selalu dinyalakan. Jam tayang: 13.00 & 18.00 WITA (Shorts; slot ke-3 20.45 bila 3/hari), 19.00 (panjang) — sumber: `jam_tayang.json`.
 
 ## Analisa (harian ringan & Senin lengkap) — data dari Supermetrics (diambil Pak Bima, lihat /laporan-minggu)
 Yang paling menentukan distribusi, urut prioritas: **% ditonton sampai habis / rata-rata durasi tonton** → share & save → komentar → views.

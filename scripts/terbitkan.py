@@ -5,7 +5,7 @@ Dijalankan otomatis oleh tugas terjadwal di cloud (lihat .claude/commands/terbit
 
 Aturan:
 - Hanya folder dengan tahap "disetujui" atau "terjadwal". Status "disetujui" HANYA dari Bos.
-- Jadwal: slot berikutnya dari JAM_TAYANG_SHORTS / JAM_TAYANG_PANJANG (WITA) bila belum ada `jadwal_tayang`.
+- Jadwal: slot berikutnya dari jam_tayang.json (WITA) bila belum ada `jadwal_tayang`.
 - YouTube diunggah segera dengan publishAt = jadwal (YouTube yang menayangkan tepat waktu).
 - TikTok & Instagram diunggah saat jadwal sudah tiba (paling cepat 15 menit sebelum).
 - Sampul = frame pertama video (video_cover_timestamp_ms=0 / thumb_offset=0). Label AI: YouTube containsSyntheticMedia,
@@ -136,13 +136,15 @@ PLATFORM = {"youtube": (youtube, ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRES
 
 
 def slot_berikut(panjang):
-    jam = [int(j) for j in os.environ.get("JAM_TAYANG_PANJANG" if panjang else "JAM_TAYANG_SHORTS",
-                                          "19" if panjang else "12,18").split(",")]
+    # Jam tayang dari jam_tayang.json di repo (bukan environment), format "HH:MM" WITA.
+    cfg = json.loads((ROOT / "jam_tayang.json").read_text(encoding="utf-8"))
+    jam = cfg["panjang"] if panjang else cfg["shorts"][:int(cfg.get("shorts_per_hari", 2))]
+    jam = [datetime.time(*map(int, j.split(":"))) for j in jam]
     terpakai = {json.loads(p.read_text(encoding="utf-8")).get("jadwal_tayang") for p in (ROOT / "antrean").glob("*/status.json")}
     hari = SEKARANG.date()
     while True:
         for j in sorted(jam):
-            k = datetime.datetime.combine(hari, datetime.time(j), WITA)
+            k = datetime.datetime.combine(hari, j, WITA)
             if k > SEKARANG + datetime.timedelta(minutes=45) and k.isoformat() not in terpakai:
                 return k
         hari += datetime.timedelta(days=1)

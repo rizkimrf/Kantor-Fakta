@@ -11,6 +11,6 @@ Zona waktu: `CRON_TZ=Asia/Makassar`.
 | Kantor - terbit siang | `CRON_TZ=Asia/Makassar 47 11 * * *` | "Kamu Pak Bima di repo Kantor-Fakta. Ikuti CLAUDE.md. Jalankan /terbitkan." |
 | Kantor - terbit sore | `CRON_TZ=Asia/Makassar 47 17 * * *` | "Kamu Pak Bima di repo Kantor-Fakta. Ikuti CLAUDE.md. Jalankan /terbitkan." |
 
-Jam tayang Shorts default 12.00 dan 18.00 WITA (`JAM_TAYANG_SHORTS`), video panjang 19.00 (diunggah ke YouTube dengan jadwal).
+Jam tayang Shorts 13.00 dan 18.00 WITA, slot ke-3 20.45 (`jam_tayang.json`), video panjang 19.00 (diunggah ke YouTube dengan jadwal).
 Jika tool `create_trigger` tidak ada di sesi ini, berikan tabel di atas ke Bos supaya dibuat dari menu jadwal di claude.ai/code.
 Laporkan ke Bos tugas apa saja yang terpasang dan apakah tiap tugas berjalan otomatis atau minta izin.
