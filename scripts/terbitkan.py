@@ -125,7 +125,8 @@ def instagram(folder, u):
     c = form(f"{g}/{uid}/media", media_type="REELS", upload_type="resumable", caption=u["instagram"]["caption"],
              share_to_feed="true", thumb_offset="0", access_token=tok)
     video = (folder / "final.mp4").read_bytes()
-    http(c["uri"], video, {"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(video))})
+    http(c["uri"], video, {"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(video)),
+                            "Content-Type": "application/octet-stream"})  # cegah urllib mengirim form-urlencoded default
     for _ in range(60):
         st = http(f"{g}/{c['id']}?fields=status_code&access_token={tok}").get("status_code")
         if st == "FINISHED": break
