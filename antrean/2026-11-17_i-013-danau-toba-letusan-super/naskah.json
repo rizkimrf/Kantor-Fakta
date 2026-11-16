@@ -1,0 +1,153 @@
+{
+  "format": "shorts",
+  "judul": "Danau Toba Terbentuk dari Apa? Kamu Berenang di Atas Lubang",
+  "judul_opsi": [
+    "Danau Toba Terbentuk dari Apa? Kamu Berenang di Atas Lubang",
+    "Danau Toba Itu Lubang Bekas Apa? Samosir Bikin Kaget",
+    "Toba Meletus, Manusia Nyaris Punah? Ilmuwan Salah Duga"
+  ],
+  "thumbnail_teks": "DANAU APA LUBANG?",
+  "thumbnail_visual": "Vertical split cross-section cover: the top half shows a calm deep-blue Lake Toba surface at golden hour with a tiny wooden boat; the bottom half cuts below the waterline to reveal dark navy water sinking into a gigantic bowl-shaped hole whose deep floor glows a faint magma orange (a hint, not an eruption); Tebe (chibi mascot, mustard hoodie, '?' cowlick) sits in the boat at the top-left, leaning over the edge to look down, eyes wide and mouth open in shock; one bold red arrow points down into the glowing hole; flat style without black outlines, dominant deep navy + magma orange (different from the lime-teal durian and red-yellow price-tag covers), strong contrast, empty band at the top for the text overlay; no letters inside the illustration.",
+  "deskripsi": "Danau Toba terbentuk dari apa? Kalau kamu pernah berenang di sana, tebak dulu kamu sebenarnya berenang di atas apa, lalu cocokkan dengan videonya.\n\nCatatan lengkap (spoiler, baca setelah nonton): Danau Toba adalah kaldera, sisa letusan super sekitar 74.000 tahun lalu. Magma keluar sangat banyak, dapur magma kosong, atapnya runtuh, lalu lubangnya terisi air. Pulau Samosir adalah dasar kaldera yang terdorong naik lagi. Abu Toba ditemukan sampai Afrika, lebih dari 7.000 km jauhnya. Teori bahwa letusan ini hampir memusnahkan manusia tidak didukung bukti terbaru: di gua Pinnacle Point, Afrika Selatan, aktivitas manusia berlanjut sebelum, saat, dan sesudah abu jatuh. Dampak iklim globalnya masih diperdebatkan ilmuwan.\n\nSumber:\n- Smith dkk., Nature 2018: https://link.springer.com/article/10.1038/nature25967\n- ScienceDaily, \"Modern humans flourished through ancient supervolcano eruption\": https://www.sciencedaily.com/releases/2018/03/180312132956.htm\n- University of Cape Town, \"How ancient humans survived a volcanic winter\": https://news.uct.ac.za/article/-2018-04-04-how-ancient-humans-survived-a-volcanic-winter\n- Lane dkk., PNAS 2013 (Danau Malawi): https://ui.adsabs.harvard.edu/abs/2013PNAS..110.8025L\n- Frontiers in Earth Science 2015, Resurgent Toba: https://doi.org/10.3389/feart.2015.00025\n- JSTOR Daily: https://daily.jstor.org/a-massive-eruption-74000-years-ago-affected-the-whole-planet\n- The Conversation, alat batu di India: https://theconversation.com/stone-tools-show-humans-in-india-survived-the-cataclysmic-toba-eruption-74-000-years-ago-132101\n\n#Shorts #DanauToba #FaktaUnik",
+  "caption_komentar": "Bonus: di Jwalapuram, India, alat batu yang mirip ditemukan di atas DAN di bawah lapisan abu Toba. Jujur, sebelum nonton kamu kira Danau Toba terbentuk dari apa? Dan yang pernah ke Samosir, absen dulu di sini.",
+  "caption_tiktok": "Danau Toba terbentuk dari apa? Kalau kamu pernah berenang di sana, tebak dulu: kamu berenang di atas apa? #danautoba #TernyataBegitu #FaktaUnik #Sumut",
+  "caption_instagram": "Danau Toba bukan cuma danau cantik. Terbentuk dari apa, coba tebak dulu sebelum nonton.\nKirim ke temanmu yang pernah ke Samosir.\n#danautoba #samosir #faktaunik #Sumut #TernyataBegitu",
+  "tag": ["danau toba terbentuk dari apa", "letusan gunung toba", "kenapa danau toba bisa terbentuk", "pulau samosir terbentuk dari apa", "supervulkan toba", "toba supervolcano", "gunung toba meletus manusia punah", "danau toba", "fakta unik", "ternyata begitu"],
+  "pola_hook": "konsekuensi personal ('Liburan ke Toba? Kamu berenang di atas LUBANG.') + pertanyaan kata kunci; jenis ini belum dipakai di 5 video terakhir (pembalikan arah, cerita-asal, pertanyaan+angka, tes penonton, pertanyaan+pembalikan pelaku)",
+  "hook_kandidat": [
+    {"teks": "Liburan ke Toba? Kamu berenang di atas LUBANG. Danau Toba terbentuk dari apa?", "skor": 9, "alasan": "Konsekuensi personal: penonton langsung jadi tokohnya (liburan, berenang). Objek konkret, 'lubang' bikin janggal tanpa membocorkan letusan/kaldera, kata kunci utama terucap ±3-5 dtk, nyambung ke sampul 'DANAU APA LUBANG?'. 13 kata. TERPILIH."},
+    {"teks": "Danau Toba terbentuk dari apa sih? Ternyata ini bukan danau biasa.", "skor": 7, "alasan": "Usulan Raka, kata kunci paling utuh, tapi 'bukan danau biasa' klise dan pola pertanyaan polos dekat i-004/i-009."},
+    {"teks": "Danau Toba itu sebenarnya lubang bekas apa?", "skor": 8, "alasan": "Penasaran kuat, pendek, tapi murni pertanyaan (pola dekat 2 video terakhir) dan tanpa taruhan personal."},
+    {"teks": "Katanya, gara-gara danau ini manusia nyaris punah.", "skor": 8, "alasan": "Taruhan besar, tapi di detik pertama terkesan mengamini mitos yang mau dibantah; lebih kuat sebagai celah detik 8-12 (dipakai di adegan 2)."},
+    {"teks": "Pulau Samosir itu dulunya dasar danau.", "skor": 7, "alasan": "Mustahil-tapi-nyata, tapi membuka kejutan isi di detik 1 dan Samosir tidak dikenal semua penonton."},
+    {"teks": "Ada lubang di Sumatra yang abunya sampai ke Afrika.", "skor": 7, "alasan": "Skala bagus, tapi 'abu' langsung membocorkan letusan."},
+    {"teks": "Jangan bilang Toba cuma danau. Itu lubang.", "skor": 7, "alasan": "Berpola kamu-salah (dekat i-007) dan agak menggurui."},
+    {"teks": "Kalau kamu ke Samosir, kamu berdiri di dasar kawah yang naik.", "skor": 7, "alasan": "Personal, tapi membocorkan jawaban Samosir sekaligus kawah."},
+    {"teks": "Tujuh puluh empat ribu tahun lalu, Sumatra punya hari terburuknya.", "skor": 5, "alasan": "In medias res dengan angka: detail ahli di hook (dilarang aturan Bos), lambat, kata kunci tidak ada."},
+    {"teks": "Danau secantik ini lahir dari hari paling gelap Sumatra.", "skor": 5, "alasan": "Puitis tapi lebay, 'paling gelap' tidak bisa dibuktikan dari riset, tanpa kata kunci."}
+  ],
+  "peta_retensi": "0-5,3 dtk → HOOK konsekuensi personal + kata kunci 'Danau Toba terbentuk dari apa' (klip: kamera menyelam dari perahu ke bawah air, terlihat mangkuk raksasa bercahaya oranye; Tebe kaget = taruhan personal)\n5,3-7,7 dtk → intro khas 2,4 dtk (pattern interrupt)\n7,7-12,6 dtk → CELAH BARU: 'katanya gara-gara Toba manusia nyaris PUNAH' + OPEN LOOP 'itu nanti, ada kejutannya' (abu kelabu menelan siluet api unggun)\n12,6-20,4 dtk → 'KOK BISA' mulai: dapur magma raksasa ±74.000 th lalu, magma nyembur keluar (set penampang, kamera menyelam = ganti ritme)\n20,4-27,4 dtk → dapur KOSONG, atap ambles + CANDA 'kayak kardus kosong yang kamu dudukin', terisi air, istilah KALDERA disebut belakangan\n27,4-35,6 dtk → anak tangga 3 (pertanyaan baru = pattern interrupt): 'Pulau Samosir terbentuk dari apa?' dasar lubang kedorong NAIK; REAKSI TEBE 1 (loncat kaget dari perahu)\n35,6-43,0 dtk → BUKA lagi loop punah: abu sampai AFRIKA, ada ilmuwan yang ngira manusia tinggal beberapa ribu (peta datar, jejak abu)\n43,0-53,2 dtk → TWIST/BAYAR LOOP: di gua Afrika Selatan, di lapisan abu Toba... ada bekas API unggun; manusia tetap bikin alat batu (REAKSI TEBE 2: menghangatkan tangan, bangga)\n53,2-63,4 dtk → KEJUTAN KEDUA: Danau Malawi >7.000 km, abunya ada tapi tanda musim dingin besar nggak ketemu + kejujuran 'dampak iklim? masih DEBAT'\n63,4-78 dtk → PAYOFF: bukti terbaru nggak dukung cerita nyaris punah, manusianya malah BANDEL; kalimat khas; PEMICU SHARE spesifik 'kirim ke temanmu yang pernah ke Samosir... bilangin: dia berenang di KAWAH gunung api' (membayar hook 'berenang di atas lubang') + LOOP 'terus tanya dia...' → kalimat pertama 'Liburan ke Toba?'\n78-80 dtk → outro mulus, tanpa jeda kosong",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 2, "bahasa_lisan": 1, "payoff": 1, "total": 9},
+  "skor_naskah_catatan": "Jujur: bahasa lisan dapat 1 tapi pas-pasan, adegan 3 masih bernada pelajaran ('dapur magma') dan ditolong canda kardus di adegan 4. Tambahan rubrik: gaya ngobrol YA (canda kardus + 'manusianya malah bandel', tanpa kalimat menggurui); SEO YA (kata kunci utama terucap ±3-5 dtk dan ada di judul).",
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "Menyentuh pengalaman liburan sendiri dan kata 'lubang' terasa janggal: tanpa konteks pun orang ingin tahu 'lubang apa?'."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'danau cantik' ke 'lubang bekas dapur magma yang ambles', lalu 'Samosir itu dasarnya yang naik', lalu 'cerita punah yang kamu dengar ternyata nggak didukung bukti'."},
+    "retensi": {"skor": 1, "alasan": "Celah baru tiap ±7-10 dtk dan 2 reaksi Tebe, tapi durasi ±80 dtk dan adegan 7-8 masing-masing ±10 dtk; harus ditolong visual bergerak (kamera menyelam, peta, gua)."},
+    "layak_dibagikan": {"skor": 2, "alasan": "Destinasi wisata nasional + 'ilmuwan sempat salah': penonton terlihat pintar saat bilang 'kamu tuh berenang di kawah'."},
+    "pemicu_komentar": {"skor": 2, "alasan": "Pemicu share spesifik (teman yang pernah ke Samosir) + loop ke 'Liburan ke Toba?' + komentar tersemat 'absen yang pernah ke Samosir'."},
+    "total": 9
+  },
+  "pelafalan": {
+    "Toba": "to-ba",
+    "Samosir": "sa-mo-sir",
+    "Malawi": "ma-la-wi",
+    "kaldera": "kal-de-ra"
+  },
+  "seo": {
+    "kata_kunci_utama": "danau toba terbentuk dari apa",
+    "kata_kunci_turunan": ["pulau samosir terbentuk dari apa", "letusan gunung toba", "gunung toba meletus manusia punah", "kenapa danau toba bisa terbentuk", "supervulkan toba"]
+  },
+  "catatan_fakta": "Setiap kalimat dari riset.md. Angka terucap hanya dua: 'sekitar tujuh puluh empat ribu tahun lalu' (aman per riset) dan 'lebih dari tujuh ribu kilometer' (Danau Malawi, PNAS 2013). TIDAK dipakai: volume letusan, lebar kaldera, tebal abu, 'terbesar sepanjang sejarah', angka musim dingin vulkanik, 'memusnahkan manusia', 'tak berdampak sama sekali', 'pasti meletus lagi'. Teori punah disebut 'katanya' dan 'ada ilmuwan yang ngira' (Ambrose 1998: ±3.000-10.000 individu = 'beberapa ribu'). Kesimpulan dirumuskan aman: 'bukti terbaru nggak dukung cerita nyaris punah' + 'dampak ke iklim? masih debat'. Bukti gua: Pinnacle Point (Nature 2018), aktivitas manusia (api, alat batu) berlanjut sebelum, saat, sesudah abu jatuh; frasa 'di lapisan abu Toba ada bekas api unggun' mengikuti rumusan riset. 'Berenang di KAWAH gunung api' = kiasan yang disetujui Laras (Toba = kaldera). 'Manusianya malah BANDEL' = kiasan untuk 'tetap bertahan'. 'Endapan danau' di atas Samosir = ±100 m sedimen danau (Frontiers 2015), tanpa angka.",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Liburan ke Toba? Kamu berenang di atas LUBANG. Danau Toba terbentuk dari apa?",
+      "teks_layar": "DANAU TOBA = LUBANG APA?",
+      "visual": "Calm turquoise Lake Toba seen from a small wooden boat on a sunny day, green hills around; the camera suddenly dives under the surface and keeps sinking, revealing that the lake sits inside a gigantic dark bowl-shaped hole whose far bottom glows a faint orange; Tebe (chibi, mustard hoodie, '?' cowlick) leans over the boat edge, eyes wide, cowlick shaking; flat style, no black outlines, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 5.3,
+      "set": "danauKaldera + perahuKecil (siang), kamera menyelam",
+      "tebe": "kaget, menengok ke bawah dari tepi perahu"
+    },
+    {
+      "no": 2,
+      "narasi": "Katanya, gara-gara Toba, manusia nyaris PUNAH. Itu nanti, ada kejutannya. Lubangnya dulu.",
+      "teks_layar": "MANUSIA NYARIS PUNAH?",
+      "visual": "Dusk over the lake: a soft grey ash cloud drifts across the screen and dims a row of tiny ancient human silhouettes sitting around a small campfire on the shore; Tebe in the boat raises one finger like 'wait', then points straight down into the water; camera tilts down toward the dark depths; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 4.9,
+      "set": "tepi danau senja + awan abu tipis",
+      "tebe": "mengangkat jari 'tunggu', lalu menunjuk ke bawah"
+    },
+    {
+      "no": 3,
+      "narasi": "Sekitar tujuh puluh empat ribu tahun lalu, di bawah sini ada dapur MAGMA raksasa. Magmanya nyembur keluar, BANYAK banget.",
+      "teks_layar": "±74.000 TAHUN LALU",
+      "visual": "Night-time underground cross-section: layers of rock, a huge glowing orange magma chamber under the land; the magma bursts upward through cracks into a towering eruption column against a dark sky streaked with lava lines; small Tebe stands at the edge of the cut-away holding his hood with both hands; camera keeps sinking then tilts up with the column; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.8,
+      "set": "penampangMagma (malam bergaris lava)",
+      "tebe": "terpana, memegang tudung hoodie"
+    },
+    {
+      "no": 4,
+      "narasi": "Dapurnya jadi KOSONG. Atapnya ambles, kayak kardus kosong yang kamu dudukin. Lubangnya lalu keisi air. Namanya KALDERA.",
+      "teks_layar": "ATAPNYA AMBLES",
+      "visual": "Same cross-section: the magma chamber is now an empty dark cavity and its rocky roof cracks and collapses down into it, leaving a giant sunken bowl; a quick inset in the corner shows Tebe sitting on an empty cardboard box that caves in under him (funny beat); then blue water slowly fills the sunken bowl up to the brim; camera pulls back to show the whole bowl; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.0,
+      "set": "penampangMagma (dapur kosong -> atap runtuh -> terisi air)",
+      "tebe": "duduk di kardus yang ambles (canda), lalu nyengir malu"
+    },
+    {
+      "no": 5,
+      "narasi": "Terus, Pulau Samosir terbentuk dari apa? Dari dasar lubang ini, yang kedorong NAIK lagi. Di atasnya masih ada endapan DANAU.",
+      "teks_layar": "SAMOSIR = DASAR LUBANG",
+      "visual": "Back on the lake surface in daylight: the middle of the lake floor bulges and slowly rises out of the water as a broad green island, with pale layered lake-mud bands visible along its sides; Tebe's small boat rocks on the waves and he jumps up in surprise, cowlick standing straight; camera orbits the rising island; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 8.2,
+      "set": "danauKaldera + samosir (kubah bangkit naik, k 0..1)",
+      "tebe": "REAKSI 1: loncat kaget di perahu"
+    },
+    {
+      "no": 6,
+      "narasi": "Nah, soal punah. Abu letusan ini terbang sampai AFRIKA. Ada ilmuwan yang ngira, manusia tinggal beberapa RIBU orang.",
+      "teks_layar": "ABU SAMPAI AFRIKA",
+      "visual": "Flat simple world map in muted colours (no labels): a grey ash trail streams from northern Sumatra across the Indian Ocean, dusting India and reaching East and South Africa; a few tiny human figure icons on the map fade to fewer; Tebe stands on the map pointing along the trail like a tour guide; camera follows the trail westward; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.4,
+      "set": "petaDuniaDatar + jejakAbu (ash melayang jadi geser ke peta)",
+      "tebe": "menunjuk jejak abu, menjelaskan"
+    },
+    {
+      "no": 7,
+      "narasi": "Tapi di gua Afrika Selatan, di lapisan abu Toba... ada bekas API unggun. Manusia di sana tetap bikin alat batu, sebelum, saat, dan sesudah abunya jatuh.",
+      "teks_layar": "ADA API UNGGUN",
+      "visual": "The map zooms into the mouth of a coastal sea cave at sunset in South Africa; inside, a cut-away of the cave floor shows a thin pale ash layer, and at that same level a warm campfire glows next to simple stone tools and a few animal bones; ancient people (simple silhouettes) keep working stones around the fire; Tebe crouches by the fire warming his hands, proud smile; camera pushes in toward the flame; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 10.2,
+      "set": "guaPesisir + apiUnggun + alatBatu, strata abu pakai tanahDekat (senja)",
+      "tebe": "REAKSI 2: menghangatkan tangan di api, bangga"
+    },
+    {
+      "no": 8,
+      "narasi": "Bahkan di Danau Malawi, lebih dari tujuh ribu kilometer dari Toba, abunya ada. Tapi tanda musim dingin BESAR nggak ketemu. Dampaknya ke iklim? Masih DEBAT.",
+      "teks_layar": "7.000+ KM",
+      "visual": "A wide calm African lake under a clear sky; on a field table at the shore lies a long cylindrical sediment core sample with one thin pale ash band; a tiny snowflake icon floats above it and pops away like a bubble; Tebe looks at the core with a magnifying glass, then shrugs with both palms up; camera slides along the core; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 10.2,
+      "set": "tepi Danau Malawi + meja contoh inti sedimen",
+      "tebe": "meneliti dengan kaca pembesar, lalu mengangkat bahu"
+    },
+    {
+      "no": 9,
+      "narasi": "Jadi bukti terbaru nggak dukung cerita nyaris punah. Manusianya malah BANDEL. Dan ternyata, memang begitu. Kirim ke temanmu yang pernah ke Samosir dan ngira itu cuma danau. Bilangin: dia berenang di KAWAH gunung api. Terus tanya dia...",
+      "teks_layar": "KIRIM KE TEMANMU...",
+      "visual": "Back at Lake Toba at golden hour with Samosir island in the middle; Tebe floats in a swim ring, gives a cheeky wink, then holds up a phone and mimes sending a message to the viewer; camera cranes up high to reveal the whole lake as a giant water-filled bowl ringed by steep cliffs, then drifts back down to the water surface exactly like the opening shot (for the loop); flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 14.7,
+      "catatan_loop": "Kalimat terakhir menggantung ('Terus tanya dia...') agar saat video berulang langsung disambung 'Liburan ke Toba?'. Yoga: frame terakhir sama dengan frame pembuka (permukaan danau dari perahu), outro sependek mungkin, tanpa jeda kosong.",
+      "set": "danauKaldera + samosir (senja), kamera naik lalu turun ke frame pembuka",
+      "tebe": "mengapung di ban, mengedip, pura-pura kirim pesan"
+    }
+  ]
+}

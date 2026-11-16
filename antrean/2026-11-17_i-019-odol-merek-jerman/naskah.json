@@ -1,0 +1,145 @@
+{
+  "format": "shorts",
+  "judul": "Odol Itu Sebenarnya Apa? Kamu Sebut Tiap Pagi Tanpa Tahu",
+  "judul_opsi": [
+    "Odol Itu Sebenarnya Apa? Kamu Sebut Tiap Pagi Tanpa Tahu",
+    "Kenapa Semua Pasta Gigi Disebut Odol? Asalnya Bikin Kaget",
+    "Kamu Bilang 'Odol Pepsodent'? Itu Dua Merek Sekaligus"
+  ],
+  "thumbnail_teks": "ODOL ITU APA?",
+  "thumbnail_visual": "Vintage 1890s advertising-poster look: a giant toothpaste tube tilted diagonally very close to the camera, its label completely blank except for a big question mark inside a red circle; Tebe (chibi mascot, mustard hoodie, '?' cowlick) shows only half of his face from the right edge, toothpaste foam around his mouth, eyes narrowed in suspicion at the tube; aged cream-sepia paper texture background with cobalt-blue accents and a faint ornamental poster border; flat style without black outlines; NO real brand logos, NO mouthwash bottle (would spoil the answer), no letters inside the illustration; empty space at the top for the text overlay.",
+  "deskripsi": "Odol itu sebenarnya apa, dan kenapa semua pasta gigi kita sebut odol? Tebak dulu sebelum nonton, lalu cocokkan tebakanmu dengan videonya.\n\nCatatan lengkap (spoiler, baca setelah nonton): Odol awalnya merek obat kumur dari Dresden, Jerman, yang diluncurkan pengusaha Karl August Lingner pada 1892; formulanya dikaitkan dengan kimiawan Richard Seifert. Menurut halaman merek di Rossmann, namanya gabungan odous (Yunani, gigi) dan oleum (Latin, minyak). Pasta gigi Odol baru menyusul belakangan. Lingner juga memakai seniman besar untuk iklan, termasuk Puccini yang menggubah lagu. Kenapa di Indonesia semua pasta gigi disebut odol masih dugaan: merek yang paling dulu dikenal di suatu pasar sering menjadi nama bendanya, dan Tirto mengutip dugaan populer itu dari Mingguan Djaja (1965).\n\nSumber:\n- Tirto, \"Semua Pasta Gigi adalah Odol\": https://tirto.id/semua-pasta-gigi-adalah-odol-cxMU\n- Wikipedia Indonesia \"Odol\" (via p2k): https://p2k.stekom.ac.id/ensiklopedia/Odol\n- PubMed 36480326, \"Odol Mundwasser and Zahnpasta: Part I\": https://www.pubmed.gov/36480326/\n- Stadtarchiv Dresden, Tafeln 25-28 Erfindungen: https://www.dresden.de/media/pdf/stadtarchiv/Tafeln_25-28_Erfindungen.pdf\n- Rossmann, sejarah merek Odol: https://www.rossmann.de/de/marken/odol/c/online-dachmarke_4455559\n- Deutsches Hygiene-Museum, sejarah: https://www.dhmd.de/en/the-museum/history\n- Radebeul, \"Of Odol and silicone\": https://www.radebeul.de/en/odol\n\n#Shorts #Odol #FaktaUnik",
+  "caption_komentar": "Jujur: di rumahmu bilangnya \"odol\" atau \"pasta gigi\"? Dan sebelum nonton, kamu kira odol itu apa? Bonus: Lingner, si penjual odol, juga pemrakarsa Museum Higiene di Dresden.",
+  "caption_tiktok": "Odol itu sebenarnya apa? Kenapa semua pasta gigi kita sebut odol? Tulis tebakanmu dulu, lalu cocokkan di video. #odol #TernyataBegitu #FaktaUnik #AsalKata",
+  "caption_instagram": "Kamu pasti bilang \"ambil odol\" tiap pagi. Tapi odol itu sebenarnya apa? Tebak dulu sebelum nonton.\nKirim ke temanmu yang suka bilang \"odol Pepsodent\".\n#odol #pastagigi #faktaunik #asalkata #TernyataBegitu",
+  "tag": ["odol itu apa", "kenapa pasta gigi disebut odol", "asal kata odol", "arti odol", "sejarah odol", "odol bahasa apa", "beda odol dan pasta gigi", "pasta gigi", "fakta unik", "ternyata begitu"],
+  "pola_hook": "in medias res (momen pribadi yang sedang terjadi: mulut penuh busa) + pertanyaan kata kunci; jenis berbeda dari i-004 (pertanyaan+pembalikan pelaku), i-018 (pembalikan arah), dan dari Toba (konsekuensi personal)",
+  "hook_kandidat": [
+    {"teks": "Mulut penuh busa, tiba-tiba kepikiran: odol itu sebenarnya APA, sih?", "skor": 9, "alasan": "In medias res di momen yang dialami SEMUA orang tiap pagi, visual kuat (Tebe membeku dengan busa), kata kunci 'odol itu apa' terucap ±3 dtk, tanpa bocoran merek/Jerman/obat kumur. 10 kata. TERPILIH."},
+    {"teks": "Odol itu bahasa apa sih? Kok semua pasta gigi disebut odol?", "skor": 6, "alasan": "Usulan seo.md, kata kunci utuh, tapi menyesatkan (jawabannya merek, bukan bahasa) dan dilarang Pak Bima/Laras."},
+    {"teks": "Kenapa semua pasta gigi disebut odol?", "skor": 7, "alasan": "Pertanyaan warung asli, tapi polos tanpa visual/aksi, dan pola pertanyaan dekat i-004. Dipakai sebagai kalimat kedua (adegan 2) untuk kata kunci turunan."},
+    {"teks": "Tiap pagi kamu nyebut nama MEREK, bukan nama benda.", "skor": 8, "alasan": "Rahasia setengah yang kuat, tapi itu pola 'jawaban setengah' i-004 dan membuka separuh jawaban di detik 1."},
+    {"teks": "Odol yang asli itu nggak buat disikat.", "skor": 8, "alasan": "Mustahil-tapi-nyata, bagus, tapi lebih bertenaga sebagai celah detik 8-12 (dipakai di adegan 2)."},
+    {"teks": "Kamu bilang 'odol Pepsodent'? Itu dua merek sekaligus.", "skor": 8, "alasan": "Paling lucu, tapi membocorkan jawaban inti; dipindah jadi pemicu share di penutup."},
+    {"teks": "Ada lagu Puccini di balik pasta gigimu.", "skor": 6, "alasan": "Aneh, tapi Puccini belum dikenal luas (gagal uji 'teman tongkrongan'); lebih kuat sebagai kejutan kedua."},
+    {"teks": "Pasta gigimu punya nama Yunani campur Latin.", "skor": 6, "alasan": "Membuka jawaban 'bahasa', kurang konkret, tanpa taruhan."},
+    {"teks": "Seribu delapan ratus sembilan puluh dua, sebuah botol di Dresden mengubah kamar mandimu.", "skor": 4, "alasan": "Detail ahli (tahun, kota) di hook, 14 kata, lambat, dan 'mengubah' berlebihan."},
+    {"teks": "Jangan sebut 'odol' di depan orang Jerman.", "skor": 3, "alasan": "Tabu palsu, tidak didukung riset; clickbait. Dibuang."}
+  ],
+  "peta_retensi": "0-4,2 dtk → HOOK in medias res: Tebe sikat gigi, membeku dengan mulut penuh busa, kamera zoom ke tube berlabel kosong; kata kunci 'odol itu apa' terucap; taruhan personal = rutinitas pagi penonton sendiri\n4,2-6,6 dtk → intro khas 2,4 dtk (pattern interrupt)\n6,6-12,0 dtk → kata kunci turunan 'kenapa semua pasta gigi disebut odol?' + CELAH BARU/OPEN LOOP 'petunjuknya: odol yang asli... nggak buat DISIKAT'\n12,0-18,2 dtk → JAWABAN mulai (<15 dtk): awalnya nama MEREK obat kumur dari Dresden, Jerman, 'bukan disikat... tapi DIKUMUR' (match-cut tube → botol kuno, palet modern → sepia; Tebe berkumur lalu menyembur = canda visual)\n18,2-25,6 dtk → 1892, pengusaha Lingner menjual; pasta giginya nyusul BELAKANGAN (apotek jadul, ganti set)\n25,6-33,4 dtk → jawaban 'bahasa apa': odous (Yunani, gigi) + oleum (Latin, minyak) 'kata penjual mereknya' → 'kira-kira: minyak gigi. Iya, SERIUS.' (REAKSI TEBE 1, canda)\n33,4-43,2 dtk → 'KOK BISA' jadi sebutan semua pasta gigi (pertanyaan baru = pattern interrupt): merek yang paling duluan dikenal sering jadi nama bendanya; untuk Indonesia jujur 'masih DUGAAN' (rak warung jadul penuh tube beda warna)\n43,2-51,4 dtk → KEJUTAN KEDUA: iklannya digarap seniman besar, termasuk PUCCINI yang bikin lagu → 'obat kumur, punya LAGU sendiri' (gramofon, REAKSI TEBE 2: dansa kecil)\n51,4-66 dtk → PAYOFF janji hook (odol = merek obat kumur Jerman yang nyangkut di tube kamar mandimu) + kalimat khas + PEMICU SHARE spesifik & lucu 'kirim ke temanmu yang bilang ambil odol Pepsodent: dia nyebut DUA merek sekaligus' + LOOP 'besok pagi, dia pasti begini...' → kalimat pertama 'Mulut penuh busa...'\n66-68 dtk → outro mulus, frame akhir = frame pembuka kamar mandi",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 1, "bahasa_lisan": 1, "payoff": 1, "total": 8},
+  "skor_naskah_catatan": "Jujur: kejutan kedua (Puccini) mengejutkan tapi tidak membalik pemahaman, jadi 1. Bagian 'kok bisa' versi Indonesia memang hanya dugaan (sesuai riset), jadi adegan 6 terasa paling datar; ditolong visual rak warung + kejujuran. Tambahan rubrik: gaya ngobrol YA (sembur kumur, 'iya, serius', 'obat kumur punya lagu sendiri', 'dua merek sekaligus'; tidak menggurui); SEO YA (kata kunci utama 'odol itu apa' terucap ±3 dtk dan ada di judul sebagai 'Odol Itu Sebenarnya Apa?').",
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "Momen busa di mulut dialami semua orang tiap pagi; pertanyaannya terasa 'iya ya, apa sih?' tanpa perlu konteks."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'kata biasa untuk pasta gigi' ke 'merek obat kumur Jerman yang aslinya dikumur, bukan disikat'."},
+    "retensi": {"skor": 1, "alasan": "Celah tiap ±6-8 dtk dan open loop di detik 8, tapi adegan 6 (dugaan) ±10 dtk minim kejutan."},
+    "layak_dibagikan": {"skor": 2, "alasan": "Kata yang diucapkan tiap hari + olok ramah 'odol Pepsodent = dua merek sekaligus' gampang dikirim ke grup keluarga."},
+    "pemicu_komentar": {"skor": 1, "alasan": "Loop 'besok pagi dia pasti begini' + komentar tersemat 'odol atau pasta gigi?' memancing kubu, tapi pertanyaannya ringan, bukan debat besar."},
+    "total": 8
+  },
+  "pelafalan": {
+    "Odol": "o-dol",
+    "Dresden": "dres-den",
+    "Lingner": "ling-ner",
+    "odous": "o-dus",
+    "oleum": "o-le-um",
+    "Puccini": "pu-ci-ni",
+    "Pepsodent": "pep-so-dent"
+  },
+  "seo": {
+    "kata_kunci_utama": "odol itu apa",
+    "kata_kunci_turunan": ["kenapa pasta gigi disebut odol", "asal kata odol", "arti odol", "sejarah odol", "odol bahasa apa"]
+  },
+  "catatan_fakta": "Setiap kalimat dari riset.md. Inti: Odol = merek obat kumur (Mundwasser) Dresden, diluncurkan Karl August Lingner 1892 (Wikipedia/p2k, PubMed 36480326, Stadtarchiv Dresden, Rossmann); di narasi cukup 'pengusaha Dresden bernama Lingner mulai menjualnya'. Seifert tidak disebut di narasi (hanya deskripsi). Asal nama odous+oleum dibingkai 'kata penjual mereknya' (Rossmann). Pasta gigi Odol 'nyusul belakangan' TANPA tahun. Mekanisme 'merek yang paling duluan dikenal sering jadi nama bendanya' = rumusan umum riset; untuk Indonesia disebut 'masih DUGAAN' (Mingguan Djaja 1965 via Tirto). TIDAK dipakai: tahun masuk Hindia Belanda, 'pasta gigi pertama (di Indonesia)', 'laba Odol danai museum', tahun pasta gigi Odol, Chlorodont, contoh Sanyo/Aqua, perbandingan kualitas merek, klaim kesehatan apa pun. Puccini: 'Lingner ngajak seniman besar, termasuk Puccini, yang sampai bikin lagu' (PubMed 36480326; p2k). 'Kira-kira: minyak gigi' = terjemahan harfiah odous+oleum, bukan klaim fungsi. 'Dua merek sekaligus' benar (Odol dan Pepsodent sama-sama merek), tanpa menilai merek. Logo merek asli tidak ditampilkan di visual mana pun.",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Mulut penuh busa, tiba-tiba kepikiran: odol itu sebenarnya APA, sih?",
+      "teks_layar": "ODOL ITU APA?",
+      "visual": "Bright modern bathroom with a mirror and a white sink; Tebe (chibi, mustard hoodie, '?' cowlick) brushes his teeth, mouth full of white foam, then suddenly freezes mid-brush, toothbrush still in his mouth, eyes narrowing at a toothpaste tube with a completely blank label on the sink; the camera snap-zooms onto the tube; flat style, no black outlines, no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 4.2,
+      "set": "kamarMandi + wastafel + tubePasta + sikatGigi",
+      "tebe": "membeku curiga, busa di mulut"
+    },
+    {
+      "no": 2,
+      "narasi": "Kenapa semua pasta gigi disebut odol? Petunjuknya: odol yang asli... nggak buat DISIKAT.",
+      "teks_layar": "NGGAK BUAT DISIKAT?",
+      "visual": "Same bathroom, tighter shot: Tebe slowly pulls the toothbrush out of his mouth and stares at it, then at the blank tube, one eyebrow raised; a large floating question mark bobs above the tube; the camera slowly circles the sink; flat style, no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 5.4,
+      "set": "kamarMandi (close-up wastafel)",
+      "tebe": "menatap sikat gigi, alis naik"
+    },
+    {
+      "no": 3,
+      "narasi": "Odol itu awalnya nama MEREK. Merek obat kumur dari Dresden, Jerman. Jadi bukan disikat... tapi DIKUMUR.",
+      "teks_layar": "MEREK OBAT KUMUR",
+      "visual": "Match-cut: the blank toothpaste tube zooms in and cross-dissolves into an old-fashioned glass mouthwash bottle with a blank label on a wooden 1890s pharmacy counter; the colour palette shifts from modern bright to warm sepia; Tebe takes a sip from a small glass, cheeks puffed, gargles, then sprays it out in surprise (funny beat); camera pulls back to reveal the old pharmacy; flat style, no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.2,
+      "set": "match-cut tubePasta -> botolKumurJadul + gelasKumur, palet modern -> sepia",
+      "tebe": "pose berkumur, lalu menyembur kaget"
+    },
+    {
+      "no": 4,
+      "narasi": "Tahun seribu delapan ratus sembilan puluh dua, pengusaha Dresden bernama Lingner mulai MENJUALNYA. Pasta giginya baru nyusul BELAKANGAN.",
+      "teks_layar": "DRESDEN, 1892",
+      "visual": "Sepia 1890s pharmacy-laboratory with glass flasks, brass scales and wooden shelves full of identical blank-labelled bottles; a businessman in a 19th-century suit, seen only from behind (no recognisable face), lines bottles up on the counter for sale; at the end of the shot a plain blank toothpaste tube slides in beside the bottles; Tebe wears a tiny apron and helps stack bottles; camera tracks along the shelves; flat style, no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.4,
+      "set": "aptekJadul1892 (meja ramuan + labu kaca, sepia)",
+      "tebe": "membantu menata botol, celemek kecil"
+    },
+    {
+      "no": 5,
+      "narasi": "Namanya, kata penjual mereknya, dari odous, Yunani buat gigi, dan oleum, Latin buat MINYAK. Kira-kira: minyak gigi. Iya, SERIUS.",
+      "teks_layar": "ODOUS + OLEUM",
+      "visual": "Two big word cards slide in from left and right (words added later as code overlay): the left card sits in front of a small white Greek column with a simple tooth icon, the right card in front of a little Roman oil lamp with an oil-drop icon; the two cards snap together in the middle with a pop; Tebe looks at the camera with a deadpan face and nods slowly ('yes, seriously'); camera pushes in on the joined cards; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.8,
+      "set": "kartuKata (teks via kode) + tiang Yunani + lampu minyak Romawi",
+      "tebe": "REAKSI 1: wajah datar 'iya, serius', mengangguk"
+    },
+    {
+      "no": 6,
+      "narasi": "Terus kok bisa jadi sebutan semua pasta gigi? Merek yang paling duluan dikenal sering jadi nama BENDANYA. Kalau odol di sini, itu masih DUGAAN.",
+      "teks_layar": "MASIH DUGAAN",
+      "visual": "An old-time Indonesian corner shop (warung) shelf at noon, wooden with glass jars of candy, lined with many toothpaste tubes in different colours, all with blank labels; one by one a small floating speech-bubble icon pops above each tube showing the same tiny tube symbol (meaning they all get called the same name); Tebe stands at the counter, scratches his head, then shrugs honestly; camera slides along the shelf; flat style, no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 9.8,
+      "set": "rak warung jadul penuh tube aneka warna (label kosong)",
+      "tebe": "menggaruk kepala, lalu mengangkat bahu jujur"
+    },
+    {
+      "no": 7,
+      "narasi": "Dan iklannya nggak main-main. Lingner ngajak seniman besar, termasuk PUCCINI, yang sampai bikin lagu. Obat kumur, punya LAGU sendiri.",
+      "teks_layar": "PUCCINI?!",
+      "visual": "A grand vintage poster frame with an ornate border and a blank centre, hanging in a sepia parlour; beside it an old gramophone plays and colourful music notes float out and swirl around the blank mouthwash bottle on a small table; Tebe does a small happy dance to the music, swinging his arms; camera gently sways with the rhythm; flat style, no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.2,
+      "set": "posterJadul + gramofon + not balok (ruang tamu sepia)",
+      "tebe": "REAKSI 2: dansa kecil ikut lagu"
+    },
+    {
+      "no": 8,
+      "narasi": "Jadi odol awalnya merek obat kumur Jerman, yang namanya nyangkut di tube kamar mandimu. Dan ternyata, memang begitu. Kirim ke temanmu yang bilang \"ambil odol Pepsodent\". Dia nyebut DUA merek sekaligus. Besok pagi, dia pasti begini...",
+      "teks_layar": "KIRIM KE TEMANMU...",
+      "visual": "The vintage poster slides away like a push-door back into the bright modern bathroom; Tebe holds up the blank toothpaste tube proudly, winks, mimes sending a message on a phone to the viewer and holds up two fingers ('two brands'), then picks up his toothbrush again and puts it in his mouth, foam starting to appear, freezing in exactly the same pose as the opening shot (for the loop); flat style, no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 14.7,
+      "catatan_loop": "Kalimat terakhir menggantung ('Besok pagi, dia pasti begini...') dan frame akhir = frame pembuka (Tebe membeku dengan busa), jadi saat video berulang langsung disambung 'Mulut penuh busa, tiba-tiba kepikiran...'. Yoga: outro sependek mungkin, tanpa jeda kosong.",
+      "set": "posterJadul geser-dorong -> kamarMandi (loop ke adegan 1)",
+      "tebe": "bangga, mengedip, dua jari, lalu kembali sikat gigi"
+    }
+  ]
+}

@@ -54,6 +54,10 @@
     berbisik: { alisK: 0.5, alisN: 0.2, lihatX: 4, senyum: 0.2, mulutLebar: 0.25, kepalaMiring: -4, condong: 2, tanganN: [216, 268], bentukN: "tunjuk", tekukN: 1 },
     angkatBahu: { alisK: 0.8, alisN: 0.8, senyum: 0.4, mulutLebar: 0.6, kepalaMiring: 7, tanganK: [92, 292], bentukK: "buka", tekukK: -1, tanganN: [308, 292], bentukN: "buka", tekukN: 1 },
     curiga: { alisK: -0.6, alisN: 0.8, alisMiringK: -0.5, mataBuka: 0.55, lihatX: 4, senyum: -0.1, mulutLebar: 0.3, kepalaMiring: -7, condong: 2, tanganN: [232, 286], bentukN: "kepal", tekukN: 1 },
+    // pose tambahan (Yoga, 17 Nov 2026 — video asal nama Indonesia & kecap); hanya angka
+    semangat: { alisK: 0.5, alisN: 0.5, senyum: 0.9, mulutBuka: 0.45, mulutLebar: 0.7, pipi: 0.8, tanganN: [300, 160], bentukN: "kepal", tekukN: 1, tanganK: [140, 380], kepalaMiring: -3 },
+    sorak: { mataSenyum: 1, alisK: 0.5, alisN: 0.5, senyum: 1, mulutBuka: 0.75, mulutLebar: 0.8, pipi: 0.9, tanganK: [96, 170], tanganN: [304, 170], bentukK: "kepal", bentukN: "kepal", tekukK: -1, tekukN: 1 },
+    haru: { mataSenyum: 0.7, alisK: 0.5, alisN: 0.5, alisMiringK: 0.4, alisMiringN: 0.4, senyum: 0.7, mulutLebar: 0.5, pipi: 0.9, tanganN: [222, 352], bentukN: "buka", tekukN: 1, kepalaMiring: 4 },
     menarikTuas: { alisK: 0.4, alisN: 0.4, senyum: 0.7, mulutLebar: 0.6, mulutBuka: 0.2, tanganN: [326, 300], bentukN: "kepal", tekukN: 1, tanganK: [300, 330], bentukK: "kepal", tekukK: -1, condong: 3 },
   };
   const ambilPose = (n) => Object.assign({}, NETRAL, POSE[n] || {});

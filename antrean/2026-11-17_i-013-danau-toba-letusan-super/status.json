@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "i-013 danau toba letusan super",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
@@ -14,6 +14,12 @@
       "oleh": "Raka (marketing)",
       "waktu": "2026-11-16",
       "catatan": "LANJUT, skor 16/20; slot 18 Nov 18.00; seo.md & rencana_marketing.md siap"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-17",
+      "catatan": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (konsekuensi personal): 'Liburan ke Toba? Kamu berenang di atas LUBANG. Danau Toba terbentuk dari apa?'. Judul: 'Danau Toba Terbentuk dari Apa? Kamu Berenang di Atas Lubang' (59). Sampul: 'DANAU APA LUBANG?' (belah dua, usul Yoga). 9 adegan, 185 kata, ±80 dtk, 2 klip, 2 angka. Celah 7,7-12,6 dtk, 'kok bisa' mulai ±12,6 dtk, penutup share Samosir + loop. Skor naskah 9/9, viral 9/10. Lanjut ke cek_seo (Raka)."
     }
   ],
   "masalah": null

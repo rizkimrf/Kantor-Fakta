@@ -6,7 +6,7 @@
  *  KS.teks(W, {gabung, ganti, tekan, maks})  → kelompok teks layar 2–4 kata dari waktu kata; KS.teksLayar(T, kelompok)
  *  KS.komposisi(T, BABAK)          → set per babak + transisi 0,6 dtk (dorong kamera / geser kamera) dengan easing sinus
  *  KS.intro(T, t0)                  → intro khas 2,4 dtk (lingkaran kuning-teal, jambul "?", "Ternyata Begitu!")
- *  KS.outro(T, t0, {anim, cta})     → outro khas (Tebe bangga, jambul ? → !, sinar teal, ajakan komentar di zona aman)
+ *  KS.outro(T, t0, {anim, cta, sub, subMulai, ctaMulai}) → outro khas (Tebe bangga, jambul ? → !, sinar teal, ajakan di zona aman; sub = baris kecil, bawaan "Tulis jawabanmu di komentar")
  *  KS.label(teks, T, a, b)          → label kecil babak (y ±300) · KS.watermark(T, sembunyi) · KS.tebe(param, lebar, gelap)
  * Zona aman: teks layar di y 1250–1390, x 80–880; label y 300; watermark (40,236) → (40,1400) → (kanan 200, 236).
  */
@@ -128,7 +128,7 @@
     return `<div style="position:absolute;inset:0;transform:scale(${(1 + lin(u, 0, 8) * 0.03).toFixed(4)})"><svg width="1080" height="1920" style="position:absolute;left:0;top:0"><rect width="1080" height="1920" fill="#1F8A8A"/>${sinar(T)}<circle cx="490" cy="720" r="${(310 * e).toFixed(1)}" fill="#FFC93C" stroke="#1E1E1E" stroke-width="12"/></svg>
  <div style="position:absolute;left:270px;top:400px;transform:scale(${e.toFixed(3)});transform-origin:220px 320px">${tebe(o.anim(T), 440)}</div>
  <div style="position:absolute;left:0;width:980px;text-align:center;top:1040px;font:700 96px/1.08 Poppins;letter-spacing:-2px;color:#FFF4DC;opacity:${s.toFixed(3)};transform:translateY(${((1 - s) * 40).toFixed(1)}px) scale(${(0.9 + 0.1 * s).toFixed(3)})">Ternyata <span style="display:inline-block;background:#FFC93C;color:#1E1E1E;border:7px solid #1E1E1E;border-radius:26px;padding:2px 24px 0;box-shadow:8px 10px 0 rgba(0,0,0,.35);transform:rotate(-2deg)">Begitu!</span></div>
- <div style="position:absolute;left:90px;width:790px;top:1222px;text-align:center;font:700 50px/1.22 Poppins;color:#FFF4DC;opacity:${f.toFixed(3)};transform:translateY(${((1 - f) * 30).toFixed(1)}px);text-shadow:0 4px 10px rgba(0,0,0,.35)">${o.cta || ""}<div style="font:600 34px Poppins;color:#FFE7A6;margin-top:12px">Tulis jawabanmu di komentar</div></div></div>`;
+ <div style="position:absolute;left:90px;width:790px;top:1222px;text-align:center;font:700 50px/1.22 Poppins;color:#FFF4DC;opacity:${f.toFixed(3)};transform:translateY(${((1 - f) * 30).toFixed(1)}px);text-shadow:0 4px 10px rgba(0,0,0,.35)">${o.cta || ""}<div style="font:600 34px Poppins;color:#FFE7A6;margin-top:12px;opacity:${(o.subMulai == null ? 1 : oExp(lin(u, o.subMulai, o.subMulai + 0.4))).toFixed(3)}">${o.sub ?? "Tulis jawabanmu di komentar"}</div></div></div>`;
   }
   // ---------- watermark bergiliran ----------
   const WM = [{ left: 40, top: 236 }, { left: 40, top: 1400 }, { right: 200, top: 236 }];

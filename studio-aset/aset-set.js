@@ -1094,3 +1094,314 @@
   Object.assign(A, { PRODUK, rakMinimarket, labelHarga, kacaPembesar, koin, mejaKasir, banBerjalan, keranjang, lenganRobot, ruangSortir, hpRaksasa, mobil, panggungLelang, odometer, dasbor, panahTurun,
     perpustakaan, tumpukanJurnal, timbangan, awanMerahMuda, kerikil, tokoMalam, kantongBelanja });
 })(typeof window !== "undefined" ? window : globalThis);
+
+/* ===== Aset SEJARAH NAMA (Yoga, 17 Nov 2026, video I-004 asal nama Indonesia) =====
+ * Meja tua + lilin, jurnal terbuka (kata ditulis kode, bisa "ditulis" pelan), pena bulu, stempel lilin, peta Nusantara datar
+ * (tanpa batas negara), pelabuhan 1850 + kapal layar, siluet bertopi (tokoh sejarah TANPA wajah), gerobak jurnal, ruang peta,
+ * halaman Yunani + kepingan puzzle, ruang kerja Victoria + papan easel, jendela kota kanal hujan, orang generik, aula 1928
+ * (spanduk polos), tribun stadion malam. Semua teks di benda ditulis kode (<text>) supaya rapi.
+ */
+(function (root) {
+  const A = (typeof module !== "undefined" && module.exports && module.exports.PALET) ? module.exports : root.ASET;
+  let _n = 0; const uid = (p) => `${p}z${++_n}`;
+  const f1 = (v) => Math.round(v * 10) / 10, f2 = (v) => Math.round(v * 100) / 100;
+  const acak = (b) => { let s = b; return () => (s = (s * 9301 + 49297) % 233280) / 233280; };
+  const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+  const g = (x, y, s, isi, rot = 0) => `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${f2(rot)}) scale(${f2(s)})">${isi}</g>`;
+  const malam = (P) => P.nama === "malam";
+
+  // lilin menyala + cahaya hangat berkedip. o: {glow (radius), padam 0..1}
+  function lilin(x, y, s, t = 0, o = {}) {
+    const id = uid("ll"), fl = 1 + 0.06 * Math.sin(t * 13) + 0.04 * Math.sin(t * 7.3 + 1), sw = Math.sin(t * 5.1) * 3;
+    return g(x, y, s, `<defs><radialGradient id="${id}"><stop offset="0" stop-color="#FFD98A" stop-opacity=".5"/><stop offset=".35" stop-color="#FFB85A" stop-opacity=".16"/><stop offset="1" stop-color="#FFB85A" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="0" cy="-200" r="${f1((o.glow || 560) * fl)}" fill="url(#${id})"/><ellipse cx="0" cy="8" rx="80" ry="16" fill="#000" opacity=".3"/>
+      <ellipse cx="0" cy="0" rx="70" ry="18" fill="#8A6A3A"/><rect x="-70" y="-12" width="140" height="12" fill="#A5824A"/>
+      <rect x="-30" y="-160" width="60" height="150" rx="6" fill="#F1E3C4"/><rect x="8" y="-160" width="22" height="150" fill="#DCC9A2"/><path d="M-30 -160 Q-22 -136 -25 -104 Q-17 -100 -13 -160Z" fill="#FBF1DC"/>
+      <path d="M0 -160 L0 -178" stroke="#3A2A1A" stroke-width="4"/>
+      <g transform="translate(0 -176) rotate(${f2(sw)}) scale(${f2(fl)})"><path d="M0 -72 Q24 -30 15 -6 Q8 6 0 6 Q-8 6 -15 -6 Q-24 -30 0 -72Z" fill="#FFB347"/><path d="M0 -46 Q11 -22 7 -6 Q4 2 0 2 Q-4 2 -7 -6 Q-11 -22 0 -46Z" fill="#FFF1B8"/></g>`);
+  }
+  // ruang kerja tua (dinding, rak buku buram kiri, jendela kanan, meja kayu). o: {meja (y permukaan), cx, cy (pusat cahaya), jendelaX, lampu}
+  function ruangKerjaTua(w, h, P, t = 0, o = {}) {
+    const id = uid("rk"), my = o.meja ?? h * 0.62, cx = o.cx ?? w / 2, cy = o.cy ?? my - 200, r = acak(o.benih || 31), m = malam(P);
+    const dinding = m ? "#3A2A20" : P.nama === "senja" ? "#7A5A42" : "#B79A78", kayu = m ? "#5A3A22" : "#8A5A34";
+    let s = `<defs><radialGradient id="${id}" cx="${f2(cx / w)}" cy="${f2(cy / h)}" r=".75"><stop offset="0" stop-color="#FFC877" stop-opacity="${m ? .42 : .25}"/><stop offset="1" stop-color="#000" stop-opacity="${m ? .55 : .15}"/></radialGradient></defs>
+      <rect width="${w}" height="${h}" fill="${dinding}"/>`;
+    // rak buku buram (kiri)
+    s += `<g opacity=".8"><rect x="40" y="${my - 1100}" width="380" height="1100" fill="${m ? "#2E2018" : "#6A4A30"}"/>`;
+    for (let yy = my - 1060; yy < my - 80; yy += 190) { let xx = 60; s += `<rect x="40" y="${yy + 150}" width="380" height="18" fill="${m ? "#24180F" : "#563A24"}"/>`;
+      while (xx < 400) { const bw = 20 + r() * 26, bh = 100 + r() * 44; s += `<rect x="${f1(xx)}" y="${f1(yy + 150 - bh)}" width="${f1(bw)}" height="${f1(bh)}" fill="${["#7A3A30", "#2F4E66", "#8E6E30", "#3E5A3A", "#5E3E5A"][Math.floor(r() * 5)]}" opacity="${m ? .7 : .9}"/>`; xx += bw + 4; } }
+    s += `</g>`;
+    const jx = o.jendelaX ?? w - 420;
+    if (jx !== null && jx !== false) {
+      const lg = uid("jw");
+      s += `<defs><linearGradient id="${lg}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${P.langit[0]}"/><stop offset="1" stop-color="${P.langit[1]}"/></linearGradient></defs>
+        <rect x="${jx - 20}" y="${my - 1040}" width="340" height="660" rx="10" fill="${kayu}"/><rect x="${jx}" y="${my - 1020}" width="300" height="620" fill="url(#${lg})"/>
+        ${m ? `<circle cx="${jx + 200}" cy="${my - 900}" r="40" fill="${P.surya}" opacity=".9"/>` : `<circle cx="${jx + 210}" cy="${my - 880}" r="50" fill="${P.surya}" opacity=".8"/>`}
+        <rect x="${jx + 144}" y="${my - 1020}" width="12" height="620" fill="${kayu}"/><rect x="${jx}" y="${my - 720}" width="300" height="12" fill="${kayu}"/>`;
+    }
+    s += `<rect x="0" y="${my}" width="${w}" height="${h - my}" fill="${kayu}"/><rect x="0" y="${my}" width="${w}" height="18" fill="${m ? "#7A5232" : "#A87648"}"/>`;
+    for (let i = 0; i < 9; i++) s += `<path d="M0 ${f1(my + 60 + i * 70 + r() * 20)} Q${w * 0.4} ${f1(my + 40 + i * 70 + r() * 40)} ${w} ${f1(my + 70 + i * 70)}" stroke="#000" stroke-width="3" opacity=".12" fill="none"/>`;
+    return s + `<rect width="${w}" height="${h}" fill="url(#${id})"/>`;
+  }
+  // jurnal terbuka. o: {kata, tulis 0..1 (kata muncul dari kiri), sinar 0..1, benih, ukuran}
+  function jurnalTerbuka(x, y, s, o = {}) {
+    const r = acak(o.benih || 7), id = uid("jr"), gd = uid("jg"), kata = o.kata || "", fs = o.ukuran || 68;
+    let gar = "";
+    for (const sx of [-1, 1]) for (let i = 0; i < 11; i++) { if (sx === 1 && kata && i >= 3 && i <= 5) continue; const w = 170 + r() * 120;
+      gar += `<rect x="${sx < 0 ? -335 : 34}" y="${-200 + i * 38}" width="${f1(w)}" height="9" rx="4" fill="#8A6F4A" opacity=".42"/>`; }
+    const sinar = cl(o.sinar || 0), tulis = cl(o.tulis ?? 1);
+    const teks = kata ? `<defs><clipPath id="${id}"><rect x="20" y="-130" width="${f1(340 * tulis)}" height="140"/></clipPath></defs>
+      ${sinar > 0 ? `<text x="40" y="-62" font-family="Lora,serif" font-style="italic" font-weight="600" font-size="${fs}" fill="#FFC93C" opacity="${f2(sinar * 0.9)}" style="filter:blur(10px)" clip-path="url(#${id})">${kata}</text>` : ""}
+      <text x="40" y="-62" font-family="Lora,serif" font-style="italic" font-weight="600" font-size="${fs}" fill="${sinar > 0.5 ? "#6A3A0A" : "#3A2412"}" clip-path="url(#${id})">${kata}</text>` : "";
+    return g(x, y, s, `<defs><linearGradient id="${gd}" x1="0" y1="0" x2="1" y2="0"><stop offset=".42" stop-color="#000" stop-opacity="0"/><stop offset=".5" stop-color="#000" stop-opacity=".22"/><stop offset=".58" stop-color="#000" stop-opacity="0"/></linearGradient></defs>
+      <ellipse cx="0" cy="290" rx="420" ry="40" fill="#000" opacity=".3"/><path d="M0 -250 Q-190 -282 -392 -248 L-392 282 Q-190 254 0 286 Q190 254 392 282 L392 -248 Q190 -282 0 -250Z" fill="#5A2E1A"/>
+      <path d="M0 -262 Q-180 -290 -370 -258 L-370 258 Q-180 232 0 262Z" fill="#EADBB8"/><path d="M0 -262 Q180 -290 370 -258 L370 258 Q180 232 0 262Z" fill="#F2E6C8"/>
+      <rect x="-370" y="-290" width="740" height="580" fill="url(#${gd})"/>${gar}${teks}`);
+  }
+  // pena bulu: ujung pena di (x,y)
+  function penaBulu(x, y, s, rot = 0) {
+    return g(x, y, s, `<path d="M0 0 L10 -46" stroke="#2A1E14" stroke-width="8" stroke-linecap="round"/><path d="M8 -34 Q-60 -170 52 -380 Q86 -220 34 -44Z" fill="#F4EEDC"/><path d="M8 -34 Q-18 -180 52 -380" stroke="#C9BFA6" stroke-width="4" fill="none"/>
+      <path d="M22 -130 L-20 -118 M28 -190 L-14 -188 M36 -250 L0 -258 M32 -120 L60 -140 M38 -190 L66 -212" stroke="#D9CFB8" stroke-width="3"/>`, rot);
+  }
+  // stempel lilin merah. o: {isi (teks), k 0..1 (menempel), kilau}
+  function stempelLilin(x, y, s, o = {}) {
+    let tetes = ""; for (let i = 0; i < 9; i++) { const a = (i / 9) * Math.PI * 2; tetes += `<circle cx="${f1(Math.cos(a) * 92)}" cy="${f1(Math.sin(a) * 92)}" r="${18 + (i % 3) * 6}" fill="#B3262E"/>`; }
+    return g(x, y, s, `<ellipse cx="6" cy="14" rx="110" ry="100" fill="#000" opacity=".25"/>${tetes}<circle r="100" fill="#B3262E"/><circle r="72" fill="#962028"/><circle r="72" fill="none" stroke="#D94A4E" stroke-width="6"/>
+      <text y="${o.isi && o.isi.length > 2 ? 14 : 30}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${o.isi && o.isi.length > 2 ? 44 : 90}" fill="#E8767A">${o.isi || "?"}</text><path d="M-60 -50 Q-30 -80 10 -82" stroke="#E8767A" stroke-width="8" fill="none" stroke-linecap="round" opacity=".6"/>`);
+  }
+  // peta Nusantara datar (tanpa batas negara). Kotak ±1000×420, titik (0,0) kiri atas. o: {warna, sorot (0..1 garis bercahaya), tanpaLaut}
+  const PULAU = [
+    "M30 62 L84 52 L128 96 L176 148 L222 200 L262 252 L282 300 L262 312 L224 296 L180 244 L128 190 L78 132 L44 96Z", // Sumatra
+    "M262 322 L320 322 L390 330 L452 336 L486 346 L480 360 L410 358 L344 352 L282 346 L258 336Z", // Jawa
+    "M498 352 L516 348 L520 362 L500 364Z M530 354 L552 352 L554 366 L532 366Z M566 356 L612 352 L616 368 L570 370Z M626 360 L700 356 L704 372 L630 376Z", // Bali–Flores
+    "M660 404 L736 380 L748 392 L676 418Z M600 392 L640 388 L644 400 L604 404Z", // Sumba, Timor
+    "M352 112 L408 80 L470 70 L520 108 L530 160 L508 214 L470 262 L414 280 L364 254 L340 204 L334 152Z", // Kalimantan
+    "M574 126 L640 118 L650 128 L604 146 L612 166 L652 176 L648 188 L612 186 L604 206 L640 270 L626 282 L594 226 L578 292 L560 290 L566 214 L556 168 L566 140Z", // Sulawesi
+    "M716 140 L736 136 L732 172 L758 180 L752 196 L732 190 L728 236 L712 238 L716 196 L700 176 L716 168Z M690 250 L720 246 L722 262 L692 264Z M748 266 L800 262 L802 276 L752 280Z", // Maluku
+    "M806 186 L846 172 L874 196 L906 202 L946 230 L982 262 L1004 296 L1004 340 L962 334 L922 306 L880 280 L846 258 L818 236 L798 216Z", // Papua
+  ];
+  function petaNusantara(x, y, s, o = {}) {
+    const w = o.warna || "#7FA36A", sr = cl(o.sorot || 0);
+    const pulau = PULAU.map((d) => `<path d="${d}" fill="${w}"/>`).join("");
+    const garis = sr > 0 ? PULAU.map((d) => `<path d="${d}" fill="none" stroke="#FFE08A" stroke-width="${f1(6 / Math.max(0.3, s))}" opacity="${f2(sr)}" stroke-dasharray="1400" stroke-dashoffset="${f1(1400 * (1 - sr))}" stroke-linejoin="round"/>`).join("") : "";
+    return g(x, y, s, `${o.bayang !== false ? `<g transform="translate(6 10)" opacity=".25">${PULAU.map((d) => `<path d="${d}" fill="#000"/>`).join("")}</g>` : ""}${pulau}${garis}`);
+  }
+  // kapal layar tiang tiga. o: {layar 0..1 (terkembang), arah 1|-1}
+  function kapalLayar(x, y, s, P, t = 0, o = {}) {
+    const bob = Math.sin(t * 1.3 + x * 0.01) * 6, rk = Math.sin(t * 1.1 + x) * 1.2, m = malam(P), ly = cl(o.layar ?? 1);
+    const lambung = m ? "#3E2C24" : "#6A4630", sl = m ? "#B9B6A8" : P.nama === "senja" ? "#F2D9B8" : "#F4EEDC", slB = m ? "#9C9A8E" : P.nama === "senja" ? "#D9BC98" : "#DCD3BC";
+    let layar = "";
+    for (const [mx, tg] of [[-150, 520], [10, 600], [160, 480]]) {
+      layar += `<rect x="${mx - 6}" y="${-tg}" width="12" height="${tg}" fill="${lambung}"/>`;
+      for (let i = 0; i < 3; i++) { const yy = -tg + 40 + i * (tg * 0.28), lw = 120 - i * 6, hh = tg * 0.24 * ly;
+        layar += `<path d="M${mx - lw} ${yy} Q${mx} ${yy - 10} ${mx + lw} ${yy} L${mx + lw - 10} ${f1(yy + hh)} Q${mx} ${f1(yy + hh + 26 * ly)} ${mx - lw + 10} ${f1(yy + hh)}Z" fill="${i % 2 ? slB : sl}"/>`; }
+      layar += `<path d="M${mx} ${-tg} l0 -40 l46 14 l-46 14z" fill="#B3262E"/>`;
+    }
+    return g(x, y + bob, s, `<g transform="rotate(${f2(rk)}) scale(${o.arah || 1} 1)"><ellipse cx="0" cy="40" rx="300" ry="26" fill="#000" opacity=".15"/>${layar}
+      <path d="M-300 -40 L300 -40 L250 40 L-240 40Z" fill="${lambung}"/><rect x="-290" y="-40" width="580" height="16" fill="${m ? "#5A4034" : "#8E6444"}"/>
+      ${[-200, -130, -60, 10, 80, 150].map((xx) => `<rect x="${xx}" y="-12" width="22" height="16" rx="3" fill="${m ? "#FFD38A" : "#2E2018"}" opacity="${m ? .7 : .6}"/>`).join("")}
+      <path d="M300 -40 L380 -90" stroke="${lambung}" stroke-width="10"/></g>`);
+  }
+  // pelabuhan lama: langit, laut, bukit seberang, deretan gudang putih, dermaga kayu. o: {gudangY, dermagaY}
+  function pelabuhanLama(w, h, P, t = 0, o = {}) {
+    const ly = o.lautY ?? h * 0.5, dy = o.dermagaY ?? h * 0.72, m = malam(P);
+    let s = A.langit(P, w, h, t, { suryaX: o.suryaX ?? w * 0.8, suryaY: o.suryaY ?? h * 0.16 }) + A.awan(w * 0.2, h * 0.14, 1, P, 0.8) + A.awan(w * 0.62, h * 0.22, 0.8, P, 0.7);
+    s += A.bukit(w, ly - 10, 120, 5, P.jauh, ly + 40) + A.laut(w, ly, h - ly, P, t);
+    // gudang putih beratap merah di kanan
+    for (let i = 0; i < 5; i++) { const gx = w * 0.52 + i * 190, gy = ly + 40, tg = 200 + (i % 2) * 60;
+      s += `<rect x="${gx}" y="${gy - tg}" width="180" height="${tg}" fill="${m ? "#7C8494" : "#F4EEDC"}"/><path d="M${gx - 10} ${gy - tg} L${gx + 90} ${gy - tg - 70} L${gx + 190} ${gy - tg}Z" fill="${P.atap}"/>
+        <rect x="${gx + 20}" y="${gy - tg + 40}" width="40" height="56" fill="${m ? P.jendela : "#9FB8C2"}" opacity="${m ? .8 : 1}"/><rect x="${gx + 110}" y="${gy - tg + 40}" width="40" height="56" fill="${m ? P.jendela : "#9FB8C2"}" opacity="${m ? .8 : 1}"/><rect x="${gx + 60}" y="${gy - 90}" width="60" height="90" fill="${P.batang}"/>`; }
+    // dermaga kayu
+    s += `<rect x="0" y="${dy}" width="${w}" height="${h - dy}" fill="${m ? "#4A3A30" : "#9C7650"}"/>`;
+    for (let i = 0; i < w / 60; i++) s += `<rect x="${i * 60}" y="${dy}" width="4" height="${h - dy}" fill="#000" opacity=".12"/>`;
+    s += `<rect x="0" y="${dy}" width="${w}" height="16" fill="${m ? "#5E4A3C" : "#B48A5E"}"/>`;
+    for (let i = 0; i < w / 260; i++) s += `<rect x="${40 + i * 260}" y="${dy - 50}" width="26" height="70" rx="6" fill="${m ? "#3A2C24" : "#6A4A30"}"/>`;
+    return s;
+  }
+  // siluet tokoh sejarah bertopi tinggi (tanpa wajah). o: {warna, tarik 0..1 (tangan maju), condong (derajat), arah 1|-1}
+  function siluetBertopi(x, y, s, o = {}) {
+    const c = o.warna || "#2A2230", k = cl(o.tarik || 0), ar = o.arah || 1;
+    return g(x, y, s, `<g transform="scale(${ar} 1) rotate(${f2(o.condong || 0)})"><ellipse cx="0" cy="6" rx="110" ry="16" fill="#000" opacity=".2"/>
+      <rect x="-50" y="-260" width="40" height="260" rx="14" fill="${c}"/><rect x="8" y="-260" width="40" height="260" rx="14" fill="${c}"/>
+      <path d="M-80 -560 Q0 -590 80 -560 L96 -230 Q60 -200 0 -210 Q-60 -200 -96 -230Z" fill="${c}"/>
+      <path d="M70 -520 Q${f1(140 + 60 * k)} ${f1(-420 - 40 * k)} ${f1(120 + 120 * k)} ${f1(-340 - 90 * k)}" stroke="${c}" stroke-width="44" stroke-linecap="round" fill="none"/>
+      <rect x="-24" y="-610" width="48" height="60" fill="${c}"/><ellipse cx="0" cy="-660" rx="58" ry="66" fill="${c}"/>
+      <rect x="-74" y="-722" width="148" height="18" rx="9" fill="${c}"/><rect x="-48" y="-850" width="96" height="136" rx="8" fill="${c}"/></g>`);
+  }
+  // gerobak tangan berisi tumpukan jurnal. o: {putar (detik untuk roda), n}
+  function gerobakJurnal(x, y, s, P, t = 0, o = {}) {
+    const m = malam(P), kayu = m ? "#5A4232" : "#8E6444", rd = (o.putar ?? t) * 160;
+    let buku = ""; for (let i = 0; i < (o.n || 7); i++) buku += `<rect x="${-150 + (i % 2) * 8}" y="${-130 - i * 26}" width="230" height="24" rx="3" fill="${["#7A3A30", "#E9DFCB", "#2F4E66", "#E9DFCB"][i % 4]}"/><rect x="${-150 + (i % 2) * 8}" y="${-112 - i * 26}" width="230" height="6" fill="#C9BFA6"/>`;
+    const roda = (rx) => `<g transform="translate(${rx} 0) rotate(${f1(rd)})"><circle r="70" fill="none" stroke="${kayu}" stroke-width="16"/>${[0, 45, 90, 135].map((a) => `<rect x="-4" y="-66" width="8" height="132" fill="${kayu}" transform="rotate(${a})"/>`).join("")}<circle r="14" fill="${kayu}"/></g>`;
+    return g(x, y, s, `<ellipse cx="0" cy="72" rx="260" ry="20" fill="#000" opacity=".2"/>${buku}<path d="M-200 -110 L200 -110 L180 -10 L-180 -10Z" fill="${kayu}"/><path d="M200 -100 L330 -170" stroke="${kayu}" stroke-width="14" stroke-linecap="round"/>${roda(-120)}${roda(120)}`);
+  }
+  // ruang peta kuno: dinding hijau tua, peta Nusantara berbingkai, bola dunia, gulungan peta
+  function ruangPeta(w, h, P, t = 0, o = {}) {
+    const lt = o.lantai ?? h * 0.74, id = uid("rp");
+    let s = `<defs><radialGradient id="${id}" cx=".5" cy=".38" r=".8"><stop offset="0" stop-color="#FFE6B0" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></radialGradient></defs>
+      <rect width="${w}" height="${h}" fill="#3E5A50"/><rect y="${lt - 260}" width="${w}" height="260" fill="#33493F"/><rect y="${lt - 270}" width="${w}" height="14" fill="#5E7A6A"/>
+      <rect y="${lt}" width="${w}" height="${h - lt}" fill="#6A4A30"/>${[...Array(12)].map((_, i) => `<rect x="${i * 160}" y="${lt}" width="6" height="${h - lt}" fill="#000" opacity=".12"/>`).join("")}`;
+    const px = o.petaX ?? w / 2 - 520, py = o.petaY ?? lt - 1080;
+    s += `<rect x="${px - 30}" y="${py - 30}" width="1100" height="560" rx="10" fill="#8A5A30"/><rect x="${px}" y="${py}" width="1040" height="500" fill="#E9D8B0"/>
+      <rect x="${px}" y="${py}" width="1040" height="500" fill="#B9CBBF" opacity=".55"/>${petaNusantara(px + 20, py + 40, 1, { warna: "#9BB07A", bayang: false })}
+      ${[...Array(6)].map((_, i) => `<path d="M${px} ${py + 80 * i + 40} H${px + 1040}" stroke="#7A6A50" stroke-width="2" opacity=".25"/>`).join("")}`;
+    // bola dunia di kanan bawah + gulungan
+    const gx = o.globeX ?? w - 260;
+    s += `<rect x="${gx - 8}" y="${lt - 160}" width="16" height="160" fill="#7A5232"/><ellipse cx="${gx}" cy="${lt}" rx="80" ry="16" fill="#5A3A22"/>
+      <circle cx="${gx}" cy="${lt - 280}" r="130" fill="#5F8FA8"/><path d="M${gx - 90} ${lt - 330} q40 -40 90 -10 q30 30 -20 60 q-40 10 -70 -50Z M${gx + 20} ${lt - 220} q40 -30 70 0 q-10 40 -60 30Z" fill="#9BB07A"/>
+      <path d="M${gx} ${lt - 430} A150 150 0 0 1 ${gx} ${lt - 130}" stroke="#B48A3E" stroke-width="10" fill="none"/>`;
+    for (let i = 0; i < 4; i++) s += `<g transform="translate(${120 + i * 60} ${lt + 40}) rotate(${-20 + i * 12})"><rect x="-26" y="-200" width="52" height="200" rx="26" fill="${["#E9D8B0", "#D9C49A", "#EFE2C4", "#CDB78E"][i]}"/><ellipse cx="0" cy="-200" rx="26" ry="10" fill="#B9A27A"/></g>`;
+    return s + `<rect width="${w}" height="${h}" fill="url(#${id})"/>`;
+  }
+  // halaman bergaya Yunani: langit siang, laut jauh, lantai marmer, deret tiang
+  function tiangYunani(x, y, s, P) {
+    const c = P.nama === "senja" ? "#F2DCC4" : "#F4F1EA", cb = P.nama === "senja" ? "#D8BEA2" : "#D9D4C8";
+    let alur = ""; for (let i = 0; i < 5; i++) alur += `<rect x="${-40 + i * 18}" y="-560" width="6" height="520" fill="${cb}"/>`;
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="90" ry="14" fill="${P.bayang}"/><rect x="-74" y="-40" width="148" height="40" fill="${cb}"/><rect x="-56" y="-580" width="112" height="540" fill="${c}"/>${alur}<rect x="-80" y="-616" width="160" height="36" fill="${c}"/><rect x="-92" y="-640" width="184" height="26" rx="6" fill="${cb}"/>`);
+  }
+  function halamanYunani(w, h, P, t = 0, o = {}) {
+    const lt = o.lantai ?? h * 0.7;
+    let s = A.langit(P, w, h, t, { suryaX: w * 0.75, suryaY: h * 0.14 }) + A.awan(w * 0.25, h * 0.12, 1, P, 0.85) + A.awan(w * 0.7, h * 0.24, 0.8, P, 0.8);
+    s += A.bukit(w, lt - 300, 90, 4, P.jauh) + A.laut(w, lt - 300, 300, P, t);
+    s += `<rect x="-100" y="${lt - 760}" width="${w + 200}" height="70" fill="${P.nama === "senja" ? "#E8CDB0" : "#ECE7DC"}"/><path d="M${w * 0.2} ${lt - 760} L${w / 2} ${lt - 900} L${w * 0.8} ${lt - 760}Z" fill="${P.nama === "senja" ? "#E2C5A6" : "#E4DED0"}"/>`;
+    for (let i = 0; i < 6; i++) s += tiangYunani(-60 + i * (w + 120) / 5, lt, 1.06, P);
+    s += `<rect x="-100" y="${lt}" width="${w + 200}" height="${h - lt}" fill="${P.nama === "senja" ? "#D8C0A6" : "#E7E1D4"}"/>`;
+    for (let i = 0; i < 14; i++) s += `<path d="M${w / 2} ${lt} L${w / 2 + (i - 7) * 400} ${h}" stroke="#000" stroke-width="3" opacity=".06"/>`;
+    for (let j = 1; j < 6; j++) s += `<rect x="-100" y="${f1(lt + Math.pow(j / 6, 1.6) * (h - lt))}" width="${w + 200}" height="3" fill="#000" opacity=".06"/>`;
+    s += A.semak(120, lt + 30, 1.1, P) + A.semak(w - 120, lt + 40, 1.2, P);
+    return s;
+  }
+  // kepingan puzzle. sisi: 'kanan' (tonjolan kanan) | 'kiri' (lekukan kiri). o: {teks, sub, ikon (svg), sinar}
+  function kepinganPuzzle(x, y, s, warna, sisi, o = {}) {
+    const d = sisi === "kanan"
+      ? "M-170 -150 H170 V-40 C220 -70 250 -10 250 0 C250 10 220 70 170 40 V150 H-170Z"
+      : "M-170 -150 H170 V150 H-170 V40 C-120 70 -90 10 -90 0 C-90 -10 -120 -70 -170 -40Z";
+    return g(x, y, s, `${o.sinar ? `<path d="${d}" fill="#FFE08A" opacity="${f2(o.sinar * 0.7)}" style="filter:blur(18px)"/>` : ""}<path d="${d}" fill="#000" opacity=".2" transform="translate(8 12)"/><path d="${d}" fill="${warna}"/>
+      <path d="M-160 -140 H160" stroke="#FFF" stroke-width="10" opacity=".3" stroke-linecap="round"/>${o.ikon || ""}
+      <text y="${o.sub ? 70 : 24}" x="${sisi === "kanan" ? 0 : 30}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="58" fill="#1E1E1E">${o.teks || ""}</text>
+      ${o.sub ? `<text y="118" x="${sisi === "kanan" ? 0 : 30}" text-anchor="middle" font-family="Poppins" font-weight="600" font-size="34" fill="#1E1E1E" opacity=".75">${o.sub}</text>` : ""}`);
+  }
+  // ruang kerja era Victoria: kertas dinding bergaris, perapian menyala, jendela senja, karpet
+  function ruangVictoria(w, h, P, t = 0, o = {}) {
+    const lt = o.lantai ?? h * 0.74, id = uid("rv"), lg = uid("rvj");
+    let s = `<rect width="${w}" height="${h}" fill="#5A3A4A"/>`;
+    for (let i = 0; i < w / 70; i++) s += `<rect x="${i * 70}" y="0" width="28" height="${lt - 300}" fill="#6A4658" opacity=".6"/>`;
+    s += `<rect y="${lt - 300}" width="${w}" height="300" fill="#4A2E26"/><rect y="${lt - 310}" width="${w}" height="16" fill="#7A5232"/>`;
+    for (let i = 0; i < w / 220; i++) s += `<rect x="${30 + i * 220}" y="${lt - 260}" width="160" height="210" rx="6" fill="none" stroke="#3A2218" stroke-width="8"/>`;
+    const jx = o.jendelaX ?? w * 0.62;
+    s += `<defs><linearGradient id="${lg}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${P.langit[0]}"/><stop offset="1" stop-color="${P.langit[1]}"/></linearGradient>
+      <radialGradient id="${id}" cx=".2" cy=".7" r=".7"><stop offset="0" stop-color="#FFB060" stop-opacity=".35"/><stop offset="1" stop-color="#FFB060" stop-opacity="0"/></radialGradient></defs>
+      <rect x="${jx - 24}" y="${lt - 1220}" width="380" height="760" rx="190" fill="#7A5232"/><rect x="${jx}" y="${lt - 1196}" width="332" height="712" rx="166" fill="url(#${lg})"/>
+      <rect x="${jx + 160}" y="${lt - 1196}" width="12" height="712" fill="#7A5232"/><rect x="${jx}" y="${lt - 860}" width="332" height="12" fill="#7A5232"/>
+      <path d="M${jx - 60} ${lt - 1240} Q${jx - 20} ${lt - 860} ${jx - 70} ${lt - 440} L${jx - 10} ${lt - 440} Q${jx + 20} ${lt - 860} ${jx + 10} ${lt - 1240}Z" fill="#8E2E3A"/>
+      <path d="M${jx + 342} ${lt - 1240} Q${jx + 312} ${lt - 860} ${jx + 344} ${lt - 440} L${jx + 404} ${lt - 440} Q${jx + 362} ${lt - 860} ${jx + 402} ${lt - 1240}Z" fill="#8E2E3A"/>`;
+    // perapian kiri
+    const fx = o.apiX ?? w * 0.16, fl = 1 + 0.08 * Math.sin(t * 9);
+    s += `<rect x="${fx - 170}" y="${lt - 420}" width="340" height="420" fill="#8A7A6A"/><rect x="${fx - 190}" y="${lt - 440}" width="380" height="36" fill="#A89888"/><rect x="${fx - 100}" y="${lt - 280}" width="200" height="280" rx="100" fill="#2A1A14"/>
+      <g transform="translate(${fx} ${lt - 30}) scale(${f2(fl)})"><path d="M-60 0 Q-70 -80 -20 -150 Q-10 -90 10 -110 Q40 -160 30 -200 Q90 -120 60 0Z" fill="#F28C38"/><path d="M-30 0 Q-30 -60 0 -100 Q10 -60 30 -70 Q40 -40 30 0Z" fill="#FFD36A"/></g>`;
+    s += `<rect y="${lt}" width="${w}" height="${h - lt}" fill="#5A3A26"/><ellipse cx="${w / 2}" cy="${lt + 160}" rx="${w * 0.42}" ry="120" fill="#8E2E3A"/><ellipse cx="${w / 2}" cy="${lt + 160}" rx="${w * 0.36}" ry="92" fill="none" stroke="#C9A24A" stroke-width="8" opacity=".6"/>`;
+    return s + `<rect width="${w}" height="${h}" fill="url(#${id})"/>`;
+  }
+  // papan nama di kuda-kuda kayu. o: {teks, ukuran, coret 0..1, sorot 0..1, warnaPapan}
+  function papanEasel(x, y, s, o = {}) {
+    const fs = o.ukuran || 64, ct = cl(o.coret || 0), sr = cl(o.sorot || 0);
+    return g(x, y, s, `<ellipse cx="0" cy="8" rx="220" ry="20" fill="#000" opacity=".25"/><path d="M-140 0 L-40 -620 M140 0 L40 -620 M0 -600 L0 40" stroke="#7A5232" stroke-width="22" stroke-linecap="round"/>
+      ${sr > 0 ? `<rect x="-250" y="-560" width="500" height="300" rx="22" fill="#FFE08A" opacity="${f2(sr * 0.6)}" style="filter:blur(22px)"/>` : ""}
+      <rect x="-240" y="-550" width="480" height="280" rx="16" fill="#7A5232"/><rect x="-220" y="-530" width="440" height="240" rx="10" fill="${o.warnaPapan || "#F2E6C8"}"/>
+      <text y="${-390 + fs * 0.3}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${fs}" fill="#3A2412" letter-spacing="1">${o.teks || ""}</text>
+      ${ct > 0 ? `<path d="M-190 -410 L${f1(-190 + 380 * ct)} ${f1(-410 + 20 * ct)}" stroke="#D63A3A" stroke-width="16" stroke-linecap="round"/>` : ""}
+      <rect x="-200" y="-270" width="400" height="20" rx="6" fill="#5E3E22"/>`);
+  }
+  // lampu meja kuningan (cahaya hangat)
+  function lampuMeja(x, y, s, t = 0) {
+    const id = uid("lm");
+    return g(x, y, s, `<defs><radialGradient id="${id}"><stop offset="0" stop-color="#FFE0A0" stop-opacity=".5"/><stop offset="1" stop-color="#FFE0A0" stop-opacity="0"/></radialGradient></defs>
+      <ellipse cx="0" cy="-250" rx="420" ry="360" fill="url(#${id})"/><ellipse cx="0" cy="0" rx="90" ry="20" fill="#9A7A3A"/><rect x="-8" y="-240" width="16" height="240" fill="#B8923E"/>
+      <path d="M-110 -230 L110 -230 L70 -340 L-70 -340Z" fill="#2E6A4A"/><ellipse cx="0" cy="-230" rx="110" ry="16" fill="#FFE6A8"/>`);
+  }
+  // lembar cetakan berserakan (tanpa tulisan terbaca)
+  function lembarCetak(x, y, s, o = {}) {
+    const r = acak(o.benih || 41); let d = "";
+    for (let i = 0; i < (o.n || 6); i++) { const dx = (r() - 0.5) * 520, dy = (r() - 0.5) * 120, rt = (r() - 0.5) * 30;
+      let gar = ""; for (let j = 0; j < 7; j++) gar += `<rect x="-100" y="${-120 + j * 32}" width="${f1(120 + r() * 70)}" height="8" rx="4" fill="#8A7A60" opacity=".35"/>`;
+      d += `<g transform="translate(${f1(dx)} ${f1(dy)}) rotate(${f1(rt)})"><rect x="-130" y="-160" width="260" height="320" fill="${i % 2 ? "#F4EEDC" : "#ECE2C8"}"/>${gar}</g>`; }
+    return g(x, y, s, d);
+  }
+  // jendela kota kanal berhujan (rumah berpuncak tangga, air kanal). Koordinat jendela: (x,y) kiri atas, ukuran w×h
+  function jendelaKanal(x, y, w, h, P, t = 0) {
+    const id = uid("jk"), lg = uid("jkl"), r = acak(19);
+    let isi = `<rect x="0" y="0" width="${w}" height="${h}" fill="url(#${lg})"/>`;
+    const warna = ["#7A4A3A", "#5E4A3E", "#8A5A40", "#6A5040", "#4E4A52"];
+    for (let i = 0; i < 6; i++) { const rx = -20 + i * (w / 5), rw = w / 5 + 10, rt = h * (0.42 + r() * 0.18), ry = h * 0.72 - rt;
+      isi += `<path d="M${f1(rx)} ${f1(h * 0.72)} V${f1(ry + 40)} H${f1(rx + rw * 0.2)} V${f1(ry + 10)} H${f1(rx + rw * 0.35)} V${f1(ry - 20)} H${f1(rx + rw * 0.65)} V${f1(ry + 10)} H${f1(rx + rw * 0.8)} V${f1(ry + 40)} H${f1(rx + rw)} V${f1(h * 0.72)}Z" fill="${warna[i % 5]}" opacity=".85"/>`;
+      for (let j = 0; j < 3; j++) isi += `<rect x="${f1(rx + 20 + j * (rw - 40) / 3)}" y="${f1(ry + 70)}" width="${f1((rw - 60) / 3 - 6)}" height="40" fill="#FFD38A" opacity="${f2(0.35 + 0.4 * r())}"/>`; }
+    isi += `<rect x="0" y="${f1(h * 0.72)}" width="${w}" height="${f1(h * 0.28)}" fill="#3E5068"/>${[0, 1, 2, 3].map((i) => `<rect x="${f1(((i * 97 + t * 18) % w))}" y="${f1(h * 0.78 + i * 18)}" width="60" height="3" fill="#9FB4CC" opacity=".5"/>`).join("")}`;
+    isi += A.hujan(w, h, t, P, { deras: 0.5 });
+    return `<defs><clipPath id="${id}"><rect x="0" y="0" width="${w}" height="${h}"/></clipPath><linearGradient id="${lg}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E6E86"/><stop offset="1" stop-color="#8A9AAE"/></linearGradient></defs>
+      <g transform="translate(${x} ${y})"><rect x="-26" y="-26" width="${w + 52}" height="${h + 52}" rx="8" fill="#4A3426"/><g clip-path="url(#${id})">${isi}</g>
+      <rect x="${w / 2 - 6}" y="0" width="12" height="${h}" fill="#4A3426"/><rect x="0" y="${h * 0.45}" width="${w}" height="12" fill="#4A3426"/></g>`;
+  }
+  // orang generik (bukan tokoh nyata, wajah sederhana). o: {baju, celana, kulit, rambut, peci, kebaya, tangan:'angkat'|'pegang'|'dada'|'turun', ayun, tanpaWajah}
+  function orang(x, y, s, P, t = 0, o = {}) {
+    const kulit = o.kulit || "#C98F6A", rambut = o.rambut || "#2A2020", baju = o.baju || "#F4EEDC", bajuG = o.bajuG || "#D9D0BC", cel = o.celana || "#3A3A4A", ay = Math.sin(t * 2.2 + x * 0.03) * 3;
+    const tg = o.tangan || "turun", ang = o.ayun ?? 0;
+    const lengan = (sx) => {
+      if (typeof o.angkat === "number") { // 0 = turun, 1 = terangkat; mulus tanpa lompatan
+        const k = cl(o.angkat), gy = Math.abs(Math.sin(t * 6 + sx)) * 26 * k, ex = sx * (84 - 4 * k), ey = -222 - 470 * k - gy, cx = sx * (100 + 14 * k), cy = -330 - 230 * k;
+        return `<path d="M${sx * 70} -440 Q${f1(cx)} ${f1(cy)} ${f1(ex)} ${f1(ey)}" stroke="${baju}" stroke-width="40" stroke-linecap="round" fill="none"/><circle cx="${f1(ex)}" cy="${f1(ey - 8 * k)}" r="22" fill="${kulit}"/>`;
+      }
+      if (tg === "angkat") return `<path d="M${sx * 70} -440 Q${sx * (110 + 10 * Math.sin(t * 6 + x))} -560 ${sx * (80 + 20 * ang)} ${f1(-680 - 30 * Math.abs(Math.sin(t * 6 + sx)))}" stroke="${baju}" stroke-width="40" stroke-linecap="round" fill="none"/><circle cx="${sx * (80 + 20 * ang)}" cy="${f1(-690 - 30 * Math.abs(Math.sin(t * 6 + sx)))}" r="22" fill="${kulit}"/>`;
+      if (tg === "pegang") return `<path d="M${sx * 70} -440 Q${sx * 120} -360 ${sx * 40} -330" stroke="${baju}" stroke-width="40" stroke-linecap="round" fill="none"/>`;
+      if (tg === "dada" && sx > 0) return `<path d="M70 -440 Q80 -360 10 -400" stroke="${baju}" stroke-width="40" stroke-linecap="round" fill="none"/><circle cx="6" cy="-404" r="22" fill="${kulit}"/>`;
+      return `<path d="M${sx * 70} -440 Q${sx * 100} -330 ${sx * 84} -230" stroke="${baju}" stroke-width="40" stroke-linecap="round" fill="none"/><circle cx="${sx * 84}" cy="-222" r="22" fill="${kulit}"/>`;
+    };
+    const wajah = o.tanpaWajah ? "" : `<circle cx="-22" cy="${-610 + ay}" r="7" fill="#2A2020"/><circle cx="22" cy="${-610 + ay}" r="7" fill="#2A2020"/><path d="M-14 ${-584 + ay} Q0 ${-574 + ay} 14 ${-584 + ay}" stroke="#2A2020" stroke-width="5" fill="none" stroke-linecap="round"/>`;
+    const kepalaAtas = o.peci ? `<path d="M-62 ${-650 + ay} L-56 ${-706 + ay} Q0 ${-716 + ay} 56 ${-706 + ay} L62 ${-650 + ay} Q0 ${-664 + ay} -62 ${-650 + ay}Z" fill="#1E1E24"/>`
+      : `<path d="M-64 ${-620 + ay} Q-70 ${-712 + ay} 0 ${-704 + ay} Q70 ${-712 + ay} 64 ${-620 + ay} Q44 ${-668 + ay} 0 ${-664 + ay} Q-44 ${-668 + ay} -64 ${-620 + ay}Z" fill="${rambut}"/>`;
+    const badan = o.kebaya ? `<path d="M-80 -470 Q0 -500 80 -470 L100 -230 L-100 -230Z" fill="${baju}"/><path d="M-100 -240 L100 -240 L120 0 L-120 0Z" fill="${cel}"/>`
+      : `<rect x="-56" y="-250" width="46" height="250" rx="18" fill="${cel}"/><rect x="10" y="-250" width="46" height="250" rx="18" fill="${cel}"/><path d="M-80 -470 Q0 -500 80 -470 L92 -230 L-92 -230Z" fill="${baju}"/><path d="M0 -480 L20 -230 L92 -230 L80 -470Z" fill="${bajuG}"/>`;
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="110" ry="16" fill="${P.bayang}"/>${badan}${lengan(-1)}${lengan(1)}<rect x="-22" y="-540" width="44" height="60" rx="16" fill="${kulit}"/><ellipse cx="0" cy="${-610 + ay}" rx="62" ry="72" fill="${kulit}"/>${kepalaAtas}${wajah}${o.pegang || ""}`);
+  }
+  // buku ilmiah polos (sampul tanpa judul). o: {sinar, debu 0..1}
+  function bukuPolos(x, y, s, o = {}) {
+    const sn = cl(o.sinar || 0), db = cl(o.debu || 0);
+    return g(x, y, s, `${sn > 0 ? `<rect x="-120" y="-160" width="240" height="320" rx="20" fill="#FFE08A" opacity="${f2(sn * 0.7)}" style="filter:blur(24px)"/>` : ""}<rect x="-100" y="-140" width="200" height="280" rx="8" fill="#6A3A2A"/><rect x="-100" y="-140" width="26" height="280" rx="6" fill="#4E2A1E"/>
+      <rect x="-60" y="-100" width="130" height="6" fill="#C9A24A" opacity=".7"/><rect x="-60" y="94" width="130" height="6" fill="#C9A24A" opacity=".7"/><rect x="-100" y="-140" width="200" height="280" rx="8" fill="#C9C0B0" opacity="${f2(db * 0.6)}"/>`, o.rot || 0);
+  }
+  // aula pertemuan 1928: jendela tinggi bercahaya hangat, spanduk polos, mimbar, kursi kayu
+  function aula1928(w, h, P, t = 0, o = {}) {
+    const lt = o.lantai ?? h * 0.76, id = uid("au");
+    let s = `<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE6B0" stop-opacity=".55"/><stop offset="1" stop-color="#FFE6B0" stop-opacity="0"/></linearGradient></defs>
+      <rect width="${w}" height="${h}" fill="#E2CDA6"/><rect y="${lt - 340}" width="${w}" height="340" fill="#9A6A40"/><rect y="${lt - 350}" width="${w}" height="14" fill="#B8865A"/>`;
+    for (let i = 0; i < 4; i++) { const jx = 90 + i * (w - 180) / 3.4; s += `<rect x="${f1(jx)}" y="${lt - 1240}" width="200" height="780" rx="100" fill="#FFF4D8"/><rect x="${f1(jx + 94)}" y="${lt - 1240}" width="12" height="780" fill="#B8865A"/><rect x="${f1(jx)}" y="${lt - 900}" width="200" height="12" fill="#B8865A"/>
+      <path d="M${f1(jx)} ${lt - 470} L${f1(jx + 200)} ${lt - 470} L${f1(jx + 420)} ${h} L${f1(jx + 120)} ${h}Z" fill="url(#${id})" opacity="${f2(0.5 + 0.1 * Math.sin(t + i))}"/>`; }
+    s += `<path d="M${w * 0.18} ${lt - 1360} L${w * 0.82} ${lt - 1360} L${w * 0.8} ${lt - 1200} Q${w / 2} ${lt - 1170} ${w * 0.2} ${lt - 1200}Z" fill="#B3262E"/><path d="M${w * 0.18} ${lt - 1360} L${w * 0.82} ${lt - 1360} L${w * 0.82} ${lt - 1340} L${w * 0.18} ${lt - 1340}Z" fill="#F4EEDC"/>`;
+    s += `<rect y="${lt}" width="${w}" height="${h - lt}" fill="#7A5232"/>${[...Array(10)].map((_, i) => `<rect x="${i * w / 10}" y="${lt}" width="5" height="${h - lt}" fill="#000" opacity=".12"/>`).join("")}`;
+    return s;
+  }
+  // tribun stadion malam: menara lampu, penonton bersorak berbaju merah-putih, syal berayun, kilat kamera
+  function tribunStadion(w, h, P, t = 0, o = {}) {
+    const r = acak(o.benih || 13), sorak = o.sorak ?? 1, id = uid("st");
+    let s = A.langit(P, w, h, t, { suryaX: w * 0.85, suryaY: 300 });
+    for (const lx of [w * 0.12, w * 0.88]) s += `<defs><radialGradient id="${id}${lx | 0}"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".9"/><stop offset=".3" stop-color="#FFF4D0" stop-opacity=".35"/><stop offset="1" stop-color="#FFF4D0" stop-opacity="0"/></radialGradient></defs>
+      <rect x="${lx - 10}" y="300" width="20" height="500" fill="#2A3448"/><rect x="${lx - 90}" y="240" width="180" height="80" rx="8" fill="#3A4458"/>${[0, 1, 2, 3].map((i) => `<circle cx="${lx - 66 + i * 44}" cy="280" r="16" fill="#FFFBEA"/>`).join("")}<circle cx="${lx}" cy="280" r="420" fill="url(#${id}${lx | 0})"/>`;
+    s += `<path d="M-100 ${h * 0.4} L${w + 100} ${h * 0.36} L${w + 100} ${h} L-100 ${h}Z" fill="#26304A"/>`;
+    for (let row = 0; row < 8; row++) {
+      const yy = h * 0.42 + row * 150, sc = 0.55 + row * 0.12, n = Math.ceil(w / (110 * sc)) + 2;
+      s += `<rect x="-100" y="${f1(yy + 120 * sc)}" width="${w + 200}" height="${f1(30 * sc)}" fill="#1E263A"/>`;
+      for (let i = 0; i < n; i++) {
+        const x = -60 + i * 110 * sc + (row % 2) * 50 * sc, lomp = Math.max(0, Math.sin(t * 7 + i * 1.7 + row)) * 18 * sorak * sc, merah = r() > 0.28;
+        const kulit = ["#C98F6A", "#B47A56", "#D9A27A", "#A86E4C"][Math.floor(r() * 4)], tangan = r() > 0.4;
+        s += `<g transform="translate(${f1(x)} ${f1(yy - lomp)}) scale(${f2(sc)})"><path d="M-44 120 Q-44 20 0 20 Q44 20 44 120Z" fill="${merah ? "#C8242C" : "#F4EEDC"}"/><circle cy="-10" r="34" fill="${kulit}"/><path d="M-34 -16 Q-30 -50 0 -46 Q30 -50 34 -16 Q20 -34 0 -32 Q-20 -34 -34 -16Z" fill="#2A2020"/>
+          ${tangan ? `<path d="M-30 40 L${f1(-56 - 10 * Math.sin(t * 7 + i))} -60 M30 40 L${f1(56 + 10 * Math.sin(t * 7 + i))} -60" stroke="${merah ? "#C8242C" : "#F4EEDC"}" stroke-width="20" stroke-linecap="round"/>` : ""}
+          ${r() > 0.75 ? `<path d="M-60 -70 Q0 ${f1(-110 + 30 * Math.sin(t * 5 + i))} 60 -70 L60 -50 Q0 ${f1(-90 + 30 * Math.sin(t * 5 + i))} -60 -50Z" fill="${(i + row) % 2 ? "#E8343C" : "#F4EEDC"}"/>` : ""}</g>`;
+      }
+    }
+    // kilat kamera acak
+    for (let i = 0; i < 6; i++) { const ph = (t * 1.7 + i * 0.37) % 1, x = r() * w, y = h * 0.45 + r() * h * 0.4; if (ph < 0.08) s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(30 * (1 - ph / 0.08))}" fill="#FFFFFF" opacity=".8"/>`; }
+    return s;
+  }
+
+  Object.assign(A, { lilin, ruangKerjaTua, jurnalTerbuka, penaBulu, stempelLilin, petaNusantara, kapalLayar, pelabuhanLama, siluetBertopi, gerobakJurnal, ruangPeta, tiangYunani, halamanYunani,
+    kepinganPuzzle, ruangVictoria, papanEasel, lampuMeja, lembarCetak, jendelaKanal, orang, bukuPolos, aula1928, tribunStadion });
+})(typeof window !== "undefined" ? window : globalThis);

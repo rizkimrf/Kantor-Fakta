@@ -7,6 +7,8 @@
 | 2026-11-16 18.00 (TikTok otomatis via kotak masuk; IG & YouTube manual Bos) | Shorts | Alam & hewan aneh | Kenapa durian bau (DNA, 4 "pabrik bau") | pertanyaan + angka mengejutkan ("EMPAT pabrik bau") | 2026-11-15_i-009-bau-durian |
 | 2026-11-16 (tayang manual: TikTok+IG+YouTube) | Shorts | Uang & ekonomi sehari-hari | Harga Rp 99.900 terasa murah (efek digit kiri) | tes penonton ("Mana TERASA lebih murah?") | 2026-11-15_i-015-harga-99900 |
 | 2026-11-15 (naskah) | Shorts | Geografi & negara | Asal nama Indonesia (ditulis orang Britania di Singapura) | pertanyaan + pembalikan pelaku ("BUKAN orang kita") | 2026-11-15_i-004-asal-nama-indonesia |
+| 2026-11-17 (naskah) | Shorts | Geografi & negara | Danau Toba = kaldera, Samosir naik, teori "nyaris punah" tak didukung bukti | konsekuensi personal ("Liburan ke Toba? Kamu berenang di atas LUBANG.") | 2026-11-17_i-013-danau-toba-letusan-super |
+| 2026-11-17 (naskah) | Shorts | Benda & kebiasaan sehari-hari | Odol = merek obat kumur Dresden 1892 | in medias res ("Mulut penuh busa, tiba-tiba kepikiran...") | 2026-11-17_i-019-odol-merek-jerman |
 
 ## Log sampul (konsep · posisi Tebe · warna dominan)
 | Tanggal | Folder | Konsep | Posisi Tebe | Warna |

@@ -1,0 +1,700 @@
+{
+ "model": "eleven_v4",
+ "kata": [
+  {
+   "kata": "Asal",
+   "mulai": 0.133,
+   "selesai": 0.32
+  },
+  {
+   "kata": "nama",
+   "mulai": 0.56,
+   "selesai": 0.8
+  },
+  {
+   "kata": "Indonesia",
+   "mulai": 0.88,
+   "selesai": 1.28
+  },
+  {
+   "kata": "dari",
+   "mulai": 1.333,
+   "selesai": 1.44
+  },
+  {
+   "kata": "mana,",
+   "mulai": 1.52,
+   "selesai": 1.8
+  },
+  {
+   "kata": "sih?",
+   "mulai": 1.84,
+   "selesai": 2.56
+  },
+  {
+   "kata": "Yang",
+   "mulai": 2.64,
+   "selesai": 2.72
+  },
+  {
+   "kata": "pertama",
+   "mulai": 2.8,
+   "selesai": 3.04
+  },
+  {
+   "kata": "nulis,",
+   "mulai": 3.08,
+   "selesai": 3.68
+  },
+  {
+   "kata": "ternyata",
+   "mulai": 3.8,
+   "selesai": 4.24
+  },
+  {
+   "kata": "bukan",
+   "mulai": 4.32,
+   "selesai": 4.48
+  },
+  {
+   "kata": "orang",
+   "mulai": 4.6,
+   "selesai": 4.72
+  },
+  {
+   "kata": "kita.",
+   "mulai": 4.8,
+   "selesai": 5.6
+  },
+  {
+   "kata": "Pelakunya",
+   "mulai": 5.64,
+   "selesai": 6.08
+  },
+  {
+   "kata": "orang",
+   "mulai": 6.2,
+   "selesai": 6.32
+  },
+  {
+   "kata": "Britania,",
+   "mulai": 6.44,
+   "selesai": 7.12
+  },
+  {
+   "kata": "di",
+   "mulai": 7.16,
+   "selesai": 7.2
+  },
+  {
+   "kata": "jurnal",
+   "mulai": 7.28,
+   "selesai": 7.52
+  },
+  {
+   "kata": "terbitan",
+   "mulai": 7.6,
+   "selesai": 8.0
+  },
+  {
+   "kata": "Singapura.",
+   "mulai": 8.08,
+   "selesai": 8.96
+  },
+  {
+   "kata": "Dan",
+   "mulai": 9.04,
+   "selesai": 9.12
+  },
+  {
+   "kata": "namanya",
+   "mulai": 9.2,
+   "selesai": 9.68
+  },
+  {
+   "kata": "bisa",
+   "mulai": 9.733,
+   "selesai": 9.84
+  },
+  {
+   "kata": "saja",
+   "mulai": 9.92,
+   "selesai": 10.16
+  },
+  {
+   "kata": "beda.",
+   "mulai": 10.28,
+   "selesai": 10.88
+  },
+  {
+   "kata": "Dulu",
+   "mulai": 10.96,
+   "selesai": 11.2
+  },
+  {
+   "kata": "wilayah",
+   "mulai": 11.28,
+   "selesai": 11.52
+  },
+  {
+   "kata": "kita",
+   "mulai": 11.6,
+   "selesai": 11.84
+  },
+  {
+   "kata": "namanya",
+   "mulai": 11.92,
+   "selesai": 12.24
+  },
+  {
+   "kata": "panjang",
+   "mulai": 12.4,
+   "selesai": 12.8
+  },
+  {
+   "kata": "dan",
+   "mulai": 12.88,
+   "selesai": 12.96
+  },
+  {
+   "kata": "ganti-ganti.",
+   "mulai": 13.04,
+   "selesai": 13.92
+  },
+  {
+   "kata": "Ilmuwan",
+   "mulai": 14.0,
+   "selesai": 14.4
+  },
+  {
+   "kata": "butuh",
+   "mulai": 14.48,
+   "selesai": 14.72
+  },
+  {
+   "kata": "satu",
+   "mulai": 14.8,
+   "selesai": 14.96
+  },
+  {
+   "kata": "nama",
+   "mulai": 15.04,
+   "selesai": 15.12
+  },
+  {
+   "kata": "pendek.",
+   "mulai": 15.2,
+   "selesai": 15.92
+  },
+  {
+   "kata": "Mereka",
+   "mulai": 15.96,
+   "selesai": 16.24
+  },
+  {
+   "kata": "pakai",
+   "mulai": 16.32,
+   "selesai": 16.48
+  },
+  {
+   "kata": "bahasa",
+   "mulai": 16.52,
+   "selesai": 16.8
+  },
+  {
+   "kata": "Yunani,",
+   "mulai": 16.84,
+   "selesai": 17.44
+  },
+  {
+   "kata": "meniru",
+   "mulai": 17.52,
+   "selesai": 17.92
+  },
+  {
+   "kata": "pola",
+   "mulai": 17.96,
+   "selesai": 18.16
+  },
+  {
+   "kata": "Polinesia.",
+   "mulai": 18.24,
+   "selesai": 19.28
+  },
+  {
+   "kata": "Indos",
+   "mulai": 19.44,
+   "selesai": 19.84
+  },
+  {
+   "kata": "itu",
+   "mulai": 19.96,
+   "selesai": 20.08
+  },
+  {
+   "kata": "India,",
+   "mulai": 20.32,
+   "selesai": 20.8
+  },
+  {
+   "kata": "nesos",
+   "mulai": 20.88,
+   "selesai": 21.36
+  },
+  {
+   "kata": "itu",
+   "mulai": 21.48,
+   "selesai": 21.6
+  },
+  {
+   "kata": "pulau.",
+   "mulai": 21.653,
+   "selesai": 22.32
+  },
+  {
+   "kata": "Pulau-pulau",
+   "mulai": 22.373,
+   "selesai": 23.04
+  },
+  {
+   "kata": "India.",
+   "mulai": 23.12,
+   "selesai": 24.0
+  },
+  {
+   "kata": "Jorj",
+   "mulai": 24.04,
+   "selesai": 24.32
+  },
+  {
+   "kata": "Erl",
+   "mulai": 24.4,
+   "selesai": 24.64
+  },
+  {
+   "kata": "ngusulin",
+   "mulai": 24.68,
+   "selesai": 25.2
+  },
+  {
+   "kata": "Indu-nisyens",
+   "mulai": 25.32,
+   "selesai": 26.16
+  },
+  {
+   "kata": "atau",
+   "mulai": 26.24,
+   "selesai": 26.56
+  },
+  {
+   "kata": "Malayu-nisyens,",
+   "mulai": 26.72,
+   "selesai": 27.92
+  },
+  {
+   "kata": "dan",
+   "mulai": 28.0,
+   "selesai": 28.08
+  },
+  {
+   "kata": "condong",
+   "mulai": 28.16,
+   "selesai": 28.48
+  },
+  {
+   "kata": "ke",
+   "mulai": 28.52,
+   "selesai": 28.56
+  },
+  {
+   "kata": "yang",
+   "mulai": 28.64,
+   "selesai": 28.72
+  },
+  {
+   "kata": "kedua.",
+   "mulai": 28.8,
+   "selesai": 29.52
+  },
+  {
+   "kata": "Kalau",
+   "mulai": 29.6,
+   "selesai": 29.72
+  },
+  {
+   "kata": "itu",
+   "mulai": 29.76,
+   "selesai": 29.92
+  },
+  {
+   "kata": "menang,",
+   "mulai": 30.04,
+   "selesai": 30.48
+  },
+  {
+   "kata": "kita",
+   "mulai": 30.52,
+   "selesai": 30.72
+  },
+  {
+   "kata": "mungkin",
+   "mulai": 30.76,
+   "selesai": 31.04
+  },
+  {
+   "kata": "orang...",
+   "mulai": 31.12,
+   "selesai": 32.08
+  },
+  {
+   "kata": "Malayunesia.",
+   "mulai": 32.2,
+   "selesai": 33.28
+  },
+  {
+   "kata": "Tapi",
+   "mulai": 34.16,
+   "selesai": 34.4
+  },
+  {
+   "kata": "rekannya,",
+   "mulai": 34.48,
+   "selesai": 35.04
+  },
+  {
+   "kata": "Jeims",
+   "mulai": 35.12,
+   "selesai": 35.36
+  },
+  {
+   "kata": "Logen,",
+   "mulai": 35.48,
+   "selesai": 35.92
+  },
+  {
+   "kata": "yang",
+   "mulai": 36.0,
+   "selesai": 36.08
+  },
+  {
+   "kata": "pertama",
+   "mulai": 36.16,
+   "selesai": 36.56
+  },
+  {
+   "kata": "menulis",
+   "mulai": 36.64,
+   "selesai": 36.96
+  },
+  {
+   "kata": "kata",
+   "mulai": 37.04,
+   "selesai": 37.28
+  },
+  {
+   "kata": "Indonesia.",
+   "mulai": 37.44,
+   "selesai": 38.48
+  },
+  {
+   "kata": "Siapa",
+   "mulai": 38.72,
+   "selesai": 39.04
+  },
+  {
+   "kata": "penciptanya?",
+   "mulai": 39.08,
+   "selesai": 39.84
+  },
+  {
+   "kata": "Sejarawan",
+   "mulai": 40.0,
+   "selesai": 40.56
+  },
+  {
+   "kata": "masih",
+   "mulai": 40.64,
+   "selesai": 40.8
+  },
+  {
+   "kata": "debat.",
+   "mulai": 40.88,
+   "selesai": 41.52
+  },
+  {
+   "kata": "Awalnya",
+   "mulai": 41.6,
+   "selesai": 41.92
+  },
+  {
+   "kata": "cuma",
+   "mulai": 42.0,
+   "selesai": 42.16
+  },
+  {
+   "kata": "label",
+   "mulai": 42.28,
+   "selesai": 42.4
+  },
+  {
+   "kata": "geografi.",
+   "mulai": 42.48,
+   "selesai": 43.2
+  },
+  {
+   "kata": "Sampai",
+   "mulai": 43.44,
+   "selesai": 43.68
+  },
+  {
+   "kata": "pelajar",
+   "mulai": 43.72,
+   "selesai": 44.0
+  },
+  {
+   "kata": "kita",
+   "mulai": 44.08,
+   "selesai": 44.24
+  },
+  {
+   "kata": "di",
+   "mulai": 44.28,
+   "selesai": 44.32
+  },
+  {
+   "kata": "Belanda",
+   "mulai": 44.4,
+   "selesai": 44.8
+  },
+  {
+   "kata": "merebutnya,",
+   "mulai": 44.92,
+   "selesai": 45.6
+  },
+  {
+   "kata": "karena",
+   "mulai": 45.68,
+   "selesai": 45.84
+  },
+  {
+   "kata": "Hindia",
+   "mulai": 45.92,
+   "selesai": 46.16
+  },
+  {
+   "kata": "Belanda",
+   "mulai": 46.24,
+   "selesai": 46.56
+  },
+  {
+   "kata": "itu",
+   "mulai": 46.72,
+   "selesai": 46.88
+  },
+  {
+   "kata": "nama",
+   "mulai": 46.96,
+   "selesai": 47.2
+  },
+  {
+   "kata": "dari",
+   "mulai": 47.28,
+   "selesai": 47.36
+  },
+  {
+   "kata": "penjajah.",
+   "mulai": 47.44,
+   "selesai": 48.08
+  },
+  {
+   "kata": "Lalu",
+   "mulai": 48.4,
+   "selesai": 48.72
+  },
+  {
+   "kata": "Sumpah",
+   "mulai": 48.76,
+   "selesai": 49.0
+  },
+  {
+   "kata": "Pemuda",
+   "mulai": 49.04,
+   "selesai": 49.44
+  },
+  {
+   "kata": "menguncinya:",
+   "mulai": 49.493,
+   "selesai": 50.4
+  },
+  {
+   "kata": "tanah",
+   "mulai": 50.48,
+   "selesai": 50.72
+  },
+  {
+   "kata": "air,",
+   "mulai": 50.8,
+   "selesai": 51.36
+  },
+  {
+   "kata": "bangsa,",
+   "mulai": 51.52,
+   "selesai": 52.08
+  },
+  {
+   "kata": "bahasa",
+   "mulai": 52.2,
+   "selesai": 52.64
+  },
+  {
+   "kata": "Indonesia.",
+   "mulai": 52.8,
+   "selesai": 53.6
+  },
+  {
+   "kata": "Jadi",
+   "mulai": 54.064,
+   "selesai": 54.32
+  },
+  {
+   "kata": "lahirnya",
+   "mulai": 54.4,
+   "selesai": 54.72
+  },
+  {
+   "kata": "di",
+   "mulai": 54.76,
+   "selesai": 54.8
+  },
+  {
+   "kata": "jurnal",
+   "mulai": 54.88,
+   "selesai": 55.12
+  },
+  {
+   "kata": "orang",
+   "mulai": 55.2,
+   "selesai": 55.36
+  },
+  {
+   "kata": "asing,",
+   "mulai": 55.44,
+   "selesai": 56.0
+  },
+  {
+   "kata": "tapi",
+   "mulai": 56.08,
+   "selesai": 56.24
+  },
+  {
+   "kata": "kita",
+   "mulai": 56.32,
+   "selesai": 56.64
+  },
+  {
+   "kata": "yang",
+   "mulai": 56.72,
+   "selesai": 56.8
+  },
+  {
+   "kata": "menjadikannya",
+   "mulai": 56.88,
+   "selesai": 57.36
+  },
+  {
+   "kata": "milik",
+   "mulai": 57.44,
+   "selesai": 57.6
+  },
+  {
+   "kata": "kita.",
+   "mulai": 57.64,
+   "selesai": 58.0
+  },
+  {
+   "kata": "Dan",
+   "mulai": 58.32,
+   "selesai": 58.48
+  },
+  {
+   "kata": "ternyata,",
+   "mulai": 58.56,
+   "selesai": 59.2
+  },
+  {
+   "kata": "memang",
+   "mulai": 59.28,
+   "selesai": 59.44
+  },
+  {
+   "kata": "begitu.",
+   "mulai": 59.52,
+   "selesai": 60.08
+  },
+  {
+   "kata": "Kirim",
+   "mulai": 60.4,
+   "selesai": 60.64
+  },
+  {
+   "kata": "ke",
+   "mulai": 60.72,
+   "selesai": 60.76
+  },
+  {
+   "kata": "teman",
+   "mulai": 60.8,
+   "selesai": 60.96
+  },
+  {
+   "kata": "yang",
+   "mulai": 61.04,
+   "selesai": 61.2
+  },
+  {
+   "kata": "paling",
+   "mulai": 61.28,
+   "selesai": 61.52
+  },
+  {
+   "kata": "kencang",
+   "mulai": 61.6,
+   "selesai": 61.84
+  },
+  {
+   "kata": "teriak",
+   "mulai": 61.92,
+   "selesai": 62.16
+  },
+  {
+   "kata": "Indonesia",
+   "mulai": 62.24,
+   "selesai": 62.8
+  },
+  {
+   "kata": "di",
+   "mulai": 62.84,
+   "selesai": 62.88
+  },
+  {
+   "kata": "stadion,",
+   "mulai": 62.96,
+   "selesai": 63.52
+  },
+  {
+   "kata": "terus",
+   "mulai": 63.56,
+   "selesai": 63.68
+  },
+  {
+   "kata": "tanya",
+   "mulai": 63.76,
+   "selesai": 64.0
+  },
+  {
+   "kata": "dia...",
+   "mulai": 64.12,
+   "selesai": 64.56
+  }
+ ]
+}
