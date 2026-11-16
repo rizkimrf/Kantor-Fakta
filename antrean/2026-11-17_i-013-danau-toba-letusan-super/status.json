@@ -1,7 +1,9 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "i-013 danau toba letusan super",
   "dibuat": "2026-11-17T05:42",
-  "riwayat": [],
+  "riwayat": [
+    {"tahap": "ide", "oleh": "Laras (riset)", "waktu": "2026-11-16", "catatan": "riset.md selesai, skor FT 8/10; volume, lebar kaldera, ketebalan abu dibuang karena sumber berbeda"}
+  ],
   "masalah": null
 }

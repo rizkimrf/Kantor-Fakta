@@ -1,7 +1,9 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "i-019 odol merek jerman",
   "dibuat": "2026-11-17T05:42",
-  "riwayat": [],
+  "riwayat": [
+    {"tahap": "ide", "oleh": "Laras (riset)", "waktu": "2026-11-16", "catatan": "riset.md selesai, skor FT 8/10; tahun masuk Hindia Belanda & klaim 'pasta gigi pertama' dibuang"}
+  ],
   "masalah": null
 }
