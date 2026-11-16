@@ -59,13 +59,18 @@
       "dari": "disetujui",
       "ke": "terjadwal",
       "waktu": "2026-11-16T03:29"
+    },
+    {
+      "waktu": "2026-11-16T11:38+08:00",
+      "oleh": "Bos (chat)",
+      "hasil": "Bos memutuskan unggah manual SEKARANG ke 3 platform; jadwal dimajukan"
     }
   ],
   "masalah": null,
   "skor_manajer": 8,
   "video_asset_id": "af0fb211afe98ee1fa71fbb6d2cbd8bc",
   "thumb_asset_id": "f099774fc9cbfad9dc5780c5686755aa",
-  "jadwal_tayang": "2026-11-16T18:00:00+08:00",
+  "jadwal_tayang": "2026-11-16T11:38:00+08:00",
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
