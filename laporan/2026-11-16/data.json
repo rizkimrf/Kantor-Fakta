@@ -1,18 +1,7 @@
-{
-  "tanggal": "2026-11-16",
-  "periode": ["last_7_days", "last_28_days"],
-  "sumber": {
-    "youtube_YT2": {"status": "tidak tersedia", "alasan": "Supermetrics NOT_AUTHENTICATED - Bos perlu login sumber YouTube di Supermetrics"},
-    "tiktok_TIKBA": {"status": "tidak tersedia", "alasan": "Supermetrics NOT_AUTHENTICATED"},
-    "instagram_IGI": {"status": "tidak tersedia", "alasan": "Supermetrics NOT_AUTHENTICATED"}
-  },
-  "tangkapan_layar_bos": "belum ada",
-  "catatan": "Tidak ada angka performa. Jangan mengarang. Video tayang sejauh ini: 1 (bau hujan, unggah manual YouTube & TikTok 15 Nov 2026).",
-  "data_internal": {
-    "tayang": ["2026-11-15_i-007-bau-hujan"],
-    "menunggu_persetujuan": ["2026-11-15_i-009-bau-durian", "2026-11-15_i-015-harga-99900"],
-    "produksi": ["2026-11-15_i-004-asal-nama-indonesia", "2026-11-15_i-008-mitos-micin-bikin-bodoh", "2026-11-15_i-018-ketchup-dari-kecap"],
-    "terjadwal": 0,
-    "kredit_elevenlabs_bulan_ini": 1058
-  }
-}
+{"sumber":"Supermetrics, ditarik 2026-11-16 13.50 WITA, rentang 30 hari",
+ "tiktok_videos":[
+  {"video":"bau hujan","tayang":"2026-11-15 11:20 UTC","durasi_s":71.6,"views":433,"rata2_tonton_s":19.7,"selesai_ditonton":0.0465,"likes":25,"komentar":2,"share":0,"simpan":2},
+  {"video":"harga 99.900","tayang":"2026-11-16 03:42 UTC","durasi_s":68.5,"views":191,"rata2_tonton_s":9.4,"selesai_ditonton":0.08,"likes":8,"komentar":3,"share":0,"simpan":0},
+  {"video":"perkenalan (Ternyata Begitu...)","tayang":"2026-11-15 12:25 UTC","durasi_s":61.5,"views":210,"rata2_tonton_s":21.3,"selesai_ditonton":0.0264,"likes":16,"komentar":0,"share":0,"simpan":0}],
+ "instagram_reels":[{"video":"bau durian","tayang":"2026-11-16 03:46 UTC","views":77,"jangkauan":45,"rata2_tonton":"00:19","skip_rate_persen":32.8,"likes":3,"komentar":0,"simpan":0,"share":0}],
+ "youtube":"belum ada data (YouTube Analytics biasanya tertunda 2-3 hari / video belum diunggah)"}
