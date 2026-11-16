@@ -12,6 +12,11 @@ Kamu Pak Bima, dibantu Raka. Perintah ini juga dijalankan otomatis oleh tugas te
    - YouTube diunggah segera dengan jam tayang terjadwal; TikTok & Instagram diunggah saat jamnya tiba.
    - Kunci yang belum diisi → platform itu dilewati dan dicatat "unggah manual" (kirim paket unggah ke Bos lewat log Kantor Visual).
    - Gagal 2x → tulis ke `masalah`, laporkan, jangan dicoba terus.
+   - **Perintah Bos (16 Nov 2026): setiap unggahan GAGAL (sekali pun) langsung dikabarkan** supaya Bos bisa unggah manual cepat:
+     (a) jadikan video itu kartu "Perlu Bos unggah manual" di Kantor Visual untuk platform yang gagal (tombol unduh + judul/caption siap salin, lihat sinkron-visual);
+     (b) tulis pesan di log Kantor Visual: `GAGAL UNGGAH <platform> – <judul> – jadwal <jam> WITA – alasan singkat`;
+     (c) baris PERTAMA jawaban akhir sesi diawali `⚠️ GAGAL UNGGAH:` + platform & judul (ini yang muncul di notifikasi HP Bos).
+     Jangan menunggu gagal 2x untuk mengabari. Jangan tampilkan isi error yang memuat token.
 5. **Evaluasi harian ringan (hanya sesi sore 17.47):** bila konektor Supermetrics tersedia, ambil performa video 3 hari terakhir (YT2 `LatestVideos`, TIKBA `videos`) — cukup views, % ditonton, share. Tulis 3 langkah untuk produksi besok di `laporan/harian.md` (timpa isinya, maks 10 baris). Produksi pagi wajib membacanya sebelum memilih hook & sampul. Tidak tersedia → lewati tanpa mengarang.
 6. Tambahkan baris ke `panduan/riwayat.md` untuk tiap video yang terbit.
 7. Jalankan bagian B sinkron-visual, commit, dan push ke `main`. Laporan singkat ke Bos memakai format laporan di CLAUDE.md.
