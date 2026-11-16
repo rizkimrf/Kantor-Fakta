@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "I-008 mitos micin bikin bodoh",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -46,8 +46,16 @@
       "waktu": "2026-11-16T23:42",
       "oleh": "Yoga (editor)",
       "hasil": "final.mp4 89,3 dtk / 15,9 MB, thumbnail.png (sebab-akibat: otak kartun bertanda tanya diincar jarum raksasa + sendok micin, teal gelap + rim pink, Tebe besar KANAN bawah menghadap kiri, kaget; 1 panah merah) teks 'MICIN BIKIN BODOH?'. Suara Dakocan eleven_v4 sekali (1.432 huruf, ±745 kredit). 10 set baru (warung bakso siang, angkringan malam, ruang kerja 1968, papan detektif, lab 1969, panggung sorot jarum vs sendok, ruang uji tersamar, ruang arsip + 3 stempel bergantian, dapur terang molekul kembar, warung bakso malam) + outro menggantung 'terus TANYA BALIK' → loop. Tanpa jeda antar babak (hanya intro 2,4 dtk). Tanpa merek micin, tanpa dosis, tanpa stiker AMAN; tikus imut tanpa luka, jarum tanpa darah. cek_mulus LULUS, cek_video LULUS (setelah perbaikan guncangan kamera stempel, serah-terima intro, posisi Tebe di zona aman)."
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-17T08:50",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul otak-jarum teal-pink, tanpa merek/dosis, 10 butir gerbang mutu ya."
     }
   ],
   "masalah": null,
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "catatan_bos": null
 }

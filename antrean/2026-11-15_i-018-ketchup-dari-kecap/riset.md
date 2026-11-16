@@ -29,7 +29,7 @@ Catatan metode: WebFetch ke smithsonianmag.com dan npr.org diblokir jaringan ses
 - **Kutipan Charles Lockyer, *An Account of the Trade in India* (1711):** "Soy comes in Tubbs from Japan, and the best Ketchup from Tonquin; yet good of both sorts are made and sold very cheap in China." Tonquin = Vietnam utara. *Status: hanya dari sumber sekunder (mirror Wikipedia, foodsofengland), teks asli belum dicek di Internet Archive. Boleh untuk komentar tersemat atau video panjang, JANGAN jadi fakta inti Shorts.*
 - **James Mease, 1812:** dokter/ahli hortikultura Philadelphia, menyebut tomat "love apples" dan mengeja sausnya "catsup". Resepnya terbit di *Archives of Useful Knowledge* (Smithsonian; Online Books Page UPenn). Menurut Smithsonian, resepnya memakai alkohol (brandy).
 - **Heinz 1876:** H.J. Heinz meluncurkan saus tomatnya tahun 1876 (National Geographic; Library of Congress blog).
-- **Kecap inggris (Worcestershire):** dijual sejak 1837 oleh Lea & Perrins di Worcester. Bentuk aslinya berisi asam jawa, kedelai, bawang putih, bawang merah, **ikan teri**, dan rempah (Britannica).
+- **Kecap inggris (Worcestershire):** dijual sejak 1837 oleh Lea & Perrins di Worcester. Bentuk aslinya berisi asam jawa, kedelai, bawang putih, bawang merah, **ikan teri**, dan rempah (Britannica). **Sumber ke-2 (16 Nov):** Wikipedia "Worcestershire sauce": daftar bahan abad ke-19 yang ditemukan di pabrik Lea & Perrins pada 2009 memuat anchovies (ikan teri), cuka, molase, gula, garam, ekstrak asam jawa, bawang, bawang putih; label Lea & Perrins sekarang juga mencantumkan anchovies dan peringatan ikan. Catatan: "kedelai" pada daftar asli tidak tercantum di sumber ke-2, jadi jangan dipakai; yang aman hanya "versi aslinya pakai ikan teri".
 
 ## 5. Fakta utama (untuk naskah)
 1. Kata *ketchup* berasal dari bahasa Hokkien *kê-tsiap*/*kôe-chiap* = air garam ikan/kerang asin. Sumber: OED (dikutip Grammarphobia), Merriam-Webster, Smithsonian (mengutip linguis Dan Jurafsky, Stanford), National Geographic (2014).
@@ -91,6 +91,7 @@ Utama (kredibel):
 10. Online Books Page, UPenn — James Mease (1771–1846): https://onlinebooks.library.upenn.edu/webbin/who/Mease%2C%20James%2C%201771-1846
 11. Library of Congress, Inside Adams — Ketchup (2025): https://blogs.loc.gov/inside_adams/2025/01/ketchup/
 12. Britannica — Worcestershire sauce: https://www.britannica.com/topic/Worcestershire-sauce
+12b. Wikipedia — Worcestershire sauce (sumber ke-2 teri; daftar bahan abad ke-19 + label kini): https://en.wikipedia.org/wiki/Worcestershire_sauce
 13. The Jakarta Post (2011) — "A sauce with history": https://www.thejakartapost.com/news/2011/02/28/a-sauce-with-history.html
 
 Petunjuk saja (bukan bukti): Wiktionary "ketchup" & "kecap" (https://en.wiktionary.org/wiki/ketchup), Wikipedia "Ketchup", foodsofengland.info (kutipan Lockyer).
