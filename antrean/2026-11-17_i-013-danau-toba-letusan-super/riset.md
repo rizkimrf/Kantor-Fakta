@@ -41,7 +41,7 @@ Toba di Sumut, Samosir yang dikunjungi wisatawan adalah dasar kaldera yang teran
 - Tidak boleh: "Toba memusnahkan manusia", "Toba tidak berdampak apa-apa", "pasti meletus lagi".
 
 ## Fakta cadangan (komentar tersemat)
-Di Jwalapuram, India, alat batu mirip ditemukan di atas dan bawah lapisan abu Toba, menandakan manusia di sana bertahan.
+DIGANTI (16 Nov): di Pinnacle Point, Afrika Selatan, ditemukan >400.000 artefak di bawah, di dalam, dan di atas lapisan abu Toba (UCT, ScienceDaily, NatGeo). [Jwalapuram sebelumnya: dicabut, sumber tidak cukup.]
 
 ## Sumber
 - Smith dkk., Nature 2018 (doi 10.1038/nature25967) https://link.springer.com/article/10.1038/nature25967
@@ -50,5 +50,6 @@ Di Jwalapuram, India, alat batu mirip ditemukan di atas dan bawah lapisan abu To
 - Lane dkk., PNAS 2013, Lake Malawi https://ui.adsabs.harvard.edu/abs/2013PNAS..110.8025L
 - Frontiers in Earth Science 2015, Resurgent Toba https://doi.org/10.3389/feart.2015.00025
 - JSTOR Daily https://daily.jstor.org/a-massive-eruption-74000-years-ago-affected-the-whole-planet
-- The Conversation, alat batu India https://theconversation.com/stone-tools-show-humans-in-india-survived-the-cataclysmic-toba-eruption-74-000-years-ago-132101
+- Pinnacle Point (diverifikasi ulang 16 Nov): >400.000 artefak (alat batu panas-olah, tulang hewan, tanda api) ditemukan di bawah, di dalam, dan di atas lapisan abu Toba, serpihan kaca mikroskopis; lokasi dihuni ±90.000-50.000 th lalu. UCT https://news.uct.ac.za/article/-2018-04-04-how-ancient-humans-survived-a-volcanic-winter ; ScienceDaily https://www.sciencedaily.com/releases/2018/03/180312132956.htm ; NatGeo https://www.nationalgeographic.com/science/article/toba-supervolcano-eruption-humans-south-africa-science
+- TIDAK DIPAKAI: The Conversation, alat batu India https://theconversation.com/stone-tools-show-humans-in-india-survived-the-cataclysmic-toba-eruption-74-000-years-ago-132101 (kemungkinan membahas situs Dhaba, Clarkson 2020, bukan Jwalapuram; teks penuh belum terbaca). Klaim Jwalapuram (fakta cadangan di atas) tidak dipakai sebelum ada sumber Petraglia dkk., Science 2007 yang dicek; fakta cadangan pengganti = >400.000 artefak Pinnacle Point.
 - Wikipedia Toba catastrophe theory (penunjuk saja; rujuk Ambrose 1998)
