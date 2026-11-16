@@ -34,8 +34,13 @@ class Penangkap(http.server.BaseHTTPRequestHandler):
     def log_message(self, *a): pass
 
 
-print("Membuka browser untuk login TikTok...")
-webbrowser.open(url)
+print("\n=== SALIN LINK DI BAWAH INI, tempel di kolom alamat Chrome, lalu Enter ===\n")
+print(url)
+print("\n(Biarkan jendela PowerShell ini tetap terbuka sampai muncul tulisan Selesai.)")
+try:
+    webbrowser.open(url)
+except Exception:
+    pass
 srv = http.server.HTTPServer(("localhost", 8765), Penangkap)
 while "code" not in hasil and "error" not in hasil:
     srv.handle_request()
