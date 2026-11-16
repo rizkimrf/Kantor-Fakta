@@ -18,6 +18,34 @@ from _umum import ROOT, muat_env, set_status
 
 muat_env()
 CEK = "--cek" in sys.argv
+if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah mencetak kunci/token
+    def _uji(nama, f):
+        try: print(f"{nama}: OK - {f()}")
+        except Exception as e: print(f"{nama}: GAGAL - {str(e)[:200]}")
+    for k in ["IG_ACCESS_TOKEN", "IG_USER_ID", "TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN",
+              "TIKTOK_MODE", "YT_AUDIT_LOLOS"]:
+        print(f"{k}: {'terisi' if os.environ.get(k) else 'KOSONG'}")
+    def _ig():
+        r = urllib.request.urlopen(f"https://graph.facebook.com/v21.0/{os.environ['IG_USER_ID']}?fields=username"
+                                   f"&access_token={os.environ['IG_ACCESS_TOKEN']}", timeout=60)
+        return "akun @" + json.loads(r.read())["username"]
+    def _ig_unggah():  # host unggahan video Instagram (cukup terjangkau; 4xx = host terbuka)
+        try: urllib.request.urlopen("https://rupload.facebook.com/", timeout=30)
+        except urllib.error.HTTPError as e: return f"host terjangkau (HTTP {e.code})"
+        return "host terjangkau"
+    def _tt():
+        d = urllib.parse.urlencode({"client_key": os.environ["TIKTOK_CLIENT_KEY"], "client_secret": os.environ["TIKTOK_CLIENT_SECRET"],
+                                    "grant_type": "refresh_token", "refresh_token": os.environ["TIKTOK_REFRESH_TOKEN"]}).encode()
+        t = json.loads(urllib.request.urlopen(urllib.request.Request("https://open.tiktokapis.com/v2/oauth/token/", d,
+                        {"Content-Type": "application/x-www-form-urlencoded"}), timeout=60).read())
+        if "access_token" not in t: raise RuntimeError(t.get("error_description") or t.get("error"))
+        u = json.loads(urllib.request.urlopen(urllib.request.Request(
+            "https://open.tiktokapis.com/v2/user/info/?fields=display_name",
+            headers={"Authorization": f"Bearer {t['access_token']}"}), timeout=60).read())
+        sama = "refresh token tetap" if t.get("refresh_token") == os.environ["TIKTOK_REFRESH_TOKEN"] else "REFRESH TOKEN BERGANTI"
+        return f"akun {u['data']['user']['display_name']}, scope {t.get('scope')}, {sama}"
+    _uji("Instagram", _ig); _uji("Instagram unggah", _ig_unggah); _uji("TikTok", _tt)
+    raise SystemExit(0)
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 SEKARANG = datetime.datetime.now(WITA)
 
