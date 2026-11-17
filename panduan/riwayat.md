@@ -9,6 +9,7 @@
 | 2026-11-15 (naskah) | Shorts | Geografi & negara | Asal nama Indonesia (ditulis orang Britania di Singapura) | pertanyaan + pembalikan pelaku ("BUKAN orang kita") | 2026-11-15_i-004-asal-nama-indonesia |
 | 2026-11-17 (naskah) | Shorts | Geografi & negara | Danau Toba = kaldera, Samosir naik, teori "nyaris punah" tak didukung bukti | konsekuensi personal ("Liburan ke Toba? Kamu berenang di atas LUBANG.") | 2026-11-17_i-013-danau-toba-letusan-super |
 | 2026-11-17 (naskah) | Shorts | Benda & kebiasaan sehari-hari | Odol = merek obat kumur Dresden 1892 | in medias res ("Mulut penuh busa, tiba-tiba kepikiran...") | 2026-11-17_i-019-odol-merek-jerman |
+| 2026-11-17 13.00 (TikTok otomatis via kotak masuk; IG gagal otomatis → manual Bos; YouTube manual Bos) | Shorts | Geografi & negara | Asal nama Indonesia (Logan/Earl 1850) | teka-teki ("yang pertama nulis BUKAN orang kita") | 2026-11-15_i-004-asal-nama-indonesia |
 
 ## Log sampul (konsep · posisi Tebe · warna dominan)
 | Tanggal | Folder | Konsep | Posisi Tebe | Warna |

@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "terjadwal",
   "topik": "I-018 ketchup dari kecap",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -53,6 +53,20 @@
       "waktu": "2026-11-17T08:30",
       "oleh": "Pak Bima",
       "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul duel botol ungu, 10 butir gerbang mutu ya."
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "waktu": "2026-11-17T12:50",
+      "oleh": "Bos (Kantor Visual HP)",
+      "hasil": "Disetujui Bos lewat tombol Setujui (keputusan diterapkan Pak Bima)."
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "waktu": "2026-11-17T12:55",
+      "oleh": "Raka (marketing)",
+      "hasil": "Jadwal 2026-11-17T18:00:00+08:00 ; TikTok/IG diunggah sesi 17.47, YouTube unggah manual"
     }
   ],
   "masalah": null,
@@ -61,5 +75,11 @@
   "video_asset_id": "a1741f4e77ef051e29585e2144d5f3c1",
   "thumb_asset_id": "75bcc99844c5496390c1259f59bd5d6e",
   "video_url": "/_blob/a1741f4e77ef051e29585e2144d5f3c1",
-  "thumb_url": "/_blob/75bcc99844c5496390c1259f59bd5d6e"
+  "thumb_url": "/_blob/75bcc99844c5496390c1259f59bd5d6e",
+  "jadwal_tayang": "2026-11-17T18:00:00+08:00",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    }
+  }
 }
