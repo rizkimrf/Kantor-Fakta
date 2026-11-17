@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "I-018 ketchup dari kecap",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -73,6 +73,13 @@
       "oleh": "Raka (marketing)",
       "waktu": "2026-11-17T17:50",
       "hasil": "TikTok OK (kotak masuk, Bos tekan Posting). Instagram GAGAL 1x ProcessingFailedError -> unggah manual Bos. YouTube unggah manual (audit belum lolos)."
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "waktu": "2026-11-18T05:45",
+      "oleh": "Pak Bima",
+      "hasil": "Bos menandai Instagram & YouTube sudah diunggah manual (Kantor Visual). TikTok sudah otomatis. Semua platform tayang."
     }
   ],
   "masalah": null,
@@ -85,7 +92,9 @@
   "jadwal_tayang": "2026-11-17T18:00:00+08:00",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio",
+      "id": "manual",
+      "waktu": "2026-11-17T10:08:46Z"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7709074853604804626",
@@ -94,7 +103,9 @@
     "instagram": {
       "gagal": 1,
       "error": "ProcessingFailedError (rupload, non-retriable) - 3 percobaan (asli/aman/aman-minimal)",
-      "catatan": "otomatis gagal 1x - unggah manual oleh Bos"
+      "catatan": "otomatis gagal 1x - unggah manual oleh Bos",
+      "id": "manual",
+      "waktu": "2026-11-17T10:06:58Z"
     }
   }
 }
