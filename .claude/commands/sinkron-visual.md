@@ -35,4 +35,7 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
    dengan tool **Artifact** (`url` di atas, `asset: true`, `file_paths: [...]`), lalu isi `video_url`/`thumb_url` dari hasilnya.
    Unggah `final.mp4` ASLI (bukan pratinjau) karena file inilah yang dipakai untuk terbit; batas 20 MB, jadi Yoga merender
    Shorts dengan target ≤ 18 MB (`-crf 23 -maxrate 3M -bufsize 6M`). Simpan id asset di `status.json` → `video_asset_id`.
+   **Wajib cek sebelum sesi selesai:** setiap video `menunggu_persetujuan` HARUS punya `video_url` di Kantor Visual dan
+   `video_asset_id` di `status.json`. Bila belum (mis. sesi kehabisan waktu), unggah sekarang; bila `final.mp4` tidak ada,
+   render ulang (`python scripts/render_html.py antrean/<folder>`). Jangan pernah memberi tahu Bos "siap ditonton" untuk video tanpa `video_url`.
 3. Jangan pernah menulis isi `.env`, kunci API, atau token ke halaman ini.
