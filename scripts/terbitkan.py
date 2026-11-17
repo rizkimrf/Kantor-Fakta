@@ -70,8 +70,8 @@ if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah me
     def _ig_coba():  # unggah video uji 3 dtk ke kontainer Reels TANPA diterbitkan (kontainer kedaluwarsa sendiri 24 jam)
         import subprocess, tempfile
         f = Path(tempfile.mkdtemp()) / "uji.mp4"
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "color=c=0x1E88E5:s=1080x1920:r=30:d=3",
-                        "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", "3", "-c:v", "libx264", "-pix_fmt", "yuv420p",
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "testsrc2=s=1080x1920:r=30:d=60",
+                        "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-t", "60", "-c:v", "libx264", "-b:v", "2500k", "-pix_fmt", "yuv420p",
                         "-c:a", "aac", "-movflags", "+faststart", str(f)], check=True)
         tok, uid = os.environ["IG_ACCESS_TOKEN"], os.environ["IG_USER_ID"]
         c = form(f"https://graph.facebook.com/v21.0/{uid}/media", media_type="REELS", upload_type="resumable",
@@ -83,7 +83,7 @@ if "--uji" in sys.argv:  # uji koneksi tanpa mengunggah apa pun; tidak pernah me
         except RuntimeError as e:
             raise RuntimeError(str(e).replace(tok, "[token]")[:600])
         return f"kontainer {c['id']} diterima: {r}"
-    _uji("Instagram", _ig); _uji("Instagram unggah", _ig_unggah); _uji("Instagram unggah video uji", _ig_coba); _uji("TikTok", _tt); _uji("ElevenLabs", _el)
+    _uji("Instagram", _ig); _uji("Instagram unggah", _ig_unggah); _uji("Instagram unggah video uji 60 dtk", _ig_coba); _uji("TikTok", _tt); _uji("ElevenLabs", _el)
     raise SystemExit(0)
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 SEKARANG = datetime.datetime.now(WITA)
@@ -151,9 +151,10 @@ def instagram(folder, u):
     tok, uid = os.environ["IG_ACCESS_TOKEN"], os.environ["IG_USER_ID"]
     g = "https://graph.facebook.com/v21.0"  # IG_ACCESS_TOKEN = token Halaman Facebook (tidak kedaluwarsa)
 
-    def coba(berkas):
+    def coba(berkas, lengkap=True):
+        extra = {"share_to_feed": "true", "thumb_offset": "0"} if lengkap else {}
         c = form(f"{g}/{uid}/media", media_type="REELS", upload_type="resumable", caption=u["instagram"]["caption"],
-                 share_to_feed="true", thumb_offset="0", access_token=tok)
+                 access_token=tok, **extra)
         video = berkas.read_bytes()
         http(c["uri"], video, {"Authorization": f"OAuth {tok}", "offset": "0", "file_size": str(len(video)),
                                 "Content-Type": "application/octet-stream"})  # cegah urllib mengirim form-urlencoded default
@@ -164,11 +165,19 @@ def instagram(folder, u):
             time.sleep(10)
         return form(f"{g}/{uid}/media_publish", creation_id=c["id"], access_token=tok)["id"]
 
-    try:
-        return coba(folder / "final.mp4")
-    except RuntimeError as e:  # 16 Nov: durian ditolak (ProcessingFailedError) padahal video uji diterima -> coba salinan spesifikasi aman
-        print("  Instagram menolak file asli, mencoba ulang dengan salinan spesifikasi aman Reels:", str(e)[:200])
-        return coba(_ig_aman(folder / "final.mp4"))
+    # 16-17 Nov: file asli ditolak rupload (ProcessingFailedError) padahal video uji kecil diterima.
+    # Urutan percobaan (dicatat semua supaya penyebabnya ketahuan): asli -> salinan aman -> salinan aman tanpa thumb_offset/share_to_feed.
+    galat = []
+    for nama, f, lengkap in [("asli", lambda: folder / "final.mp4", True), ("aman", lambda: _ig_aman(folder / "final.mp4"), True),
+                             ("aman-minimal", lambda: folder / "final_ig.mp4", False)]:
+        try:
+            hasil = coba(f(), lengkap)
+            if galat: print("  Instagram berhasil pada percobaan", nama, "| sebelumnya:", " || ".join(galat))
+            return hasil
+        except Exception as e:
+            galat.append(f"{nama} ({(folder / 'final.mp4').stat().st_size // 1024} KB): {str(e)[:160]}")
+            print("  Instagram percobaan", galat[-1])
+    raise RuntimeError(" || ".join(galat))
 
 
 PLATFORM = {"youtube": (youtube, ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"]),
