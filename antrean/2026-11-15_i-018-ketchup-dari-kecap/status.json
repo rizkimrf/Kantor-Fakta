@@ -67,6 +67,12 @@
       "waktu": "2026-11-17T12:55",
       "oleh": "Raka (marketing)",
       "hasil": "Jadwal 2026-11-17T18:00:00+08:00 ; TikTok/IG diunggah sesi 17.47, YouTube unggah manual"
+    },
+    {
+      "tahap": "terbit",
+      "oleh": "Raka (marketing)",
+      "waktu": "2026-11-17T17:50",
+      "hasil": "TikTok OK (kotak masuk, Bos tekan Posting). Instagram GAGAL 1x ProcessingFailedError -> unggah manual Bos. YouTube unggah manual (audit belum lolos)."
     }
   ],
   "masalah": null,
@@ -80,6 +86,15 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7709074853604804626",
+      "waktu": "2026-11-17T17:49+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "error": "ProcessingFailedError (rupload, non-retriable) - 3 percobaan (asli/aman/aman-minimal)",
+      "catatan": "otomatis gagal 1x - unggah manual oleh Bos"
     }
   }
 }

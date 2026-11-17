@@ -1,63 +1,88 @@
 {
- "tahap": "menunggu_persetujuan",
- "topik": "I-008 mitos micin bikin bodoh",
- "dibuat": "2026-11-15T07:58",
- "riwayat": [
-  {
-   "tahap": "ide",
-   "oleh": "Laras (riset)",
-   "waktu": "2026-11-15",
-   "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10 (K2/D3/B2/V2). Klaim inti: surat Kwok NEJM 4 Apr 1968 (menebak arak masak/natrium/MSG) + Olney Science 1969 (MSG disuntik ke bayi tikus) + JECFA/FDA/BPOM. Klaim dibuang/dilemahkan: dosis, 'surat hoaks', replikasi monyet, 95% usus, 15-20 menit, asal kata micin/vetsin. Catatan: WebFetch diblokir, verifikasi via WebSearch/abstrak."
-  },
-  {
-   "tahap": "pilih",
-   "oleh": "Raka (marketing)",
-   "waktu": "2026-11-15",
-   "hasil": "LANJUT, skor 18/20, slot Rab 18 Nov 12.00 WITA. rencana_marketing.md + seo.md selesai."
-  },
-  {
-   "tahap": "naskah",
-   "oleh": "Nadia (copywriting)",
-   "waktu": "2026-11-15",
-   "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook cerita-asal (skor 9): 'Micin bikin bodoh? Semua bermula dari satu surat yang cuma menebak.' Judul: 'Micin Bikin Bodoh? Awalnya dari Surat yang Cuma Menebak'. Thumbnail: MICIN BIKIN BODOH? (tanpa '1 SURAT', arahan Bos). 9 adegan, 168 kata (±72 dtk), 1 klip. Skor naskah 9/9, viral 9/10. Tanpa dosis/nasihat; lembaga disebut apa adanya; surat tidak disebut hoaks."
-  },
-  {
-   "tahap": "naskah (revisi 1)",
-   "oleh": "Nadia (copywriting)",
-   "waktu": "2026-11-15",
-   "hasil": "Butir WAJIB cek_riset (Laras) & keputusan Pak Bima dikerjakan. Hook: 'Micin bikin BODOH? Ketakutan itu bermula dari satu surat yang cuma MENEBAK.' Adegan 2: 'Anggapan di baliknya makin kuat gara-gara bayi tikus...' (bukan 'akarnya surat'). Adegan 7: 'nggak konsisten saat diulang. Bahkan sebagian peserta bereaksi ke yang palsu.' Adegan 8: 'Sejak evaluasi tahun 1987, badan pangan FAO-WHO menilai bahayanya rendah. FDA: umumnya diakui aman. BPOM: diizinkan dengan batas.' Adegan 9: glutamat diberi atribusi 'menurut FDA' (1 sumber), 'nggak bisa dibedain' menggantikan 'sama'; penutup 'Balik ke anggapan micin bikin bodoh tadi: itu warisan tebakan, plus tikus yang disuntik.' Deskripsi & IG: peran JECFA/FDA/BPOM dipisah + kalimat Geha 2000. Judul tetap. TikTok 140 huruf. 188 kata (±80 dtk). Skor ulang: naskah 8/9 (penahan turun, adegan 8 lebih panjang), viral 9/10. unggah.json & paket_unggah.md diselaraskan."
-  },
-  {
-   "dari": "cek_fakta",
-   "ke": "produksi",
-   "waktu": "2026-11-15T22:02",
-   "oleh": "Pak Bima",
-   "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
-  },
-  {
-   "tahap": "naskah (penyesuaian harian 17 Nov)",
-   "oleh": "Nadia (copywriting)",
-   "waktu": "2026-11-17",
-   "hasil": "Langkah 2 & 3 laporan/harian.md dikerjakan, tanpa fakta baru. Hook & judul dibiarkan (hanya membuka 'surat yang cuma menebak'; 'tikus DISUNTIK' tetap ditahan sampai adegan 5–6). Caption TikTok lama membocorkan 'tikus yang DISUNTIK' → 'Micin bikin bodoh? Coba tebak dulu: ketakutan itu awalnya dari mana? ...'; caption IG + awal deskripsi jadi pertanyaan pancingan, ringkasan dipindah ke bagian spoiler, 'bukan saran makan' tetap di depan. Celah 'bayi tikus yang diperlakukan… ANEH' sudah ada di ±10–13 dtk (dibiarkan); 'kok bisa' mulai ±14 dtk. CTA: 'Siapa yang pertama ngatain kamu generasi micin?' → 'Kirim ke teman yang tiap kamu salah ngomong langsung bilang dasar generasi MICIN... terus tanya balik:' (loop ke 'Micin bikin BODOH?'). 197 kata, ±84 dtk. naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md diselaraskan. Tahap tetap produksi."
-  },
-  {
-   "dari": "produksi",
-   "ke": "review",
-   "waktu": "2026-11-16T23:42",
-   "oleh": "Yoga (editor)",
-   "hasil": "final.mp4 89,3 dtk / 15,9 MB, thumbnail.png (sebab-akibat: otak kartun bertanda tanya diincar jarum raksasa + sendok micin, teal gelap + rim pink, Tebe besar KANAN bawah menghadap kiri, kaget; 1 panah merah) teks 'MICIN BIKIN BODOH?'. Suara Dakocan eleven_v4 sekali (1.432 huruf, ±745 kredit). 10 set baru (warung bakso siang, angkringan malam, ruang kerja 1968, papan detektif, lab 1969, panggung sorot jarum vs sendok, ruang uji tersamar, ruang arsip + 3 stempel bergantian, dapur terang molekul kembar, warung bakso malam) + outro menggantung 'terus TANYA BALIK' → loop. Tanpa jeda antar babak (hanya intro 2,4 dtk). Tanpa merek micin, tanpa dosis, tanpa stiker AMAN; tikus imut tanpa luka, jarum tanpa darah. cek_mulus LULUS, cek_video LULUS (setelah perbaikan guncangan kamera stempel, serah-terima intro, posisi Tebe di zona aman)."
-  },
-  {
-   "dari": "review",
-   "ke": "menunggu_persetujuan",
-   "waktu": "2026-11-17T08:50",
-   "oleh": "Pak Bima",
-   "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul otak-jarum teal-pink, tanpa merek/dosis, 10 butir gerbang mutu ya."
+  "tahap": "terjadwal",
+  "topik": "I-008 mitos micin bikin bodoh",
+  "dibuat": "2026-11-15T07:58",
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras (riset)",
+      "waktu": "2026-11-15",
+      "hasil": "riset.md selesai. Skor Faktor Ternyata 9/10 (K2/D3/B2/V2). Klaim inti: surat Kwok NEJM 4 Apr 1968 (menebak arak masak/natrium/MSG) + Olney Science 1969 (MSG disuntik ke bayi tikus) + JECFA/FDA/BPOM. Klaim dibuang/dilemahkan: dosis, 'surat hoaks', replikasi monyet, 95% usus, 15-20 menit, asal kata micin/vetsin. Catatan: WebFetch diblokir, verifikasi via WebSearch/abstrak."
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka (marketing)",
+      "waktu": "2026-11-15",
+      "hasil": "LANJUT, skor 18/20, slot Rab 18 Nov 12.00 WITA. rencana_marketing.md + seo.md selesai."
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt selesai. Hook cerita-asal (skor 9): 'Micin bikin bodoh? Semua bermula dari satu surat yang cuma menebak.' Judul: 'Micin Bikin Bodoh? Awalnya dari Surat yang Cuma Menebak'. Thumbnail: MICIN BIKIN BODOH? (tanpa '1 SURAT', arahan Bos). 9 adegan, 168 kata (±72 dtk), 1 klip. Skor naskah 9/9, viral 9/10. Tanpa dosis/nasihat; lembaga disebut apa adanya; surat tidak disebut hoaks."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-15",
+      "hasil": "Butir WAJIB cek_riset (Laras) & keputusan Pak Bima dikerjakan. Hook: 'Micin bikin BODOH? Ketakutan itu bermula dari satu surat yang cuma MENEBAK.' Adegan 2: 'Anggapan di baliknya makin kuat gara-gara bayi tikus...' (bukan 'akarnya surat'). Adegan 7: 'nggak konsisten saat diulang. Bahkan sebagian peserta bereaksi ke yang palsu.' Adegan 8: 'Sejak evaluasi tahun 1987, badan pangan FAO-WHO menilai bahayanya rendah. FDA: umumnya diakui aman. BPOM: diizinkan dengan batas.' Adegan 9: glutamat diberi atribusi 'menurut FDA' (1 sumber), 'nggak bisa dibedain' menggantikan 'sama'; penutup 'Balik ke anggapan micin bikin bodoh tadi: itu warisan tebakan, plus tikus yang disuntik.' Deskripsi & IG: peran JECFA/FDA/BPOM dipisah + kalimat Geha 2000. Judul tetap. TikTok 140 huruf. 188 kata (±80 dtk). Skor ulang: naskah 8/9 (penahan turun, adegan 8 lebih panjang), viral 9/10. unggah.json & paket_unggah.md diselaraskan."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-15T22:02",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
+    },
+    {
+      "tahap": "naskah (penyesuaian harian 17 Nov)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-17",
+      "hasil": "Langkah 2 & 3 laporan/harian.md dikerjakan, tanpa fakta baru. Hook & judul dibiarkan (hanya membuka 'surat yang cuma menebak'; 'tikus DISUNTIK' tetap ditahan sampai adegan 5–6). Caption TikTok lama membocorkan 'tikus yang DISUNTIK' → 'Micin bikin bodoh? Coba tebak dulu: ketakutan itu awalnya dari mana? ...'; caption IG + awal deskripsi jadi pertanyaan pancingan, ringkasan dipindah ke bagian spoiler, 'bukan saran makan' tetap di depan. Celah 'bayi tikus yang diperlakukan… ANEH' sudah ada di ±10–13 dtk (dibiarkan); 'kok bisa' mulai ±14 dtk. CTA: 'Siapa yang pertama ngatain kamu generasi micin?' → 'Kirim ke teman yang tiap kamu salah ngomong langsung bilang dasar generasi MICIN... terus tanya balik:' (loop ke 'Micin bikin BODOH?'). 197 kata, ±84 dtk. naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md diselaraskan. Tahap tetap produksi."
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "waktu": "2026-11-16T23:42",
+      "oleh": "Yoga (editor)",
+      "hasil": "final.mp4 89,3 dtk / 15,9 MB, thumbnail.png (sebab-akibat: otak kartun bertanda tanya diincar jarum raksasa + sendok micin, teal gelap + rim pink, Tebe besar KANAN bawah menghadap kiri, kaget; 1 panah merah) teks 'MICIN BIKIN BODOH?'. Suara Dakocan eleven_v4 sekali (1.432 huruf, ±745 kredit). 10 set baru (warung bakso siang, angkringan malam, ruang kerja 1968, papan detektif, lab 1969, panggung sorot jarum vs sendok, ruang uji tersamar, ruang arsip + 3 stempel bergantian, dapur terang molekul kembar, warung bakso malam) + outro menggantung 'terus TANYA BALIK' → loop. Tanpa jeda antar babak (hanya intro 2,4 dtk). Tanpa merek micin, tanpa dosis, tanpa stiker AMAN; tikus imut tanpa luka, jarum tanpa darah. cek_mulus LULUS, cek_video LULUS (setelah perbaikan guncangan kamera stempel, serah-terima intro, posisi Tebe di zona aman)."
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-17T08:50",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul otak-jarum teal-pink, tanpa merek/dosis, 10 butir gerbang mutu ya."
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "waktu": "2026-11-17T17:48",
+      "oleh": "Bos (Kantor Visual HP)",
+      "hasil": "Disetujui Bos lewat tombol Setujui 17 Nov 13.13 WITA (diterapkan Pak Bima sesi 17.47)."
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "waktu": "2026-11-17T09:49"
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "waktu": "2026-11-17T17:50",
+      "oleh": "Raka (marketing)",
+      "hasil": "Jadwal 2026-11-18T13:00:00+08:00 ; TikTok/IG diunggah saat jamnya, YouTube unggah manual"
+    }
+  ],
+  "masalah": null,
+  "skor_manajer": 8,
+  "catatan_bos": null,
+  "video_asset_id": "e7a9798d4db23488d42c75b2d9fc03c5",
+  "thumb_asset_id": "56869b485e827b71c174d445c09347d3",
+  "jadwal_tayang": "2026-11-18T13:00:00+08:00",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    }
   }
- ],
- "masalah": null,
- "skor_manajer": 8,
- "catatan_bos": null,
- "video_asset_id": "e7a9798d4db23488d42c75b2d9fc03c5",
- "thumb_asset_id": "56869b485e827b71c174d445c09347d3"
 }

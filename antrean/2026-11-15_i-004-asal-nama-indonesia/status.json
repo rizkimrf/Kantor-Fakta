@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "I-004 asal nama Indonesia",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -67,6 +67,13 @@
       "waktu": "2026-11-17T12:55",
       "oleh": "Raka (marketing)",
       "hasil": "Jadwal 2026-11-17T13:00:00+08:00 ; TikTok masuk inbox, Instagram GAGAL 1x, YouTube unggah manual"
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "waktu": "2026-11-17T17:50",
+      "oleh": "Raka (marketing)",
+      "hasil": "YouTube & Instagram diunggah manual oleh Bos (Kantor Visual), TikTok lewat kotak masuk."
     }
   ],
   "masalah": null,
@@ -79,7 +86,9 @@
   "jadwal_tayang": "2026-11-17T13:00:00+08:00",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio",
+      "id": "manual",
+      "waktu": "2026-11-17T05:18:40.480Z"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7708997452331370504",
@@ -89,7 +98,9 @@
     "instagram": {
       "gagal": 1,
       "error": "400 https://rupload.facebook.com/ig-api-upload/v27.0/18073563692685502: b'{\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}'",
-      "catatan": "otomatis gagal 1x (ProcessingFailedError rupload, non-retriable) - unggah manual oleh Bos"
+      "catatan": "otomatis gagal 1x (ProcessingFailedError rupload, non-retriable) - unggah manual oleh Bos",
+      "id": "manual",
+      "waktu": "2026-11-17T05:13:55.628Z"
     }
   }
 }
