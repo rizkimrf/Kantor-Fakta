@@ -26,6 +26,7 @@ Disepakati Bos pada 15 Nov 2026. Baca ini SEBELUM membuat aset atau video baru.
 | `contoh-v5/pratinjau-*.png` | Lembar pose Tebe & set siang/senja/malam | Acuan visual |
 | `contoh-hujan/pratinjau.html` + `pratinjau-*.png` | Uji aset hujan di 3 palet + urutan slow-motion | `?adegan=1..7` |
 | `kerangka-shorts.js` | Mesin bersama Shorts (intro/outro, teks, transisi, peta waktu) | muat setelah tebe-rig.js & aset-set.js |
+| `aset-geologi.js` | Geologi & peta (Yoga, 17 Nov 2026, I-013 Toba): `duniaToba` (danau + mangkuk kaldera bawah air, opsi `samosir` 0..1 & `glow`), `penampangMagma` (letus/kosong/runtuh/air), `petaDunia` + `petaXY(bujur,lintang)` + `jejakAbu` + `titikPeta` (peta datar Afrika–Asia tanpa label), `guaPesisir` + `bekasApi` + `alatBatu` + `serpihanKaca` + `manusiaPurba`, `danauLuas` + `intiSedimen` + `mejaLapangan`, `perahuKecil`, `banRenang`, `kardus`, `kepingSalju`, `apiKecil` | muat setelah aset-set.js; contoh: `antrean/2026-11-17_i-013-danau-toba-letusan-super/visual/video.html` |
 
 **Pose Tebe (tebe-rig):** netral, penasaran, kaget, menjelaskan, tertawa, bingung, bangga, melambai, berpikir, menghitung, sedih.
 Otomatis: kedip, napas, goyang badan, pegas jambul, mulut bicara.

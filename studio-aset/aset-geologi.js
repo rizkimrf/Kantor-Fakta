@@ -76,7 +76,7 @@
       const kub = `M${540 - w1 - 260} 3480 C${540 - w1} ${f0(lerp(3470, 2200, sm))} ${540 - w1 * 0.55} ${f0(top + 40)} 540 ${f0(top)} C${540 + w1 * 0.55} ${f0(top + 40)} ${540 + w1} ${f0(lerp(3470, 2200, sm))} ${540 + w1 + 260} 3480 Z`;
       const ck = uid("tk"), cb = uid("tb");
       s += `<defs><clipPath id="${ck}"><path d="${kub}"/></clipPath><clipPath id="${cb}"><path d="M-560 ${Y} C-520 2500 -40 3470 540 3480 C1120 3470 1600 2500 1640 ${Y} L1740 0 L-660 0Z"/></clipPath></defs><g clip-path="url(#${cb})">`;
-      s += `<path d="${kub}" fill="${C.batuS}"/><g clip-path="url(#${ck})">`;
+      s += `<path d="${kub}" fill="#6A5A5E"/><g clip-path="url(#${ck})">`;
       for (let i = 0; i < 6; i++) { const yy = top + 60 + i * 46; s += `<path d="M-200 ${f0(yy)} Q540 ${f0(yy - 50)} 1300 ${f0(yy)}" stroke="${i % 2 ? "#D9C9A0" : "#BFAE86"}" stroke-width="22" fill="none" opacity="${f2(0.85 - i * 0.1)}"/>`; }
       s += `<rect x="-660" y="${f0(top + 330)}" width="2400" height="3000" fill="${C.batu}" opacity=".55"/><rect x="-660" y="0" width="2400" height="${Y - 2}" fill="${P.daun}"/><rect x="-660" y="${f0(top)}" width="2400" height="${f0(Math.max(0, Y - top - 80))}" fill="${P.daunB}" opacity=".5"/></g>`;
       if (top < Y) for (const [dx, k] of [[-120, 0.7], [60, 0.9], [200, 0.6]]) s += A.pohon ? A.pohon(540 + dx, top + 22 + Math.abs(dx) * 0.18, 0.32 * k * cl((Y - top) / 200), P, t) : "";
@@ -128,11 +128,18 @@
       [0, 1, 2, 3].map((i) => `<circle cx="${f0(cx - 240 + i * 160 + Math.sin(t * 1.5 + i) * 30)}" cy="${f0(cy + ry - 2 * ry * tinggiMagma + 60 + (i % 2) * 70)}" r="${18 + i * 4}" fill="#FFE08A" opacity=".5"/>`).join("") + `</g>`; }
     // celah magma ke puncak (saat letus)
     if (le > 0 && ko < 1) { const k = cl(le * 1.4) * (1 - ko); s += [-60, 0, 70].map((dx, i) => `<path d="M${cx + dx * 2} ${cy - ry + 20} Q${cx + dx + Math.sin(t * 3 + i) * 10} ${(cy + ys) / 2} ${cx + dx * 0.3} ${ys - gt + 30}" stroke="#FF9A3C" stroke-width="${16 - i * 3}" fill="none" stroke-linecap="round" opacity="${f2(k)}"/>`).join(""); }
-    // atap (blok di atas dapur) yang ambles + gunung di atasnya
-    const turun = ru * (ry * 1.25), kiri = cx - rx * 0.95, kanan = cx + rx * 0.95;
-    s += `<path d="M${kiri} ${f1(ys + turun)} L${kanan} ${f1(ys + turun)} L${kanan - 40} ${f1(cy - ry * 0.4 + turun)} L${kiri + 40} ${f1(cy - ry * 0.4 + turun)} Z" fill="#584A60"/>`+[0,1,2].map((i)=>`<rect x="${kiri+40}" y="${f1(ys+turun+30+i*70)}" width="${kanan-kiri-80}" height="34" fill="${["#625064","#4E3E52","#5A4658"][i]}" opacity=".8"/>`).join("")+`<path d="M${kiri} ${f1(ys+turun)} L${kiri+40} ${f1(cy-ry*0.4+turun)} M${kanan} ${f1(ys+turun)} L${kanan-40} ${f1(cy-ry*0.4+turun)}" stroke="#2A2234" stroke-width="${f0(4+ru*8)}" opacity="${f2(0.4+ru*0.6)}"/>`;
-    if (ru > 0) s += [0.3, 0.5, 0.7].map((u, i) => `<path d="M${f0(lerp(kiri, kanan, u))} ${f1(ys + turun)} l${i % 2 ? 20 : -24} ${f0(90 + i * 30)} l${i % 2 ? -14 : 18} 80" stroke="#2A2234" stroke-width="7" fill="none" opacity="${f2(ru)}"/>`).join("") +
-      `<path d="M${kiri} ${ys} L${kiri} ${f1(ys + turun + 6)}" stroke="#2A2234" stroke-width="12"/><path d="M${kanan} ${ys} L${kanan} ${f1(ys + turun + 6)}" stroke="#2A2234" stroke-width="12"/>`;
+    // atap (blok batuan di atas dapur) yang ambles: lapisannya sama dengan sekitarnya, tepinya retak; celah di atasnya = mangkuk kosong
+    const turun = ru * (ry * 1.25), kiri = cx - rx * 0.95, kanan = cx + rx * 0.95, bawahBlok = cy - ry * 0.4;
+    if (ru > 0) {
+      const cb = uid("pk");
+      s += `<path d="M${kiri} ${ys} L${kanan} ${ys} L${kanan - 40} ${f1(bawahBlok + turun)} L${kiri + 40} ${f1(bawahBlok + turun)}Z" fill="#1A1424"/>`;
+      s += `<path d="M${kiri} ${ys - 2} L${kanan} ${ys - 2} L${kanan} ${f1(ys + turun)} L${kiri} ${f1(ys + turun)}Z" fill="#1E2440"/>`;
+      s += `<defs><clipPath id="${cb}"><path d="M${kiri} ${f1(ys + turun)} L${kanan} ${f1(ys + turun)} L${kanan - 40} ${f1(bawahBlok + turun)} L${kiri + 40} ${f1(bawahBlok + turun)}Z"/></clipPath></defs><g clip-path="url(#${cb})"><g transform="translate(0 ${f1(turun)})"><rect x="0" y="${ys}" width="${w}" height="${bawahBlok - ys + 10}" fill="#4A3A4E"/>`;
+      for (let i = 0; i < 5; i++) { const yy = ys + 60 + i * 150; s += `<path d="M0 ${yy} Q${w * 0.3} ${yy - 30} ${w * 0.5} ${yy + 10} T${w} ${yy - 10} V${yy + 150} H0Z" fill="${warna[i % 5]}" opacity=".9"/>`; }
+      s += `</g></g><path d="M${kiri} ${f1(ys + turun)} L${kiri + 40} ${f1(bawahBlok + turun)} M${kanan} ${f1(ys + turun)} L${kanan - 40} ${f1(bawahBlok + turun)}" stroke="#2A2234" stroke-width="10"/>`;
+      s += [0.3, 0.5, 0.7].map((u, i) => `<path d="M${f0(lerp(kiri, kanan, u))} ${f1(ys + turun)} l${i % 2 ? 20 : -24} ${f0(90 + i * 30)} l${i % 2 ? -14 : 18} 80" stroke="#2A2234" stroke-width="7" fill="none" opacity="${f2(ru)}"/>`).join("");
+      s += `<path d="M${kiri} ${ys} L${kiri} ${f1(ys + turun)} M${kanan} ${ys} L${kanan} ${f1(ys + turun)}" stroke="#3A2E44" stroke-width="16"/>`;
+    }
     if (gt > 2) s += `<path d="M${kiri + 30} ${f1(ys + turun)} L${cx - 70} ${f1(ys + turun - gt)} L${cx + 70} ${f1(ys + turun - gt)} L${kanan - 30} ${f1(ys + turun)} Z" fill="#3E3450"/><path d="M${cx - 70} ${f1(ys + turun - gt)} L${cx + 70} ${f1(ys + turun - gt)} L${cx + 40} ${f1(ys + turun - gt + 40)} L${cx - 40} ${f1(ys + turun - gt + 40)}Z" fill="${le > 0 && ko < 1 ? "#FF8A3A" : "#2E2640"}"/>`;
     // air mengisi mangkuk (dari bawah ke bibir)
     if (ai > 0) { const dasar = ys + turun, puncak = lerp(dasar, ys + 6, ai); s += `<rect x="${kiri}" y="${f1(puncak)}" width="${kanan - kiri}" height="${f1(Math.max(0, dasar - puncak))}" fill="url(#${ia})" opacity=".95"/><rect x="${kiri}" y="${f1(puncak - 3)}" width="${kanan - kiri}" height="8" fill="#BFEDEA" opacity=".6"/>`; }
@@ -163,7 +170,7 @@
   const PETA = Object.fromEntries(Object.entries(BENUA).map(([k, v]) => [k, jalur(v)]));
   function petaDunia(o = {}) {
     const darat = o.darat || "#8FAE7A", daratB = o.daratB || "#7A9A68", laut = o.laut || "#2F5E7E", w = 2400, h = 1920, il = uid("pd");
-    let s = `<defs><radialGradient id="${il}" cx=".5" cy=".5" r=".7"><stop offset="0" stop-color="${laut}"/><stop offset="1" stop-color="#1E4058"/></radialGradient></defs><rect x="-200" y="0" width="${w + 400}" height="${h}" fill="url(#${il})"/>`;
+    let s = `<defs><radialGradient id="${il}" cx=".5" cy=".5" r=".7"><stop offset="0" stop-color="${laut}"/><stop offset="1" stop-color="#1E4058"/></radialGradient></defs><rect x="-400" y="-600" width="${w + 800}" height="${h + 1200}" fill="url(#${il})"/>`;
     for (let i = 0; i < 10; i++) s += `<path d="M-200 ${300 + i * 150} H${w + 200}" stroke="#FFFFFF" stroke-width="2" opacity=".05"/>`;
     for (let i = 0; i < 14; i++) s += `<path d="M${i * 200} 0 V${h}" stroke="#FFFFFF" stroke-width="2" opacity=".04"/>`;
     for (const k in PETA) s += `<path d="${PETA[k]}" fill="#000" opacity=".18" transform="translate(8 12)"/>`;

@@ -1,36 +1,50 @@
 {
- "tahap": "cek_seo",
- "topik": "i-016 gunting sjafruddin",
- "dibuat": "2026-11-18T05:43",
- "riwayat": [
-  {
-   "tahap": "ide",
-   "oleh": "Laras",
-   "hasil": "riset.md selesai, skor FT 8/10; tanggal/tenor/ambang ditandai diperdebatkan; teks primer BI belum terbuka (host diblokir)"
-  },
-  {
-   "tahap": "pilih",
-   "oleh": "Raka",
-   "hasil": "LANJUT skor 15/20; rencana_marketing.md + seo.md; slot 20 Nov 13.00 WITA; hook tebak-dulu, share identitas, kejutan kedua 25-35 dtk"
-  },
-  {
-   "tahap": "naskah",
-   "oleh": "Nadia (copywriting)",
-   "waktu": "2026-11-18",
-   "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (skenario 'bayangin', bukan tebak-dulu sesuai Pak Bima): 'Bayangin, uang di dompetmu disuruh DIGUNTING jadi dua. Ini nyata: Gunting Sjafruddin.' (kata kunci ±4,5 dtk). Judul: 'Gunting Sjafruddin: Uang Digunting, Sisi Kanannya Jadi Apa?' (59, tanpa Rp5). Sampul: 'KENAPA DIGUNTING?'. Kiri/kanan dibuka ±14,6 dtk; kejutan kedua (penggunting kelak memimpin DJB, Gubernur BI pertama) ±33 dtk. 9 adegan, 166 kata, ±76 dtk, 2 klip. Tanpa tanggal pasti/tenor/ambang/angka inflasi; netral; bukan nasihat keuangan. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
-  },
-  {
-   "tahap": "cek_seo",
-   "oleh": "Raka",
-   "waktu": "2026-11-18",
-   "hasil": "cek_seo.md: 2 butir WAJIB (kata kunci di 2 kalimat pertama deskripsi YouTube; warna sampul terlalu dekat teal micin/durian) + 8 saran. Tahap tidak diubah."
-  },
-  {
-   "tahap": "cek_riset",
-   "oleh": "Laras",
-   "waktu": "2026-11-17",
-   "hasil": "cek_riset.md: 1 WAJIB (adegan 7 'kenapa HARUS digunting' menjanjikan alasan memilih gunting, belum bersumber; ganti 'kenapa uangnya sampai DIPOTONG?'). DJB/kejutan kedua, bunga 3%, sanering vs redenominasi aman. Fakta cadangan disiapkan."
-  }
- ],
- "masalah": null
+  "tahap": "produksi",
+  "topik": "i-016 gunting sjafruddin",
+  "dibuat": "2026-11-18T05:43",
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "hasil": "riset.md selesai, skor FT 8/10; tanggal/tenor/ambang ditandai diperdebatkan; teks primer BI belum terbuka (host diblokir)"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "hasil": "LANJUT skor 15/20; rencana_marketing.md + seo.md; slot 20 Nov 13.00 WITA; hook tebak-dulu, share identitas, kejutan kedua 25-35 dtk"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-18",
+      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (skenario 'bayangin', bukan tebak-dulu sesuai Pak Bima): 'Bayangin, uang di dompetmu disuruh DIGUNTING jadi dua. Ini nyata: Gunting Sjafruddin.' (kata kunci ±4,5 dtk). Judul: 'Gunting Sjafruddin: Uang Digunting, Sisi Kanannya Jadi Apa?' (59, tanpa Rp5). Sampul: 'KENAPA DIGUNTING?'. Kiri/kanan dibuka ±14,6 dtk; kejutan kedua (penggunting kelak memimpin DJB, Gubernur BI pertama) ±33 dtk. 9 adegan, 166 kata, ±76 dtk, 2 klip. Tanpa tanggal pasti/tenor/ambang/angka inflasi; netral; bukan nasihat keuangan. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "waktu": "2026-11-18",
+      "hasil": "cek_seo.md: 2 butir WAJIB (kata kunci di 2 kalimat pertama deskripsi YouTube; warna sampul terlalu dekat teal micin/durian) + 8 saran. Tahap tidak diubah."
+    },
+    {
+      "tahap": "cek_riset",
+      "oleh": "Laras",
+      "waktu": "2026-11-17",
+      "hasil": "cek_riset.md: 1 WAJIB (adegan 7 'kenapa HARUS digunting' menjanjikan alasan memilih gunting, belum bersumber; ganti 'kenapa uangnya sampai DIPOTONG?'). DJB/kejutan kedua, bunga 3%, sanering vs redenominasi aman. Fakta cadangan disiapkan."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia (copywriting)",
+      "waktu": "2026-11-18",
+      "hasil": "3 WAJIB selesai: adegan 7 → 'Tapi kenapa uangnya sampai DIPOTONG?' (Laras); deskripsi kalimat 2 memuat 'Gunting Sjafruddin' + ejaan 'Syafruddin' (Raka); sampul ganti ke krem-kuning pucat + vinyet marun, aksen merah tetap (thumbnail_visual, paket_unggah, lembar_tim untuk Yoga). Saran diambil: judul 'Gunting Sjafruddin: Uang Dipotong Dua, Kanannya Jadi Apa?' (57); 'dan uang NICA' di adegan 5; rangkuman berulang adegan 9 dibuang; komentar tersemat 1 pertanyaan + fakta cadangan terkunci (pecahan kecil & ORI); caption TikTok + pemicu share (149 huruf); 'tetap' → 'masih berlaku'; sumber bi.go.id di atas Facebook. 9 adegan, 160 kata, ±73 dtk. Skor ulang jujur: naskah 8/9, viral 8/10 (penahan/retensi tetap 1). Semua file disinkronkan. Lanjut ke cek_fakta (Pak Bima)."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-18T07:30",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
+    }
+  ],
+  "masalah": null,
+  "skor_manajer": 8
 }
