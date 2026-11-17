@@ -20,6 +20,12 @@
       "oleh": "Nadia",
       "tanggal": "2026-11-18",
       "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (kontradiksi + sensasi tubuh, bukan 'tebak dulu'): 'Mulutmu nggak kebakar. Otakmu yang KETIPU. Jadi, pedas itu rasa apa?'. Judul: 'Pedas Itu Rasa Apa? Kenapa Sambal Bikin Keringetan?' (51). Sampul: 'PEDAS = RASA APA?'. Mekanisme dibuka 12 dtk, burung 33 dtk, teaser 'cabainya PENDATANG' tanpa tahun. 9 adegan, ±160 kata, ±75 dtk, 1 klip. Fakta 'tidak larut air' hanya di deskripsi; caption '90% orang salah' dibuang. Nol klaim kesehatan. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "tanggal": "2026-11-17",
+      "hasil": "cek_seo.md: 3 WAJIB (kata 'BURUNG' jatuh ±37-38 dtk, target <=35; label sumber PubMed 9768840 bukan makalah 1997; komentar tersemat: janji 'Minggu 19.00' & 'dari Amerika' belum terverifikasi, terbitkan.py tidak menyematkan komentar) + 7 SARAN. Caption '90% orang salah' tetap tidak dipakai."
     }
   ],
   "masalah": null
