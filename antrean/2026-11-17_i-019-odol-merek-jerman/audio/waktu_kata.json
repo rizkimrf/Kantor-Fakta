@@ -1,0 +1,805 @@
+{
+ "model": "eleven_v4",
+ "kata": [
+  {
+   "kata": "Mulut",
+   "mulai": 0.08,
+   "selesai": 0.32
+  },
+  {
+   "kata": "penuh",
+   "mulai": 0.4,
+   "selesai": 0.64
+  },
+  {
+   "kata": "busa,",
+   "mulai": 0.72,
+   "selesai": 1.4
+  },
+  {
+   "kata": "tiba-tiba",
+   "mulai": 1.6,
+   "selesai": 2.0
+  },
+  {
+   "kata": "kepikiran:",
+   "mulai": 2.04,
+   "selesai": 3.04
+  },
+  {
+   "kata": "odol",
+   "mulai": 3.16,
+   "selesai": 3.36
+  },
+  {
+   "kata": "itu",
+   "mulai": 3.48,
+   "selesai": 3.6
+  },
+  {
+   "kata": "sebenarnya",
+   "mulai": 3.64,
+   "selesai": 4.08
+  },
+  {
+   "kata": "apa,",
+   "mulai": 4.24,
+   "selesai": 4.44
+  },
+  {
+   "kata": "sih?",
+   "mulai": 4.48,
+   "selesai": 5.04
+  },
+  {
+   "kata": "Kenapa",
+   "mulai": 5.12,
+   "selesai": 5.36
+  },
+  {
+   "kata": "semua",
+   "mulai": 5.44,
+   "selesai": 5.6
+  },
+  {
+   "kata": "pasta",
+   "mulai": 5.64,
+   "selesai": 5.84
+  },
+  {
+   "kata": "gigi",
+   "mulai": 5.92,
+   "selesai": 6.08
+  },
+  {
+   "kata": "disebut",
+   "mulai": 6.12,
+   "selesai": 6.48
+  },
+  {
+   "kata": "odol?",
+   "mulai": 6.56,
+   "selesai": 7.28
+  },
+  {
+   "kata": "Petunjuknya:",
+   "mulai": 7.36,
+   "selesai": 8.2
+  },
+  {
+   "kata": "odol",
+   "mulai": 8.24,
+   "selesai": 8.48
+  },
+  {
+   "kata": "yang",
+   "mulai": 8.56,
+   "selesai": 8.72
+  },
+  {
+   "kata": "asli...",
+   "mulai": 8.8,
+   "selesai": 9.707
+  },
+  {
+   "kata": "nggak",
+   "mulai": 9.733,
+   "selesai": 9.84
+  },
+  {
+   "kata": "buat",
+   "mulai": 9.92,
+   "selesai": 10.08
+  },
+  {
+   "kata": "disikat.",
+   "mulai": 10.2,
+   "selesai": 11.12
+  },
+  {
+   "kata": "Odol",
+   "mulai": 11.2,
+   "selesai": 11.44
+  },
+  {
+   "kata": "itu",
+   "mulai": 11.52,
+   "selesai": 11.84
+  },
+  {
+   "kata": "awalnya",
+   "mulai": 11.92,
+   "selesai": 12.24
+  },
+  {
+   "kata": "nama",
+   "mulai": 12.32,
+   "selesai": 12.48
+  },
+  {
+   "kata": "merek.",
+   "mulai": 12.64,
+   "selesai": 13.44
+  },
+  {
+   "kata": "Merek",
+   "mulai": 13.52,
+   "selesai": 13.76
+  },
+  {
+   "kata": "obat",
+   "mulai": 13.84,
+   "selesai": 14.08
+  },
+  {
+   "kata": "kumur",
+   "mulai": 14.16,
+   "selesai": 14.4
+  },
+  {
+   "kata": "dari",
+   "mulai": 14.48,
+   "selesai": 14.64
+  },
+  {
+   "kata": "Dresden,",
+   "mulai": 14.72,
+   "selesai": 15.24
+  },
+  {
+   "kata": "Jerman.",
+   "mulai": 15.28,
+   "selesai": 16.04
+  },
+  {
+   "kata": "Jadi",
+   "mulai": 16.08,
+   "selesai": 16.24
+  },
+  {
+   "kata": "bukan",
+   "mulai": 16.32,
+   "selesai": 16.48
+  },
+  {
+   "kata": "disikat...",
+   "mulai": 16.6,
+   "selesai": 17.34
+  },
+  {
+   "kata": "tapi",
+   "mulai": 17.4,
+   "selesai": 17.52
+  },
+  {
+   "kata": "dikumur.",
+   "mulai": 17.56,
+   "selesai": 18.48
+  },
+  {
+   "kata": "Tahun",
+   "mulai": 19.52,
+   "selesai": 19.76
+  },
+  {
+   "kata": "seribu",
+   "mulai": 19.84,
+   "selesai": 20.08
+  },
+  {
+   "kata": "delapan",
+   "mulai": 20.16,
+   "selesai": 20.32
+  },
+  {
+   "kata": "ratus",
+   "mulai": 20.4,
+   "selesai": 20.64
+  },
+  {
+   "kata": "sembilan",
+   "mulai": 20.72,
+   "selesai": 20.88
+  },
+  {
+   "kata": "puluh",
+   "mulai": 20.96,
+   "selesai": 21.08
+  },
+  {
+   "kata": "dua,",
+   "mulai": 21.12,
+   "selesai": 21.6
+  },
+  {
+   "kata": "pengusaha",
+   "mulai": 21.68,
+   "selesai": 22.0
+  },
+  {
+   "kata": "Dresden",
+   "mulai": 22.08,
+   "selesai": 22.48
+  },
+  {
+   "kata": "bernama",
+   "mulai": 22.56,
+   "selesai": 22.88
+  },
+  {
+   "kata": "Lingner",
+   "mulai": 22.96,
+   "selesai": 23.44
+  },
+  {
+   "kata": "mulai",
+   "mulai": 23.52,
+   "selesai": 23.76
+  },
+  {
+   "kata": "menjualnya.",
+   "mulai": 23.84,
+   "selesai": 24.693
+  },
+  {
+   "kata": "Yang",
+   "mulai": 24.747,
+   "selesai": 24.8
+  },
+  {
+   "kata": "dijual",
+   "mulai": 24.853,
+   "selesai": 25.12
+  },
+  {
+   "kata": "pertama",
+   "mulai": 25.24,
+   "selesai": 25.52
+  },
+  {
+   "kata": "itu",
+   "mulai": 25.68,
+   "selesai": 25.84
+  },
+  {
+   "kata": "obat",
+   "mulai": 25.92,
+   "selesai": 26.08
+  },
+  {
+   "kata": "kumur.",
+   "mulai": 26.16,
+   "selesai": 26.747
+  },
+  {
+   "kata": "Pasta",
+   "mulai": 26.773,
+   "selesai": 27.04
+  },
+  {
+   "kata": "giginya",
+   "mulai": 27.08,
+   "selesai": 27.44
+  },
+  {
+   "kata": "juga",
+   "mulai": 27.52,
+   "selesai": 27.68
+  },
+  {
+   "kata": "dibuat.",
+   "mulai": 27.733,
+   "selesai": 28.48
+  },
+  {
+   "kata": "Namanya,",
+   "mulai": 28.56,
+   "selesai": 29.16
+  },
+  {
+   "kata": "kata",
+   "mulai": 29.2,
+   "selesai": 29.28
+  },
+  {
+   "kata": "penjual",
+   "mulai": 29.36,
+   "selesai": 29.68
+  },
+  {
+   "kata": "mereknya,",
+   "mulai": 29.72,
+   "selesai": 30.44
+  },
+  {
+   "kata": "dari",
+   "mulai": 30.48,
+   "selesai": 30.72
+  },
+  {
+   "kata": "odus,",
+   "mulai": 30.8,
+   "selesai": 31.467
+  },
+  {
+   "kata": "Yunani",
+   "mulai": 31.493,
+   "selesai": 31.76
+  },
+  {
+   "kata": "buat",
+   "mulai": 31.84,
+   "selesai": 32.0
+  },
+  {
+   "kata": "gigi,",
+   "mulai": 32.04,
+   "selesai": 32.72
+  },
+  {
+   "kata": "dan",
+   "mulai": 32.8,
+   "selesai": 32.88
+  },
+  {
+   "kata": "oleum,",
+   "mulai": 32.96,
+   "selesai": 33.56
+  },
+  {
+   "kata": "Latin",
+   "mulai": 33.6,
+   "selesai": 34.0
+  },
+  {
+   "kata": "buat",
+   "mulai": 34.12,
+   "selesai": 34.24
+  },
+  {
+   "kata": "minyak.",
+   "mulai": 34.32,
+   "selesai": 34.92
+  },
+  {
+   "kata": "Kira-kira:",
+   "mulai": 34.96,
+   "selesai": 35.733
+  },
+  {
+   "kata": "minyak",
+   "mulai": 35.787,
+   "selesai": 36.0
+  },
+  {
+   "kata": "gigi.",
+   "mulai": 36.04,
+   "selesai": 36.68
+  },
+  {
+   "kata": "Iya,",
+   "mulai": 36.72,
+   "selesai": 37.12
+  },
+  {
+   "kata": "serius.",
+   "mulai": 37.2,
+   "selesai": 37.947
+  },
+  {
+   "kata": "Terus",
+   "mulai": 37.973,
+   "selesai": 38.32
+  },
+  {
+   "kata": "kok",
+   "mulai": 38.4,
+   "selesai": 38.48
+  },
+  {
+   "kata": "bisa",
+   "mulai": 38.533,
+   "selesai": 38.64
+  },
+  {
+   "kata": "jadi",
+   "mulai": 38.72,
+   "selesai": 38.88
+  },
+  {
+   "kata": "sebutan",
+   "mulai": 38.96,
+   "selesai": 39.28
+  },
+  {
+   "kata": "semua",
+   "mulai": 39.36,
+   "selesai": 39.52
+  },
+  {
+   "kata": "pasta",
+   "mulai": 39.6,
+   "selesai": 39.84
+  },
+  {
+   "kata": "gigi?",
+   "mulai": 39.88,
+   "selesai": 40.56
+  },
+  {
+   "kata": "Merek",
+   "mulai": 40.6,
+   "selesai": 40.8
+  },
+  {
+   "kata": "yang",
+   "mulai": 40.88,
+   "selesai": 41.04
+  },
+  {
+   "kata": "paling",
+   "mulai": 41.08,
+   "selesai": 41.28
+  },
+  {
+   "kata": "duluan",
+   "mulai": 41.36,
+   "selesai": 41.6
+  },
+  {
+   "kata": "dikenal",
+   "mulai": 41.707,
+   "selesai": 42.08
+  },
+  {
+   "kata": "sering",
+   "mulai": 42.16,
+   "selesai": 42.4
+  },
+  {
+   "kata": "jadi",
+   "mulai": 42.48,
+   "selesai": 42.64
+  },
+  {
+   "kata": "nama",
+   "mulai": 42.76,
+   "selesai": 42.88
+  },
+  {
+   "kata": "bendanya.",
+   "mulai": 42.96,
+   "selesai": 43.733
+  },
+  {
+   "kata": "Kalau",
+   "mulai": 43.787,
+   "selesai": 43.92
+  },
+  {
+   "kata": "odol",
+   "mulai": 44.0,
+   "selesai": 44.16
+  },
+  {
+   "kata": "di",
+   "mulai": 44.24,
+   "selesai": 44.32
+  },
+  {
+   "kata": "sini,",
+   "mulai": 44.4,
+   "selesai": 44.84
+  },
+  {
+   "kata": "itu",
+   "mulai": 44.88,
+   "selesai": 45.04
+  },
+  {
+   "kata": "masih",
+   "mulai": 45.12,
+   "selesai": 45.24
+  },
+  {
+   "kata": "dugaan.",
+   "mulai": 45.28,
+   "selesai": 46.053
+  },
+  {
+   "kata": "Dan",
+   "mulai": 46.107,
+   "selesai": 46.16
+  },
+  {
+   "kata": "iklannya",
+   "mulai": 46.24,
+   "selesai": 46.64
+  },
+  {
+   "kata": "nggak",
+   "mulai": 46.68,
+   "selesai": 46.8
+  },
+  {
+   "kata": "main-main.",
+   "mulai": 46.88,
+   "selesai": 47.8
+  },
+  {
+   "kata": "Lingner",
+   "mulai": 47.84,
+   "selesai": 48.24
+  },
+  {
+   "kata": "ngajak",
+   "mulai": 48.28,
+   "selesai": 48.56
+  },
+  {
+   "kata": "seniman",
+   "mulai": 48.64,
+   "selesai": 48.96
+  },
+  {
+   "kata": "besar,",
+   "mulai": 49.08,
+   "selesai": 49.4
+  },
+  {
+   "kata": "termasuk",
+   "mulai": 49.44,
+   "selesai": 49.84
+  },
+  {
+   "kata": "Pucini,",
+   "mulai": 49.88,
+   "selesai": 50.56
+  },
+  {
+   "kata": "yang",
+   "mulai": 50.64,
+   "selesai": 50.72
+  },
+  {
+   "kata": "sampai",
+   "mulai": 50.88,
+   "selesai": 51.12
+  },
+  {
+   "kata": "bikin",
+   "mulai": 51.16,
+   "selesai": 51.36
+  },
+  {
+   "kata": "lagu.",
+   "mulai": 51.44,
+   "selesai": 52.04
+  },
+  {
+   "kata": "Obat",
+   "mulai": 52.08,
+   "selesai": 52.4
+  },
+  {
+   "kata": "kumur,",
+   "mulai": 52.44,
+   "selesai": 53.04
+  },
+  {
+   "kata": "punya",
+   "mulai": 53.12,
+   "selesai": 53.28
+  },
+  {
+   "kata": "lagu",
+   "mulai": 53.36,
+   "selesai": 53.52
+  },
+  {
+   "kata": "sendiri.",
+   "mulai": 53.64,
+   "selesai": 54.251
+  },
+  {
+   "kata": "Jadi",
+   "mulai": 54.32,
+   "selesai": 54.64
+  },
+  {
+   "kata": "odol",
+   "mulai": 54.72,
+   "selesai": 55.04
+  },
+  {
+   "kata": "awalnya",
+   "mulai": 55.12,
+   "selesai": 55.52
+  },
+  {
+   "kata": "merek",
+   "mulai": 55.56,
+   "selesai": 55.84
+  },
+  {
+   "kata": "obat",
+   "mulai": 55.92,
+   "selesai": 56.08
+  },
+  {
+   "kata": "kumur",
+   "mulai": 56.12,
+   "selesai": 56.4
+  },
+  {
+   "kata": "Jerman,",
+   "mulai": 56.44,
+   "selesai": 56.933
+  },
+  {
+   "kata": "yang",
+   "mulai": 56.987,
+   "selesai": 57.04
+  },
+  {
+   "kata": "namanya",
+   "mulai": 57.12,
+   "selesai": 57.68
+  },
+  {
+   "kata": "nyangkut",
+   "mulai": 57.76,
+   "selesai": 58.16
+  },
+  {
+   "kata": "di",
+   "mulai": 58.24,
+   "selesai": 58.32
+  },
+  {
+   "kata": "tube",
+   "mulai": 58.4,
+   "selesai": 58.48
+  },
+  {
+   "kata": "kamar",
+   "mulai": 58.56,
+   "selesai": 58.72
+  },
+  {
+   "kata": "mandimu.",
+   "mulai": 58.84,
+   "selesai": 59.493
+  },
+  {
+   "kata": "Dan",
+   "mulai": 59.547,
+   "selesai": 59.6
+  },
+  {
+   "kata": "ternyata,",
+   "mulai": 59.68,
+   "selesai": 60.453
+  },
+  {
+   "kata": "memang",
+   "mulai": 60.507,
+   "selesai": 60.64
+  },
+  {
+   "kata": "begitu.",
+   "mulai": 60.76,
+   "selesai": 61.467
+  },
+  {
+   "kata": "Kirim",
+   "mulai": 61.493,
+   "selesai": 61.68
+  },
+  {
+   "kata": "ke",
+   "mulai": 61.72,
+   "selesai": 61.76
+  },
+  {
+   "kata": "temanmu",
+   "mulai": 61.84,
+   "selesai": 62.16
+  },
+  {
+   "kata": "yang",
+   "mulai": 62.24,
+   "selesai": 62.32
+  },
+  {
+   "kata": "bilang,",
+   "mulai": 62.44,
+   "selesai": 62.84
+  },
+  {
+   "kata": "ambil",
+   "mulai": 62.88,
+   "selesai": 63.12
+  },
+  {
+   "kata": "odol",
+   "mulai": 63.2,
+   "selesai": 63.36
+  },
+  {
+   "kata": "Pepsodent.",
+   "mulai": 63.44,
+   "selesai": 64.213
+  },
+  {
+   "kata": "Dia",
+   "mulai": 64.267,
+   "selesai": 64.32
+  },
+  {
+   "kata": "nyebut",
+   "mulai": 64.4,
+   "selesai": 64.72
+  },
+  {
+   "kata": "dua",
+   "mulai": 64.8,
+   "selesai": 64.96
+  },
+  {
+   "kata": "merek",
+   "mulai": 65.04,
+   "selesai": 65.2
+  },
+  {
+   "kata": "sekaligus.",
+   "mulai": 65.28,
+   "selesai": 66.053
+  },
+  {
+   "kata": "Besok",
+   "mulai": 66.107,
+   "selesai": 66.24
+  },
+  {
+   "kata": "pagi,",
+   "mulai": 66.32,
+   "selesai": 66.88
+  },
+  {
+   "kata": "dia",
+   "mulai": 66.96,
+   "selesai": 67.04
+  },
+  {
+   "kata": "pasti",
+   "mulai": 67.16,
+   "selesai": 67.36
+  },
+  {
+   "kata": "begini...",
+   "mulai": 67.52,
+   "selesai": 68.0
+  }
+ ]
+}
