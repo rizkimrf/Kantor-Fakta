@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "i-005 pedas itu rasa sakit",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -26,7 +26,21 @@
       "oleh": "Raka",
       "tanggal": "2026-11-17",
       "hasil": "cek_seo.md: 3 WAJIB (kata 'BURUNG' jatuh ±37-38 dtk, target <=35; label sumber PubMed 9768840 bukan makalah 1997; komentar tersemat: janji 'Minggu 19.00' & 'dari Amerika' belum terverifikasi, terbitkan.py tidak menyematkan komentar) + 7 SARAN. Caption '90% orang salah' tetap tidak dipakai."
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-17",
+      "hasil": "Revisi 1 (cek_seo Raka + cek_riset Laras). WAJIB: burung 'tanpa kena sengatannya kayak kita'; hidung meler dipisah dari pendinginan (narasi + deskripsi); sumber 1997 = Caterina dkk., PubMed 9349813; adegan 1-6 dirapatkan (A2 3,8 / A3 4,6 / A4 8,2 / A5 5,5 dtk) -> kata BURUNG ±34,2 dtk termasuk intro (ukur ulang di audio asli); komentar tersemat 'menyusul' + 'pendatang dari Amerika' + pertanyaan dua kubu, disematkan MANUAL. SARAN dipakai: tag keringetan/TRPV1/Nobel 2021, 'Ju-li-us', teks 'NOBEL 2021: SENSOR SUHU', '±43°', 'biasanya utuh', IG frasa narasi + #cabai #kapsaisin, kapal layar kayu generik ganti jung, koma kutipan dihapus. ±157 kata, ±71 dtk. Skor ulang jujur: naskah 8/9, viral 8/10. Lanjut ke cek_fakta (Pak Bima)."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-18T07:45",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }
