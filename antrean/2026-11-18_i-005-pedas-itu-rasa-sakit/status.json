@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "i-005 pedas itu rasa sakit",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -14,6 +14,12 @@
       "oleh": "Raka",
       "tanggal": "2026-11-17",
       "hasil": "LANJUT skor 17/20; rencana_marketing.md + seo.md (kata kunci 'pedas itu rasa apa'); slot 19 Nov 18.00; hook tebak-dulu + share identitas; pengarah ke I-020"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-18",
+      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (kontradiksi + sensasi tubuh, bukan 'tebak dulu'): 'Mulutmu nggak kebakar. Otakmu yang KETIPU. Jadi, pedas itu rasa apa?'. Judul: 'Pedas Itu Rasa Apa? Kenapa Sambal Bikin Keringetan?' (51). Sampul: 'PEDAS = RASA APA?'. Mekanisme dibuka 12 dtk, burung 33 dtk, teaser 'cabainya PENDATANG' tanpa tahun. 9 adegan, ±160 kata, ±75 dtk, 1 klip. Fakta 'tidak larut air' hanya di deskripsi; caption '90% orang salah' dibuang. Nol klaim kesehatan. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
     }
   ],
   "masalah": null

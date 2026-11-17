@@ -1,0 +1,152 @@
+{
+  "format": "shorts",
+  "judul": "Pedas Itu Rasa Apa? Kenapa Sambal Bikin Keringetan?",
+  "judul_opsi": [
+    "Pedas Itu Rasa Apa? Kenapa Sambal Bikin Keringetan?",
+    "Pedas Itu Rasa Apa? Mulutmu Nggak Beneran Kebakar",
+    "Pedas Itu Rasa Apa? Jawabannya Bikin Kamu Kaget"
+  ],
+  "thumbnail_teks": "PEDAS = RASA APA?",
+  "thumbnail_visual": "Dramatic close-up, frontal: Tebe (chibi mascot, mustard hoodie, '?' cowlick) BIG in the centre facing the camera, strong red rim light, cheeks flushed, sweat drops flying, eyes wide and watering, mouth open blasting a translucent dashed-outline cartoon flame straight toward the viewer; a giant bird's-eye chili tilted diagonally in the foreground, slightly out of focus; on the right a small cartoon thermometer whose mercury sits calmly at a normal level, its tip circled in red (number added later as code overlay); charcoal-black background with chili-red glow and soft bokeh; flat style without black outlines; no letters or numbers inside the illustration; NO tongue icon with pain symbols, NO nerve diagram (would spoil the answer); empty space at the top for the text overlay.",
+  "deskripsi": "Pedas itu rasa apa, dan kenapa makan sambal bikin keringetan padahal mulutmu nggak beneran panas? Tebak dulu sebelum nonton, lalu cocokkan tebakanmu dengan videonya.\n\nCatatan lengkap (spoiler, baca setelah nonton): Pedas bukan rasa di lidah seperti manis atau asin, melainkan sinyal nyeri/panas. Kapsaisin dari cabai mengaktifkan TRPV1, reseptor panas pada saraf nyeri (bukan sel pengecap). Normalnya TRPV1 aktif di sekitar 43 derajat Celsius; kapsaisin menurunkan ambangnya sampai suhu tubuh, jadi otak memicu respons pendinginan seperti keringat, wajah merah, dan hidung berair. Kapsaisin juga tidak larut dalam air. Gen reseptor ini dikloning tim David Julius (Nature, 1997) yang memakai kapsaisin sebagai umpan; Julius berbagi Nobel Kedokteran 2021 dengan Ardem Patapoutian untuk penemuan reseptor suhu dan sentuhan. Di lapangan, tikus kecil menghindari cabai liar sementara burung memakannya (Tewksbury & Nabhan, Nature 2001): burung tidak merasakan sengatannya seperti kita. Video ini bukan nasihat kesehatan.\n\nSumber:\n- Nobel Prize 2021, siaran pers: https://www.nobelprize.org/prizes/medicine/2021/press-release/\n- Lindau Nobel, ringkasan Nobel 2021: https://www.lindau-nobel.org/nobel-prize-in-physiology-or-medicine-2021/\n- American Physiological Society: https://www.physiology.org/detail/news/2021/10/04/aps-congratulates-2021-nobel-laureates-julius-and-patapoutian\n- PubMed 9768840: https://pubmed.ncbi.nlm.nih.gov/9768840/\n- PMC4843897: https://pmc.ncbi.nlm.nih.gov/articles/PMC4843897\n- NCBI Bookshelf NBK5244: https://www.ncbi.nlm.nih.gov/books/NBK5244/\n- The Conversation, air & makanan pedas: https://theconversation.com/why-doesnt-water-help-with-spicy-food-what-about-milk-or-beer-226624\n- Scientific American, cabai & burung: https://www.scientificamerican.com/article/chilis-heat-deters-poor-s/\n- Tewksbury & Nabhan, Nature 2001 (RePEc): https://ideas.repec.org/a/nat/nature/v412y2001i6845d10.1038_35086653.html\n- Harvard SITN: https://sites.harvard.edu/sitn/2012/11/29/issue131b\n\n#Shorts #Pedas #FaktaUnik",
+  "caption_komentar": "Jujur: sebelum nonton, kamu kira pedas itu rasa apa? Bonus: cabainya sendiri ternyata pendatang dari Amerika. Ceritanya lengkap di video panjang Minggu 19.00.",
+  "caption_tiktok": "Pedas itu rasa apa? Tebak dulu sebelum nonton: manis, asin, atau bukan dua-duanya? #pedas #sambal #TernyataBegitu #FaktaUnik",
+  "caption_instagram": "Habis nyambel, dahi keringetan, padahal suhu mulutmu biasa aja. Jadi pedas itu rasa apa? Tebak dulu sebelum nonton.\nKirim ke temanmu yang paling kuat makan sambal.\n#pedas #sambal #faktaunik #sains #TernyataBegitu",
+  "tag": ["pedas itu rasa apa", "pedas bukan rasa", "kenapa makan pedas keringatan", "kenapa makan pedas hidung berair", "rasa pedas", "kapsaisin", "sambal", "cabai", "fakta unik", "ternyata begitu"],
+  "pola_hook": "kontradiksi + sensasi tubuh (pernyataan mengejutkan tentang tubuh penonton, lalu kata kunci sebagai pertanyaan); BUKAN 'tebak dulu' (keputusan Pak Bima). Beda dari 5 video terakhir: odol (in medias res), Toba (konsekuensi personal), asal nama Indonesia (teka-teki/pembalikan pelaku), harga 99.900 (tes penonton), durian (pertanyaan + angka).",
+  "hook_kandidat": [
+    {"teks": "Mulutmu nggak kebakar. Otakmu yang KETIPU. Jadi, pedas itu rasa apa?", "skor": 9, "alasan": "Kontradiksi langsung dengan sensasi yang SEMUA orang rasakan saat nyambel; 'otakmu ketipu' memancing 'hah, kok bisa?'; kata kunci utama terucap ±4 dtk; tidak membocorkan mekanisme. 11 kata. TERPILIH."},
+    {"teks": "Pedas itu rasa apa? Lidahmu bahkan nggak diajak NGOMONG.", "skor": 8, "alasan": "Kata kunci di detik 0, lucu, tapi membuka separuh jawaban di detik 2 dan kurang 'sensasi tubuh'."},
+    {"teks": "Keringetan gara-gara sambal? Itu alarm kebakaran PALSU.", "skor": 7, "alasan": "Visual kuat, tapi membocorkan jawaban inti dan kata kunci utama tidak terucap."},
+    {"teks": "Pedas itu rasa apa? Tebak dulu: manis, asin, pahit... atau bukan?", "skor": 7, "alasan": "Usulan seo.md; pola 'tebak dulu' dilarang Pak Bima (masih di 5 video terakhir). Semangatnya dipindah ke caption & sampul."},
+    {"teks": "Cabai di sambalmu itu lagi ngerjain sarafmu.", "skor": 7, "alasan": "Lucu dan personal, tapi 'saraf' terasa ilmiah dan kata kunci tidak ada."},
+    {"teks": "Burung makan cabai rawit santai. Kamu? Keringetan.", "skor": 6, "alasan": "Kontras lucu, tapi kejutan kedua habis di detik 1 dan 'rawit' tidak spesifik di riset (riset: cabai liar)."},
+    {"teks": "Lidahmu nggak bisa ngerasain pedas.", "skor": 6, "alasan": "Kamu-salah yang menarik, tapi terlalu mutlak (riset: pedas ikut membentuk 'flavor'), rawan dianggap menyesatkan."},
+    {"teks": "Sambal bikin keringetan, padahal mulutmu nggak panas.", "skor": 6, "alasan": "Benar dan dekat, tapi datar tanpa tikungan; dipakai sebagai adegan 2."},
+    {"teks": "Ada Nobel di balik keringat habis makan sambal.", "skor": 5, "alasan": "Aneh, tapi Nobel bukan bahasa warung (gagal uji teman tongkrongan); lebih kuat di isi."},
+    {"teks": "Empat puluh tiga derajat. Angka yang bikin mulutmu panik.", "skor": 4, "alasan": "Angka ahli di hook, tidak dikenal orang, lambat."}
+  ],
+  "peta_retensi": "0-4,8 dtk → HOOK kontradiksi: Tebe gigit cabai di warung senja, api kartun PALSU (garis putus) meletup, termometer di sebelahnya tetap normal; 'Mulutmu nggak kebakar. Otakmu yang KETIPU.' + kata kunci 'pedas itu rasa apa' ±4 dtk; taruhan personal = mulut penonton sendiri\n4,8-7,2 dtk → intro khas 2,4 dtk (pattern interrupt)\n7,2-11,6 dtk → OPEN LOOP 1 (misteri tubuh): 'Habis nyambel, dahi keringetan. Padahal suhu mulutmu biasa AJA.' (close-up keringat)\n11,6-17,6 dtk → JAWABAN dibuka (±12-15 dtk): manis & asin = sel pengecap, pedas 'lapornya ke saraf NYERI' (kamera masuk mulut → set dalamMulut, canda ringan 1)\n17,6-27,0 dtk → MEKANISME + MOMEN WAH: gerbang sensor panas bertermometer '43°', kapsaisin menempel, jarum merosot ke suhu tubuh, gerbang terbuka (fwoosh)\n27,0-33,2 dtk → PAYOFF loop 1 + REAKSI TEBE 1: sinyal naik ke otak, alarm 'KEBAKAR', mode pendingin (keringat, hidung meler) → 'Kebakarannya BOHONGAN.' (canda 2)\n33,2-38,2 dtk → KEJUTAN KEDUA (≤35 dtk): match-cut cobek → semak cabai liar siang, 'Tapi ada yang makan cabai liar tanpa kepedasan kayak kita: BURUNG.' REAKSI TEBE 2 (melongo)\n38,2-47,4 dtk → 'kok bisa' versi cabai: tikus menghindar, mamalia merusak biji, burung menyebar biji utuh → 'Cabainya kayak milih sendiri siapa yang boleh MAKAN.' (canda 3)\n47,4-56,6 dtk → PATTERN INTERRUPT ganti set ke lab malam: kapsaisin dipakai sebagai UMPAN, Julius 'ikut KEBAGIAN' Nobel 2021 (ding)\n56,6-73,6 dtk → PAYOFF janji hook ('alarm panas PALSU') + kalimat khas + PEMICU SHARE identitas sambal ('belum pedas kalau belum keringetan' → 'bangga sama kebakaran BOHONGAN') + OPEN LOOP 2 ke video panjang: 'cabainya sendiri ternyata... PENDATANG' (jung siluet)\n73,6-75 dtk → outro mulus, tanpa jeda kosong",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 1, "kejutan_kedua": 2, "bahasa_lisan": 1, "payoff": 1, "total": 8},
+  "skor_naskah_catatan": "Jujur: penahan 1, bukan 2. Celah baru ada tiap ±5-9 dtk dan ada 2 open loop (misteri keringat, teaser pendatang), tapi beat Nobel (47-57 dtk) datang SETELAH twist burung, jadi energinya sedikit turun; ditolong canda 'ikut kebagian' dan ganti set. Kejutan kedua 2: burung + 'cabai milih tamunya' membalik lagi pemahaman ('pedas itu senjata yang pilih-pilih'). Tambahan rubrik: gaya ngobrol YA ('lapornya ke saraf nyeri', 'kebakarannya bohongan', 'kebagian Nobel', tidak menggurui); SEO YA (kata kunci 'pedas itu rasa apa' terucap ±4 dtk, ada di teks layar pertama dan persis di depan judul).",
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "'Mulutmu nggak kebakar, otakmu ketipu' bertabrakan langsung dengan sensasi yang baru saja dirasakan pecinta sambal; tanpa konteks pun penasaran."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'pedas = rasa seperti asin' ke 'alarm kebakaran palsu di saraf nyeri', lalu burung yang tidak merasakan sengatannya seperti kita."},
+    "retensi": {"skor": 1, "alasan": "Hal baru tiap ±5-9 dtk dan ganti set tiap babak, tapi beat Nobel setelah twist sedikit lebih datar dan dua angka berdekatan dengan mekanisme."},
+    "layak_dibagikan": {"skor": 2, "alasan": "Identitas bangsa pecinta sambal + olok ramah ke teman 'belum pedas kalau belum keringetan' gampang dikirim ke grup."},
+    "pemicu_komentar": {"skor": 1, "alasan": "Teaser 'cabainya pendatang' + komentar tersemat 'kamu kira pedas itu rasa apa?' memancing jawaban, tapi bukan debat dua kubu besar."},
+    "total": 8
+  },
+  "pelafalan": {
+    "kapsaisin": "kap-sai-sin",
+    "David Julius": "dei-vid ju-li-us",
+    "nyambel": "nyam-bel"
+  },
+  "seo": {
+    "kata_kunci_utama": "pedas itu rasa apa",
+    "kata_kunci_turunan": ["kenapa makan pedas keringatan", "kenapa makan pedas hidung berair", "pedas bukan rasa", "rasa pedas"]
+  },
+  "catatan_fakta": "Setiap kalimat dari riset.md. 'Mulutmu nggak kebakar / otakmu ketipu / suhu mulutmu biasa aja' = Uji 5 no.3 (saraf mengirim TERBAKAR padahal suhu mulut normal); tidak menyebut jaringan terluka. 'Manis dan asin urusan sel pengecap; pedas lapornya ke saraf nyeri' = fakta 4 (reseptor di neuron sensorik/saraf nyeri, bukan sel pengecap) + rumusan Laras 'bukan rasa di lidah seperti manis/asin'. 'Sensor panas, normalnya nyala di sekitar empat puluh tiga derajat' = fakta 3 (aman 'sekitar 43'). 'Kapsaisin bikin dia nyala di suhu tubuh' = fakta 3. 'Otak nyalain pendingin: keringat, hidung meler' = Uji 5 no.3. Burung: 'tanpa kepedasan kayak kita' = rumusan aman Laras ('tidak merasakan sengatannya seperti kita'), BUKAN 'kebal total'; 'tikus kecil menghindarinya', 'mamalia merusak biji, burung menyebar biji utuh', 'cabai kayak milih siapa yang boleh makan' (kiasan 'kayak', tanpa klaim evolusi) = Tewksbury & Nabhan 2001 (S9-S11). Nobel: 'Tim David Julius nemuin sensor itu pakai kapsaisin sebagai umpan' = fakta 1; 'Julius ikut kebagian Nobel Kedokteran 2021' = berbagi dengan Patapoutian, untuk reseptor suhu & sentuhan, TIDAK disebut 'Nobel untuk kapsaisin'. Payoff 'bukan rasa kayak manis atau asin, tapi alarm panas palsu' = rumusan Laras. Teaser 'cabainya pendatang' = sudut Indonesia I-020, tanpa tahun. Angka di narasi hanya 2 (43 derajat, 2021). TIDAK dipakai: klaim kesehatan apa pun, SHU/Scoville, tahun cabai tiba, 'burung kebal total', nasihat air/susu (fakta 'tidak larut air' hanya di deskripsi, tanpa saran), Rozin/dopamin, lada/jahe, 1997 di narasi (ada di deskripsi).",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Mulutmu nggak kebakar. Otakmu yang KETIPU. Jadi, pedas itu rasa apa?",
+      "teks_layar": "PEDAS = RASA APA?",
+      "visual": "Indonesian street food stall (warung bakso) at dusk with warm lamps; a stone mortar (cobek) of red chili sambal on the table; Tebe (chibi, mustard hoodie, '?' cowlick) bites a small red chili with a crunch, freezes, cheeks turn red, sweat drops pop out, and a translucent dashed-outline cartoon flame (clearly fake fire) bursts from his mouth; next to his bowl a small cartoon thermometer stays calmly at a normal level; camera snap-zooms onto his face; flat style, no black outlines, no logos, no text or numbers in the image.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 4.8,
+      "set": "warungBakso senja (pakai ulang) + cobekSambal BARU + cabaiRawit + apiKartun (palsu) + termometer",
+      "tebe": "gigit cabai, membeku, pose kepedasan"
+    },
+    {
+      "no": 2,
+      "narasi": "Habis nyambel, dahi keringetan. Padahal suhu mulutmu biasa AJA.",
+      "teks_layar": "SUHU MULUT: NORMAL",
+      "visual": "Same warung, tight close-up: big sweat drops slide down Tebe's forehead, his nose runs a little, he fans his open mouth with his hand; the small thermometer beside him is pushed into frame and its mercury does not move at all; Tebe glances at it, confused; camera slowly pushes toward his open mouth; flat style, no logos, no text or numbers in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 4.4,
+      "set": "warungBakso (close-up) + tetesKeringat + termometer",
+      "tebe": "mengipas mulut, melirik termometer bingung"
+    },
+    {
+      "no": 3,
+      "narasi": "Soalnya manis dan asin itu urusan sel pengecap. Pedas lapornya ke saraf NYERI.",
+      "teks_layar": "LAPOR KE SARAF NYERI",
+      "visual": "The camera flies into Tebe's open mouth and lands inside a cosy pink tongue cave covered with round taste bumps; on the left side small friendly taste-cell characters hold a sugar cube icon and a salt crystal icon; a red capsaicin droplet walks right past them, ignoring them, and knocks on a glowing nerve line on the right side that leads to a small gate; tiny Tebe stands in the cave pointing at it; flat style, no black outlines, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.0,
+      "set": "dalamMulut BARU + papilaLidah + sel pengecap (manis/asin) + jalur saraf nyeri",
+      "tebe": "mini, menunjuk ke saraf nyeri"
+    },
+    {
+      "no": 4,
+      "narasi": "Saraf itu punya sensor PANAS, normalnya nyala di sekitar empat puluh tiga derajat. Kapsaisin, zat pedas cabai, bikin dia nyala di suhu TUBUH.",
+      "teks_layar": "43° → SUHU TUBUH",
+      "visual": "Close-up of a round gate (heat sensor channel) on the nerve with a dial thermometer mounted above it whose needle points at the high danger mark (number added later as code overlay); a cluster of red capsaicin molecules drifts in and sticks to the gate; the needle drops down to the normal body-temperature mark, the gate swings open with a whoosh and a pulse of yellow light shoots along the nerve; camera follows the light upward; flat style, no black outlines, no text in the image.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 9.4,
+      "set": "dalamMulut (close-up) + kanalTRPV1 BARU + molekulKapsaisin + termometer ambang (angka via kode) + sinyalSaraf",
+      "tebe": "-"
+    },
+    {
+      "no": 5,
+      "narasi": "Saraf teriak KEBAKAR! Otak panik, nyalain pendingin: keringat, hidung meler. Kebakarannya BOHONGAN.",
+      "teks_layar": "KEBAKARAN PALSU",
+      "visual": "Vertical sweep up the glowing nerve into a cartoon brain control room; a red alarm light spins and flashes, little worker figures pull a big lever labelled with a snowflake icon; cut back to Tebe at the warung, sweating harder and nose running, while the dashed-outline fake flame in his mouth flickers; Tebe looks at the camera, deadpan, and shrugs ('it's fake'); flat style, no black outlines, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.2,
+      "set": "otakKartun (pakai ulang) sebagai ruang kendali alarm → warungBakso",
+      "tebe": "REAKSI 1: wajah datar 'bohongan', mengangkat bahu"
+    },
+    {
+      "no": 6,
+      "narasi": "Tapi ada yang makan cabai liar tanpa kepedasan kayak kita: BURUNG.",
+      "teks_layar": "BURUNG?!",
+      "visual": "Shape match-cut: a red chili in the cobek turns into a red chili on a wild chili bush in a sunny desert scrubland (palette shifts from dusk to bright midday); a generic grey bird with a long curved beak lands and calmly gulps a chili whole, no sweat at all; Tebe peeks from behind a rock, jaw dropped, still sweating; camera glides past the bush; flat style, no black outlines, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 5.0,
+      "set": "semakCabaiLiar BARU (gurun siang) + burungParuhLengkung BARU",
+      "tebe": "REAKSI 2: melongo dari balik batu"
+    },
+    {
+      "no": 7,
+      "narasi": "Tikus kecil malah menghindarinya. Mamalia kayak tikus ngerusak biji, burung nyebarin biji UTUH. Cabainya kayak milih sendiri siapa yang boleh MAKAN.",
+      "teks_layar": "CABAI PILIH-PILIH",
+      "visual": "Same desert bush: a small mouse sniffs a chili, recoils and scurries away; a quick split view shows a mouse nibbling seeds into crumbs on one side and the bird dropping whole seeds that sprout into tiny chili plants on the other; the chili bush grows a tiny doorman bow tie and waves the bird in while holding up a 'stop' hand to the mouse (funny beat); Tebe nods slowly; camera pans across the scene; flat style, no black outlines, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 9.2,
+      "set": "semakCabaiLiar + tikusLab (diwarnai ulang) + burungParuhLengkung + biji tumbuh",
+      "tebe": "mengangguk pelan, kagum"
+    },
+    {
+      "no": 8,
+      "narasi": "Tim David Julius nemuin sensor itu pakai kapsaisin sebagai UMPAN. Julius lalu ikut KEBAGIAN Nobel Kedokteran dua ribu dua puluh satu.",
+      "teks_layar": "NOBEL 2021",
+      "visual": "A genetics lab at night with blue light; scientists seen only as faceless silhouettes; a tray of many tiny cells, a red chili drop is added and the cells light up one by one until exactly one cell glows bright yellow; then a plain round gold medal with no design spins down with a ding and Tebe, wearing tiny safety goggles, claps; camera dollies along the bench; flat style, no black outlines, no real medal replica, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 9.2,
+      "set": "labGenetika malam (pakai ulang) + sel menyala + medali polos",
+      "tebe": "kacamata lab, bertepuk tangan"
+    },
+    {
+      "no": 9,
+      "narasi": "Jadi pedas itu bukan rasa kayak manis atau asin, tapi alarm panas PALSU. Dan ternyata, memang begitu. Kirim ke temanmu yang bilang \"belum pedas kalau belum keringetan\". Dia lagi bangga sama kebakaran BOHONGAN. Oh iya, cabainya sendiri ternyata... PENDATANG.",
+      "teks_layar": "KIRIM KE TEMANMU...",
+      "visual": "The lab slides away like a push-door back into the dusk warung; Tebe, still a little sweaty, holds up a chili proudly, winks and mimes sending a message on a phone to the viewer; on the last line the warung lights dim and a silhouette of an old wooden sailing ship (jung) glides across the horizon behind him, Tebe's cowlick turns from '?' to '!'; flat style, no black outlines, no map, no logos, no text or numbers in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 17.0,
+      "catatan_teaser": "Kalimat terakhir menggantung sebelum 'PENDATANG' (tahan napas). Jung siluet hanya 1,5 dtk, tanpa peta/tahun/arah. Yoga: outro sependek mungkin, tanpa jeda kosong.",
+      "set": "labGenetika geser-dorong → warungBakso senja + jung siluet (pakai ulang)",
+      "tebe": "bangga, mengedip, kirim pesan; jambul ? → !"
+    }
+  ]
+}

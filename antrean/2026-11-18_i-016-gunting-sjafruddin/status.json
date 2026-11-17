@@ -1,5 +1,5 @@
 {
- "tahap": "naskah",
+ "tahap": "cek_seo",
  "topik": "i-016 gunting sjafruddin",
  "dibuat": "2026-11-18T05:43",
  "riwayat": [
@@ -12,6 +12,12 @@
    "tahap": "pilih",
    "oleh": "Raka",
    "hasil": "LANJUT skor 15/20; rencana_marketing.md + seo.md; slot 20 Nov 13.00 WITA; hook tebak-dulu, share identitas, kejutan kedua 25-35 dtk"
+  },
+  {
+   "tahap": "naskah",
+   "oleh": "Nadia (copywriting)",
+   "waktu": "2026-11-18",
+   "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook (skenario 'bayangin', bukan tebak-dulu sesuai Pak Bima): 'Bayangin, uang di dompetmu disuruh DIGUNTING jadi dua. Ini nyata: Gunting Sjafruddin.' (kata kunci ±4,5 dtk). Judul: 'Gunting Sjafruddin: Uang Digunting, Sisi Kanannya Jadi Apa?' (59, tanpa Rp5). Sampul: 'KENAPA DIGUNTING?'. Kiri/kanan dibuka ±14,6 dtk; kejutan kedua (penggunting kelak memimpin DJB, Gubernur BI pertama) ±33 dtk. 9 adegan, 166 kata, ±76 dtk, 2 klip. Tanpa tanggal pasti/tenor/ambang/angka inflasi; netral; bukan nasihat keuangan. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
   }
  ],
  "masalah": null

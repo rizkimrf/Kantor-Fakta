@@ -1,0 +1,154 @@
+{
+  "format": "shorts",
+  "judul": "Gunting Sjafruddin: Uang Digunting, Sisi Kanannya Jadi Apa?",
+  "judul_opsi": [
+    "Gunting Sjafruddin: Uang Digunting, Sisi Kanannya Jadi Apa?",
+    "Kenapa Uang 1950 Digunting Jadi Dua? Gunting Sjafruddin",
+    "Uang Digunting Beneran: Kisah Gunting Sjafruddin"
+  ],
+  "thumbnail_teks": "KENAPA DIGUNTING?",
+  "thumbnail_visual": "Moment just BEFORE the cut: a giant open pair of red scissors, blades wide apart, clamps the middle of a fictional banknote that sticks out of an old brown leather wallet; a dashed cut line runs down the centre of the note (the only pointer graphic, no arrows); the banknote is an ORIGINAL fictional design in olive-green and cream with self-made geometric ornaments, no faces, no national emblem, no bank name, no serial number, a tiny 'CONTOH' ribbon in one corner; Tebe's face is NOT shown, only his two mustard-hoodie arms reach in from the bottom edge, gripping the note and pulling it away in panic; dark bottle-green background with a soft spotlight on the scissors, red accents; flat style without black outlines; NO bond certificate, NO '1/2' symbol (would spoil the answer); empty space at the top for the text overlay 'KENAPA / DIGUNTING?' with 'DIGUNTING?' in red.",
+  "deskripsi": "Bayangin uang di dompetmu disuruh digunting jadi dua. Kenapa negara pernah melakukannya, dan dua potongannya jadi apa? Tonton dulu, baru baca catatan di bawah.\n\nCatatan lengkap (spoiler, baca setelah nonton): Gunting Sjafruddin adalah kebijakan Menteri Keuangan Sjafruddin Prawiranegara (Kabinet Hatta) pada Maret 1950. Uang kertas De Javasche Bank dan uang NICA pecahan besar digunting dua. Potongan kiri tetap alat pembayaran sah bernilai setengah; potongan kanan tidak lagi berlaku sebagai uang dan ditukar obligasi negara senilai setengah nilai semula, dengan bunga 3% setahun. Pecahan kecil dan uang ORI tidak digunting. Tujuannya menekan jumlah uang beredar, inflasi, dan defisit, sekaligus menyeragamkan mata uang. Pemangkasan nilai seperti ini disebut sanering, berbeda dengan redenominasi (Rp1.000 menjadi Rp1 tanpa menurunkan nilai). Sjafruddin kemudian menjadi satu-satunya orang Indonesia yang menjabat Presiden De Javasche Bank, lalu Gubernur Bank Indonesia pertama. Tanggal persis, batas pecahan, dan jangka waktu obligasi berbeda antar-sumber, jadi tidak kami sebut pasti. Video ini kisah sejarah, bukan nasihat keuangan.\n\nSumber:\n- Museum BI, unggahan resmi: https://m.facebook.com/MuseumBI/photos/a.10154953602560439/10159389963675439/?type=3\n- Bank Indonesia, Museum BI - Uang Awal Kemerdekaan RI: https://www.bi.go.id/id/layanan/museum-bi/uang-awal-kemerdekaan-ri.aspx\n- Bank Indonesia, Cerita BI - Syafruddin Prawiranegara: https://www.bi.go.id/id/publikasi/ruang-media/cerita-bi/Pages/Syafruddin-Prawiranegara,-Satu-satunya-Orang-Indonesia-yang-Jadi-Presiden-DJB.aspx\n- Republika: https://ekonomi.republika.co.id/berita/mjftpo/hari-ini-10-maret-kebijakan-moneter-gunting-syafruddin\n- Detik Finance: https://finance.detik.com/moneter/d-6242736/rupiah-pernah-digunting-lho-nilainya-jadi-cuma-setengah\n- Antara: https://www.antaranews.com/berita/5028837/potret-pahlawan-bidang-moneter-dan-fiskal-indonesia\n- Setneg: https://setneg.go.id/baca/index/pemimpin_bangsa_yang_terlupakan\n- Katadata: https://katadata.co.id/amp/finansial/makro/5f06ccb96eeeb/kisah-redenominasi-sanering-rupiah-yang-pernah-terjadi-di-indonesia\n\n#Shorts #GuntingSjafruddin #SejarahIndonesia",
+  "caption_komentar": "Menurutmu, adil nggak uang dipotong separuh demi menekan harga naik? Dan kalau kamu hidup tahun 1950: pilih pegang potongan kiri atau kanan? Tulis alasannya.",
+  "caption_tiktok": "Bayangin uang di dompetmu disuruh digunting jadi dua. Kenapa? Ini Gunting Sjafruddin. #GuntingSjafruddin #TernyataBegitu #FaktaUnik #SejarahUang",
+  "caption_instagram": "Uang digunting itu cuma kiasan? Tahun 1950 nggak. Kenapa negara sampai menggunting uang, dan potongannya jadi apa?\nKirim ke temanmu yang yakin uang digunting itu cuma kiasan.\n#guntingsjafruddin #sejarahindonesia #sanering #faktaunik #TernyataBegitu",
+  "tag": ["gunting sjafruddin", "gunting syafruddin", "uang digunting 1950", "sanering uang", "beda sanering dan redenominasi", "kebijakan gunting syafruddin", "redenominasi rupiah", "sejarah uang indonesia", "sjafruddin prawiranegara", "ternyata begitu"],
+  "pola_hook": "skenario 'bayangin' ke dompet (hipotesis personal yang langsung dijawab 'ini nyata') - beda dari 5 terakhir: odol (in medias res), Toba (konsekuensi personal), nama Indonesia (teka-teki pembalikan pelaku), 99.900 (tes penonton), durian (pertanyaan + angka); bukan tebak-dulu dan bukan pernyataan-mengejutkan (dipakai Nadia paralel di pedas)",
+  "hook_kandidat": [
+    {"teks": "Bayangin, uang di dompetmu disuruh DIGUNTING jadi dua. Ini nyata: Gunting Sjafruddin.", "skor": 9, "alasan": "Taruhan ke dompet penonton di detik 1, gambar gunting + uang langsung kebayang, kata kunci 'Gunting Sjafruddin' terucap ±4,5 dtk, 'ini nyata' membalik dugaan 'cuma kiasan' tanpa membuka kenapa & nasib kiri/kanan. 12 kata. TERPILIH."},
+    {"teks": "Bayangin, malam ini uangmu disuruh DIGUNTING.", "skor": 7, "alasan": "Lebih pendek, tapi 'malam ini' terdengar seperti terjadi sekarang (menakutkan, bisa disalahpahami sebagai kabar), dan kata kunci belum terucap."},
+    {"teks": "Orang yang menggunting uang ini, kelak jadi bos banknya.", "skor": 8, "alasan": "Ironi kuat, tapi membakar kejutan kedua di detik 1 dan 'bos bank' kurang konkret tanpa konteks."},
+    {"teks": "Uang digunting itu bukan kiasan. Tahun 1950, beneran.", "skor": 7, "alasan": "Pernyataan mengejutkan / kamu-salah; bentrok dengan pola Nadia paralel (pedas) dan ada tahun di hook (detail ahli)."},
+    {"teks": "Tebak: kenapa tahun 1950 uang betul-betul digunting dua?", "skor": 7, "alasan": "Usulan seo.md, tapi pola tebak-dulu dilarang Pak Bima (masih dalam 5 video terakhir)."},
+    {"teks": "Separuh uangmu tiba-tiba berubah jadi surat utang.", "skor": 7, "alasan": "Aneh dan personal, tapi membocorkan nasib potongan kanan yang harus dibuka ±15 dtk."},
+    {"teks": "Kamu pegang gunting, uang di tangan kiri... potong?", "skor": 6, "alasan": "Visual kuat, tapi in medias res mirip odol dan maknanya baru jelas belakangan."},
+    {"teks": "Ada masa ketika gunting jadi alat kebijakan negara.", "skor": 5, "alasan": "Abstrak, tanpa taruhan personal, terdengar seperti narasi dokumenter."},
+    {"teks": "Kenapa Rp5 dipotong jadi dua lembar?", "skor": 4, "alasan": "Satuan sumber campur gulden/rupiah, berisiko menyesatkan (larangan Pak Bima)."},
+    {"teks": "Gunting Sjafruddin: kebijakan moneter Maret 1950.", "skor": 3, "alasan": "Kata kunci utuh tapi gaya buku pelajaran; tidak ada yang berhenti menggulir."}
+  ],
+  "peta_retensi": "0-5,2 dtk → HOOK skenario 'bayangin': dompet kulit terbuka, gunting raksasa masuk bingkai dan terbuka di tengah lembar uang fiktif; taruhan personal = uang di dompet penonton; kata kunci 'Gunting Sjafruddin' terucap ±4,5 dtk ('ini nyata' = pembalikan pertama)\n5,2-7,6 dtk → intro khas 2,4 dtk (pattern interrupt)\n7,6-14,6 dtk → 'Maret 1950, pecahan besar dipotong BETULAN' (kamar masa kini → rumahKampung malam sepia) + OPEN LOOP 'kiri dan kanannya jadi apa?'\n14,6-22,9 dtk → JAWABAN loop (±15 dtk sesuai Pak Bima): momen WAH gunting menutup slow-mo, kiri berkilau '½' tetap uang, kanan melipat jadi surat utang (split screen lahir dari garis potong)\n22,9-26,9 dtk → CANDA + REAKSI TEBE 1: 'Selamat, separuh uangmu barusan jadi PINJAMAN buat negara' (Tebe hormat menerima surat)\n26,9-33,0 dtk → pertanyaan baru = pattern interrupt: 'Yang nyuruh?' siluet Menkeu memegang gunting; 'uang De Javasche Bank' (tanam benih twist)\n33,0-41,7 dtk → KEJUTAN KEDUA: 'bank itu KELAK dia pimpin sendiri' → satu-satunya orang Indonesia di kursi itu → Gubernur BI PERTAMA (siluet berjalan ke gedung bank generik; REAKSI TEBE 2 jambul '?'→'!')\n41,7-54,3 dtk → KOK BISA (open loop kedua 'kenapa harus digunting?'): uang campur-campur & kebanyakan, barang dikit, harga naik → CANDA 2 'satu kampung rebutan sepiring GORENGAN' (ganti gambar di tengah: timbangan → gorengan) → gunting langsung mengurangi uang beredar\n54,3-62,6 dtk → SUDUT INDONESIA hari ini: ini namanya SANERING, beda dengan redenominasi seribu jadi satu rupiah yang nilainya NGGAK turun (palet sepia → warna masa kini, odometer 1.000 → 1, ding)\n62,6-75,6 dtk → PAYOFF janji hook (uang di dompet digunting: kiri setengah, kanan UTANG) + kalimat khas + PEMICU SHARE identitas 'temanmu yang yakin uang digunting cuma kiasan' + LOOP 'Sekarang cek dompetmu... masih UTUH, kan?' → kembali ke frame dompet pembuka",
+  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 1, "kejutan_kedua": 2, "bahasa_lisan": 1, "payoff": 1, "total": 8},
+  "skor_naskah_catatan": "Jujur: penahan 1, bukan 2. Open loop ada dua (kiri/kanan dibayar ±15 dtk; 'kenapa harus digunting' dibayar ±54 dtk) dan interrupt tiap ±6-8 dtk sampai detik 42, tapi adegan 7-8 (±21 dtk penjelasan inflasi + sanering) paling berisiko terasa pelajaran; ditolong canda gorengan, ganti gambar di tengah adegan 7, dan odometer di adegan 8. Kejutan kedua 2: ironi 'yang menggunting uang bank itu kelak memimpin bank itu' membalik cara pandang dan hampir tidak ada penonton yang menduganya. Tambahan rubrik: gaya ngobrol YA (bayangin, 'selamat... jadi PINJAMAN', gorengan, 'masih UTUH, kan?'; tidak ada kalimat menggurui, netral soal tokoh); SEO YA (kata kunci utama 'gunting sjafruddin' terucap ±4,5 dtk, ada di teks layar adegan 1 dan di depan judul).",
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "Dompet sendiri + gunting = gambar yang langsung bikin ngeri-geli tanpa konteks; 'ini nyata' memancing 'hah, beneran?'."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'uang digunting itu kiasan' ke 'betulan digunting, separuhnya jadi surat utang, dan si penggunting kelak memimpin bank itu'."},
+    "retensi": {"skor": 1, "alasan": "Celah baru tiap ±6-8 dtk di 40 dtk pertama, tapi bagian 'kok bisa' + sanering ±21 dtk lebih padat penjelasan."},
+    "layak_dibagikan": {"skor": 2, "alasan": "Bahan 'eh tahu nggak' + amunisi obrolan redenominasi hari ini; pemicu identitas 'yang yakin cuma kiasan' jelas sasarannya."},
+    "pemicu_komentar": {"skor": 1, "alasan": "Loop 'cek dompetmu' + pertanyaan 'adil nggak' dan pilih kiri/kanan memancing kubu, tapi topik sejarah membuat sebagian penonton hanya menonton."},
+    "total": 8
+  },
+  "pelafalan": {
+    "Sjafruddin": "sya-fru-din",
+    "Prawiranegara": "pra-wi-ra-ne-ga-ra",
+    "De Javasche Bank": "de ya-va-se bank",
+    "sanering": "sa-ne-ring",
+    "redenominasi": "re-de-no-mi-na-si"
+  },
+  "seo": {
+    "kata_kunci_utama": "gunting sjafruddin",
+    "kata_kunci_turunan": ["uang digunting 1950", "sanering uang", "beda sanering dan redenominasi", "kebijakan gunting syafruddin"]
+  },
+  "catatan_fakta": "Setiap kalimat dari riset.md (fakta TERKUNCI). Maret 1950 tanpa tanggal (10 vs 19/20 Maret diperdebatkan). 'Pecahan besar' tanpa ambang Rp5/f2,50 (satuan campur). Yang digunting = uang De Javasche Bank dan uang NICA; narasi bilang 'termasuk uang De Javasche Bank' (NICA di deskripsi). Kiri = alat bayar sah bernilai setengah; kanan = bukan uang lagi, ditukar obligasi negara senilai setengah nilai semula (narasi: 'surat UTANG negara, senilai setengahnya'). 'Jadi PINJAMAN buat negara' = rumusan riset 'surat utang negara (sekaligus pinjaman dari pemegang uang)'. Bunga 3% hanya di deskripsi dan sebagai teks kode pada aset surat (boleh dibuang Yoga); TANPA tenor, tanpa nama obligasi bertahun, tanpa batas penukaran. 'Menteri Keuangan, Sjafruddin Prawiranegara' (Kabinet Hatta di deskripsi). Kejutan kedua: satu-satunya orang Indonesia Presiden DJB ('di kursi itu') lalu Gubernur BI pertama; 'kelak'/'lalu' tanpa tahun jabatan. Kok bisa: uang beredar campur (DJB, NICA, ORI) dan berlebih, uang banyak barang terbatas, harga naik; gunting langsung mengurangi uang beredar (riset 'Kok bisa'). Gorengan = perumpamaan, bukan klaim. TIDAK diklaim: alasan memilih gunting daripada cetak ulang, 'rakyat kecil dikecualikan', angka inflasi/keberhasilan, Rp1,5 miliar, PDRI, PRRI, penilaian pahlawan/penjahat, radio/jam pengumuman di narasi. Sanering vs redenominasi: riset 'Sudut Indonesia' (Detik + Katadata); disampaikan sebagai definisi, bukan prediksi atau nasihat. Loop 'cek dompetmu... masih utuh, kan?' = candaan penutup, tidak menyiratkan uang bisa dipotong lagi.",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Bayangin, uang di dompetmu disuruh DIGUNTING jadi dua. Ini nyata: Gunting Sjafruddin.",
+      "teks_layar": "GUNTING SJAFRUDDIN",
+      "visual": "Modern Indonesian bedroom in the morning, bright and cosy; Tebe (chibi, mustard hoodie, '?' cowlick) sits on the bed and opens an old brown leather wallet; a fictional olive-green and cream banknote (original geometric design, no faces, no emblem, no bank name, tiny 'CONTOH' ribbon) slides halfway out; suddenly a GIANT red pair of scissors swoops into frame and opens wide right at the middle of the note, a dashed cut line appearing; Tebe's eyes go wide; fast push-in camera; flat style, no black outlines, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "klip",
+      "durasi": 5.2,
+      "set": "kamar pagi masa kini + dompetKulit (BARU) + uangFiktif (BARU) + gunting (BARU)",
+      "tebe": "kaget, menarik dompet menjauh"
+    },
+    {
+      "no": 2,
+      "narasi": "Kejadiannya Maret seribu sembilan ratus lima puluh. Pecahan besar dipotong BETULAN. Terus, kiri dan kanannya jadi APA?",
+      "teks_layar": "MARET 1950",
+      "visual": "The scissors' blade glint wipes the screen into a 1950s Indonesian village house at night, warm sepia palette, oil lamp light; a vintage tube radio sits on a wooden table (atmosphere only, no clock, no calendar, no written announcement); a family seen only as faceless silhouettes gathers around a table with a few fictional banknotes; Tebe stands beside them holding the scissors and looking at the camera, one note held up with a dashed line in the middle; camera pushes slowly toward the radio speaker grille; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.0,
+      "set": "rumahKampung malam (pakai ulang) + radioTabung (BARU, tanpa teks) + uangFiktif",
+      "tebe": "mengangkat lembar uang, alis naik bertanya"
+    },
+    {
+      "no": 3,
+      "narasi": "Potongan KIRI tetap uang, tapi nilainya tinggal setengah. Potongan KANAN bukan uang lagi. Ditukar surat UTANG negara, senilai setengahnya.",
+      "teks_layar": "KIRI ½ · KANAN UTANG",
+      "visual": "The camera dives through the radio grille and cross-dissolves to a close-up wooden table; the giant scissors close in slow motion exactly on the dashed line of a fictional banknote; the two halves float apart and the cut line becomes a split-screen divider: the LEFT half sparkles yellow with a big '½' badge (added in code) and stays a banknote, the RIGHT half folds itself like origami into a plain framed paper certificate (blank border, no tenor, no year); flat style, no real currency designs, no text in the image except code overlays.",
+      "maskot": false,
+      "jenis_visual": "klip",
+      "durasi": 8.3,
+      "set": "meja close-up + uangFiktif(potong 0..1) + suratObligasi (BARU), split screen kiri/kanan",
+      "tebe": "-"
+    },
+    {
+      "no": 4,
+      "narasi": "Selamat, separuh uangmu barusan jadi PINJAMAN buat negara.",
+      "teks_layar": "JADI PINJAMAN",
+      "visual": "Right side of the split screen: Tebe receives the folded paper certificate with both hands, stands stiffly and gives a formal salute, a tiny confetti burst pops above him (ironic celebration), then he looks at the camera with a flat, awkward smile; on the left side the yellow half-note still sparkles; camera does a small comic zoom on his face; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 4.0,
+      "set": "split screen meja + suratObligasi + konfeti",
+      "tebe": "REAKSI 1: hormat kaku menerima surat, senyum canggung"
+    },
+    {
+      "no": 5,
+      "narasi": "Yang nyuruh? Menteri Keuangan, Sjafruddin Prawiranegara. Uang yang dia GUNTING termasuk uang De Javasche Bank.",
+      "teks_layar": "MENTERI KEUANGAN",
+      "visual": "The certificate flies at the camera and covers it, revealing a 1950 office in sepia: a faceless silhouette of a man in a 1950s suit and a black peci-style cap (no recognisable face) holds the giant red scissors like a pointer; behind him a stack of fictional banknotes with a plain generic bank symbol (not the real De Javasche Bank logo); Tebe peeks from behind a filing cabinet; camera slowly arcs around the silhouette; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.1,
+      "set": "kantor 1950 sepia + siluetBertopi (pakai ulang) + gunting + tumpukan uangFiktif",
+      "tebe": "mengintip dari balik lemari arsip"
+    },
+    {
+      "no": 6,
+      "narasi": "Anehnya... bank itu KELAK dia pimpin sendiri. Satu-satunya orang Indonesia di kursi itu. Lalu jadi Gubernur Bank Indonesia PERTAMA.",
+      "teks_layar": "PRESIDEN DJB → GUBERNUR BI",
+      "visual": "The silhouette puts the scissors in his pocket and walks along a street toward a grand GENERIC colonial-era bank building (white columns, not a replica of any real building); the doors open with light pouring out and he enters; the scene morphs into a big leader's chair in an office with a nameplate left blank; text overlay later added in code; Tebe follows behind, freezes, and his '?' cowlick snaps into a '!' with a jaw-drop; camera cranes up the building facade; flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.7,
+      "set": "jalan 1950 + gedungBankKolonial (BARU, generik) + kursi pimpinan",
+      "tebe": "REAKSI 2: jambul '?' jadi '!', melongo"
+    },
+    {
+      "no": 7,
+      "narasi": "Tapi kenapa HARUS digunting? Waktu itu uang beredar campur-campur, dan jumlahnya KEBANYAKAN. Uang banyak, barang dikit, harga NAIK. Kayak satu kampung rebutan sepiring GORENGAN. Jadi, gunting langsung NGURANGIN uang beredar.",
+      "teks_layar": "UANG KEBANYAKAN",
+      "visual": "Part 1: a big balance scale; on one side a towering wobbly pile of mixed fictional banknotes in three different colours, on the other a few small goods (rice sack, cooking oil bottle, eggs, all unbranded); price tags above the goods tick upward. Part 2 (mid-scene cut, around 'gorengan'): a single plate of gorengan on a warung table with MANY faceless hands reaching for it at once, a price tag on the plate spinning upward; Tebe squeezes in among the hands, laughing. Part 3: the giant scissors snip the tall money pile down and the scale levels out; flat style, no logos, no text in the image except code price tags.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 12.6,
+      "set": "timbangan (pakai ulang) + labelHarga (pakai ulang) → piring gorengan warung + banyak tangan → gunting memangkas tumpukan",
+      "tebe": "ikut berebut gorengan, tertawa"
+    },
+    {
+      "no": 8,
+      "narasi": "Nah, nilai uang dipangkas begini namanya SANERING. Beda sama redenominasi: seribu rupiah jadi satu rupiah, tapi nilainya NGGAK turun.",
+      "teks_layar": "SANERING ≠ REDENOMINASI",
+      "visual": "The sepia palette smoothly shifts into modern bright colours; two fictional banknotes side by side on a clean desk: on the LEFT, a note whose value badge is snipped in half by the scissors (labelled later in code); on the RIGHT, an odometer counter rolls from 1.000 down to 1 and stops with a 'ding' while a small price tag beside it shrinks by the same proportion (value stays equal); Tebe stands in the middle pointing left then right like a referee; camera slides between them; flat style, neutral, no text in the image except code numbers.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.3,
+      "set": "meja masa kini + uangFiktif + odometer (pakai ulang) + labelHarga",
+      "tebe": "seperti wasit menunjuk kiri lalu kanan"
+    },
+    {
+      "no": 9,
+      "narasi": "Jadi Gunting Sjafruddin itu nyata: kiri jadi setengah, kanan jadi UTANG. Dan ternyata, memang begitu. Kirim ke temanmu yang yakin uang digunting cuma KIASAN. Sekarang cek dompetmu... masih UTUH, kan?",
+      "teks_layar": "MASIH UTUH, KAN?",
+      "visual": "Back in the bright modern bedroom from scene 1; Tebe holds the yellow left half in one hand and the folded certificate in the other, shrugs and winks at the camera, mimes sending a message on a phone; then he picks up his own brown leather wallet, slowly opens it and peeks inside suspiciously, and the giant red scissors start to slide into frame again, freezing in exactly the same composition as the opening shot (for the loop); flat style, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 13.0,
+      "catatan_loop": "Kalimat terakhir ('Sekarang cek dompetmu... masih UTUH, kan?') menyambung ke kalimat pertama 'Bayangin, uang di dompetmu disuruh digunting...'; frame akhir = frame pembuka (dompet terbuka, gunting masuk). Yoga: outro sependek mungkin, tanpa jeda kosong.",
+      "set": "kamar pagi masa kini + dompetKulit + gunting (loop ke adegan 1)",
+      "tebe": "mengedip, kirim pesan, lalu mengintip dompet curiga"
+    }
+  ]
+}
