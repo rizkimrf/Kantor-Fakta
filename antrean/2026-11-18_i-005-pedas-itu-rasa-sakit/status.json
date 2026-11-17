@@ -1,9 +1,20 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "i-005 pedas itu rasa sakit",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
-    {"tahap": "ide", "oleh": "Laras", "tanggal": "2026-11-17", "hasil": "riset.md selesai, skor Faktor Ternyata 9/10; kejutan kedua: burung tidak kepedasan (Tewksbury & Nabhan, Nature 2001); tanpa klaim kesehatan"}
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "tanggal": "2026-11-17",
+      "hasil": "riset.md selesai, skor Faktor Ternyata 9/10; kejutan kedua: burung tidak kepedasan (Tewksbury & Nabhan, Nature 2001); tanpa klaim kesehatan"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "tanggal": "2026-11-17",
+      "hasil": "LANJUT skor 17/20; rencana_marketing.md + seo.md (kata kunci 'pedas itu rasa apa'); slot 19 Nov 18.00; hook tebak-dulu + share identitas; pengarah ke I-020"
+    }
   ],
   "masalah": null
 }

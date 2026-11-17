@@ -1,9 +1,18 @@
 {
-  "tahap": "pilih",
-  "topik": "i-016 gunting sjafruddin",
-  "dibuat": "2026-11-18T05:43",
-  "riwayat": [
-    {"tahap": "ide", "oleh": "Laras", "hasil": "riset.md selesai, skor FT 8/10; tanggal/tenor/ambang ditandai diperdebatkan; teks primer BI belum terbuka (host diblokir)"}
-  ],
-  "masalah": null
+ "tahap": "naskah",
+ "topik": "i-016 gunting sjafruddin",
+ "dibuat": "2026-11-18T05:43",
+ "riwayat": [
+  {
+   "tahap": "ide",
+   "oleh": "Laras",
+   "hasil": "riset.md selesai, skor FT 8/10; tanggal/tenor/ambang ditandai diperdebatkan; teks primer BI belum terbuka (host diblokir)"
+  },
+  {
+   "tahap": "pilih",
+   "oleh": "Raka",
+   "hasil": "LANJUT skor 15/20; rencana_marketing.md + seo.md; slot 20 Nov 13.00 WITA; hook tebak-dulu, share identitas, kejutan kedua 25-35 dtk"
+  }
+ ],
+ "masalah": null
 }
