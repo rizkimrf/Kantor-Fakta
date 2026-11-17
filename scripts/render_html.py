@@ -172,7 +172,7 @@ def rakit_audio(folder: Path, kerja: Path, D: float, mulai: float, efek, musik, 
                        f"volume={float(e.get('vol', 0.3))},adelay={ms}|{ms}[e{n}]")
         else:
             inp += ["-i", str(f)]
-            fil.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,volume={float(e.get('vol', 0.5))},adelay={ms}|{ms}[e{n}]")
+            fil.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.02,volume={float(e.get('vol', 0.5))},adelay={ms}|{ms}[e{n}]")  # fade 20 ms: efek tidak "nyentak"
         lbl.append(f"[e{n}]")
         n += 1
     fil.append(f"{''.join(lbl)}amix=inputs={len(lbl)}:normalize=0:duration=first,atrim=0:{D:.3f}[mix]")
