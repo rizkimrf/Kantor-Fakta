@@ -24,3 +24,4 @@ __pycache__/
 *.pyc
 youtube_refresh_token.txt
 tiktok_refresh_token.txt
+antrean/*/final_ig.mp4
