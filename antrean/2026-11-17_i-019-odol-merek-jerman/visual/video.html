@@ -1,0 +1,264 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- I-019 Odol Itu Apa? — Yoga, 17 Nov 2026. Kontrak window.render(T), waktu mengikuti audio/waktu_kata.json.
+     Render: python scripts/render_html.py antrean/2026-11-17_i-019-odol-merek-jerman --musik-vol 0.2
+     Aturan: tanpa logo/label merek asli (Odol, Pepsodent), botol kumur BARU muncul setelah "awalnya nama merek" (bukan di sampul/hook),
+     Lingner hanya siluet bertopi dari belakang, teks hanya lewat kode. -->
+<script src="../../../studio-aset/tebe-rig.js"></script>
+<script src="../../../studio-aset/aset-set.js"></script>
+<script src="aset-odol.js"></script>
+<script src="../../../studio-aset/kerangka-shorts.js"></script>
+<style>*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#C9A270}
+.abs{position:absolute}#V{position:absolute;inset:0;overflow:hidden}</style></head><body><div id="V"></div>
+<script>
+const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp}=KS, P=ASET.PALET, A=ASET;
+// ---------- peta waktu: intro 2,4 dtk setelah hook ("...APA, sih?"); antar babak tanpa jeda ----------
+const W=KS.waktu(window.WAKTU_KATA||[],[{t:5.08,d:2.4}]);
+window.JEDA=W.JEDA;
+const J=W.JEDA, KK=W.kata, k=(w,n=1)=>W.cari(w,n);
+const KI=i=>KK[i]||{m:0,s:0};
+const cel=i=>KK[i]?(KK[i-1].s+KK[i].m)/2:0;
+const AKHIR=KK.length?KK[KK.length-1].s:70;
+window.DURASI=+(AKHIR+0.35).toFixed(2);
+window.MUSIK='belanja-ceria';
+const T_INTRO=W.vt(J[0].t)-0.02, t2=T_INTRO+0.42;
+const B3=cel(23),B4=cel(39),B5=cel(62),B6=cel(81),B7=cel(105),B8=cel(124),T_OUTRO=cel(138),B10=cel(155);
+
+// ---------- Tebe + properti di tangan/kepala (koordinat rig 400x520) ----------
+const KULIT='#F4C9A1',GRS='#1E1E1E';
+function tebeX(p,w,o={}){
+ let svg=tebeRigSVG(p).replace('width="400" height="520"','width="100%"');
+ const kep=s=>s?`<g transform="translate(0 ${(-(p.nafas||0)*2+p.kepalaAngguk).toFixed(2)}) rotate(${p.kepalaMiring.toFixed(2)} 200 300)">${s}</g>`:'';
+ if(o.badan){const m='stroke-width="2.5"/>\n  </g>';const i=svg.indexOf(m);if(i>0)svg=svg.slice(0,i+m.length-6)+o.badan+svg.slice(i+m.length-6);}
+ const i=svg.lastIndexOf(' </g>\n</g></svg>');
+ svg=svg.slice(0,i)+kep(o.kepala)+(o.tangan||'')+kep(o.kepalaAtas)+svg.slice(i);
+ const gl=o.gelap||0;
+ return `<div style="width:${w}px;filter:brightness(${(1-gl*.12).toFixed(3)}) saturate(${(1-gl*.1).toFixed(3)})${o.sepia?` sepia(${o.sepia})`:''};${o.cermin?'transform:scaleX(-1);':''}">${svg}</div>`}
+const kepal=H=>`<circle cx="${H[0].toFixed(1)}" cy="${H[1].toFixed(1)}" r="17" fill="${KULIT}" stroke="${GRS}" stroke-width="6"/>`;
+// sikat di tangan: ujung sikat di titik U, gagang menuju tangan H
+function sikatDiTangan(H,U,busaK=0){const a=Math.atan2(H[1]-U[1],H[0]-U[0])*180/Math.PI;return A.sikatGigi(U[0],U[1],.55,a,{busa:busaK})+kepal(H)}
+function sikatTegak(H,busaK=0){return A.sikatGigi(H[0],H[1]-118,.55,90,{busa:busaK})+kepal(H)}
+function tubeDiTangan(H,s=.34,o={}){return A.tubePasta(H[0],H[1]+150*s,s,o)+kepal(H)}
+function gelasDiTangan(H){return A.gelasKumur(H[0]+4,H[1]+46,.5,{isi:.6})+kepal(H)}
+const busaMulut=(k,T)=>k>0?A.busa(204,262,.95,T,k):'';
+function pipiGembung(k){if(k<=0)return '';const xl=200-112-14*k,xr=200+112+14*k,yb=302+10*k;
+ const d=`M${xl.toFixed(1)} 212 C${xl.toFixed(1)} ${(yb-30).toFixed(1)} 150 ${yb.toFixed(1)} 200 ${yb.toFixed(1)} C250 ${yb.toFixed(1)} ${xr.toFixed(1)} ${(yb-30).toFixed(1)} ${xr.toFixed(1)} 212`;
+ return `<g opacity="${cl(k*3).toFixed(3)}"><path d="${d}Z" fill="${KULIT}"/><path d="${d}" fill="none" stroke="${GRS}" stroke-width="6" stroke-linecap="round"/>
+ <ellipse cx="${(122-6*k).toFixed(1)}" cy="240" rx="${(20+10*k).toFixed(1)}" ry="${(13+7*k).toFixed(1)}" fill="#F58A7A" opacity=".85"/><ellipse cx="${(278+6*k).toFixed(1)}" cy="240" rx="${(20+10*k).toFixed(1)}" ry="${(13+7*k).toFixed(1)}" fill="#F58A7A" opacity=".85"/>
+ <ellipse cx="200" cy="262" rx="13" ry="9" fill="#7A2B2B" stroke="${GRS}" stroke-width="5"/></g>`}
+const celemek=`<path d="M158 322 L242 322 L258 404 Q200 416 142 404Z" fill="#FFFDF4" stroke="${GRS}" stroke-width="4"/><path d="M158 322 L176 300 M242 322 L224 300" stroke="#FFFDF4" stroke-width="7"/><rect x="178" y="352" width="44" height="26" rx="6" fill="#E9DFC6"/>`;
+
+// ---------- teks layar ----------
+const GRUP=KS.teks(W,{gabung:[['seribu delapan ratus sembilan puluh dua','1892']],ganti:{odus:'odous',pucini:'Puccini'},
+ tekan:['busa,','merek.','kumur','disikat.','disikat...','dikumur.','Dresden,','Jerman.','Lingner','menjualnya.','dibuat.','odus,','oleum,','minyak.','serius.','bendanya.','dugaan.','pucini,','lagu.','sendiri.','Pepsodent.','dua'],maks:3});
+const cap=(txt,T,a,b,o={})=>{const kk=oBack(lin(T,a-.05,a+.35),1.2)*(1-sinIO(lin(T,b-.3,b)));if(kk<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:${o.y||480}px;text-align:center;transform:rotate(${o.rot??-4}deg) scale(${kk.toFixed(3)});opacity:${Math.min(1,kk*1.4).toFixed(3)}"><span style="display:inline-block;padding:6px 36px 16px;border:9px solid ${o.warna||'#FFC93C'};border-radius:24px;background:${o.bg||'rgba(20,24,40,.42)'};font:italic 600 ${o.uk||104}px/1 Lora,serif;color:${o.warna||'#FFC93C'};text-shadow:0 8px 20px rgba(0,0,0,.5)">${txt}</span></div>`};
+const chip=(txt,x,y,a,warna='#FFC93C',uk=40)=>a<=0?'':`<g transform="translate(${x} ${y}) scale(${oBack(cl(a)).toFixed(3)})" opacity="${Math.min(1,a*2).toFixed(3)}"><rect x="${-txt.length*uk*.34-26}" y="${-uk*.95}" width="${txt.length*uk*.68+52}" height="${uk*1.4}" rx="${uk*.7}" fill="${warna}"/><text y="${uk*.18}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${uk}" letter-spacing="1" fill="#1E1E1E">${txt}</text></g>`;
+const tagAtas=(txt,T,a,b,warna='#FFF4DC')=>{const kk=oExp(lin(T,a,a+.5))*(1-sinIO(lin(T,b-.3,b)));if(kk<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:390px;text-align:center;opacity:${kk.toFixed(3)};transform:translateY(${((1-kk)*-30).toFixed(1)}px)"><span style="display:inline-block;font:700 96px Poppins;letter-spacing:2px;color:${warna};-webkit-text-stroke:12px #2A1A10;paint-order:stroke fill;text-shadow:0 8px 0 rgba(0,0,0,.3)">${txt}</span></div>`};
+const tanyaMelayang=(x,y,s,T,a)=>a<=0?'':`<g transform="translate(${x} ${(y+Math.sin(T*2.4)*14).toFixed(1)}) scale(${(s*oBack(cl(a))).toFixed(3)})" opacity="${cl(a*2).toFixed(3)}"><circle r="70" fill="#FFF4DC"/><circle r="70" fill="none" stroke="#2F5FD0" stroke-width="10"/><text y="34" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="100" fill="#2F5FD0">?</text></g>`;
+
+// ===== SAMPUL (frame 0) — poster jadul krem-sepia + biru kobalt: TUBE pasta gigi raksasa miring dekat kamera, label kosong ber-"?" lingkaran merah,
+//       Tebe hanya separuh wajah dari kanan, busa di mulut, curiga. TANPA botol kumur (jawaban tidak dibocorkan). Beda dari micin (teal-pink), ketchup (ungu), Toba (biru tua-oranye).
+const ATS=tebeAnimasi([{t:0,pose:'curiga'}],{benih:3});
+function sampulGambar(T){const t=T+1.2;let bg='';
+ for(let i=0;i<16;i++){const a=i*Math.PI/8+.1;bg+=`<path d="M470 1040 L${(470+2200*Math.cos(a)).toFixed(0)} ${(1040+2200*Math.sin(a)).toFixed(0)} L${(470+2200*Math.cos(a+.17)).toFixed(0)} ${(1040+2200*Math.sin(a+.17)).toFixed(0)}Z" fill="#2F5FD0" opacity=".10"/>`}
+ let blur='';[[150,560,.55,'#FFFFFF','#E2483E',-30],[900,600,.5,'#2F5FD0','#FFFFFF',24],[170,1580,.6,'#3FAE6A','#FFFFFF',18],[880,1720,.5,'#F28CB0','#FFFFFF',-16]].forEach(([x,y,s,w,a,r])=>blur+=A.tubePasta(x,y,s,{warna:w,aksen:a,rot:r}));
+ for(let i=0;i<14;i++)blur+=A.busa((i*173)%1080,420+(i*311)%1300,.8+(i%3)*.4,t+i,1);
+ const tb=ATS(.4);Object.assign(tb,{lihatX:-5,lihatY:2,alisK:-.7,alisMiringK:-.6,mataBuka:.5,kepalaMiring:6});
+ return `<svg class="abs" width="1080" height="1920"><defs><radialGradient id="sgk" cx=".45" cy=".55" r=".78"><stop offset="0" stop-color="#FBEFD2"/><stop offset=".6" stop-color="#E6CB98"/><stop offset="1" stop-color="#B98E58"/></radialGradient>
+ <radialGradient id="sgg" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/><stop offset="1" stop-color="#FFF6DA" stop-opacity="0"/></radialGradient>
+ <filter id="sgt"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" seed="4"/><feColorMatrix values="0 0 0 0 .45  0 0 0 0 .3  0 0 0 0 .15  0 0 0 .5 0"/></filter></defs>
+ <rect width="1080" height="1920" fill="url(#sgk)"/>${bg}<rect width="1080" height="1920" filter="url(#sgt)" opacity=".35"/>
+ <g style="filter:blur(10px)" opacity=".75">${blur}</g>
+ <rect x="46" y="236" width="988" height="1444" rx="24" fill="none" stroke="#2F5FD0" stroke-width="10" opacity=".55"/><rect x="70" y="260" width="940" height="1396" rx="16" fill="none" stroke="#C9A050" stroke-width="4" opacity=".7"/>
+ <ellipse cx="470" cy="1030" rx="430" ry="520" fill="url(#sgg)"/>
+ <g transform="translate(14 22)" opacity=".25">${A.tubePasta(470,1300,2.05,{rot:-24})}</g>
+ ${A.tubePasta(470,1290,2.05,{rot:-24,tanya:1,aksen:'#2F5FD0',tutup:'#E2483E'})}
+ ${A.busa(250,1520,1.6,t,1)}${A.busa(330,1600,1.1,t+1,1)}</svg>
+ <div class="abs" style="left:380px;top:690px">${tebeX(tb,1300,{kepalaAtas:busaMulut(1,t)})}</div>
+ <svg class="abs" width="1080" height="1920"><defs><radialGradient id="sv" cx=".5" cy=".52" r=".75"><stop offset=".55" stop-color="#2A1A08" stop-opacity="0"/><stop offset="1" stop-color="#2A1A08" stop-opacity=".6"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#sv)"/></svg>`}
+function judulHook(T){const kS=k('sih?');const a=1-sinIO(lin(T,kS.s+.05,kS.s+.4));if(a<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:268px;text-align:center;opacity:${a.toFixed(3)};font:700 150px/1.02 Poppins;letter-spacing:-3px;color:#fff;-webkit-text-stroke:20px #14182A;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.35)">ODOL ITU<br><span style="color:#5B8CFF">APA?</span></div>`}
+
+// ===== B1 HOOK — kamar mandi pagi: Tebe sikat gigi, busa bertambah, MEMBEKU di "tiba-tiba", melirik tube; kamera zoom ke tube di "odol itu APA"
+const KT1=KI(3).m, KO1=KI(5).m;
+const AH=tebeAnimasi([{t:0,pose:'netral'},{t:KT1-.05,pose:'curiga',transisi:.35}],{benih:4});
+function tebeSikat(T,anim,o={}){ // berlaku di hook & loop: tangan kanan menyikat, berhenti halus saat membeku
+ const p=anim(T), bk=o.beku??0, osc=Math.sin(T*15)*10*(1-bk);
+ p.tanganN=[248+osc,262+Math.sin(T*15+1)*3*(1-bk)];p.bentukN='kepal';p.tekukN=1;p.mulutBuka=0;
+ if(o.lirik!=null){p.lihatX=lerp(p.lihatX,5,o.lirik);p.lihatY=lerp(p.lihatY,4,o.lirik)}
+ return {p,tangan:sikatDiTangan(p.tanganN,[208,258],0),kepala:busaMulut(o.busa??1,T)};}
+function setHook(T){const p=P.siang,zm=ioS(lin(T,KO1-.35,KO1+.5)),z=1.04+.04*ioS(lin(T,0,KO1))+.42*zm, ox=lerp(450,830,zm), oy=lerp(1100,1180,zm);
+ const bg=A.kamarMandi(1080,1920,p,T,{meja:1260,cerminX:470,jendelaX:150,rakX:900,handukX:-200});
+ const r=tebeSikat(T,AH,{beku:ioS(lin(T,KT1-.1,KT1+.25)),lirik:ioS(lin(T,KT1,KT1+.4)),busa:.35+.65*ioS(lin(T,0,1.3))});
+ const tq=oBack(lin(T,KO1+.15,KO1+.55),1.2);
+ return `<div class="abs" style="inset:0;transform:scale(${z.toFixed(4)});transform-origin:${ox.toFixed(1)}px ${oy.toFixed(1)}px"><svg class="abs" width="1080" height="1920">${bg}</svg>
+ <div class="abs" style="left:60px;top:${(770+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(r.p,560,{tangan:r.tangan,kepalaAtas:r.kepala})}</div>
+ <svg class="abs" width="1080" height="1920"><rect x="0" y="1260" width="1080" height="660" fill="#F2F0EA"/><rect x="0" y="1260" width="1080" height="24" fill="#FFFFFF"/><rect x="0" y="1284" width="1080" height="640" fill="#7FB7B0" opacity=".9"/>
+ ${A.wastafel(620,1262,1.0,p)}${A.gelasKumur(150,1262,.7,{isi:.5})}${A.tubePasta(830,1262-92*.62,.62,{rot:-8,tanya:tq})}</svg></div>`}
+
+// ===== B2 KAMAR MANDI dekat — sikat dicabut dari mulut, ditatap; "?" melayang di atas tube; "nggak buat DISIKAT" → sikat dicoret
+const KP2=KI(16).m, KD2=KI(22).m;
+const AG=tebeAnimasi([{t:0,pose:'curiga'},{t:KI(10).m,pose:'berpikir',transisi:.4},{t:KP2,pose:'penasaran',transisi:.35},{t:KD2-.1,pose:'kaget',transisi:.22}],{benih:5});
+function setDekat(T){const p=P.siang,u=T-t2,orb=Math.sin(u*.45)*60,z=1.3+ioS(lin(u,0,6.5))*.12;
+ const bg=A.kamarMandi(1300,1920,p,T,{meja:1300,cerminX:520,jendelaX:120,rakX:1080,handukX:-200});
+ const pa=AG(T), tarik=ioS(lin(T,t2+.1,t2+1.0));
+ pa.tanganN=[lerp(248,318,tarik),lerp(262,250,tarik)];pa.bentukN='kepal';pa.tekukN=1;
+ pa.lihatX=lerp(pa.lihatX,6,tarik);pa.lihatY=lerp(pa.lihatY,-3,tarik);
+ const busaK=1-.7*tarik;
+ const silang=lin(T,KD2-.15,KD2+.35);
+ const tangan=sikatTegak(pa.tanganN,.8)+(silang>0?`<g transform="translate(${pa.tanganN[0]} ${pa.tanganN[1]-100})" opacity="${cl(silang*2).toFixed(3)}"><circle r="${(78*oBack(silang)).toFixed(1)}" fill="none" stroke="#E2232E" stroke-width="14"/><path d="M${(-55*oBack(silang)).toFixed(1)} ${(55*oBack(silang)).toFixed(1)} L${(55*oBack(silang)).toFixed(1)} ${(-55*oBack(silang)).toFixed(1)}" stroke="#E2232E" stroke-width="14" stroke-linecap="round"/></g>`:'');
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(${(-110+orb).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:600px 1150px"><svg class="abs" width="1300" height="1920">${bg}</svg>
+ <div class="abs" style="left:150px;top:${(800+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,560,{tangan,kepalaAtas:busaMulut(busaK,T)})}</div>
+ <svg class="abs" width="1300" height="1920"><rect x="0" y="1300" width="1300" height="620" fill="#F2F0EA"/><rect x="0" y="1300" width="1300" height="24" fill="#FFFFFF"/><rect x="0" y="1324" width="1300" height="600" fill="#7FB7B0" opacity=".9"/>
+ ${A.wastafel(720,1302,1.0,p)}${A.tubePasta(880,1302-92*.62,.62,{rot:-8,tanya:1})}${tanyaMelayang(880,1000,.9,T,lin(T,t2+.6,t2+1.1))}</svg></div>`}
+
+// ===== B3 MATCH-CUT tube → botol kumur kuno di meja apotek; palet modern → sepia; Tebe berkumur lalu MENYEMBUR (canda)
+const KM3=KI(28).m,KDk=KI(38).m,KJd=KI(34).m, SEMBUR=KI(38).s+.25;
+const AB=tebeAnimasi([{t:0,pose:'kaget'},{t:B3+1.4,pose:'penasaran',transisi:.4},{t:KM3,pose:'menjelaskan',transisi:.35},{t:KJd,pose:'netral',transisi:.35},{t:KDk-.1,pose:'netral',transisi:.3},{t:SEMBUR-.05,pose:'kaget',tanda:'!',transisi:.18,loncat:true}],{benih:6});
+function setApotekKumur(T){const u=T-B3,mix=ioS(lin(u,.1,1.4)),z=1.55-.45*ioS(lin(u,.2,2.6))+.06*ioS(lin(u,2.6,8)),pan=lerp(0,-60,ioS(lin(u,1,8)));
+ const bgA=A.kamarMandi(1300,1920,P.siang,T,{meja:1300,cerminX:520,jendelaX:120,rakX:1080,handukX:-200}), bgB=A.apotekJadul(1300,1920,P.siang,T,{meja:1300,jendelaX:1050,lampuX:640});
+ const objX=880,objY=1302;
+ const tube=A.tubePasta(objX,objY-92*.62,.62,{rot:-8*(1-mix),tanya:1-mix}), botol=A.botolKumurJadul(objX,objY,lerp(.6,.95,mix),{kilau:lin(T,KM3-.2,KM3+.4)*(1-lin(T,KJd,KJd+1))});
+ // Tebe: masuk dari kiri, memegang gelas, berkumur (pipi gembung) lalu menyembur
+ const pa=AB(T), mas=ioS(lin(u,.9,2.0)), gelas=ioS(lin(T,KJd-.3,KJd+.3)), minum=ioS(lin(T,KDk-.35,KDk+.1)), gembung=ioS(lin(T,KDk,KDk+.3))*(1-ioS(lin(T,SEMBUR-.04,SEMBUR+.12)));
+ if(gelas>0){pa.tanganK=[lerp(pa.tanganK[0],150,gelas),lerp(pa.tanganK[1],lerp(330,250,minum)*(1),gelas)];pa.bentukK='kepal';pa.tekukK=-1}
+ const goyang=gembung*Math.sin(T*22)*3; pa.kepalaMiring+=goyang;
+ let semb='';const sp=lin(T,SEMBUR,SEMBUR+.8);if(sp>0&&sp<1)for(let i=0;i<14;i++){const an=-.5+i*.07,d=sp*(340+i*22);semb+=`<circle cx="${(560+Math.cos(an)*d).toFixed(1)}" cy="${(1080+Math.sin(an)*d+sp*sp*260).toFixed(1)}" r="${(12+(i%3)*6)*(1-sp*.6)}" fill="#9AD0E8" opacity="${(1-sp).toFixed(3)}"/>`}
+ const tangan=gelas>0?gelasDiTangan(pa.tanganK):'';
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(${(-110+pan).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:${objX}px 1150px">
+ <svg class="abs" width="1300" height="1920"><g opacity="${(1-mix).toFixed(3)}">${bgA}</g><g opacity="${mix.toFixed(3)}">${bgB}</g>${A.timbanganKuningan(250,1302,.9,T)}${A.labu(450,1302,.55,{isi:'#9AD0E8'})}</svg>
+ <div class="abs" style="left:${lerp(-200,250,mas).toFixed(1)}px;top:${(800+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,520,{tangan,kepalaAtas:pipiGembung(gembung),sepia:(.25*mix).toFixed(2)})}</div>
+ <svg class="abs" width="1300" height="1920"><rect x="0" y="1300" width="1300" height="620" fill="${mix>.5?'#7A4E2C':'#F2F0EA'}" opacity="0"/>
+ <g opacity="${(1-mix).toFixed(3)}"><rect x="0" y="1300" width="1300" height="620" fill="#F2F0EA"/><rect x="0" y="1324" width="1300" height="600" fill="#7FB7B0" opacity=".9"/></g>
+ <g opacity="${mix.toFixed(3)}"><rect x="0" y="1300" width="1300" height="620" fill="#7A4E2C"/><rect x="0" y="1300" width="1300" height="26" fill="#9A6A3E"/></g>
+ <g opacity="${(1-mix).toFixed(3)}">${tube}</g><g opacity="${mix.toFixed(3)}">${botol}</g>${semb}
+ ${chip('MEREK OBAT KUMUR',objX-240,690,lin(T,KM3+.05,KM3+.4)*(1-lin(T,KJd-.2,KJd+.1)),'#FFC93C',44)}
+ ${chip('DRESDEN, JERMAN',objX-240,780,lin(T,KI(32).m,KI(32).m+.35)*(1-lin(T,KJd-.2,KJd+.1)),'#9ACAF0',40)}</svg></div>
+ ${cap('bukan disikat…',T,KI(35).m,KDk-.05,{y:480,uk:96,warna:'#FFF4DC'})}${cap('tapi DIKUMUR!',T,KDk,B4-.05,{y:480,uk:110,rot:3})}`}
+
+// ===== B4 APOTEK DRESDEN 1892 — kamera menyusuri rak; siluet bertopi (dari belakang) menata botol di etalase; Tebe bercelemek ikut menata;
+//       "yang dijual pertama obat KUMUR" → botol bersinar; "pasta giginya juga DIBUAT" → tube kecil meluncur masuk (pop)
+const KTh=KI(39).m,KLg=KI(49).m,KJl=KI(51).m,KPt=KI(54).m,KPs=KI(58).m,KDb=KI(61).m;
+const AA=tebeAnimasi([{t:0,pose:'penasaran'},{t:KLg,pose:'menjelaskan',transisi:.35},{t:KJl+.2,pose:'bangga',transisi:.35},{t:KPt,pose:'menghitung',transisi:.35},{t:KPs+.15,pose:'kaget',transisi:.2},{t:KDb+.2,pose:'tertawa',transisi:.3}],{benih:7});
+function setApotek(T){const u=T-B4,cam=-40-ioS(lin(u,0,4.2))*240-ioS(lin(T,KPt-.4,KDb+.2))*120,z=1.04+.1*ioS(lin(T,KPt-.5,KPt+.6));
+ let s=A.apotekJadul(1500,1920,P.siang,T,{meja:1330,jendelaX:1260,lampuX:760});
+ s+=A.timbanganKuningan(160,1330,.8,T);
+ // etalase: botol muncul satu per satu (ditata)
+ const nb=6;for(let i=0;i<nb;i++){const tt=KLg-.4+i*.42,a=ioS(lin(T,tt,tt+.35)),gl=lin(T,KPt-.1,KPt+.4)*(1-lin(T,KDb+.6,KDb+1.4));
+  if(a>0)s+=`<g opacity="${a.toFixed(3)}" transform="translate(0 ${((1-a)*-60).toFixed(1)})">${A.botolKumurJadul(640+i*118,1330,.5,{kilau:gl*.8})}</g>`}
+ const tb=lin(T,KPs-.1,KPs+.45);if(tb>0)s+=`<g transform="translate(${lerp(1600,1150,oCub(tb)).toFixed(1)} 0)">${A.tubePasta(0,1400-92*.5,.5,{rot:lerp(-40,0,oCub(tb))})}</g>`;
+ s+=chip('OBAT KUMUR DULUAN',920,1010,lin(T,KPt+.1,KPt+.45),'#FFC93C',42)+chip('PASTA GIGI JUGA',1150,1110,lin(T,KDb-.1,KDb+.25),'#9ACAF0',38);
+ const tar=ioS(lin(T,KLg,KLg+.5))*(1-ioS(lin(T,KJl+.3,KJl+.9)));
+ const pa=AA(T);
+ return `<div class="abs" style="left:0;top:0;width:1500px;height:1920px;transform:translateX(${cam.toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:900px 1250px"><svg class="abs" width="1500" height="1920">${s}
+ <g opacity=".92">${A.siluetBertopi(470,1700,1.0,{warna:'#4A3428',tarik:tar,arah:1})}</g></svg>
+ <div class="abs" style="left:${lerp(1000,820,ioS(lin(u,0,1.2))).toFixed(1)}px;top:${(1110+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,300,{badan:celemek,sepia:.15})}</div>
+ <svg class="abs" width="1500" height="1920"><rect x="0" y="1520" width="1500" height="400" fill="#6A4426"/><rect x="0" y="1520" width="1500" height="20" fill="#8A5A34"/></svg></div>`}
+
+// ===== B5 HALAMAN YUNANI — kartu ODOUS (tiang Yunani + gigi) & OLEUM (lampu minyak Romawi) meluncur, bertemu & menyatu: "MINYAK GIGI"; Tebe datar "iya, serius"
+const KOd=KI(67).m,KOl=KI(72).m,KKr=KI(76).m,KMy=KI(77).m,KIy=KI(79).m;
+const AY=tebeAnimasi([{t:0,pose:'menjelaskan'},{t:KOd-.1,pose:'menghitung',transisi:.3},{t:KMy-.2,pose:'kaget',transisi:.2},{t:KIy-.05,pose:'netral',transisi:.35}],{benih:8});
+function setYunani(T){const u=T-B5,z=1.06+ioS(lin(u,0,5))*.06+ioS(lin(T,KIy-.2,KIy+.8))*.14,ty=-ioS(lin(T,KIy-.2,KIy+.8))*60;
+ let s=A.halamanYunani(1300,1920,P.siang,T,{lantai:1380});
+ const ka=ioS(lin(T,KOd-.3,KOd+.4)),kb=ioS(lin(T,KOl-.3,KOl+.4)),jn=ioS(lin(T,KKr-.1,KKr+.55)),satu=lin(T,KMy-.1,KMy+.3);
+ const xa=lerp(-300,lerp(410,560,jn),ka),xb=lerp(1600,lerp(890,740,jn),kb), ya=830+Math.sin(T*1.6)*8, yb=830+Math.sin(T*1.6+1)*8;
+ const gigi=`<g transform="translate(0 -70)">${A.ikonGigi(0,0,1.1,'#FFFFFF')}</g>`, minyak=`<g transform="translate(0 -60)">${A.tetesMinyak(0,0,1.15,'#E8B84A')}</g>`;
+ s+=`<g opacity="${(1-satu).toFixed(3)}">${A.kartuKata(xa,ya,.92,'ODOUS',{sub:'Yunani: gigi',warna:'#9ACAF0',ikon:gigi,rot:lerp(-8,-3,jn)})}${A.kartuKata(xb,yb,.92,'OLEUM',{sub:'Latin: minyak',warna:'#FFD98A',ikon:minyak,rot:lerp(8,3,jn)})}</g>`;
+ if(satu>0)s+=`<g opacity="${cl(satu*1.5).toFixed(3)}">${A.kartuKata(650,830,lerp(.9,1.12,oBack(satu,1.2)),'MINYAK GIGI',{sub:'odous + oleum',warna:'#FFF4DC',lebar:640,uk:84,ikon:`<g transform="translate(-80 -60)">${A.ikonGigi(0,0,.9,'#9ACAF0')}</g><g transform="translate(80 -50)">${A.tetesMinyak(0,0,.95,'#E8B84A')}</g>`})}</g>
+ <circle cx="650" cy="830" r="${(420*lin(T,KMy-.05,KMy+.6)).toFixed(1)}" fill="none" stroke="#FFC93C" stroke-width="${(18*(1-lin(T,KMy,KMy+.6))).toFixed(1)}" opacity="${(1-lin(T,KMy,KMy+.6)).toFixed(3)}"/>`;
+ s+=A.lampuMinyakRomawi(1080,1380,1.0,T);
+ const pa=AY(T);const ser=lin(T,KIy,KI(80).s);if(ser>0){pa.kepalaAngguk+=Math.sin(ser*Math.PI*3)*8;pa.mataBuka=Math.min(pa.mataBuka,.55);pa.senyum=0;pa.lihatX=0;pa.lihatY=0}
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translate(-110px,${ty.toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:420px 1300px"><svg class="abs" width="1300" height="1920">${s}</svg>
+ <div class="abs" style="left:250px;top:${(1110+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,330)}</div></div>
+ `}
+
+// ===== B6 WARUNG JADUL SIANG — rak penuh tube aneka warna (label kosong); tube PERTAMA bersinar, gelembung sebutannya menular ke semua tube; "masih DUGAAN"
+const KTr=KI(81).m,KMr=KI(89).m,KDl=KI(93).m,KBn=KI(97).m,KDg=KI(104).m;
+const AW=tebeAnimasi([{t:0,pose:'bingung'},{t:KMr,pose:'menjelaskan',transisi:.35},{t:KBn+.3,pose:'penasaran',transisi:.35},{t:KDg-.15,pose:'angkatBahu',transisi:.3}],{benih:9});
+function setWarung(T){const p=P.siang,u=T-B6,cam=-60-ioS(lin(u,0,8))*300;
+ let s=A.rakWarungJadul(1500,1920,p,T,{lantai:1360});
+ // gelembung "sebutan" (ikon tube kecil) — mulai dari tube pertama lalu menular
+ const pos=[];for(let j=0;j<3;j++)for(let i=0;i<11;i++)pos.push([90+i*120+(j%2)*30,1360-820+j*250-40-160]);
+ const awal=pos[12],sinar=lin(T,KDl-.3,KDl+.3);
+ if(sinar>0)s+=`<circle cx="${awal[0]}" cy="${awal[1]+70}" r="${(110*sinar).toFixed(1)}" fill="#FFF0A8" opacity="${(.55*sinar).toFixed(3)}" style="filter:blur(10px)"/>`;
+ const bub=(x,y,a)=>a<=0?'':`<g transform="translate(${x} ${y-60}) scale(${oBack(cl(a)).toFixed(3)})" opacity="${cl(a*2).toFixed(3)}"><path d="M-46 -40 Q-46 -66 -20 -66 L20 -66 Q46 -66 46 -40 L46 -4 Q46 20 20 20 L6 20 L-8 38 L-8 20 L-20 20 Q-46 20 -46 -4Z" fill="#FFFFFF"/>${A.tubePasta(0,-6,.13,{rot:90})}</g>`;
+ pos.forEach(([x,y],i)=>{const d=Math.hypot(x-awal[0],y-awal[1]);const tt=(i===12?KDl:KBn-.4+d/900);s+=bub(x,y,lin(T,tt,tt+.3))});
+ const pa=AW(T);
+ return `<div class="abs" style="left:0;top:0;width:1500px;height:1920px;transform:translateX(${cam.toFixed(1)}px)"><svg class="abs" width="1500" height="1920">${s}</svg>
+ <div class="abs" style="left:${(560-cam*.35).toFixed(1)}px;top:${(1090+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,330)}</div>
+ <svg class="abs" width="1500" height="1920"><rect x="0" y="1470" width="1500" height="450" fill="#8E5E32"/><rect x="0" y="1470" width="1500" height="22" fill="#C99460"/></svg></div>
+ ${cap('masih DUGAAN',T,KDg-.1,B7-.05,{y:470,uk:104,warna:'#FFF4DC',rot:-5})}`}
+
+// ===== B7 RUANG TAMU SEPIA — poster iklan jadul (botol polos di tengah), gramofon memutar lagu, not balok berputar; "PUCCINI?!"; Tebe dansa kecil
+const KIk=KI(106).m,KPc=KI(114).m,KLu=KI(118).m,KOb=KI(119).m;
+const AP=tebeAnimasi([{t:0,pose:'penasaran'},{t:KIk+.3,pose:'menjelaskan',transisi:.35},{t:KPc-.1,pose:'kaget',tanda:'!',transisi:.2},{t:KLu,pose:'sorak',transisi:.3},{t:KOb+.3,pose:'tertawa',transisi:.3},{t:KOb+1.0,pose:'sorak',transisi:.3}],{benih:10});
+function setPoster(T){const u=T-B7,z=1.1-ioS(lin(u,0,7))*.08,sw=Math.sin(T*2.6)*10*lin(T,KLu-.3,KLu+.3);
+ let s=A.ruangTamuSepia(1300,1920,T,{lantai:1380,jendelaX:180});
+ const pk=ioS(lin(u,0,.9));
+ const isiPoster=`${A.botolKumurJadul(0,170,.9,{kilau:.5})}<g transform="translate(0 -230)">${[0,1,2,3,4,5,6].map(i=>`<path d="M0 0 L${(Math.cos(-Math.PI+i*Math.PI/6)*190).toFixed(1)} ${(Math.sin(-Math.PI+i*Math.PI/6)*190).toFixed(1)}" stroke="#2F5FD0" stroke-width="10" opacity=".35" stroke-linecap="round"/>`).join('')}</g>`;
+ s+=A.posterJadul(640,830,1.0*lerp(.94,1,pk),T,{isi:isiPoster,w:500,h:700});
+ s+=`<rect x="900" y="1270" width="340" height="40" rx="8" fill="#6A4426"/><rect x="930" y="1310" width="24" height="200" fill="#5A3820"/><rect x="1186" y="1310" width="24" height="200" fill="#5A3820"/>`;
+ s+=A.gramofon(1070,1272,.95,T,{main:lin(T,KLu-1.2,KLu-.6)});
+ const nm=lin(T,KLu-.8,KLu-.3);if(nm>0)for(let i=0;i<8;i++){const q=((T*.35+i/8)%1),ang=i*.8+T*.6,x=1000+Math.cos(ang)*(120+q*260)-q*300,y=880-q*420+Math.sin(ang)*60;
+  s+=`<g opacity="${(nm*Math.sin(Math.PI*q)).toFixed(3)}">${A.notBalok(x,y,.9+.3*(i%2),['#2F5FD0','#E2483E','#1F8A8A','#C9A050'][i%4],i%2,Math.sin(T*2+i)*15)}</g>`}
+ const pa=AP(T);const dn=lin(T,KLu,KLu+.4);if(dn>0){pa.kepalaMiring+=Math.sin(T*6.3)*9*dn;pa.condong+=Math.sin(T*6.3)*4*dn;pa.tanganK=[pa.tanganK[0]+Math.sin(T*6.3)*18*dn,pa.tanganK[1]];pa.tanganN=[pa.tanganN[0]+Math.sin(T*6.3)*18*dn,pa.tanganN[1]]}
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(${(-110+sw).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:640px 1250px"><svg class="abs" width="1300" height="1920">${s}</svg>
+ <div class="abs" style="left:${(210+Math.sin(T*3.15)*20*dn).toFixed(1)}px;top:${(1110+Math.abs(Math.sin(T*6.3))*-16*dn+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,320,{sepia:.12})}</div></div>
+ ${cap('PUCCINI?!',T,KPc,KOb-.05,{y:470,uk:118,rot:-4})}${cap('punya LAGU sendiri',T,KOb+.05,B8-.05,{y:470,uk:92,warna:'#FFF4DC',rot:3})}`}
+
+// ===== B8 KEMBALI KE KAMAR MANDI — Tebe mengangkat tube dengan bangga; gelembung pikiran: botol kumur kuno → "nyangkut di tube kamar mandimu"
+const KJd8=KI(124).m,KNy=KI(133).m,KTb=KI(135).m;
+const AK=tebeAnimasi([{t:0,pose:'menjelaskan'},{t:KJd8+.3,pose:'bangga',transisi:.35},{t:KNy,pose:'semangat',transisi:.35}],{benih:11});
+function setPulang(T){const p=P.siang,u=T-B8,z=1.18-ioS(lin(u,0,5))*.1;
+ const bg=A.kamarMandi(1080,1920,p,T,{meja:1300,cerminX:470,jendelaX:150,rakX:900,handukX:-200});
+ const pa=AK(T),angk=ioS(lin(u,.1,.8));pa.tanganN=[lerp(pa.tanganN[0],318,angk),lerp(pa.tanganN[1],176,angk)];pa.bentukN='kepal';pa.tekukN=1;pa.lihatX=4;pa.lihatY=-4;
+ const gl=lin(T,KNy-.2,KTb+.3);
+ const tangan=(gl>0?`<circle cx="${pa.tanganN[0]}" cy="${pa.tanganN[1]}" r="${(140*gl).toFixed(1)}" fill="#FFF0A8" opacity="${(.5*gl).toFixed(3)}"/>`:'')+tubeDiTangan(pa.tanganN,.34);
+ const pk=ioS(lin(u,.5,1.1));
+ const piki=pk>0?`<g opacity="${pk.toFixed(3)}" transform="translate(760 690) scale(${(.6+.4*pk).toFixed(3)})"><circle cx="-170" cy="250" r="22" fill="#FFF4DC"/><circle cx="-120" cy="190" r="34" fill="#FFF4DC"/><ellipse cx="0" cy="0" rx="200" ry="170" fill="#FFF4DC"/><ellipse cx="0" cy="0" rx="180" ry="150" fill="#F3E2BC"/>${A.botolKumurJadul(0,120,.55,{})}</g>`:'';
+ return `<div class="abs" style="inset:0;transform:scale(${z.toFixed(4)});transform-origin:470px 1150px"><svg class="abs" width="1080" height="1920">${bg}</svg>
+ <div class="abs" style="left:40px;top:${(800+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,560,{tangan})}</div>
+ <svg class="abs" width="1080" height="1920"><rect x="0" y="1300" width="1080" height="620" fill="#F2F0EA"/><rect x="0" y="1300" width="1080" height="24" fill="#FFFFFF"/><rect x="0" y="1324" width="1080" height="600" fill="#7FB7B0" opacity=".9"/>
+ ${A.wastafel(640,1302,1.0,p)}${A.gelasKumur(860,1302,.7,{isi:.5})}${piki}</svg></div>`}
+
+// ===== OUTRO KHAS — "Dan ternyata, memang begitu." + CTA "kirim ke temanmu yang bilang 'ambil odol Pepsodent'"
+const AO=tebeAnimasi([{t:0,pose:'bangga'},{t:T_OUTRO+.3,pose:'bangga',tanda:'!'},{t:KI(142).m,pose:'menjelaskan',transisi:.35},{t:KI(152).m-.1,pose:'tertawa',transisi:.3}],{benih:14});
+function setOutro(T){return KS.outro(T,T_OUTRO,{anim:AO,cta:'Kirim ke temanmu yang bilang<br><span style="color:#FFC93C">“ambil odol Pepsodent”</span>',ctaMulai:KI(142).m-T_OUTRO-.1,sub:'…dia nyebut DUA merek sekaligus',subMulai:KI(150).m-T_OUTRO})}
+
+// ===== LOOP — "Besok pagi, dia pasti begini..." → kamar mandi, sikat gigi, busa, membeku persis seperti pembuka
+const AL=tebeAnimasi([{t:0,pose:'netral'},{t:KI(158).m,pose:'curiga',transisi:.4}],{benih:4});
+function setLoop(T){const p=P.siang,u=T-B10,z=1.12-.04*ioS(lin(u,0,2.2));
+ const bg=A.kamarMandi(1080,1920,p,T,{meja:1260,cerminX:470,jendelaX:150,rakX:900,handukX:-200});
+ const r=tebeSikat(T,AL,{beku:ioS(lin(T,KI(158).m-.1,KI(158).m+.3)),lirik:ioS(lin(T,KI(158).m,KI(158).m+.45)),busa:.35+.65*ioS(lin(u,0,1.2))});
+ return `<div class="abs" style="inset:0;transform:scale(${z.toFixed(4)});transform-origin:560px 1100px"><svg class="abs" width="1080" height="1920">${bg}</svg>
+ <div class="abs" style="left:60px;top:${(770+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(r.p,560,{tangan:r.tangan,kepalaAtas:r.kepala})}</div>
+ <svg class="abs" width="1080" height="1920"><rect x="0" y="1260" width="1080" height="660" fill="#F2F0EA"/><rect x="0" y="1260" width="1080" height="24" fill="#FFFFFF"/><rect x="0" y="1284" width="1080" height="640" fill="#7FB7B0" opacity=".9"/>
+ ${A.wastafel(620,1262,1.0,p)}${A.gelasKumur(150,1262,.7,{isi:.5})}${A.tubePasta(830,1262-92*.62,.62,{rot:-8})}</svg></div>`}
+
+const BABAK=[{a:0,f:setHook},{a:t2,f:setDekat,tr:'tanpa'},{a:B3,f:setApotekKumur,tr:'silang'},{a:B4,f:setApotek,tr:'dorong'},{a:B5,f:setYunani,tr:'geser'},
+ {a:B6,f:setWarung,tr:'dorong'},{a:B7,f:setPoster,tr:'geser'},{a:B8,f:setPulang,tr:'geser'},{a:T_OUTRO,f:setOutro,tr:'dorong'},{a:B10,f:setLoop,tr:'dorong'}];
+function labelBabak(T){return KS.label('PETUNJUKNYA',T,KI(16).m,B3-.1)+KS.label('AWALNYA…',T,B3+.3,B4-.1)+KS.label('APOTEK DRESDEN',T,B4+.3,B5-.1)
+ +KS.label('ASAL NAMANYA',T,B5+.3,B6-.1)+KS.label('KOK BISA?',T,B6+.3,B7-.1)+KS.label('IKLANNYA',T,B7+.3,B8-.1)+KS.label('JADI…',T,B8+.3,T_OUTRO-.1)}
+window.EFEK=[{t:KO1-.3,sfx:'whoosh',vol:.35},{t:T_INTRO+.02,sfx:'jingle',vol:.55},{t:KDk+.05,sfx:'gelembung',vol:.45},{t:SEMBUR,sfx:'tetes',vol:.5},
+ {t:KPs,sfx:'pop',vol:.4},{t:KMy-.05,sfx:'pop',vol:.45},{t:T_OUTRO+.35,sfx:'ding_ganda',vol:.5}];
+
+window.render=function(T){
+ let h=KS.komposisi(T,BABAK);
+ const intro=T>=T_INTRO+.3&&T<T_INTRO+2.4, outro=T>=T_OUTRO-.3&&T<B10+.3;
+ const ua=(T<T_INTRO+2.4)?1:lin(T,T_INTRO+2.4,T_INTRO+2.9);
+ h+=KS.vinyet(T,.3);
+ let lap=labelBabak(T);
+ if(T>k('sih?').s+.1&&!intro&&!outro)lap+=KS.teksLayar(T,GRUP,{y:1305});
+ lap+=KS.watermark(T,(T>1.2&&!intro&&!outro)?1:0);
+ if(lap)h+=`<div class="abs" style="inset:0;opacity:${ua.toFixed(3)}">${lap}</div>`;
+ h+=KS.intro(T,T_INTRO);
+ {const ui=T-T_INTRO;if(ui>1.55&&ui<2.4)h+=`<div class="abs" style="inset:0;opacity:${sinIO(lin(ui,1.55,2.38)).toFixed(3)}">${KS.komposisi(T,BABAK)}${KS.vinyet(T,.3)}</div>`;}
+ if(T>B4-.3&&T<KI(46).m+1.2)h+=tagAtas('DRESDEN, 1892',T,KTh,KI(49).m);
+ if(T<0.95){const kk=1-oCub(lin(T,.55,.95));h+=`<div class="abs" style="inset:0;opacity:${kk};transform:scale(${1+(1-kk)*.08})">${sampulGambar(T)}<div style="position:absolute;left:-210px;top:40px">${KS.logoKecil}</div></div>`;}
+ h+=judulHook(T);
+ h+=`<div class="abs" style="left:0;top:0;height:6px;background:#FFC93C;width:${(T/window.DURASI*1080).toFixed(1)}px"></div>`;
+ document.getElementById('V').innerHTML=h;
+};
+window.render(0);
+</script></body></html>
