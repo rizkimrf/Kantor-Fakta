@@ -14,11 +14,11 @@ Shorts = uji pasar. Video panjang = pendalaman BARU dari tema Shorts yang menang
    Maks 30% boleh memakai ulang visual/narasi Shorts (sebagai pengingat singkat, bukan inti). Rekap/kompilasi Shorts hanya darurat bila kuota tipis,
    dan tetap wajib ada narasi penghubung + pendalaman baru (konten yang hanya ditempel ulang berisiko dianggap "konten pakai ulang" dan bikin penonton yang sudah lihat Shorts cepat pergi).
 3. **5–7 bab** @ 1–2 menit, tiap bab satu kejutan/mata rantai.
-3. **Pembuka 0–30 dtk:** hook skenario "kamu" + janji jelas ("di menit terakhir ada yang paling bikin kaget") + kilasan 2–3 adegan terbaik. Tanpa intro panjang (logo ≤ 2 dtk).
-4. **Lingkaran terbuka:** urutkan bab dari menarik → paling mengejutkan di akhir; setiap akhir bab menggoda bab berikut ("tapi yang berikutnya lebih aneh…").
-5. **Penyegar tiap 30–60 dtk:** ganti sudut kamera/set, pertanyaan ke penonton, candaan Tebe, teks kejutan besar.
-6. **Penutup:** bayar janji, 1 pertanyaan pengalaman untuk komentar, layar akhir 20 dtk ke video panjang lain (bukan "terima kasih sudah menonton").
-7. **Chapter (timestamp) di deskripsi** + sampul 16:9 momen dramatis + judul memakai kata yang dicari.
+4. **Pembuka 0–30 dtk:** hook skenario "kamu" + janji jelas ("di menit terakhir ada yang paling bikin kaget") + kilasan 2–3 adegan terbaik. Tanpa intro panjang (logo ≤ 2 dtk).
+5. **Lingkaran terbuka:** urutkan bab dari menarik → paling mengejutkan di akhir; setiap akhir bab menggoda bab berikut ("tapi yang berikutnya lebih aneh…").
+6. **Penyegar tiap 30–60 dtk:** ganti sudut kamera/set, pertanyaan ke penonton, candaan Tebe, teks kejutan besar.
+7. **Penutup:** bayar janji, 1 pertanyaan pengalaman untuk komentar, layar akhir 20 dtk ke video panjang lain (bukan "terima kasih sudah menonton").
+8. **Chapter (timestamp) di deskripsi** + sampul 16:9 momen dramatis + judul memakai kata yang dicari.
 
 ## Produksi hemat (cek kuota tiap Jumat)
 - Narasi: ≥ 70% baru (± 7.000–9.000 huruf ElevenLabs ≈ 3.600–4.700 kredit per video). Aset/set visual dari Shorts boleh dipakai ulang untuk hemat waktu render; ceritanya yang baru.
