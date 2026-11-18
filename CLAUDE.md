@@ -44,6 +44,9 @@ Instagram tidak membayar per tayang; Reels yang di-crosspost ke Halaman Facebook
 
 Keputusan Bos 19 Nov: **tanpa iklan berbayar (100% organik) selama Nov–Des 2026** supaya data uji bersih; iklan baru dipertimbangkan tahun depan, hanya untuk video yang polanya sudah terbukti. Fokus Nov–Des: secepat mungkin memenuhi syarat monetisasi YouTube (bila memungkinkan, ajukan sebelum 1 Feb 2027 saat syarat masih 4.000 jam).
 
+Rencana pendapatan lanjutan (Bos, 19 Nov): affiliate & kerja sama brand baru dijajaki setelah channel besar; topik "cara kerja" dijaga netral merek sampai saat itu.
+Perlindungan channel (Bos, 19 Nov): TIDAK membuat channel cadangan (aturan YouTube: bila channel utama dihentikan, channel lain milik/menampilkan pemilik ikut dilarang). Yang dijaga: semua aset & video tersimpan di repo + Kantor Visual, musik/SFX/gambar hanya berlisensi atau buatan sendiri, fakta bersumber, tanpa nasihat kesehatan/keuangan/hukum, variasi antar-video (anti "konten berulang").
+
 ## Format gabungan & uji A/B (Bos, 19 Nov 2026) — pola menuju monetisasi
 Kekuatan kita dipertahankan, kekuatan akun pembanding (@barutahu.in) diterapkan: lihat `.claude/skills/naskah-viral/referensi/format-gabungan.md`.
 Jalur A "Kok Bisa Jalan?" (cara kerja benda sehari-hari, ≤ 90 dtk) slot 13.00 · Jalur B "Ternyata Begitu" (fakta sehari-hari, ≤ 60 dtk) slot 18.00.
