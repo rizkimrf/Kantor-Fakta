@@ -4,7 +4,7 @@ Sumber: rekomendasi YouTube untuk channel — tetap menonton 53–70% (target 75
 2. **Hook dari 26 tipe** (`.claude/skills/naskah-viral/referensi/hook-26.md`), narasi mulai ≤ 0,3 dtk, visual berubah tiap 2–3 dtk.
 3. **Akhir = loop + reaksi**: kalimat terakhir menyambung ke kalimat pertama + pertanyaan terbuka/pilih kubu + pemicu share bernuansa identitas.
 4. **Ide dekat sehari-hari** (lolos uji "pernah ngalamin") + pertanyaan pengalaman di akhir supaya penonton bercerita di komentar.
-5. **Format gabungan** (`.claude/skills/naskah-viral/referensi/format-gabungan.md`): 13.00 = jalur A "Kok Bisa Jalan?" (≤90 dtk), 18.00 = jalur B fakta (≤60 dtk). Isi `seri` di status.json.
+5. **Format gabungan** (`.claude/skills/naskah-viral/referensi/format-gabungan.md`): 13.00 = jalur A "Kok Bisa Jalan?" (≤90 dtk), 18.00 = jalur B fakta (≤60 dtk). Isi `seri` di status.json. Subtitle tetap gaya sekarang, posisi & ukuran disesuaikan per adegan agar tidak menutupi objek.
 Ukur tiap video: % tetap menonton, % rata-rata ditonton, share, komentar — bandingkan dengan video lama (68–89 dtk).
 
 # Evaluasi harian — 17 Nov 2026 (Supermetrics TikTok, 7 hari; YouTube & IG belum ditarik/data tertunda)

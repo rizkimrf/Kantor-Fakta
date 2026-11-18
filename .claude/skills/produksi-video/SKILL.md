@@ -15,7 +15,11 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 ## Format gabungan (Bos, 19 Nov) — detail `.claude/skills/naskah-viral/referensi/format-gabungan.md`
 - Visual MEMPERAGAKAN tiap kata (panah gaya, retak, aliran, penampang/x-ray). Satu dunia + kamera terus bergerak, sedikit potongan.
 - Tebe cameo 1–3 kali (reaksi kecil di zona aman atau tangan yang mengoperasikan benda); subjek memenuhi layar.
-- Subtitle 1–2 kata di tengah pita zona aman, mengikuti waktu kata, kata kunci berwarna aksen.
+- **Subtitle adaptif (Bos, 19 Nov):** gaya subtitle tetap seperti sekarang (2–4 kata per kelompok, mengikuti suara). Per adegan, pilih posisi
+  di dalam zona aman yang KOSONG dari objek inti: pita atas (y 260–420), tengah (y 900–1100) atau bawah (y 1250–1400).
+  Ukuran menyesuaikan ruang: normal 64–72 px; kecilkan sampai minimal 52 px bila ruang sempit; jangan pernah menutupi bagian yang
+  sedang diperagakan (panah, retak, aliran, wajah Tebe). Pindah posisi hanya saat ganti babak dan dengan fade 150 ms (tidak loncat-loncat).
+  Wajib kontur/bayangan gelap tipis agar terbaca di atas latar apa pun.
 - Detik terakhir: teks besar ajakan komentar 1 kata berkubu, lalu adegan kembali ke pembuka (loop).
 
 ## Kemulusan (wajib — detail: referensi/kemulusan.md)

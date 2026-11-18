@@ -20,7 +20,8 @@ Tujuan: menemukan pola yang TERBUKTI menaikkan views → monetisasi. Kekuatan ki
 4. **Satu dunia, kamera terus bergerak** — sedikit potongan adegan; perpindahan = kamera zoom/geser ke bagian lain di dunia yang sama.
 5. **Layar untuk subjek**: tanpa intro/logo; Tebe hanya muncul 1–3 kali sebagai reaksi kecil di pojok (zona aman) atau
    sebagai "tangan" yang mengoperasikan benda. Watermark kecil tetap.
-6. **Subtitle 1–2 kata di tengah, mengikuti suara**, kata kunci berwarna (aksen kuning/hijau). Tetap di pita zona aman.
+6. **Subtitle: TETAP gaya kita sekarang** (Bos, 19 Nov) — apa yang diucapkan muncul sebagai teks, 2–4 kata per kelompok mengikuti suara.
+   Yang diubah hanya **posisi & ukuran per adegan** supaya tidak menutupi objek/peragaan (lihat aturan subtitle adaptif di skill produksi-video).
 7. **Hook skenario "kamu"**: "Kalau kamu…", "Pernah merhatiin…?", "Coba perhatiin…" (tipe 5/14/18/26 di hook-26.md).
 8. **Ajakan komentar 1 kata berkubu/gengsi** — versi KITA (jangan menyalin "Insinyur/Anak Magang"):
    "Udah tahu? Komen MONTIR. Baru tahu? Komen MAGANG." · "Udah tahu? Komen SUHU. Baru tahu? Komen MURID." ·
