@@ -18,3 +18,4 @@ Buat ulang: `/usr/bin/python3 scripts/buat_audio_aset.py` (hasil identik, benih 
 | `musik/jenaka-ringan.wav` | 98 BPM, C–Am–F–G, marimba + bas petik + pad lembut, loop | latar video jenaka (I-009 durian) |
 | `musik/belanja-ceria.wav` | 108 BPM, D–Bm–G–A, marimba + bas petik + pad lembut, loop | latar video belanja/uang (I-015) |
 | `kres.wav` · `fwoosh.wav` · `alarm.wav` · `kicau.wav` | gigitan renyah · semburan api · "tiut-tiut" kecil · kicau pendek — sintesis `scripts/buat_sfx_pedas.py` (Yoga, 18 Nov 2026) | I-005 pedas |
+| `gunting.wav` · `srek.wav` | gunting memotong kertas (2 klik logam + desis) · kertas dilipat — sintesis `scripts/buat_sfx_gunting.py` (Yoga, 18 Nov 2026) | I-016 Gunting Sjafruddin |

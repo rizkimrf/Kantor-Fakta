@@ -122,7 +122,7 @@ const AM=tebeAnimasi([{t:0,pose:'penasaran'},{t:KMn,pose:'menjelaskan',transisi:
 const GX=1560,GY=900;
 function setMulut(T){const u=T-B3;
  // kamera: sel pengecap (kiri) → Tebe & saraf → close-up gerbang (termometer kiri, Tebe kanan) → mendongak mengikuti sinyal
- const c1=ioS(lin(T,KPe-.5,KPe+.6)),c2=ioS(lin(T,KSr-.3,KSr+1.1)),c3=ioS(lin(T,BUKA+.25,B4+.25));
+ const c1=ioS(lin(T,KPe-.5,KPe+.6)),c2=ioS(lin(T,KSr-.3,KSr+1.1)),c3=ioS(lin(T,BUKA-.05,B4+.25));
  const cx=lerp(lerp(620,1250,c1),1580,c2), cy=lerp(lerp(960,960,c1),GY+40,c2)-c3*320, z=lerp(lerp(1.0+.04*ioS(lin(u,0,2)),1.0,c1),1.35,c2)*(1+.04*c3);
  let s=A.dalamMulut(2400,1920,T,{lidah:1180});
  s+=A.selPengecap(420,1250,1.1,T,{jenis:'manis',nyala:ioS(lin(T,KMn-.1,KMn+.3))})+A.selPengecap(760,1270,1.1,T,{jenis:'asin',nyala:ioS(lin(T,KAs-.1,KAs+.3))});
@@ -145,12 +145,12 @@ function setMulut(T){const u=T-B3;
 // ===== B4 OTAK = RUANG KENDALI — sinyal tiba, sirene (alarm), pendingin: keringat; hidung meler (tisu); "Kebakarannya... BOHONGAN" → api garis putus; Tebe angkat cabai
 const KTr=KI(52).m,KKb=KI(53).m,KOt=KI(54).m,KPd4=KI(57).m,KKt=KI(58).m,KHd=KI(59).m,KKbn=KI(62).m,KBh=KI(63).m;
 const AO4=tebeAnimasi([{t:0,pose:'kaget'},{t:KOt,pose:'mengipas',transisi:.3},{t:KHd,pose:'sedih',transisi:.35},{t:KKbn,pose:'curiga',transisi:.35},{t:KBh,pose:'bingung',transisi:.3}],{benih:7});
-function setOtak(T){const u=T-B4,al=lin(T,KKb-.1,KKb+.2)*(1-ioS(lin(T,KBh-.2,KBh+.4))),z=1.06+.05*ioS(lin(u,0,6))+.05*Math.sin(T*30)*al*.1,ty=Math.sin(T*40)*3*al;
+function setOtak(T){const u=T-B4,al=lin(T,KKb-.1,KKb+.2)*(1-ioS(lin(T,KBh-.2,KBh+.4))),z=1.06+.05*ioS(lin(u,0,6)),ty=0;
  let s=A.ruangKendali(1080,1920,T,{alarm:al});
  // saraf masuk dari bawah ke otak + denyut
  s+=A.sarafNyeri(`M980 1960 C980 1500 900 1100 640 760`,T,{tebal:30});
  if(T<KKb+.8)s+=A.sinyalSaraf([[980,1900],[960,1300],[640,760]],T,{maju:lin(T,B4-.2,KKb),n:5});
- s+=A.otakKartun(540,700,1.05,T,{kedip:al*.5*(.5+.5*Math.sin(T*14))})+A.sirene(540,470,.9,T,{nyala:al});
+ s+=A.otakKartun(540,700,1.05,T,{kedip:al*.5*(.5+.5*Math.sin(T*5))})+A.sirene(540,470,.9,T,{nyala:al});
  // pipa pendingin dari otak ke bawah: semprotan keringat di "keringat."
  const pd=ioS(lin(T,KPd4-.2,KPd4+.3));s+=`<path d="M380 760 Q240 820 250 1000" stroke="#7EC4E6" stroke-width="22" fill="none" stroke-linecap="round" opacity="${(.4+.6*pd).toFixed(3)}" stroke-dasharray="${(400*pd).toFixed(0)} 400"/>`;
  s+=chip('PENDINGIN',250,1050,lin(T,KPd4,KPd4+.3)*(1-lin(T,KHd-.2,KHd+.1)),'#9ACAF0',40);
@@ -216,7 +216,7 @@ function setLab(T){const p=P.malam,u=T-B6,z=1.22+.06*ioS(lin(u,0,4))-.06*ioS(lin
   s+=`<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="18" height="10" rx="2" fill="${['#FFC93C','#E2483E','#5FC2B0','#8AA8FF'][i%4]}" opacity="${(1-kf*.6).toFixed(3)}" transform="rotate(${(r*40%360).toFixed(0)} ${x.toFixed(1)} ${y.toFixed(1)})"/>`}
  const pa=AL6(T);
  return `<div class="abs" style="left:0;top:0;width:1200px;height:1920px;transform:translateX(${(-60+cam).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:600px 860px"><svg class="abs" width="1200" height="1920">${s}</svg>
- <div class="abs" style="left:830px;top:${(740+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,300)}</div></div>
+ <div class="abs" style="left:670px;top:${(740+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,300)}</div></div>
  ${cap('NOBEL 2021: SENSOR SUHU',T,KNo,B7-.1,{y:470,uk:66,rot:-3})}`}
 
 // ===== B7 PAYOFF WARUNG — "bukan rasa kayak MANIS atau ASIN" → kartu gula & garam (RASA); "ALARM PANAS PALSU" → cabai + sirene + api garis putus

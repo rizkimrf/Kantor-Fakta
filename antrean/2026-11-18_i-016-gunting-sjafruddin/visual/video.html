@@ -12,7 +12,7 @@
 <script>
 const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp}=KS, P=ASET.PALET, A=ASET;
 // ---------- peta waktu: intro 2,4 dtk setelah hook ("...Gunting Sjafruddin.") ----------
-const W=KS.waktu(window.WAKTU_KATA||[],[{t:5.96,d:2.4}]);
+const W=KS.waktu(window.WAKTU_KATA||[],[{t:5.96,d:2.1}]);
 window.JEDA=W.JEDA;
 const J=W.JEDA, KK=W.kata, KI=i=>KK[i]||{m:0,s:0};
 const cel=i=>KK[i]?(KK[i-1].s+KK[i].m)/2:0;
@@ -142,7 +142,7 @@ function setMeja(T){const u=T-B3,cam=ioS(lin(T,KSl-.35,KSl+.4)),z=1.0+.05*ioS(li
  const gun=angkat<1?A.gunting(cx,gy,1.05,{buka:.08+.92*buka,rot:90}):'';
  // Tebe (B4): naik dari bawah kanan, menerima surat, HORMAT kaku
  let tb='';if(pTebe>0){const pa=AM(T),hr=ioS(lin(T,KI(50).m,KI(50).m+.35));
-  const L=630,Tp=lerp(1300,760,pTebe),Wt=400;
+  const L=630,Tp=lerp(1960,760,pTebe),Wt=400;
   pa.tanganK=toRig(sx+10,sy+60,L,Tp,Wt);pa.bentukK='kepal';pa.tekukK=-1;
   pa.tanganN=[lerp(270,262,hr),lerp(390,150,hr)];pa.bentukN=hr>.5?'buka':'kepal';pa.tekukN=1;
   if(T>KPj){pa.senyum=.15;pa.mataBuka=.75;pa.alisMiringK=.4;pa.alisMiringN=.4}
@@ -277,14 +277,14 @@ window.render=function(T){
  const ua=(T<T_INTRO+2.4)?1:lin(T,T_INTRO+2.4,T_INTRO+2.9);
  h+=KS.vinyet(T,.3);
  let lap=labelBabak(T);
- if(T>.95&&!intro&&!outro)lap+=KS.teksLayar(T,GRUP,{y:1305});
+ if(T>1.0&&!intro&&!outro)lap+=KS.teksLayar(T,GRUP,{y:1305});
  lap+=KS.watermark(T,(T>1.2&&!intro&&!outro)?1:0);
  if(lap)h+=`<div class="abs" style="inset:0;opacity:${ua.toFixed(3)}">${lap}</div>`;
  h+=judulHook(T);
- h+=KS.intro(T,T_INTRO);
+ {const ui=T-T_INTRO;const y=sinIO(cl(ui/.8)),x=y<.5?Math.cbrt(y/4):1-Math.cbrt(2-2*y)/2;const g=ui<.8?.35*x:.35+(ui-.8)*(2.05/1.6);h+=KS.intro(T_INTRO+g,T_INTRO);}
  {const ui=T-T_INTRO;if(ui>1.55&&ui<2.4)h+=`<div class="abs" style="inset:0;opacity:${sinIO(lin(ui,1.55,2.38)).toFixed(3)}">${KS.komposisi(T,BABAK)}${KS.vinyet(T,.3)}</div>`;}
  if(T>t2&&T<B3)h+=tagAtas('MARET 1950',T,KMr,KBt+.2);
- if(T<0.95){const kk=1-oCub(lin(T,.55,.95));h+=`<div class="abs" style="inset:0;opacity:${kk};transform:scale(${1+(1-kk)*.08})">${sampulGambar(T)}<div style="position:absolute;left:-210px;top:40px">${KS.logoKecil}</div></div>`;}
+ if(T<1.25){const kk=1-sinIO(lin(T,.35,1.25));h+=`<div class="abs" style="inset:0;opacity:${kk};transform:scale(${1+(1-kk)*.08})">${sampulGambar(T)}<div style="position:absolute;left:-210px;top:40px">${KS.logoKecil}</div></div>`;}
  h+=`<div class="abs" style="left:0;top:0;height:6px;background:#FFC93C;width:${(T/window.DURASI*1080).toFixed(1)}px"></div>`;
  document.getElementById('V').innerHTML=h;
 };

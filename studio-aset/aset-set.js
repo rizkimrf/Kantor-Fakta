@@ -1872,3 +1872,216 @@
     lab1969, labu, tikusLab, kandangLab, jarumSuntik, sendok, otakKartun, ruangUji, mangkukSup, papanKlip, ruangArsip, mapArsip, stempelKaret, jejakStempel, simbolStempel,
     keju, molekulKembar, dapurTerang, panggungSorot });
 })(typeof window !== "undefined" ? window : globalThis);
+
+/* ===== PERLUASAN: KAMAR MANDI & APOTEK 1892 (Yoga, 17 Nov 2026 — video I-019 odol) =====
+ * kamarMandi(w,h,P,t,{meja,cerminX}) · wastafel(x,y,s,P) · tubePasta(x,y,s,{warna,aksen,tutup,tanya,rot,penyok}) · sikatGigi(x,y,s,rot,{gagang,busa})
+ * gelasKumur(x,y,s,{isi}) · busa(x,y,s,t,k) · botolKumurJadul(x,y,s,{kaca,isi,label,rot,kilau}) · apotekJadul(w,h,P,t,{meja})
+ * timbanganKuningan(x,y,s,t) · posterJadul(x,y,s,t,{isi,w,h}) · ruangTamuSepia(w,h,t,{lantai}) · gramofon(x,y,s,t,{main})
+ * notBalok(x,y,s,warna,jenis) · lampuMinyakRomawi(x,y,s,t) · ikonGigi(x,y,s,warna) · tetesMinyak(x,y,s,warna)
+ * kartuKata(x,y,s,teks,{sub,warna,ikon,rot}) · rakWarungJadul(w,h,P,t,{lantai}) · toplesKue(x,y,s,warna)
+ * Semua label KOSONG / tanpa logo merek asli; teks hanya lewat kode (kartuKata). */
+(function (root) {
+  const A = (typeof module !== "undefined" && module.exports && module.exports.PALET) ? module.exports : root.ASET;
+  let _n = 0; const uid = (p) => `${p}o${++_n}`;
+  const f1 = (v) => Math.round(v * 10) / 10, f2 = (v) => Math.round(v * 100) / 100;
+  const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+  const g = (x, y, s, isi, rot = 0) => `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${f2(rot)}) scale(${f2(s)})">${isi}</g>`;
+
+  // kamar mandi modern terang: dinding keramik, cermin, rak kecil, handuk, tanaman, jendela cahaya
+  function kamarMandi(w, h, P, t = 0, o = {}) {
+    const mj = o.meja ?? h * 0.66, cx = o.cerminX ?? w * 0.5, mal = P.nama === "malam";
+    const dd = mal ? "#5E7486" : "#DCEEEA", ub = mal ? "#526878" : "#C9E2DC", lt = mal ? "#3E4E5C" : "#B9D4CE";
+    let s = `<rect width="${w}" height="${h}" fill="${dd}"/>`;
+    for (let x = 0; x < w; x += 120) s += `<rect x="${x}" y="0" width="3" height="${mj}" fill="${lt}" opacity=".5"/>`;
+    for (let y = 0; y < mj; y += 120) s += `<rect x="0" y="${y}" width="${w}" height="3" fill="${lt}" opacity=".5"/>`;
+    s += `<rect x="0" y="${mj - 380}" width="${w}" height="30" fill="${ub}"/>`;
+    // jendela kecil (cahaya pagi)
+    const jx = o.jendelaX ?? w * 0.12;
+    s += `<rect x="${jx - 110}" y="${mj - 1150}" width="220" height="300" rx="20" fill="${mal ? "#FFD38A" : "#FFF6DA"}" opacity=".9"/><rect x="${jx - 4}" y="${mj - 1150}" width="8" height="300" fill="${ub}"/>
+      <path d="M${jx - 110} ${mj - 850} L${jx + 260} ${mj} L${jx + 600} ${mj} L${jx + 110} ${mj - 850}Z" fill="#FFF6DA" opacity="${mal ? 0.08 : 0.22}"/>`;
+    // cermin
+    const id = uid("cm");
+    s += `<defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${mal ? "#7E98AE" : "#EAF6F8"}"/><stop offset="1" stop-color="${mal ? "#5A7288" : "#B8D8DE"}"/></linearGradient></defs>
+      <rect x="${cx - 270}" y="${mj - 1080}" width="540" height="620" rx="60" fill="${ub}"/><rect x="${cx - 250}" y="${mj - 1060}" width="500" height="580" rx="48" fill="url(#${id})"/>
+      <path d="M${cx - 180} ${mj - 1000} L${cx - 60} ${mj - 1000} L${cx - 220} ${mj - 600} L${cx - 250} ${mj - 640}Z" fill="#FFFFFF" opacity=".35"/><path d="M${cx - 20} ${mj - 1000} L${cx + 20} ${mj - 1000} L${cx - 140} ${mj - 560} L${cx - 180} ${mj - 560}Z" fill="#FFFFFF" opacity=".25"/>`;
+    // rak kaca + botol kecil polos + tanaman
+    const rx = o.rakX ?? w * 0.84;
+    s += `<rect x="${rx - 140}" y="${mj - 640}" width="280" height="14" rx="7" fill="#FFFFFF" opacity=".7"/>
+      <rect x="${rx - 110}" y="${mj - 740}" width="54" height="100" rx="14" fill="#F7A9C2"/><rect x="${rx - 98}" y="${mj - 770}" width="30" height="34" rx="6" fill="#E27A9A"/>
+      <rect x="${rx - 30}" y="${mj - 720}" width="60" height="80" rx="24" fill="#9AD0F0"/><path d="M${rx + 60} ${mj - 640} L${rx + 70} ${mj - 700} L${rx + 120} ${mj - 700} L${rx + 130} ${mj - 640}Z" fill="#E9B28A"/>
+      <path d="M${rx + 95} ${mj - 700} Q${rx + 60 + Math.sin(t * 1.2) * 4} ${mj - 790} ${rx + 70} ${mj - 820} M${rx + 95} ${mj - 700} Q${rx + 110} ${mj - 800} ${rx + 140 + Math.sin(t * 1.4) * 4} ${mj - 810}" stroke="${P.daun}" stroke-width="16" fill="none" stroke-linecap="round"/>`;
+    // handuk tergantung
+    const hx = o.handukX ?? w * 0.1;
+    s += `<rect x="${hx - 90}" y="${mj - 560}" width="180" height="12" rx="6" fill="#B8C4C8"/><path d="M${hx - 70} ${mj - 552} L${hx + 70} ${mj - 552} L${hx + 76 + Math.sin(t * 0.9) * 3} ${mj - 300} L${hx - 64 + Math.sin(t * 0.9) * 3} ${mj - 300}Z" fill="#FFC93C"/><rect x="${hx - 66}" y="${mj - 360}" width="140" height="18" fill="#E5A91A"/>`;
+    // meja wastafel (granit)
+    s += `<rect x="0" y="${mj}" width="${w}" height="${h - mj}" fill="${mal ? "#4A5A68" : "#F2F0EA"}"/><rect x="0" y="${mj}" width="${w}" height="24" fill="${mal ? "#5C6E7E" : "#FFFFFF"}"/>
+      <rect x="0" y="${mj + 24}" width="${w}" height="${h - mj}" fill="${mal ? "#3A4855" : "#7FB7B0"}" opacity=".9"/>`;
+    for (let x = 60; x < w; x += 300) s += `<rect x="${x}" y="${mj + 70}" width="250" height="${h - mj - 110}" rx="16" fill="#000" opacity=".06"/><circle cx="${x + 220}" cy="${mj + 160}" r="10" fill="#FFFFFF" opacity=".5"/>`;
+    return s;
+  }
+  // wastafel keramik putih dengan keran; y = garis atas meja
+  function wastafel(x, y, s, P) {
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="250" ry="34" fill="#C9D6D4"/><path d="M-240 0 Q-230 70 0 76 Q230 70 240 0Z" fill="#FFFFFF"/><ellipse cx="0" cy="2" rx="230" ry="26" fill="#DDE8EA"/><ellipse cx="0" cy="6" rx="18" ry="6" fill="#9AAAB0"/>
+      <rect x="-14" y="-170" width="28" height="150" rx="10" fill="#C8D2D6"/><path d="M-14 -160 Q-14 -200 30 -200 L110 -200 Q126 -200 126 -184 L126 -164 L104 -164 L104 -176 L30 -176 Q14 -176 14 -160Z" fill="#DCE4E8"/><rect x="-44" y="-60" width="88" height="20" rx="10" fill="#B4C0C6"/>
+      <path d="M-200 -10 Q-120 -18 -60 -8" stroke="#FFFFFF" stroke-width="6" opacity=".7" fill="none" stroke-linecap="round"/>`);
+  }
+  // tube pasta gigi berlabel KOSONG. o: {warna, aksen, tutup, tanya (0..1 tanda ? di lingkaran merah), rot, penyok 0..1}
+  function tubePasta(x, y, s, o = {}) {
+    const w = o.warna || "#F6F7F4", a = o.aksen || "#2F5FD0", tp = o.tutup || "#E2483E", py = (o.penyok || 0) * 14, q = cl(o.tanya || 0);
+    const body = `M-90 ${-300} L90 ${-300} L${80 - py} -40 Q80 0 40 0 L-40 0 Q${-80 + py} 0 ${-80 + py} -40Z`;
+    return g(x, y, s, `<path d="M-100 -300 L100 -300 L100 -330 L-100 -330Z" fill="#D8DAD6"/>${[...Array(7)].map((_, i) => `<rect x="${-96 + i * 28}" y="-330" width="12" height="30" fill="#BFC2BE"/>`).join("")}
+      <path d="${body}" fill="${w}"/><path d="M-90 -300 L-82 -40 Q-80 -10 -50 -4 L-40 -300Z" fill="#000" opacity=".06"/>
+      <path d="M-88 -270 L88 -270 L86 -230 L-86 -230Z" fill="${a}"/><path d="M-82 -80 L82 -80 L80 -50 L-80 -50Z" fill="${a}"/>
+      <rect x="-62" y="-210" width="124" height="112" rx="18" fill="#FFFFFF" opacity=".55"/>
+      ${q > 0 ? `<g transform="translate(0 -154) scale(${f2(q)})"><circle r="52" fill="#FFFFFF" stroke="#E2232E" stroke-width="12"/><text y="26" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="76" fill="#E2232E">?</text></g>` : ""}
+      <path d="M60 -290 L56 -60" stroke="#FFFFFF" stroke-width="14" opacity=".45" stroke-linecap="round"/>
+      <rect x="-34" y="0" width="68" height="24" rx="4" fill="#D8DAD6"/><path d="M-46 24 L46 24 L40 92 Q0 104 -40 92Z" fill="${tp}"/>${[...Array(5)].map((_, i) => `<rect x="${-32 + i * 16}" y="34" width="6" height="52" fill="#000" opacity=".12"/>`).join("")}`, o.rot || 0);
+  }
+  // sikat gigi; titik (x,y) = pangkal kepala sikat; rot derajat. o: {gagang, busa 0..1}
+  function sikatGigi(x, y, s, rot = 0, o = {}) {
+    const gw = o.gagang || "#1FA8A0", b = cl(o.busa || 0);
+    let bu = ""; if (b > 0) for (let i = 0; i < 6; i++) bu += `<circle cx="${-6 + i * 12}" cy="${-30 - (i % 2) * 8}" r="${f1((10 + (i % 3) * 4) * b)}" fill="#FFFFFF"/>`;
+    return g(x, y, s, `<path d="M-14 0 L250 -6 Q262 0 250 12 L-14 14 Q-24 7 -14 0Z" fill="${gw}"/><path d="M60 2 L200 -2" stroke="#FFFFFF" stroke-width="5" opacity=".35" stroke-linecap="round"/>
+      <rect x="-14" y="-24" width="70" height="24" rx="6" fill="#FFFFFF"/>${[...Array(6)].map((_, i) => `<rect x="${-10 + i * 11}" y="-24" width="4" height="24" fill="#BFE8F0"/>`).join("")}${bu}`, rot);
+  }
+  function gelasKumur(x, y, s, o = {}) {
+    const isi = cl(o.isi ?? 0.6);
+    return g(x, y, s, `<ellipse cx="0" cy="4" rx="64" ry="10" fill="#000" opacity=".15"/><path d="M-56 -170 L56 -170 L46 0 L-46 0Z" fill="#D8EEF2" opacity=".55"/>
+      <path d="M${f1(-56 + 10 * (1 - isi))} ${f1(-170 * isi)} L${f1(56 - 10 * (1 - isi))} ${f1(-170 * isi)} L46 0 L-46 0Z" fill="#8FD0E0" opacity=".75"/><path d="M-36 -150 L-30 -20" stroke="#FFFFFF" stroke-width="9" opacity=".6" stroke-linecap="round"/>`, o.rot || 0);
+  }
+  // gumpalan busa (k 0..1 = banyaknya)
+  function busa(x, y, s, t = 0, k = 1) {
+    k = cl(k); if (k <= 0) return "";
+    let o = ""; const B = [[0, 0, 26], [-30, 6, 20], [30, 8, 22], [-14, -18, 16], [18, -16, 15], [-48, -6, 12], [50, -4, 13], [4, 22, 14], [-26, 24, 10], [34, 26, 9]];
+    B.forEach(([a, b, r], i) => { const rr = r * k * (1 + 0.06 * Math.sin(t * 5 + i)); if (rr > 0.5) o += `<circle cx="${a}" cy="${b}" r="${f1(rr)}" fill="#FFFFFF"/><circle cx="${f1(a - rr * 0.3)}" cy="${f1(b - rr * 0.35)}" r="${f1(rr * 0.28)}" fill="#E6F6FA"/>`; });
+    return g(x, y, s, o);
+  }
+  // botol obat kumur kuno (generik, label kosong krem). o: {kaca, isi, label, rot, kilau 0..1}
+  function botolKumurJadul(x, y, s, o = {}) {
+    const kc = o.kaca || "#3E7FB8", isi = o.isi || "#9AD0E8", kl = cl(o.kilau || 0), id = uid("bkj");
+    const d = "M-80 0 Q-96 0 -96 -20 L-96 -230 Q-96 -270 -60 -290 Q-34 -304 -30 -330 L-30 -380 L30 -380 L30 -330 Q34 -304 60 -290 Q96 -270 96 -230 L96 -20 Q96 0 80 0Z";
+    return g(x, y, s, `${kl > 0 ? `<circle cy="-190" r="230" fill="#FFE8A8" opacity="${f2(kl * 0.45)}" style="filter:blur(24px)"/>` : ""}<ellipse cx="0" cy="6" rx="110" ry="16" fill="#000" opacity=".2"/>
+      <defs><clipPath id="${id}"><path d="${d}"/></clipPath></defs><path d="${d}" fill="${kc}" opacity=".85"/><g clip-path="url(#${id})"><rect x="-100" y="-220" width="200" height="230" fill="${isi}" opacity=".5"/></g>
+      <rect x="-70" y="-190" width="140" height="120" rx="12" fill="${o.label || "#F3E6C8"}"/><rect x="-58" y="-178" width="116" height="96" rx="8" fill="none" stroke="#C9A86A" stroke-width="5"/>
+      <path d="M-66 -270 Q-80 -150 -70 -30" stroke="#FFFFFF" stroke-width="12" opacity=".35" fill="none" stroke-linecap="round"/>
+      <path d="M-36 -380 L36 -380 L32 -430 Q0 -440 -32 -430Z" fill="#B88A5A"/><rect x="-38" y="-392" width="76" height="16" rx="5" fill="#9A6A3A"/>`, o.rot || 0);
+  }
+  // timbangan kuningan apotek
+  function timbanganKuningan(x, y, s, t = 0) {
+    const r = Math.sin(t * 1.1) * 4;
+    return g(x, y, s, `<ellipse cx="0" cy="4" rx="120" ry="14" fill="#000" opacity=".18"/><path d="M-80 0 L80 0 L50 -30 L-50 -30Z" fill="#B8862E"/><rect x="-8" y="-280" width="16" height="250" fill="#C99A3A"/>
+      <g transform="translate(0 -270) rotate(${f2(r)})"><rect x="-150" y="-6" width="300" height="12" rx="6" fill="#D9AA48"/>
+      <path d="M-140 0 L-180 90 M-140 0 L-100 90 M140 0 L100 90 M140 0 L180 90" stroke="#B8862E" stroke-width="4"/><path d="M-200 90 Q-140 130 -80 90Z" fill="#D9AA48"/><path d="M80 90 Q140 130 200 90Z" fill="#D9AA48"/></g><circle cx="0" cy="-282" r="16" fill="#E8C060"/>`);
+  }
+  // apotek/lab 1892 sepia: rak kayu penuh botol polos, meja ramuan, lampu gantung, jendela
+  function apotekJadul(w, h, P, t = 0, o = {}) {
+    const mj = o.meja ?? h * 0.7;
+    let s = `<rect width="${w}" height="${h}" fill="#C9A77A"/><rect width="${w}" height="${mj - 240}" fill="#B8936A"/>`;
+    for (let x = 0; x < w; x += 90) s += `<rect x="${x}" y="0" width="40" height="${mj - 240}" fill="#C49F74" opacity=".5"/>`;
+    // jendela melengkung + sinar
+    const jx = o.jendelaX ?? w * 0.78;
+    s += `<rect x="${jx - 150}" y="${mj - 1180}" width="300" height="520" rx="150" fill="#7A5232"/><rect x="${jx - 130}" y="${mj - 1160}" width="260" height="490" rx="130" fill="#F6E2B4"/>
+      <rect x="${jx - 4}" y="${mj - 1160}" width="8" height="490" fill="#7A5232"/><rect x="${jx - 130}" y="${mj - 900}" width="260" height="8" fill="#7A5232"/>
+      <path d="M${jx - 130} ${mj - 700} L${jx - 520} ${mj} L${jx - 120} ${mj} L${jx + 130} ${mj - 700}Z" fill="#FFF0C8" opacity=".16"/>`;
+    // rak dinding
+    const rak = (x0, w0, y0, benih) => { let r = `<rect x="${x0}" y="${y0 - 520}" width="${w0}" height="540" fill="#6A4426"/><rect x="${x0 + 14}" y="${y0 - 506}" width="${w0 - 28}" height="512" fill="#7E5434"/>`;
+      for (let j = 0; j < 3; j++) { const yy = y0 - 360 + j * 170; r += `<rect x="${x0}" y="${yy}" width="${w0}" height="16" fill="#5A3820"/>`;
+        for (let i = 0; i < Math.floor((w0 - 40) / 56); i++) { const hh = 70 + ((i * 7 + j * 3 + benih) % 4) * 14, cc = ["#3E7FB8", "#5E8A5A", "#9A5A3A", "#3E6A8A", "#C9A050"][(i + j + benih) % 5];
+          r += `<rect x="${x0 + 26 + i * 56}" y="${yy - hh}" width="40" height="${hh}" rx="8" fill="${cc}" opacity=".9"/><rect x="${x0 + 32 + i * 56}" y="${yy - hh * 0.62}" width="28" height="${hh * 0.32}" rx="3" fill="#F3E6C8" opacity=".85"/><rect x="${x0 + 36 + i * 56}" y="${yy - hh - 12}" width="20" height="14" rx="3" fill="#B88A5A"/>`; } }
+      return r; };
+    s += rak(40, 560, mj - 260, 1) + rak(w * 0.5 - 60, 520, mj - 260, 4);
+    // lampu gantung
+    const lx = o.lampuX ?? w * 0.42, ay = Math.sin(t * 1.1) * 6;
+    s += `<path d="M${lx} 0 L${lx + ay} ${mj - 1240}" stroke="#4A2E1A" stroke-width="6"/><path d="M${lx + ay - 70} ${mj - 1240} L${lx + ay + 70} ${mj - 1240} L${lx + ay + 40} ${mj - 1300} L${lx + ay - 40} ${mj - 1300}Z" fill="#3E6A5A"/>
+      <circle cx="${lx + ay}" cy="${mj - 1226}" r="22" fill="#FFE8A8"/><circle cx="${lx + ay}" cy="${mj - 1200}" r="${f1(260 + Math.sin(t * 7) * 6)}" fill="#FFE8A8" opacity=".14"/>`;
+    // meja ramuan
+    s += `<rect x="0" y="${mj}" width="${w}" height="${h - mj}" fill="#7A4E2C"/><rect x="0" y="${mj}" width="${w}" height="26" fill="#9A6A3E"/><rect x="0" y="${mj + 26}" width="${w}" height="10" fill="#000" opacity=".12"/>`;
+    for (let x = 40; x < w; x += 260) s += `<rect x="${x}" y="${mj + 80}" width="220" height="${h - mj - 120}" rx="10" fill="#000" opacity=".08"/><circle cx="${x + 110}" cy="${mj + 150}" r="10" fill="#C99A3A"/>`;
+    // filter sepia hangat
+    s += `<rect width="${w}" height="${h}" fill="#8A5A2A" opacity=".08"/>`;
+    return s;
+  }
+  // bingkai poster iklan kuno (ornamen art nouveau), tengah kosong / diisi o.isi (svg). (x,y)=tengah
+  function posterJadul(x, y, s, t = 0, o = {}) {
+    const W = o.w || 520, H = o.h || 720, kc = o.kertas || "#F3E2BC";
+    const sudut = (sx, sy) => `<path d="M${sx * (W / 2 - 20)} ${sy * (H / 2 - 90)} Q${sx * (W / 2 - 20)} ${sy * (H / 2 - 20)} ${sx * (W / 2 - 90)} ${sy * (H / 2 - 20)}" stroke="#2F5FD0" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="${sx * (W / 2 - 46)}" cy="${sy * (H / 2 - 46)}" r="12" fill="#C9A050"/>`;
+    return g(x, y, s, `<rect x="${-W / 2 - 34}" y="${-H / 2 - 34}" width="${W + 68}" height="${H + 68}" rx="14" fill="#6A4426"/><rect x="${-W / 2 - 22}" y="${-H / 2 - 22}" width="${W + 44}" height="${H + 44}" rx="8" fill="#C9A050"/>
+      <rect x="${-W / 2}" y="${-H / 2}" width="${W}" height="${H}" fill="${kc}"/><rect x="${-W / 2 + 34}" y="${-H / 2 + 34}" width="${W - 68}" height="${H - 68}" fill="none" stroke="#C9A86A" stroke-width="5"/>
+      ${sudut(-1, -1)}${sudut(1, -1)}${sudut(-1, 1)}${sudut(1, 1)}<path d="M${-W / 2 + 80} ${-H / 2 + 70} Q0 ${-H / 2 + 20} ${W / 2 - 80} ${-H / 2 + 70}" stroke="#2F5FD0" stroke-width="8" fill="none"/>
+      <path d="M${-W / 2 + 80} ${H / 2 - 70} Q0 ${H / 2 - 20} ${W / 2 - 80} ${H / 2 - 70}" stroke="#2F5FD0" stroke-width="8" fill="none"/>${o.isi || ""}
+      <rect x="${-W / 2}" y="${-H / 2}" width="${W}" height="${H}" fill="#8A5A2A" opacity=".08"/>`);
+  }
+  // ruang tamu sepia akhir 1800-an: kertas dinding bermotif, lis kayu, karpet, jendela tirai
+  function ruangTamuSepia(w, h, t = 0, o = {}) {
+    const lt = o.lantai ?? h * 0.72;
+    let s = `<rect width="${w}" height="${h}" fill="#D9B98A"/>`;
+    for (let x = 0; x < w; x += 110) for (let y = 40; y < lt - 300; y += 130) s += `<path d="M${x + 55} ${y} q16 22 0 44 q-16 -22 0 -44" fill="#C9A26E" opacity=".7"/>`;
+    s += `<rect y="${lt - 300}" width="${w}" height="300" fill="#8A5A34"/><rect y="${lt - 312}" width="${w}" height="16" fill="#A8743E"/>`;
+    for (let x = 30; x < w; x += 240) s += `<rect x="${x}" y="${lt - 260}" width="180" height="210" rx="6" fill="none" stroke="#6A4426" stroke-width="8"/>`;
+    const jx = o.jendelaX ?? w * 0.15;
+    s += `<rect x="${jx - 140}" y="${lt - 1150}" width="280" height="620" rx="12" fill="#F6E2B4"/><path d="M${jx - 180} ${lt - 1190} Q${jx - 120} ${lt - 820} ${jx - 170} ${lt - 480} L${jx - 90} ${lt - 480} Q${jx - 70} ${lt - 820} ${jx - 60} ${lt - 1190}Z" fill="#9A3A3A"/>
+      <path d="M${jx + 180} ${lt - 1190} Q${jx + 120} ${lt - 820} ${jx + 170} ${lt - 480} L${jx + 90} ${lt - 480} Q${jx + 70} ${lt - 820} ${jx + 60} ${lt - 1190}Z" fill="#9A3A3A"/><rect x="${jx - 200}" y="${lt - 1210}" width="400" height="26" rx="10" fill="#6A4426"/>`;
+    s += `<rect y="${lt}" width="${w}" height="${h - lt}" fill="#7A4E2C"/><path d="M${w * 0.08} ${lt + 80} L${w * 0.92} ${lt + 80} L${w} ${h} L0 ${h}Z" fill="#8E3A3A" opacity=".85"/><path d="M${w * 0.12} ${lt + 110} L${w * 0.88} ${lt + 110} L${w * 0.96} ${h - 40} L${w * 0.04} ${h - 40}Z" fill="none" stroke="#C9A050" stroke-width="6" opacity=".7"/>`;
+    s += `<rect width="${w}" height="${h}" fill="#8A5A2A" opacity=".07"/>`;
+    return s;
+  }
+  // gramofon kuno dengan corong; piringan berputar. o: {main 0..1}
+  function gramofon(x, y, s, t = 0, o = {}) {
+    const m = cl(o.main ?? 1), rot = t * 200 * m, gt = Math.sin(t * 12) * 1.5 * m;
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="170" ry="20" fill="#000" opacity=".2"/><rect x="-150" y="-130" width="300" height="130" rx="10" fill="#6A3E22"/><rect x="-130" y="-110" width="260" height="90" rx="6" fill="#7E4E2C"/>
+      <rect x="-160" y="-150" width="320" height="26" rx="6" fill="#8A5A34"/><g transform="translate(-20 -156) scale(1 .28) rotate(${f1(rot)})"><circle r="130" fill="#2A2420"/><circle r="120" fill="none" stroke="#3E3630" stroke-width="4"/><circle r="90" fill="none" stroke="#3E3630" stroke-width="4"/><circle r="36" fill="#C24A3A"/><rect x="40" y="-6" width="60" height="12" fill="#4A4038"/></g>
+      <path d="M110 -160 L110 -230 Q110 -260 90 -280" stroke="#C99A3A" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <g transform="translate(90 -280) rotate(${f2(-35 + gt)})"><path d="M0 0 L-40 -60 Q-130 -230 -40 -330 Q60 -300 200 -260 Q150 -170 40 -40Z" fill="#D9AA48"/><path d="M-40 -330 Q60 -300 200 -260 Q140 -330 60 -350 Q0 -360 -40 -330Z" fill="#B8862E"/><path d="M-10 -60 Q-70 -200 -10 -300" stroke="#F2D27A" stroke-width="10" fill="none" opacity=".6" stroke-linecap="round"/></g>
+      <circle cx="160" cy="-70" r="16" fill="#C99A3A"/><path d="M160 -70 L210 -96" stroke="#C99A3A" stroke-width="10" stroke-linecap="round"/>`);
+  }
+  // not balok melayang. jenis 0 = not tunggal, 1 = not ganda
+  function notBalok(x, y, s, warna = "#2F5FD0", jenis = 0, rot = 0) {
+    const isi = jenis ? `<ellipse cx="-30" cy="0" rx="22" ry="16" fill="${warna}" transform="rotate(-20 -30 0)"/><ellipse cx="40" cy="-14" rx="22" ry="16" fill="${warna}" transform="rotate(-20 40 -14)"/><rect x="-12" y="-110" width="9" height="110" fill="${warna}"/><rect x="58" y="-124" width="9" height="110" fill="${warna}"/><path d="M-12 -110 L67 -124 L67 -100 L-12 -86Z" fill="${warna}"/>`
+      : `<ellipse cx="0" cy="0" rx="24" ry="17" fill="${warna}" transform="rotate(-20)"/><rect x="16" y="-112" width="9" height="108" fill="${warna}"/><path d="M25 -112 Q60 -90 50 -50 Q46 -80 25 -84Z" fill="${warna}"/>`;
+    return g(x, y, s, isi, rot);
+  }
+  function lampuMinyakRomawi(x, y, s, t = 0) {
+    const fl = 1 + 0.1 * Math.sin(t * 11) + 0.05 * Math.sin(t * 23);
+    return g(x, y, s, `<ellipse cx="0" cy="6" rx="130" ry="14" fill="#000" opacity=".18"/><path d="M-120 -10 Q-130 -70 -40 -80 L80 -80 Q130 -78 150 -60 L190 -70 Q200 -50 170 -34 Q120 -6 40 0 L-90 0 Q-118 0 -120 -10Z" fill="#B8703A"/>
+      <path d="M-100 -40 Q-30 -64 70 -60" stroke="#D99A5A" stroke-width="10" fill="none" opacity=".6" stroke-linecap="round"/><ellipse cx="-10" cy="-82" rx="40" ry="10" fill="#8A4E26"/><path d="M-130 -50 Q-180 -60 -170 -20 Q-160 0 -120 -20" stroke="#B8703A" stroke-width="12" fill="none"/>
+      <g transform="translate(184 -76) scale(${f2(fl)})"><circle cy="-30" r="60" fill="#FFD27A" opacity=".3"/><path d="M0 0 Q-24 -30 0 -80 Q24 -30 0 0Z" fill="#FFB347"/><path d="M0 -4 Q-10 -24 0 -50 Q10 -24 0 -4Z" fill="#FFF2B8"/></g>`);
+  }
+  function ikonGigi(x, y, s, warna = "#FFFFFF") {
+    return g(x, y, s, `<path d="M-60 -70 Q-90 -70 -86 -30 Q-82 10 -66 40 Q-56 90 -40 90 Q-26 90 -20 50 Q-14 24 0 24 Q14 24 20 50 Q26 90 40 90 Q56 90 66 40 Q82 10 86 -30 Q90 -70 60 -70 Q30 -70 0 -56 Q-30 -70 -60 -70Z" fill="${warna}"/><path d="M-56 -48 Q-70 -30 -64 0" stroke="#D8EEF2" stroke-width="10" fill="none" stroke-linecap="round"/>`);
+  }
+  function tetesMinyak(x, y, s, warna = "#E8B84A") {
+    return g(x, y, s, `<path d="M0 -90 Q-60 -10 -60 24 Q-60 70 0 70 Q60 70 60 24 Q60 -10 0 -90Z" fill="${warna}"/><path d="M-28 10 Q-34 40 -10 52" stroke="#FFF2C8" stroke-width="10" fill="none" stroke-linecap="round" opacity=".8"/>`);
+  }
+  // kartu kata (teks via kode). o: {sub, warna, ikon(svg di atas teks), rot, lebar}
+  function kartuKata(x, y, s, teks, o = {}) {
+    const W = o.lebar || 380, H = o.tinggi || 420, w = o.warna || "#FFF4DC";
+    return g(x, y, s, `<rect x="${-W / 2 + 10}" y="${-H / 2 + 14}" width="${W}" height="${H}" rx="34" fill="#000" opacity=".22"/><rect x="${-W / 2}" y="${-H / 2}" width="${W}" height="${H}" rx="34" fill="${w}"/>
+      <rect x="${-W / 2 + 18}" y="${-H / 2 + 18}" width="${W - 36}" height="${H - 36}" rx="24" fill="none" stroke="#1E1E1E" stroke-width="4" opacity=".15"/>${o.ikon || ""}
+      <text y="${H / 2 - 104}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${o.uk || 76}" letter-spacing="1" fill="#1E1E1E">${teks}</text>
+      ${o.sub ? `<text y="${H / 2 - 48}" text-anchor="middle" font-family="Poppins" font-weight="600" font-size="38" fill="#1E1E1E" opacity=".7">${o.sub}</text>` : ""}`, o.rot || 0);
+  }
+  function toplesKue(x, y, s, warna = "#E2483E") {
+    return g(x, y, s, `<ellipse cx="0" cy="4" rx="70" ry="10" fill="#000" opacity=".15"/><path d="M-60 0 L-60 -130 Q-60 -150 -40 -150 L40 -150 Q60 -150 60 -130 L60 0Z" fill="#E6F2F2" opacity=".5"/>
+      ${[0, 1, 2, 3, 4].map((i) => `<circle cx="${-34 + (i % 3) * 34}" cy="${-24 - Math.floor(i / 3) * 40 - (i % 2) * 10}" r="20" fill="${i % 2 ? warna : "#FFC93C"}"/>`).join("")}<rect x="-50" y="-176" width="100" height="30" rx="8" fill="#C24A3A"/><path d="M-44 -130 L-44 -20" stroke="#FFF" stroke-width="8" opacity=".5" stroke-linecap="round"/>`);
+  }
+  // warung jadul siang: kayu, rak bertingkat berisi tube aneka warna (label kosong), toples, tirai plastik
+  function rakWarungJadul(w, h, P, t = 0, o = {}) {
+    const lt = o.lantai ?? h * 0.72, d = "#B07A46", dg = "#8E5E32", dt = "#C99460";
+    let s = A.langit(P, w, h, t, { suryaX: w * 0.8, suryaY: h * 0.08 });
+    s += `<rect x="0" y="${lt - 1250}" width="${w}" height="${1250}" fill="${dg}"/><path d="M-40 ${lt - 1250} L${w + 40} ${lt - 1250} L${w + 80} ${lt - 1380} L-80 ${lt - 1380}Z" fill="#B5654A"/><path d="M-40 ${lt - 1250} L${w + 40} ${lt - 1250} L${w + 40} ${lt - 1225} L-40 ${lt - 1225}Z" fill="#97503A"/>`;
+    for (let i = 0; i < w / 60; i++) s += `<rect x="${i * 60}" y="${lt - 1225}" width="36" height="70" fill="${i % 2 ? "#FFC93C" : "#E2483E"}" opacity=".9"/>`;
+    const warna = [["#F6F7F4", "#2F5FD0", "#E2483E"], ["#E2483E", "#FFFFFF", "#FFFFFF"], ["#3FAE6A", "#FFFFFF", "#2E7A4A"], ["#2F5FD0", "#FFFFFF", "#FFC93C"], ["#FFFFFF", "#E2483E", "#2F5FD0"], ["#F28CB0", "#FFFFFF", "#C24A6A"], ["#FFC93C", "#2F5FD0", "#E2483E"]];
+    for (let j = 0; j < 3; j++) {
+      const yy = lt - 820 + j * 250;
+      s += `<rect x="20" y="${yy}" width="${w - 40}" height="22" fill="${dt}"/><rect x="20" y="${yy + 22}" width="${w - 40}" height="8" fill="#000" opacity=".15"/>`;
+      for (let i = 0; i < Math.floor((w - 80) / 120); i++) { const c = warna[(i + j * 3) % warna.length]; s += tubePasta(90 + i * 120 + (j % 2) * 30, yy - 40, 0.42, { warna: c[0], aksen: c[1], tutup: c[2] }); }
+    }
+    s += `<rect x="0" y="${lt}" width="${w}" height="${h - lt}" fill="${d}"/><rect x="0" y="${lt}" width="${w}" height="26" fill="${dt}"/>`;
+    s += `<rect x="0" y="${lt - 60}" width="${w}" height="60" fill="#9AAEB4" opacity=".35"/>`;
+    for (let i = 0; i < 5; i++) s += toplesKue(140 + i * (w - 280) / 4, lt, 0.95, ["#E2483E", "#3FAE6A", "#2F5FD0", "#F28CB0", "#E28A3A"][i]);
+    return s;
+  }
+
+  Object.assign(A, { kamarMandi, wastafel, tubePasta, sikatGigi, gelasKumur, busa, botolKumurJadul, timbanganKuningan, apotekJadul, posterJadul, ruangTamuSepia,
+    gramofon, notBalok, lampuMinyakRomawi, ikonGigi, tetesMinyak, kartuKata, toplesKue, rakWarungJadul });
+})(typeof window !== "undefined" ? window : globalThis);

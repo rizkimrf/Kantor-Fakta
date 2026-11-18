@@ -102,16 +102,16 @@
   }
   // sirene/lampu alarm berputar
   function sirene(x, y, s, t = 0, o = {}) {
-    const ny = cl(o.nyala ?? 1), a = t * 7, sx = Math.cos(a);
+    const ny = cl(o.nyala ?? 1), a = t * 3, sx = Math.cos(a);
     return g(x, y, s, `<path d="M0 -40 L${f1(700 * sx - 120)} -400 L${f1(700 * sx + 120)} -400Z" fill="#FF3A2A" opacity="${f2(0.18 * ny * Math.abs(sx))}"/><rect x="-70" y="-10" width="140" height="34" rx="8" fill="#4A4A55"/><path d="M-50 -10 Q-50 -100 0 -100 Q50 -100 50 -10Z" fill="${ny > 0.05 ? "#FF4A3A" : "#8A3A3A"}"/>
       <ellipse cx="${f1(sx * 26)}" cy="-56" rx="${f1(10 + 10 * Math.abs(sx))}" ry="34" fill="#FFD0C0" opacity="${f2(0.4 + 0.6 * ny)}"/><circle cx="0" cy="-60" r="${f1(90 * ny)}" fill="#FF4A3A" opacity="${f2(0.3 * ny)}"/>`);
   }
   // ruang kendali (latar otak): dinding ungu tua, panel layar berkedip, pipa ke bawah
   function ruangKendali(w, h, t = 0, o = {}) {
     const al = cl(o.alarm || 0), id = uid("rk"), r = acak(o.benih || 9);
-    let pan = ""; for (let i = 0; i < 7; i++) for (let j = 0; j < 3; j++) { const x = 40 + i * (w - 80) / 7, y = 300 + j * 150; pan += `<rect x="${f1(x)}" y="${y}" width="${f1((w - 80) / 7 - 20)}" height="120" rx="12" fill="#3A3256"/><rect x="${f1(x + 14)}" y="${y + 14}" width="${f1((w - 80) / 7 - 48)}" height="${f1(40 + 30 * Math.abs(Math.sin(t * (1 + r()) + i + j)))}" rx="6" fill="${al > 0.5 && (i + j) % 2 ? "#FF6A5A" : ["#5FC2B0", "#8AA8FF", "#FFC93C"][(i + j) % 3]}" opacity=".55"/>`; }
+    let pan = ""; for (let i = 0; i < 7; i++) for (let j = 0; j < 3; j++) { const x = 40 + i * (w - 80) / 7, y = 300 + j * 150; pan += `<rect x="${f1(x)}" y="${y}" width="${f1((w - 80) / 7 - 20)}" height="120" rx="12" fill="#3A3256"/><rect x="${f1(x + 14)}" y="${y + 14}" width="${f1((w - 80) / 7 - 48)}" height="${f1(55 + 15 * Math.sin(t * (0.6 + 0.4 * r()) + i + j))}" rx="6" fill="${al > 0.5 && (i + j) % 2 ? "#FF6A5A" : ["#5FC2B0", "#8AA8FF", "#FFC93C"][(i + j) % 3]}" opacity=".55"/>`; }
     return `<defs><radialGradient id="${id}" cx=".5" cy=".38" r=".75"><stop offset="0" stop-color="#5A4A7A"/><stop offset="1" stop-color="#2A2440"/></radialGradient></defs><rect width="${w}" height="${h}" fill="url(#${id})"/>${pan}
-      <rect width="${w}" height="${h}" fill="#FF2A2A" opacity="${f2(al * 0.16 * (0.5 + 0.5 * Math.sin(t * 14)))}"/><rect x="0" y="${h * 0.74}" width="${w}" height="${h * 0.26}" fill="#231E36"/><rect x="0" y="${h * 0.74}" width="${w}" height="16" fill="#3E365A"/>`;
+      <rect width="${w}" height="${h}" fill="#FF2A2A" opacity="${f2(al * 0.14 * (0.6 + 0.4 * Math.sin(t * 5)))}"/><rect x="0" y="${h * 0.74}" width="${w}" height="${h * 0.26}" fill="#231E36"/><rect x="0" y="${h * 0.74}" width="${w}" height="16" fill="#3E365A"/>`;
   }
   // ---------- gurun semak siang (asal cabai liar, generik) ----------
   function gurunSemak(w, h, P, t = 0, o = {}) {
