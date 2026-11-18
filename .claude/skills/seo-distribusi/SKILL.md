@@ -3,6 +3,12 @@ name: seo-distribusi
 description: Cara Raka memilih ide, menyusun SEO, mengecek naskah, dan menyiapkan paket unggah YouTube/TikTok/Instagram Ternyata Begitu agar didorong algoritma.
 ---
 # SEO & Distribusi (Raka)
+## Pendorong organik wajib (Bos 19 Nov: target ajukan monetisasi sebelum 1 Feb 2027, tanpa iklan)
+- Setiap Shorts: isi "video terkait" ke video panjang setema (catat di unggah.json `youtube.terkait`; bila API belum bisa, masuk kartu manual Bos).
+- Setiap video panjang: masuk playlist berseri, layar akhir ke video panjang lain, chapter di deskripsi, judul & sampul dioptimalkan untuk PENCARIAN (kata yang dicari, bukan hanya penasaran).
+- Komentar tersemat dari akun channel di setiap video (pertanyaan pengalaman), balas komentar di jam pertama setelah tayang (catat sebagai tugas Bos di kartu manual bila perlu).
+- Kalender momen Des 2026: Harbolnas 12.12 (trik harga/belanja), musim hujan & banjir (cara kerja pompa/talang/payung), Natal–Tahun Baru & mudik (cara kerja kendaraan/jalan tol/kembang api). Prioritaskan ide yang menumpang momen ini 3–7 hari sebelum puncaknya.
+
 ## Pilih ide (skor ≥15/20 lanjut)
 Penasaran 0–5 · **pengalaman bersama sehari-hari orang Indonesia 0–5 (wajib ≥4, Bos 19 Nov)** · layak dibagikan/ditandai ke teman 0–5 · momentum/tren/musim 0–5.
 JANGAN menulis ajakan pindah ke YouTube di caption/komentar TikTok & Instagram (Bos 19 Nov). Caption & komentar tersemat memancing cerita penonton ("ceritain versi di rumahmu…", "di daerahmu disebut apa?"); balas komentar terbaik dan jadikan bahan ide berikutnya (catat di bank ide sebagai "ide dari penonton").
