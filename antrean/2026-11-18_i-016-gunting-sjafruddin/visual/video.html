@@ -132,8 +132,8 @@ function setMeja(T){const u=T-B3,cam=ioS(lin(T,KSl-.35,KSl+.4)),z=1.0+.05*ioS(li
  const bh=oBack(lin(T,KSt-.05,KSt+.35),1.4);
  if(bh>0)s+=`<g transform="translate(${(xl-150).toFixed(1)} ${cy-150}) scale(${bh.toFixed(3)})"><circle r="92" fill="#FFC93C" stroke="#7A1E2E" stroke-width="10"/><text y="44" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="128" fill="#7A1E2E">½</text></g>`;
  // surat utang muncul di sisi kanan; lalu berpindah ke tangan Tebe
- const sx=lerp(xr+160,672,pTebe), sy=lerp(cy,1000,pTebe), ss=lerp(.62*surat,.42,pTebe);
- const nilaiSurat=surat>0?A.suratObligasi(sx,sy,ss,{rot:lerp(4,-6,pTebe),kilau:lin(T,KDt+.5,KDt+1)*(1-lin(T,KSu+.8,KSu+1.4))}):'';
+ const pS=ioS(lin(pTebe,.55,1)), sx=lerp(xr+160,672,pS), sy=lerp(cy,1000,pS), ss=lerp(.62*surat,.42,pS);
+ const nilaiSurat=surat>0?A.suratObligasi(sx,sy,ss,{rot:lerp(4,-6,pS),kilau:lin(T,KDt+.5,KDt+1)*(1-lin(T,KSu+.8,KSu+1.4))}):'';
  s+=chip('TETAP UANG',xl-150,cy+250,lin(T,TUTUP+.45,TUTUP+.8),'#FFC93C',38);
  s+=chip('BUKAN UANG',xr+160,cy+250,lin(T,KBu-.05,KBu+.3)*(1-lin(T,KDt+.2,KDt+.5)),'#FFF4DC',38);
  s+=chip('SURAT UTANG NEGARA',800,cy-250,lin(T,KSu-.05,KSu+.3)*(1-lin(T,KSl-.3,KSl)),'#FFF4DC',36,'#7A1E2E');
@@ -143,7 +143,7 @@ function setMeja(T){const u=T-B3,cam=ioS(lin(T,KSl-.35,KSl+.4)),z=1.0+.05*ioS(li
  // Tebe (B4): naik dari bawah kanan, menerima surat, HORMAT kaku
  let tb='';if(pTebe>0){const pa=AM(T),hr=ioS(lin(T,KI(50).m,KI(50).m+.35));
   const L=630,Tp=lerp(1960,760,pTebe),Wt=400;
-  pa.tanganK=toRig(sx+10,sy+60,L,Tp,Wt);pa.bentukK='kepal';pa.tekukK=-1;
+  {const tg=toRig(sx+10,sy+60,L,Tp,Wt),kk=ioS(lin(pTebe,.55,1));pa.tanganK=[lerp(pa.tanganK[0],tg[0],kk),lerp(pa.tanganK[1],tg[1],kk)];}pa.bentukK='kepal';pa.tekukK=-1;
   pa.tanganN=[lerp(270,262,hr),lerp(390,150,hr)];pa.bentukN=hr>.5?'buka':'kepal';pa.tekukN=1;
   if(T>KPj){pa.senyum=.15;pa.mataBuka=.75;pa.alisMiringK=.4;pa.alisMiringN=.4}
   tb=`<div class="abs" style="left:${L}px;top:${Tp.toFixed(1)}px">${tebeX(pa,Wt,{filter:'sepia(.15)'})}</div>`}
