@@ -39,6 +39,7 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 1. Sejarah yang jarang diceritakan  2. Sains & tubuh manusia  3. Alam & hewan aneh
 4. Geografi & negara  5. Uang & ekonomi sehari-hari  6. Benda & kebiasaan sehari-hari (asal-usulnya)
 Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video.
+**Semua pilar dibuka dari pengalaman sehari-hari orang Indonesia** (Bos, 19 Nov): ide harus lolos uji "pernah ngalamin", ditutup pertanyaan pengalaman supaya penonton bercerita di komentar & menandai teman. Komentar penonton jadi sumber ide berikutnya.
 
 ## Pembeda channel (wajib — YouTube tidak memonetisasi konten massal yang generik/template)
 1. **Fakta benar dan bersumber:** minimal 2 sumber kredibel per klaim utama, sumber di deskripsi.
