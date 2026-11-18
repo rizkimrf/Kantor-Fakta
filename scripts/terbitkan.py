@@ -205,6 +205,8 @@ for st_path in sorted((ROOT / "antrean").glob("*/status.json")):
     folder, s = st_path.parent, json.loads(st_path.read_text(encoding="utf-8"))
     if s.get("tahap") not in ("disetujui", "terjadwal"):
         continue
+    if s.get("unggah_manual_bos"):  # perintah Bos 18 Nov 2026: Bos yang mengunggah sendiri
+        laporan.append(f"{folder.name}: dilewati (unggah manual oleh Bos)"); continue
     if not (folder / "final.mp4").exists() or not (folder / "unggah.json").exists():
         laporan.append(f"{folder.name}: final.mp4 / unggah.json belum ada"); continue
     u = json.loads((folder / "unggah.json").read_text(encoding="utf-8"))

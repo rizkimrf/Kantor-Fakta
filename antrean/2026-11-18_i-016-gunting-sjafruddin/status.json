@@ -56,6 +56,11 @@
       "waktu": "2026-11-18T14:00",
       "oleh": "Pak Bima",
       "hasil": "Review LULUS setelah revisi zona aman (HARGA, UANG BEREDAR); cek_video & cek_mulus LULUS; paraf 5 orang lengkap."
+    },
+    {
+      "waktu": "2026-11-18T04:50",
+      "oleh": "Pak Bima",
+      "hasil": "Perintah Bos 18 Nov: video ini diunggah MANUAL oleh Bos di semua platform; jadwal diatur Bos. Terbit otomatis tidak boleh menyentuh folder ini."
     }
   ],
   "masalah": null,
@@ -64,5 +69,17 @@
   "video_asset_id": "f7038c78e79597d6bd7f5273b7f3feb0",
   "thumb_asset_id": "f40f1b1af2840c79411c88fc63d6506a",
   "video_url": "/_blob/f7038c78e79597d6bd7f5273b7f3feb0",
-  "thumb_url": "/_blob/f40f1b1af2840c79411c88fc63d6506a"
+  "thumb_url": "/_blob/f40f1b1af2840c79411c88fc63d6506a",
+  "unggah_manual_bos": true,
+  "terbit": {
+    "youtube": {
+      "catatan": "unggah manual"
+    },
+    "tiktok": {
+      "catatan": "unggah manual"
+    },
+    "instagram": {
+      "catatan": "unggah manual"
+    }
+  }
 }

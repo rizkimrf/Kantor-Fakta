@@ -501,7 +501,8 @@ function renderPanel(){
   else st.innerHTML = `<b>Laporan Pak Bima</b> · ${relatif(DATA.diperbarui)} (${jamTeks(DATA.diperbarui)} WITA)${DATA.ringkasan ? "<br>" + esc(DATA.ringkasan) : ""}`;
   // tinjau
   const el = document.getElementById("tinjau");
-  const manual = v.filter(x => ["disetujui","terjadwal"].includes(x.tahap) && (x.manual || []).length);
+  // Kartu unggah manual juga muncul segera setelah Bos menekan Setujui (tanpa menunggu sesi kantor berikutnya)
+  const manual = v.filter(x => (["disetujui","terjadwal"].includes(x.tahap) || (KEPUTUSAN[idDoc(x.folder)] || {}).aksi === "setujui") && (x.manual || []).length);
   let isi = tunggu.length ? tunggu.map(x => kartuTinjau(x)).join("") : `<div class="kosong">Belum ada video yang menunggu persetujuan. Video yang lolos review Pak Bima muncul di sini lengkap dengan pemutarnya.</div>`;
   if (manual.length) isi += `<h3 style="margin:18px 0 6px">Perlu Bos unggah manual (${manual.length})</h3>` + manual.map(x => kartuManual(x)).join("");
   el.innerHTML = isi;

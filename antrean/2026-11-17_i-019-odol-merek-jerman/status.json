@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "disetujui",
   "topik": "i-019 odol merek jerman",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
@@ -47,6 +47,18 @@
       "waktu": "2026-11-18T12:40",
       "oleh": "Pak Bima",
       "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul tube \"?\" krem-kobalt, paraf 5 orang lengkap."
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "waktu": "2026-11-18T04:43",
+      "oleh": "Bos (Kantor Visual HP)",
+      "hasil": "Setujui ditekan Bos di HP"
+    },
+    {
+      "waktu": "2026-11-18T04:43",
+      "oleh": "Pak Bima",
+      "hasil": "Perintah Bos 18 Nov: video ini diunggah MANUAL oleh Bos di semua platform (YouTube, TikTok, Instagram); jadwal diatur Bos. Terbit otomatis tidak boleh menyentuh folder ini."
     }
   ],
   "masalah": null,
@@ -54,5 +66,17 @@
   "video_asset_id": "5779d55d263e341ff161c2052be74ca0",
   "thumb_asset_id": "dce4f50ff4421311c3c5751629662102",
   "video_url": "/_blob/5779d55d263e341ff161c2052be74ca0",
-  "thumb_url": "/_blob/dce4f50ff4421311c3c5751629662102"
+  "thumb_url": "/_blob/dce4f50ff4421311c3c5751629662102",
+  "unggah_manual_bos": true,
+  "terbit": {
+    "youtube": {
+      "catatan": "unggah manual"
+    },
+    "tiktok": {
+      "catatan": "unggah manual"
+    },
+    "instagram": {
+      "catatan": "unggah manual"
+    }
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "disetujui",
   "topik": "i-005 pedas itu rasa sakit",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -53,6 +53,18 @@
       "waktu": "2026-11-18T13:05",
       "oleh": "Pak Bima",
       "hasil": "Review LULUS: cek_video & cek_mulus LULUS, BURUNG 34,86 dtk, paraf 5 orang lengkap."
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "waktu": "2026-11-18T04:43",
+      "oleh": "Bos (Kantor Visual HP)",
+      "hasil": "Setujui ditekan Bos di HP"
+    },
+    {
+      "waktu": "2026-11-18T04:43",
+      "oleh": "Pak Bima",
+      "hasil": "Perintah Bos 18 Nov: video ini diunggah MANUAL oleh Bos di semua platform (YouTube, TikTok, Instagram); jadwal diatur Bos. Terbit otomatis tidak boleh menyentuh folder ini."
     }
   ],
   "masalah": null,
@@ -61,5 +73,17 @@
   "thumb_asset_id": "b86d084119720cfdae7c8b07a8147f40",
   "video_url": "/_blob/fa56146fb9d485cafdfcaa927b4e0644",
   "thumb_url": "/_blob/b86d084119720cfdae7c8b07a8147f40",
-  "catatan_bos": null
+  "catatan_bos": null,
+  "unggah_manual_bos": true,
+  "terbit": {
+    "youtube": {
+      "catatan": "unggah manual"
+    },
+    "tiktok": {
+      "catatan": "unggah manual"
+    },
+    "instagram": {
+      "catatan": "unggah manual"
+    }
+  }
 }

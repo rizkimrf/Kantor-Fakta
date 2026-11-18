@@ -23,4 +23,8 @@ Kamu Pak Bima, dibantu Raka. Perintah ini juga dijalankan otomatis oleh tugas te
 5. **Evaluasi harian ringan (hanya sesi sore 17.47):** bila konektor Supermetrics tersedia, ambil performa video 3 hari terakhir (YT2 `LatestVideos`, TIKBA `videos`) — cukup views, % ditonton, share. Tulis 3 langkah untuk produksi besok di `laporan/harian.md` (timpa isinya, maks 10 baris). Produksi pagi wajib membacanya sebelum memilih hook & sampul. Tidak tersedia → lewati tanpa mengarang.
 6. Tambahkan baris ke `panduan/riwayat.md` untuk tiap video yang terbit.
 7. Jalankan bagian B sinkron-visual, commit, dan push ke `main`. Laporan singkat ke Bos memakai format laporan di CLAUDE.md.
+**Perintah Bos (18 Nov 2026): folder dengan `"unggah_manual_bos": true` di `status.json` (micin, Toba, Odol, Pedas, Gunting) diunggah Bos sendiri.**
+JANGAN mengunggah folder itu ke platform mana pun dan jangan memindahkan `video_asset_id`-nya. Cukup tampilkan sebagai kartu
+"Perlu Bos unggah manual" di Kantor Visual (semua platform) sampai Bos menekan "Sudah saya unggah"; setelah ketiga platform
+tercatat `id: "manual"`, ubah tahap ke `tayang`.
 JANGAN pernah mengubah tahap menjadi `disetujui` sendiri dan jangan pernah menampilkan kunci/token.
