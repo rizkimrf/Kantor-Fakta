@@ -5,7 +5,7 @@ description: Cara Raka memilih ide, menyusun SEO, mengecek naskah, dan menyiapka
 # SEO & Distribusi (Raka)
 ## Pilih ide (skor ≥15/20 lanjut)
 Penasaran 0–5 · **pengalaman bersama sehari-hari orang Indonesia 0–5 (wajib ≥4, Bos 19 Nov)** · layak dibagikan/ditandai ke teman 0–5 · momentum/tren/musim 0–5.
-Caption & komentar tersemat memancing cerita penonton ("ceritain versi di rumahmu…", "di daerahmu disebut apa?"); balas komentar terbaik dan jadikan bahan ide berikutnya (catat di bank ide sebagai "ide dari penonton").
+JANGAN menulis ajakan pindah ke YouTube di caption/komentar TikTok & Instagram (Bos 19 Nov). Caption & komentar tersemat memancing cerita penonton ("ceritain versi di rumahmu…", "di daerahmu disebut apa?"); balas komentar terbaik dan jadikan bahan ide berikutnya (catat di bank ide sebagai "ide dari penonton").
 
 ## Bahasa populer (tugas tetap Raka)
 Pelihara `panduan/bahasa-populer.md`: frasa, mitos, ejekan, dan pertanyaan yang sedang dipakai orang Indonesia (kolom komentar TikTok/IG/YouTube,

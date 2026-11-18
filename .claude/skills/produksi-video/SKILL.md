@@ -21,6 +21,8 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
   sedang diperagakan (panah, retak, aliran, wajah Tebe). Pindah posisi hanya saat ganti babak dan dengan fade 150 ms (tidak loncat-loncat).
   Wajib kontur/bayangan gelap tipis agar terbaca di atas latar apa pun.
 - Detik terakhir: teks besar ajakan komentar 1 kata berkubu, lalu adegan kembali ke pembuka (loop).
+- **Outro (Bos 19 Nov):** ±1 dtk logo YouTube kecil (ikon play merah resmi, tidak diubah bentuk/warnanya) + teks "Ternyata Begitu" di zona aman,
+  menyatu dengan adegan loop — tanpa kalimat "tonton di YouTube"/"subscribe". Ikon disimpan di `studio-aset/` sebagai SVG.
 
 ## Kemulusan (wajib — detail: referensi/kemulusan.md)
 - Transisi 12–18 frame (0,4–0,6 dtk) dengan easing in-out, di celah antar-kalimat. Tidak ada frame warna polos, tidak ada wipe < 6 frame.

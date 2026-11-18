@@ -37,7 +37,8 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 
 ## Prioritas platform (Bos, 19 Nov 2026)
 **YouTube Shorts = platform UTAMA** (target monetisasi). Semua analisa, uji A/B, dan keputusan pola memakai angka YouTube dulu.
-TikTok & Instagram = **jaring** yang menarik orang ke YouTube (bio berisi link channel YouTube, komentar tersemat/caption sesekali mengarah ke video panjang di YouTube).
+TikTok & Instagram = **jaring** yang menarik orang ke YouTube. **TANPA ajakan pindah ke YouTube di caption/komentar** (Bos 19 Nov: bisa menurunkan jangkauan).
+Caranya: **outro menampilkan logo YouTube kecil + nama channel "Ternyata Begitu"** (±1 dtk, di zona aman, tanpa kalimat ajakan) supaya penonton terpikir mencari sendiri; link YouTube cukup di bio.
 Status monetisasi (dicek 19 Nov 2026): TikTok Creator Rewards (bayar per tayang) BELUM tersedia di Indonesia — yang ada: TikTok Shop affiliate, gift LIVE, kerja sama brand.
 Instagram tidak membayar per tayang; Reels yang di-crosspost ke Halaman Facebook bisa masuk Facebook Content Monetization (Indonesia termasuk, lewat undangan). Pak Bima mengecek ulang status ini tiap bulan.
 
