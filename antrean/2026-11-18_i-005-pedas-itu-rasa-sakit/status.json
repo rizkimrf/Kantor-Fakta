@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "i-005 pedas itu rasa sakit",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -39,8 +39,19 @@
       "waktu": "2026-11-18T07:45",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "waktu": "2026-11-18T09:30",
+      "oleh": "Yoga",
+      "hasil": "final.mp4 69,7 dtk, 14,2 MB, cek_mulus LULUS, cek_video LULUS; BURUNG 34,86 dtk (jeda dirapatkan, suara tidak dibuat ulang); suara 1x ±576 kredit; sampul merah cabai+hitam arang, Tebe tengah frontal menyembur api, 'PEDAS = RASA APA?'"
     }
   ],
   "masalah": null,
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "video_asset_id": "fa56146fb9d485cafdfcaa927b4e0644",
+  "thumb_asset_id": "b86d084119720cfdae7c8b07a8147f40",
+  "video_url": "/_blob/fa56146fb9d485cafdfcaa927b4e0644",
+  "thumb_url": "/_blob/b86d084119720cfdae7c8b07a8147f40"
 }
