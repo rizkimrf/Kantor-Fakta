@@ -115,8 +115,8 @@ function setDekat(T){const p=P.siang,u=T-t2,orb=Math.sin(u*.45)*60,z=1.3+ioS(lin
 
 // ===== B3 MATCH-CUT tube → botol kumur kuno di meja apotek; palet modern → sepia; Tebe berkumur lalu MENYEMBUR (canda)
 const KM3=KI(28).m,KDk=KI(38).m,KJd=KI(34).m, SEMBUR=KI(38).s-.15;
-const AB=tebeAnimasi([{t:0,pose:'kaget'},{t:B3+1.4,pose:'penasaran',transisi:.4},{t:KM3,pose:'menjelaskan',transisi:.35},{t:KJd,pose:'netral',transisi:.35},{t:KDk-.1,pose:'netral',transisi:.3},{t:SEMBUR-.05,pose:'kaget',tanda:'!',transisi:.18,loncat:true}],{benih:6});
-function setApotekKumur(T){const u=T-B3,mix=ioS(lin(u,.1,1.4)),z=1.55-.45*ioS(lin(u,.2,2.6))+.06*ioS(lin(u,2.6,8)),pan=lerp(0,-60,ioS(lin(u,1,8)));
+const AB=tebeAnimasi([{t:0,pose:'kaget'},{t:B3+1.4,pose:'penasaran',transisi:.4},{t:KM3,pose:'menjelaskan',transisi:.35},{t:KJd,pose:'netral',transisi:.35},{t:KDk-.1,pose:'netral',transisi:.3},{t:SEMBUR-.05,pose:'kaget',tanda:'!',transisi:.18}],{benih:6});
+function setApotekKumur(T){const u=T-B3,mix=ioS(lin(u,.1,1.4)),z=1.55-.45*ioS(lin(u,.2,2.6))+.012*Math.max(0,u-2.6),pan=-28*u;
  const bgA=A.kamarMandi(1300,1920,P.siang,T,{meja:1300,cerminX:520,jendelaX:120,rakX:1080,handukX:-200}), bgB=A.apotekJadul(1300,1920,P.siang,T,{meja:1300,jendelaX:1050,lampuX:640});
  const objX=880,objY=1302;
  const tube=A.tubePasta(objX,objY-92*.62,.62,{rot:-8*(1-mix),tanya:1-mix}), botol=A.botolKumurJadul(objX,objY,lerp(.6,.95,mix),{kilau:lin(T,KM3-.2,KM3+.4)*(1-lin(T,KJd,KJd+1))});
@@ -193,7 +193,7 @@ function setWarung(T){const p=P.siang,u=T-B6,cam=-60-ioS(lin(u,0,8))*300;
 // ===== B7 RUANG TAMU SEPIA — poster iklan jadul (botol polos di tengah), gramofon memutar lagu, not balok berputar; "PUCCINI?!"; Tebe dansa kecil
 const KIk=KI(106).m,KPc=KI(114).m,KLu=KI(118).m,KOb=KI(119).m;
 const AP=tebeAnimasi([{t:0,pose:'penasaran'},{t:KIk+.3,pose:'menjelaskan',transisi:.35},{t:KPc-.1,pose:'kaget',tanda:'!',transisi:.2},{t:KLu,pose:'sorak',transisi:.3},{t:KOb+.3,pose:'tertawa',transisi:.3},{t:KOb+1.0,pose:'sorak',transisi:.3}],{benih:10});
-function setPoster(T){const u=T-B7,z=1.1-ioS(lin(u,0,7))*.08,sw=Math.sin(T*2.6)*10*lin(T,KLu-.3,KLu+.3);
+function setPoster(T){const u=T-B7,z=1.16-.016*u,sw=Math.sin(T*2.6)*10*lin(T,KLu-.3,KLu+.3);
  let s=A.ruangTamuSepia(1300,1920,T,{lantai:1380,jendelaX:180});
  const pk=ioS(lin(u,0,.9));
  const isiPoster=`${A.botolKumurJadul(0,170,.9,{kilau:.5})}<g transform="translate(0 -230)">${[0,1,2,3,4,5,6].map(i=>`<path d="M0 0 L${(Math.cos(-Math.PI+i*Math.PI/6)*190).toFixed(1)} ${(Math.sin(-Math.PI+i*Math.PI/6)*190).toFixed(1)}" stroke="#2F5FD0" stroke-width="10" opacity=".35" stroke-linecap="round"/>`).join('')}</g>`;
@@ -203,7 +203,7 @@ function setPoster(T){const u=T-B7,z=1.1-ioS(lin(u,0,7))*.08,sw=Math.sin(T*2.6)*
  const nm=lin(T,KLu-.8,KLu-.3);if(nm>0)for(let i=0;i<8;i++){const q=((T*.35+i/8)%1),ang=i*.8+T*.6,x=1000+Math.cos(ang)*(120+q*260)-q*300,y=880-q*420+Math.sin(ang)*60;
   s+=`<g opacity="${(nm*Math.sin(Math.PI*q)).toFixed(3)}">${A.notBalok(x,y,.9+.3*(i%2),['#2F5FD0','#E2483E','#1F8A8A','#C9A050'][i%4],i%2,Math.sin(T*2+i)*15)}</g>`}
  const pa=AP(T);const dn=lin(T,KLu,KLu+.4);if(dn>0){pa.kepalaMiring+=Math.sin(T*6.3)*9*dn;pa.condong+=Math.sin(T*6.3)*4*dn;pa.tanganK=[pa.tanganK[0]+Math.sin(T*6.3)*18*dn,pa.tanganK[1]];pa.tanganN=[pa.tanganN[0]+Math.sin(T*6.3)*18*dn,pa.tanganN[1]]}
- return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(${(-110+sw).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:640px 1250px"><svg class="abs" width="1300" height="1920">${s}</svg>
+ return `<div class="abs" style="left:0;top:0;width:1300px;height:1920px;transform:translateX(${(-20-26*u+sw).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:640px 1250px"><svg class="abs" width="1300" height="1920">${s}</svg>
  <div class="abs" style="left:${(150+Math.sin(T*3.15)*20*dn).toFixed(1)}px;top:${(1010+Math.abs(Math.sin(T*6.3))*-16*dn+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,390,{sepia:.12})}</div></div>
  ${cap('PUCCINI?!',T,KPc,KOb-.05,{y:470,uk:118,rot:-4})}${cap('punya LAGU sendiri',T,KOb+.05,B8-.05,{y:470,uk:92,warna:'#FFF4DC',rot:3})}`}
 

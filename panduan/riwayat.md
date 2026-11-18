@@ -21,6 +21,7 @@
 | 2026-11-17 | 2026-11-15_i-004-asal-nama-indonesia | Misteri: jurnal tua raksasa disorot lilin, kata "Indonesia" bersinar, tangan tanpa wajah memegang pena bulu, panah merah | tidak ada (subjek benda kuno) | amber/sepia + hitam |
 | 2026-11-17 | 2026-11-15_i-018-ketchup-dari-kecap | Duel: botol kecap vs saus tomat bermata marah, petir kuning, ikan perak melompat dari cipratan air garam | besar, kiri bawah, kaget (terpotong tepi) | ungu-plum + kuning petir |
 | 2026-11-17 | 2026-11-15_i-008-mitos-micin-bikin-bodoh | Sebab-akibat: otak kartun retak bertanda tanya diincar jarum suntik raksasa, sendok micin berkilau, surat 1968 buram di latar, panah merah ke ujung jarum | besar, kanan bawah, menghadap kiri, kaget | teal gelap + rim pink |
+| 2026-11-17 | 2026-11-17_i-013-danau-toba-letusan-super | Perbandingan skala / momen ketegangan: penampang belah — danau senja tenang + perahu kecil di atas, mangkuk raksasa bawah air dengan dasar bercahaya oranye samar (petunjuk, jawaban tidak dibocorkan), 1 panah merah ke dasar | kecil-sedang, kiri atas di perahu, menengok ke bawah, kaget | biru tua + oranye magma |
 
 ## Log cek riset naskah (Laras)
 | Tanggal | Folder | Hasil |

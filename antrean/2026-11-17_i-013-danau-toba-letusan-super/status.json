@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "i-013 danau toba letusan super",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
@@ -33,6 +33,13 @@
       "waktu": "2026-11-17T07:00",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "waktu": "2026-11-17T22:15",
+      "oleh": "Yoga (editor)",
+      "hasil": "final.mp4 83,7 dtk, 13,1 MB, 1080x1920; suara 1x eleven_v4 (1.242 huruf, ±646 kredit); cek_mulus LULUS (render ke-2: jeda intro 2,64→2,56 dtk), cek_video LULUS; aset baru studio-aset/aset-geologi.js; sampul: penampang belah danau tenang + mangkuk raksasa bercahaya oranye samar, Tebe kiri atas di perahu menengok ke bawah, panah merah, biru tua+oranye magma"
     }
   ],
   "masalah": null,

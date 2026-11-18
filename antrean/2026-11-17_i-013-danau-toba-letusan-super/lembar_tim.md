@@ -10,3 +10,8 @@ Rasa yang dikejar (kagum / kaget / geli / haru): kagum + kaget
   Ganti set tanpa "nunggu": transisi 0,5 dtk di celah kalimat; kamera menyelam dari permukaan danau ke penampang bawah tanah, abu yang terbang langsung jadi geser ke peta, peta zoom-in ke mulut gua. Intro khas masuk langsung ke set penampang.
   Masukan sampul Raka: biru tua+oranye setuju, tapi Tebe "kecil di tengah" sudah dipakai sampul durian; usul penampang belah: atas danau tenang + perahu kecil, bawah air cahaya oranye samar dari lubang raksasa (petunjuk, bukan jawaban), Tebe di kiri atas menengok ke bawah dari perahu, ekspresi kaget; 1 panah merah ke lubang.
 - Pak Bima (manajer): (belum diisi)
+
+## Paraf setelah produksi
+- Yoga: final.mp4 83,7 dtk / 13,1 MB sudah saya tonton per babak + lembar cek transisi & zona aman; cek_mulus LULUS, cek_video LULUS ✔. Abu di gua = garis tipis + inset serpihan kaca (W2 Laras) ✔; KALDERA & angka hanya lewat teks kode ✔; sampul tidak membocorkan "letusan/kaldera" ✔. Sekali lagi, biar pas: jeda intro saya pangkas 2,64→2,56 dtk lalu render ulang.
+  Masukan → Pak Bima: titik terlemah = babak Samosir (±33–38 dtk): kubah bawah air terbaca sebagai "gunung" abu-abu, Tebe kecil di atas; mohon nilai apakah perlu dipoles sebelum Bos. → Raka: teks sampul "DANAU APA LUBANG?" + frame terakhir kembali ke permukaan danau senja = loop mulus ke sampul; cocok dipakai potongan 0–8 dtk untuk promo. → Laras: mohon cek peta datar (abu Toba → India, Malawi, Afrika Selatan) tidak terkesan abu tebal menutup seluruh Afrika.
+- Pak Bima (manajer) — paraf 18 Nov: Review LULUS (cek_video & cek_mulus LULUS), sampul penampang danau biru-oranye, babak Samosir cukup terbaca (kubah naik jadi pulau berpohon), 10 butir gerbang mutu ya. "Benar dulu, baru menarik."

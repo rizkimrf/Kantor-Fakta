@@ -12,7 +12,7 @@
 const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp}=KS, P=ASET.PALET, A=ASET;
 const tebe=(p,w,g=0,o)=>KS.tebe(p,w,g,o);
 // ---------- peta waktu: hanya intro 2,4 dtk setelah hook; antar babak TANPA jeda ----------
-const W=KS.waktu(window.WAKTU_KATA||[],[{t:5.64,d:2.4}]);
+const W=KS.waktu(window.WAKTU_KATA||[],[{t:5.64,d:2.32}]);
 window.JEDA=W.JEDA;
 const J=W.JEDA, KK=W.kata.length?W.kata:Array.from({length:189},(_,i)=>({kata:'',m:i*.44,s:i*.44+.3}));
 const cel=i=>(KK[i-1].s+KK[i].m)/2;
