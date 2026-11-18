@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "i-016 gunting sjafruddin",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -49,8 +49,20 @@
       "oleh": "Yoga",
       "waktu": "2026-11-18",
       "hasil": "final.mp4 75,5 dtk, 14,0 MB, 1080x1920; cek_mulus LULUS, cek_video LULUS. Suara eleven_v4 sekali (1.186 huruf, ±617 kredit). Animasi Remotion-HTML 11 babak + aset BARU studio-aset/aset-uang.js (uang fiktif berpita CONTOH, siluet Sjafruddin tanpa wajah, gedung bank generik) + SFX baru gunting.wav & srek.wav. Sampul krem-kuning + vinyet marun, gunting merah, hanya lengan Tebe, tanpa surat utang/½. Lanjut review (Pak Bima)."
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-18T14:00",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS setelah revisi zona aman (HARGA, UANG BEREDAR); cek_video & cek_mulus LULUS; paraf 5 orang lengkap."
     }
   ],
   "masalah": null,
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "catatan_bos": null,
+  "video_asset_id": "f7038c78e79597d6bd7f5273b7f3feb0",
+  "thumb_asset_id": "f40f1b1af2840c79411c88fc63d6506a",
+  "video_url": "/_blob/f7038c78e79597d6bd7f5273b7f3feb0",
+  "thumb_url": "/_blob/f40f1b1af2840c79411c88fc63d6506a"
 }
