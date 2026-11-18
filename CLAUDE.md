@@ -42,6 +42,8 @@ Caranya: **outro menampilkan logo YouTube kecil + nama channel "Ternyata Begitu"
 Status monetisasi (dicek 19 Nov 2026): TikTok Creator Rewards (bayar per tayang) BELUM tersedia di Indonesia — yang ada: TikTok Shop affiliate, gift LIVE, kerja sama brand.
 Instagram tidak membayar per tayang; Reels yang di-crosspost ke Halaman Facebook bisa masuk Facebook Content Monetization (Indonesia termasuk, lewat undangan). Pak Bima mengecek ulang status ini tiap bulan.
 
+Keputusan Bos 19 Nov: **tanpa iklan berbayar (100% organik) selama Nov–Des 2026** supaya data uji bersih; iklan baru dipertimbangkan tahun depan, hanya untuk video yang polanya sudah terbukti. Fokus Nov–Des: secepat mungkin memenuhi syarat monetisasi YouTube (bila memungkinkan, ajukan sebelum 1 Feb 2027 saat syarat masih 4.000 jam).
+
 ## Format gabungan & uji A/B (Bos, 19 Nov 2026) — pola menuju monetisasi
 Kekuatan kita dipertahankan, kekuatan akun pembanding (@barutahu.in) diterapkan: lihat `.claude/skills/naskah-viral/referensi/format-gabungan.md`.
 Jalur A "Kok Bisa Jalan?" (cara kerja benda sehari-hari, ≤ 90 dtk) slot 13.00 · Jalur B "Ternyata Begitu" (fakta sehari-hari, ≤ 60 dtk) slot 18.00.
