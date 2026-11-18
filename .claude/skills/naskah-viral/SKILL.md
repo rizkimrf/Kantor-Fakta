@@ -5,13 +5,16 @@ description: Cara Nadia menulis naskah Shorts/video panjang Ternyata Begitu yang
 # Naskah Viral (Nadia)
 Penonton memutuskan dalam 1–2 detik. Tugasmu: membuat mereka TIDAK BISA geser.
 
-## Durasi: isi yang menentukan, bukan angka (keputusan Bos, 16 Nov 2026 sore)
-**Shorts boleh 60–90 dtk** selama fakta inti, penjelasan "kok bisa", DAN candaannya tersampaikan utuh. Jangan memotong paksa
-sampai kalimat/candaan hilang atau terasa patah. Yang tetap DILARANG: bagian **"nunggu"** — tidak ada detik tanpa isi.
-- Fakta inti di riset.md (klaim + "kok bisa" + kejutan utama) + 1–2 candaan WAJIB ada. Yang dibuang hanya yang kosong: pengantar, pengulangan, kalimat transisi tanpa isi.
-- Setiap 5–8 dtk ada hal baru (fakta, visual, candaan, atau pertanyaan) supaya durasi panjang tetap terasa cepat.
-- Kecepatan bicara tidak dinaikkan; jeda napas antar babak maks ±0,5 dtk. Ganti set terjadi SAMBIL narasi berjalan, tidak menunggu.
-- Data penonton tetap jadi hakim: Raka membandingkan % ditonton & rata-rata detik tonton video ≤60 dtk vs >60 dtk tiap Senin; bila yang panjang kalah jauh di ≥3 video, Pak Bima mengusulkan penyesuaian ke Bos.
+## Aturan baru dari data YouTube (perintah Bos, 19 Nov 2026) — MENGGANTIKAN aturan durasi sebelumnya
+Data channel: tetap menonton 53–70% (target 75–85%), rata-rata ditonton 38–66% (target 90–120%+), penonton turun setelah ±45 dtk.
+- **Shorts MAKSIMAL 60 dtk** (target nyaman 40–55 dtk). Fokus **1 inti kejutan** + "kok bisa" singkat + 1 candaan. Fakta pendukung lain → video lain/video panjang.
+  Tetap tidak terburu-buru: tempo bicara normal, kalimat utuh, mudah dipahami — yang dibuang pengantar & pengulangan, bukan kejelasan.
+- **TANPA intro logo.** Narasi hook terdengar di detik 0,0–0,3. Tidak ada hening/salam di awal.
+- **Hook pakai 26 tipe** di `referensi/hook-26.md` (10 kandidat dari ≥5 tipe, skor ≥ 8, tipe beda dari 5 video terakhir).
+- **Loop mulus:** kalimat terakhir menyambung/menjawab kalimat pertama, sehingga saat video berulang terasa lanjut (tanpa outro panjang; outro ≤ 1,5 dtk sambil narasi terakhir).
+- **Pancing reaksi:** 1 pertanyaan terbuka/pilih kubu di akhir (bukan rangkuman, bukan "like & subscribe") + 1 pemicu share spesifik bernuansa identitas
+  ("kirim ke teman yang …"). Topik relatable (kebiasaan/kata/mitos Indonesia) diprioritaskan.
+- Perubahan visual tiap 2–3 dtk (ditulis di kolom aksi naskah.json supaya Yoga tahu).
 
 ## Struktur Shorts (±2,3 kata/dtk)
 1. **Hook 0–3 dtk — tugas nomor satu.** Penonton harus berhenti menggulir sebelum detik ke-3. Hook = kalimat + visual pembuka bekerja bersama.
@@ -20,15 +23,15 @@ sampai kalimat/candaan hilang atau terasa patah. Yang tetap DILARANG: bagian **"
      Detail ahli yang belum dikenal orang (nama peneliti, "1 surat 1968", "4 salinan gen", tahun) TIDAK di hook/sampul — itu bahan kejutan di ISI video.
      Uji: "Apakah teman tongkrongan saya pernah mengucapkan kalimat ini?" Kalau tidak, ganti. Cek daftar `panduan/bahasa-populer.md`.
    - Kalimat pertama ≤ 12 kata, kata kunci SEO terucap, langsung ke inti (tanpa "halo", "tahukah kamu", "di video ini").
-   - Pakai salah satu pola dan putar terus (catat di `panduan/riwayat.md`, tidak sama dengan 5 video terakhir):
+   - Pakai 26 tipe di `referensi/hook-26.md`. Pola ringkas lama (masih berlaku sebagai contoh) — putar terus (catat di `panduan/riwayat.md`, tidak sama dengan 5 video terakhir):
      **Kamu salah** ("Bau hujan yang kamu suka itu bukan bau air.") · **Mustahil tapi nyata** ("Komodo ini hamil tanpa pernah ketemu pejantan.") ·
      **Bahaya/tabu** ("Jangan cium tanah setelah hujan… atau cium?") · **Angka mengejutkan** · **Pertanyaan pribadi** ("Kenapa kamu selalu beli yang 99.900?") ·
      **Rahasia/bocoran** ("Penjual nggak mau kamu tahu ini.") · **Mulai dari akhir** (tunjukkan akibatnya dulu, sebabnya nanti).
    - Visual detik 0–3 harus bergerak dan aneh/menegangkan (bukan Tebe berdiri menyapa). Teks layar hook = 2–4 kata paling memancing.
    - Tulis 10 kandidat, beri nilai 1–10 "apakah saya berhenti menggulir kalau melihat ini di beranda?", pakai yang tertinggi (≥ 8). Raka ikut menilai 3 teratas.
-2. **Intro khas** (2,4 dtk, tanpa narasi).
-3. **Isi**: 2–3 fakta inti, tiap ±10 dtk buka celah baru ("tapi ada masalah…", "dan anehnya…"). Jawab "kok bisa?" dengan mekanisme sederhana + perbandingan sehari-hari Indonesia.
-4. **Bayar janji hook** sebelum detik terakhir, lalu **lingkaran**: kalimat penutup yang membuat ingin menonton ulang atau berkomentar (pertanyaan pilihan, bukan "like & subscribe").
+2. **(Tanpa intro — langsung isi.)**
+3. **Isi**: 1 inti kejutan (+ maks 1 fakta pendukung), tiap ±8 dtk buka celah baru ("tapi ada masalah…", "dan anehnya…"). Jawab "kok bisa?" dengan mekanisme sederhana + perbandingan sehari-hari Indonesia.
+4. **Bayar janji hook** sebelum detik terakhir, lalu **loop + reaksi**: kalimat penutup menyambung ke kalimat pertama, berisi pertanyaan terbuka/pilih kubu dan pemicu share.
 
 ## Gaya bicara
 Ngobrol ke teman: "kamu", kalimat pendek, 1 canda ringan per babak, tidak menggurui, tidak lebay. Angka maks 2 per Shorts.

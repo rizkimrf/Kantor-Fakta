@@ -14,10 +14,11 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 
 ## Kemulusan (wajib — detail: referensi/kemulusan.md)
 - Transisi 12–18 frame (0,4–0,6 dtk) dengan easing in-out, di celah antar-kalimat. Tidak ada frame warna polos, tidak ada wipe < 6 frame.
-- Intro khas langsung masuk ke set babak berikutnya (jangan kembali sebentar ke set lama).
+- **TANPA intro logo (Bos, 19 Nov).** Jangan panggil `KS.intro`; `T_INTRO = 0`. Narasi mulai di 0,0–0,3 dtk, visual hook sudah bergerak di frame ke-2.
+- Durasi maks 60 dtk. Perubahan visual tiap 2–3 dtk (zoom, objek masuk, teks baru, sudut baru). Outro ≤ 1,5 dtk dan menyambung ke awal (loop mulus).
 - Gerak Tebe & kamera selalu fungsi waktu kontinu (smootherstep), tidak pernah lompat posisi antar-frame.
 - Narasi TIDAK dipotong di tengah kata: `window.JEDA` hanya di akhir kalimat (skrip juga menjepret ke celah kata + fade 25 ms).
-- Musik: −12 s/d −15 dB di bawah narasi, ducking halus (sudah diatur skrip). SFX maks 4–6 di luar intro/outro, mendarat tepat di aksi visual, tidak menutupi kata.
+- Musik: −12 s/d −15 dB di bawah narasi, ducking halus (sudah diatur skrip). SFX maks 4–6, mendarat tepat di aksi visual, tidak menutupi kata.
 
 ## Zona aman 1080×1920 (wajib — detail: referensi/zona-aman.md)
 - Area tertutup UI: atas 0–220, bawah 1480–1920, kanan 900–1080 pada y 800–1480.
@@ -33,7 +34,7 @@ Gaya acuan seperti channel animasi edukasi besar: satu ADEGAN ilustrasi yang men
 - Teks atas 2 baris, maks 4–5 kata, huruf putih tebal berkontur gelap, 1 kata berwarna; berbentuk pertanyaan/klaim.
 - Maks 1 grafis penunjuk (panah merah / lingkaran).
 - Semua inti di y 260–1660 (grid profil memotong jadi 3:4). Beda konsep & warna dominan dari 2 sampul terakhir.
-- Frame 0 video = sampul ini, lalu bertransisi halus ke hook.
+- Frame 0 video = sampul ini DAN sekaligus adegan hook (judul sampul = teks hook), sehingga video langsung jalan tanpa jeda.
 
 ## Selesai bila
 `cek_mulus.py` LULUS, `cek_video.py` LULUS, ukuran ≤ 18 MB, lembar cek sudah dilihat, paraf di lembar_tim.md.

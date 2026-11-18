@@ -10,7 +10,7 @@ Temuan dari video bau hujan (15 Nov 2026), jangan diulang:
 
 | "Patah/nyendat" saat masuk outro (durian 64,0 dtk; 99.900 61,6 dtk) | Lingkaran & Tebe muncul dengan efek pantul (overshoot) di tengah transisi + jambul "?"→"!" berganti dalam 1 frame | Tidak ada efek pantul untuk benda besar (>25% layar); jambul berganti silang-pudar 0,28 dtk (sudah di tebe-rig.js & kerangka-shorts.js). `cek_mulus.py` kini mendeteksi "frame dobel"/gerak berbalik arah. |
 
-**Tanpa "nunggu" (Bos, 16 Nov):** durasi boleh panjang, tapi penonton tidak boleh menunggu. Set baru masuk di tengah/akhir kalimat terakhir babak lama (bukan setelah hening), jeda sisipan antar babak ≤ 0,4 dtk (total diam ≤ 0,9 dtk), intro logo ≤ 2,6 dtk. `cek_mulus.py` menolak jeda yang lebih lama.
+**Tanpa "nunggu" (Bos, 16 Nov):** durasi boleh panjang, tapi penonton tidak boleh menunggu. Set baru masuk di tengah/akhir kalimat terakhir babak lama (bukan setelah hening), jeda sisipan antar babak ≤ 0,4 dtk (total diam ≤ 0,9 dtk), tanpa intro logo (Bos 19 Nov): narasi mulai ≤ 0,3 dtk. `cek_mulus.py` menolak jeda yang lebih lama.
 
 Aturan gerak: benda besar/kamera memakai easing in-out tanpa pantul; pantul hanya untuk benda kecil (ikon, teks pendek) dan maks 10%. Jangan menumpuk dua gerak berlawanan arah dalam satu transisi (mis. set lama zoom-in sementara benda baru mengecil).
 
