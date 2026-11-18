@@ -35,6 +35,12 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 - Pantau tiap Senin (laporan Raka): subscriber, jam tonton 365 hari, views Shorts 90 hari, rata-rata durasi tonton, CTR thumbnail. Bandingkan dengan jalur ke 8.000 jam.
 - **Narasi:** utamakan suara Bos sendiri bila Bos mengirim rekaman (paling kuat sebagai bukti konten orisinal); jika tidak ada, suara AI berkualitas tinggi. Suara robot hanya untuk uji internal, jangan ditayangkan.
 
+## Prioritas platform (Bos, 19 Nov 2026)
+**YouTube Shorts = platform UTAMA** (target monetisasi). Semua analisa, uji A/B, dan keputusan pola memakai angka YouTube dulu.
+TikTok & Instagram = **jaring** yang menarik orang ke YouTube (bio berisi link channel YouTube, komentar tersemat/caption sesekali mengarah ke video panjang di YouTube).
+Status monetisasi (dicek 19 Nov 2026): TikTok Creator Rewards (bayar per tayang) BELUM tersedia di Indonesia — yang ada: TikTok Shop affiliate, gift LIVE, kerja sama brand.
+Instagram tidak membayar per tayang; Reels yang di-crosspost ke Halaman Facebook bisa masuk Facebook Content Monetization (Indonesia termasuk, lewat undangan). Pak Bima mengecek ulang status ini tiap bulan.
+
 ## Format gabungan & uji A/B (Bos, 19 Nov 2026) — pola menuju monetisasi
 Kekuatan kita dipertahankan, kekuatan akun pembanding (@barutahu.in) diterapkan: lihat `.claude/skills/naskah-viral/referensi/format-gabungan.md`.
 Jalur A "Kok Bisa Jalan?" (cara kerja benda sehari-hari, ≤ 90 dtk) slot 13.00 · Jalur B "Ternyata Begitu" (fakta sehari-hari, ≤ 60 dtk) slot 18.00.
