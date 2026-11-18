@@ -48,3 +48,8 @@ Alasan: titik masuknya tokoh/tahun/tempat jauh, gagal uji "pernah ngalamin".
 | Sen 23 Nov | A-09 setrika bimetal | (ide B baru dari Laras) |
 | Sel 24 Nov | A-04 galon blub | (ide B baru dari Laras) |
 | Rab 25 Nov | A-12 helm SNI | (ide B baru dari Laras) |
+
+## Video panjang (1 per minggu, Minggu 19.00, 8–12 menit — keputusan Bos 19 Nov: uji minggu ini 2 Shorts/hari + 1 panjang/minggu)
+| Tanggal | Judul kerja | Tema dari Shorts | Bab (≥ 70% isi baru) |
+|---|---|---|---|
+| Min 22 Nov | "Trik Harga yang Diam-diam Mengatur Isi Dompetmu" | Rp 99.900 (±3.300 views TikTok) | harga 99.900 → harga coret → "beli 2 gratis 1" → letak barang di minimarket → kemasan menyusut (shrinkflation), kejutan terbesar di akhir · semua klaim dikunci Laras ≥ 2 sumber · tanpa nasihat keuangan |
