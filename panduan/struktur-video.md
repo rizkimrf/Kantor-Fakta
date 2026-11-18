@@ -7,7 +7,7 @@
 4. **Kejutan (40–50 dtk):** fakta tambahan / sudut Indonesia.
 5. **Penutup:** kalimat khas + CTA halus.
 
-## Video panjang (4–8 menit, 600–1100 kata)
+## Video panjang (8–12 menit, ±1.200–1.700 kata — Bos 19 Nov; aturan utama di `.claude/skills/naskah-viral/referensi/video-panjang.md`)
 1. Hook 10 detik (pertanyaan besar + janji jawaban)
 2. Konteks & kenapa ini penting buat kamu
 3. Bagian 1–3: penjelasan bertahap, tiap bagian diakhiri "tapi ternyata…" untuk menahan penonton
