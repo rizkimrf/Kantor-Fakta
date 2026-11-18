@@ -207,15 +207,15 @@ function setTimbangan(T){const u=T-B7,fase3=T>=B7c-.4,z=1.05+.06*ioS(lin(u,0,6))
  const warna=['zaitun','bata','lembayung'];
  let kiri='';for(let i=0;i<nTumpuk;i++){const goy=Math.sin(T*3+i*.7)*i*.9;kiri+=A.uangFiktif(goy,-14-i*26,.42,{warna:warna[i%3],rot:(i%2?3:-3)+goy*.2,nilai:100})}
  const kanan=A.karungBeras(-70,0,.5)+A.botolMinyak(40,0,.52)+A.telurRak(95,-2,.34);
- let s=pasar(1080,1920,T)+A.timbangan(590,470,1.15,{miring,kiri,kanan});
+ let s=pasar(1080,1920,T)+A.timbangan(560,470,1.05,{miring,kiri,kanan});
  // potongan tumpukan yang jatuh
  if(fase3&&pangkas>0&&pangkas<1){for(let i=0;i<6;i++)s+=`<g opacity="${(1-pangkas).toFixed(3)}">${A.uangFiktif(245-160+i*60,420+pangkas*700+i*30,.36,{warna:warna[i%3],rot:i*40+pangkas*200})}</g>`}
  // label harga naik (tanpa angka)
- const yr=470+345*Math.sin(miring*Math.PI/180), hn=fase3?1-.6*ioS(lin(T,KNg,KNg+.6)):ioS(lin(T,KHn-.15,KHn+.5));
+ const yr=470+315*Math.sin(miring*Math.PI/180), hn=fase3?1-.6*ioS(lin(T,KNg,KNg+.6)):ioS(lin(T,KHn-.15,KHn+.5));
  const lh=`<g transform="translate(800 ${(yr+300-190*hn).toFixed(1)})" opacity="${cl(hn*3).toFixed(3)}"><rect x="-120" y="-50" width="240" height="100" rx="20" fill="#FFE45C"/><rect x="-120" y="-50" width="240" height="22" rx="10" fill="#E8463C"/><text x="-18" y="34" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="44" fill="#1E1E1E">HARGA</text><path d="M78 30 L78 -18 M62 -2 L78 -22 L94 -2" stroke="#E8463C" stroke-width="10" stroke-linecap="round" fill="none"/></g>`;
  const gun=fase3?A.gunting(lerp(-200,160,ioS(lin(T,B7c-.2,KGu-.1))),lerp(250,520,ioS(lin(T,B7c-.2,KGu-.1)))-pangkas*40,.62,{buka:1-Math.pow(lin(T,KGu-.3,KGu),2)+.8*lin(T,KGu+.2,KGu+.6),rot:20}):'';
  const pa=AT(T);
- const ch=chip('UANG BEREDAR',285,880,lin(T,KBr-.05,KBr+.3)*(fase3?1-lin(T,KNg+.4,KNg+.8):1),'#FFF4DC',38,'#3A1A14')+chip('BARANG',840,880,lin(T,KBg-.05,KBg+.3)*(fase3?0:1),'#FFF4DC',38,'#3A1A14');
+ const ch=chip('UANG BEREDAR',270,860,lin(T,KBr-.05,KBr+.3)*(fase3?1-lin(T,KNg+.4,KNg+.8):1),'#FFF4DC',38,'#3A1A14')+chip('BARANG',830,860,lin(T,KBg-.05,KBg+.3)*(fase3?0:1),'#FFF4DC',38,'#3A1A14');
  return `<div class="abs" style="inset:0;transform:translateX(${pan.toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:540px 1000px"><svg class="abs" width="1080" height="1920" style="filter:${SEPIA}">${s}</svg>
  <div class="abs" style="left:${lerp(-60,10,ioS(lin(u,0,1))).toFixed(1)}px;top:${(930+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(pa,270,{filter:'sepia(.15)'})}</div>
  <svg class="abs" width="1080" height="1920">${lh}${ch}${gun}</svg></div>`}
