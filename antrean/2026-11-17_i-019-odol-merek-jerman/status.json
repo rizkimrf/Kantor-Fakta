@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "i-019 odol merek jerman",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
@@ -40,6 +40,13 @@
       "waktu": "2026-11-18",
       "oleh": "Yoga (editor)",
       "hasil": "final.mp4 70,7 dtk / 13,7 MB, cek_mulus LULUS, cek_video LULUS; suara 1x (1.101 huruf, ±573 kredit, log_kredit.csv); thumbnail.png = tube raksasa berlabel kosong '?' + Tebe separuh wajah berbusa, krem-sepia + kobalt, tanpa bocoran botol kumur"
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-18T12:40",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS, sampul tube \"?\" krem-kobalt, paraf 5 orang lengkap."
     }
   ],
   "masalah": null,
