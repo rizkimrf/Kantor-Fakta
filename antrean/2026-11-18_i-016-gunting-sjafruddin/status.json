@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "i-016 gunting sjafruddin",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -43,6 +43,12 @@
       "waktu": "2026-11-18T07:30",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS, skor manajer 8/9, viral 8/10"
+    },
+    {
+      "tahap": "produksi",
+      "oleh": "Yoga",
+      "waktu": "2026-11-18",
+      "hasil": "final.mp4 75,5 dtk, 14,0 MB, 1080x1920; cek_mulus LULUS, cek_video LULUS. Suara eleven_v4 sekali (1.186 huruf, ±617 kredit). Animasi Remotion-HTML 11 babak + aset BARU studio-aset/aset-uang.js (uang fiktif berpita CONTOH, siluet Sjafruddin tanpa wajah, gedung bank generik) + SFX baru gunting.wav & srek.wav. Sampul krem-kuning + vinyet marun, gunting merah, hanya lengan Tebe, tanpa surat utang/½. Lanjut review (Pak Bima)."
     }
   ],
   "masalah": null,
