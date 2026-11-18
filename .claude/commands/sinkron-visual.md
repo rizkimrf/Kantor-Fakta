@@ -31,6 +31,13 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
    - `agen`: untuk bima, laras, nadia, raka, yoga → `{status: "kerja"|"rapat"|"santai", tugas: "<pendek, maks 25 huruf>"}`.
      Saat sesi selesai, kembalikan semua ke `santai` kecuali yang masih punya pekerjaan berjalan. `rapat: true` saat sedang rapat naskah.
    - `log`: tambahkan kejadian sesi ini di depan `{waktu, siapa, teks}`, simpan maksimal 30 entri.
+1b. **Laporan & perbaikan (Bos, 19 Nov)** — dokumen `kantor/laporan` (get dulu, lalu update dengan if_version). Diisi di sesi 17.47 (evaluasi harian)
+   dan Senin (laporan mingguan); sesi lain hanya memindahkan item yang selesai. Field:
+   `diperbarui`, `ringkasan` (1–2 kalimat), `fokus` [{teks, ukur}] = 3–5 langkah yang dipakai produksi berikutnya,
+   `mingguan` {tanggal, poin[]} (Senin), `harus` [{teks, prioritas 1–3, pemilik, alasan, selesai}] = daftar perbaikan yang belum beres,
+   `sudah` [{tanggal "21 Nov", teks, hasil}] = perbaikan yang sudah dikerjakan + HASILNYA dari data (isi `hasil` begitu angkanya ada, jangan dikarang),
+   `metrik` [{nama, nilai, angka, target, target_teks}] (YouTube dulu), `uji_ab` [{jalur, views, tetap, ditonton, komen, share}].
+   Saat item `harus` selesai: tandai `selesai: true` lalu pindahkan ke `sudah`. Simpan maks 30 item `sudah` terbaru.
 2. Untuk video `menunggu_persetujuan` yang belum punya `video_url`: unggah `final.mp4` dan `thumbnail.png` ke halaman
    dengan tool **Artifact** (`url` di atas, `asset: true`, `file_paths: [...]`), lalu isi `video_url`/`thumb_url` dari hasilnya.
    Unggah `final.mp4` ASLI (bukan pratinjau) karena file inilah yang dipakai untuk terbit; batas 20 MB, jadi Yoga merender

@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Kantor Ternyata Begitu</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,6 +78,16 @@ a.buka{display:block;text-align:center;margin-top:10px;padding:12px;border-radiu
 .kutip{font-style:italic;color:var(--kuning);margin-top:6px}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:#EEF1F6;color:#141C2B;font-weight:600;padding:10px 16px;border-radius:10px;z-index:30}
 .catatan{font-size:12px;color:var(--redup);margin-top:6px}
+.tab{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.lap li{list-style:none;padding:8px 0;border-bottom:1px solid var(--garis);font-size:13px}
+.lap{margin:0;padding:0}
+.lap .tgl{color:var(--redup);font-size:11px;margin-right:6px;font-variant-numeric:tabular-nums}
+.metrik{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.metrik div{background:var(--panel2);border-radius:10px;padding:8px}
+.metrik b{display:block;font:700 18px/1.15 var(--f-judul);font-variant-numeric:tabular-nums}
+.metrik span{font-size:11px;color:var(--redup)}
+.bar{height:6px;border-radius:3px;background:#101826;margin-top:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--teal)}
+table.ab{width:100%;border-collapse:collapse;font-size:12px}table.ab th,table.ab td{padding:6px 4px;border-bottom:1px solid var(--garis);text-align:left;font-variant-numeric:tabular-nums}table.ab th{color:var(--redup);font-weight:600}
 @media (prefers-reduced-motion:reduce){.live i{animation:none}}
 </style>
 
@@ -99,6 +110,15 @@ a.buka{display:block;text-align:center;margin-top:10px;padding:12px;border-radiu
     <div><b id="aStok">0</b><span>Stok (hari)</span></div>
     <div><b id="aIde">0</b><span>Bank ide</span></div>
   </div>
+
+  <section>
+    <h2>Laporan & perbaikan <span class="hit" id="hLap">-</span></h2>
+    <div class="kartu">
+      <div class="tab" role="tablist" id="tabLap"></div>
+      <div id="isiLap"></div>
+      <div class="catatan" id="lapWaktu"></div>
+    </div>
+  </section>
 
   <section>
     <h2>Tinjau video <span class="hit" id="hTinjau">0</span></h2>
@@ -559,6 +579,35 @@ document.getElementById("cmd").addEventListener("click", e => {
   try { navigator.clipboard.writeText(c).then(() => toast(`Disalin: ${c}`), () => toast(`Salin manual: ${c}`)); } catch(_){ toast(`Salin manual: ${c}`); }
 });
 
+/* ================== LAPORAN & PERBAIKAN ================== */
+let LAP = null, TAB_LAP = "fokus";
+try { TAB_LAP = localStorage.getItem("tabLap") || "fokus"; } catch(_){}
+const TABS_LAP = [["fokus","Fokus sekarang"],["harus","Harus diperbaiki"],["sudah","Sudah dikerjakan"],["angka","Angka & target"]];
+function gantiTab(t){ TAB_LAP = t; try { localStorage.setItem("tabLap", t); } catch(_){} renderLaporan(); }
+function daftarLap(arr, kosong, fn){ return (arr && arr.length) ? `<ul class="lap">${arr.map(fn).join("")}</ul>` : `<div class="kosong">${kosong}</div>`; }
+function renderLaporan(){
+  document.getElementById("tabLap").innerHTML = TABS_LAP.map(([k, n]) => `<button class="chip" role="tab" aria-pressed="${TAB_LAP === k}" onclick="gantiTab('${k}')">${n}</button>`).join("");
+  const el = document.getElementById("isiLap"), L = LAP || {};
+  document.getElementById("hLap").textContent = (L.harus || []).filter(x => !x.selesai).length + " perbaikan";
+  document.getElementById("lapWaktu").textContent = L.diperbarui ? `Diperbarui Raka & Pak Bima ${relatif(L.diperbarui)} (${jamTeks(L.diperbarui)} WITA). Data dari YouTube dulu, TikTok & Instagram sebagai jaring.` : "";
+  if (!LAP){ el.innerHTML = `<div class="kosong">Laporan marketing muncul di sini setelah sesi berikutnya (evaluasi harian 17.47, laporan mingguan Senin pagi).</div>`; return; }
+  if (TAB_LAP === "fokus"){
+    el.innerHTML = `${L.ringkasan ? `<p style="margin-top:0">${esc(L.ringkasan)}</p>` : ""}<div class="meta" style="margin-bottom:4px">Langkah yang dipakai tim untuk produksi berikutnya</div>`
+      + daftarLap(L.fokus, "Belum ada langkah.", (x, i) => `<li><b>${i + 1}.</b> ${esc(x.teks || x)}${x.ukur ? `<div class="meta">Diukur dari: ${esc(x.ukur)}</div>` : ""}</li>`)
+      + (L.mingguan ? `<div class="meta" style="margin:12px 0 4px">Laporan mingguan ${esc(L.mingguan.tanggal || "")}</div>` + daftarLap(L.mingguan.poin, "-", x => `<li>${esc(x)}</li>`) : "");
+  } else if (TAB_LAP === "harus"){
+    const a = (L.harus || []).filter(x => !x.selesai).sort((p, q) => (p.prioritas || 9) - (q.prioritas || 9));
+    el.innerHTML = daftarLap(a, "Tidak ada perbaikan yang menunggu.", x => `<li><span class="pill ${x.prioritas === 1 ? "merah" : x.prioritas === 2 ? "kuning" : ""}">P${esc(x.prioritas || 3)}</span> ${esc(x.teks)}${x.alasan ? `<div class="meta">Kenapa: ${esc(x.alasan)}</div>` : ""}${x.pemilik ? `<div class="meta">Dikerjakan: ${esc(x.pemilik)}</div>` : ""}</li>`);
+  } else if (TAB_LAP === "sudah"){
+    const a = (L.sudah || []).slice().sort((p, q) => String(q.tanggal).localeCompare(String(p.tanggal)));
+    el.innerHTML = daftarLap(a, "Belum ada catatan.", x => `<li><span class="tgl">${esc(x.tanggal || "")}</span>${esc(x.teks)}${x.hasil ? `<div class="meta">Hasil: ${esc(x.hasil)}</div>` : `<div class="meta">Hasil: menunggu data</div>`}</li>`);
+  } else {
+    const m = L.metrik || [];
+    el.innerHTML = (m.length ? `<div class="metrik">${m.map(x => { const pct = x.target && Number(x.angka) >= 0 ? Math.min(100, Number(x.angka) / Number(x.target) * 100) : null;
+      return `<div><span>${esc(x.nama)}</span><b>${esc(x.nilai ?? x.angka ?? "-")}</b>${x.target ? `<span>target ${esc(x.target_teks || x.target)}</span>${pct !== null && !isNaN(pct) ? `<div class="bar"><i style="width:${pct.toFixed(1)}%"></i></div>` : ""}` : ""}</div>`; }).join("")}</div>` : `<div class="kosong">Angka belum ditarik.</div>`)
+      + ((L.uji_ab || []).length ? `<div class="meta" style="margin:12px 0 4px">Uji A/B (YouTube Shorts)</div><table class="ab"><tr><th>Jalur</th><th>Views 48j</th><th>Tetap</th><th>Ditonton</th><th>Komen/1rb</th><th>Share/1rb</th></tr>${L.uji_ab.map(r => `<tr><td>${esc(r.jalur)}</td><td>${esc(r.views ?? "-")}</td><td>${esc(r.tetap ?? "-")}</td><td>${esc(r.ditonton ?? "-")}</td><td>${esc(r.komen ?? "-")}</td><td>${esc(r.share ?? "-")}</td></tr>`).join("")}</table>` : "");
+  }
+}
 /* ================== SAMBUNGAN DB ================== */
 async function hubungkan(){
   let d = null; try { d = await claude.use("db"); } catch(_){ d = null; }
@@ -569,9 +618,12 @@ async function hubungkan(){
     () => { clearTimeout(batas); terhubung = true; live.classList.add("mati"); renderPanel(); });
   db.collection("keputusan").onSnapshot(q => { KEPUTUSAN = {}; q.docs.forEach(x => KEPUTUSAN[x.id] = x.data()); renderPanel(); }, () => {});
   db.collection("unggah_manual").onSnapshot(q => { q.docs.forEach(x => SUDAH[x.id] = true); renderPanel(); }, () => {});
+  db.doc("kantor/laporan").onSnapshot(s => { LAP = s.exists ? s.data() : null; renderLaporan(); }, () => renderLaporan());
   db.collection("pesan").orderBy("waktu", "desc").limit(10).onSnapshot(q => { PESAN = q.docs.map(x => x.data()); renderPesan(); }, () => {});
 }
 function jam(){ const m = waktuWITA(); document.getElementById("jam").textContent = String(Math.floor(m / 60)).padStart(2, "0") + "." + String(m % 60).padStart(2, "0") + " WITA"; }
-tata(); addEventListener("resize", tata); jam(); setInterval(jam, 20000); renderPanel(); requestAnimationFrame(frame);
+tata(); addEventListener("resize", tata); jam(); setInterval(jam, 20000); renderPanel(); renderLaporan(); requestAnimationFrame(frame);
 if (window.claude && claude.use) hubungkan(); else { db = false; renderPanel(); }
 </script>
+
+</body></html>
