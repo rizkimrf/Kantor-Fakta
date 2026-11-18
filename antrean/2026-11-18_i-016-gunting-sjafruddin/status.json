@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "disetujui",
   "topik": "i-016 gunting sjafruddin",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -61,6 +61,13 @@
       "waktu": "2026-11-18T04:50",
       "oleh": "Pak Bima",
       "hasil": "Perintah Bos 18 Nov: video ini diunggah MANUAL oleh Bos di semua platform; jadwal diatur Bos. Terbit otomatis tidak boleh menyentuh folder ini."
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "waktu": "2026-11-18T13:25",
+      "oleh": "Bos (Kantor Visual HP + pesan chat)",
+      "hasil": "Disetujui Bos. Unggah MANUAL oleh Bos di YouTube, TikTok, Instagram (perintah Bos 18 Nov); kartu \"Perlu Bos unggah manual\" ditampilkan di Kantor Visual."
     }
   ],
   "masalah": null,
