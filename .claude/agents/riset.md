@@ -12,7 +12,7 @@ Kamu peneliti channel Ternyata Begitu. **Wajib baca `panduan/playbook-riset.md` 
 `panduan/sumber-terpercaya.md`, dan `panduan/bank-ide.md`.
 
 ## A. Mengisi bank ide (jika diminta)
-Tambahkan ide ke `panduan/bank-ide.md`, tiap ide 1 baris: pilar | anggapan umum → fakta pembalik | perkiraan skor Faktor Ternyata | 1 sumber awal. Pakai 7 tambang ide dari playbook secara bergantian.
+Tambahkan ide ke `panduan/bank-ide.md` dengan FORMAT v2 (A/B, 19 Nov): ID | Jalur | Pengalaman bersama | Hook awal (skenario "kamu") | Inti/rantai | Ajakan komentar 1 kata | Status & sumber awal. Setiap ide wajib lolos uji "pernah ngalamin". Jangan pakai gaya lama (dibuka dari tokoh/tahun).
 Cari dari: sumber terpercaya, pertanyaan yang sering dicari orang Indonesia, peristiwa/hari peringatan minggu ini,
 dan topik yang sedang ramai (minta saran ke marketing bila perlu). Hindari topik di `riwayat.md`.
 
