@@ -28,12 +28,17 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 - **Video panjang 16:9: 1 per minggu (Minggu 19.00)**, dirakit HEMAT dari Shorts minggu itu yang setema/terbaik: pakai ulang narasi & visual yang sudah ada, tambah narasi penghubung + intro/penutup baru (maks ±1.500 huruf baru). Naik ke 2/minggu setelah kuota memungkinkan.
 - **Hemat kuota (wajib):** 1 sesi produksi pagi membuat 2 Shorts sekaligus · suara dibuat sekali (tanpa versi kedua kecuali Bos menolak) · Laras & Raka memakai model Sonnet, Nadia/Yoga/Pak Bima tetap model utama.
 - **Rem otomatis:** di laporan, Pak Bima mencatat perkiraan pemakaian kredit ElevenLabs bulan ini (`aset/log_kredit.csv`). Bila kredit tersisa < 15% sebelum tanggal 25, atau Bos menulis "hemat" di Kantor Visual → turun ke 1 Shorts/hari dan laporkan.
-- **Shorts 9:16, MAKSIMAL 60 detik, TANPA intro** (Bos 19 Nov, berdasar data YouTube: penonton turun setelah ±45 dtk). 1 inti kejutan, hook dari 26 tipe, loop mulus, pertanyaan terbuka + pemicu share di akhir; tetap tidak terburu-buru dan tanpa bagian "nunggu", sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
+- **Shorts 9:16, MAKSIMAL 60 detik (jalur A "cara kerja" ≤ 90 dtk), TANPA intro** (Bos 19 Nov, berdasar data YouTube: penonton turun setelah ±45 dtk). 1 inti kejutan, hook dari 26 tipe, loop mulus, pertanyaan terbuka + pemicu share di akhir; tetap tidak terburu-buru dan tanpa bagian "nunggu", sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
 - **Kualitas di atas jumlah.** YouTube tidak memonetisasi konten massal yang mirip-mirip. Lebih baik 1 Shorts bagus daripada 3 yang serupa.
 - Setiap video WAJIB punya set/visual yang sesuai topiknya (bukan set yang sama terus) — tambah aset baru ke pustaka bila perlu (`panduan/katalog-aset.md`).
 - Selalu jaga **stok minimal 3 hari** video yang sudah terjadwal.
 - Pantau tiap Senin (laporan Raka): subscriber, jam tonton 365 hari, views Shorts 90 hari, rata-rata durasi tonton, CTR thumbnail. Bandingkan dengan jalur ke 8.000 jam.
 - **Narasi:** utamakan suara Bos sendiri bila Bos mengirim rekaman (paling kuat sebagai bukti konten orisinal); jika tidak ada, suara AI berkualitas tinggi. Suara robot hanya untuk uji internal, jangan ditayangkan.
+
+## Format gabungan & uji A/B (Bos, 19 Nov 2026) — pola menuju monetisasi
+Kekuatan kita dipertahankan, kekuatan akun pembanding (@barutahu.in) diterapkan: lihat `.claude/skills/naskah-viral/referensi/format-gabungan.md`.
+Jalur A "Kok Bisa Jalan?" (cara kerja benda sehari-hari, ≤ 90 dtk) slot 13.00 · Jalur B "Ternyata Begitu" (fakta sehari-hari, ≤ 60 dtk) slot 18.00.
+Raka membandingkan kedua jalur tiap Senin; jalur yang menang 2 minggu berturut-turut mendapat porsi lebih besar; pola terbukti dicatat di `panduan/pola-terbukti.md`.
 
 ## Pilar konten (rotasi supaya channel tidak monoton)
 1. Sejarah yang jarang diceritakan  2. Sains & tubuh manusia  3. Alam & hewan aneh

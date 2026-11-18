@@ -12,6 +12,12 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 3. **Uji cepat** tiap transisi: `python scripts/render_html.py antrean/<folder> --mulai <t-1> --durasi 3 --skala 0.5`.
 4. Render penuh → `cek_mulus.py` → lihat lembar cek → baru serahkan ke Pak Bima.
 
+## Format gabungan (Bos, 19 Nov) — detail `.claude/skills/naskah-viral/referensi/format-gabungan.md`
+- Visual MEMPERAGAKAN tiap kata (panah gaya, retak, aliran, penampang/x-ray). Satu dunia + kamera terus bergerak, sedikit potongan.
+- Tebe cameo 1–3 kali (reaksi kecil di zona aman atau tangan yang mengoperasikan benda); subjek memenuhi layar.
+- Subtitle 1–2 kata di tengah pita zona aman, mengikuti waktu kata, kata kunci berwarna aksen.
+- Detik terakhir: teks besar ajakan komentar 1 kata berkubu, lalu adegan kembali ke pembuka (loop).
+
 ## Kemulusan (wajib — detail: referensi/kemulusan.md)
 - Transisi 12–18 frame (0,4–0,6 dtk) dengan easing in-out, di celah antar-kalimat. Tidak ada frame warna polos, tidak ada wipe < 6 frame.
 - **TANPA intro logo (Bos, 19 Nov).** Jangan panggil `KS.intro`; `T_INTRO = 0`. Narasi mulai di 0,0–0,3 dtk, visual hook sudah bergerak di frame ke-2.

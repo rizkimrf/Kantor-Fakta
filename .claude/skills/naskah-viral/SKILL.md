@@ -5,9 +5,14 @@ description: Cara Nadia menulis naskah Shorts/video panjang Ternyata Begitu yang
 # Naskah Viral (Nadia)
 Penonton memutuskan dalam 1–2 detik. Tugasmu: membuat mereka TIDAK BISA geser.
 
+## FORMAT GABUNGAN (Bos, 19 Nov 2026) — baca `referensi/format-gabungan.md` SEBELUM menulis
+Dua jalur: **A "Kok Bisa Jalan?"** (cara kerja benda sehari-hari, rantai "masalah → solusi → tapi…", ≤ 90 dtk) dan
+**B "Ternyata Begitu"** (fakta/mitos sehari-hari, ≤ 60 dtk). Keduanya: hook skenario "kamu", tiap kata diperagakan visual,
+ajakan komentar 1 kata berkubu di akhir, loop ke adegan awal. Isi `"seri"` di status.json.
+
 ## Aturan baru dari data YouTube (perintah Bos, 19 Nov 2026) — MENGGANTIKAN aturan durasi sebelumnya
 Data channel: tetap menonton 53–70% (target 75–85%), rata-rata ditonton 38–66% (target 90–120%+), penonton turun setelah ±45 dtk.
-- **Shorts MAKSIMAL 60 dtk** (target nyaman 40–55 dtk). Fokus **1 inti kejutan** + "kok bisa" singkat + 1 candaan. Fakta pendukung lain → video lain/video panjang.
+- **Shorts MAKSIMAL 60 dtk** (target nyaman 40–55 dtk; jalur A "cara kerja" ≤ 90 dtk). Fokus **1 inti kejutan** + "kok bisa" singkat + 1 candaan. Fakta pendukung lain → video lain/video panjang.
   Tetap tidak terburu-buru: tempo bicara normal, kalimat utuh, mudah dipahami — yang dibuang pengantar & pengulangan, bukan kejelasan.
 - **TANPA intro logo.** Narasi hook terdengar di detik 0,0–0,3. Tidak ada hening/salam di awal.
 - **Hook pakai 26 tipe** di `referensi/hook-26.md` (10 kandidat dari ≥5 tipe, skor ≥ 8, tipe beda dari 5 video terakhir).

@@ -18,6 +18,11 @@ Setiap ide harus berangkat dari **pengalaman yang hampir semua orang Indonesia p
   — pertanyaan yang jawabannya cerita pribadi, bukan ya/tidak.
 - Catat di riset.md: `pengalaman bersama:` (1 kalimat) + `pertanyaan pengalaman:` (1 kalimat).
 
+## Jalur A "Kok Bisa Jalan?" (Bos, 19 Nov)
+Untuk ide cara kerja: tulis rantai mekanisme 4–6 langkah "masalah → solusi → tapi…" yang setiap langkahnya didukung sumber
+(buku teknik, situs produsen/standar SNI, lembaga, media sains). Mekanisme harus bisa digambar sebagai penampang sederhana.
+Tambah ≥10 ide jalur A ke bank ide (kolom pilar diisi "Cara kerja").
+
 ## Langkah
 1. Tulis 1 kalimat klaim inti + "kenapa bisa begitu" (mekanismenya).
 2. Verifikasi tiap klaim utama dengan ≥2 sumber kredibel (jurnal, lembaga, ensiklopedia, media sains besar). Utamakan sumber primer; abstrak boleh bila teks penuh terblokir — catat itu.

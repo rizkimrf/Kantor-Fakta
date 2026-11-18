@@ -74,7 +74,11 @@ if wk.exists():
     for a, b in zip(kt, kt[1:]):
         if b["mulai"] - a["selesai"] > 1.2: masalah.append(f"suara AI diam {b['mulai'] - a['selesai']:.1f} dtk setelah kata '{a['kata']}' (narasi detik {a['selesai']:.1f}) - potong/padatkan celahnya")
 # --- aturan 19 Nov: maks 60 dtk & narasi langsung mulai (tanpa intro)
-if D > 61: masalah.append(f"durasi {D:.1f} dtk > 60 dtk (aturan Bos 19 Nov)")
+import json as _j
+_st = folder / "status.json"
+_seri = _j.loads(_st.read_text(encoding="utf-8")).get("seri") if _st.exists() else None
+_maks = 90 if _seri == "cara-kerja" else 60
+if D > _maks + 1: masalah.append(f"durasi {D:.1f} dtk > {_maks} dtk (aturan Bos 19 Nov, seri {_seri or 'fakta'})")
 awal = next((i * h / 16000 for i in range(len(db)) if db[i] > -35), None)
 if awal is not None and awal > 0.5: masalah.append(f"suara baru terdengar di {awal:.2f} dtk - tanpa intro, narasi harus mulai <= 0,3 dtk")
 # --- lembar cek

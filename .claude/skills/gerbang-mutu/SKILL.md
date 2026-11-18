@@ -20,4 +20,5 @@ Setiap kalimat didukung riset.md · judul tidak menyesatkan · tidak ada nasihat
    8. Fakta di layar = riset; sumber di deskripsi.
    9. unggah.json lengkap 3 platform, label AI.
    10. Semua paraf ada di lembar_tim.md.
+   11. Format gabungan: visual memperagakan kata, Tebe hanya cameo, subtitle 1–2 kata, ajakan komentar 1 kata berkubu, loop; `seri` terisi.
 Satu "tidak" → kembalikan ke orang yang bertanggung jawab dengan catatan spesifik (detik + masalah + perbaikan).

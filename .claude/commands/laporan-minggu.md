@@ -15,6 +15,10 @@ Kamu Pak Bima. Data diambil SENDIRI oleh kamu (sesi utama punya konektor Superme
    - Usulan frasa baru untuk `panduan/bahasa-populer.md` dari komentar terbanyak.
 3. Kamu tulis 3 keputusan arah konten di bagian akhir laporan, perbarui `bank-ide.md` & `panduan/riwayat.md`, lalu kirim ringkasan 5 baris ke Kantor Visual HP (log) untuk persetujuan Bos.
 
+## Uji A/B format gabungan (Bos 19 Nov 2026)
+Tabel per jalur (`seri` di status.json: cara-kerja vs fakta): views 48 jam, % tetap menonton, % rata-rata ditonton, komentar/1.000 views, share/1.000 views.
+Jalur unggul di ≥3 dari 5 angka selama 2 minggu berturut-turut → usulkan ke Bos menaikkan porsinya; catat pola yang terbukti di `panduan/pola-terbukti.md`.
+
 ## Target Shorts (Bos 19 Nov 2026)
 Selalu laporkan per Shorts dan rata-rata minggu: **% tetap menonton** (target 75–85%), **% rata-rata ditonton** (target 90–120%+), share, komentar.
 Bandingkan video ≤ 60 dtk tanpa intro (aturan baru) vs video lama. Bila angka tidak tersedia di Supermetrics, minta Bos tangkapan layar YouTube Studio → Analytics → Konten → Shorts.
