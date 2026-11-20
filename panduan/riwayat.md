@@ -30,3 +30,5 @@
 | Tanggal | Folder | Hasil |
 |---|---|---|
 | 2026-11-17 | 2026-11-18_i-005-pedas-itu-rasa-sakit | 3 WAJIB (kalimat burung, "hidung meler" bukan bagian pendinginan, PMID Nature 1997 = 9349813) + saran; lihat cek_riset.md |
+| 2026-11-21 | 2026-11-21_a-02-rice-cooker | 2 WAJIB (alasan "lewat seratus" = penalaran, bukan sumber; teks layar "CUMA YANG MAHAL") + 6 saran; cadangan Toshiba ER-4 1955; lihat cek_riset.md |
+| 2026-11-21 | 2026-11-21_b-01-sambal-pendatang | 2 WAJIB (Columbus "menamai pepper"/"salah nama" = pimienta + sejarawan berbeda; "dan jahe" di deskripsi kurang sumber) + saran; cadangan chili = Nahuatl; lihat cek_riset.md |
