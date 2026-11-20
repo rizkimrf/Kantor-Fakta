@@ -4,7 +4,7 @@ Sama persis dengan `unggah.json`. Judul, sampul, caption, awal deskripsi, dan ko
 **Jadwal (dari rencana_marketing):** Sabtu 21 Nov 2026, 18.00 WITA (cadangan Minggu 22 Nov 18.00 bila belum disetujui sebelum 17.47). Jadwal resmi ditulis saat `/terbitkan`.
 
 ## YouTube Shorts
-Judul (55 huruf): Cabai Asli Indonesia atau Bukan? Yang Asli Tanaman Lain
+Judul (58 huruf): Cabai Asli Indonesia atau Bukan? Namanya Ternyata Dipinjam
 Deskripsi + sumber (10 URL dari riset.md) + 3 hashtag (#Shorts #Cabai #Sambal): sama dengan `unggah.json`.
 Tag: cabai asli indonesia atau bukan, asal usul cabai di indonesia, cabai berasal dari mana, cabai dibawa portugis, sebelum ada cabai sambal pakai apa, cabai jawa, cabya, asal usul sambal, sambal, ternyata begitu
 Komentar tersemat: Cabai JAWA atau cabai RAWIT: kamu tim mana? Terus, sambal di daerahmu namanya apa? Kalau penasaran kenapa pedas rasanya kayak kebakar, jawabannya ada di Shorts 'Pedas Itu Rasa Apa?' di channel ini.
