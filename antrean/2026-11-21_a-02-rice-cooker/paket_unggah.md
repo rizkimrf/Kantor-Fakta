@@ -22,3 +22,5 @@ Pas klik: BUKA atau DIAM? Satu kata.
 
 ## Jam tayang
 YouTube, TikTok & Reels 13.00 WITA (slot jalur A).
+
+**Jadwal tayang (dicek Raka):** Minggu 22 Nov 2026 13.00 WITA di YouTube, TikTok, dan Reels (cadangan Senin 23 Nov 13.00). Label konten AI menyala. Tanpa ajakan pindah ke YouTube di caption TikTok/IG.

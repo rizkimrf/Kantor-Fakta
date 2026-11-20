@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "menunggu_persetujuan",
   "topik": "B-01 sambal pendatang",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -45,9 +45,29 @@
       "waktu": "2026-11-21T06:10",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS (setelah cek_seo 0 wajib + revisi 1 cek_riset), skor manajer 8/9, viral 8/10"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-20T22:45",
+      "hasil": "55,0 dtk, 14,3 MB, cek_mulus LULUS, cek_video LULUS, kredit ElevenLabs ±447 (859 huruf, sekali buat)"
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-21T06:47",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS (55,0 dtk, 14,3 MB), paraf 5 orang lengkap, uji 3 dtk 8/10. Jadwal Sab 21 Nov 18.00 WITA (geser ke Min 18.00 bila disetujui setelah ±17.15)."
     }
   ],
   "masalah": null,
   "seri": "B",
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-21T18:00:00+08:00",
+  "catatan_bos": null,
+  "video_asset_id": "adf8d68065f4c15b4007fd17ed8c199f",
+  "thumb_asset_id": "711efdcc2fd176eed464983268ad38e0",
+  "video_url": "/_blob/adf8d68065f4c15b4007fd17ed8c199f",
+  "thumb_url": "/_blob/711efdcc2fd176eed464983268ad38e0"
 }

@@ -22,3 +22,5 @@ Cabai JAWA atau RAWIT: kamu tim mana? Satu kata aja.
 
 ## Jam tayang
 YouTube, TikTok & Reels 18.00 WITA (slot jalur B).
+
+**Jadwal tayang (dicek Raka):** Sabtu 21 Nov 2026 18.00 WITA di YouTube, TikTok, dan Reels (cadangan Minggu 22 Nov 18.00). Label konten AI menyala. Tanpa ajakan pindah ke YouTube di caption TikTok/IG.

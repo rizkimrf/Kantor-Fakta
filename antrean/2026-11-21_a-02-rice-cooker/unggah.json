@@ -28,5 +28,12 @@
   },
   "instagram": {
     "caption": "Klik! Nasi matang, rice cooker pindah ke warm sendiri. Siapa yang ngasih tahu dia? Tebak dulu sebelum nonton.\nKirim ke orang rumah yang selalu buru-buru buka tutup pas bunyi klik.\nPas klik: BUKA atau DIAM? Satu kata.\n#ricecooker #carakerja #nasi #dapur #faktaunik #sains #TernyataBegitu"
-  }
+  },
+  "jadwal_tayang_usulan": "2026-11-22T13:00:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-23T13:00:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): KLIK = MATANG?",
+  "_catatan": "jadwal dibaca terbitkan.py dari status.json -> jadwal_tayang (diisi otomatis di slot kosong; usulan Raka di sini). komentar_tersemat & terkait dipasang manual."
 }

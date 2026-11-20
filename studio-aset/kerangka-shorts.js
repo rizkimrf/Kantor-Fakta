@@ -147,5 +147,17 @@
 <filter id="ksgr"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="${Math.floor(T * 30) % 50}"/><feColorMatrix type="saturate" values="0"/></filter></defs><rect width="1080" height="1920" fill="url(#ksvg)"/><rect width="1080" height="1920" filter="url(#ksgr)" opacity=".025"/></svg>`;
   }
 
-  root.KS = { cl, lin, oExp, ioS, oCub, oBack, sinIO, halus, lerp, norm, tebe, waktu, teks, teksLayar, label, komposisi, intro, outro, watermark, logoKecil, ikon, vinyet };
+  // ---------- outro YouTube (Bos 19 Nov): ikon play merah resmi (bentuk & warna tidak diubah) + "Ternyata Begitu", tanpa kalimat ajakan ----------
+  // Ikon juga tersimpan di studio-aset/ikon-youtube.svg. a,b = detik mulai/selesai (fade 0,25 dtk). o: {y (pusat), x (pusat), uk}
+  const IKON_YT = `<svg width="100%" viewBox="0 0 28.57 20"><path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 0 14.285 0 14.285 0C14.285 0 5.35042 0 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C0 5.35042 0 10 0 10C0 10 0 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z" fill="#FF0000"/><path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="#FFFFFF"/></svg>`;
+  function logoYT(T, a, b, o = {}) {
+    const k = halus(lin(T, a, a + 0.25)) * (1 - halus(lin(T, b - 0.25, b)));
+    if (k <= 0.001) return "";
+    const uk = o.uk || 46, y = o.y ?? 1395, x = o.x ?? 540;
+    return `<div style="position:absolute;left:${x - 400}px;width:800px;top:${(y - uk * 0.7 + (1 - k) * 14).toFixed(1)}px;display:flex;justify-content:center;align-items:center;gap:${Math.round(uk * 0.35)}px;opacity:${k.toFixed(3)}">
+ <div style="padding:${Math.round(uk * 0.22)}px ${Math.round(uk * 0.45)}px;border-radius:${uk}px;background:rgba(12,16,22,.62);display:flex;align-items:center;gap:${Math.round(uk * 0.3)}px"><div style="width:${Math.round(uk * 1.3)}px;line-height:0">${IKON_YT}</div>
+ <span style="font:700 ${uk}px/1 Poppins;color:#FFFFFF;letter-spacing:-.5px;white-space:nowrap">Ternyata Begitu</span></div></div>`;
+  }
+
+  root.KS = { logoYT, IKON_YT, cl, lin, oExp, ioS, oCub, oBack, sinIO, halus, lerp, norm, tebe, waktu, teks, teksLayar, label, komposisi, intro, outro, watermark, logoKecil, ikon, vinyet };
 })(typeof window !== "undefined" ? window : globalThis);

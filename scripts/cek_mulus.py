@@ -77,7 +77,9 @@ if wk.exists():
 import json as _j
 _st = folder / "status.json"
 _seri = _j.loads(_st.read_text(encoding="utf-8")).get("seri") if _st.exists() else None
-_maks = 90 if _seri == "cara-kerja" else 60
+_nk = folder / "naskah.json"
+_seri_n = _j.loads(_nk.read_text(encoding="utf-8")).get("seri") if _nk.exists() else None
+_maks = 90 if (_seri in ("cara-kerja", "A") or _seri_n == "cara-kerja") else 60  # jalur A "Kok Bisa Jalan?" boleh <= 90 dtk (status.json kini memakai seri "A"/"B")
 if D > _maks + 1: masalah.append(f"durasi {D:.1f} dtk > {_maks} dtk (aturan Bos 19 Nov, seri {_seri or 'fakta'})")
 awal = next((i * h / 16000 for i in range(len(db)) if db[i] > -35), None)
 if awal is not None and awal > 0.5: masalah.append(f"suara baru terdengar di {awal:.2f} dtk - tanpa intro, narasi harus mulai <= 0,3 dtk")

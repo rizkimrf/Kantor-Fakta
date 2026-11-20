@@ -28,5 +28,12 @@
   },
   "instagram": {
     "caption": "Tiap makan harus ada sambal. Tapi cabai itu asli Indonesia atau bukan? Tebak dulu sebelum nonton.\nKirim ke teman yang nggak bisa makan tanpa sambal.\nCabai JAWA atau RAWIT: kamu tim mana? Satu kata aja.\n#cabai #sambal #cabaijawa #kuliner #sejarah #faktaunik #TernyataBegitu"
-  }
+  },
+  "jadwal_tayang_usulan": "2026-11-21T18:00:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-22T18:00:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): CABAI ASLI = ?",
+  "_catatan": "jadwal dibaca terbitkan.py dari status.json -> jadwal_tayang (diisi otomatis di slot kosong; usulan Raka di sini). komentar_tersemat & terkait dipasang manual."
 }

@@ -26,6 +26,12 @@ Suara harus jelas di speaker HP murah, tidak melelahkan, dan terasa seperti tema
 | Mary Shelley | Meri Syeli |
 | Tambora | Tambora |
 | Krakatau | Krakatau |
+| cabya (cabai jawa) | ca-bya |
+| Columbus | Kolumbus |
+| rice cooker | rais kuker |
+| Curie (titik Curie) | kyu-ri |
+| MICOM | mai-kom |
+| warm (lampu) | wom |
 
 
 ## Pilihan sumber narasi (urutan prioritas, disetujui Bos 15 Nov 2026)

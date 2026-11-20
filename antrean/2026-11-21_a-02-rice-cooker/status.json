@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "A-02 rice cooker",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -45,6 +45,13 @@
       "waktu": "2026-11-21T06:10",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS (setelah cek_seo 0 wajib + revisi 1 cek_riset), skor manajer 8/9, viral 8/10"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-20T22:45",
+      "hasil": "76,8 dtk, 15,4 MB, cek_mulus LULUS, cek_video LULUS, kredit ElevenLabs ±653 (1.256 huruf, sekali buat)"
     }
   ],
   "masalah": null,
