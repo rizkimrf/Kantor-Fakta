@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "A-02 rice cooker",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -52,9 +52,22 @@
       "oleh": "Yoga",
       "waktu": "2026-11-20T22:45",
       "hasil": "76,8 dtk, 15,4 MB, cek_mulus LULUS, cek_video LULUS, kredit ElevenLabs ±653 (1.256 huruf, sekali buat)"
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-21T06:51",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS setelah subtitle 100°C diperbaiki & render ulang (76,8 dtk, 15,3 MB, cek_video & cek_mulus LULUS), paraf 5 orang lengkap, uji 3 dtk 8/10. Jadwal Min 22 Nov 13.00 WITA."
     }
   ],
   "masalah": null,
   "seri": "A",
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-22T13:00:00+08:00",
+  "catatan_bos": null,
+  "video_asset_id": "eb9347864e8d9e7e57f8c4f5cee88031",
+  "thumb_asset_id": "3cbfdbef217f3e7065c136b8cfcd250d",
+  "video_url": "/_blob/eb9347864e8d9e7e57f8c4f5cee88031",
+  "thumb_url": "/_blob/3cbfdbef217f3e7065c136b8cfcd250d"
 }
