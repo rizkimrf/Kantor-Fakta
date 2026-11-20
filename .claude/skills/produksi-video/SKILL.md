@@ -47,6 +47,8 @@ Gaya acuan seperti channel animasi edukasi besar: satu ADEGAN ilustrasi yang men
 - Maks 1 grafis penunjuk (panah merah / lingkaran).
 - Semua inti di y 260–1660 (grid profil memotong jadi 3:4). Beda konsep & warna dominan dari 2 sampul terakhir.
 - Frame 0 video = sampul ini DAN sekaligus adegan hook (judul sampul = teks hook), sehingga video langsung jalan tanpa jeda.
+  Komposisi sampul (teks besar + objek inti) BERTAHAN ±1 dtk pertama sambil bergerak halus — jangan langsung pindah adegan di frame 1
+  (kasus Pedas & Gunting 18 Nov: sampul hanya 1 frame → YouTube memilih gambar tengah video). Selalu unggah `thumbnail.png` ke Kantor Visual (`thumb_url`) agar Bos bisa mengunduhnya.
 
 ## Selesai bila
 `cek_mulus.py` LULUS, `cek_video.py` LULUS, ukuran ≤ 18 MB, lembar cek sudah dilihat, paraf di lembar_tim.md.

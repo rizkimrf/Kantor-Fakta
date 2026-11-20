@@ -483,8 +483,8 @@ function kartuManual(x){
     return `<div style="margin-top:10px"><b>${NAMA_PLAT[pl] || esc(pl)}</b> ${ada ? '<span class="pill hijau">sudah diunggah</span>' : ""}
       <div class="baris">${p.judul ? `<button onclick="salinPaket('${id}','${pl}','judul')">Salin judul</button>` : ""}<button onclick="salinPaket('${id}','${pl}','${p.deskripsi ? "deskripsi" : "caption"}')">Salin ${p.deskripsi ? "deskripsi" : "caption"}</button>${ada ? "" : `<button class="ya" onclick="tandaiUnggah('${id}','${esc(x.folder)}','${pl}')">Sudah saya unggah</button>`}</div></div>`; }).join("");
   return `<div class="kartu"><div class="vjudul">${esc(x.judul || x.folder)}</div><div class="meta">Jadwal tayang: ${esc(x.jadwal_teks || "-")}</div>
-    ${x.video_url ? `<video controls playsinline preload="metadata" src="${esc(x.video_url)}"></video><div class="baris"><button onclick="unduhVideo('${esc(x.video_url)}','${esc(x.folder)}.mp4')">Unduh video</button></div>` : `<div class="kosong">Video belum diunggah ke halaman ini.</div>`}
-    ${tombol}<p class="meta" style="margin-top:8px">Sampul sudah ada di detik pertama video; label "konten AI" wajib dinyalakan.</p></div>`;
+    ${x.video_url ? `<video controls playsinline preload="metadata" src="${esc(x.video_url)}"></video><div class="baris"><button onclick="unduhVideo('${esc(x.video_url)}','${esc(x.folder)}.mp4')">Unduh video</button>${x.thumb_url ? `<button onclick="unduhVideo('${esc(x.thumb_url)}','${esc(x.folder)}-sampul.png')">Unduh sampul</button>` : ""}</div>` : `<div class="kosong">Video belum diunggah ke halaman ini.</div>`}
+    ${tombol}<p class="meta" style="margin-top:8px">YouTube kadang memilih gambar lain sebagai sampul Shorts: unduh sampul lalu pilih/unggah di YouTube (Edit → Thumbnail). Label "konten AI" wajib dinyalakan.</p></div>`;
 }
 async function unduhVideo(url, nama){
   const dl = await claude.use("downloads"); if (!dl){ toast("Unduh belum tersedia di tampilan ini. Buka dari aplikasi Claude atau browser."); return; }
