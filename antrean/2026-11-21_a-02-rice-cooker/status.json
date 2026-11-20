@@ -1,0 +1,27 @@
+{
+  "tahap": "cek_seo",
+  "topik": "A-02 rice cooker",
+  "dibuat": "2026-11-21T05:50",
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "tanggal": "2026-11-21",
+      "hasil": "riset.md selesai, skor 9/10. Rantai magnet-ferit Curie-pegas-saklar terkunci (TDK, paten Hitachi, Zojirushi, Britannica). Angka 103 C belum terverifikasi: pakai 'sedikit di atas 100 C'. Mekanisme warm beda tiap model."
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "tanggal": "2026-11-21",
+      "hasil": "LANJUT skor 16/20; rencana_marketing.md + seo.md (kata kunci 'rice cooker kok bisa mati sendiri', volume tanpa data); hook #20 + loop; kubu BUKA/DIAM; slot usulan Min 22 Nov 13.00 (Sab 13.00 terlalu mepet)"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-21",
+      "hasil": "naskah.json (seri cara-kerja) + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md selesai. Hook #20: 'Klik! ... Rice cooker kok bisa mati SENDIRI?' (tanpa intro, narasi 0,0 dtk, jeda 0,4 dtk slow-mo). Judul: 'Rice Cooker Kok Bisa Mati Sendiri? Ini Rahasia Bunyi Klik' (57). Sampul 'KLIK = MATANG?' (tuas klik + uap, Tebe mata kanan bawah, kuning mentega + grafit). Air habis ±25-30 dtk, WAH keping lepas ±40-45, callback MICOM ±58, kubu BUKA/DIAM + share orang rumah + loop ke 'Klik!'. 9 adegan, 193 kata, ±82 dtk, 0 klip. Nol 103 C / 'semua rice cooker' / rincian warm / tips bongkar. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
+    }
+  ],
+  "masalah": null,
+  "seri": "A"
+}

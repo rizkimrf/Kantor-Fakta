@@ -1,0 +1,27 @@
+{
+  "tahap": "cek_seo",
+  "topik": "B-01 sambal pendatang",
+  "dibuat": "2026-11-21T05:50",
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "tanggal": "2026-11-21",
+      "hasil": "riset.md selesai, skor 9/10. Cabai asal Amerika, masuk Nusantara abad ke-16 (Portugis/Spanyol), cabya (Piper retrofractum) asli Jawa terkunci 2+ sumber. Tahun/rute pasti tidak ada. Tanpa klaim kesehatan. Selaras i-005."
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "tanggal": "2026-11-21",
+      "hasil": "LANJUT skor 17/20; rencana_marketing.md + seo.md (kata kunci 'cabai asli Indonesia atau bukan', volume tanpa data); hook #12 + loop; kubu JAWA/RAWIT; terkait i-005 + video panjang sambal; slot Sab 21 Nov 18.00 (cadangan Min 18.00)"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-21",
+      "hasil": "naskah.json (seri fakta) + naskah_baca.txt + naskah_suara.txt + unggah.json (terkait i-005) + paket_unggah.md selesai. Hook #12: 'Dulu, kata cabai itu bukan nama cabai di SAMBALMU.' (tanpa intro). Judul: 'Cabai Asli Indonesia atau Bukan? Yang Asli Tanaman Lain' (55, kata kunci utama di depan). Sampul 'CABAI ASLI = ?' (cabya besar vs rawit+koper, Tebe kecil, hijau+krem). AMERIKA ±12 dtk, twist 'kata cabai punya cabya, dipinjem nggak dibalikin' ±30 dtk, kubu JAWA/RAWIT + share + loop. 8 adegan, 130 kata, ±56 dtk, 0 klip. Hanya 'abad ke-16' & 'abad ke-10', tanpa tahun/rute, nol klaim kesehatan, kata PENDATANG tidak diucapkan. Skor naskah 9/9, viral 8/10. Lanjut ke cek_seo (Raka)."
+    }
+  ],
+  "masalah": null,
+  "seri": "B"
+}
