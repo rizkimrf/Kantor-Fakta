@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "A-02 rice cooker",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -32,8 +32,22 @@
       "oleh": "Laras",
       "tanggal": "2026-11-21",
       "hasil": "cek_riset.md: 2 WAJIB (adegan 7 alasan 'lewat seratus' = penalaran, jadikan logika; teks layar adegan 8 'CUMA YANG MAHAL' -> 'ADA DI YANG CANGGIH') + 6 saran; fakta cadangan Toshiba ER-4 (10 Des 1955). Host TDK/Zojirushi/paten tidak bisa dibuka."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-21",
+      "hasil": "2 WAJIB Laras beres: adegan 7 jadi 'Logikanya, harus lewat seratus, biar nggak lepas pas air MENDIDIH. Kepingnya pingsan kepanasan di titik CURIE.' (9,3 → 6,8 dtk, saran Raka); adegan 8 'mahal' → 'canggih', teks layar 'KOMPUTER? ADA DI YANG CANGGIH'. Komentar tersemat: MICOM diganti Toshiba ER-4 sekitar 1955 + ±separuh rumah tangga Jepang 1960 (tanpa 'pertama di dunia'); 2 URL sumber ditambah; deskripsi 'mewah' → 'lebih canggih'. Diselaraskan di naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md. 186 kata, ±79,5 dtk. Hook, loop, kubu BUKA/DIAM tetap. Skor naskah 8/9, viral 8/10."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-21T06:10",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS (setelah cek_seo 0 wajib + revisi 1 cek_riset), skor manajer 8/9, viral 8/10"
     }
   ],
   "masalah": null,
-  "seri": "A"
+  "seri": "A",
+  "skor_manajer": 8
 }

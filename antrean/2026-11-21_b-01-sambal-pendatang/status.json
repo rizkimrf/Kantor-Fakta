@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "B-01 sambal pendatang",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -32,8 +32,22 @@
       "oleh": "Laras",
       "tanggal": "2026-11-21",
       "hasil": "cek_riset.md: 2 WAJIB (adegan 3 Columbus 'menamai pepper'/'salah nama' -> pimienta/lada + sejarawan berbeda; deskripsi 'dan jahe' kurang sumber) + saran; fakta cadangan 'chili' dari Nahuatl. Host Jakarta Post/GNFI/Time tidak bisa dibuka."
+    },
+    {
+      "tahap": "naskah (revisi 1)",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-21",
+      "hasil": "2 WAJIB Laras beres: adegan 3 'terus dinamain PEPPER. Salah nama dari AWAL.' → 'dikasih nama LADA. Kebawa sampai SEKARANG.' (+ 'benua AMERIKA'), teks layar 'NAMANYA = LADA?', deskripsi Columbus = rumusan Laras (pimienta; sebagian sejarawan menduga ia sadar) + sumber Atlas Obscura; 'dan jahe' dihapus; 'tanaman asli Jawa' → 'sudah lama dikenal di Jawa'. Tag 'cabai dibawa portugis' & 'sebelum ada cabai sambal pakai apa' → 'cabai dibawa pelaut portugis dan spanyol' & 'apa itu cabai jawa' (juga di seo turunan). Komentar tersemat dibuka 'Sambal di daerahmu namanya apa?'. Judul tetap. Diselaraskan di naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md. 131 kata, ±56,8 dtk. Hook, loop, kubu JAWA/RAWIT tetap. Skor naskah 9/9 (catatan: canda Columbus lebih kalem), viral 8/10."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-21T06:10",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS (setelah cek_seo 0 wajib + revisi 1 cek_riset), skor manajer 8/9, viral 8/10"
     }
   ],
   "masalah": null,
-  "seri": "B"
+  "seri": "B",
+  "skor_manajer": 8
 }
