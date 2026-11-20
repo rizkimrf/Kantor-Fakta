@@ -1,5 +1,5 @@
 {
-  "tahap": "disetujui",
+  "tahap": "tayang",
   "topik": "i-019 odol merek jerman",
   "dibuat": "2026-11-17T05:42",
   "riwayat": [
@@ -59,6 +59,13 @@
       "waktu": "2026-11-18T04:43",
       "oleh": "Pak Bima",
       "hasil": "Perintah Bos 18 Nov: video ini diunggah MANUAL oleh Bos di semua platform (YouTube, TikTok, Instagram); jadwal diatur Bos. Terbit otomatis tidak boleh menyentuh folder ini."
+    },
+    {
+      "dari": "disetujui",
+      "ke": "tayang",
+      "waktu": "2026-11-21T05:45",
+      "oleh": "Pak Bima",
+      "hasil": "Bos menandai sudah unggah manual di YouTube, TikTok, Instagram (Kantor Visual)"
     }
   ],
   "masalah": null,
@@ -70,13 +77,19 @@
   "unggah_manual_bos": true,
   "terbit": {
     "youtube": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-19T10:44:24.016Z"
     },
     "tiktok": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-19T10:44:25.441Z"
     },
     "instagram": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-19T10:44:26.792Z"
     }
   }
 }

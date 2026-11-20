@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "I-008 mitos micin bikin bodoh",
   "dibuat": "2026-11-15T07:58",
   "riwayat": [
@@ -77,6 +77,13 @@
       "waktu": "2026-11-18T04:43",
       "oleh": "Pak Bima",
       "hasil": "Perintah Bos 18 Nov: video ini diunggah MANUAL oleh Bos di semua platform (YouTube, TikTok, Instagram); jadwal diatur Bos. Terbit otomatis tidak boleh menyentuh folder ini."
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "waktu": "2026-11-21T05:45",
+      "oleh": "Pak Bima",
+      "hasil": "Bos menandai sudah unggah manual di YouTube, TikTok, Instagram (Kantor Visual)"
     }
   ],
   "masalah": null,
@@ -87,13 +94,19 @@
   "jadwal_tayang": "2026-11-18T13:00:00+08:00",
   "terbit": {
     "youtube": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-20T05:30:14.528Z"
     },
     "tiktok": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-20T05:26:37.604Z"
     },
     "instagram": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-20T05:23:36.733Z"
     }
   },
   "unggah_manual_bos": true

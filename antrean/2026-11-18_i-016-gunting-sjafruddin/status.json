@@ -1,5 +1,5 @@
 {
-  "tahap": "disetujui",
+  "tahap": "tayang",
   "topik": "i-016 gunting sjafruddin",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -68,6 +68,13 @@
       "waktu": "2026-11-18T13:25",
       "oleh": "Bos (Kantor Visual HP + pesan chat)",
       "hasil": "Disetujui Bos. Unggah MANUAL oleh Bos di YouTube, TikTok, Instagram (perintah Bos 18 Nov); kartu \"Perlu Bos unggah manual\" ditampilkan di Kantor Visual."
+    },
+    {
+      "dari": "disetujui",
+      "ke": "tayang",
+      "waktu": "2026-11-21T05:45",
+      "oleh": "Pak Bima",
+      "hasil": "Bos menandai sudah unggah manual di YouTube, TikTok, Instagram (Kantor Visual)"
     }
   ],
   "masalah": null,
@@ -80,13 +87,19 @@
   "unggah_manual_bos": true,
   "terbit": {
     "youtube": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-19T11:00:58.732Z"
     },
     "tiktok": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-19T10:56:59.367Z"
     },
     "instagram": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-19T10:56:58.163Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "tahap": "disetujui",
+  "tahap": "tayang",
   "topik": "i-005 pedas itu rasa sakit",
   "dibuat": "2026-11-18T05:43",
   "riwayat": [
@@ -65,6 +65,13 @@
       "waktu": "2026-11-18T04:43",
       "oleh": "Pak Bima",
       "hasil": "Perintah Bos 18 Nov: video ini diunggah MANUAL oleh Bos di semua platform (YouTube, TikTok, Instagram); jadwal diatur Bos. Terbit otomatis tidak boleh menyentuh folder ini."
+    },
+    {
+      "dari": "disetujui",
+      "ke": "tayang",
+      "waktu": "2026-11-21T05:45",
+      "oleh": "Pak Bima",
+      "hasil": "Bos menandai sudah unggah manual di YouTube, TikTok, Instagram (Kantor Visual)"
     }
   ],
   "masalah": null,
@@ -77,13 +84,19 @@
   "unggah_manual_bos": true,
   "terbit": {
     "youtube": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-20T11:32:40.337Z"
     },
     "tiktok": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-20T11:32:33.953Z"
     },
     "instagram": {
-      "catatan": "unggah manual"
+      "catatan": "unggah manual",
+      "id": "manual",
+      "waktu": "2026-11-20T11:29:34.298Z"
     }
   }
 }
