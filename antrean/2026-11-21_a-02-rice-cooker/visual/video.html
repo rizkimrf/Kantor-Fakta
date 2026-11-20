@@ -1,0 +1,227 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- A-02 Rice cooker kok bisa mati sendiri? — Yoga, 21 Nov 2026. Kontrak window.render(T); waktu mengikuti audio/waktu_kata.json (narasi SEKALI, tanpa jeda sisipan).
+     Render: python scripts/render_html.py antrean/2026-11-21_a-02-rice-cooker
+     Aturan (cek_fakta): tanpa angka 103 (jarum hanya "sedikit lewat" garis 100), bukan "semua rice cooker", lampu hangat tanpa diagram jalur warm, tanpa merek.
+     Mekanisme digambar sesuai riset: keping ferit menempel di dasar panci, magnet di bawahnya ditarik pegas; keping kehilangan magnet → magnet jatuh → tuas TERLEPAS NAIK (klik), pemanas utama putus.
+     Loop: akhir = komposisi sampul (tuas masih di bawah, "bentar lagi bunyi"), frame 0 = tuas sedang terlepas "Klik!". Outro: ikon YouTube kecil + "Ternyata Begitu". -->
+<script src="../../../studio-aset/tebe-rig.js"></script>
+<script src="../../../studio-aset/aset-set.js"></script>
+<script src="../../../studio-aset/aset-pedas.js"></script>
+<script src="../../../studio-aset/aset-dapur-listrik.js"></script>
+<script src="../../../studio-aset/kerangka-shorts.js"></script>
+<style>*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#2E3036}
+.abs{position:absolute}#V{position:absolute;inset:0;overflow:hidden}</style></head><body><div id="V"></div>
+<script>
+const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp,halus}=KS, P=ASET.PALET, A=ASET;
+const W=KS.waktu((window.WAKTU_KATA||[]).filter(k=>k.kata!=='...'),[]);
+const KK=W.kata, KI=i=>KK[i]||{m:i*0.4,s:i*0.4+0.3};
+// indeks mengikuti waktu_kata.json asli (dengan token "..." di posisi 1) → geser 1 untuk indeks ≥ 2
+const K=i=>KI(i>=2?i-1:i);
+const cel=i=>{const a=K(i-1),b=K(i);return (a.s+b.m)/2};
+const AKHIR=KK.length?KK[KK.length-1].s:76.08;
+window.DURASI=+(AKHIR+0.72).toFixed(2);
+window.MUSIK='jenaka-ringan';
+const D=()=>window.DURASI;
+const KULIT='#F4C9A1',GRS='#1E1E1E';
+function tebeX(p,w,o={}){let svg=tebeRigSVG(p).replace('width="400" height="520"','width="100%"');
+ const i=svg.lastIndexOf(' </g>\n</g></svg>');svg=svg.slice(0,i)+(o.tangan||'')+svg.slice(i);return `<div style="width:${w}px;${o.css||''}">${svg}</div>`}
+const kepal=H=>`<circle cx="${H[0].toFixed(1)}" cy="${H[1].toFixed(1)}" r="17" fill="${KULIT}" stroke="${GRS}" stroke-width="6"/>`;
+const hp=(H,a=1)=>`<g transform="translate(${H[0].toFixed(1)} ${(H[1]-40).toFixed(1)}) rotate(-8)" opacity="${a}"><rect x="-26" y="-50" width="52" height="96" rx="10" fill="#2A3A4A" stroke="${GRS}" stroke-width="5"/><rect x="-18" y="-40" width="36" height="70" rx="4" fill="#9FE0D8"/></g>`+kepal(H);
+const GRUP=KS.teks(W,{gabung:[['rais kuker','rice cooker'],['sekitar seratus derajat','±100°C'],['seratus derajat','100°C'],['mai-kom.','MICOM.']],ganti:{'wom.':'WARM','kyu-ri.':'Curie.','ssst...':'Ssst…'},
+ tekan:['sendiri?','matang?','komputer','air','tuang.','uap.','kepala.','habis,','naik','ngintip','magnetik','pegas.','magnetnya.','lepas,','klik!','putus,','wom.','pingsan','kyu-ri.','beneran','canggih,','magnet.','lepas.','buka','diam','bunyi...'],maks:3});
+const cap=(txt,T,a,b,o={})=>{const kk=halus(lin(T,a-.05,a+.3))*(1-halus(lin(T,b-.3,b)));if(kk<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:${o.y||392}px;text-align:center;transform:rotate(${o.rot??-3}deg) scale(${(.86+.14*kk).toFixed(3)});opacity:${kk.toFixed(3)}"><span style="display:inline-block;padding:6px 34px 12px;border:8px solid ${o.warna||'#FFC93C'};border-radius:24px;background:${o.bg||'rgba(30,32,38,.66)'};font:700 ${o.uk||80}px/1.05 Poppins;letter-spacing:-1px;color:#FFF4DC;text-shadow:0 6px 16px rgba(0,0,0,.5)">${txt}</span></div>`};
+const chip=(txt,x,y,a,warna='#FFC93C',uk=44,tw='#1E1E1E')=>a<=0?'':`<g transform="translate(${x} ${y}) scale(${(.7+.3*halus(cl(a))).toFixed(3)})" opacity="${cl(a*2).toFixed(3)}"><rect x="${-txt.length*uk*.34-26}" y="${-uk*.95}" width="${txt.length*uk*.68+52}" height="${uk*1.4}" rx="${uk*.7}" fill="${warna}"/><text y="${uk*.18}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${uk}" fill="${tw}">${txt}</text></g>`;
+const svgW=(w,h,s)=>`<svg class="abs" width="${w}" height="${h}" style="left:0;top:0">${s}</svg>`;
+const kamera=(isi,w,cx,cy,z)=>`<div class="abs" style="left:0;top:0;width:${w}px;height:1920px;transform:translate(${(540-cx).toFixed(1)}px,${(960-cy).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:${cx.toFixed(1)}px ${cy.toFixed(1)}px">${isi}</div>`;
+const centang=(x,y,s,a)=>a<=0?'':`<g transform="translate(${x} ${y}) scale(${(s*(.7+.3*halus(cl(a)))).toFixed(3)})" opacity="${cl(a*2).toFixed(3)}"><circle r="50" fill="#3FAE6A"/><path d="M-24 2 L-6 20 L26 -16" stroke="#FFF" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+function termo(x,y,s,nilai,o={}){return A.termometer(x,y,s,nilai,{ambang:.7,ambangTeks:'100°',ambangWarna:'#FFC93C',...o})}
+const NILAI100=.7*(260/260); // garis ambang pada skala termometer
+
+// ===== SAMPUL (frame 0) — close-up ekstrem tuas saklar rice cooker yang sedang TERLEPAS (klik) + uap menyembur dari tepi tutup, lingkaran merah di tuas;
+//       hanya mata Tebe + ujung jambul "?" + tepi hoodie mustard mengintip dari kanan bawah; kuning mentega + grafit; teks "KLIK = MATANG?"
+const ATS=tebeAnimasi([{t:0,pose:'kaget'}],{benih:3});
+function sampul(T,tc,judul,tuas,uap,gerak){const z=1+.015*tc;
+ let bg=`<defs><radialGradient id="sbg" cx=".5" cy=".42" r=".85"><stop offset="0" stop-color="#FFF0C2"/><stop offset=".5" stop-color="#F2D98E"/><stop offset="1" stop-color="#8A7A4E"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#sbg)"/>`;
+ bg+=`<g style="filter:blur(7px)" opacity=".55"><rect x="0" y="1500" width="1080" height="420" fill="#4A4C52"/>${[0,1,2,3,4,5,6].map(i=>`<rect x="${i*170-40}" y="600" width="150" height="150" fill="#FFF8E0" opacity=".5"/>`).join('')}</g>`;
+ const rc=A.riceCooker(540,1880,3.3,T,{tuas,lampu:tuas>.5?1:0,uap:0,gerak});
+ const ly=1880+3.3*(-128-tuas*84);
+ const lingk=`<ellipse cx="540" cy="${ly.toFixed(1)}" rx="330" ry="150" fill="none" stroke="#E2232E" stroke-width="16" opacity=".95" transform="rotate(-4 540 ${ly.toFixed(1)})" stroke-dasharray="${(2100*Math.min(1,.8+.2*Math.sin(T*3))).toFixed(0)} 2100"/>`;
+ // uap menyembur dari tepi tutup kiri & kanan
+ let up='';if(uap>0)for(let i=0;i<7;i++){const u=((T*.9+i/7)%1),sx=i%2?210:870,dir=i%2?-1:1;up+=`<circle cx="${(sx+dir*(-u*120)+Math.sin(u*6+i)*20).toFixed(1)}" cy="${(560-u*260).toFixed(1)}" r="${(40+u*90).toFixed(1)}" fill="#FFFFFF" opacity="${(uap*.8*Math.sin(Math.PI*u)).toFixed(3)}"/>`}
+ const tb=ATS(.3);tb.lihatX=-4;tb.lihatY=-3;
+ return `<div class="abs" style="inset:0;transform:scale(${z.toFixed(4)});transform-origin:540px 1000px">${svgW(1080,1920,bg+rc+up+lingk)}
+ <div class="abs" style="left:600px;top:1222px;transform:rotate(-10deg)">${KS.tebe(tb,520)}</div>
+ ${svgW(1080,1920,`<rect x="-20" y="1540" width="1120" height="400" fill="#4A4C52"/><rect x="-20" y="1540" width="1120" height="22" fill="#6A6C74"/>`)}
+ ${svgW(1080,1920,`<defs><radialGradient id="svn" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#1A1608" stop-opacity="0"/><stop offset="1" stop-color="#1A1608" stop-opacity=".6"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#svn)"/>`)}
+ <div class="abs" style="left:0;width:1080px;top:240px;text-align:center;opacity:${judul.toFixed(3)};font:700 156px/1.0 Poppins;letter-spacing:-3px;color:#FFFFFF;-webkit-text-stroke:22px #24262B;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.35)"><span style="color:#FFC93C">KLIK</span> =<br>MATANG?</div></div>`}
+const T_PAN1=1.25;
+function setSampul(T){const tu=.35+.65*oCub(lin(T,0,.5));return sampul(T,T,1-halus(lin(T,.95,1.25)),tu,halus(lin(T,.05,.4)),1-lin(T,.1,.6))}
+function setSampulAkhir(T){return sampul(T,T-D(),halus(lin(T,D()-1.0,D()-.4)),0,0,0)}
+
+// ===== B1 DAPUR PAGI — kamera mundur: rice cooker di meja, lampu hangat, uap; Tebe bingung "siapa yang ngasih tahu?"; gelembung pikiran: jam & CHIP berkedip; "nggak punya itu" → pecah
+const kSiapa=K(8).m,kKomp=K(19).m,kRc2=K(21).m,kNggak=K(24).m,B2=cel(27);
+const AT1=tebeAnimasi([{t:0,pose:'penasaran'},{t:kSiapa,pose:'bingung',transisi:.3},{t:K(15).m,pose:'berpikir',transisi:.3},{t:kNggak,pose:'kaget',transisi:.25}],{benih:4});
+function setDapur(T){const u=T-T_PAN1,p=P.siang;
+ let s=A.dapurRumah(1200,1920,p,T,{meja:1180,jendelaX:760,rakX:60,rakW:520});
+ s+=A.riceCooker(640,1200,1.05,T,{tuas:1,lampu:1,uap:.8});
+ const gp=halus(lin(T,K(15).m-.1,K(15).m+.35)),pc=halus(lin(T,kNggak,kNggak+.35));
+ if(gp>0){const a=gp*(1-pc),sc=.6+.4*gp+.25*pc;
+  s+=`<g transform="translate(330 560) scale(${sc.toFixed(3)})" opacity="${a.toFixed(3)}"><circle cx="-70" cy="190" r="18" fill="#FFFFFF"/><circle cx="-40" cy="140" r="28" fill="#FFFFFF"/><ellipse rx="230" ry="150" fill="#FFFFFF"/>
+   <g transform="translate(-90 0)"><circle r="62" fill="#F6E3A1"/><circle r="62" fill="none" stroke="#34363C" stroke-width="10"/><path d="M0 0 L0 -40 M0 0 L30 12" stroke="#34363C" stroke-width="9" stroke-linecap="round" transform="rotate(${(T*90).toFixed(0)})"/></g>${A.chipKomputer(95,0,.8,T,{kedip:T>kKomp-.1})}</g>`;
+  if(pc>0&&pc<1)for(let i=0;i<10;i++){const an=i*.63;s+=`<circle cx="${(330+Math.cos(an)*pc*300).toFixed(1)}" cy="${(560+Math.sin(an)*pc*220).toFixed(1)}" r="${(14*(1-pc)).toFixed(1)}" fill="#FFFFFF"/>`}}
+ s+=chip('?',640,700,lin(T,kSiapa,kSiapa+.3)*(1-lin(T,K(15).m-.2,K(15).m)),'#FFC93C',80);
+ const z=lerp(1.9,1.0,halus(lin(T,T_PAN1-.3,T_PAN1+1.0)))+.06*halus(lin(T,kRc2,B2)),cy=lerp(860,880,halus(lin(T,kRc2,B2)));
+ const cx=lerp(640,560,halus(lin(T,T_PAN1,T_PAN1+1.2)));
+ const tb=AT1(T);
+ return kamera(svgW(1200,1920,s)+`<div class="abs" style="left:110px;top:${(830+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(tb,280)}</div>`,1200,cx,cy,z)}
+
+// ===== B2 X-RAY — rice cooker transparan: air dituang (gelas takar), tetes air detektif; termometer naik lalu DATAR di garis 100; pelat panas menyala, panas jadi uap; "keras kepala": tetes menyilang tangan
+const kMata=K(27).m,kAir=K(29).m,kTuang=K(32).m,kSelama=K(33).m,kKetahan=K(38).m,kSeratus=K(40).m,kPanasin=K(42).m,kPanasnya=K(45).m,kUap=K(48).m,kAirMd=K(49).m,kKeras=K(52).m,B3=cel(54);
+function setXray(T){const u=T-B2,p=P.siang;
+ let s=A.dapurRumah(1080,1920,p,T,{meja:1180,jendelaX:700})+`<rect width="1080" height="1920" fill="#1E2028" opacity=".55"/>`;
+ const xr=halus(lin(T,kMata-.1,kMata+.7)),air=lerp(.15,.8,halus(lin(T,kAir,kTuang+.4))),pn=halus(lin(T,kPanasin-.1,kPanasin+.5)),dd=halus(lin(T,kPanasnya-.3,kPanasnya+.3));
+ s+=A.riceCooker(560,1180,1.75,T,{xray:xr,tuas:0,lampu:0,air,nasi:.1,panas:pn,didih:dd,uap:dd});
+ // gelas takar menuang
+ const tg=halus(lin(T,kAir-.4,kAir))*(1-halus(lin(T,kTuang+.3,kTuang+.7)));
+ if(tg>0){s+=`<g transform="translate(${lerp(1000,760,tg).toFixed(1)} 470) rotate(${(-60*tg).toFixed(1)})" opacity="${cl(tg*2).toFixed(3)}"><path d="M-60 -80 L60 -80 L50 70 L-50 70Z" fill="#E6F4F8" opacity=".85"/><rect x="-52" y="-10" width="104" height="76" fill="#6EC3E8"/></g>`;
+  if(tg>.7)s+=`<path d="M690 520 Q680 640 600 ${(980-air*300).toFixed(0)}" stroke="#6EC3E8" stroke-width="22" fill="none" stroke-linecap="round" opacity="${((tg-.7)/.3).toFixed(3)}"/>`}
+ // tetes detektif di permukaan air
+ const dt=halus(lin(T,kTuang-.2,kTuang+.3)),silang=halus(lin(T,kKeras-.2,kKeras+.2));
+ const ay=1180+1.75*(-112+6-air*190);
+ if(dt>0)s+=`<g opacity="${dt.toFixed(3)}">${A.tetesDetektif(470,ay-20,.9*dt,T,{silang})}</g>`;
+ // termometer kiri: naik lalu datar di 100
+ const tm=halus(lin(T,kSelama-.2,kSelama+.3)),nil=lerp(.2,.7,halus(lin(T,kSelama,kKetahan+.4)));
+ if(tm>0)s+=`<g opacity="${tm.toFixed(3)}">${termo(150,1120,1.15,nil+.004*Math.sin(T*6)*(T>kKetahan+.4?1:0))}</g>`;
+ // panah panas → uap
+ if(pn>0)[380,560,740].forEach((x,i)=>s+=A.panahPanas(x,1000-i%2*20,1.2,T+i*.33,pn*(1-dd*.3)));
+ const cx=540,cy=lerp(900,880,ioS(lin(u,0,6))),z=lerp(1.0,1.06,ioS(lin(u,0,12)));
+ return kamera(svgW(1080,1920,s),1080,cx,cy,z)}
+
+// ===== B3 X-RAY DEKAT — nasi mengembang menyerap air, air turun & habis, tetes detektif melambai lalu menguap; dasar panci memerah, jarum sedikit lewat garis
+const kTapi=K(54).m,kNyerap=K(57).m,kSisa=K(59).m,kBegitu=K(61).m,kHabis=K(63).m,kSuhu=K(64).m,kNaik=K(67).m,B4=cel(70);
+function setHabis(T){const u=T-B3,p=P.siang;
+ let s=`<rect width="1080" height="1920" fill="#262830"/>`;
+ const ns=halus(lin(T,kTapi,kSisa+.4)),air=lerp(.55,0,halus(lin(T,kNyerap-.2,kHabis+.2))),pn=1,merah=halus(lin(T,kSuhu-.2,kNaik+.3));
+ s+=A.riceCooker(540,1240,2.3,T,{xray:1,tuas:0,lampu:0,air,nasi:ns,panas:pn,didih:air>.05?1:0,uap:air>.05?.8:.15});
+ if(merah>0)s+=`<rect x="${540-180*2.3}" y="${1240+2.3*(-112+10)}" width="${360*2.3}" height="${2.3*40}" rx="40" fill="#FF3A1A" opacity="${(.45*merah).toFixed(3)}"/>`;
+ const lam=halus(lin(T,kSisa-.3,kSisa+.2)),up=halus(lin(T,kBegitu,kHabis+.4));
+ const ay=1240+2.3*(-106-Math.max(air,.05)*190);
+ s+=A.tetesDetektif(700,ay-30,.95,T,{lambai:lam,uap:up});
+ const nil=lerp(.7,.76,halus(lin(T,kNaik-.1,kNaik+.6)));
+ s+=termo(150,1120,1.15,nil);
+ const cy=lerp(820,980,halus(lin(T,kSuhu-.4,kNaik+.4))),z=1.0+.05*ioS(lin(u,0,7));
+ return kamera(svgW(1080,1920,s),1080,540,cy,z)}
+
+// ===== B4–B5 MAKRO BAWAH PANCI — keping ferit menempel (garis medan biru), magnet ditarik pegas, tuas; panas sedikit di atas 100 → panah domain berputar acak, medan putus,
+//       magnet LEPAS, pegas menarik, tuas terlepas — KLIK! (slow-mo)
+const kTerus=K(70).m,kNgintip=K(73).m,kDi=K(75).m,kKeping=K(79).m,kNempel=K(82).m,kTempel=K(83).m,kNahan=K(86).m,kPegas=K(88).m,kBegitu2=K(89).m,kSedikit=K(91).m,kKeping2=K(96).m,kHilang=K(98).m,kMagnet=K(100).m,kLepasT=K(101).m,kLepas=K(102).m,kPegas2=K(103).m,kKlik=K(106).m,B6=cel(107);
+function setMakro(T){const u=T-B4;
+ const gl=halus(lin(T,kBegitu2-.1,kSedikit+.3)),ac=halus(lin(T,kKeping2,kMagnet+.3)),md=halus(lin(T,kDi,kNempel))*(1-halus(lin(T,kMagnet-.2,kLepasT+.2)));
+ const lp=oCub(lin(T,kPegas2-.1,kKlik+.02));
+ let s=A.makroSaklar(1080,1920,T,{panas:1,gelombang:gl,medan:md,acak:ac,lepas:lp,tegang:1-lp});
+ // kaca pembesar "ngintip" mencari
+ const kp=halus(lin(T,kNgintip-.3,kNgintip+.2))*(1-halus(lin(T,kKeping-.3,kKeping)));
+ if(kp>0){const x=lerp(250,540,halus(lin(T,kNgintip-.3,kKeping))),y=600+Math.sin(T*3)*40;s+=`<g opacity="${kp.toFixed(3)}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="110" fill="#DFF4FF" opacity=".15" stroke="#F6E3A1" stroke-width="16"/><path d="M${(x+78).toFixed(1)} ${(y+78).toFixed(1)} l90 90" stroke="#F6E3A1" stroke-width="28" stroke-linecap="round"/></g>`}
+ s+=chip('KEPING MAGNETIK',540,690,lin(T,kKeping,kKeping+.3)*(1-lin(T,kTempel+.4,kTempel+.7)),'#9FD8FF',40);
+ s+=chip('PEGAS',730,1080,lin(T,kPegas-.1,kPegas+.2)*(1-lin(T,kBegitu2-.2,kBegitu2+.1)),'#F6E3A1',40);
+ if(T>kNahan-.2&&T<kBegitu2+.2){const a=lin(T,kNahan-.2,kNahan+.2)*(1-lin(T,kBegitu2-.2,kBegitu2+.2));s+=`<path d="M630 960 L630 1120 M600 1090 L630 1124 L660 1090" stroke="#FF7A5A" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="${a.toFixed(3)}"/>`}
+ s+=chip('SEDIKIT DI ATAS 100°C',540,330,lin(T,kSedikit,kSedikit+.3)*(1-lin(T,kKeping2+.6,kKeping2+.9)),'#FF9A6A',40);
+ // KLIK!
+ const kl=lin(T,kKlik-.03,kKlik+.15)*(1-lin(T,B6-.35,B6));
+ if(kl>0){s+=`<g transform="translate(300 760) rotate(-10) scale(${(1+.15*(1-cl((T-kKlik)/.3))).toFixed(3)})" opacity="${cl(kl*2).toFixed(3)}">${[0,1,2,3,4,5,6,7].map(i=>{const a=i*Math.PI/4;return `<path d="M${(Math.cos(a)*120).toFixed(0)} ${(Math.sin(a)*90).toFixed(0)} L${(Math.cos(a)*190).toFixed(0)} ${(Math.sin(a)*150).toFixed(0)}" stroke="#FFC93C" stroke-width="14" stroke-linecap="round"/>`}).join('')}<text y="34" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="110" fill="#FFFFFF" stroke="#24262B" stroke-width="16" paint-order="stroke">KLIK!</text></g>`}
+ // kamera: dari dasar panci (atas) turun ke keping → pegas → keping (panas) → tuas
+ const c1=halus(lin(T,kDi-.3,kNempel)),c2=halus(lin(T,kTempel,kPegas+.3)),c3=halus(lin(T,kBegitu2-.2,kSedikit+.4)),c4=halus(lin(T,kLepasT-.6,kLepasT+.5));
+ let cx=lerp(540,540,c1),cy=lerp(560,640,c1),z=lerp(1.0,1.45,c1);
+ cy=lerp(cy,1040,c2);z=lerp(z,1.0,c2);cy=lerp(cy,620,c3);z=lerp(z,1.5,c3);cx=lerp(cx,440,c4);cy=lerp(cy,1000,c4);z=lerp(z,1.0,c4);
+ cx+=Math.sin(u*.8)*25;
+ return kamera(svgW(1080,1920,s),1080,cx,cy,z)}
+
+// ===== B6 LUAR — tuas sudah naik, pemanas padam (x-ray tipis), lampu masak → hangat
+const kPemanas=K(107).m,kPutus=K(109).m,kLampu=K(110).m,kWom=K(113).m,B7=cel(114);
+function setLuar(T){const u=T-B6,p=P.siang;
+ let s=A.dapurRumah(1080,1920,p,T,{meja:1240,jendelaX:700});
+ const pn=1-halus(lin(T,kPemanas,kPutus+.3)),lp=halus(lin(T,kLampu+.2,kWom));
+ s+=A.riceCooker(540,1240,1.8,T,{xray:.55*(1-halus(lin(T,kLampu-.2,kLampu+.4))),tuas:1,lampu:lp,air:0,nasi:1,panas:pn,uap:.4});
+ if(T>kPutus-.1&&T<kPutus+.6){const a=Math.sin(Math.PI*lin(T,kPutus-.1,kPutus+.6));s+=`<g transform="translate(860 1080)" opacity="${a.toFixed(3)}"><path d="M-40 -10 L-6 -10 M6 10 L40 10" stroke="#FFC93C" stroke-width="12" stroke-linecap="round"/><path d="M-4 -24 L4 -4 L-4 4 L4 24" stroke="#FFFFFF" stroke-width="6" fill="none"/></g>`}
+ const ly=1240+1.8*(-252);
+ s+=chip('WARM',540+44*1.8,ly-90,lin(T,kWom-.1,kWom+.2),'#FFE27A',38);
+ const fz=halus(lin(T,kLampu-.3,kWom));
+ return kamera(svgW(1080,1920,s),1080,540,lerp(980,ly+60,fz),1.0+.04*ioS(lin(u,0,3))+.5*fz)}
+
+// ===== B7 LOGIKA — layar belah: kiri air mendidih (garis 100) keping tetap nempel ✓; kanan sedikit di atas → lepas
+const kLog=K(114).m,kLewat=K(117).m,kBiar=K(118).m,kMdd=K(123).m,B8=cel(124);
+function setLogika(T){const u=T-B7;
+ let s=`<rect width="1080" height="1920" fill="#262830"/><rect x="536" y="300" width="8" height="1200" fill="#F6E3A1" opacity=".6"/>`;
+ const kanan=halus(lin(T,kLewat-.3,kLewat+.3));
+ const panel=(x,lepas,nilai,teks,a)=>`<g opacity="${a.toFixed(3)}"><svg x="${x}" y="300" width="520" height="1100" viewBox="230 330 620 1320">${A.makroSaklar(1080,1920,T,{panas:1,medan:1-lepas,acak:lepas,lepas,gelombang:lepas})}</svg>${termo(x+80,1110,.7,nilai)}${chip(teks,x+300,1205,1,'#F6E3A1',36)}</g>`;
+ s+=panel(10,0,.7+.003*Math.sin(T*6),'AIR MENDIDIH',1);
+ s+=panel(550,halus(lin(T,kLewat+.2,kBiar+.4)),.76,'SEDIKIT LEWAT',kanan);
+ s+=centang(270,560,1,lin(T,kMdd-.3,kMdd+.1));
+ return svgW(1080,1920,`<rect width="1080" height="1920" fill="#262830"/>`)+kamera(svgW(1080,1920,s),1080,540,940,1.03+.03*ioS(lin(u,0,4)))}
+
+// ===== B8 KEPING PINGSAN — keping ferit besar bermata spiral, berkeringat, goyang; Tebe kecil kiri bawah mengipas pakai centong; TITIK CURIE
+const kPingsan=K(125).m,kCurie=K(129).m,B9=cel(130);
+const AT8=tebeAnimasi([{t:0,pose:'kaget'},{t:kPingsan+.2,pose:'mengipas',transisi:.3}],{benih:8});
+function spiral(x,y,r,T){let d='';for(let i=0;i<=40;i++){const a=i*.45+T*6,rr=r*i/40;d+=(i?'L':'M')+(x+Math.cos(a)*rr).toFixed(1)+' '+(y+Math.sin(a)*rr).toFixed(1)}return `<circle cx="${x}" cy="${y}" r="${r+8}" fill="#FFF"/><path d="${d}" stroke="#1E1E1E" stroke-width="6" fill="none"/>`}
+function setPingsan(T){const u=T-B8,gy=Math.sin(T*5)*8;
+ let s=`<defs><radialGradient id="pgb" cx=".5" cy=".45" r=".7"><stop offset="0" stop-color="#5A4A3E"/><stop offset="1" stop-color="#1E1A1A"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#pgb)"/>`;
+ [0,1,2,3,4,5].forEach(i=>{const q=(T*1.2+i/6)%1;s+=`<path d="M${300+i*90} ${(560-q*80).toFixed(1)} q14 -20 0 -40 q-14 -20 0 -40" stroke="#FF6A3A" stroke-width="9" fill="none" stroke-linecap="round" opacity="${(.7*Math.sin(Math.PI*q)).toFixed(3)}"/>`});
+ s+=`<g transform="translate(540 ${(820+gy).toFixed(1)}) rotate(${(Math.sin(T*3)*6).toFixed(1)})"><rect x="-300" y="-120" width="600" height="240" rx="50" fill="#5E5650"/><rect x="-300" y="-120" width="600" height="44" rx="22" fill="#7A706A"/><rect x="-300" y="-120" width="600" height="240" rx="50" fill="#FF5A2A" opacity=".2"/>
+  ${spiral(-90,0,46,T)}${spiral(90,0,46,-T)}<path d="M-40 80 Q0 60 40 80" stroke="#1E1E1E" stroke-width="8" fill="none" stroke-linecap="round"/>
+  ${A.tetesKeringat(200,-80,.9,1)}${A.tetesKeringat(-220,-60,.7,1)}</g>`;
+ for(let i=0;i<3;i++){const a=T*2.5+i*2.1;s+=`<text x="${(540+Math.cos(a)*240).toFixed(1)}" y="${(640+Math.sin(a)*50).toFixed(1)}" font-family="Poppins" font-weight="700" font-size="60" fill="#FFC93C" text-anchor="middle">★</text>`}
+ const tb=AT8(T),kip=halus(lin(T,kPingsan,kPingsan+.4));let tangan='';
+ if(kip>0){const H=[tb.tanganN[0],tb.tanganN[1]];tangan=A.centong(H[0]+10,H[1]-60,.7,-20+Math.sin(T*14)*28*kip)+kepal(H)}
+ return kamera(svgW(1080,1920,s)+`<div class="abs" style="left:120px;top:${(990+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(tb,240,{tangan})}</div>`,1080,540,880,1.08-.06*ioS(lin(u,0,3)))}
+
+// ===== B9 ETALASE MALAM — chip yang sama dengan gelembung pikiran (callback) berkilau; rice cooker canggih transparan → papan sirkuit; "Yang biasa?" cooker biasa + ikon air, pegas, magnet
+const kLucu=K(130).m,kKomp2=K(131).m,kBeneran=K(136).m,kTapi2=K(138).m,kCanggih=K(142).m,kMicom=K(144).m,kBiasa=K(145).m,kAir3=K(148).m,kPegas3=K(149).m,kMagnet3=K(151).m,B10=cel(152);
+function setEtalase(T){const u=T-B9;
+ let s=A.etalaseMalam(1300,1920,T);
+ const xr=halus(lin(T,kCanggih-.4,kMicom));
+ s+=A.riceCookerCanggih(820,1180,1.15,T,{xray:xr});
+ // chip callback melayang lalu masuk ke cooker canggih
+ const ch=halus(lin(T,kKomp2-.1,kKomp2+.4))*(1-halus(lin(T,kTapi2,kCanggih))),chx=lerp(650,820,halus(lin(T,kTapi2,kCanggih)));
+ if(ch>0){const kil=.5+.5*Math.sin(T*8);s+=`<g opacity="${ch.toFixed(3)}"><circle cx="${chx}" cy="640" r="${(120+kil*20).toFixed(1)}" fill="#5FFFB0" opacity=".12"/>${A.chipKomputer(chx,640,1.1,T,{kedip:1})}<path d="M${chx+90} 560 l14 -40 l14 40 l40 14 l-40 14 l-14 40 l-14 -40 l-40 -14z" fill="#FFFFFF" opacity="${kil.toFixed(3)}"/></g>`}
+ const bs=halus(lin(T,kBiasa-.3,kBiasa+.3));
+ s+=`<g transform="translate(${lerp(-400,0,bs).toFixed(1)} 0)">${A.riceCooker(330,1180,1.0,T,{tuas:0,lampu:0})}</g>`;
+ s+=`<g opacity="${lin(T,kAir3-.1,kAir3+.2).toFixed(3)}">${A.ikonTetes(200,600,1)}</g><g opacity="${lin(T,kPegas3-.1,kPegas3+.2).toFixed(3)}">${A.ikonPegas(330,600,1)}</g><g opacity="${lin(T,kMagnet3-.1,kMagnet3+.2).toFixed(3)}">${A.ikonMagnet(460,600,1)}</g>`;
+ const cx=lerp(lerp(700,820,halus(lin(T,kTapi2-.3,kCanggih))),620,bs);
+ return kamera(svgW(1300,1920,s),1300,cx,900,1.0+.05*ioS(lin(u,0,4))-.04*bs)}
+
+// ===== B10 DAPUR PAGI (penutup) — rekap: air habis + keping lepas; Tebe di samping cooker, tangan di atas tutup: BUKA atau DIAM?; kirim ke orang rumah (HP); "Ssst…" lalu kamera mendorong ke tuas = sampul
+const kJadi=K(152).m,kAirH=K(158).m,kKepL=K(161).m,kPas=K(164).m,kBuka=K(167).m,kDiam=K(170).m,kSatu=K(172).m,kKirim=K(174).m,kSst=K(183).m,B11=AKHIR-.55;
+const AT10=tebeAnimasi([{t:0,pose:'menjelaskan'},{t:kPas,pose:'penasaran',transisi:.3},{t:kBuka,pose:'semangat',transisi:.3},{t:kKirim-.1,pose:'tertawa',transisi:.3},{t:kSst,pose:'berbisik',transisi:.3}],{benih:10});
+function setPenutup(T){const u=T-B10,p=P.siang;
+ let s=A.dapurRumah(1080,1920,p,T,{meja:1200,jendelaX:700});
+ s+=A.riceCooker(640,1220,1.1,T,{tuas:0,lampu:0,uap:.7});
+ const r1=lin(T,kAirH-.1,kAirH+.2)*(1-lin(T,kPas-.3,kPas)),r2=lin(T,kKepL-.1,kKepL+.2)*(1-lin(T,kPas-.3,kPas));
+ s+=`<g opacity="${r1.toFixed(3)}">${A.ikonTetes(460,560,1.1,{kosong:1})}${chip('HABIS',460,680,1,'#9FD8FF',36)}</g>`;
+ s+=`<g opacity="${r2.toFixed(3)}"><rect x="700" y="510" width="150" height="56" rx="14" fill="#5E5650"/><rect x="715" y="${(590+Math.sin(T*4)*4).toFixed(1)}" width="120" height="44" rx="10" fill="#C8433A"/><path d="M775 570 L775 600" stroke="#FFF" stroke-width="6" stroke-dasharray="6 6"/>${chip('LEPAS',775,690,1,'#F6E3A1',36)}</g>`;
+ const tb=AT10(T);let tangan='';const hpA=halus(lin(T,kKirim-.1,kKirim+.3))*(1-halus(lin(T,kSst-.2,kSst+.2)));
+ if(hpA>0){tb.tanganN=[lerp(tb.tanganN[0],262,hpA),lerp(tb.tanganN[1],290,hpA)];tb.bentukN='kepal';tb.tekukN=1;tangan=hp(tb.tanganN,hpA.toFixed(3))}
+ const pw=lin(T,kKirim+.6,kKirim+1.9);if(pw>0&&pw<1){const x=lerp(380,900,pw),y=lerp(860,420,pw);s+=`<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(-25)" opacity="${(1-pw*.6).toFixed(3)}"><path d="M-40 0 L40 -20 L-10 20Z" fill="#FFFFFF"/><path d="M-10 20 L0 6 L40 -20Z" fill="#D8D2C4"/></g>`}
+ const dz=halus(lin(T,kSst+.2,B11+.4)),ly=1220+1.1*(-128);
+ return kamera(svgW(1080,1920,s)+`<div class="abs" style="left:90px;top:${(830+Math.sin(T*2)*3).toFixed(1)}px">${tebeX(tb,290,{tangan})}</div>`,1080,lerp(560,640,dz),lerp(900,ly,dz),1.0+.03*ioS(lin(u,0,5))+.9*dz)}
+
+const BABAK=[{a:0,f:setSampul},{a:T_PAN1,f:setDapur,tr:'dorong',d:.5},{a:B2,f:setXray,tr:'dorong',d:.5},{a:B3,f:setHabis,tr:'dorong',d:.5},{a:B4,f:setMakro,tr:'geser',d:.5},
+ {a:B6,f:setLuar,tr:'dorong',d:.5},{a:B7,f:setLogika,tr:'dorong',d:.5},{a:B8,f:setPingsan,tr:'dorong',d:.5},{a:B9,f:setEtalase,tr:'geser',d:.5},{a:B10,f:setPenutup,tr:'geser',d:.5},
+ {a:B11,f:setSampulAkhir,tr:'silang',d:.6}];
+function teksBesar(T){return cap('MATA-MATANYA: AIR?',T,kAir,kSeratus-.1,{uk:70})+cap('TERTAHAN ±100°C',T,kSeratus,B3-.15)+cap('AIR HABIS → NAIK',T,kHabis,B4-.15)
+ +cap('LOGIKANYA…',T,kLog,B8-.15,{uk:70})+cap('TITIK CURIE',T,kCurie-.05,B9-.15,{uk:92})+cap('KOMPUTER? ADA DI YANG CANGGIH',T,kTapi2,kBiasa-.1,{uk:52})
+ +cap('BUKA atau DIAM?',T,kBuka-.05,B11-.2,{uk:96,rot:-4})+(T>kSatu-.05&&T<kKirim-.1?`<svg class="abs" width="1080" height="1920">${chip('SATU KATA',540,560,lin(T,kSatu-.05,kSatu+.25)*(1-lin(T,kKirim-.4,kKirim-.1)),'#FFF4DC',44)}</svg>`:'')}
+window.EFEK=[{t:0,sfx:'klik',vol:.7},{t:0.12,sfx:'desis',vol:.35},{t:kPanasnya-.2,sfx:'gelembung',vol:.25},{t:kPegas2,sfx:'boing',vol:.3},{t:kKlik-.02,sfx:'klik',vol:.75},{t:kWom-.05,sfx:'ding',vol:.35}];
+
+window.render=function(T){
+ let h=KS.komposisi(T,BABAK);
+ h+=KS.vinyet(T,.28);
+ let lap='';
+ if(T>1.1&&T<D()-.85)lap+=teksBesar(T)+KS.teksLayar(T,GRUP,{y:1290});
+ lap+=KS.watermark(T,(T>1.6&&T<B11-.3)?1:0);
+ lap+=KS.logoYT(T,D()-1.05,D()-.05,{y:720});
+ h+=`<div class="abs" style="inset:0">${lap}</div>`;
+ document.getElementById('V').innerHTML=h;
+};
+window.render(0);
+</script></body></html>
