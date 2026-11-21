@@ -31,6 +31,7 @@
 | 2026-11-21 | 2026-11-21_a-02-rice-cooker | Close-up ekstrem + momen ketegangan: tuas saklar rice cooker raksasa tepat saat terlepas (garis gerak), lingkaran merah di tuas, lampu masak oranye; uap menyusul di detik 0,1 | sangat dekat: hanya mata + jambul "?" + tepi hoodie mengintip dari balik meja, kanan bawah | kuning mentega + grafit |
 | 2026-11-21 | 2026-11-21_b-01-sambal-pendatang | Perbandingan skala: cabya RAKSASA bersinar krem vs cabai rawit kecil di atas koper (kapal kecil di pintu), label kayu "cabai" + "?" melayang di antaranya | kecil, tengah bawah, berpikir, jambul "?" | hijau tua + krem |
 | 2026-11-22 | 2026-11-22_a-06-rem-motor | Penampang tembus pandang (X-ray): tuas-selang cairan kuning-kaliper menjepit cakram pijar merah-oranye, teks "CUMA CAIRAN?", 1 panah merah ke selang (rencana) | sedang, kiri tengah, memegang selang, kaget | abu baja terang + oranye-merah pijar |
+| 2026-11-22 | 2026-11-22_b-02-jari-keriput | Teka-teki "dalang": ujung jari keriput RAKSASA miring keluar dari air bak, benang kuning bercahaya ke palang dalang + tangan bayangan tanpa wajah, 1 panah merah ke benang, teks "SIAPA YANG NYURUH?" | kecil, kiri tengah, berdiri di punggung jari, kaget menengok ke atas, jambul "?" | aqua-teal + kuning benang |
 
 ## Log cek riset naskah (Laras)
 | Tanggal | Folder | Hasil |

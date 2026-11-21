@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "b-02 jari keriput",
   "seri": "B",
   "dibuat": "2026-11-22T05:43",
@@ -40,6 +40,13 @@
       "waktu": "2026-11-22T05:53",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS (cek_seo 0 wajib; 1 WAJIB cek_riset diperbaiki: tahun 1930-an dihapus dari deskripsi), skor manajer 8/9, viral 8/10"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-22T06:25",
+      "hasil": "final.mp4 58,0 dtk / 15,9 MB, thumbnail.png (sampul 'dalang' aqua + kuning), cek_mulus LULUS, cek_video LULUS; suara ElevenLabs v4 sekali (925 huruf ≈ 481 kredit, tercatat di aset/log_kredit.csv); aset baru studio-aset/aset-jari.js; 13 babak, 6 SFX, musik jenaka-ringan; catatan Pak Bima di cek_fakta.md dipenuhi"
     }
   ],
   "masalah": null,
