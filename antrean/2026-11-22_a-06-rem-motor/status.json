@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "a-06 rem motor",
   "seri": "A",
   "dibuat": "2026-11-22T05:43",
@@ -53,8 +53,20 @@
       "oleh": "Yoga",
       "waktu": "2026-11-22T06:40",
       "hasil": "74,7 dtk, 14,9 MB, cek_mulus LULUS, cek_video LULUS, kredit ElevenLabs ±623 (1.199 huruf, sekali buat). Pangkas sesuai cek_fakta: kalimat 'Tag temanmu…' dipindah ke caption. Aset baru studio-aset/aset-rem.js."
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-22T06:35",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS (74,7 dtk, 14,9 MB), paraf 5 orang, uji 3 dtk 8/10. Jadwal Min 22 Nov 13.00 WITA (cadangan Sen 23 Nov 13.00)."
     }
   ],
   "masalah": null,
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-22T13:00:00+08:00",
+  "video_asset_id": "3a4d23f59e21b2d5389dfcbdb28b19d1",
+  "thumb_asset_id": "c30c0c4b1b11e7887ea02b4f2e1263de",
+  "video_url": "/_blob/3a4d23f59e21b2d5389dfcbdb28b19d1",
+  "thumb_url": "/_blob/c30c0c4b1b11e7887ea02b4f2e1263de"
 }
