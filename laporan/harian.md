@@ -17,3 +17,6 @@ Tonton rata2 TikTok mentok 26–33 dtk berapa pun durasinya → yang lewat 60 dt
 2. **Pemicu share identitas daerah/kebanggaan** (Toba 14, Indonesia 22, Odol 10 share) — wajib di 2 Shorts besok, sebut kebiasaan lokal spesifik.
 3. **Satu alur, sedikit nama** (ketchup 38% = terlalu banyak istilah/negara); hook teka-teki "siapa/apa" seperti Nama Indonesia (66%).
 Ukur besok: Sambal & Rice cooker — % ditonton YouTube > 55%? share TikTok > 5?
+
+## Catatan Laras untuk A-06 rem motor (22 Nov)
+Satu alur 5 langkah, istilah cukup: tuas, minyak rem, kaliper, cakram (hindari "master silinder", "Pascal" bisa diucap sekali). Kejutan inti ("minyak rem = tongkat cair yang tak bisa ditekan + piston kaliper lebih besar") di detik ≤ 20. Pemicu share identitas: kubu "rem depan / rem belakang doang / dua-duanya" + "tag temanmu yang rem belakang doang". Tanpa angka rasio, tanpa tips servis.
