@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "terjadwal",
   "topik": "B-01 sambal pendatang",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -59,6 +59,11 @@
       "waktu": "2026-11-21T06:47",
       "oleh": "Pak Bima",
       "hasil": "Review LULUS: cek_video & cek_mulus LULUS (55,0 dtk, 14,3 MB), paraf 5 orang lengkap, uji 3 dtk 8/10. Jadwal Sab 21 Nov 18.00 WITA (geser ke Min 18.00 bila disetujui setelah ±17.15)."
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "waktu": "2026-11-21T05:02"
     }
   ],
   "masalah": null,
@@ -69,5 +74,13 @@
   "video_asset_id": "adf8d68065f4c15b4007fd17ed8c199f",
   "thumb_asset_id": "711efdcc2fd176eed464983268ad38e0",
   "video_url": "/_blob/adf8d68065f4c15b4007fd17ed8c199f",
-  "thumb_url": "/_blob/711efdcc2fd176eed464983268ad38e0"
+  "thumb_url": "/_blob/711efdcc2fd176eed464983268ad38e0",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "instagram": {
+      "catatan": "unggah manual - uji API Instagram gagal 21 Nov (ProcessingFailedError rupload); otomatis tetap dicoba saat jam tayang"
+    }
+  }
 }

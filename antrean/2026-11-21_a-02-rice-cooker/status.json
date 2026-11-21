@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "terjadwal",
   "topik": "A-02 rice cooker",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -59,6 +59,11 @@
       "waktu": "2026-11-21T06:51",
       "oleh": "Pak Bima",
       "hasil": "Review LULUS setelah subtitle 100°C diperbaiki & render ulang (76,8 dtk, 15,3 MB, cek_video & cek_mulus LULUS), paraf 5 orang lengkap, uji 3 dtk 8/10. Jadwal Min 22 Nov 13.00 WITA."
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "waktu": "2026-11-21T05:02"
     }
   ],
   "masalah": null,
@@ -69,5 +74,13 @@
   "video_asset_id": "eb9347864e8d9e7e57f8c4f5cee88031",
   "thumb_asset_id": "3cbfdbef217f3e7065c136b8cfcd250d",
   "video_url": "/_blob/eb9347864e8d9e7e57f8c4f5cee88031",
-  "thumb_url": "/_blob/3cbfdbef217f3e7065c136b8cfcd250d"
+  "thumb_url": "/_blob/3cbfdbef217f3e7065c136b8cfcd250d",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "instagram": {
+      "catatan": "unggah manual - uji API Instagram gagal 21 Nov (ProcessingFailedError rupload); otomatis tetap dicoba saat jam tayang"
+    }
+  }
 }
