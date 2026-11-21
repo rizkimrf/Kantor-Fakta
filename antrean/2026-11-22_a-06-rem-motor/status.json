@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "a-06 rem motor",
   "seri": "A",
   "dibuat": "2026-11-22T05:43",
@@ -33,7 +33,21 @@
       "oleh": "Laras",
       "tanggal": "2026-11-21",
       "hasil": "cek_riset.md: 2 WAJIB (payoff 'bukan jarimu' -> 'bukan cuma jarimu'; 'lebih gampang mendidih' tambah 'kalau remnya kepanasan') + 5 saran. 2x->4x benar; piston kaliper besar & 'nyaris nggak bisa ditekan' aman; udara lembap didukung tipis (hedge). Tahap tetap cek_seo."
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-21",
+      "hasil": "R1: 2 WAJIB cek_riset dikerjakan (adegan 9 'bukan CUMA jarimu'; adegan 8 'lebih gampang MENDIDIH, kalau remnya kepanasan') + saran: adegan 2 'Rahasianya ada di... CAIRAN', adegan 3 'Tekanannya nyampe UTUH' (adegan 4 'tekanan itu'), adegan 7 'juga ... pelan-pelan, dari udara. Apalagi kalau udara lembap kayak di sini.', komentar tersemat 'motor yang sama ... diubah rem jadi panas', deskripsi 'bila rem kepanasan', visual cakram oranye hangat (bukan membara), adegan 7 tetes air dari udara dipisah dari panas. Judul/SEO Raka dipertahankan. Diselaraskan: naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md. 174 kata, ±73,5 dtk (≤75), skor naskah 8/9, viral 8/10. Lanjut cek_fakta (Pak Bima)."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-22T05:59",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS R1 (cek_seo 0 wajib; 2 WAJIB cek_riset dikerjakan Nadia), skor manajer 8/9, viral 8/10, ±73,5 dtk"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }
