@@ -4,7 +4,7 @@ Sama persis dengan `unggah.json`. Judul, sampul, caption, dan awal deskripsi TID
 **Jadwal (dari rencana_marketing):** Minggu 22 Nov 2026, 13.00 WITA (cadangan Senin 23 Nov 13.00). Jadwal resmi ditulis saat `/terbitkan`.
 
 ## YouTube Shorts
-Judul (49 huruf): Rem Motor Kok Bisa Berhenti Cuma Pakai Satu Jari?
+Judul (45 huruf): Rem Motor Kok Bisa Berhenti dengan Satu Jari?
 Deskripsi + sumber (13 URL dari riset.md, sumber 1-7) + 3 hashtag (#Shorts #RemMotor #KokBisaJalan): sama dengan `unggah.json`.
 Tag: rem motor kok bisa berhenti, cara kerja rem motor, rem cakram motor, cara kerja rem cakram, minyak rem, kenapa tuas rem bisa empuk, hukum pascal rem, rem depan atau belakang, kok bisa jalan, ternyata begitu
 Komentar tersemat: Jujur: kamu tim rem DEPAN, BELAKANG doang, atau DUA-DUANYA? Ceritain juga kebiasaan ngerem di kotamu. Bonus: kalau kecepatan motor jadi 2 kali, energi gerak yang harus dibuang rem jadi 4 kali.
@@ -15,7 +15,7 @@ Video terkait: Shorts "Rice Cooker Kok Bisa Mati Sendiri? Ini Rahasia Bunyi Klik
 Rem motor kok bisa berhenti cuma pakai satu jari? Tebak dulu: otot, kabel, atau... ? #remmotor #carakerja #TernyataBegitu #FaktaUnik  (±130 huruf, ≤150)
 
 ## Instagram Reels (tanpa ajakan pindah platform)
-Satu jari di tuas rem, motor seberat itu berhenti. Tenaganya dari mana? Tebak dulu sebelum nonton.
+Satu jari di rem motor, motor seberat itu berhenti. Tenaganya dari mana? Tebak dulu sebelum nonton.
 Tag temanmu yang rem belakang doang.
 Kamu tim DEPAN, BELAKANG doang, atau DUA-DUANYA? Satu kata.
 #remmotor #carakerja #motor #pemotor #faktaunik #sains #TernyataBegitu
