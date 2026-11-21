@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "a-06 rem motor",
   "seri": "A",
   "dibuat": "2026-11-22T05:43",
@@ -46,6 +46,13 @@
       "waktu": "2026-11-22T05:59",
       "oleh": "Pak Bima",
       "hasil": "cek_fakta LULUS R1 (cek_seo 0 wajib; 2 WAJIB cek_riset dikerjakan Nadia), skor manajer 8/9, viral 8/10, ±73,5 dtk"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-22T06:40",
+      "hasil": "74,7 dtk, 14,9 MB, cek_mulus LULUS, cek_video LULUS, kredit ElevenLabs ±623 (1.199 huruf, sekali buat). Pangkas sesuai cek_fakta: kalimat 'Tag temanmu…' dipindah ke caption. Aset baru studio-aset/aset-rem.js."
     }
   ],
   "masalah": null,
