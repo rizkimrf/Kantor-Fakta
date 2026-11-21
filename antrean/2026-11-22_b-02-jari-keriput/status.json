@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "b-02 jari keriput",
   "seri": "B",
   "dibuat": "2026-11-22T05:43",
@@ -47,8 +47,20 @@
       "oleh": "Yoga",
       "waktu": "2026-11-22T06:25",
       "hasil": "final.mp4 58,0 dtk / 15,9 MB, thumbnail.png (sampul 'dalang' aqua + kuning), cek_mulus LULUS, cek_video LULUS; suara ElevenLabs v4 sekali (925 huruf ≈ 481 kredit, tercatat di aset/log_kredit.csv); aset baru studio-aset/aset-jari.js; 13 babak, 6 SFX, musik jenaka-ringan; catatan Pak Bima di cek_fakta.md dipenuhi"
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "waktu": "2026-11-22T06:25",
+      "oleh": "Pak Bima",
+      "hasil": "Review LULUS: cek_video & cek_mulus LULUS (58,0 dtk, 15,9 MB), paraf 5 orang lengkap, uji 3 dtk 8/10. Jadwal Min 22 Nov 18.00 WITA (cadangan Sen 23 Nov 18.00)."
     }
   ],
   "masalah": null,
-  "skor_manajer": 8
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-22T18:00:00+08:00",
+  "video_asset_id": "beb9d113e5ee9c3b275754954ec30179",
+  "thumb_asset_id": "4fd210a426afb3125b081a04c52bec41",
+  "video_url": "/_blob/beb9d113e5ee9c3b275754954ec30179",
+  "thumb_url": "/_blob/4fd210a426afb3125b081a04c52bec41"
 }
