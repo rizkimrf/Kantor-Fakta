@@ -27,6 +27,12 @@
       "oleh": "Raka",
       "tanggal": "2026-11-21",
       "hasil": "cek_seo.md selesai, tanpa WAJIB untuk naskah/suara (tidak kembali ke Nadia). Judul akhir 'Rem Motor Kok Bisa Berhenti dengan Satu Jari?' (45), 'cara kerja rem motor' dipindah ke deskripsi+tag; diterapkan di unggah.json, paket_unggah.md, naskah.json. Deskripsi baris 2 diberi kata kunci, URL Wikipedia .com->.org, caption IG pakai 'rem motor'. Lanjut cek_fakta (Pak Bima)."
+    },
+    {
+      "tahap": "cek_riset",
+      "oleh": "Laras",
+      "tanggal": "2026-11-21",
+      "hasil": "cek_riset.md: 2 WAJIB (payoff 'bukan jarimu' -> 'bukan cuma jarimu'; 'lebih gampang mendidih' tambah 'kalau remnya kepanasan') + 5 saran. 2x->4x benar; piston kaliper besar & 'nyaris nggak bisa ditekan' aman; udara lembap didukung tipis (hedge). Tahap tetap cek_seo."
     }
   ],
   "masalah": null
