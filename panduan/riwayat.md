@@ -15,6 +15,7 @@
 | 2026-11-21 (naskah) | Shorts jalur A (cara-kerja) | Benda & kebiasaan sehari-hari | Rice cooker biasa mati sendiri: air menahan ±100 °C, air habis → keping magnetik lepas di titik Curie → pegas KLIK; yang mahal (MICOM) baru pakai komputer | #20 suara khas ("Klik! Rice cooker kok bisa mati SENDIRI?") + loop #26 | 2026-11-21_a-02-rice-cooker |
 | 2026-11-21 (naskah) | Shorts jalur B (fakta) | Benda & kebiasaan sehari-hari | Cabai dari Amerika (abad ke-16, Portugis & Spanyol); kata "cabai" dulu milik cabya/cabai jawa, kini di jamu | #12 asal-usul kata ("Dulu, kata 'cabai' itu bukan nama cabai di SAMBALMU.") + loop #26 | 2026-11-21_b-01-sambal-pendatang |
 | 2026-11-21 (tayang manual Bos: YouTube+TikTok+IG, jadwal Min 22 Nov 13.00) | Shorts jalur A (cara-kerja) | Benda & kebiasaan sehari-hari | Rice cooker mati sendiri (keping magnetik, titik Curie, KLIK) | #20 suara khas + loop #26 | 2026-11-21_a-02-rice-cooker |
+| 2026-11-21 (naskah, slot Min 22 Nov 18.00) | Shorts jalur B (fakta) | Sains & tubuh manusia | Jari keriput kena air = perintah saraf (pembuluh menyempit, kulit melipat), jari saraf rusak tetap mulus; fungsi "kembangan ban" masih diperdebatkan | teka-teki "siapa" (keluarga #6: "Jarimu keriput kalau kena air? Itu BUKAN karena air masuk. Ada yang NYURUH.") + loop #26 | 2026-11-22_b-02-jari-keriput |
 
 ## Log sampul (konsep · posisi Tebe · warna dominan)
 | Tanggal | Folder | Konsep | Posisi Tebe | Warna |

@@ -1,0 +1,179 @@
+{
+  "format": "shorts",
+  "seri": "fakta",
+  "jalur": "B \"Ternyata Begitu\"",
+  "revisi": "R0 (Nadia, 21 Nov 2026): tanpa intro, narasi mulai <=0,3 dtk, 1 inti kejutan (yang nyuruh = tubuhmu sendiri lewat saraf, bukti jari saraf rusak tetap mulus <=20 dtk), mekanisme 1 alur + canda sarung bantal, twist jujur 'ilmuwan masih DEBAT' (~41-44 dtk), kubu MANDI/NYUCI/SUNGAI + share 'satu rumah nungguin' + loop 'bilang gini...' -> kalimat pertama.",
+  "judul": "Kenapa Jari Keriput Kalau Kena Air? Bukan Karena Air Masuk",
+  "judul_opsi": [
+    "Kenapa Jari Keriput Kalau Kena Air? Bukan Karena Air Masuk",
+    "Kenapa Jari Keriput Kalau Kena Air? Ternyata Ada yang Nyuruh",
+    "Kenapa Jari Keriput Kalau Kelamaan Mandi? Bukan Air Masuk"
+  ],
+  "judul_catatan": "Utama 58 huruf: kata kunci utama seo.md utuh di depan, sudut #2 rencana_marketing (search-friendly), tidak menyesatkan (kerutan memang bukan karena air masuk). Opsi 2 (60 huruf, pas batas) = versi penasaran murni yang menyambung sampul 'SIAPA YANG NYURUH?'. Raka memutuskan di cek_seo.",
+  "thumbnail_teks": "SIAPA YANG NYURUH?",
+  "thumbnail_visual": "Puppet-master riddle: a GIANT macro fingertip with deep prune-like wrinkles floats diagonally (lower-left to centre) in clear aqua bath water, with a plastic water scoop (gayung) and the rim of a tiled Indonesian bath tub (bak mandi) soft in the background; from the base of the finger several thin glowing mustard-yellow strings rise upward like marionette strings, pulled by a soft faceless shadow hand at the top edge (no face, no body); ONE red arrow points at the strings; a SMALL Tebe (chibi, mustard hoodie) stands on the back of the finger clutching one string, startled, looking straight up, '?' cowlick glowing; dominant palette aqua blue + coral/mustard-yellow strings; flat style without black outlines; no letters or numbers inside the illustration; empty space at the top-right for the text overlay.",
+  "deskripsi": "Jarimu keriput kalau kena air? Itu bukan karena air masuk. Tonton sampai habis, lalu jawab: kamu keriput duluan pas mandi, nyuci, atau di sungai?\n\nCatatan lengkap (spoiler, baca setelah nonton): Kerutan di ujung jari setelah lama terendam air bukan karena kulit menyerap air lalu membengkak. Kalau begitu, jari harus membesar drastis, sehingga teori 'spons' ditinggalkan. Kerutan ini bergantung pada saraf simpatis: sistem saraf membuat pembuluh darah kecil di ujung jari menyempit (vasokonstriksi), volume di bawah kulit menyusut, dan kulit luar tertarik lalu melipat. Buktinya, sejak tahun 1930-an diketahui jari dengan kerusakan saraf tidak keriput meski direndam. Apa yang memicu sinyal saraf itu masih diduga-duga. Fungsinya juga masih diperdebatkan: satu eksperimen Universitas Newcastle (2013) menemukan kelereng basah dipindahkan lebih cepat dengan jari keriput, sementara yang kering tidak beda; studi 2014 tidak menemukan perubahan ketangkasan maupun kepekaan sentuh, dan studi 2021 melaporkan jari keriput butuh gaya cengkeram lebih kecil pada benda basah. Salah satu dugaannya: kerutan bekerja seperti kembangan ban di jalan basah. Video ini menjelaskan cara kerja tubuh, bukan nasihat kesehatan, dan tidak bisa dipakai untuk menilai kesehatanmu sendiri.\n\nSumber:\n- Wilder-Smith & Chow 2003, Microvascular Research: https://pubmed.ncbi.nlm.nih.gov/12826076/\n- Wilder-Smith 2004, Clinical Autonomic Research: https://link.springer.com/doi/10.1007/s10286-004-0172-4\n- The Scientist, The Science Behind Pruney Fingers: https://www.the-scientist.com/the-science-behind-pruney-fingers-71410\n- Popular Science, Why do fingers wrinkle in water: https://www.popsci.com/science/why-do-fingers-wrinkle-in-water/\n- Nature News 2013, wrinkly fingers improve grip: https://www.nature.com/articles/nature.2013.12175\n- Newcastle University (Kareklas, Nettle, Smulders 2013): https://www.ncl.ac.uk/press/articles/archive/2013/01/getagrip-whywegetwrinklyfingersandtoes.html\n- Haseleu dkk. 2014, PLoS ONE: https://pubmed.ncbi.nlm.nih.gov/24416318/\n- Davis dkk. 2021, PLoS ONE: https://pmc.ncbi.nlm.nih.gov/articles/PMC8294484\n- Cleveland Clinic: https://health.clevelandclinic.org/why-water-makes-your-skin-look-like-a-prune-and-not-a-plum\n\n#Shorts #JariKeriput #FaktaSains",
+  "caption_komentar": "Kamu keriput duluan pas apa: MANDI, NYUCI, atau main di SUNGAI? Terus menurutmu, keriput ini ada gunanya nggak? Kalau penasaran saraf kita juga bisa 'ketipu', jawabannya ada di Shorts 'Pedas Itu Rasa Apa?' di channel ini.",
+  "caption_komentar_catatan": "Disematkan MANUAL setelah tayang (scripts/terbitkan.py tidak membaca komentar_tersemat). Pasangan terkait: i-005 Pedas (sama-sama 'saraf yang kerja di balik rasa/tubuh', sudah tayang). Fakta cadangan 'pola keriput tiap jari cenderung sama' TIDAK dipakai (belum terverifikasi ke jurnal). Video panjang 'tubuhmu bereaksi sendiri' belum di antrean: jangan dijanjikan.",
+  "caption_tiktok": "Jari keriput kalau kena air? Bukan karena air masuk. Kamu keriput duluan pas MANDI, NYUCI, atau SUNGAI? #jarikeriput #faktasains #TernyataBegitu",
+  "caption_instagram": "Habis mandi lama atau nyuci baju, jarimu keriput kayak kismis? Itu bukan karena air masuk. Ada yang nyuruh.\nKirim ke teman yang kalau mandi, satu rumah nungguin.\nKamu keriput duluan pas MANDI, NYUCI, atau SUNGAI? Satu kata aja.\n#jarikeriput #tubuhmanusia #faktasains #sains #faktaunik #TernyataBegitu",
+  "tag": [
+    "kenapa jari keriput kalau kena air",
+    "jari keriput",
+    "kenapa jari keriput",
+    "jari keriput saat mandi lama",
+    "tangan keriput kena air",
+    "kenapa tangan keriput kalau kelamaan di air",
+    "penyebab jari keriput",
+    "jari keriput setelah berenang",
+    "fakta sains tubuh manusia",
+    "ternyata begitu"
+  ],
+  "pola_hook": "Teka-teki 'siapa' (keluarga #6 Tebak dulu, pola Nama Indonesia 66% ditonton) dengan pembuka skenario 'kamu' ('Jarimu keriput kalau kena air? Itu BUKAN karena air masuk. Ada yang NYURUH.'). Beda dari 5 video terakhir: Odol #9, Pedas #1, Gunting #14, Rice cooker #20, Sambal #12; beda juga dari A-06 hari yang sama (#3). Loop #26: penutup 'Nanti pas dia keluar, bilang gini...' -> 'Jarimu keriput kalau kena air?'.",
+  "hook_kandidat": [
+    {"tipe": 6, "teks": "Jarimu keriput kalau kena air? Itu BUKAN karena air masuk. Ada yang NYURUH.", "skor": 9, "alasan": "Kata kunci terucap di 0-2 dtk, 'jarimu' = taruhan personal, 'ada yang nyuruh' = teka-teki siapa yang belum terjawab (open loop 1, dibayar ±15 dtk). Lolos uji tongkrongan. TERPILIH (sejalan keputusan Pak Bima)."},
+    {"tipe": 1, "teks": "Jari keriput habis mandi itu bukan karena kulitmu nyerap air.", "skor": 7, "alasan": "Benar dan jelas, tapi tanpa celah 'siapa'; tipe #1 dipakai Pedas (5 video terakhir)."},
+    {"tipe": 3, "teks": "Ada jari yang direndam lama pun nggak bakal keriput.", "skor": 7, "alasan": "Mustahil-tapi-nyata, tapi tanpa konteks bikin orang mikir penyakit; lebih aman jadi BUKTI di adegan 3."},
+    {"tipe": 7, "teks": "Tubuhmu diam-diam nyuruh jarimu keriput tiap kamu mandi lama.", "skor": 8, "alasan": "Kuat, tapi membocorkan jawaban di detik 1 sehingga tidak ada alasan menunggu."},
+    {"tipe": 25, "teks": "Ilmuwan masih debat: kenapa jarimu keriput kalau kena air?", "skor": 6, "alasan": "Menyesatkan: mekanisme sudah diketahui, yang diperdebatkan hanya fungsinya. Dipakai sebagai twist, bukan hook."},
+    {"tipe": 18, "teks": "Coba rendam jarimu sekarang. Yang bikin keriput bukan airnya.", "skor": 5, "alasan": "Mengarah ke uji mandiri (dilarang riset) dan butuh waktu, penonton tidak akan melakukannya."},
+    {"tipe": 21, "teks": "Aku dulu kira jari keriput karena kemasukan air.", "skor": 7, "alasan": "Hangat dan jujur, tapi taruhannya pada Tebe, bukan penonton; tempo lambat."},
+    {"tipe": 22, "teks": "Tim mandi lama, jarimu keriput bukan gara-gara air.", "skor": 6, "alasan": "Kubu dipaksakan di awal; kubu lebih pas di penutup."},
+    {"tipe": 14, "teks": "Kalau kamu nyuci baju lama, jarimu dapat perintah rahasia.", "skor": 7, "alasan": "Imajinatif, tapi 'perintah rahasia' abstrak di 1,5 dtk dan tipe #14 dipakai Gunting."},
+    {"tipe": 11, "teks": "Ternyata jari keriput itu bukan kulit yang kembung.", "skor": 7, "alasan": "Rapi dan jujur, tapi datar: menjawab tanpa memancing pertanyaan baru."}
+  ],
+  "peta_retensi": "0,0-5,0 dtk -> HOOK teka-teki terucap <=0,3 dtk: 'Jarimu keriput kalau kena air? Itu BUKAN karena air masuk. Ada yang NYURUH.' (frame 0 = sampul 'dalang' aqua + benang kuning, Tebe kaget); kata kunci utama 0-2 dtk; taruhan personal = 'jarimu'; OPEN LOOP 1 = siapa yang nyuruh?\n5,0-13,2 dtk -> PATTERN INTERRUPT kamu-salah: spons kembung (canda visual spons di gayung) -> 'Kalau iya, jarimu harus bengkak GEDE banget' (jari balon) -> 'Teori itu udah DITINGGALIN' (spons dilempar keluar layar)\n13,2-19,8 dtk -> INTI KEJUTAN ±14,5-15 dtk: 'Yang nyuruh itu... tubuhmu SENDIRI, lewat saraf' (benang dalang ternyata saraf di lengan sendiri) + REAKSI TEBE (? -> !) -> BUKTI ±17-19,8 dtk: 'jari yang sarafnya rusak, direndam pun TETAP mulus' (payoff loop 1, sebelum dtk 22)\n19,8-31,0 dtk -> MEKANISME 1 alur, penampang x-ray: pembuluh MENYEMPIT -> isi KEMPES -> kulit melipat; ±28-31 dtk CANDA 1 'kayak sarung bantal yang isinya DIKURANGIN' (ganti visual, bukan ganti set)\n31,0-36,8 dtk -> 'TAPI' + OPEN LOOP 2: 'NGAPAIN tubuhmu repot-repot begini?' -> potong keras ke ban motor di jalan basah musim hujan: 'kayak kembangan BAN' (dugaan)\n36,8-44,4 dtk -> KEJUTAN KEDUA jujur: percobaan kelereng BASAH lebih cepat -> 'Percobaan lain? Nggak nemu BEDANYA' (layar terbelah, timbangan miring lalu seimbang) -> 'Ilmuwan masih DEBAT' (payoff loop 2 secara jujur: belum tuntas)\n44,4-54,6 dtk -> KUBU 1 kata MANDI/NYUCI/SUNGAI (3 kartu) + PEMICU SHARE identitas 'teman yang kalau mandi, satu rumah NUNGGUIN' (CANDA 2: antrean keluarga di depan pintu kamar mandi) + LOOP 'Nanti pas dia keluar, bilang gini...' -> kembali ke frame 0 'Jarimu keriput kalau kena air?'; logo YouTube kecil + 'Ternyata Begitu' <=1 dtk di atas kalimat terakhir",
+  "durasi_target": "±54,6 dtk (target 50-55, batas 60)",
+  "jumlah_kata": 131,
+  "skor_naskah": {
+    "hook": 2,
+    "taruhan": 1,
+    "penahan": 2,
+    "kejutan_kedua": 1,
+    "bahasa_lisan": 1,
+    "payoff": 1,
+    "total": 8
+  },
+  "skor_naskah_catatan": "Jujur 8/9. Hook 2: teka-teki 'siapa yang nyuruh' + bantahan kebiasaan yang dialami semua orang, kata kunci di 0-2 dtk. Taruhan 1: 'jarimu' di kata pertama. Penahan 2: 2 open loop (siapa nyuruh -> dibayar ±15 dtk; ngapain -> dibayar jujur ±44 dtk), perubahan visual tiap 2-3 dtk, 2 canda (sarung bantal, satu rumah nungguin), tidak ada kalimat pengulangan. Kejutan kedua 1 (bukan 2): 'ilmuwan masih debat' + kelereng basah memang membalik harapan 'pasti ada gunanya', tapi tidak sekuat inti kejutan; penonton yang sudah nonton Shorts pesaing mungkin tahu 'saraf', jadi beban kejutan dipikul BUKTI jari saraf rusak. Bahasa lisan 1: kalimat 3-12 kata, istilah cuma 2 (saraf, pembuluh darah), tanpa nama ilmuwan/tahun. Payoff 1: 'ada yang nyuruh' dibayar 'tubuhmu sendiri, lewat saraf' + bukti. Risiko: adegan 4 (11 dtk) paling padat; ditolong penampang yang memperagakan tiap kata + canda sarung bantal. Tambahan rubrik: gaya ngobrol YA (2 canda, tanpa menggurui); SEO YA (kata kunci utama 'jari(mu) keriput kalau kena air' terucap 0-2 dtk, utuh di depan judul).",
+  "skor_viral": {
+    "hook": {"skor": 2, "alasan": "Semua orang pernah keriput habis mandi; 'ada yang nyuruh' bikin penasaran tanpa konteks apa pun."},
+    "jarak_kejutan": {"skor": 2, "alasan": "Dari 'kulit kemasukan air' ke 'tubuhmu sendiri yang nyuruh, buktinya jari saraf rusak tetap mulus' = membalik total, dan bukti itu yang membedakan kita dari Shorts pesaing."},
+    "retensi": {"skor": 1, "alasan": "Celah baru tiap ±6-8 dtk dan kejutan inti sebelum dtk 20, tapi blok mekanisme 19,8-31 dtk paling rawan datar."},
+    "layak_dibagikan": {"skor": 2, "alasan": "'Eh tahu nggak, jari keriput itu perintah saraf' = bikin penonton terlihat pintar + olok ramah 'teman yang mandinya satu rumah nungguin' gampang dilempar ke grup keluarga."},
+    "pemicu_komentar": {"skor": 1, "alasan": "Kubu MANDI/NYUCI/SUNGAI mudah dijawab semua orang + loop 'bilang gini...', tapi sifatnya cerita pengalaman, bukan perdebatan gengsi; ditopang pertanyaan 'ada gunanya nggak?' di komentar tersemat."},
+    "total": 8
+  },
+  "pelafalan": {
+    "pembuluh": "pem-bu-luh",
+    "DITINGGALIN": "di-ting-ga-lin",
+    "NUNGGUIN": "nung-gu-in"
+  },
+  "seo": {
+    "kata_kunci_utama": "kenapa jari keriput kalau kena air",
+    "kata_kunci_turunan": [
+      "jari keriput saat mandi lama",
+      "tangan keriput kena air",
+      "penyebab jari keriput",
+      "kenapa tangan keriput kalau kelamaan di air"
+    ],
+    "catatan": "Terucap: 'Jarimu keriput kalau kena air' (0-2 dtk), 'saraf'/'pembuluh darah' (penyebab), 'jari keriput' (dtk ±37). Teks layar pertama 'BUKAN AIR MASUK' + subtitle kalimat hook. 'Kenapa' utuh ada di judul, deskripsi, tag."
+  },
+  "catatan_fakta": "Setiap kalimat dari riset.md (Laras). 'Itu bukan karena air masuk' = Jangan diklaim no.1 + fakta 3. 'Kamu pasti ngira kulitnya kembung nyerap air, kayak spons' = Uji 5 no.1 (anggapan umum). 'Kalau iya, jarimu harus bengkak gede banget. Teori itu udah ditinggalin' = fakta 3 (PopSci, The Scientist: jari harus membesar drastis; teori spons ditinggalkan). 'Yang nyuruh itu tubuhmu sendiri, lewat saraf' = fakta 1 (Wilder-Smith 2003/2004: bergantung saraf simpatis). 'Jari yang sarafnya rusak, direndam pun tetap mulus' = fakta 2 (Wilder-Smith 2004, PopSci, Scientist), TANPA kaitan diagnosis/uji mandiri. 'Pas kelamaan kena air, saraf nyuruh pembuluh darah di ujung jari menyempit. Isi di bawah kulit kempes, kulitnya ketarik, terus melipat' = Mekanisme (tanpa menit; pemicu awal tidak disebut sesuai catatan jujur riset). 'Kayak sarung bantal yang isinya dikurangin' = perumpamaan canda, bukan klaim. 'Ngapain tubuhmu repot-repot begini? Ada dugaan: biar jari kayak kembangan ban, nggak licin' = fakta 4 hipotesis tapak ban (Changizi via Nature News) dengan kata 'dugaan'. 'Satu percobaan: pakai jari keriput, kelereng basah lebih cepat dipindahin' = fakta 4-5 (Newcastle 2013), TANPA '12%' dan tanpa '30 menit'. 'Percobaan lain? Nggak nemu bedanya' = fakta 4 (Haseleu 2014: tidak mereproduksi). 'Ilmuwan masih debat' = kesimpulan fakta 4 (bukti campur, termasuk Davis 2021). Kubu MANDI/NYUCI/SUNGAI + 'teman yang kalau mandi, satu rumah nungguin' = Sudut Indonesia riset (kebiasaan, bukan klaim 'khas'); share '30 menit' dari rencana marketing sengaja TIDAK dipakai karena riset melarang angka menit. Angka di narasi: 0. Tidak dipakai: nama ilmuwan, tahun, '1930-an' (hanya deskripsi), elektrolit, air asin vs tawar, pola keriput sama (cadangan belum terverifikasi), apa pun soal penyakit.",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Jarimu keriput kalau kena air? Itu BUKAN karena air masuk. Ada yang NYURUH.",
+      "teks_layar": "BUKAN AIR MASUK",
+      "catatan_teks": "Frame 0-±1,3 dtk = teks sampul 'SIAPA YANG NYURUH?'; saat kata 'BUKAN' diucapkan (±1,8 dtk) teks besar berganti 'BUKAN AIR MASUK'; subtitle mengikuti suara di bawah, tidak menutupi ujung jari.",
+      "visual": "Frame 0 = cover composition: a GIANT macro fingertip with deep prune-like wrinkles floats diagonally in clear aqua bath water, a plastic gayung and the rim of a tiled Indonesian bak mandi soft in the background; thin glowing mustard-yellow marionette strings rise from the base of the finger to a soft faceless shadow hand at the top edge; one red arrow points at the strings; a small Tebe stands on the back of the finger clutching one string, startled, looking up with '?' cowlick glowing. Camera slowly pushes in from 0.0 s; at 'BUKAN' water droplets bounce OFF the skin like rain on a raincoat (water is not getting in); at 'NYURUH' the strings give a sharp tug and the whole finger twitches, the wrinkles deepen; aqua + coral/mustard palette; flat style without black outlines; no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 5.0,
+      "set": "frame 0 sampul 'dalang': air bak mandi aqua + gayung + ujungJariKeriput RAKSASA + benangDalang kuning + tangan bayangan tanpa wajah",
+      "tebe": "kecil, di punggung jari, memegang benang, kaget menengok ke atas, jambul '?'",
+      "aksi": "0,0 narasi + dorong kamera; 1,3 teks sampul diganti; 1,8 tetes air memantul dari kulit; 3,6 benang ditarik, jari tersentak, kerutan makin dalam; 4,6 Tebe hampir jatuh",
+      "catatan_yoga": "Narasi mulai <=0,3 dtk, tanpa intro. Komposisi miring diagonal kiri-bawah ke tengah (beda dari 2 sampul terakhir yang tengah-simetris)."
+    },
+    {
+      "no": 2,
+      "narasi": "Kamu pasti ngira kulitnya kembung nyerap air, kayak SPONS. Kalau iya, jarimu harus bengkak GEDE banget. Teori itu udah DITINGGALIN.",
+      "teks_layar": "TEORI SPONS?",
+      "visual": "Pattern interrupt, same bathroom world: a yellow kitchen sponge sits in the gayung and greedily slurps up water, swelling round and smug (funny beat); split comparison: beside it a cartoon finger tries to do the same and inflates into a ridiculous balloon-sized finger, straining like an overfilled balloon; at 'DITINGGALIN' a big red X stamps over the sponge and the sponge gets flicked out of frame; next to the tub a bucket of hand-washed laundry hints at 'nyuci baju'; flat style without black outlines; no text in the image.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 8.2,
+      "set": "kamar mandi bak + gayung (lanjut dunia yang sama) + spons + ember cucian",
+      "tebe": "-",
+      "aksi": "5,0 spons menyerap & membesar; 7,4 jari kartun menggembung seperti balon; 9,8 jari balon bergetar mau meletus; 11,8 cap X merah, spons disentil keluar layar",
+      "catatan_yoga": "Jari balon = canda visual, jangan sampai meletus beneran (hindari kesan seram)."
+    },
+    {
+      "no": 3,
+      "narasi": "Yang nyuruh itu... tubuhmu SENDIRI, lewat saraf. Buktinya: jari yang sarafnya rusak, direndam pun TETAP mulus.",
+      "teks_layar": "TUBUHMU SENDIRI",
+      "catatan_teks": "Kata 'SARAF' muncul sebagai subtitle saat diucapkan; saat bukti, label kecil 'saraf rusak' (kode) di jari kanan, tanpa simbol medis.",
+      "visual": "WOW reveal: the camera follows the yellow marionette strings UP from the finger and pulls back: the strings are not held by a stranger, they run up the person's own arm as glowing yellow nerve lines into the body (faceless, simple silhouette in a towel); small Tebe pops up in the lower-right corner, cowlick flips from '?' to '!'. Then side-by-side: two hands soaking in the same aqua water; the left hand's yellow nerve line glows and its fingertips wrinkle; the right hand's nerve line is drawn broken and dim, and its fingertips stay perfectly smooth while water ripples around them; calm, neutral look (not sick, no hospital, no medical icons); flat style without black outlines; no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.6,
+      "set": "tarik mundur dari benangDalang -> siluet badan + jalurSaraf kuning bercahaya -> 2 tangan di air aqua (saraf utuh vs saraf putus)",
+      "tebe": "REAKSI: kecil di pojok kanan bawah, jambul ? -> ! (bersamaan 'SENDIRI')",
+      "aksi": "13,2 kamera ikut benang ke atas; 14,8 benang = saraf lengan sendiri (bersamaan 'tubuhmu SENDIRI'); 15,6 jambul Tebe ? -> !; 16,6 dua tangan berdampingan; 18,4 jari kiri keriput, jari kanan TETAP mulus",
+      "catatan_yoga": "Bukti harus selesai <=20 dtk (ukur di audio asli). Tangan kanan netral, bukan 'sakit': tanpa perban, tanpa warna pucat, tanpa ikon kesehatan."
+    },
+    {
+      "no": 4,
+      "narasi": "Pas kelamaan kena air, saraf nyuruh pembuluh darah di ujung jari MENYEMPIT. Isi di bawah kulit KEMPES, kulitnya ketarik, terus melipat. Kayak sarung bantal yang isinya DIKURANGIN.",
+      "teks_layar": "PEMBULUH MENYEMPIT",
+      "catatan_teks": "Teks layar berganti mengikuti peragaan: 'PEMBULUH MENYEMPIT' -> 'KEMPES' -> 'MELIPAT'. Subtitle di atas penampang supaya tidak menutupi pembuluh.",
+      "visual": "Camera dives into an X-ray cross-section of the fingertip (still in the same aqua water): a yellow nerve line pulses a signal, and the small red blood vessels under the skin squeeze thinner exactly on 'MENYEMPIT'; the soft cushion under the skin shrinks ('KEMPES'); the outer skin layer, which stays the same length, is pulled down and folds into neat ridges ('melipat'). Then cut to the punchline: a cartoon pillow in a patterned Indonesian pillowcase (sarung bantal) has its stuffing pulled out, and the case collapses into the same kind of wrinkles; the wrinkly pillowcase and the wrinkly fingertip sit side by side and look at each other; flat style without black outlines; no text in the image.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 11.2,
+      "set": "penampangUjungJari x-ray BARU (saraf kuning, pembuluh merah, bantalan, kulit luar) -> sarungBantal",
+      "tebe": "-",
+      "aksi": "19,8 kamera menyelam ke penampang; 21,4 sinyal saraf berdenyut; 23,6 pembuluh menyempit (bersamaan kata); 25,4 bantalan kempes; 26,8 kulit melipat; 28,4 potong ke sarung bantal, isi ditarik; 30,0 sarung bantal kusut berdampingan dengan ujung jari",
+      "catatan_yoga": "Visual memperagakan PERSIS kata: menyempit / kempes / ketarik / melipat, berganti tiap 2-3 dtk. Bagian paling rawan datar, jadi jangan ada gambar diam."
+    },
+    {
+      "no": 5,
+      "narasi": "Tapi, NGAPAIN tubuhmu repot-repot begini? Ada dugaan: biar jari kayak kembangan BAN, nggak licin.",
+      "teks_layar": "BUAT APA?",
+      "visual": "Hard cut on 'Tapi' to a rainy Indonesian street at dusk: a scooter tire with deep tread rolls through a puddle, the camera zooms onto the tread grooves channelling water away; the tread pattern morphs into the ridges of a wrinkly fingertip which grips a wet tiled surface; a small question-mark sticker (code overlay) wobbles over the finger to signal it is only a hypothesis; generic tire, no brand; flat style without black outlines; no text in the image.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 5.8,
+      "set": "jalanHujan senja BARU + banMotor generik (zoom kembangan) -> morf ke ujung jari keriput",
+      "tebe": "-",
+      "aksi": "31,0 potong keras ke jalan hujan; 32,6 ban melindas genangan; 34,2 zoom kembangan ban; 35,4 kembangan berubah jadi kerutan jari; 36,2 stiker '?' bergoyang",
+      "catatan_yoga": "Tanda '?' wajib tampil: ini dugaan, bukan fakta pasti. Ban tanpa merek."
+    },
+    {
+      "no": 6,
+      "narasi": "Satu percobaan: pakai jari keriput, kelereng BASAH lebih cepat dipindahin. Percobaan lain? Nggak nemu BEDANYA. Ilmuwan masih DEBAT.",
+      "teks_layar": "MASIH DEBAT",
+      "visual": "Simple table-top test, bright neutral room: a wrinkly hand quickly moves shiny wet marbles from one bowl to another through a small gap while a cartoon stopwatch hand races (no numbers on the dial); hard cut to a second, different table where two hands, one wrinkly and one smooth, move marbles at the same pace and the stopwatch shows no difference; then a balance scale with a wrinkly finger on one side and a smooth finger on the other tips one way, then the other, and keeps wobbling; two faceless lab-coat silhouettes argue with speech bubbles full of scribbles; flat style without black outlines; no text, no numbers in the image.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 7.6,
+      "set": "mejaPercobaan BARU (mangkuk kelereng + stopwatch tanpa angka) -> meja kedua -> timbangan goyang + 2 siluet jas lab",
+      "tebe": "-",
+      "aksi": "36,8 jari keriput memindah kelereng basah cepat; 39,2 potong ke meja kedua, kecepatan sama; 41,2 timbangan miring kanan-kiri; 42,8 dua siluet berdebat, timbangan terus goyang",
+      "catatan_yoga": "Tanpa angka/persen di layar (riset: jangan '12%'). Kelereng basah berkilau supaya beda 'basah' terbaca tanpa suara."
+    },
+    {
+      "no": 7,
+      "narasi": "Kamu keriput duluan pas apa: MANDI, NYUCI, atau SUNGAI? Kirim ke teman yang kalau mandi, satu rumah NUNGGUIN. Nanti pas dia keluar, bilang gini...",
+      "teks_layar": "MANDI / NYUCI / SUNGAI?",
+      "catatan_teks": "Tiga kartu pilihan besar (kode) + '1 KATA' kecil; saat 'NUNGGUIN' teks kecil 'TANDAI DIA'; kalimat terakhir menggantung, langsung loop.",
+      "visual": "Three quick panels slide in as choice cards: a bak mandi with a gayung, a bucket of hand-washed laundry, a village river with kids splashing (all generic, no faces in close-up); then the camera glides to a house hallway: a line of family members in sarongs and towels waits outside a closed bathroom door, tapping feet, one holding a gayung, a wall clock spinning fast (funny beat); small Tebe stands at the front of the queue, grins and mimes sending a message on a phone; the door creaks open, steam rolls out, and on the last line the camera pushes into the steam and whip-pans down into the exact frame 0 cover composition (giant wrinkly fingertip in aqua water with yellow strings, Tebe with '?'), so the loop is seamless; flat style without black outlines; no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 10.2,
+      "set": "3 kartu (bakMandi, emberCucian, sungaiKampung BARU) -> lorongRumah + pintuKamarMandi + antrean keluarga -> komposisi frame 0",
+      "tebe": "di depan antrean, nyengir, kirim pesan; akhir: pose frame 0 jambul '?'",
+      "aksi": "44,4 tiga kartu masuk (bersamaan MANDI/NYUCI/SUNGAI); 48,0 geser ke lorong, antrean menunggu, jam berputar cepat (canda 2); 50,6 Tebe kirim pesan; 52,4 pintu terbuka, uap keluar; 53,6 dorong ke uap -> whip-pan ke komposisi frame 0",
+      "catatan_yoga": "Kalimat terakhir menggantung ('bilang gini...'), langsung loop ke 'Jarimu keriput kalau kena air?'. Logo YouTube kecil + 'Ternyata Begitu' <=1 dtk di zona aman sambil kalimat terakhir, tanpa ekor kosong."
+    }
+  ]
+}
