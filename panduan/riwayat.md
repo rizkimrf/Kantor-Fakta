@@ -28,6 +28,7 @@
 | 2026-11-17 | 2026-11-17_i-013-danau-toba-letusan-super | Perbandingan skala / momen ketegangan: penampang belah — danau senja tenang + perahu kecil di atas, mangkuk raksasa bawah air dengan dasar bercahaya oranye samar (petunjuk, jawaban tidak dibocorkan), 1 panah merah ke dasar | kecil-sedang, kiri atas di perahu, menengok ke bawah, kaget | biru tua + oranye magma |
 | 2026-11-21 | 2026-11-21_a-02-rice-cooker | Close-up ekstrem + momen ketegangan: tuas saklar rice cooker raksasa tepat saat terlepas (garis gerak), lingkaran merah di tuas, lampu masak oranye; uap menyusul di detik 0,1 | sangat dekat: hanya mata + jambul "?" + tepi hoodie mengintip dari balik meja, kanan bawah | kuning mentega + grafit |
 | 2026-11-21 | 2026-11-21_b-01-sambal-pendatang | Perbandingan skala: cabya RAKSASA bersinar krem vs cabai rawit kecil di atas koper (kapal kecil di pintu), label kayu "cabai" + "?" melayang di antaranya | kecil, tengah bawah, berpikir, jambul "?" | hijau tua + krem |
+| 2026-11-22 | 2026-11-22_a-06-rem-motor | Penampang tembus pandang (X-ray): tuas-selang cairan kuning-kaliper menjepit cakram pijar merah-oranye, teks "CUMA CAIRAN?", 1 panah merah ke selang (rencana) | sedang, kiri tengah, memegang selang, kaget | abu baja terang + oranye-merah pijar |
 
 ## Log cek riset naskah (Laras)
 | Tanggal | Folder | Hasil |
