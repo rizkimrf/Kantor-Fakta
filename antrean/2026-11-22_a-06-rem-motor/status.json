@@ -1,10 +1,21 @@
 {
-  "tahap": "ide",
+  "tahap": "naskah",
   "topik": "a-06 rem motor",
   "seri": "A",
   "dibuat": "2026-11-22T05:43",
   "riwayat": [
-    {"tahap": "ide", "oleh": "Laras", "hasil": "riset.md selesai, skor Faktor Ternyata 8/10, siap tahap pilih", "tanggal": "2026-11-21"}
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "hasil": "riset.md selesai, skor Faktor Ternyata 8/10, siap tahap pilih",
+      "tanggal": "2026-11-21"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "hasil": "LANJUT skor 18/20; rencana_marketing.md + seo.md; slot Min 22 Nov 13.00 (cadangan Sen 13.00); target <=75 dtk, kejutan <= dtk 20-25",
+      "tanggal": "2026-11-21"
+    }
   ],
   "masalah": null
 }

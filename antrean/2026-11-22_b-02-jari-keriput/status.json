@@ -1,10 +1,21 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "b-02 jari keriput",
   "seri": "B",
   "dibuat": "2026-11-22T05:43",
   "riwayat": [
-    {"tahap": "ide", "oleh": "Laras", "hasil": "riset.md selesai, skor Faktor Ternyata 9/10", "waktu": "2026-11-21"}
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "hasil": "riset.md selesai, skor Faktor Ternyata 9/10",
+      "waktu": "2026-11-21"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "hasil": "LANJUT skor 17/20; rencana_marketing.md + seo.md; slot Min 22 Nov 18.00 (cadangan Sen 18.00)",
+      "waktu": "2026-11-21"
+    }
   ],
   "masalah": null
 }
