@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "B-01 sambal pendatang",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -69,6 +69,13 @@
       "waktu": "2026-11-21T05:05",
       "oleh": "Pak Bima",
       "hasil": "Perintah Bos 21 Nov: semua unggahan HARI INI manual oleh Bos (YouTube, TikTok, Instagram). Mulai besok 22 Nov kembali otomatis."
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "waktu": "2026-11-22T05:45",
+      "oleh": "Pak Bima",
+      "hasil": "Bos menandai sudah unggah manual YouTube, TikTok, Instagram (21 Nov ±18.15 WITA)"
     }
   ],
   "masalah": null,
@@ -82,13 +89,19 @@
   "thumb_url": "/_blob/711efdcc2fd176eed464983268ad38e0",
   "terbit": {
     "youtube": {
-      "catatan": "unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-21T10:19:24Z",
+      "catatan": "diunggah manual oleh Bos"
     },
     "instagram": {
-      "catatan": "unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-21T10:15:05Z",
+      "catatan": "diunggah manual oleh Bos"
     },
     "tiktok": {
-      "catatan": "unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-21T10:19:18Z",
+      "catatan": "diunggah manual oleh Bos"
     }
   },
   "unggah_manual_bos": true
