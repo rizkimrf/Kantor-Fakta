@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "b-02 jari keriput",
   "seri": "B",
   "dibuat": "2026-11-22T05:43",
@@ -27,7 +27,21 @@
       "oleh": "Raka",
       "waktu": "2026-11-21",
       "hasil": "cek_seo.md: 0 butir WAJIB, 6 saran opsional. Judul final tetap 'Kenapa Jari Keriput Kalau Kena Air? Bukan Karena Air Masuk' (58). unggah.json & paket_unggah.md tidak berubah. Siap ke cek_fakta (Pak Bima)."
+    },
+    {
+      "tahap": "cek_riset_naskah",
+      "oleh": "Laras",
+      "waktu": "2026-11-21",
+      "hasil": "cek_riset.md: akurat; 1 WAJIB (deskripsi 'sejak 1930-an' hanya 1 sumber, hapus tahun) + 5 saran (visual air memantul, meja kedua tanpa kelereng, jaga tanpa diagnosis). Naskah/unggah.json tidak diubah."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "waktu": "2026-11-22T05:53",
+      "oleh": "Pak Bima",
+      "hasil": "cek_fakta LULUS (cek_seo 0 wajib; 1 WAJIB cek_riset diperbaiki: tahun 1930-an dihapus dari deskripsi), skor manajer 8/9, viral 8/10"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8
 }

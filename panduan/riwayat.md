@@ -16,6 +16,7 @@
 | 2026-11-21 (naskah) | Shorts jalur B (fakta) | Benda & kebiasaan sehari-hari | Cabai dari Amerika (abad ke-16, Portugis & Spanyol); kata "cabai" dulu milik cabya/cabai jawa, kini di jamu | #12 asal-usul kata ("Dulu, kata 'cabai' itu bukan nama cabai di SAMBALMU.") + loop #26 | 2026-11-21_b-01-sambal-pendatang |
 | 2026-11-21 (tayang manual Bos: YouTube+TikTok+IG, jadwal Min 22 Nov 13.00) | Shorts jalur A (cara-kerja) | Benda & kebiasaan sehari-hari | Rice cooker mati sendiri (keping magnetik, titik Curie, KLIK) | #20 suara khas + loop #26 | 2026-11-21_a-02-rice-cooker |
 | 2026-11-21 (naskah, slot Min 22 Nov 18.00) | Shorts jalur B (fakta) | Sains & tubuh manusia | Jari keriput kena air = perintah saraf (pembuluh menyempit, kulit melipat), jari saraf rusak tetap mulus; fungsi "kembangan ban" masih diperdebatkan | teka-teki "siapa" (keluarga #6: "Jarimu keriput kalau kena air? Itu BUKAN karena air masuk. Ada yang NYURUH.") + loop #26 | 2026-11-22_b-02-jari-keriput |
+| 2026-11-21 (naskah, slot Min 22 Nov 13.00) | Shorts jalur A (cara-kerja) | Benda & kebiasaan sehari-hari | Rem motor: minyak rem nyaris tak bisa ditekan ("tongkat cair") + piston kaliper lebih besar → tenaga diperkuat; gerak jadi panas; minyak menyerap air → gelembung bisa ditekan → tuas empuk | #3 mustahil tapi nyata ("Satu JARI di rem motor, dan kamu ngehentiin motor seberat ini.") + loop #26 | 2026-11-22_a-06-rem-motor |
 
 ## Log sampul (konsep · posisi Tebe · warna dominan)
 | Tanggal | Folder | Konsep | Posisi Tebe | Warna |
@@ -37,3 +38,4 @@
 | 2026-11-17 | 2026-11-18_i-005-pedas-itu-rasa-sakit | 3 WAJIB (kalimat burung, "hidung meler" bukan bagian pendinginan, PMID Nature 1997 = 9349813) + saran; lihat cek_riset.md |
 | 2026-11-21 | 2026-11-21_a-02-rice-cooker | 2 WAJIB (alasan "lewat seratus" = penalaran, bukan sumber; teks layar "CUMA YANG MAHAL") + 6 saran; cadangan Toshiba ER-4 1955; lihat cek_riset.md |
 | 2026-11-21 | 2026-11-21_b-01-sambal-pendatang | 2 WAJIB (Columbus "menamai pepper"/"salah nama" = pimienta + sejarawan berbeda; "dan jahe" di deskripsi kurang sumber) + saran; cadangan chili = Nahuatl; lihat cek_riset.md |
+| 2026-11-21 | 2026-11-22_b-02-jari-keriput | 1 WAJIB (deskripsi "sejak 1930-an" hanya 1 sumber, hapus tahun) + 5 saran (visual air memantul = kesan kulit kedap; meja kedua tanpa kelereng; jaga tanpa diagnosis); cadangan pola keriput tetap tak dipakai; lihat cek_riset.md |
