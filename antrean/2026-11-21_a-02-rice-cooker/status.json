@@ -64,6 +64,11 @@
       "dari": "disetujui",
       "ke": "terjadwal",
       "waktu": "2026-11-21T05:02"
+    },
+    {
+      "waktu": "2026-11-21T05:10",
+      "oleh": "Pak Bima",
+      "hasil": "Perintah Bos 21 Nov: video batch hari ini (Sambal & Rice cooker) diunggah manual oleh Bos di semua platform. Produksi & unggah otomatis mulai 22 Nov."
     }
   ],
   "masalah": null,
@@ -77,10 +82,14 @@
   "thumb_url": "/_blob/3cbfdbef217f3e7065c136b8cfcd250d",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "catatan": "unggah manual"
     },
     "instagram": {
-      "catatan": "unggah manual - uji API Instagram gagal 21 Nov (ProcessingFailedError rupload); otomatis tetap dicoba saat jam tayang"
+      "catatan": "unggah manual"
+    },
+    "tiktok": {
+      "catatan": "unggah manual"
     }
-  }
+  },
+  "unggah_manual_bos": true
 }

@@ -100,7 +100,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 ## Kantor di cloud + Kantor Visual HP
 - Kantor ini berjalan di cloud (claude.ai/code) dari repo GitHub pribadi Bos. **Di akhir setiap sesi: commit semua perubahan dan push langsung ke branch `main`** (repo pribadi, tanpa pull request) supaya pekerjaan tidak hilang. Jangan pernah meng-commit `.env`, token, atau kunci.
 - **Perintah Bos 18 Nov 2026:** token mingguan terbatas sampai Jumat → micin, Toba, Odol, Pedas, Gunting (`unggah_manual_bos: true`) diunggah MANUAL oleh Bos di semua platform; jangan diunggah otomatis. Produksi pagi & terbit siang/sore dimatikan dan dinyalakan lagi Sabtu 21 Nov 05.25 WITA, lalu berjalan seperti biasa.
-- **Perintah Bos 21 Nov 2026:** semua unggahan tanggal 21 Nov (Sambal) manual oleh Bos (`unggah_manual_bos: true`). Mulai 22 Nov terbit kembali otomatis sesuai kerangka kerja.
+- **Perintah Bos 21 Nov 2026:** semua video batch 21 Nov (Sambal & Rice cooker) diunggah manual oleh Bos (`unggah_manual_bos: true`). Mulai 22 Nov produksi & terbit kembali otomatis sesuai kerangka kerja.
 - **Kantor Visual HP**: https://claude.ai/artifact/3Foimf6mkjVzkA1X6vFhfx — Bos memantau, menonton video, menekan Setujui/Tolak, dan mengirim pesan dari sana.
 - **Di awal setiap sesi kerja** jalankan bagian A dari `.claude/commands/sinkron-visual.md` (ambil keputusan & pesan Bos). **Di akhir sesi** jalankan bagian B (perbarui laporan, unggah video yang menunggu persetujuan). Saat tim mulai/selesai mengerjakan sesuatu, perbarui `agen` agar Bos melihat siapa yang sedang bekerja.
 
