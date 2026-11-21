@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "A-02 rice cooker",
   "dibuat": "2026-11-21T05:50",
   "riwayat": [
@@ -69,6 +69,13 @@
       "waktu": "2026-11-21T05:10",
       "oleh": "Pak Bima",
       "hasil": "Perintah Bos 21 Nov: video batch hari ini (Sambal & Rice cooker) diunggah manual oleh Bos di semua platform. Produksi & unggah otomatis mulai 22 Nov."
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "waktu": "2026-11-21T17:50",
+      "oleh": "Pak Bima",
+      "hasil": "Bos menandai sudah unggah manual di YouTube, TikTok, Instagram (Kantor Visual)."
     }
   ],
   "masalah": null,
@@ -82,13 +89,19 @@
   "thumb_url": "/_blob/3cbfdbef217f3e7065c136b8cfcd250d",
   "terbit": {
     "youtube": {
-      "catatan": "unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-21T07:10:32Z",
+      "catatan": "diunggah manual oleh Bos"
     },
     "instagram": {
-      "catatan": "unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-21T07:03:10Z",
+      "catatan": "diunggah manual oleh Bos"
     },
     "tiktok": {
-      "catatan": "unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-21T07:06:36Z",
+      "catatan": "diunggah manual oleh Bos"
     }
   },
   "unggah_manual_bos": true

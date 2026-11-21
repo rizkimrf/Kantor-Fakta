@@ -7,12 +7,13 @@ Sumber: rekomendasi YouTube untuk channel — tetap menonton 53–70% (target 75
 5. **Format gabungan** (`.claude/skills/naskah-viral/referensi/format-gabungan.md`): 13.00 = jalur A "Kok Bisa Jalan?" (≤90 dtk), 18.00 = jalur B fakta (≤60 dtk). Isi `seri` di status.json. Subtitle tetap gaya sekarang, posisi & ukuran disesuaikan per adegan agar tidak menutupi objek.
 Ukur tiap video: % tetap menonton, % rata-rata ditonton, share, komentar — bandingkan dengan video lama (68–89 dtk).
 
-# Evaluasi harian — 17 Nov 2026 (Supermetrics TikTok, 7 hari; YouTube & IG belum ditarik/data tertunda)
-Nama Indonesia (17 Nov, caption pertanyaan + "kirim ke teman yang…"): 4.000 views, tonton rata2 30,6 dtk dari 68 (45%), selesai 7,7%, **share 20**, simpan 25 — terbaik sejauh ini dan share pertama.
-Pembanding: 99.900 3.284 views/26,5 dtk/share 2 · durian 274 views/18,7 dtk/share 0 · bau hujan 462/19,7 dtk/share 0. Langkah 2 & 3 kemarin terbukti jalan.
+# Evaluasi harian — 21 Nov 2026 sore (Supermetrics 7 hari: YouTube LatestVideos + TikTok videos)
+YouTube: Nama Indonesia 1.362 views, 44 dtk, **66% ditonton**, share 3 (terbaik) · Toba 45 dtk/54% · 99.900 55% · durian 51% · ketchup terendah **38%** (30 dtk).
+TikTok: Nama Indonesia 4.134 views/share 22 · Odol 1.472/share 10 · Toba 762/**share 14** · micin (89 dtk) tonton 33,6 dtk tapi selesai 5,8% · Rice cooker 684 views (beberapa jam, share 0).
+Tonton rata2 TikTok mentok 26–33 dtk berapa pun durasinya → yang lewat 60 dtk banyak tak selesai.
 
 ## 3 langkah untuk produksi besok
-1. **Pertahankan pola nama Indonesia:** caption & hook = pertanyaan "tebak dulu sebelum nonton", jawaban baru dibuka setelah detik 15; jangan bocorkan di teks layar/sampul.
-2. **Pemicu share spesifik & bernuansa identitas** ("kirim ke teman yang paling kencang teriak…") di detik terakhir — topik yang menyentuh kebanggaan/kebiasaan orang Indonesia diberi prioritas sudut ini.
-3. **Kejar penonton lewat detik 30:** tonton rata2 masih < 50%; letakkan kejutan terbesar kedua di ±25–35 dtk dan buang kalimat pengulangan sebelum itu.
-Ukur besok: ketchup (18.00) & micin — share > 5? tonton rata2 > 30 dtk?
+1. **Kejutan inti sebelum detik 25** (rata2 penonton pergi di 26–33 dtk); jalur B target 50–55 dtk, jalur A ≤ 75 dtk.
+2. **Pemicu share identitas daerah/kebanggaan** (Toba 14, Indonesia 22, Odol 10 share) — wajib di 2 Shorts besok, sebut kebiasaan lokal spesifik.
+3. **Satu alur, sedikit nama** (ketchup 38% = terlalu banyak istilah/negara); hook teka-teki "siapa/apa" seperti Nama Indonesia (66%).
+Ukur besok: Sambal & Rice cooker — % ditonton YouTube > 55%? share TikTok > 5?
