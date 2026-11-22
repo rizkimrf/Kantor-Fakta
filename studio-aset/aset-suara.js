@@ -131,7 +131,7 @@
     const { pts, L } = sampel(haluskanTitik(titik, 2), 60), n = o.n || 6, w = o.warna || C.AMBER, ujung = k * L;
     let s = "";
     for (let i = 0; i < n; i++) {
-      const u = ((t * (o.laju ?? 0.55) + i / n) % 1) * ujung, j = Math.min(pts.length - 1, Math.round((u / L) * 60)), p = pts[j];
+      const u = ((((t * (o.laju ?? 0.55) + i / n) % 1) + 1) % 1) * ujung, j = Math.min(pts.length - 1, Math.round((u / L) * 60)), p = pts[j];
       const ang = Math.atan2(p.ny, p.nx) * 180 / Math.PI + 90, r = (o.r || 30) * (0.8 + 0.4 * Math.sin(t * 6 + i)), a = Math.sin(Math.PI * (u / (ujung || 1)));
       s += `<g transform="translate(${f1(p.x)} ${f1(p.y)}) rotate(${f1(ang)})" opacity="${f2((o.a ?? 1) * a)}"><path d="M${-r} ${-r * 0.5} Q0 ${-r * 1.2} ${r} ${-r * 0.5}" stroke="${w}" stroke-width="${o.tebal || 9}" fill="none" stroke-linecap="round"/><path d="M${-r * 0.6} ${r * 0.1} Q0 ${-r * 0.5} ${r * 0.6} ${r * 0.1}" stroke="${w}" stroke-width="${(o.tebal || 9) * 0.8}" fill="none" stroke-linecap="round" opacity=".7"/></g>`;
     }
@@ -298,7 +298,7 @@
     const k = o.ketuk || 0;
     let q = `<rect x="-150" y="-460" width="300" height="460" rx="20" fill="#5A1844"/><rect x="-126" y="-436" width="252" height="436" rx="12" fill="#8E2468"/><circle cx="90" cy="-220" r="14" fill="${C.AMBER}"/>`;
     q += `<rect x="-96" y="-400" width="192" height="150" rx="10" fill="#A6337A"/><rect x="-96" y="-220" width="192" height="180" rx="10" fill="#A6337A"/>`;
-    if (k > 0) { const u = (t * 3) % 1; q += `<g opacity="${f2(k * (1 - u))}"><path d="M-180 -300 l-40 -20 M-180 -260 l-50 0 M-180 -220 l-40 20" stroke="${C.MINTL}" stroke-width="8" stroke-linecap="round"/></g>`; }
+    if (k > 0) { const u = (((t * 3) % 1) + 1) % 1; q += `<g opacity="${f2(k * (1 - u))}"><path d="M-180 -300 l-40 -20 M-180 -260 l-50 0 M-180 -220 l-40 20" stroke="${C.MINTL}" stroke-width="8" stroke-linecap="round"/></g>`; }
     return g(x, y, s, q);
   }
   function tanyaKecil(x, y, s, t = 0, a = 1) {

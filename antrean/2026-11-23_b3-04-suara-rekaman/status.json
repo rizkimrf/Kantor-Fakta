@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "menunggu_persetujuan",
   "topik": "b3-04 suara rekaman sendiri (pengganti b3-07 hujan panas, ditunda: syarat sumber lembaga tidak terpenuhi)",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -45,10 +45,31 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-23T08:30+08:00",
       "hasil": "cek_fakta LULUS setelah R1 (1 wajib Raka + 3 wajib Laras), skor 8/9, viral 8/10; koreksi studi 2023 dicatat di riset.md; jadwal Sel 24 Nov 18.00"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-23",
+      "hasil": "final.mp4 56,1 dtk / 15,1 MB, thumbnail.png (sampul SUARAMU ASLI? berry-magenta + mint); cek_mulus LULUS (1x perbaikan: getar 'GINI' diperhalus), cek_video LULUS. Suara ElevenLabs sekali: 915 huruf ≈ 476 kredit. Set baru studio-aset/aset-suara.js, SFX baru tok & hapus, musik jenaka-ringan, 6 SFX.",
+      "durasi_dtk": 56.1,
+      "ukuran_mb": 15.1,
+      "kredit_elevenlabs": 476
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-23T10:00+08:00",
+      "hasil": "Review LULUS (56,1 dtk, 15,1 MB), uji 3 dtk 8/10; jadwal Sel 24 Nov 18.00 WITA"
     }
   ],
   "masalah": null,
   "seri": "B",
   "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-24T18:00:00+08:00"
+  "jadwal_tayang": "2026-11-24T18:00:00+08:00",
+  "video_asset_id": "f40a4d651a3e5e4cad99d7f05f799988",
+  "thumb_asset_id": "eb699353099d953b418e7e2eddf2255f",
+  "video_url": "/_blob/f40a4d651a3e5e4cad99d7f05f799988",
+  "thumb_url": "/_blob/eb699353099d953b418e7e2eddf2255f"
 }

@@ -8,5 +8,10 @@ Rasa yang dikejar (kagum / kaget / geli / haru): kaget lalu geli-lega ("ternyata
   R1 (22 Nov): "Salah satu yang bikin asing?" + studi dibetulkan jadi "lebih jago BEDAIN suaranya sendiri dari suara orang lain" (dipisah lewat "Lucunya,") + "TERDENGAR lebih rendah dan penuh" + DOI di deskripsi; 134 kata ±58 dtk, skor tetap 8/9 & 8/10.
   Masukan untuk Yoga: adegan 6 sekarang "memilih suara sendiri di antara 2 gelombang", JANGAN puzzle "itu suaraku"; "Lucunya" = potong keras. Untuk Laras: riset.md Uji 5 no.5 & Fakta cadangan masih versi lama, mohon dikoreksi supaya tidak terpakai lagi.
   Masukan Yoga: siluet kepala di sampul pakai kepala manusia generik (rig Tebe jangan diubah); lencana "≈" bukan "=" di adegan 3 & 5; adegan 4-5 (±10,6 dtk) paling rawan datar, peragakan tiap kata; SFX tok-tok mangkuk bakso untuk canda 1.
-- Yoga (editor)     : (diisi Yoga)
+- Yoga (editor)     : Sekali lagi, biar pas. Set baru `studio-aset/aset-suara.js` (berry-magenta + mint udara + amber tulang): kamar malam, HP bermata, penampang kepala x-ray 2 jalur, gang senja 3 siluet "?", tiga pendengar (teman/ibu/abang bakso), otak di sofa, ruang uji headphone tulang, kartu reaksi, layar chat. Lencana "≈" (bukan "=") di adegan 3 & 5; kepala sampul = kepala manusia generik, rig Tebe tidak diubah.
+  Adegan 6 = memilih suara sendiri di antara 2 gelombang (amber-mint vs abu), tanpa "itu suaraku"; "Tapi" & "Lucunya" potong keras; SFX baru tok-tok mangkuk + hapus voice note (sintesis sendiri, `scripts/buat_sfx_suara.py`).
+  Masukan Raka/Nadia: 3 kata "Temanmu. Ibumu. Abang bakso" = 3 sapuan kamera tepat di katanya; blok 15–36 dtk diperagakan per kata (udara → tulang → telinga dalam → "penuh" → HP meraba kepala → x-ray kosong).
 - Pak Bima (manajer): (diisi Pak Bima)
+
+## Paraf setelah produksi
+- Yoga: final.mp4 56,1 dtk / 15,1 MB, cek_mulus + cek_video LULUS; narasi mulai 0,07 dtk tanpa intro, 135 kata selesai 55,36 dtk (tidak perlu buang "sih"/"langsung"); sampul "SUARAMU ASLI?" bertahan ±1,3 dtk, loop akhir = komposisi sampul, outro ikon YouTube + "Ternyata Begitu" ±1 dtk di y 1395; subtitle pindah per babak (1330/880/330/900/450) tidak menutupi telinga dalam, wajah Tebe, atau kartu. Suara sekali: 915 huruf ≈ 476 kredit (log_kredit.csv); pelafalan "vois nout"/"spiker" diterapkan, layar tetap "voice note"/"speaker".
