@@ -6,3 +6,9 @@
 - Hook teka-teki tanpa intro (narasi 0,21 dtk), bukti saraf rusak selesai 22,4 dtk (pas batas ≤ 22), twist "ilmuwan masih debat", kubu MANDI/NYUCI/SUNGAI, loop ke komposisi sampul, outro logo YouTube ±1 dtk.
 - Catatan kecil (tidak menahan): blok badan motor di adegan ban sederhana; kerutan tangan kiri ±21 dtk agak halus di bawah air.
 - Daftar periksa gerbang-mutu 11 butir: ya (paraf 5 orang di lembar_tim.md).
+
+## Review R1 (Sen 23 Nov, Pak Bima)
+- cek_video LULUS (59,0 dtk, 16,2 MB, audio ada) · cek_mulus LULUS (10 transisi). Zona aman: teks & Tebe di dalam area aman.
+- Adegan 7 baru dicek frame: kartu MANDI/BAJU/PIRING → lorong antrean "satu rumah NUNGGUIN" + "TANDAI DIA" → kembali mulus ke komposisi sampul (loop). Sambungan suara di 48,3 dtk menurut ukuran Yoga rata (beda ±0,5 dB).
+- Catatan Bos "sungai tidak relate" DIPENUHI: penutup kini kegiatan rumah sehari-hari, jawaban satu kata.
+- Daftar periksa gerbang mutu: semua "ya". → menunggu_persetujuan, jadwal Sen 23 Nov 18.00 WITA.

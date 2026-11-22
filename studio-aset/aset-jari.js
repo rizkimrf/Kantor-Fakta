@@ -11,7 +11,7 @@
  *  sarungBantal(x,y,s,t,{isi 0..1, mata}) · kapas(x,y,s,t) · banMotor(x,y,r,t,{putar,cipratan}) · ubinBasah(w,y,h,t)
  *  kelereng(x,y,r,warna,{basah}) · mangkuk(x,y,s,{depan}) · stopwatchPolos(x,y,s,t,{laju}) · balokKayu(x,y,s,rot) · ikonJari(x,y,s,keriput)
  *  siluetJasLab(x,y,s,t,{arah,bicara}) · gelembungCoret(x,y,s,t,k) · kartuPilihan(x,y,s,teks,isi,{warna,k})
- *  sungaiKampung(x,y,s,t) (mini panel) · lorongRumah(w,h,t,{pintuX,buka}) · jamDinding(x,y,s,t,laju) · uap(x,y,s,t,k) · orangAntre(x,y,s,t,o) */
+ *  sungaiKampung(x,y,s,t) · bakCuciPiring(x,y,s,t) (mini panel kartu, R1) · lorongRumah(w,h,t,{pintuX,buka}) · jamDinding(x,y,s,t,laju) · uap(x,y,s,t,k) · orangAntre(x,y,s,t,o) */
 (function (root) {
   const A = root.ASET;
   const f1 = (v) => Math.round(v * 10) / 10, f2 = (v) => Math.round(v * 100) / 100, cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
@@ -282,6 +282,27 @@
     for (let i = 0; i < 2; i++) { const by = Math.abs(Math.sin(t * 5 + i * 2)) * 10, bx = -30 + i * 60; s2 += `<circle cx="${bx}" cy="${f1(10 - by)}" r="16" fill="#7A4A30"/><path d="M${bx - 18} ${f1(26 - by)} Q${bx} ${f1(14 - by)} ${bx + 18} ${f1(26 - by)}" fill="#7A4A30"/>${[0, 1, 2].map((j) => `<circle cx="${bx - 20 + j * 20}" cy="${f1(-6 - by - j * 4 - Math.abs(Math.sin(t * 7 + j)) * 14)}" r="5" fill="#E6FBFF"/>`).join("")}`; }
     return g(x, y, s, s2);
   }
+  // bak cuci piring dapur (mini panel kartu kubu; R1 23 Nov menggantikan sungaiKampung): ubin dapur, bak stainless, keran mengalir,
+  // tumpukan piring berbusa + dua tangan keriput menggosok piring (tanpa merek sabun, tanpa wajah)
+  function bakCuciPiring(x, y, s, t = 0) {
+    let s2 = `<rect x="-120" y="-120" width="240" height="240" fill="#F3E6CF"/>${[-60, 0, 60].map((a) => `<rect x="-120" y="${a - 2}" width="240" height="3" fill="#E2D2B6"/>`).join("")}${[-60, 0, 60].map((a) => `<rect x="${a - 2}" y="-120" width="3" height="110" fill="#E2D2B6"/>`).join("")}`;
+    // keran + aliran air
+    s2 += `<rect x="58" y="-96" width="16" height="70" rx="6" fill="#9AA8B4"/><path d="M66 -96 Q66 -112 40 -112 L20 -112 L20 -98 L40 -98 Q52 -98 52 -90Z" fill="#B8C4CE"/>`;
+    const al = 0.75 + 0.25 * Math.sin(t * 9);
+    s2 += `<rect x="24" y="-98" width="${f1(8 + al * 2)}" height="96" rx="4" fill="#9FE0F0" opacity=".85"/>`;
+    // bak stainless
+    s2 += `<rect x="-120" y="-14" width="240" height="22" fill="#C9D3DA"/><path d="M-104 8 L104 8 L94 120 L-94 120Z" fill="#8E9CA8"/><path d="M-96 8 L96 8 L90 30 L-90 30Z" fill="#6F7E8A"/>`;
+    // tumpukan piring + busa
+    for (let i = 0; i < 4; i++) s2 += `<ellipse cx="-50" cy="${44 - i * 12}" rx="58" ry="14" fill="${i % 2 ? "#FFFFFF" : "#E8F0F4"}"/><ellipse cx="-50" cy="${42 - i * 12}" rx="38" ry="7" fill="#D6E2E8"/>`;
+    for (let i = 0; i < 7; i++) { const q = (t * 0.5 + i / 7) % 1, bx = -80 + i * 22 + Math.sin(t * 2 + i) * 4, by = 4 - q * 40; s2 += `<circle cx="${f1(bx)}" cy="${f1(by)}" r="${f1(7 + (i % 3) * 3)}" fill="#FFFFFF" opacity="${f2(0.9 * Math.sin(Math.PI * q))}"/>`; }
+    // satu piring dipegang dua tangan keriput dari bawah (jari menjepit tepi piring), digosok maju-mundur
+    const gs = Math.sin(t * 7) * 6;
+    const tangan = (tx, ty, rot) => `<g transform="translate(${f1(tx)} ${f1(ty)}) rotate(${rot})"><rect x="-13" y="6" width="26" height="80" rx="11" fill="${KULG}"/><rect x="-20" y="-22" width="40" height="38" rx="15" fill="${KUL}"/>${[-11, -1, 9].map((dx) => `<rect x="${dx - 4}" y="-40" width="9" height="26" rx="4.5" fill="${KUL}"/><path d="M${dx - 2.5} -34 h6 M${dx - 2.5} -28 h6" stroke="${KERUT}" stroke-width="1.5"/>`).join("")}</g>`;
+    s2 += `<g transform="translate(${f1(46 + gs)} 40) rotate(-10)"><ellipse rx="56" ry="18" fill="#FFFFFF"/><ellipse rx="36" ry="9" fill="#D6E2E8"/></g>`;
+    s2 += tangan(2 + gs, 74, 14) + tangan(92 + gs, 66, -14);
+    s2 += `<circle cx="${f1(30 + gs)}" cy="24" r="9" fill="#FFFFFF" opacity=".9"/><circle cx="${f1(62 + gs)}" cy="18" r="7" fill="#FFFFFF" opacity=".85"/><circle cx="${f1(46 + gs)}" cy="10" r="5" fill="#FFFFFF" opacity=".8"/>`;
+    return g(x, y, s, s2);
+  }
   function miniBak(x, y, s, t = 0) {
     return g(x, y, s, `<rect x="-120" y="-120" width="240" height="240" fill="#7FC9C6"/>${[0, 60, 120, 180].map((a) => `<rect x="${-120 + a}" y="-120" width="3" height="240" fill="#6AB0AE"/>`).join("")}<rect x="-120" y="0" width="240" height="120" fill="#E8F4F2"/><rect x="-100" y="10" width="200" height="30" fill="#4ABAC4"/>${gayung(30, -10, 0.45, -8)}`);
   }
@@ -321,6 +342,6 @@
   }
 
   Object.assign(A, { airBak, dindingKeramik, tepiBak, ujungJari, titikJari, tetesMengalir, benangDalang, palangDalang, gayung, spons, capX, emberCucian, orangHanduk, jalurSaraf, tanganRendam,
-    penampangJari, sarungBantal, kapas, banMotor, ubinBasah, kelereng, mangkuk, stopwatchPolos, balokKayu, ikonJari, siluetJasLab, gelembungCoret, kartuPilihan, sungaiKampung, miniBak, miniEmber,
+    penampangJari, sarungBantal, kapas, banMotor, ubinBasah, kelereng, mangkuk, stopwatchPolos, balokKayu, ikonJari, siluetJasLab, gelembungCoret, kartuPilihan, sungaiKampung, bakCuciPiring, miniBak, miniEmber,
     lorongRumah, jamDinding, uap, orangAntre, JARI_L: L });
 })(typeof window !== "undefined" ? window : globalThis);

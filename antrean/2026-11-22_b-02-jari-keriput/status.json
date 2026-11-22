@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "menunggu_persetujuan",
   "topik": "b-02 jari keriput",
   "seri": "B",
   "dibuat": "2026-11-22T05:43",
@@ -75,10 +75,24 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-23T06:10+08:00",
       "hasil": "cek_fakta R1 LULUS: penutup adegan 7 MANDI/BAJU/PIRING memenuhi catatan Bos; ulang suara & visual adegan 7 saja; jadwal Sen 23 Nov 18.00"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-23T06:40+08:00",
+      "hasil": "R1: final.mp4 59,0 dtk / 16,2 MB; hanya adegan 7 diulang — suara 174 huruf ≈ 90 kredit ElevenLabs v4 (tercatat di aset/log_kredit.csv), disambung di jeda 48,30 dtk tanpa sambungan terdengar; kartu MANDI/BAJU/PIRING (aset baru bakCuciPiring menggantikan sungai); adegan 1–6 & thumbnail.png tidak berubah; cek_mulus LULUS, cek_video LULUS"
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-23T06:40+08:00",
+      "hasil": "Review R1 LULUS (59,0 dtk, 16,2 MB); catatan Bos dipenuhi (penutup MANDI/BAJU/PIRING); jadwal Sen 23 Nov 18.00 WITA"
     }
   ],
   "masalah": null,
   "skor_manajer": 8,
   "jadwal_tayang": "2026-11-23T18:00:00+08:00",
-  "catatan_bos": "[naskah] maksud sungai bagian akhir apa? tidak releate sama sekali dengan kehidupan sehari hari"
+  "catatan_bos": null
 }

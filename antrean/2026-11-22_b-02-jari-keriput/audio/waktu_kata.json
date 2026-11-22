@@ -542,124 +542,140 @@
    "selesai": 48.16
   },
   {
-   "kata": "Kamu",
-   "mulai": 48.514,
-   "selesai": 48.56
+   "kata": "Di",
+   "mulai": 48.38,
+   "selesai": 48.46
+  },
+  {
+   "kata": "rumahmu,",
+   "mulai": 48.54,
+   "selesai": 49.22
+  },
+  {
+   "kata": "jari",
+   "mulai": 49.42,
+   "selesai": 49.58
   },
   {
    "kata": "keriput",
-   "mulai": 48.64,
-   "selesai": 48.88
+   "mulai": 49.66,
+   "selesai": 49.9
   },
   {
-   "kata": "duluan",
-   "mulai": 48.96,
-   "selesai": 49.2
+   "kata": "paling",
+   "mulai": 49.98,
+   "selesai": 50.14
+  },
+  {
+   "kata": "sering",
+   "mulai": 50.22,
+   "selesai": 50.46
   },
   {
    "kata": "pas",
-   "mulai": 49.28,
-   "selesai": 49.44
-  },
-  {
-   "kata": "apa:",
-   "mulai": 49.6,
-   "selesai": 50.0
+   "mulai": 50.54,
+   "selesai": 50.62
   },
   {
    "kata": "mandi,",
-   "mulai": 50.16,
-   "selesai": 50.72
+   "mulai": 50.7,
+   "selesai": 51.22
   },
   {
-   "kata": "nyuci,",
-   "mulai": 50.76,
-   "selesai": 51.36
+   "kata": "nyuci",
+   "mulai": 51.34,
+   "selesai": 51.58
+  },
+  {
+   "kata": "baju,",
+   "mulai": 51.66,
+   "selesai": 52.1
   },
   {
    "kata": "atau",
-   "mulai": 51.44,
-   "selesai": 51.547
+   "mulai": 52.14,
+   "selesai": 52.54
   },
   {
-   "kata": "sungai?",
-   "mulai": 51.573,
-   "selesai": 52.0
+   "kata": "cuci",
+   "mulai": 52.58,
+   "selesai": 52.78
+  },
+  {
+   "kata": "piring?",
+   "mulai": 53.14,
+   "selesai": 53.527
   },
   {
    "kata": "Kirim",
-   "mulai": 52.32,
-   "selesai": 52.56
+   "mulai": 53.553,
+   "selesai": 53.74
   },
   {
    "kata": "ke",
-   "mulai": 52.6,
-   "selesai": 52.64
+   "mulai": 53.78,
+   "selesai": 53.82
   },
   {
    "kata": "teman",
-   "mulai": 52.72,
-   "selesai": 52.96
+   "mulai": 53.9,
+   "selesai": 54.14
   },
   {
    "kata": "yang",
-   "mulai": 53.04,
-   "selesai": 53.12
+   "mulai": 54.22,
+   "selesai": 54.3
   },
   {
    "kata": "kalau",
-   "mulai": 53.2,
-   "selesai": 53.36
+   "mulai": 54.34,
+   "selesai": 54.54
   },
   {
    "kata": "mandi,",
-   "mulai": 53.52,
-   "selesai": 53.92
+   "mulai": 54.7,
+   "selesai": 55.06
   },
   {
    "kata": "satu",
-   "mulai": 53.96,
-   "selesai": 54.24
+   "mulai": 55.1,
+   "selesai": 55.34
   },
   {
    "kata": "rumah",
-   "mulai": 54.32,
-   "selesai": 54.56
+   "mulai": 55.42,
+   "selesai": 55.74
   },
   {
    "kata": "nungguin.",
-   "mulai": 54.64,
-   "selesai": 55.36
+   "mulai": 55.82,
+   "selesai": 56.673
   },
   {
-   "kata": "Nanti",
-   "mulai": 55.4,
-   "selesai": 55.6
-  },
-  {
-   "kata": "pas",
-   "mulai": 55.68,
-   "selesai": 55.76
+   "kata": "Pas",
+   "mulai": 56.727,
+   "selesai": 56.78
   },
   {
    "kata": "dia",
-   "mulai": 55.84,
-   "selesai": 55.92
+   "mulai": 56.86,
+   "selesai": 56.94
   },
   {
    "kata": "keluar,",
-   "mulai": 56.0,
-   "selesai": 56.48
+   "mulai": 57.02,
+   "selesai": 57.553
   },
   {
    "kata": "bilang",
-   "mulai": 56.56,
-   "selesai": 56.72
+   "mulai": 57.607,
+   "selesai": 57.74
   },
   {
    "kata": "gini...",
-   "mulai": 56.76,
-   "selesai": 57.28
+   "mulai": 57.78,
+   "selesai": 58.3
   }
- ]
+ ],
+ "catatan": "R1 23 Nov: adegan 7 dibuat ulang terpisah (174 huruf) dan disambung pada 48,30 dtk di jeda antar-kalimat"
 }
