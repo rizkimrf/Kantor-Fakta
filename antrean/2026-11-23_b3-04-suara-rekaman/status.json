@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "naskah",
   "topik": "b3-04 suara rekaman sendiri (pengganti b3-07 hujan panas, ditunda: syarat sumber lembaga tidak terpenuhi)",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -23,6 +23,13 @@
       "oleh": "Nadia",
       "waktu": "2026-11-22",
       "hasil": "naskah.json (seri fakta) + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md. Hook #5 pertanyaan pribadi + teka-teki 'siapa' tebak dulu: 'Dengar suara sendiri di rekaman, kamu langsung bilang, ih, kok GINI? Tebak, siapa yang tiap hari dengar suara MIRIP itu?' (kata kunci 0,4-2 dtk, tanpa intro). Bingkai 'utuh' Raka diganti sesuai catatan Pak Bima ('mirip', 'lebih mendekati', 'nggak persis sama'). Kejutan inti ±13 dtk ('Temanmu. Ibumu. Abang bakso... lebih MENDEKATI suaramu di telinga mereka'), mekanisme 2 jalur, canda mikrofon nggak punya tulang kepala, kejutan 2 headphone penggetar tulang (tanpa tahun/nama di narasi), penutup 1 kata NGERI/KAGET/BIASA + share 'teman yang BENCI suaranya di voice note' + loop 'Bilang ke dia...'. Judul 'Suara Sendiri di Rekaman Aneh? Ternyata Itu Suara Aslimu?' (57), sampul 'SUARAMU ASLI?'. 7 adegan, 131 kata, ±57 dtk, 1 angka, 0 klip. Skor naskah 8/9, viral 8/10. Terkait B-02 jari keriput. Jadwal usulan Sel 24 Nov 18.00."
+    },
+    {
+      "dari": "cek_seo",
+      "ke": "naskah",
+      "oleh": "Raka",
+      "waktu": "2026-11-22",
+      "hasil": "cek_seo.md: 1 WAJIB (kalimat 'Yang bikin asing? Otakmu udah TERBIASA' terlalu mutlak -> 'Salah satu yang bikin asing?'). Judul diganti 'Suara Sendiri di Rekaman Aneh? Temanmu Dengar yang Mirip' (56) di unggah.json, paket_unggah.md, naskah.json; sampul 'SUARAMU ASLI?' dipertahankan. Caption TikTok/IG lulus. Jadwal Sel 24 Nov 18.00."
     }
   ],
   "masalah": null,

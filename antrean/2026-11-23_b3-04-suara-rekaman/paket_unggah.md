@@ -4,8 +4,8 @@ Judul, sampul, caption, dan komentar tersemat tidak membocorkan mekanisme tulang
 **Jadwal:** Selasa 24 Nov 2026, 18.00 WITA (cadangan Rabu 25 Nov 18.00). Jadwal resmi ditulis saat `/terbitkan`.
 
 ## YouTube Shorts
-Judul (57 huruf): Suara Sendiri di Rekaman Aneh? Ternyata Itu Suara Aslimu?
-Opsi untuk Raka/Pak Bima: "Suara Sendiri di Rekaman Aneh? Temanmu Dengar yang Mirip" (56, paling hati-hati) · "Kenapa Suara Sendiri di Rekaman Terdengar Aneh?" (48, murni pencarian)
+Judul (56 huruf): Suara Sendiri di Rekaman Aneh? Temanmu Dengar yang Mirip
+Keputusan Raka (cek_seo 22 Nov): judul di atas dipilih (akurat: "mirip"). Judul lama "...Ternyata Itu Suara Aslimu?" ditolak (terlalu kuat). Sampul "SUARAMU ASLI?" dipertahankan (bertanda tanya, dibayar "lebih MENDEKATI").
 Deskripsi + sumber (5 URL dari riset.md, tanpa URL bahan B3-07) + 3 hashtag (#Shorts #SuaraSendiri #FaktaSains): sama dengan `unggah.json`.
 Tag: suara sendiri di rekaman, suara kita di rekaman, kenapa suara di rekaman beda, suara rekaman aneh, suara sendiri di voice note, suara di kepala vs rekaman, kenapa suara sendiri terdengar aneh, bone conduction, fakta sains tubuh manusia, ternyata begitu
 Komentar tersemat: Pertama kali dengar suaramu sendiri di rekaman, reaksimu apa: NGERI, KAGET, atau BIASA? Satu kata aja. Terus jujur: kamu termasuk yang suka ngapus voice note sebelum dikirim? Kalau penasaran sama tubuhmu yang diam-diam 'kerja sendiri', tonton juga Shorts 'Kenapa Jari Keriput Kalau Kena Air?' di channel ini.
