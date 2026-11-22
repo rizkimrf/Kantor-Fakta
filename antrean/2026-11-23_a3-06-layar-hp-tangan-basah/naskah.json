@@ -9,39 +9,123 @@
     "Kenapa Layar HP Bergerak Sendiri Saat Tangan Basah?",
     "Layar HP Error Kena Air: Umumnya Bukan Soal Tekanan"
   ],
-  "judul_catatan": "Opsi 1 (51 huruf) memuat kata kunci utama seo.md 'layar hp error tangan basah' + ajakan tebak yang jujur (tidak membocorkan 'listrik', tidak mutlak). Opsi 2 = usulan Raka (frasa populer 'bergerak sendiri'), opsi 3 = sudut kejutan yang sudah dilunakkan 'Umumnya'. Raka memutuskan di cek_seo. Judul dan sampul tidak mengulang kata yang sama.",
+  "judul_catatan": "Opsi 1 (51 huruf) memuat kata kunci utama seo.md 'layar hp error tangan basah' + ajakan tebak yang jujur (tidak membocorkan 'listrik', tidak mutlak). Opsi 2 = usulan Raka (frasa populer 'bergerak sendiri'), opsi 3 = sudut kejutan yang sudah dilunakkan 'Umumnya'. Raka memutuskan di cek_seo. Judul dan sampul tidak mengulang kata yang sama. FINAL (Raka, cek_seo 22 Nov): opsi 1.",
   "thumbnail_teks": "APA YANG DIRASA LAYAR?",
   "thumbnail_visual": "Dark indigo background with neon cyan accents; a huge x-ray style cross-section of a generic smartphone screen (no brand, no logo, no notch design of any real phone) tilted diagonally across the frame: thin glass layer on top, under it a glowing cyan grid of transparent wires (rows and columns) with small bright dots at every crossing; on the glass sit ONE round water drop (left) and ONE cartoon fingertip touching the glass (right), and both radiate the SAME soft cyan rings of electric field down into the grid, like twins; one thick red hand-drawn arrow points at the water drop; Tebe small at the lower left edge peeking over the phone edge, shocked face, wide eyes, '?' cowlick, mustard hoodie; no wifi icon, no stock-style water drop icon, no numbers, no letters inside the illustration; flat style without black outlines; empty space at the top for the text overlay.",
-  "deskripsi": "Layar HP error pas tangan basah, bergerak sendiri, atau malah nggak mau diketuk? Tebak dulu: layar sentuh HP sebenarnya merasakan apa dari jarimu? Cocokkan tebakanmu dengan videonya.\n\nCatatan lengkap (spoiler, baca setelah nonton): Layar sentuh HP umumnya bersifat kapasitif. Di bawah kaca ada kisi kabel transparan (baris dan kolom) yang menyimpan sedikit muatan listrik. Tubuh kita sebagian besar air dan menghantarkan listrik, sehingga jari menyerap sebagian muatan di titik yang disentuh dan layar tahu letak jarimu. Air juga mengubah sinyal listrik itu, sehingga layar bisa salah mengira ada sentuhan (ghost touch). Tetes air yang tidak tersambung ke tubuh biasanya lebih mudah diabaikan; yang sering bikin kacau adalah air yang menyatu dengan jari basah, karena ikut terbaca sebagai bagian sentuhan. Cara tiap HP menolak air berbeda-beda dan tidak dibuka ke publik. Video ini menjelaskan cara kerja, bukan panduan perbaikan HP.\n\nSumber:\n- Inside Science (AIP), Why Does Water Confuse My Touch Screen?: https://www.aip.org/inside-science/why-does-water-confuse-my-touch-screen\n- Popular Science, Why Does A Drop Of Water Confuse My Touchscreen?: https://www.popsci.com/why-does-drop-water-confuse-my-touchscreen/\n- Mental Floss, What Happens When Water Comes in Contact With Your Touchscreen: https://www.mentalfloss.com/science/what-happens-when-water-comes-contact-your-touchscreen\n- Paten US 9864468, Multi-touch integrity sensing for capacitive touch screen: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9864468\n- Paten US 12189899, Touch sensing with water rejection: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12189899\n- Paten US 10209828, Systems and methods for water detection by touchscreen panels: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10209828\n- Paten US 10365764, Water rejection for capacitive touch screen: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10365764\n- Paten US 20200042154, Water immune projected-capacitive (PCAP) touchscreen: https://patents.justia.com/patent/20200042154\n- Paten US 11269455, Enhanced mutual capacitance touch screen display with noise compensation: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11269455\n- Microchip, Driven Shield for Touch: https://developerhelp.microchip.com/xwiki/bin/view/applications/touch/driven-shield/\n\n#Shorts #LayarHP #KokBisaJalan",
+  "deskripsi": "Layar HP error pas tangan basah, bergerak sendiri, atau malah nggak mau diketuk? Tebak dulu: layar sentuh HP sebenarnya merasakan apa dari jarimu? Cocokkan tebakanmu dengan videonya.\n\nCatatan lengkap (spoiler, baca setelah nonton): Layar sentuh HP umumnya bersifat kapasitif. Di bawah kaca ada kisi kabel transparan (baris dan kolom) yang menyimpan sedikit muatan listrik. Tubuh kita sebagian besar air dan menghantarkan listrik, sehingga jari menyerap sebagian muatan di titik yang disentuh dan layar tahu letak jarimu. Air juga mengubah sinyal listrik itu, sehingga layar bisa salah mengira ada sentuhan (ghost touch). Tetes air yang tidak tersambung ke tubuh biasanya lebih mudah diabaikan; yang sering bikin kacau adalah air yang menyatu dengan jari basah, karena ikut terbaca sebagai bagian sentuhan. Cara tiap HP menolak air berbeda-beda dan tidak selalu dibuka ke publik; penjelasan di sini disederhanakan dari paten dan artikel sains populer. Video ini menjelaskan cara kerja, bukan panduan perbaikan HP.\n\nSumber:\n- Inside Science (AIP), Why Does Water Confuse My Touch Screen?: https://www.aip.org/inside-science/why-does-water-confuse-my-touch-screen\n- Popular Science, Why Does A Drop Of Water Confuse My Touchscreen?: https://www.popsci.com/why-does-drop-water-confuse-my-touchscreen/\n- Mental Floss, What Happens When Water Comes in Contact With Your Touchscreen: https://www.mentalfloss.com/science/what-happens-when-water-comes-contact-your-touchscreen\n- Paten US 9864468, Multi-touch integrity sensing for capacitive touch screen: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9864468\n- Paten US 12189899, Touch sensing with water rejection: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/12189899\n- Paten US 10209828, Systems and methods for water detection by touchscreen panels: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10209828\n- Paten US 10365764, Water rejection for capacitive touch screen: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10365764\n- Paten US 20200042154, Water immune projected-capacitive (PCAP) touchscreen: https://patents.justia.com/patent/20200042154\n- Paten US 11269455, Enhanced mutual capacitance touch screen display with noise compensation: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11269455\n- Microchip, Driven Shield for Touch: https://developerhelp.microchip.com/xwiki/bin/view/applications/touch/driven-shield/\n\n#Shorts #LayarHP #KokBisaJalan",
   "caption_komentar": "Di rumahmu, HP paling sering ngadat habis cuci PIRING, WUDU, atau kehujanan (HUJAN)? Satu kata aja. Bonus: banyak layar membaca sentuhan dengan dua cara. Cara yang lebih tahan air justru bisa bingung kalau ada dua jari sekaligus (muncul titik hantu), makanya HP menggabungkan keduanya.",
   "caption_komentar_catatan": "Disematkan MANUAL setelah tayang (scripts/terbitkan.py tidak membaca komentar_tersemat). Bonus = fakta cadangan riset.md (mode self tahan air tapi titik hantu saat multitouch; paten US 10209828 & US 10365764), di-hedge 'banyak layar' karena firmware tiap pabrikan berbeda. Video terkait sementara = Shorts rem motor (seri Kok Bisa Jalan? sebelumnya); video panjang 'Cara kerja layar sentuh' belum ada di antrean.",
   "caption_tiktok": "Layar HP error pas tangan basah? Tebak dulu: layarmu sebenarnya merasakan apa dari jarimu? #layarhp #ghosttouch #TernyataBegitu #FaktaUnik",
   "caption_instagram": "Layar HP error pas tangan basah, bergerak sendiri atau nggak mau diketuk? Tebak dulu: layarmu sebenarnya merasakan apa dari jarimu?\nKirim ke teman yang main HP walau tangannya basah.\nDi rumahmu, HP paling sering ngadat habis apa: PIRING, WUDU, atau HUJAN? Satu kata.\n#layarhp #ghosttouch #carakerja #hp #faktaunik #sains #TernyataBegitu",
-  "tag": ["layar hp error tangan basah", "layar hp bergerak sendiri", "ghost touch", "ghost touch kena air", "kenapa layar sentuh error kena air", "layar hp tidak bisa disentuh", "cara kerja layar sentuh", "layar sentuh kapasitif", "kok bisa jalan", "ternyata begitu"],
+  "tag": [
+    "layar hp error tangan basah",
+    "layar hp bergerak sendiri",
+    "ghost touch",
+    "ghost touch kena air",
+    "kenapa layar sentuh error kena air",
+    "layar hp tidak bisa disentuh",
+    "cara kerja layar sentuh",
+    "layar sentuh kapasitif",
+    "kok bisa jalan",
+    "ternyata begitu"
+  ],
   "pola_hook": "Tipe #18 uji penonton (kuis 3 pilihan 'tebak dulu': \"Layar HP-mu error pas tangan BASAH? Tebak dulu: layarmu ngerasain APA dari jarimu?\" → 'Tekanan, panas, atau... listrik?') + loop #26 ('Kirim ke teman... Tanya dia...' → 'Layar HP-mu error pas tangan basah?'). Semangat teka-teki 'apa + tebak dulu' (arahan Pak Bima/Raka) tetap, tapi tipenya beda dari 5 video terakhir: jari keriput #6 teka-teki 'siapa', rem motor #3, sambal #12, rice cooker #20, gunting #14. #18 terakhir dipakai harga 99.900 (16 Nov, sudah di luar jendela 5). Catatan: B3-04 suara rekaman (batch yang sama) diarahkan Raka ke teka-teki 'siapa' (#6), jadi kedua video hari ini tidak kembar.",
   "hook_kandidat": [
-    {"tipe": 18, "teks": "Layar HP-mu error pas tangan BASAH? Tebak dulu: layarmu ngerasain APA dari jarimu?", "skor": 9, "alasan": "Kalimat pertama (6 kata) = keluhan yang semua orang pernah ucapkan + kata kunci utama terucap 0-2,5 dtk; 'tebak dulu' bikin penonton ikut main dan menahan jempol sampai jawaban ±10 dtk; 'HP-mu/jarimu' = taruhan personal di detik 0. TERPILIH."},
-    {"tipe": 18, "teks": "Layar HP-mu sebenarnya merasakan apa dari jarimu: tekanan, panas, atau listrik? Tebak dulu.", "skor": 8, "alasan": "Usulan Raka, kuis paling bersih; tapi 14 kata (>12), dan 'tangan basah' baru terucap setelah 5 dtk. Pilihan gandanya dipakai di adegan 2."},
-    {"tipe": 5, "teks": "Kenapa layar HP-mu gerak sendiri tiap habis cuci piring?", "skor": 7, "alasan": "Relatable, tapi terdengar seperti judul artikel 'cara mengatasi' pesaing; tidak ada permainan tebak."},
-    {"tipe": 6, "teks": "Tebak: siapa yang bikin layar HP-mu gerak sendiri?", "skor": 7, "alasan": "Teka-teki terbukti, tapi #6 dipakai jari keriput (5 terakhir) dan B3-04 hari ini; 'siapa' juga memancing jawaban mistis."},
-    {"tipe": 11, "teks": "Ternyata buat layar HP, jarimu itu cuma tetes air.", "skor": 7, "alasan": "Lucu dan kuat, tapi membocorkan jawaban di detik 2; dipindah jadi canda adegan 4 dan payoff adegan 7."},
-    {"tipe": 1, "teks": "Layar HP-mu nggak ngerasain tekanan jarimu. Sama sekali.", "skor": 6, "alasan": "Kamu-salah klasik, tapi mutlak (dilarang rencana_marketing tanpa 'umumnya') dan membocorkan jawaban."},
-    {"tipe": 21, "teks": "Aku dulu kira air itu 'neken' layar HP. Salah besar.", "skor": 7, "alasan": "Pengakuan Tebe terasa jujur, tapi kata kunci utama tidak terucap dan Tebe jadi pusat (format gabungan: Tebe cameo)."},
-    {"tipe": 9, "teks": "Layarmu ngetik sendiri gara-gara satu tetes air.", "skor": 5, "alasan": "Mulai dari akhir, tapi justru salah arah: riset bilang tetes tunggal SERING diabaikan."},
-    {"tipe": 22, "teks": "Tim layar ngadat pas tangan basah, atau pas kehujanan?", "skor": 5, "alasan": "Kubu tanpa 'kok bisa'; dipindah ke penutup sebagai pertanyaan 1 kata."},
-    {"tipe": 3, "teks": "Layar HP-mu tahu jarimu di mana, tanpa ngerasain tekanan.", "skor": 6, "alasan": "Mustahil tapi nyata, tapi kalimatnya panjang dan #3 baru dipakai rem motor."}
+    {
+      "tipe": 18,
+      "teks": "Layar HP-mu error pas tangan BASAH? Tebak dulu: layarmu ngerasain APA dari jarimu?",
+      "skor": 9,
+      "alasan": "Kalimat pertama (6 kata) = keluhan yang semua orang pernah ucapkan + kata kunci utama terucap 0-2,5 dtk; 'tebak dulu' bikin penonton ikut main dan menahan jempol sampai jawaban ±10 dtk; 'HP-mu/jarimu' = taruhan personal di detik 0. TERPILIH."
+    },
+    {
+      "tipe": 18,
+      "teks": "Layar HP-mu sebenarnya merasakan apa dari jarimu: tekanan, panas, atau listrik? Tebak dulu.",
+      "skor": 8,
+      "alasan": "Usulan Raka, kuis paling bersih; tapi 14 kata (>12), dan 'tangan basah' baru terucap setelah 5 dtk. Pilihan gandanya dipakai di adegan 2."
+    },
+    {
+      "tipe": 5,
+      "teks": "Kenapa layar HP-mu gerak sendiri tiap habis cuci piring?",
+      "skor": 7,
+      "alasan": "Relatable, tapi terdengar seperti judul artikel 'cara mengatasi' pesaing; tidak ada permainan tebak."
+    },
+    {
+      "tipe": 6,
+      "teks": "Tebak: siapa yang bikin layar HP-mu gerak sendiri?",
+      "skor": 7,
+      "alasan": "Teka-teki terbukti, tapi #6 dipakai jari keriput (5 terakhir) dan B3-04 hari ini; 'siapa' juga memancing jawaban mistis."
+    },
+    {
+      "tipe": 11,
+      "teks": "Ternyata buat layar HP, jarimu itu cuma tetes air.",
+      "skor": 7,
+      "alasan": "Lucu dan kuat, tapi membocorkan jawaban di detik 2; dipindah jadi canda adegan 4 dan payoff adegan 7."
+    },
+    {
+      "tipe": 1,
+      "teks": "Layar HP-mu nggak ngerasain tekanan jarimu. Sama sekali.",
+      "skor": 6,
+      "alasan": "Kamu-salah klasik, tapi mutlak (dilarang rencana_marketing tanpa 'umumnya') dan membocorkan jawaban."
+    },
+    {
+      "tipe": 21,
+      "teks": "Aku dulu kira air itu 'neken' layar HP. Salah besar.",
+      "skor": 7,
+      "alasan": "Pengakuan Tebe terasa jujur, tapi kata kunci utama tidak terucap dan Tebe jadi pusat (format gabungan: Tebe cameo)."
+    },
+    {
+      "tipe": 9,
+      "teks": "Layarmu ngetik sendiri gara-gara satu tetes air.",
+      "skor": 5,
+      "alasan": "Mulai dari akhir, tapi justru salah arah: riset bilang tetes tunggal SERING diabaikan."
+    },
+    {
+      "tipe": 22,
+      "teks": "Tim layar ngadat pas tangan basah, atau pas kehujanan?",
+      "skor": 5,
+      "alasan": "Kubu tanpa 'kok bisa'; dipindah ke penutup sebagai pertanyaan 1 kata."
+    },
+    {
+      "tipe": 3,
+      "teks": "Layar HP-mu tahu jarimu di mana, tanpa ngerasain tekanan.",
+      "skor": 6,
+      "alasan": "Mustahil tapi nyata, tapi kalimatnya panjang dan #3 baru dipakai rem motor."
+    }
   ],
   "peta_retensi": "0,0-5,6 dtk → HOOK #18 + TARUHAN: sampul frame 0 'APA YANG DIRASA LAYAR?' (penampang indigo + kisi cyan, tetes & jari berpendar sama); narasi 0,0 'Layar HP-mu error pas tangan BASAH?' (kata kunci 0-2,5 dtk); 1,2 kamera mundur ke bak cuci piring, layar HP bergerak sendiri di tangan basah; 'Tebak dulu' = OPEN LOOP 1\n5,6-13,2 dtk → KUIS + INTI KEJUTAN (selesai ±13 dtk): 3 kartu TEKANAN/PANAS/LISTRIK, jeda 0,4 sebelum 'listrik'; kartu tekanan dicoret, LISTRIK menyala (pattern interrupt); 'air bisa dikira JARI' (tetes berubah siluet jari)\n13,2-22,4 dtk → OPEN LOOP 2 'Kok bisa?' + MEKANISME: kamera menyelam ke bawah kaca, jaring kabel bening berkilau, jari menyedot sebagian cahaya, titik meredup → penanda 'di SITU'\n22,4-29,0 dtk → REAKSI TEBE + CANDA 1: tangan siluet berisi air bergoyang kayak akuarium; 'jarimu cuma... tetes air RAKSASA' (gag tetes raksasa bersidik jari, Tebe menowel dan tertawa)\n29,0-33,4 dtk → AKIBAT (bayar 'air dikira jari'): tetes di layar terbaca jari → layar gerak SENDIRI, jari hantu kartun memencet ikon; teks 'GHOST TOUCH'\n33,4-43,0 dtk → TAPI / KEJUTAN KEDUA (membalik dugaan 'tetes air biang keroknya'): setetes air DICUEKIN (kisi pura-pura nggak lihat), yang bikin kacau justru jari BASAH: air menyambung ke tubuh, ikut kebaca jadi JARI raksasa yang melebar\n43,0-57,2 dtk → PAYOFF + CANDA 2 'kamu cuma tetes AIR yang bisa megang HP' (callback adegan 4) + PERTANYAAN 1 KATA 'Di rumahmu... PIRING / WUDU / HUJAN?' + PEMICU SHARE 'teman yang main HP walau tangannya BASAH' + LOOP 'Tanya dia...' → kamera mendorong ke layar = komposisi frame 0 → 'Layar HP-mu error pas tangan basah?'; outro logo YouTube kecil ≤1 dtk sambil kalimat terakhir, tanpa ekor kosong",
   "durasi_target": "±57 dtk (≤60, aturan Pak Bima 23 Nov berlaku juga untuk jalur A)",
   "jumlah_kata": 131,
-  "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 1, "bahasa_lisan": 1, "payoff": 1, "total": 8},
+  "skor_naskah": {
+    "hook": 2,
+    "taruhan": 1,
+    "penahan": 2,
+    "kejutan_kedua": 1,
+    "bahasa_lisan": 1,
+    "payoff": 1,
+    "total": 8
+  },
   "skor_naskah_catatan": "Jujur 8/9. Hook 2: keluhan sehari-hari + kuis 'tebak dulu', kata kunci 0-2,5 dtk, visual layar bergerak sendiri di tangan basah. Taruhan 1: 'HP-mu/jarimu' di detik 0. Penahan 2: 2 open loop (tebak dulu → dijawab ±10 dtk; kok bisa → dijawab ±22 dtk), 1 'tapi', pattern interrupt tiap 4-7 dtk, 2 canda, 1 reaksi Tebe. Kejutan kedua 1: 'setetes air sering dicuekin, yang bikin kacau jari BASAH' membalik dugaan umum dan nyambung ke kata kunci, tapi alasan 'kenapa dicuekin' sengaja tidak dijelaskan (1 mekanisme saja) sehingga tidak se-'wah' kejutan inti. Bahasa lisan 1: kalimat 2-12 kata, istilah teknis hanya 'ghost touch' (langsung diterjemahkan visual), 'kapasitif/mutual/self' tidak diucapkan. Payoff 1: 'layar ngerasain apa?' dijawab di 10 dtk lalu ditutup callback 'kamu cuma tetes air yang bisa megang HP' + loop ke hook. Tambahan rubrik: gaya ngobrol YA (2 canda, tanpa menggurui, tanpa tips); SEO YA ('layar HP-mu error pas tangan basah' 0-2,5 dtk + judul opsi 1).",
   "skor_viral": {
-    "hook": {"skor": 2, "alasan": "Semua pemakai HP pernah layarnya ngadat habis cuci tangan/wudu/hujan; 'tebak dulu' + 3 pilihan bikin penonton menjawab di kepala sebelum geser."},
-    "jarak_kejutan": {"skor": 2, "alasan": "Dugaan umum 'air ikut menekan layar' dibalik jadi 'layar baca listrik dan jarimu cuma tetes air raksasa' — jauh, benar (AIP + paten), dan gampang diulang ke teman."},
-    "retensi": {"skor": 1, "alasan": "Kejutan selesai ±13 dtk, celah baru tiap ±6-10 dtk, ±57 dtk (≤60); tetap melewati titik turun ±45 dtk dan penutup cukup padat (±14 dtk)."},
-    "layak_dibagikan": {"skor": 1, "alasan": "'Layar HP itu sensor listrik' bikin penonton terlihat pintar dan ada pemicu share 'teman yang main HP walau tangannya basah'; identitasnya ringan, belum sekuat kubu 'rem belakang doang'."},
-    "pemicu_komentar": {"skor": 2, "alasan": "Pola Sambal yang terbukti: 'Di rumahmu...' dengan jawaban 1 kata PIRING/WUDU/HUJAN, tanpa jawaban benar, + loop 'Tanya dia...' memancing tonton ulang."},
+    "hook": {
+      "skor": 2,
+      "alasan": "Semua pemakai HP pernah layarnya ngadat habis cuci tangan/wudu/hujan; 'tebak dulu' + 3 pilihan bikin penonton menjawab di kepala sebelum geser."
+    },
+    "jarak_kejutan": {
+      "skor": 2,
+      "alasan": "Dugaan umum 'air ikut menekan layar' dibalik jadi 'layar baca listrik dan jarimu cuma tetes air raksasa' — jauh, benar (AIP + paten), dan gampang diulang ke teman."
+    },
+    "retensi": {
+      "skor": 1,
+      "alasan": "Kejutan selesai ±13 dtk, celah baru tiap ±6-10 dtk, ±57 dtk (≤60); tetap melewati titik turun ±45 dtk dan penutup cukup padat (±14 dtk)."
+    },
+    "layak_dibagikan": {
+      "skor": 1,
+      "alasan": "'Layar HP itu sensor listrik' bikin penonton terlihat pintar dan ada pemicu share 'teman yang main HP walau tangannya basah'; identitasnya ringan, belum sekuat kubu 'rem belakang doang'."
+    },
+    "pemicu_komentar": {
+      "skor": 2,
+      "alasan": "Pola Sambal yang terbukti: 'Di rumahmu...' dengan jawaban 1 kata PIRING/WUDU/HUJAN, tanpa jawaban benar, + loop 'Tanya dia...' memancing tonton ulang."
+    },
     "total": 8
   },
   "pelafalan": {
@@ -51,7 +135,12 @@
   },
   "seo": {
     "kata_kunci_utama": "layar hp error tangan basah",
-    "kata_kunci_turunan": ["layar hp bergerak sendiri", "ghost touch kena air", "kenapa layar sentuh error kena air", "layar hp tidak bisa disentuh"],
+    "kata_kunci_turunan": [
+      "layar hp bergerak sendiri",
+      "ghost touch kena air",
+      "kenapa layar sentuh error kena air",
+      "layar hp tidak bisa disentuh"
+    ],
     "catatan": "Utama terucap 0-2,5 dtk ('Layar HP-mu error pas tangan BASAH?') + judul opsi 1 + tag no.1 + kalimat 1 deskripsi. Turunan di narasi: 'layar gerak SENDIRI. Ghost touch.' (adegan 5); 'nggak mau diketuk' di deskripsi & caption IG. Teks layar pertama setelah sampul: 'LAYAR HP ERROR?' (adegan 1, saat kamera mundur)."
   },
   "catatan_fakta": "Setiap kalimat dari riset.md (Laras). Adegan 1 'layar HP error pas tangan basah' = pengalaman bersama riset; 'ngerasain apa dari jarimu' = Uji 1. Adegan 2 'umumnya nggak ngerasain tekanan, tapi LISTRIK' = Uji 2 + klaim inti (hedge 'umumnya' sesuai rencana_marketing; AIP + paten); 'air bisa dikira jari' = klaim inti ('bisa', bukan 'selalu'). Adegan 3 'jaring kabel bening, nyimpen sedikit listrik' = mekanisme 1 (kisi kabel transparan, tiap perpotongan menyimpan sedikit muatan); 'jarimu nyedot sebagian, layar tahu di situ' = mekanisme 2 (menyerap sebagian muatan, layar cari titik sinyal turun). Adegan 4 'tubuhmu kebanyakan air dan bisa ngalirin listrik' + 'jarimu cuma tetes air raksasa' = detail konkret (AIP, Mental Floss: jari ibarat tetes air besar). Adegan 5 'air beneran bisa bikin layar gerak sendiri, ghost touch' = klaim inti + paten US 12189899 (tetes bisa terbaca ketukan/geseran), 'bisa'. Adegan 6 'setetes air doang sering dicuekin' = detail jujur riset (tetes mengambang paling mudah diabaikan, 'sering'); 'yang lebih bikin kacau justru jari basah, airnya nyambung ke tubuhmu, ikut kebaca jadi jari' = mekanisme 4 + US 12189899 (air tersambung ke tanah lewat jari tampak sebagai bagian sentuhan). Adegan 7 'kamu cuma tetes air yang bisa megang HP' = canda hiperbola dari detail konkret yang sama (bukan klaim baru); pertanyaan & share murni pengalaman. TIDAK dipakai: 'air menekan layar', 'semua HP sama', merek/tipe, angka volt/nanofarad, mode self/mutual di narasi (cadangan di komentar tersemat, di-hedge 'banyak layar'), tetesan panjang Elo (memangkas durasi), saran mengeringkan/mode sarung tangan/HP aman kena air.",
@@ -147,5 +236,6 @@
       "aksi": "43,0 kembali ke dapur; 43,6 orang berubah jadi siluet tetes air bertangan (canda 2, callback adegan 4); 47,0 kartu PIRING / WUDU / HUJAN (kode) muncul satu-satu mengikuti suara; 51,6 Tebe kirim ke teman; 55,4 menunjuk tangan basah; 55,8 kamera mendorong ke layar = frame 0",
       "catatan_yoga": "Komposisi akhir = frame 0 (loop mulus: 'Tanya dia...' → 'Layar HP-mu error pas tangan basah?'). Kalimat terakhir digantung, nada naik. Logo YouTube kecil + 'Ternyata Begitu' ≤1 dtk di zona aman SAMBIL kalimat terakhir, tanpa ekor kosong. Wudu cukup ikon keran air mengalir (netral, tanpa orang beribadah). Bila durasi final >60 dtk: pangkas jeda dulu, jangan buang pertanyaan atau loop."
     }
-  ]
+  ],
+  "judul_final": "Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu"
 }

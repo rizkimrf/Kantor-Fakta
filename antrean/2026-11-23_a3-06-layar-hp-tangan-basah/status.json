@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "cek_fakta",
   "topik": "a3-06 layar hp tangan basah",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -20,6 +20,12 @@
       "oleh": "Nadia",
       "waktu": "2026-11-22",
       "hasil": "naskah.json (seri cara-kerja) + naskah_baca.txt + naskah_suara.txt + unggah.json (terkait rem motor) + paket_unggah.md + baris Nadia di lembar_tim.md. Hook #18 kuis tebak dulu: 'Layar HP-mu error pas tangan BASAH? Tebak dulu: layarmu ngerasain APA dari jarimu?' (tanpa intro, kata kunci 0-2,5 dtk, loop #26 'Tanya dia...'). Judul: 'Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu' (51; 2 opsi lain untuk Raka). Sampul 'APA YANG DIRASA LAYAR?' (indigo + cyan, tetes & jari berpendar sama). Kejutan 'umumnya nggak ngerasain tekanan, tapi LISTRIK; air bisa dikira JARI' ±13 dtk; mekanisme jaring kabel bening + jari nyedot; canda 'tetes air RAKSASA'; ghost touch; tapi 'setetes air sering DICUEKIN, justru jari BASAH' ±33-43 dtk; penutup 'Di rumahmu... PIRING/WUDU/HUJAN?' + share + loop. 7 adegan, 131 kata, ±57 dtk, 0 angka, 0 klip, 3 kemunculan Tebe. Tanpa merek/saran perbaikan/mutlak. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "waktu": "2026-11-22",
+      "hasil": "cek_seo.md: 0 butir wajib. Judul final opsi 1 'Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu' (51). Deskripsi: 'tidak dibuka ke publik' dilunakkan + catatan disederhanakan dari paten/artikel. Jadwal geser Selasa 24 Nov 13.00 WITA (cadangan Rabu 25 Nov). Caption TikTok/IG tanpa ajakan pindah. Lanjut cek_fakta (Pak Bima)."
     }
   ],
   "masalah": null,
