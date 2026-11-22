@@ -1,0 +1,680 @@
+{
+ "model": "eleven_v4",
+ "kata": [
+  {
+   "kata": "Dengar",
+   "mulai": 0.069,
+   "selesai": 0.32
+  },
+  {
+   "kata": "suara",
+   "mulai": 0.36,
+   "selesai": 0.56
+  },
+  {
+   "kata": "sendiri",
+   "mulai": 0.64,
+   "selesai": 0.88
+  },
+  {
+   "kata": "di",
+   "mulai": 0.96,
+   "selesai": 1.04
+  },
+  {
+   "kata": "rekaman,",
+   "mulai": 1.12,
+   "selesai": 1.76
+  },
+  {
+   "kata": "kamu",
+   "mulai": 1.84,
+   "selesai": 2.0
+  },
+  {
+   "kata": "langsung",
+   "mulai": 2.08,
+   "selesai": 2.24
+  },
+  {
+   "kata": "bilang,",
+   "mulai": 2.32,
+   "selesai": 2.8
+  },
+  {
+   "kata": "\"ih,",
+   "mulai": 2.853,
+   "selesai": 3.2
+  },
+  {
+   "kata": "kok",
+   "mulai": 3.28,
+   "selesai": 3.36
+  },
+  {
+   "kata": "gini?\"",
+   "mulai": 3.44,
+   "selesai": 4.2
+  },
+  {
+   "kata": "Tebak,",
+   "mulai": 4.48,
+   "selesai": 5.04
+  },
+  {
+   "kata": "siapa",
+   "mulai": 5.12,
+   "selesai": 5.44
+  },
+  {
+   "kata": "yang",
+   "mulai": 5.48,
+   "selesai": 5.52
+  },
+  {
+   "kata": "tiap",
+   "mulai": 5.6,
+   "selesai": 5.76
+  },
+  {
+   "kata": "hari",
+   "mulai": 5.84,
+   "selesai": 5.92
+  },
+  {
+   "kata": "dengar",
+   "mulai": 6.0,
+   "selesai": 6.16
+  },
+  {
+   "kata": "suara",
+   "mulai": 6.24,
+   "selesai": 6.4
+  },
+  {
+   "kata": "mirip",
+   "mulai": 6.48,
+   "selesai": 6.64
+  },
+  {
+   "kata": "itu?",
+   "mulai": 6.72,
+   "selesai": 7.16
+  },
+  {
+   "kata": "Temanmu.",
+   "mulai": 7.36,
+   "selesai": 8.24
+  },
+  {
+   "kata": "Ibumu.",
+   "mulai": 8.48,
+   "selesai": 9.28
+  },
+  {
+   "kata": "Abang",
+   "mulai": 9.44,
+   "selesai": 9.68
+  },
+  {
+   "kata": "bakso",
+   "mulai": 9.76,
+   "selesai": 10.0
+  },
+  {
+   "kata": "langgananmu.",
+   "mulai": 10.08,
+   "selesai": 10.96
+  },
+  {
+   "kata": "Versi",
+   "mulai": 11.627,
+   "selesai": 11.76
+  },
+  {
+   "kata": "yang",
+   "mulai": 11.84,
+   "selesai": 11.92
+  },
+  {
+   "kata": "bikin",
+   "mulai": 11.96,
+   "selesai": 12.16
+  },
+  {
+   "kata": "geli",
+   "mulai": 12.24,
+   "selesai": 12.48
+  },
+  {
+   "kata": "itu...",
+   "mulai": 12.72,
+   "selesai": 13.36
+  },
+  {
+   "kata": "lebih",
+   "mulai": 13.44,
+   "selesai": 13.68
+  },
+  {
+   "kata": "mendekati",
+   "mulai": 13.76,
+   "selesai": 14.24
+  },
+  {
+   "kata": "suaramu",
+   "mulai": 14.32,
+   "selesai": 14.8
+  },
+  {
+   "kata": "di",
+   "mulai": 14.84,
+   "selesai": 14.88
+  },
+  {
+   "kata": "telinga",
+   "mulai": 14.92,
+   "selesai": 15.2
+  },
+  {
+   "kata": "mereka.",
+   "mulai": 15.32,
+   "selesai": 15.76
+  },
+  {
+   "kata": "Kok",
+   "mulai": 16.213,
+   "selesai": 16.24
+  },
+  {
+   "kata": "bisa?",
+   "mulai": 16.32,
+   "selesai": 16.8
+  },
+  {
+   "kata": "Pas",
+   "mulai": 17.28,
+   "selesai": 17.44
+  },
+  {
+   "kata": "ngomong,",
+   "mulai": 17.52,
+   "selesai": 18.0
+  },
+  {
+   "kata": "suaramu",
+   "mulai": 18.08,
+   "selesai": 18.48
+  },
+  {
+   "kata": "nyampe",
+   "mulai": 18.52,
+   "selesai": 18.8
+  },
+  {
+   "kata": "ke",
+   "mulai": 18.88,
+   "selesai": 18.96
+  },
+  {
+   "kata": "telinga",
+   "mulai": 19.0,
+   "selesai": 19.36
+  },
+  {
+   "kata": "lewat",
+   "mulai": 19.44,
+   "selesai": 19.68
+  },
+  {
+   "kata": "dua",
+   "mulai": 19.76,
+   "selesai": 19.92
+  },
+  {
+   "kata": "jalan:",
+   "mulai": 20.0,
+   "selesai": 20.72
+  },
+  {
+   "kata": "udara,",
+   "mulai": 20.84,
+   "selesai": 21.44
+  },
+  {
+   "kata": "dan",
+   "mulai": 21.52,
+   "selesai": 21.6
+  },
+  {
+   "kata": "getaran",
+   "mulai": 21.68,
+   "selesai": 22.0
+  },
+  {
+   "kata": "tulang",
+   "mulai": 22.08,
+   "selesai": 22.24
+  },
+  {
+   "kata": "kepala.",
+   "mulai": 22.32,
+   "selesai": 22.8
+  },
+  {
+   "kata": "Jalur",
+   "mulai": 23.28,
+   "selesai": 23.52
+  },
+  {
+   "kata": "tulang",
+   "mulai": 23.6,
+   "selesai": 23.92
+  },
+  {
+   "kata": "bikin",
+   "mulai": 24.0,
+   "selesai": 24.24
+  },
+  {
+   "kata": "suaranya",
+   "mulai": 24.28,
+   "selesai": 24.64
+  },
+  {
+   "kata": "terdengar",
+   "mulai": 24.72,
+   "selesai": 25.04
+  },
+  {
+   "kata": "lebih",
+   "mulai": 25.12,
+   "selesai": 25.28
+  },
+  {
+   "kata": "rendah",
+   "mulai": 25.44,
+   "selesai": 25.76
+  },
+  {
+   "kata": "dan",
+   "mulai": 25.84,
+   "selesai": 26.0
+  },
+  {
+   "kata": "penuh.",
+   "mulai": 26.08,
+   "selesai": 26.48
+  },
+  {
+   "kata": "Tapi",
+   "mulai": 26.88,
+   "selesai": 27.12
+  },
+  {
+   "kata": "mikrofon",
+   "mulai": 27.16,
+   "selesai": 27.6
+  },
+  {
+   "kata": "nggak",
+   "mulai": 27.64,
+   "selesai": 27.76
+  },
+  {
+   "kata": "punya",
+   "mulai": 27.84,
+   "selesai": 28.0
+  },
+  {
+   "kata": "tulang",
+   "mulai": 28.053,
+   "selesai": 28.2
+  },
+  {
+   "kata": "kepala.",
+   "mulai": 28.24,
+   "selesai": 28.8
+  },
+  {
+   "kata": "Dia",
+   "mulai": 29.6,
+   "selesai": 29.76
+  },
+  {
+   "kata": "cuma",
+   "mulai": 29.8,
+   "selesai": 30.0
+  },
+  {
+   "kata": "nangkep",
+   "mulai": 30.04,
+   "selesai": 30.32
+  },
+  {
+   "kata": "jalur",
+   "mulai": 30.4,
+   "selesai": 30.56
+  },
+  {
+   "kata": "udara,",
+   "mulai": 30.64,
+   "selesai": 31.28
+  },
+  {
+   "kata": "kayak",
+   "mulai": 31.307,
+   "selesai": 31.44
+  },
+  {
+   "kata": "telinga",
+   "mulai": 31.52,
+   "selesai": 31.76
+  },
+  {
+   "kata": "temanmu.",
+   "mulai": 31.84,
+   "selesai": 32.32
+  },
+  {
+   "kata": "Nggak",
+   "mulai": 32.72,
+   "selesai": 32.88
+  },
+  {
+   "kata": "persis",
+   "mulai": 32.96,
+   "selesai": 33.12
+  },
+  {
+   "kata": "sama,",
+   "mulai": 33.2,
+   "selesai": 33.52
+  },
+  {
+   "kata": "sih:",
+   "mulai": 33.6,
+   "selesai": 34.08
+  },
+  {
+   "kata": "ha",
+   "mulai": 34.16,
+   "selesai": 34.24
+  },
+  {
+   "kata": "pe",
+   "mulai": 34.32,
+   "selesai": 34.56
+  },
+  {
+   "kata": "dan",
+   "mulai": 34.64,
+   "selesai": 34.8
+  },
+  {
+   "kata": "spiker",
+   "mulai": 34.88,
+   "selesai": 35.36
+  },
+  {
+   "kata": "ikut",
+   "mulai": 35.48,
+   "selesai": 35.6
+  },
+  {
+   "kata": "ngewarnain",
+   "mulai": 35.64,
+   "selesai": 36.08
+  },
+  {
+   "kata": "suara.",
+   "mulai": 36.16,
+   "selesai": 36.96
+  },
+  {
+   "kata": "Salah",
+   "mulai": 37.04,
+   "selesai": 37.16
+  },
+  {
+   "kata": "satu",
+   "mulai": 37.2,
+   "selesai": 37.36
+  },
+  {
+   "kata": "yang",
+   "mulai": 37.4,
+   "selesai": 37.44
+  },
+  {
+   "kata": "bikin",
+   "mulai": 37.48,
+   "selesai": 37.68
+  },
+  {
+   "kata": "asing?",
+   "mulai": 37.84,
+   "selesai": 38.4
+  },
+  {
+   "kata": "Otakmu",
+   "mulai": 38.52,
+   "selesai": 38.96
+  },
+  {
+   "kata": "udah",
+   "mulai": 39.04,
+   "selesai": 39.2
+  },
+  {
+   "kata": "terbiasa",
+   "mulai": 39.28,
+   "selesai": 39.76
+  },
+  {
+   "kata": "versi",
+   "mulai": 39.88,
+   "selesai": 40.04
+  },
+  {
+   "kata": "penuh.",
+   "mulai": 40.08,
+   "selesai": 40.88
+  },
+  {
+   "kata": "Lucunya...",
+   "mulai": 41.0,
+   "selesai": 41.68
+  },
+  {
+   "kata": "ada",
+   "mulai": 41.76,
+   "selesai": 41.84
+  },
+  {
+   "kata": "percobaan",
+   "mulai": 41.96,
+   "selesai": 42.4
+  },
+  {
+   "kata": "dengar",
+   "mulai": 42.453,
+   "selesai": 42.64
+  },
+  {
+   "kata": "suara",
+   "mulai": 42.72,
+   "selesai": 43.04
+  },
+  {
+   "kata": "lewat",
+   "mulai": 43.12,
+   "selesai": 43.36
+  },
+  {
+   "kata": "tulang.",
+   "mulai": 43.4,
+   "selesai": 44.08
+  },
+  {
+   "kata": "Orang",
+   "mulai": 44.16,
+   "selesai": 44.4
+  },
+  {
+   "kata": "lebih",
+   "mulai": 44.48,
+   "selesai": 44.72
+  },
+  {
+   "kata": "jago",
+   "mulai": 44.8,
+   "selesai": 45.04
+  },
+  {
+   "kata": "bedain",
+   "mulai": 45.12,
+   "selesai": 45.36
+  },
+  {
+   "kata": "suaranya",
+   "mulai": 45.44,
+   "selesai": 45.76
+  },
+  {
+   "kata": "sendiri",
+   "mulai": 45.88,
+   "selesai": 46.16
+  },
+  {
+   "kata": "dari",
+   "mulai": 46.32,
+   "selesai": 46.56
+  },
+  {
+   "kata": "suara",
+   "mulai": 46.64,
+   "selesai": 46.88
+  },
+  {
+   "kata": "orang",
+   "mulai": 47.0,
+   "selesai": 47.12
+  },
+  {
+   "kata": "lain.",
+   "mulai": 47.28,
+   "selesai": 47.84
+  },
+  {
+   "kata": "Pertama",
+   "mulai": 47.96,
+   "selesai": 48.16
+  },
+  {
+   "kata": "kali",
+   "mulai": 48.213,
+   "selesai": 48.32
+  },
+  {
+   "kata": "dengar",
+   "mulai": 48.4,
+   "selesai": 48.56
+  },
+  {
+   "kata": "suaramu",
+   "mulai": 48.64,
+   "selesai": 48.96
+  },
+  {
+   "kata": "di",
+   "mulai": 49.0,
+   "selesai": 49.04
+  },
+  {
+   "kata": "rekaman,",
+   "mulai": 49.12,
+   "selesai": 49.76
+  },
+  {
+   "kata": "reaksimu",
+   "mulai": 49.88,
+   "selesai": 50.24
+  },
+  {
+   "kata": "apa?",
+   "mulai": 50.36,
+   "selesai": 50.88
+  },
+  {
+   "kata": "Satu",
+   "mulai": 51.04,
+   "selesai": 51.24
+  },
+  {
+   "kata": "kata.",
+   "mulai": 51.28,
+   "selesai": 51.92
+  },
+  {
+   "kata": "Kirim",
+   "mulai": 52.0,
+   "selesai": 52.16
+  },
+  {
+   "kata": "ke",
+   "mulai": 52.2,
+   "selesai": 52.24
+  },
+  {
+   "kata": "teman",
+   "mulai": 52.32,
+   "selesai": 52.56
+  },
+  {
+   "kata": "yang",
+   "mulai": 52.68,
+   "selesai": 52.8
+  },
+  {
+   "kata": "benci",
+   "mulai": 52.907,
+   "selesai": 53.12
+  },
+  {
+   "kata": "suaranya",
+   "mulai": 53.2,
+   "selesai": 53.6
+  },
+  {
+   "kata": "di",
+   "mulai": 53.64,
+   "selesai": 53.68
+  },
+  {
+   "kata": "vois",
+   "mulai": 53.76,
+   "selesai": 54.0
+  },
+  {
+   "kata": "nout.",
+   "mulai": 54.04,
+   "selesai": 54.48
+  },
+  {
+   "kata": "Bilang",
+   "mulai": 54.533,
+   "selesai": 54.72
+  },
+  {
+   "kata": "ke",
+   "mulai": 54.76,
+   "selesai": 54.8
+  },
+  {
+   "kata": "dia...",
+   "mulai": 54.88,
+   "selesai": 55.36
+  }
+ ]
+}
