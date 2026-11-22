@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "terjadwal",
   "topik": "a-06 rem motor",
   "seri": "A",
   "dibuat": "2026-11-22T05:43",
@@ -60,6 +60,20 @@
       "waktu": "2026-11-22T06:35",
       "oleh": "Pak Bima",
       "hasil": "Review LULUS: cek_video & cek_mulus LULUS (74,7 dtk, 14,9 MB), paraf 5 orang, uji 3 dtk 8/10. Jadwal Min 22 Nov 13.00 WITA (cadangan Sen 23 Nov 13.00)."
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "oleh": "Bos (Kantor Visual HP)",
+      "waktu": "2026-11-22T01:45:03Z",
+      "hasil": "Disetujui Bos via tombol Setujui"
+    },
+    {
+      "dari": "disetujui",
+      "ke": "terjadwal",
+      "oleh": "Raka",
+      "waktu": "2026-11-22T12:52+08:00",
+      "hasil": "Jadwal sesuai persetujuan Bos: Min 22 Nov 13.00 WITA"
     }
   ],
   "masalah": null,
@@ -68,5 +82,18 @@
   "video_asset_id": "3a4d23f59e21b2d5389dfcbdb28b19d1",
   "thumb_asset_id": "c30c0c4b1b11e7887ea02b4f2e1263de",
   "video_url": "/_blob/3a4d23f59e21b2d5389dfcbdb28b19d1",
-  "thumb_url": "/_blob/c30c0c4b1b11e7887ea02b4f2e1263de"
+  "thumb_url": "/_blob/c30c0c4b1b11e7887ea02b4f2e1263de",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7710852953384503317",
+      "waktu": "2026-11-22T12:50+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "error": "asli (14593 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re || aman (14593 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re || aman-minimal (14593 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re"
+    }
+  }
 }
