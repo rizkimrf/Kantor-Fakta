@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_fakta",
+  "tahap": "produksi",
   "topik": "a3-06 layar hp tangan basah",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -26,8 +26,23 @@
       "oleh": "Raka",
       "waktu": "2026-11-22",
       "hasil": "cek_seo.md: 0 butir wajib. Judul final opsi 1 'Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu' (51). Deskripsi: 'tidak dibuka ke publik' dilunakkan + catatan disederhanakan dari paten/artikel. Jadwal geser Selasa 24 Nov 13.00 WITA (cadangan Rabu 25 Nov). Caption TikTok/IG tanpa ajakan pindah. Lanjut cek_fakta (Pak Bima)."
+    },
+    {
+      "tahap": "cek_riset",
+      "oleh": "Laras",
+      "waktu": "2026-11-22",
+      "hasil": "cek_riset.md: 1 butir WAJIB kecil (komentar tersemat 'HP menggabungkan keduanya' → 'banyak HP', tambah hedge), 4 saran. 'Tetes tunggal sering dicuekin' terverifikasi ulang via kutipan paten + PopSci (aman dengan 'sering', bukan 'selalu'). Candaan tetes air aman. AIP/USPTO tetap tidak bisa dibuka."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-23T07:20+08:00",
+      "hasil": "cek_fakta LULUS (1 WAJIB cek_riset + saran 1 diterapkan), skor 8/9, viral 8/10; jadwal Sel 24 Nov 13.00"
     }
   ],
   "masalah": null,
-  "seri": "A"
+  "seri": "A",
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-24T13:00:00+08:00"
 }

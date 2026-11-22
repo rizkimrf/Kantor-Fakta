@@ -8,7 +8,7 @@ Judul (51 huruf): Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu
 JUDUL FINAL (Raka, cek_seo): opsi 1. Opsi tidak dipakai: "Kenapa Layar HP Bergerak Sendiri Saat Tangan Basah?" (51) · "Layar HP Error Kena Air: Umumnya Bukan Soal Tekanan" (51)
 Deskripsi + sumber (10 URL dari riset.md) + 3 hashtag (#Shorts #LayarHP #KokBisaJalan): sama dengan `unggah.json`.
 Tag: layar hp error tangan basah, layar hp bergerak sendiri, ghost touch, ghost touch kena air, kenapa layar sentuh error kena air, layar hp tidak bisa disentuh, cara kerja layar sentuh, layar sentuh kapasitif, kok bisa jalan, ternyata begitu
-Komentar tersemat: Di rumahmu, HP paling sering ngadat habis cuci PIRING, WUDU, atau kehujanan (HUJAN)? Satu kata aja. Bonus: banyak layar membaca sentuhan dengan dua cara. Cara yang lebih tahan air justru bisa bingung kalau ada dua jari sekaligus (muncul titik hantu), makanya HP menggabungkan keduanya.
+Komentar tersemat: Di rumahmu, HP paling sering ngadat habis cuci PIRING, WUDU, atau kehujanan (HUJAN)? Satu kata aja. Bonus: banyak layar membaca sentuhan dengan dua cara. Cara yang cenderung lebih tahan air justru bisa bingung kalau ada dua jari sekaligus (muncul titik hantu), makanya banyak HP menggabungkan keduanya.
 Video terkait: Shorts "Rem Motor Kok Bisa Berhenti dengan Satu Jari?" (`2026-11-22_a-06-rem-motor`, seri yang sama) - URL belum tercatat karena diunggah manual Bos. Ganti ke video panjang "Cara kerja layar sentuh" bila sudah ada.
 **Tugas manual (Raka/Bos):** `scripts/terbitkan.py` tidak membaca `komentar_tersemat` maupun `terkait` - sematkan komentar dan pasang related video MANUAL setelah tayang. Balas komentar di jam pertama (keputusan Pak Bima 23 Nov).
 
