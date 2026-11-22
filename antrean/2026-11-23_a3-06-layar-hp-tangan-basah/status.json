@@ -1,5 +1,5 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "a3-06 layar hp tangan basah",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -7,6 +7,12 @@
       "tahap": "ide",
       "oleh": "Laras",
       "hasil": "riset.md selesai; skor Faktor Ternyata 8/10 (kejutan 2, kedekatan 3, bukti 1, visual 2); 1 mekanisme + 1 tapi; teks penuh paten/AIP belum terbuka (jaringan), bahasa 'umumnya'",
+      "waktu": "2026-11-22"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "hasil": "LANJUT skor 17/20; rencana_marketing.md + seo.md + lembar_tim.md (baris Raka & Laras); kata kunci 'layar hp error tangan basah' (tanpa data volume); hook teka-teki tebak dulu, bahasa 'umumnya'",
       "waktu": "2026-11-22"
     }
   ],

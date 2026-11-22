@@ -45,9 +45,9 @@ Catatan Laras (22 Nov): cek cepat = 1 pencarian per ide (inti/mekanisme cocok di
 Aturan: 13.00 jalur A, 18.00 jalur B. Ide musim hujan di depan, ide TAHAN tidak masuk jadwal. Pilar bergantian (benda · sains · uang/kata sehari-hari · alam).
 | Hari | 13.00 jalur A | 18.00 jalur B |
 |---|---|---|
-| Sen 23 Nov | A3-06 layar HP & tangan basah | B3-07 hujan panas (syarat: 1 sumber lembaga) |
+| Sen 23 Nov | A3-06 layar HP & tangan basah (diproduksi) | B3-04 suara rekaman sendiri (diproduksi; B3-07 TUNDA: tidak ada sumber lembaga) |
 | Sel 24 Nov | A3-02 pintu minimarket terbuka sendiri | B3-02 foto WA burik (syarat: sumber resmi WA) |
-| Rab 25 Nov | A3-05 sabun & minyak piring | B3-04 suara rekaman sendiri |
+| Rab 25 Nov | A3-05 sabun & minyak piring | B3-03 lupa di ambang pintu (versi "ilmuwan berdebat") |
 | Kam 26 Nov | A3-04 panci presto | B3-05 tersentak mau tidur |
 | Jum 27 Nov | A3-10 kompor "tek-tek" (syarat: 1 sumber lagi) | B3-01 plat nomor (syarat: dikunci ke Perpol) |
 | Sab 28 Nov | A3-03 termos | B3-10 nyamuk pilih-pilih |

@@ -7,3 +7,8 @@ Hasil: **LULUS** → produksi.
 - Skor naskah (rubrik playbook) dinilai sendiri: **8/9** — hook teka-teki kuat & kejutan ≤ 20 dtk; titik lemah 20–31 dtk (mekanisme) → wajib ritme visual cepat.
 - Skor potensi viral dinilai sendiri: **8/10** — topik sudah ada di pesaing, menang lewat bukti saraf rusak + debat jujur + share "satu rumah nungguin".
 Catatan untuk Yoga (saran Laras): adegan 1 jangan buat tetes air "memantul" dari kulit (kesan kedap air) — cukup mengalir; adegan 6 meja kedua tanpa kelereng; tangan "saraf rusak" netral tanpa ikon medis; ritme visual tiap 2–3 dtk di 13–31 dtk; "BUKAN AIR MASUK" di zona aman.
+
+## R1 (Sen 23 Nov, Pak Bima) — catatan Bos "sungai tidak relate"
+- Hanya adegan 7 berubah: kubu MANDI / nyuci BAJU / cuci PIRING "di rumahmu" — kegiatan harian semua orang, jawaban 1 kata, loop tetap. Berupa pertanyaan, tanpa klaim fakta baru → tidak butuh dukungan riset tambahan.
+- Visual adegan 7: kartu sungai diganti bak cuci piring; tanpa merek. Durasi ±58,9 dtk (≤ 60).
+- Skor naskah 8/9, viral 8/10 (penutup lebih dekat → potensi komentar naik). **LULUS → produksi (ulang suara & visual adegan 7 saja).** Jadwal baru: Sen 23 Nov 18.00 WITA.

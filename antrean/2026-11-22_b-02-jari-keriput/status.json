@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "produksi",
   "topik": "b-02 jari keriput",
   "seri": "B",
   "dibuat": "2026-11-22T05:43",
@@ -61,12 +61,24 @@
       "oleh": "Bos (Kantor Visual HP)",
       "waktu": "2026-11-22T01:43:27Z",
       "hasil": "Ditolak Bos (naskah): bagian akhir soal sungai tidak relate dengan kehidupan sehari-hari"
+    },
+    {
+      "dari": "naskah",
+      "ke": "cek_fakta",
+      "oleh": "Nadia",
+      "waktu": "2026-11-22",
+      "hasil": "R1 catatan Bos: HANYA adegan 7 diubah. Lama: 'Kamu keriput duluan pas apa: MANDI, NYUCI, atau SUNGAI? ... Nanti pas dia keluar, bilang gini...' -> baru: 'Di rumahmu, jari keriput paling sering pas MANDI, nyuci BAJU, atau cuci PIRING? Kirim ke teman yang kalau mandi, satu rumah NUNGGUIN. Pas dia keluar, bilang gini...' (jawaban 1 kata, loop tetap). Teks layar MANDI / BAJU / PIRING?, kartu sungai -> bak cuci piring. 131 -> 133 kata, perkiraan video ±58,9 dtk (<= 60). Diselaraskan: naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json (deskripsi, komentar tersemat, TikTok, IG), paket_unggah.md, lembar_tim.md. Adegan 1-6 tidak berubah; Yoga cukup ulang suara & visual adegan 7."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-23T06:10+08:00",
+      "hasil": "cek_fakta R1 LULUS: penutup adegan 7 MANDI/BAJU/PIRING memenuhi catatan Bos; ulang suara & visual adegan 7 saja; jadwal Sen 23 Nov 18.00"
     }
   ],
   "masalah": null,
   "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-22T18:00:00+08:00",
-  "video_asset_id": "beb9d113e5ee9c3b275754954ec30179",
-  "thumb_asset_id": "4fd210a426afb3125b081a04c52bec41",
+  "jadwal_tayang": "2026-11-23T18:00:00+08:00",
   "catatan_bos": "[naskah] maksud sungai bagian akhir apa? tidak releate sama sekali dengan kehidupan sehari hari"
 }
