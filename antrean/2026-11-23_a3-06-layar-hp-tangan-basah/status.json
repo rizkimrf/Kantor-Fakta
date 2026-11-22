@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "menunggu_persetujuan",
   "topik": "a3-06 layar hp tangan basah",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -39,10 +39,31 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-23T07:20+08:00",
       "hasil": "cek_fakta LULUS (1 WAJIB cek_riset + saran 1 diterapkan), skor 8/9, viral 8/10; jadwal Sel 24 Nov 13.00"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-23T08:10+08:00",
+      "hasil": "final.mp4 58,4 dtk / 13,2 MB; suara ElevenLabs v4 SEKALI 902 huruf ≈ 469 kredit (aset/log_kredit.csv); jeda 0,4 dtk sebelum 'listrik'; set baru studio-aset/aset-layar.js (dunia indigo + kisi cyan), 12 babak, Tebe 4x (sampul, tetes raksasa, kubu, kirim); adegan 5 genangan di tepi dekat bodi; outro logo YouTube ±1 dtk; loop ke sampul; thumbnail.png 'APA YANG DIRASA LAYAR?' indigo+cyan; cek_mulus LULUS, cek_video LULUS",
+      "durasi": 58.4,
+      "mb": 13.2,
+      "kredit": 469
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-23T09:20+08:00",
+      "hasil": "Review LULUS (58,4 dtk, 13,2 MB), uji 3 dtk 8/10; jadwal Sel 24 Nov 13.00 WITA"
     }
   ],
   "masalah": null,
   "seri": "A",
   "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-24T13:00:00+08:00"
+  "jadwal_tayang": "2026-11-24T13:00:00+08:00",
+  "video_asset_id": "1ac165e9085ace686197df7856c97855",
+  "thumb_asset_id": "f0c9f78c50b8e0906afe80097ccd23be",
+  "video_url": "/_blob/1ac165e9085ace686197df7856c97855",
+  "thumb_url": "/_blob/f0c9f78c50b8e0906afe80097ccd23be"
 }

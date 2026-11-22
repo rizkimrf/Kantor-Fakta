@@ -120,9 +120,9 @@
   function jariHantu(x, y, s, t = 0, o = {}) {
     const k = cl(o.k ?? 1); if (k <= 0) return "";
     const ek = (i) => Math.sin(t * 6 + i) * 10, id = uid("jh");
-    let q = `<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="1" stop-color="#BFF6FF" stop-opacity=".35"/></linearGradient></defs>`;
-    q += `<ellipse cx="0" cy="40" rx="120" ry="170" fill="${CY}" opacity=".15"/>`;
-    q += `<path d="M-62 -20 Q-62 -150 0 -150 Q62 -150 62 -20 L62 120 Q48 ${f1(150 + ek(1))} 30 125 Q16 ${f1(160 + ek(2))} 0 128 Q-16 ${f1(160 + ek(3))} -30 125 Q-48 ${f1(150 + ek(4))} -62 120Z" fill="url(#${id})"/>`;
+    let q = `<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="1" stop-color="#BFF6FF" stop-opacity=".6"/></linearGradient></defs>`;
+    q += `<ellipse cx="0" cy="40" rx="130" ry="180" fill="#5B57D8" opacity=".35"/>`;
+    q += `<path d="M-62 -20 Q-62 -150 0 -150 Q62 -150 62 -20 L62 120 Q48 ${f1(150 + ek(1))} 30 125 Q16 ${f1(160 + ek(2))} 0 128 Q-16 ${f1(160 + ek(3))} -30 125 Q-48 ${f1(150 + ek(4))} -62 120Z" fill="url(#${id})" stroke="#2AA8D8" stroke-width="7"/>`;
     q += `<path d="M-40 -120 Q-30 -136 -6 -138" stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round" opacity=".9"/>`;
     q += `<rect x="-36" y="-128" width="72" height="46" rx="20" fill="#E6FCFF" opacity=".8"/>`; // kuku
     q += `<ellipse cx="-20" cy="-20" rx="9" ry="13" fill="${IND}"/><ellipse cx="20" cy="-20" rx="9" ry="13" fill="${IND}"/><circle cx="-17" cy="-25" r="3" fill="#FFF"/><circle cx="23" cy="-25" r="3" fill="#FFF"/>`;
