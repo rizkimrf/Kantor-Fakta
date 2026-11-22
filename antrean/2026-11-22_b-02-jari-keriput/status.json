@@ -94,5 +94,9 @@
   "masalah": null,
   "skor_manajer": 8,
   "jadwal_tayang": "2026-11-23T18:00:00+08:00",
-  "catatan_bos": null
+  "catatan_bos": null,
+  "video_asset_id": "d030e69643d2b98bdbad20c635650bcc",
+  "thumb_asset_id": "737cb4789c5724c21c7a5ca220e66bb2",
+  "video_url": "/_blob/d030e69643d2b98bdbad20c635650bcc",
+  "thumb_url": "/_blob/737cb4789c5724c21c7a5ca220e66bb2"
 }
