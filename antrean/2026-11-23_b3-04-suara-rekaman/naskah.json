@@ -59,7 +59,7 @@
     "hook": {"skor": 2, "alasan": "'Ih, kok gini?' adalah reaksi yang pernah diucapkan hampir semua orang saat dengar voice note sendiri; tanpa konteks pun langsung kena."},
     "jarak_kejutan": {"skor": 2, "alasan": "Dari 'rekaman itu suara palsu' ke 'justru itu yang lebih mendekati yang didengar ibumu dan abang bakso tiap hari' = membalik anggapan, ditambah lapis kedua (headphone tulang bikin orang mengenali suaranya) yang tidak ada di penjelasan 'tulang menghantar' pesaing."},
     "retensi": {"skor": 1, "alasan": "Celah baru tiap ±10 dtk dan kejutan inti ±13 dtk, tapi blok mekanisme 15-36 dtk (dua adegan ±10,6 dtk) paling rawan datar; ditopang canda mikrofon dan peragaan tiap kata."},
-    "layak_dibagikan": {"skor": 2, "alasan": "'Eh, suaramu emang kedengeran kayak di voice note' = obrolan yang gampang dilempar ke grup, plus olok ramah 'teman yang benci suaranya di voice note'."},
+    "layak_dibagikan": {"skor": 2, "alasan": "'Eh, suaramu di voice note itu lebih mirip yang kami dengar, lho' = obrolan yang gampang dilempar ke grup, plus olok ramah 'teman yang benci suaranya di voice note'."},
     "pemicu_komentar": {"skor": 1, "alasan": "Jawaban 1 kata NGERI/KAGET/BIASA sangat mudah + loop 'Bilang ke dia...', tapi sifatnya reaksi pribadi, bukan kubu gengsi; ditopang pertanyaan 'suka ngapus voice note?' di komentar tersemat."},
     "total": 8
   },
