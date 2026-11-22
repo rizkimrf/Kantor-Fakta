@@ -34,6 +34,7 @@
 | 2026-11-22 | 2026-11-22_a-06-rem-motor | Penampang tembus pandang (X-ray): tuas-selang cairan kuning-kaliper menjepit cakram pijar merah-oranye, teks "CUMA CAIRAN?", 1 panah merah ke selang (rencana) | sedang, kiri tengah, memegang selang, kaget | abu baja terang + oranye-merah pijar |
 | 2026-11-22 | 2026-11-22_a-06-rem-motor | FINAL: penampang X-ray besar — tuas & grip kiri atas, selang cairan amber melengkung, kaliper + cakram oranye HANGAT (gelombang panas kartun, bukan membara), 1 panah merah ke selang, teks "CUMA CAIRAN?" (CAIRAN oranye) | sedang, kiri tengah, memeluk selang dua tangan, kaget | abu baja terang + oranye hangat |
 | 2026-11-22 | 2026-11-22_b-02-jari-keriput | Teka-teki "dalang": ujung jari keriput RAKSASA miring keluar dari air bak, benang kuning bercahaya ke palang dalang + tangan bayangan tanpa wajah, 1 panah merah ke benang, teks "SIAPA YANG NYURUH?" | kecil, kiri tengah, berdiri di punggung jari, kaget menengok ke atas, jambul "?" | aqua-teal + kuning benang |
+| 2026-11-23 | 2026-11-23_a3-06-layar-hp-tangan-basah | Penampang X-ray layar HP generik miring: kisi kabel cyan di bawah kaca, 1 tetes air + 1 ujung jari memancarkan cincin medan yang SAMA, 1 panah merah ke tetes, teks "APA YANG DIRASA LAYAR?" (rencana) | kecil, kiri bawah, mengintip dari tepi HP, kaget, jambul "?" | indigo gelap + cyan neon (aksen merah) |
 
 ## Log cek riset naskah (Laras)
 | Tanggal | Folder | Hasil |
