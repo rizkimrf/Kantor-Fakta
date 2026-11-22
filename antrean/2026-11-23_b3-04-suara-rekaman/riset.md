@@ -54,3 +54,6 @@ Semua laman gagal dibuka langsung (domain diblokir sesi). Isi di atas dari ringk
 4. Popular Science, "Why your voice sounds weird on recordings" (mengutip audiolog Vanderbilt Ben Hornsby) https://www.popsci.com/science/why-your-voice-sounds-weird-on-recordings/
 5. Frontiers for Young Minds (2025), mikrofon & speaker mewarnai suara https://kids.frontiersin.org/articles/10.3389/frym.2025.1480846
 Tambahan bahan B3-07 (ditunda): Met Office "What is the difference between rain and showers?" https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/rain/rain-and-showers · NWS Konvektif vs Stratiform https://www.weather.gov/media/ajk/brochures/ConvectivevsStratiform.pdf
+
+## KOREKSI (Pak Bima, 23 Nov, dari cek_riset.md Laras) — berlaku di atas Uji 5 no.5 & Fakta cadangan
+Studi Orepic dkk., Royal Society Open Science 2023 (DOI 10.1098/rsos.221561): lewat bone conduction orang lebih baik MEMBEDAKAN suara sendiri dari suara orang lain (suara hasil morphing); tidak membaik untuk suara orang yang akrab. BUKAN "lebih gampang mengenali suara sebagai suaranya sendiri", dan bukan bukti "otak terbiasa". Afiliasi pakar (Hornsby) tidak terkonfirmasi → jangan sebut.

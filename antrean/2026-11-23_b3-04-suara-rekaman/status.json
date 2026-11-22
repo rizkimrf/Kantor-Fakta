@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "produksi",
   "topik": "b3-04 suara rekaman sendiri (pengganti b3-07 hujan panas, ditunda: syarat sumber lembaga tidak terpenuhi)",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -30,8 +30,25 @@
       "oleh": "Raka",
       "waktu": "2026-11-22",
       "hasil": "cek_seo.md: 1 WAJIB (kalimat 'Yang bikin asing? Otakmu udah TERBIASA' terlalu mutlak -> 'Salah satu yang bikin asing?'). Judul diganti 'Suara Sendiri di Rekaman Aneh? Temanmu Dengar yang Mirip' (56) di unggah.json, paket_unggah.md, naskah.json; sampul 'SUARAMU ASLI?' dipertahankan. Caption TikTok/IG lulus. Jadwal Sel 24 Nov 18.00."
+    },
+    {
+      "dari": "naskah",
+      "ke": "cek_fakta",
+      "oleh": "Nadia",
+      "waktu": "2026-11-22",
+      "revisi": "R1 (satu kali)",
+      "hasil": "Semua WAJIB cek_seo (Raka) + cek_riset (Laras) dikerjakan, plus saran Pak Bima. Perubahan: (1) adegan 6 'Yang bikin asing? Otakmu udah TERBIASA versi penuh tadi.' -> 'Salah satu yang bikin asing? Otakmu udah TERBIASA versi penuh.' (bukan penyebab tunggal); (2) adegan 6 'Ada percobaan: rekaman diputar lewat headphone penggetar TULANG. Orang jadi lebih gampang ngenalin, eh, itu SUARAKU.' -> 'Lucunya, ada percobaan dengar suara lewat TULANG. Orang lebih jago BEDAIN suaranya sendiri dari suara orang lain.' (sesuai studi; dipisah dari 'otak terbiasa' dengan 'Lucunya', tanpa makanya/buktinya); teks layar 'OTAK TERBIASA'/'PENGGETAR TULANG' -> 'SALAH SATUNYA: TERBIASA'/'LEBIH JAGO BEDAIN'; visual puzzle 'itu suaraku' -> memilih suara sendiri di antara dua suara; (3) adegan 4 'lebih rendah dan PENUH' -> 'TERDENGAR lebih rendah dan penuh' (teks layar 'TERDENGAR LEBIH PENUH'); (4) deskripsi (naskah.json + unggah.json): 'yang jelas, otak kita sudah terbiasa' -> 'salah satunya, ...'; kalimat studi -> 'Terpisah dari soal rasa tidak nyaman itu, ... (DOI 10.1098/rsos.221561) ... orang lebih mampu membedakan suaranya sendiri dari suara orang lain (tetapi tidak untuk suara orang yang akrab)'; (5) tanpa nama/afiliasi pakar (dicek di narasi, deskripsi, komentar, caption). Judul Raka, sampul, hook, loop, caption TikTok/IG, komentar tersemat tidak berubah. naskah_baca.txt, naskah_suara.txt (tag tetap 5), paket_unggah.md diselaraskan. 134 kata (+3), ±57,8 dtk narasi, video ±58,6 dtk (cadangan potong: 'sih', lalu 'langsung'). Skor jujur tetap: naskah 8/9, viral 8/10. Audio belum dibuat (tanpa biaya kredit)."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-23T08:30+08:00",
+      "hasil": "cek_fakta LULUS setelah R1 (1 wajib Raka + 3 wajib Laras), skor 8/9, viral 8/10; koreksi studi 2023 dicatat di riset.md; jadwal Sel 24 Nov 18.00"
     }
   ],
   "masalah": null,
-  "seri": "B"
+  "seri": "B",
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-24T18:00:00+08:00"
 }
