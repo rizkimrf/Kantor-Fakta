@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "a-06 rem motor",
   "seri": "A",
   "dibuat": "2026-11-22T05:43",
@@ -74,6 +74,13 @@
       "oleh": "Raka",
       "waktu": "2026-11-22T12:52+08:00",
       "hasil": "Jadwal sesuai persetujuan Bos: Min 22 Nov 13.00 WITA"
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "oleh": "Raka",
+      "waktu": "2026-11-23T06:00+08:00",
+      "hasil": "Jam tayang 22 Nov 13.00 lewat; tayang di TikTok (otomatis 12.50) dan Instagram (manual Bos). YouTube: unggah manual Bos belum muncul di LatestVideos Supermetrics (jeda data), konfirmasi Bos."
     }
   ],
   "masalah": null,

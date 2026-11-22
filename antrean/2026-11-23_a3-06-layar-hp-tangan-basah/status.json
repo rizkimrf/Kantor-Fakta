@@ -1,8 +1,15 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "a3-06 layar hp tangan basah",
   "dibuat": "2026-11-23T05:55",
-  "riwayat": [],
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "hasil": "riset.md selesai; skor Faktor Ternyata 8/10 (kejutan 2, kedekatan 3, bukti 1, visual 2); 1 mekanisme + 1 tapi; teks penuh paten/AIP belum terbuka (jaringan), bahasa 'umumnya'",
+      "waktu": "2026-11-22"
+    }
+  ],
   "masalah": null,
   "seri": "A"
 }
