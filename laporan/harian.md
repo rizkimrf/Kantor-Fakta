@@ -7,16 +7,13 @@ Sumber: rekomendasi YouTube untuk channel — tetap menonton 53–70% (target 75
 5. **Format gabungan** (`.claude/skills/naskah-viral/referensi/format-gabungan.md`): 13.00 = jalur A "Kok Bisa Jalan?" (≤90 dtk), 18.00 = jalur B fakta (≤60 dtk). Isi `seri` di status.json. Subtitle tetap gaya sekarang, posisi & ukuran disesuaikan per adegan agar tidak menutupi objek.
 Ukur tiap video: % tetap menonton, % rata-rata ditonton, share, komentar — bandingkan dengan video lama (68–89 dtk).
 
-# Evaluasi harian — 21 Nov 2026 sore (Supermetrics 7 hari: YouTube LatestVideos + TikTok videos)
-YouTube: Nama Indonesia 1.362 views, 44 dtk, **66% ditonton**, share 3 (terbaik) · Toba 45 dtk/54% · 99.900 55% · durian 51% · ketchup terendah **38%** (30 dtk).
-TikTok: Nama Indonesia 4.134 views/share 22 · Odol 1.472/share 10 · Toba 762/**share 14** · micin (89 dtk) tonton 33,6 dtk tapi selesai 5,8% · Rice cooker 684 views (beberapa jam, share 0).
-Tonton rata2 TikTok mentok 26–33 dtk berapa pun durasinya → yang lewat 60 dtk banyak tak selesai.
+# Evaluasi harian — 22 Nov 2026 sore (Supermetrics 7 hari; YouTube belum memuat Sambal/Rice cooker/Rem motor)
+TikTok: **Sambal (55 dtk) 2.849 views, tonton 36,6 dtk, selesai 10,8% (terbaik), komentar 6** · Rice cooker (77 dtk) 1.436, 28,5 dtk, selesai 4,1% · Rem motor (75 dtk, ±5 jam) 505, 30,7 dtk, selesai 3,9%, share 2.
+YouTube: Gunting 1.567 views/49% · durian 51% · micin 44% · Nama Indonesia tetap tertinggi 66% · subscriber +2–4 per video.
+Pola: video ≤ 55 dtk selesai 2–3x lebih banyak; jalur A 75–77 dtk tertahan di ±30 dtk. Pertanyaan pengalaman daerah ("sambal di daerahmu namanya apa?") memancing komentar terbanyak.
 
 ## 3 langkah untuk produksi besok
-1. **Kejutan inti sebelum detik 25** (rata2 penonton pergi di 26–33 dtk); jalur B target 50–55 dtk, jalur A ≤ 75 dtk.
-2. **Pemicu share identitas daerah/kebanggaan** (Toba 14, Indonesia 22, Odol 10 share) — wajib di 2 Shorts besok, sebut kebiasaan lokal spesifik.
-3. **Satu alur, sedikit nama** (ketchup 38% = terlalu banyak istilah/negara); hook teka-teki "siapa/apa" seperti Nama Indonesia (66%).
-Ukur besok: Sambal & Rice cooker — % ditonton YouTube > 55%? share TikTok > 5?
-
-## Catatan Laras untuk A-06 rem motor (22 Nov)
-Satu alur 5 langkah, istilah cukup: tuas, minyak rem, kaliper, cakram (hindari "master silinder", "Pascal" bisa diucap sekali). Kejutan inti ("minyak rem = tongkat cair yang tak bisa ditekan + piston kaliper lebih besar") di detik ≤ 20. Pemicu share identitas: kubu "rem depan / rem belakang doang / dua-duanya" + "tag temanmu yang rem belakang doang". Tanpa angka rasio, tanpa tips servis.
+1. **Jalur A juga ≤ 60 dtk** (bukan 75–90): pangkas ke 1 mekanisme inti, kejutan ≤ dtk 20.
+2. **Tutup dengan pertanyaan "di daerahmu/rumahmu ..."** yang jawabannya satu kata (pola Sambal) — catatan Bos 22 Nov: penutup wajib dekat keseharian (Jari keriput ditolak karena "sungai" tidak relate).
+3. **Hook teka-teki "siapa/apa" + tebak dulu** tetap dipakai (Nama Indonesia 66%, Sambal 10,8%); hindari banyak istilah teknis.
+Ukur besok: Rem motor & Sambal di YouTube (% ditonton > 55%?), Jari keriput versi revisi.
