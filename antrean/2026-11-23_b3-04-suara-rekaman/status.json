@@ -1,5 +1,5 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "b3-04 suara rekaman sendiri (pengganti b3-07 hujan panas, ditunda: syarat sumber lembaga tidak terpenuhi)",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -9,6 +9,13 @@
       "waktu": "2026-11-22",
       "skor_faktor_ternyata": 8,
       "catatan": "B3-07 hujan panas TUNDA (mekanisme sun shower tidak ada di sumber lembaga; klaim BMKG sun shower belum terverifikasi). Diganti B3-04 suara rekaman sendiri. Verifikasi berasal dari hasil pencarian karena laman tidak bisa dibuka langsung."
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "waktu": "2026-11-22",
+      "skor_marketing": "18/20",
+      "catatan": "LANJUT. Seo.md & rencana_marketing.md dibuat. Hook teka-teki 'siapa yang suaranya tak pernah kamu dengar utuh', kejutan <= dtk 20, <=60 dtk, 'lebih mendekati' bukan 'persis'. Tanpa data volume/YouTube."
     }
   ],
   "masalah": null,
