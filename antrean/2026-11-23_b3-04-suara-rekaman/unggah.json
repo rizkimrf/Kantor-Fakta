@@ -1,0 +1,39 @@
+{
+  "label_ai": true,
+  "youtube": {
+    "judul": "Suara Sendiri di Rekaman Aneh? Ternyata Itu Suara Aslimu?",
+    "deskripsi": "Dengar suara sendiri di rekaman, kamu langsung bilang 'ih, kok gini?' Tonton sampai habis, lalu jawab: pertama kali dengar suaramu di rekaman, reaksimu apa? Satu kata.\n\nCatatan lengkap (spoiler, baca setelah nonton): Saat kita bicara, suara sampai ke telinga dalam lewat dua jalur: lewat udara, dan lewat getaran tulang serta jaringan kepala (bone conduction). Jalur tulang meneruskan nada rendah dengan baik, sehingga suara yang kita dengar di kepala terasa lebih rendah dan 'penuh'. Mikrofon hanya menangkap jalur udara, dan orang lain pun mendengar kita lewat udara, jadi rekaman lebih mendekati suara kita di telinga orang lain. Tidak persis sama, karena mikrofon dan speaker juga ikut mewarnai suara. Soal kenapa rekaman terasa tidak nyaman, ada beberapa penjelasan psikologis dan belum satu jawaban tunggal; yang jelas, otak kita sudah terbiasa dengan versi di kepala. Sebuah studi 2023 di Royal Society Open Science menemukan bahwa saat rekaman didengarkan lewat headphone bone-conduction, orang lebih mampu mengenali suara itu sebagai suaranya sendiri. Video ini menjelaskan cara kerja suara dan pendengaran, bukan nasihat kesehatan.\n\nSumber:\n- University of Tokyo, Why do recordings of one's own voice sound so strange?: https://www.u-tokyo.ac.jp/focus/en/features/z1304_00237.html\n- Bone conduction facilitates self-other voice discrimination (Royal Society Open Science 2023, PMC): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9929504/\n- Scientific American, Why does my voice sound different?: https://www.scientificamerican.com/article/why-does-my-voice-sound-different/\n- Popular Science, Why your voice sounds weird on recordings: https://www.popsci.com/science/why-your-voice-sounds-weird-on-recordings/\n- Frontiers for Young Minds (2025): https://kids.frontiersin.org/articles/10.3389/frym.2025.1480846\n\n#Shorts #SuaraSendiri #FaktaSains",
+    "tag": [
+      "suara sendiri di rekaman",
+      "suara kita di rekaman",
+      "kenapa suara di rekaman beda",
+      "suara rekaman aneh",
+      "suara sendiri di voice note",
+      "suara di kepala vs rekaman",
+      "kenapa suara sendiri terdengar aneh",
+      "bone conduction",
+      "fakta sains tubuh manusia",
+      "ternyata begitu"
+    ],
+    "komentar_tersemat": "Pertama kali dengar suaramu sendiri di rekaman, reaksimu apa: NGERI, KAGET, atau BIASA? Satu kata aja. Terus jujur: kamu termasuk yang suka ngapus voice note sebelum dikirim? Kalau penasaran sama tubuhmu yang diam-diam 'kerja sendiri', tonton juga Shorts 'Kenapa Jari Keriput Kalau Kena Air?' di channel ini.",
+    "terkait": {
+      "folder": "2026-11-22_b-02-jari-keriput",
+      "judul": "Kenapa Jari Keriput Kalau Kena Air? Bukan Karena Air Masuk",
+      "url": null,
+      "catatan": "B-02 dijadwalkan Sen 23 Nov 18.00 (sehari sebelum video ini); id YouTube belum tercatat. Relevan: pilar sama (tubuh manusia, 'tubuhmu kerja sendiri'). Bila B-02 belum tayang saat 24 Nov 18.00, ganti ke i-005 'Pedas Itu Rasa Apa? Kenapa Sambal Bikin Keringetan?' dan sesuaikan komentar tersemat. Bos/Raka memasang video terkait di YouTube Studio."
+    }
+  },
+  "tiktok": {
+    "caption": "Suara sendiri di rekaman bikin geli? Reaksimu pertama kali: NGERI, KAGET, atau BIASA? #suarasendiri #faktasains #TernyataBegitu"
+  },
+  "instagram": {
+    "caption": "Dengar suara sendiri di voice note, langsung bilang 'ih, kok gini?' Tebak, siapa yang tiap hari dengar suara mirip itu.\nKirim ke teman yang benci suaranya di voice note.\nPertama kali dengar suaramu di rekaman, reaksimu apa? NGERI, KAGET, atau BIASA? Satu kata aja.\n#suarasendiri #voicenote #tubuhmanusia #faktasains #faktaunik #TernyataBegitu"
+  },
+  "jadwal_tayang_usulan": "2026-11-24T18:00:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-25T18:00:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): SUARAMU ASLI?",
+  "_catatan": "jadwal dibaca terbitkan.py dari status.json -> jadwal_tayang (diisi otomatis di slot kosong; usulan di sini mengikuti arahan Pak Bima: Sel 24 Nov 18.00). komentar_tersemat & terkait dipasang manual."
+}
