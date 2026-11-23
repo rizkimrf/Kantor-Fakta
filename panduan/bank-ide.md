@@ -41,18 +41,19 @@ Catatan Laras (22 Nov): cek cepat = 1 pencarian per ide (inti/mekanisme cocok di
 | B3-09 | B | Lagu nyangkut di kepala seharian | "Dari pagi kamu muter satu potong lagu yang sama di kepala. Padahal nggak lagi dengerin apa-apa." | earworm (musik berulang tak diminta): paling sering potongan pendek, sederhana, berulang; lebih sering lagu yang disukai/baru didengar; muncul saat otak "longgar"; pemicu bisa memori/tempat (Williamson, Jakubowski) | Lagu apa yang nyangkut? Komen JUDULNYA | BPS Research Digest, APA (https://bps.org.uk/research-digest/natural-history-earworm-song-wont-get-out-your-head · https://www.apa.org/news/press/releases/2016/11/earworms), review PMC (https://pmc.ncbi.nlm.nih.gov/articles/PMC10585939/). Klaim Kellaris tidak dipublikasikan → JANGAN dipakai · **siap diverifikasi, komentar UGC besar (judul lagu)** |
 | B3-10 | B | Nyamuk selalu menggigit kamu, bukan temanmu | "Kalian berdua duduk bareng, tapi nyamuk cuma ngejar kamu. Itu bukan kebetulan." | nyamuk melacak CO2 napas lalu bau kulit; selisih antar-orang sebagian dipengaruhi gen (studi kembar: ±2/3 selisih daya tarik dari gen, studi tunggal) + zat di kulit/mikroba; **tanpa tips menolak nyamuk/kesehatan (DBD)** | Korban nyamuk: 🦟 · Aman: 😎 | Smithsonian, Scientific American, The Scientist (https://www.smithsonianmag.com/science-nature/why-do-mosquitoes-bite-some-people-more-than-others-10255934/ · https://www.scientificamerican.com/article/are-you-a-magnet-for-mosquitoes · https://the-scientist.com/why-do-mosquitoes-bite-some-people-more-than-others-71475). Angka 67% dari 1 studi kembar → boleh disebut "sekitar dua pertiga (satu studi kembar)" atau dihindari; golongan darah/warna baju hasil beragam → JANGAN dipakai · **siap diverifikasi** |
 
-## Urutan uji minggu ini (Laras mengusulkan; Raka mengonfirmasi saat tahap `pilih`)
-Aturan: 13.00 jalur A, 18.00 jalur B. Ide musim hujan di depan, ide TAHAN tidak masuk jadwal. Pilar bergantian (benda · sains · uang/kata sehari-hari · alam).
-| Hari | 13.00 jalur A | 18.00 jalur B |
-|---|---|---|
-| Sen 23 Nov | A3-06 layar HP & tangan basah (diproduksi) | B3-04 suara rekaman sendiri (diproduksi; B3-07 TUNDA: tidak ada sumber lembaga) |
-| Sel 24 Nov | A3-02 pintu minimarket terbuka sendiri | B3-02 foto WA burik (syarat: sumber resmi WA) |
-| Rab 25 Nov | A3-05 sabun & minyak piring | B3-03 lupa di ambang pintu (versi "ilmuwan berdebat") |
-| Kam 26 Nov | A3-04 panci presto | B3-05 tersentak mau tidur |
-| Jum 27 Nov | A3-10 kompor "tek-tek" (syarat: 1 sumber lagi) | B3-01 plat nomor (syarat: dikunci ke Perpol) |
-| Sab 28 Nov | A3-03 termos | B3-10 nyamuk pilih-pilih |
-| Min 29 Nov | A3-07 remote TV & kamera HP | B3-09 lagu nyangkut |
-Cadangan bila ada yang gugur: A3-01 barcode (kandidat kuat, boleh ditukar ke Sel 24), A3-09 penghapus, A3-08 pulpen, B3-03 (versi "ilmuwan berdebat"). TAHAN: B3-06, B3-08.
+## Urutan uji minggu ini — 3 Shorts/hari s.d. Jumat (perintah Bos 24 Nov; Raka mengonfirmasi saat tahap `pilih`)
+Aturan: 13.00 jalur A, 18.00 jalur B, **19.45 = ide dengan skor potensi viral tertinggi** dari jalur mana pun (komentar UGC besar / pengalaman paling umum).
+Mutu tidak turun: naskah wajib skor ≥ 8/10 dan lolos semua gerbang; bila gugur, slot dibiarkan kosong (jangan diisi video lemah).
+Mulai produksi Jum 27 Nov kembali 2 Shorts/hari + video panjang Min 29 Nov. Ide TAHAN tidak masuk jadwal.
+| Hari | 13.00 jalur A | 18.00 jalur B | 19.45 terkuat |
+|---|---|---|---|
+| Sel 24 Nov | A3-06 layar HP & tangan basah (terjadwal) | B3-04 suara rekaman sendiri (terjadwal) | A3-01 barcode (hanya bila disetujui Bos sebelum 19.32; bila tidak, geser ke slot kosong berikut) |
+| Rab 25 Nov | A3-02 pintu minimarket terbuka sendiri | B3-02 foto WA burik (syarat: sumber resmi WA) | B3-09 lagu nyangkut (komentar judul lagu) |
+| Kam 26 Nov | A3-05 sabun & minyak piring | B3-03 lupa di ambang pintu (versi "ilmuwan berdebat") | B3-10 nyamuk pilih-pilih |
+| Jum 27 Nov | A3-04 panci presto | B3-05 tersentak mau tidur | A3-07 remote TV & kamera HP (bila sudah terjadwal) |
+| Sab 28 Nov | A3-10 kompor "tek-tek" (syarat: 1 sumber lagi) | B3-01 plat nomor (syarat: dikunci ke Perpol) | — |
+| Min 29 Nov | A3-03 termos | (ide B baru dari Laras) | video panjang 19.00 |
+Cadangan bila ada yang gugur: A3-09 penghapus, A3-08 pulpen. TAHAN: B3-06, B3-08.
 
 ## Video panjang (1 per minggu, Minggu 19.00, 8–12 menit)
 | Tanggal | Judul kerja | Tema dari Shorts | Bab (≥ 70% isi baru) |

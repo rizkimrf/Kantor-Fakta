@@ -35,6 +35,20 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 - Pantau tiap Senin (laporan Raka): subscriber, jam tonton 365 hari, views Shorts 90 hari, rata-rata durasi tonton, CTR thumbnail. Bandingkan dengan jalur ke 8.000 jam.
 - **Narasi:** utamakan suara Bos sendiri bila Bos mengirim rekaman (paling kuat sebagai bukti konten orisinal); jika tidak ada, suara AI berkualitas tinggi. Suara robot hanya untuk uji internal, jangan ditayangkan.
 
+## Minggu 24–27 Nov 2026 (perintah Bos 24 Nov)
+- **3 Shorts/hari** (13.00, 18.00, 19.45) karena minggu ini tanpa video panjang; tiap konten kualitas terbaik & berpotensi viral (lihat urutan di `panduan/bank-ide.md`). Terbit 19.45 dijalankan tugas terjadwal 19.32 (hanya 24–27 Nov).
+- **Mulai Jumat 27 Nov (setelah reset kuota mingguan): kembali 2 Shorts/hari + 1 video panjang/minggu** (Min 29 Nov 19.00). Produksi pagi Jumat mengubah `shorts_per_hari` ke 2.
+
+## Uji iklan follower (keputusan Bos 24 Nov — mengubah keputusan "100% organik" untuk 3 video saja)
+Bos mengiklankan **3 video dengan engagement terbaik selama 5 hari (Jum 27 Nov – Sel 1 Des)** untuk menaikkan follower. Bos sendiri yang memasang & membayar iklan.
+**Tugas "Pilih 3 video iklan" (produksi pagi Jum 27 Nov, Raka menghitung, Pak Bima memeriksa):**
+1. Kandidat: SEMUA video yang sudah tayang s.d. Kamis 26 Nov malam (semua platform). Video yang tayang < 24 jam atau < 300 views di platform itu tidak dinilai di platform itu (sampel kecil).
+2. Angka per platform (hanya angka asli dari Supermetrics/YouTube Studio/tangkapan layar Bos — jangan mengarang): engagement rate = (suka + komentar + share + simpan) ÷ views × 100; **subscriber/follower didapat per 1.000 views** (paling penting untuk tujuan follower); % tetap menonton / rata-rata ditonton.
+3. Peringkat gabungan: subscriber per 1.000 views (bobot 2) + engagement rate (bobot 1) + retensi (bobot 1). YouTube didahulukan bila angka platform bertentangan.
+4. Saring: tidak ada klaim kesehatan/keuangan yang bisa ditolak kebijakan iklan, fakta sudah lolos, tidak ada masalah hak cipta musik/gambar.
+5. Kirim ke Bos: 3 video + angka + alasan + platform yang paling cocok diiklankan per video, dan 2 cadangan. Bila data belum bisa ditarik, katakan terus terang dan minta tangkapan layar statistik.
+Catatan data: views & jam tonton dari iklan **tidak dihitung** untuk syarat monetisasi YouTube (4.000 jam / 20 juta views Shorts), tetapi subscriber yang didapat tetap dihitung. Tandai ketiga video `"diiklankan": "2026-11-27 s.d. 2026-12-01"` di status.json, dan **keluarkan angka ketiganya dari perbandingan A/B** selama dan sesudah iklan supaya data organik tetap bersih.
+
 ## Prioritas platform (Bos, 19 Nov 2026)
 **YouTube Shorts = platform UTAMA** (target monetisasi). Semua analisa, uji A/B, dan keputusan pola memakai angka YouTube dulu.
 TikTok & Instagram = **jaring** yang menarik orang ke YouTube. **TANPA ajakan pindah ke YouTube di caption/komentar** (Bos 19 Nov: bisa menurunkan jangkauan).
@@ -42,7 +56,7 @@ Caranya: **outro menampilkan logo YouTube kecil + nama channel "Ternyata Begitu"
 Status monetisasi (dicek 19 Nov 2026): TikTok Creator Rewards (bayar per tayang) BELUM tersedia di Indonesia — yang ada: TikTok Shop affiliate, gift LIVE, kerja sama brand.
 Instagram tidak membayar per tayang; Reels yang di-crosspost ke Halaman Facebook bisa masuk Facebook Content Monetization (Indonesia termasuk, lewat undangan). Pak Bima mengecek ulang status ini tiap bulan.
 
-Keputusan Bos 19 Nov: **tanpa iklan berbayar (100% organik) selama Nov–Des 2026** supaya data uji bersih; iklan baru dipertimbangkan tahun depan, hanya untuk video yang polanya sudah terbukti. Fokus Nov–Des: secepat mungkin memenuhi syarat monetisasi YouTube (bila memungkinkan, ajukan sebelum 1 Feb 2027 saat syarat masih 4.000 jam).
+Keputusan Bos 19 Nov: **tanpa iklan berbayar (100% organik) selama Nov–Des 2026** (pengecualian Bos 24 Nov: uji iklan follower 3 video, lihat di atas) supaya data uji bersih; iklan baru dipertimbangkan tahun depan, hanya untuk video yang polanya sudah terbukti. Fokus Nov–Des: secepat mungkin memenuhi syarat monetisasi YouTube (bila memungkinkan, ajukan sebelum 1 Feb 2027 saat syarat masih 4.000 jam).
 
 Rencana pendapatan lanjutan (Bos, 19 Nov): affiliate & kerja sama brand baru dijajaki setelah channel besar; topik "cara kerja" dijaga netral merek sampai saat itu.
 Perlindungan channel (Bos, 19 Nov): TIDAK membuat channel cadangan (aturan YouTube: bila channel utama dihentikan, channel lain milik/menampilkan pemilik ikut dilarang). Yang dijaga: semua aset & video tersimpan di repo + Kantor Visual, musik/SFX/gambar hanya berlisensi atau buatan sendiri, fakta bersumber, tanpa nasihat kesehatan/keuangan/hukum, variasi antar-video (anti "konten berulang").
