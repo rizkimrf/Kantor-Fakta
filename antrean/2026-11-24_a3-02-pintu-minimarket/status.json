@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "menunggu_persetujuan",
   "seri": "A",
   "topik": "a3-02 pintu minimarket",
   "dibuat": "2026-11-24T05:42",
@@ -38,9 +38,30 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-24T05:54+08:00",
       "hasil": "cek_fakta LULUS (1 WAJIB caption IG diperbaiki Pak Bima; cek_seo 0 wajib), skor 8/9, viral 8/10; Tebe cameo saja; jadwal Rab 25 Nov 13.00"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-24T06:40+08:00",
+      "hasil": "final.mp4 52,8 dtk / 15,6 MB; suara ElevenLabs v4 SEKALI 874 huruf ≈ 454 kredit (aset/log_kredit.csv; pelafalan 'mini-market', 'nge-tes'); tanpa JEDA; set BARU studio-aset/aset-pintu.js (fasad toko senja oranye-krem, pintu geser kaca, kotak sensor, kerucut mint, tampak atas x-ray + motor/sabuk, tirai infra merah, figur penonton generik); 11 babak; Tebe 3 cameo (tersinggung, kubu LAMBAI/MUNDUR, kirim); 'kamu' = figur generik; pintu adegan 5-6 berhenti ±80 px dari badan; tanpa merek/tulisan toko; outro logo YouTube ±1 dtk; loop ke sampul; thumbnail.png 'PINTU INI / KOK TAHU?' oranye-krem + mint; musik belanja-ceria 0,2; 6 SFX; cek_mulus LULUS, cek_video LULUS",
+      "durasi": 52.8,
+      "mb": 15.6,
+      "kredit": 454
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T06:10+08:00",
+      "hasil": "Review LULUS (52,8 dtk, 15,6 MB), uji 3 dtk 8/10; jadwal Rab 25 Nov 13.00 WITA"
     }
   ],
   "masalah": null,
   "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-25T13:00:00+08:00"
+  "jadwal_tayang": "2026-11-25T13:00:00+08:00",
+  "video_asset_id": "4a488fcd43ab63fede88552b3e270e6c",
+  "thumb_asset_id": "d7e90fddab204a8bb693dafead6b5200",
+  "video_url": "/_blob/4a488fcd43ab63fede88552b3e270e6c",
+  "thumb_url": "/_blob/d7e90fddab204a8bb693dafead6b5200"
 }

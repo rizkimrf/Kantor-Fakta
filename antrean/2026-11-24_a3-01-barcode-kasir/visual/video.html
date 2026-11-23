@@ -1,0 +1,288 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- A3-01 Barcode kasir: harganya di mana? — Yoga, 23 Nov 2026. Kontrak window.render(T); waktu mengikuti audio/waktu_kata.json (narasi SEKALI, tanpa JEDA).
+     Render: python scripts/render_html.py antrean/2026-11-24_a3-01-barcode-kasir --musik-vol 0.2
+     Catatan wajib Pak Bima: barcode FIKTIF (pola acak, digit cek salah), bungkus polos tanpa merek, KTP kartun fiktif (tanpa lambang/format NIK),
+     TANPA kata "laser", layar kasir berganti BERURUTAN, Tebe cameo 3 (sampul/loop, gag KTP, laci 899), laci 899 tanpa bendera penuh,
+     sampul "HARGANYA / DI MANA?" merah-putih, bip hanya di detik 0, loop: komposisi akhir = sampul frame 0; outro ikon YouTube kecil tanpa ajakan.
+     Set BARU: studio-aset/aset-barcode.js (meja kasir siang krem-merah, dalam barcode, komputer toko + lemari daftar, peta pabrik). -->
+<script src="../../../studio-aset/tebe-rig.js"></script>
+<script src="../../../studio-aset/aset-set.js"></script>
+<script src="../../../studio-aset/aset-barcode.js"></script>
+<script src="../../../studio-aset/kerangka-shorts.js"></script>
+<style>*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#FFF4E6}
+.abs{position:absolute}#V{position:absolute;inset:0;overflow:hidden}</style></head><body><div id="V"></div>
+<script>
+const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp,halus}=KS, A=ASET, M='#E2232E', MT='#B5121D', HT='#22232B';
+const W=KS.waktu(window.WAKTU_KATA||[],[]);
+window.JEDA=W.JEDA;
+const KK=W.kata, KI=i=>KK[i]||{m:i*0.43,s:i*0.43+0.3};
+const cel=i=>KK[i]&&KK[i-1]?(KK[i-1].s+KK[i].m)/2:i*0.43;
+const AKHIR=KK.length?KK[KK.length-1].s:54.72;
+window.DURASI=+(AKHIR+0.72).toFixed(2);
+window.MUSIK='belanja-ceria';
+const D=()=>window.DURASI;
+
+// ---------- helper ----------
+const KULIT='#F4C9A1',GRS='#1E1E1E';
+function tebeX(p,w,o={}){let svg=tebeRigSVG(p).replace('width="400" height="520"','width="100%" style="overflow:visible"');
+ const i=svg.lastIndexOf(' </g>\n</g></svg>');if(i>0&&o.tangan)svg=svg.slice(0,i)+o.tangan+svg.slice(i);
+ return `<div style="width:${w}px;${o.css||''}">${svg}</div>`}
+const kaca=(H)=>`<g><path d="M${H[0]} ${H[1]} L${H[0]+40} ${H[1]-52}" stroke="#7A4A2A" stroke-width="18" stroke-linecap="round"/><circle cx="${H[0]+66}" cy="${H[1]-88}" r="46" fill="#DFF6FF" fill-opacity=".55" stroke="${GRS}" stroke-width="7"/><circle cx="${H[0]+66}" cy="${H[1]-88}" r="38" fill="none" stroke="#B7C2CC" stroke-width="8"/><path d="M${H[0]+44} ${H[1]-104} q10 -14 26 -12" stroke="#FFF" stroke-width="7" fill="none" stroke-linecap="round"/></g><circle cx="${H[0]}" cy="${H[1]}" r="17" fill="${KULIT}" stroke="${GRS}" stroke-width="6"/>`;
+const GRUP=KS.teks(W,{gabung:[['delapan sembilan sembilan','899'],['ji es wan','GS1']],
+ ganti:{'barkod':'BARCODE','barkodnya':'BARCODE-NYA','skener':'SCANNER','ka-te-pe-mu':'KTP-MU'},
+ tekan:['bukan.','nomor','produk.','toko.','nelan','mantul.','angka.','nomornya,','gajimu','harga.','diskon,','ikut.','buatan','mana','sama.','suhu.','kasir.'],maks:3});
+const cap=(txt,T,a,b,o={})=>{const kk=halus(lin(T,a-.05,a+.3))*(1-halus(lin(T,b-.3,b)));if(kk<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:${o.y||300}px;text-align:center;transform:rotate(${o.rot??-3}deg) scale(${(.86+.14*kk).toFixed(3)});opacity:${kk.toFixed(3)}"><span style="display:inline-block;padding:6px 34px 12px;border:8px solid ${o.warna||M};border-radius:24px;background:${o.bg||'rgba(255,250,244,.94)'};font:700 ${o.uk||76}px/1.08 Poppins;letter-spacing:-1px;color:${o.tw||HT};box-shadow:0 10px 0 rgba(120,10,20,.25)">${txt}</span></div>`};
+const svgW=(w,h,s,st='')=>`<svg class="abs" width="${w}" height="${h}" style="left:0;top:0;overflow:visible;${st}">${s}</svg>`;
+const kamera=(isi,w,cx,cy,z,h=1920)=>`<div class="abs" style="left:0;top:0;width:${w}px;height:${h}px;transform:translate(${(540-cx).toFixed(1)}px,${(960-cy).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:${cx.toFixed(1)}px ${cy.toFixed(1)}px">${isi}</div>`;
+const latar=(c)=>`<div class="abs" style="inset:0;background:${c}"></div>`;
+const tanya=(x,y,s,T,a)=>a<=0?'':`<g transform="translate(${x} ${y}) rotate(${(Math.sin(T*5+x)*12).toFixed(1)}) scale(${(s*(.6+.4*halus(cl(a)))).toFixed(3)})" opacity="${cl(a*2).toFixed(3)}"><circle r="62" fill="${M}"/><text y="30" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="90" fill="#FFF">?</text></g>`;
+function duniaPutih(T,o={}){const id='dp'+(o.id||0);let s=`<defs><radialGradient id="${id}" cx="${o.fx||.5}" cy="${o.fy||.45}" r=".8"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#FFF1EC"/><stop offset="1" stop-color="#FFC9C2"/></radialGradient></defs><rect x="-400" y="-400" width="1880" height="2720" fill="url(#${id})"/>`;
+ for(let i=0;i<14;i++){const a=T*.08+i*Math.PI/7,b=a+Math.PI/14,sy=o.sy||900;s+=`<path d="M540 ${sy} L${(540+2600*Math.cos(a)).toFixed(0)} ${(sy+2600*Math.sin(a)).toFixed(0)} L${(540+2600*Math.cos(b)).toFixed(0)} ${(sy+2600*Math.sin(b)).toFixed(0)}Z" fill="${M}" opacity=".045"/>`}
+ for(let i=0;i<18;i++){const q=(T*.05+i*.057)%1;s+=`<circle cx="${(50+i*58+Math.sin(T*.7+i)*24).toFixed(1)}" cy="${(1800-q*1700).toFixed(1)}" r="${(3+i%3)}" fill="${M}" opacity="${(.25*Math.sin(Math.PI*q)).toFixed(3)}"/>`}
+ return s}
+const ANGKA='8993146027514'; // fiktif: digit cek yang benar = 7, sengaja 4 → tidak valid
+const POLA=A.polaBar(11);
+
+// ===== SAMPUL (frame 0 = loop akhir): barcode RAKSASA miring ke kamera, sinar merah membelah, panah merah ke SATU garis; Tebe kecil kiri bawah + kaca pembesar
+const ATS=tebeAnimasi([{t:0,pose:'kaget'}],{benih:6});
+const BAR_PANAH=24;
+function sampul(tc,judul=1,o={}){
+ const z=1+.02*tc+(o.zoomEkstra||0);
+ const fl=Math.max(0,1-Math.abs(tc-.36)/.18); // kilat sinar saat "bip"
+ let bg=A.mejaKasirSiang(1080,1920,tc,{meja:1500,rakA:.9});
+ let s=`<defs><radialGradient id="sg1" cx=".5" cy=".55" r=".7"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="1" stop-color="#FFE3DE" stop-opacity=".2"/></radialGradient><filter id="sgb"><feGaussianBlur stdDeviation="10"/></filter></defs><rect x="-300" y="-300" width="1680" height="2520" fill="url(#sg1)"/>`;
+ for(let i=0;i<12;i++){const a=tc*.1+i*Math.PI/6,b=a+Math.PI/12;s+=`<path d="M540 1060 L${(540+2600*Math.cos(a)).toFixed(0)} ${(1060+2600*Math.sin(a)).toFixed(0)} L${(540+2600*Math.cos(b)).toFixed(0)} ${(1060+2600*Math.sin(b)).toFixed(0)}Z" fill="${M}" opacity=".05"/>`}
+ // kartu barcode raksasa (miring, tebal)
+ const bx=A.posBar(POLA,BAR_PANAH,880)-440;
+ let kartu=`<rect x="-500" y="-300" width="1000" height="600" rx="34" fill="#8F0E17" transform="translate(22 30)" opacity=".55"/>`+A.barcodeFiktif(-440,-250,880,500,{pola:POLA,t:tc,label:true});
+ kartu+=`<g filter="url(#sgb)"><line x1="-620" y1="0" x2="620" y2="0" stroke="#FF2A2A" stroke-width="${(40+30*fl).toFixed(1)}" opacity="${(.55+.4*fl).toFixed(3)}"/></g><line x1="-620" y1="0" x2="620" y2="0" stroke="#FF4848" stroke-width="10"/><line x1="-620" y1="0" x2="620" y2="0" stroke="#FFE0E0" stroke-width="3"/>`;
+ if(judul>0)kartu+=`<g opacity="${judul.toFixed(3)}" transform="translate(0 ${(Math.sin(tc*4)*6).toFixed(1)})"><path d="M${(bx+250).toFixed(0)} -470 Q${(bx+230).toFixed(0)} -330 ${(bx+40).toFixed(0)} -282" stroke="${M}" stroke-width="30" fill="none" stroke-linecap="round"/><path d="M${(bx+30).toFixed(0)} -330 L${(bx-14).toFixed(0)} -272 L${(bx+64).toFixed(0)} -244Z" fill="${M}"/></g><rect x="${(bx-26).toFixed(0)}" y="-268" width="52" height="536" rx="10" fill="none" stroke="${M}" stroke-width="10" opacity="${judul.toFixed(3)}"/>`;
+ s+=`<g transform="translate(560 1080) rotate(-12) scale(${(1+.01*Math.sin(tc*.8)).toFixed(4)})">${kartu}</g>`;
+ const tb=ATS(.4+tc);tb.lihatX=4;tb.lihatY=-4;tb.tanganN=[300,236];tb.bentukN='kepal';tb.tekukN=1;
+ return `<div class="abs" style="inset:0;transform:scale(${z.toFixed(4)});transform-origin:540px 1000px">${svgW(1080,1920,bg,'filter:blur(9px)')}${svgW(1080,1920,s)}
+ <div class="abs" style="left:56px;top:${(1268+Math.sin(tc*2.2)*5).toFixed(1)}px">${tebeX(tb,270,{tangan:kaca(tb.tanganN)})}</div>
+ ${svgW(1080,1920,`<defs><radialGradient id="svn" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#3A0408" stop-opacity="0"/><stop offset="1" stop-color="#3A0408" stop-opacity=".62"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#svn)"/>`)}
+ <div class="abs" style="left:0;width:1080px;top:236px;text-align:center;opacity:${judul.toFixed(3)};font:700 156px/1.0 Poppins;letter-spacing:-3px;color:#FFFFFF;-webkit-text-stroke:22px #2A0A0E;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.35);white-space:nowrap">HARGANYA<br><span style="color:${M}">DI MANA?</span></div>
+ ${o.chip?`<div class="abs" style="left:0;width:1080px;top:590px;text-align:center;opacity:${o.chip.toFixed(3)}"><span style="display:inline-block;padding:4px 26px 8px;border-radius:18px;background:${M};font:700 52px/1.1 Poppins;color:#FFF;letter-spacing:1px;transform:scale(${(.85+.15*o.chip).toFixed(3)})">BARCODE KASIR</span></div>`:''}</div>`}
+function setSampul(T){const j=1-halus(lin(T,1.15,1.45));return sampul(T,j,{chip:halus(lin(T,KI(2).m-.05,KI(2).m+.2))*j})}
+function setSampulAkhir(T){const q=lin(T,B11-.3,D());return sampul(T-D(),halus(lin(T,D()-.75,D()-.4)),{zoomEkstra:.08*(1-q)*(1-q)})}
+
+// ===== S1 MEJA KASIR SIANG — scanner bip bungkus mie, harga muncul; kamera mendorong ke garis; "BUKAN" = cap silang
+const B1=1.45,kMuncul=KI(4).m,kSelama=KI(5).m,kKira=KI(8).m,kGaris=KI(11).m,kBukan=KI(13).m,B2=cel(14);
+const PACK={x:390,y:1050,s:1},BCX=PACK.x+A.MIE_BC.x+A.MIE_BC.w/2,BCY=PACK.y+A.MIE_BC.y+A.MIE_BC.h/2;
+function setKasir(T,o={}){
+ let s=A.mejaKasirSiang(1080,1920,T,{meja:1180});
+ if(!o.tanpaLayar)s+=A.layarKasir(760,967,.72,T,{harga:'3.500',k:o.harga??halus(lin(T,kMuncul-.1,kMuncul+.25))});
+ if(o.teman)s+=o.teman;
+ const kd=o.kedip||0;
+ s+=A.bungkusMie(PACK.x,PACK.y,PACK.s,T,{bc:{kedip:kd>0,angka:null}});
+ if(o.atas)s+=o.atas;
+ const sn=o.sinar??(1-lin(T,1.6,2.0));
+ const sc=o.scanner||{x:132,y:985,rot:15};
+ s+=A.scannerGenggam(sc.x,sc.y,.9,sc.rot,T,{tangan:1,sinar:sn,nyala:sn,panjang:420});
+ return s}
+function setHook(T){const u=T-B1;
+ let atas=tanya(BCX-150,BCY-170,.75,T,lin(T,kKira-.1,kKira+.25))+tanya(BCX+150,BCY-150,.6,T,lin(T,kKira+.25,kKira+.55));
+ atas+=A.capSilang(BCX,BCY,.62,lin(T,kBukan-.06,kBukan+.22));
+ let s=setKasir(T,{kedip:T>kGaris-.1?1:0,atas});
+ const dz=ioS(lin(T,kSelama-.1,kGaris+.2)),z=lerp(1.0+.05*lin(u,0,1.3),2.55,dz)+.12*lin(T,kGaris+.2,B2+.3),cx=lerp(540-u*30,BCX,dz),cy=lerp(960,BCY+40,dz);
+ return latar('#FCEBD5')+kamera(svgW(1080,1920,s),1080,cx,cy,z)}
+
+// ===== S2 CLOSE-UP BARCODE → garis meleleh jadi kartu NOMOR → kartu terbang ke komputer TOKO (kamera menyapu ke kanan)
+const kCuma=KI(18).m,kNomor=KI(20).m,kHarganya=KI(22).m,kKomputer=KI(25).m,kToko=KI(26).m,B3=cel(27);
+const KOMP={x:1600,y:952,s:.85},LEM={x:2070,y:1016,s:.62};
+function kartuRow(T,i,n,yy,sp){return [540+(i-(n-1)/2)*sp,yy]}
+function setNomor(T){const u=T-B2;
+ let s=`<rect x="-400" y="-400" width="3400" height="2720" fill="#FFF4E6"/><rect x="-400" y="1250" width="3400" height="900" fill="#EED3B0"/><rect x="-400" y="1250" width="3400" height="16" fill="#D9BC95"/>`;
+ for(let i=0;i<6;i++)s+=`<path d="M${1300+i*260} -100 L${1420+i*260} -100 L${1600+i*260} 1250 L${1440+i*260} 1250Z" fill="#FFFFFF" opacity=".25"/>`;
+ // potongan bungkus raksasa (kiri)
+ s+=`<rect x="20" y="520" width="1040" height="800" rx="50" fill="#000" opacity=".1" transform="translate(14 18)"/><rect x="20" y="520" width="1040" height="800" rx="50" fill="#FFFFFF"/><path d="M20 600 Q300 540 1060 590 L1060 660 Q300 610 20 670Z" fill="${M}"/>`;
+ const lel=halus(lin(T,kCuma-.1,kCuma+.6));
+ s+=`<g opacity="${(1-halus(lin(lel,.45,1))).toFixed(3)}">`+A.barcodeFiktif(150,730,760,320,{pola:POLA,t:T,angka:ANGKA,leleh:lel})+'</g>';
+ // kartu nomor muncul dari garis, menyala di "nomor", lalu berkumpul & terbang ke komputer
+ const kumpul=halus(lin(T,kKomputer-.35,kKomputer+.05)),terbang=lin(T,kKomputer-.1,kToko+.2);
+ const d=ANGKA.split('');
+ if(terbang<=0)d.forEach((c,i)=>{const k=lin(T,kCuma+.15+i*.04,kCuma+.45+i*.04);if(k<=0)return;
+  const [x0,y0]=kartuRow(T,i,13,760,66);const x=lerp(x0,540,kumpul),y=lerp(y0,760,kumpul)-(1-halus(k))*-160;
+  const gl=Math.max(0,1-Math.abs(T-(kNomor+i*.05))/.3);s+=A.kartuNomor(x,y,.66+.14*kumpul,c,{k,glow:gl,rot:(i%2?3:-3)*(1-kumpul)})});
+ if(terbang>0){const e=ioS(terbang),x=lerp(540,KOMP.x,e),y=lerp(760,KOMP.y-120,e)-Math.sin(Math.PI*e)*260;
+  s+=A.kartuNomor(x,y,.8*(1-.6*halus(lin(terbang,.75,1))),'8',{k:1-halus(lin(terbang,.85,1)),rot:-20+40*e})+A.pesawatKertas(x-70,y+20,.6,-15,1-terbang)}
+ s+=A.lemariDaftar(LEM.x,LEM.y,LEM.s,T,{});
+ s+=A.komputerToko(KOMP.x,KOMP.y,KOMP.s,T,{senang:halus(lin(T,kToko,kToko+.3))});
+ const pn=ioS(lin(T,kKomputer-.25,kToko+.1)),cx=lerp(540+u*20,1830,pn),z=1.0+.04*lin(u,0,4);
+ return latar('#FFF4E6')+kamera(svgW(3000,1920,s),3000,cx,960,z)}
+
+// ===== S3 MENYELAM KE DALAM GARIS — tembok hitam + celah putih; sinar menyapu: hitam NELAN, putih MANTUL; pita panjang-pendek → ANGKA
+const kSkener=KI(31).m,kSinar=KI(34).m,kNelan=KI(37).m,kMantul=KI(41).m,kPantul=KI(42).m,kAngka=KI(46).m,B4=cel(47);
+const MOD=65,LEBAR=[1,1,1,2,1,1,1,1,1,1,4,1,1,4,1,1,2,1,1,2,3,1,1,1,2,1,1],EL=[];{let x=0;LEBAR.forEach((w,i)=>{EL.push({x,w:w*MOD,h:i%2===0});x+=w*MOD})}
+const T0S=14.2,X0=390,VS=260,TOP3=420,BOT3=1150,SPY=785;
+const spotX=T=>X0+VS*Math.max(0,Math.min(T,B4+.5)-T0S);
+function setDalam(T){const u=T-B3;
+ const dv=ioS(lin(T,B3,kSkener+.05)),sx=spotX(T);
+ const cx=lerp(1267,sx,dv),z=lerp(.3,1,dv)*(1+.04*lin(T,kSkener,kSinar+.3));
+ let s=`<rect x="-3000" y="-3000" width="9000" height="8000" fill="${M}"/><rect x="-3000" y="560" width="9000" height="200" fill="${MT}" opacity=".5"/><rect x="-260" y="250" width="3060" height="1180" rx="60" fill="#FFFFFF"/>`;
+ for(let i=0;i<9;i++)s+=`<rect x="-260" y="${290+i*130}" width="3060" height="3" fill="#F2ECE6"/>`;
+ EL.forEach(e=>{if(e.h)s+=`<rect x="${e.x}" y="${TOP3}" width="${e.w}" height="${BOT3-TOP3}" fill="${HT}"/><rect x="${e.x}" y="${TOP3}" width="${Math.min(14,e.w*.2)}" height="${BOT3-TOP3}" fill="#3A3C48"/>`});
+ // pita panjang-pendek (on-off) di bawah tembok
+ const pa=1-halus(lin(T,kAngka-.1,kAngka+.35));
+ if(T>T0S&&pa>0){let p='';EL.forEach(e=>{if(e.x>=sx)return;const x1=Math.min(e.x+e.w,sx);if(x1<=X0)return;const xa=Math.max(e.x,X0);
+  if(!e.h)p+=`<rect x="${xa}" y="1196" width="${x1-xa}" height="76" rx="8" fill="${M}" opacity="${(.85+.15*Math.sin(T*10+e.x)).toFixed(3)}"/>`;else p+=`<rect x="${xa}" y="1258" width="${x1-xa}" height="14" fill="${HT}"/>`});
+  s+=`<g opacity="${pa.toFixed(3)}"><rect x="${X0-20}" y="1184" width="${Math.max(0,sx-X0+40)}" height="100" rx="14" fill="#FFF1EC"/>${p}</g>`}
+ const isi=svgW(3000,1920,s);
+ // lapisan layar: kepala scanner, sinar, titik sorot
+ let L='';const hd=halus(lin(T,kSkener-.15,kSkener+.4)),bn=halus(lin(T,kSinar-.5,kSinar-.1));
+ if(hd>0){const hy=lerp(-140,300,hd);
+  if(bn>0){const sy=960+(SPY-960)*z,el=EL.find(e=>sx>=e.x&&sx<e.x+e.w)||{h:false},hitam=el.h;
+   L+=`<path d="M520 ${hy+40} L560 ${hy+40} L${560+20} ${sy} L${520-20} ${sy}Z" fill="#FF3B3B" opacity="${(.28*bn).toFixed(3)}"/><line x1="540" y1="${hy+40}" x2="540" y2="${sy}" stroke="#FF4A4A" stroke-width="8" opacity="${bn.toFixed(3)}"/>`;
+   if(hitam){L+=`<circle cx="540" cy="${sy}" r="20" fill="#7A0A10" opacity="${bn.toFixed(3)}"/>`;for(let i=0;i<3;i++){const q=(T*1.8+i/3)%1;L+=`<circle cx="540" cy="${sy}" r="${(110*(1-q)+16).toFixed(1)}" fill="none" stroke="#FF6B6B" stroke-width="7" opacity="${(bn*q*.8).toFixed(3)}"/>`}}
+   else{L+=`<circle cx="540" cy="${sy}" r="46" fill="#FFFFFF" opacity="${bn.toFixed(3)}"/><circle cx="540" cy="${sy}" r="${(70+18*Math.sin(T*14)).toFixed(1)}" fill="#FFF7C8" opacity="${(.55*bn).toFixed(3)}"/>`;
+    for(let i=0;i<4;i++){const ang=-Math.PI/2+(i-1.5)*.5,r=80+30*((T*3+i*.25)%1);L+=`<line x1="${(540+Math.cos(ang)*60).toFixed(1)}" y1="${(sy+Math.sin(ang)*60).toFixed(1)}" x2="${(540+Math.cos(ang)*r*1.6).toFixed(1)}" y2="${(sy+Math.sin(ang)*r*1.6).toFixed(1)}" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="${(.9*bn).toFixed(3)}"/>`}
+    for(let i=0;i<3;i++){const q=(T*1.6+i/3)%1,yy=lerp(sy-60,hy+70,q);L+=`<path d="M516 ${(yy+18).toFixed(1)} L540 ${yy.toFixed(1)} L564 ${(yy+18).toFixed(1)}" stroke="#FFFFFF" stroke-width="9" fill="none" stroke-linecap="round" opacity="${(bn*Math.sin(Math.PI*q)).toFixed(3)}"/>`}}}
+  L+=`<g transform="translate(540 ${hy.toFixed(1)})"><rect x="-170" y="-60" width="340" height="100" rx="30" fill="#4E5361"/><rect x="-150" y="-50" width="300" height="20" rx="10" fill="#7D8392" opacity=".7"/><rect x="-60" y="24" width="120" height="22" rx="10" fill="${bn>0?'#FF4D4D':MT}"/></g>`}
+ // pita melipat jadi deret ANGKA
+ const ak=lin(T,kAngka-.05,kAngka+.5);
+ if(ak>0)ANGKA.split('').forEach((c,i)=>{const k=lin(ak,i*.04,i*.04+.5);L+=A.kartuNomor(540+(i-6)*56,1236-(1-halus(k))*40,.5,c,{k,glow:Math.max(0,1-Math.abs(T-(kAngka+.3+i*.05))/.25)})});
+ return latar(M)+kamera(isi,3000,cx,960,z)+svgW(1080,1920,L)}
+
+// ===== S4 GAG KTP — bungkus mie mengangkat KTP kartun (fiktif); gelembung "gaji" dicoret; Tebe kecil kiri bawah menunjuk lalu tertawa
+const kMirip=KI(49).m,kKtp=KI(50).m,kNomornya=KI(52).m,kGaji=KI(54).m,kNggak=KI(55).m,kSitu=KI(58).m,B5=cel(59);
+const AT4=tebeAnimasi([{t:0,pose:'penasaran'},{t:kKtp+.5,pose:'menjelaskan',transisi:.3},{t:kSitu-.3,pose:'tertawa',transisi:.3}],{benih:4});
+function setKtp(T){const u=T-B4;
+ let s=duniaPutih(T,{id:4,sy:900});
+ const lg=halus(lin(T,kMirip-.3,kKtp+.2));
+ s+=A.bungkusMie(520,960,1.1,T,{rot:-4,wajah:{k:1,x:20,senyum:T>kSitu-.4?1.6:.8},lengan:lg,bc:{}});
+ s+=A.ktpBarang(lerp(700,790,lg),lerp(980,700,lg),.95,{k:lg,rot:8,glow:Math.max(0,1-Math.abs(T-(kNomornya+.2))/.5)});
+ s+=A.gelembungPikir(290,600,1.1,`<g transform="translate(0 -10)">${A.kantongUang(1.2)}</g>`,{k:lin(T,kGaji-.2,kGaji+.25),ekorX:150});
+ s+=A.capSilang(360,660,.26,lin(T,kNggak-.05,kNggak+.25));
+ const tbA=halus(lin(T,kMirip+.3,kKtp+.4)),tb=AT4(T);
+ const z=1.0+.05*ioS(lin(u,0,5.6)),cx=540+u*14;
+ return latar('#FFF1EC')+kamera(svgW(1080,1920,s),1080,cx,980,z)+(tbA>0?`<div class="abs" style="left:80px;top:${(1120+(1-tbA)*420+Math.sin(T*2)*3).toFixed(1)}px">${KS.tebe(tb,262)}</div>`:'')}
+
+// ===== S5 KOMPUTER NYARI DI DAFTAR — kartu nomor masuk komputer, lemari dicari, laci cocok terbuka, nama + HARGA melayang ke layar kasir
+const kKomp2=KI(59).m,kNyari=KI(61).m,kDaftar=KI(65).m,kMuncul2=KI(66).m,kNama=KI(67).m,kHarga2=KI(69).m,B6=cel(70);
+const K5={x:330,y:988,s:.75},L5={x:770,y:1038,s:.56},LACI=7;
+function setCari(T){const u=T-B5;
+ let s=`<rect x="-400" y="-400" width="1880" height="2720" fill="#FFF4E6"/><rect x="-400" y="1250" width="1880" height="900" fill="#EED3B0"/><rect x="-400" y="1250" width="1880" height="16" fill="#D9BC95"/><rect x="-400" y="250" width="1880" height="30" fill="${M}" opacity=".85"/>`;
+ for(let i=0;i<4;i++)s+=`<path d="M${i*320-100} -100 L${i*320+20} -100 L${i*320+200} 1250 L${i*320+40} 1250Z" fill="#FFFFFF" opacity=".25"/>`;
+ const cr=lin(T,kNyari-.1,kDaftar);const cari=cr>0&&cr<1?Math.floor(cr*(LACI+12)):null;
+ const bk=lin(T,kDaftar-.05,kDaftar+.45);
+ s+=A.lemariDaftar(L5.x,L5.y,L5.s,T,{cari:cari!=null?(cari%18):null,buka:{i:LACI,k:bk},sorot:{i:LACI,k:bk}});
+ s+=A.komputerToko(K5.x,K5.y,K5.s,T,{cari:cr>0&&cr<1?1:0,senang:halus(lin(T,kHarga2-.2,kHarga2+.2))});
+ // kartu nomor masuk komputer
+ const km=lin(T,B5-.2,kKomp2+.35);if(km<1)s+=A.kartuNomor(lerp(-120,K5.x,ioS(km)),lerp(760,K5.y-80,ioS(km)),.7*(1-.5*halus(lin(km,.7,1))),'8',{k:1-halus(lin(km,.85,1)),rot:-14});
+ // garis sambung komputer → lemari saat mencari
+ if(cr>0)s+=`<path d="M${K5.x+180} ${K5.y-60} Q${(K5.x+L5.x)/2} ${K5.y-260} ${L5.x-120} ${L5.y-200}" stroke="#FFC93C" stroke-width="10" fill="none" stroke-dasharray="22 18" stroke-dashoffset="${(-T*120).toFixed(1)}" opacity="${(.9*(1-lin(T,kHarga2,kHarga2+.4))).toFixed(3)}"/>`;
+ // nama + harga melayang dari laci ke layar kasir
+ const [lx,ly]=A.posLaci(L5.x,L5.y,L5.s,LACI);
+ const nm=lin(T,kMuncul2-.1,kNama+.3),hg=lin(T,kNama+.1,kHarga2+.1);
+ const lay=A.layarKasir(540,520,.62,T,{harga:'3.500',k:halus(lin(T,kHarga2-.05,kHarga2+.25)),nama:halus(lin(T,kNama+.1,kNama+.4))});
+ s+=`<g opacity="${halus(lin(T,kMuncul2-.4,kMuncul2)).toFixed(3)}">${lay}</g>`;
+ if(nm>0&&nm<1){const e=ioS(nm);s+=`<rect x="${(lerp(lx,470,e)-70).toFixed(1)}" y="${lerp(ly,470,e).toFixed(1)}" width="140" height="22" rx="11" fill="#7FB9C0" opacity="${(1-halus(lin(nm,.8,1))).toFixed(3)}"/>`}
+ if(hg>0&&hg<1){const e=ioS(hg),x=lerp(lx,540,e),y=lerp(ly,560,e)-Math.sin(Math.PI*e)*120;s+=`<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${(-12+12*e).toFixed(1)})" opacity="${(1-halus(lin(hg,.8,1))).toFixed(3)}"><path d="M-70 -40 L50 -40 L86 0 L50 40 L-70 40Z" fill="#FFC93C"/><circle cx="52" cy="0" r="10" fill="#FFF4DC"/><rect x="-54" y="-10" width="80" height="20" rx="10" fill="${M}"/></g>`}
+ const z=1.0+.06*ioS(lin(u,0,4.6)),cx=540+u*12,cy=960-u*10;
+ return latar('#FFF4E6')+kamera(svgW(1080,1920,s),1080,cx,cy,z)}
+
+// ===== S6 DISKON — ledakan diskon (tanpa tulisan), barcode tetap tenang; harga diganti di daftar; layar kasir IKUT berganti BERURUTAN
+const kMakanya=KI(70).m,kDiskon=KI(72).m,kBarkodnya=KI(73).m,kHargaC=KI(77).m,kDiganti2=KI(79).m,kToko2=KI(82).m,kKasirnya=KI(83).m,kIkut=KI(84).m,B7=cel(85);
+function setDiskon(T){const u=T-B6;
+ let s=duniaPutih(T,{id:6,sy:600});
+ s+=A.ledakanDiskon(840,620,.7,T,lin(T,kMakanya,kDiskon+.1));
+ const fl=lin(T,kDiganti2-.05,kDiganti2+.4);
+ s+=A.labelGanti(500,560,.88,T,{lama:'3.500',baru:'2.900',flip:fl,rot:-3});
+ // pensil kartun mengganti angka
+ const ps=halus(lin(T,kHargaC-.3,kHargaC+.2))*(1-halus(lin(T,kToko2-.1,kToko2+.3)));
+ if(ps>0){const wob=Math.sin(T*16)*10*fl*(1-fl)*4;s+=`<g transform="translate(${(640+wob).toFixed(1)} ${(640-(1-ps)*300).toFixed(1)}) rotate(35)" opacity="${ps.toFixed(3)}"><rect x="-18" y="-170" width="36" height="170" fill="#FFC93C"/><rect x="-18" y="-190" width="36" height="24" fill="#F58A7A"/><path d="M-18 0 L18 0 L0 40Z" fill="#F3D9B5"/><path d="M-6 26 L6 26 L0 40Z" fill="${HT}"/></g>`}
+ // bungkus tenang: barcode tetap sama
+ s+=A.bungkusMie(300,1060,.8,T,{wajah:{k:halus(lin(T,kBarkodnya-.2,kBarkodnya+.2)),x:20,senyum:.6},bc:{}});
+ const ck=halus(lin(T,kBarkodnya+.4,kBarkodnya+.8));if(ck>0)s+=`<g transform="translate(470 1000) scale(${(.6+.4*ck).toFixed(3)})" opacity="${ck.toFixed(3)}"><circle r="40" fill="#1F8A8A"/><path d="M-18 0 L-4 14 L20 -12" stroke="#FFF" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+ // dua layar kasir berganti berurutan
+ const f1=lin(T,kKasirnya-.05,kKasirnya+.3),f2=lin(T,kIkut-.05,kIkut+.3);
+ s+=A.layarKasir(790,820,.5,T,{harga:'3.500',hargaBaru:'2.900',flip:f1});
+ s+=A.layarKasir(790,1080,.5,T,{harga:'3.500',hargaBaru:'2.900',flip:f2});
+ const dt=(t0,yy)=>{const q=lin(T,t0-.45,t0);if(q<=0||q>=1)return '';const x=lerp(640,690,q),y=lerp(620,yy,ioS(q));return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="16" fill="${M}"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="30" fill="${M}" opacity=".25"/>`};
+ s+=dt(kKasirnya,800)+dt(kIkut,1060);
+ const z=1.0+.05*ioS(lin(u,0,6)),cx=540+u*10;
+ return latar('#FFF1EC')+kamera(svgW(1080,1920,s),1080,cx,960+u*6,z)}
+
+// ===== S7 LACI 899 — laci "899" keluar & menyala; ujung bendera dicoret dan tenggelam; label "GS1 INDONESIA" (kode); Tebe kaget, jambul ? → !
+const kTerus=KI(85).m,kAwalan=KI(86).m,k899=KI(87).m,kBukan2=KI(91).m,kBuatan=KI(93).m,kArtinya=KI(95).m,kAwalannya=KI(96).m,kGS1=KI(98).m,kIndo2=KI(101).m,B8=cel(102);
+const L7={x:540,y:1000,s:1},LACI7=7;
+const AT7=tebeAnimasi([{t:0,pose:'penasaran'},{t:kGS1-.3,pose:'kaget',transisi:.25},{t:kIndo2-.3,pose:'kaget',tanda:'!'}],{benih:7});
+function setLaci(T){const u=T-B7;
+ let s=`<rect x="-400" y="-400" width="1880" height="2720" fill="#FFF4E6"/><rect x="-400" y="1378" width="1880" height="900" fill="#EED3B0"/>`;
+ for(let i=0;i<5;i++)s+=`<path d="M${i*300-200} -100 L${i*300-60} -100 L${i*300+160} 1378 L${i*300} 1378Z" fill="#FFFFFF" opacity=".3"/>`;
+ const bk=lin(T,k899-.3,k899+.25),so=lin(T,k899-.2,k899+.2)*(1-.5*lin(T,kArtinya,kArtinya+.5));
+ s+=A.lemariDaftar(L7.x,L7.y,L7.s,T,{buka:{i:LACI7,k:bk},sorot:{i:LACI7,k:so},label:{i:LACI7,teks:'899'}});
+ const [lx,ly]=A.posLaci(L7.x,L7.y,L7.s,LACI7),fy=ly+70-54*1.35; // tepi atas laci terbuka
+ // ujung bendera mengintip (tidak tampil penuh), dicoret, lalu tenggelam
+ const bn=halus(lin(T,KI(89).m,KI(90).m+.1))*(1-halus(lin(T,kBukan2+.25,kBuatan+.4)));
+ if(bn>0){const h=46*bn;s+=`<defs><clipPath id="cb7"><rect x="${lx-160}" y="${fy-120}" width="320" height="120"/></clipPath></defs><g clip-path="url(#cb7)"><g transform="translate(${lx-40} ${(fy+60-h-40).toFixed(1)})"><rect x="-4" y="0" width="8" height="140" fill="#9A7A5A"/><rect x="4" y="2" width="96" height="30" fill="${M}"/><rect x="4" y="32" width="96" height="30" fill="#FFFFFF"/></g></g>`;
+  s+=A.capSilang(lx+10,fy-30,.24,lin(T,kBukan2-.05,kBukan2+.2)*bn)}
+ // label GS1 INDONESIA menempel di laci (teks lewat kode, tanpa logo)
+ const gl=lin(T,kAwalannya-.1,kAwalannya+.3);
+ if(gl>0){const e=halus(gl);s+=`<g transform="translate(${lx} ${(ly+130).toFixed(1)}) rotate(${(-4*e).toFixed(1)}) scale(${(.6+.4*e).toFixed(3)})" opacity="${Math.min(1,gl*2).toFixed(3)}"><rect x="-215" y="-44" width="430" height="88" rx="16" fill="#000" opacity=".18" transform="translate(8 10)"/><rect x="-215" y="-44" width="430" height="88" rx="16" fill="#FFFFFF"/><rect x="-215" y="-44" width="22" height="88" rx="8" fill="${M}"/><text x="12" y="17" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="50" fill="${HT}">GS1 INDONESIA</text></g>`}
+ const tbA=halus(lin(T,kBuatan,kArtinya+.1)),tb=AT7(T);
+ const tebe=tbA>0?`<div class="abs" style="left:${(lx+40).toFixed(0)}px;top:${(fy-262+(1-tbA)*60).toFixed(1)}px;opacity:${tbA.toFixed(3)}">${KS.tebe(tb,206)}</div>`:'';
+ const z=lerp(.94,1.2,ioS(lin(T,B7,kGS1)))+.03*lin(T,kGS1,B8),cy=lerp(980,900,ioS(lin(T,B7,kGS1))),cx=540+Math.sin(u*.7)*20+u*8;
+ return latar('#FFF4E6')+kamera(svgW(1080,1920,s)+tebe,1080,cx,cy,z)}
+
+// ===== S8 PETA — laci terbuka jadi peta dunia datar; pabrik kecil bertempel barcode berkedip di banyak titik "di MANA aja"
+const kPabrik=KI(102).m,kMana=KI(105).m,B9=cel(107);
+function setPeta(T){const u=T-B8;
+ let s=`<rect x="-400" y="-400" width="1880" height="2720" fill="#8F0E17"/><rect x="40" y="560" width="1000" height="720" rx="40" fill="${MT}"/><rect x="60" y="580" width="960" height="680" rx="30" fill="#C9B89E"/>`;
+ s+=A.petaDunia(540,920,.72,T,{pabrik:lin(T,B8-.1,kMana+.3)});
+ const z=1.0+.06*ioS(lin(u,0,1.9)),cx=540+u*30;
+ return latar('#8F0E17')+kamera(svgW(1080,1920,s),1080,cx,960,z)}
+
+// ===== S9 KUBU — kembali ke meja kasir (buram): kartu SAMA / SUHU masuk bersama kata
+const kDulu=KI(107).m,kSama=KI(111).m,kSuhu=KI(115).m,B10=cel(116);
+function setKubu(T){const u=T-B9;
+ const bg=A.mejaKasirSiang(1080,1920,T,{meja:1180});
+ let s='';
+ const ikSama=`<g><path d="M-100 -60 h110 a20 20 0 0 1 20 20 v50 a20 20 0 0 1 -20 20 h-60 l-24 26 v-26 h-26 a20 20 0 0 1 -20 -20 v-50 a20 20 0 0 1 20 -20z" fill="#FFF4DC"/><text x="-45" y="2" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="60" fill="${M}">!</text><path d="M-10 -10 h110 a20 20 0 0 1 20 20 v50 a20 20 0 0 1 -20 20 h-26 v26 l-24 -26 h-60 a20 20 0 0 1 -20 -20 v-50 a20 20 0 0 1 20 -20z" fill="#FFFFFF"/><text x="45" y="52" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="60" fill="${M}">!</text></g>`;
+ const ikSuhu=`<g transform="translate(0 10)"><path d="M-90 40 L-100 -50 L-50 -10 L0 -70 L50 -10 L100 -50 L90 40Z" fill="#FFC93C"/><rect x="-90" y="40" width="180" height="30" rx="8" fill="#E5A91A"/><circle cx="0" cy="-74" r="12" fill="#FFF4DC"/></g>`;
+ s+=A.kartuKubu(290,760,.82,'SAMA',ikSama,{k:halus(lin(T,kSama-.15,kSama+.3)),rot:-6,warna:M});
+ s+=A.kartuKubu(760,760,.82,'SUHU',ikSuhu,{k:halus(lin(T,kSuhu-.15,kSuhu+.3)),rot:6,warna:'#1F8A8A'});
+ s+=A.bungkusMie(540,1110,.62,T,{wajah:{k:1,x:20,senyum:1.2},bc:{}});
+ s+=tanya(540,520,.7,T,lin(T,kDulu-.1,kDulu+.3)*(1-lin(T,kSama-.3,kSama)));
+ const z=1.0+.04*u/3.8;
+ return latar('#FCEBD5')+kamera(svgW(1080,1920,bg,'filter:blur(8px)'),1080,540+u*14,960,1.05)+kamera(svgW(1080,1920,s),1080,540,960+Math.sin(u*.9)*6,z)}
+
+// ===== S10 KIRIM — HP generik mengirim ke teman kasir (tanpa wajah); "Dia pasti hafal bunyi ini..." tangan mengangkat scanner, kamera mendorong ke barcode → sampul
+const kKirim=KI(116).m,kTeman=KI(118).m,kKasir3=KI(122).m,kDia=KI(123).m,kBunyi=KI(126).m,B11=AKHIR-.55;
+function setKirim(T){const u=T-B10;
+ const tk=halus(lin(T,kTeman,kKasir3));
+ const teman=A.orangKasir(800,1005,.72,T,{k:tk});
+ const nk=halus(lin(T,kDia-.2,kDia+.5));
+ const sc={x:lerp(-60,132,nk),y:lerp(1400,985,nk),rot:lerp(40,15,nk)};
+ let s=setKasir(T,{tanpaLayar:1,teman,sinar:0,scanner:sc});
+ const zm=ioS(lin(T,kDia+.2,B11+.45)),z=lerp(1.0+.03*u,3.2,zm),cx=lerp(540+u*20,BCX,zm),cy=lerp(960,BCY+20,zm);
+ let ov='';const hp=halus(lin(T,kKirim-.2,kKirim+.2))*(1-halus(lin(T,kKasir3+.1,kDia+.1)));
+ if(hp>0){ov+=`<g opacity="${hp.toFixed(3)}" transform="translate(0 ${((1-hp)*120).toFixed(1)})">${A.hpPolos(420,720,.78,T,{kirim:lin(T,kKirim+.2,kKirim+.7),rot:-6})}</g>`;
+  const pw=lin(T,kKirim+.5,kKasir3);if(pw>0&&pw<1){const x=lerp(520,770,pw),y=lerp(860,860,pw)-Math.sin(Math.PI*pw)*240;ov+=A.pesawatKertas(x,y,1.1,-18+30*pw,1-.5*halus(lin(pw,.8,1)))}}
+ return latar('#FCEBD5')+kamera(svgW(1080,1920,s),1080,cx,cy,z)+svgW(1080,1920,ov)}
+
+// ---------- komposisi ----------
+const BABAK=[{a:0,f:setSampul},{a:B1,f:setHook,tr:'dorong',d:.5},{a:B2,f:setNomor,tr:'dorong',d:.5},{a:B3,f:setDalam,tr:'dorong',d:.5},{a:B4,f:setKtp,tr:'geser',d:.5},
+ {a:B5,f:setCari,tr:'geser',d:.5},{a:B6,f:setDiskon,tr:'dorong',d:.5},{a:B7,f:setLaci,tr:'geser',d:.5},{a:B8,f:setPeta,tr:'dorong',d:.5},
+ {a:B9,f:setKubu,tr:'geser',d:.5},{a:B10,f:setKirim,tr:'dorong',d:.5},{a:B11,f:setSampulAkhir,tr:'dorong',d:.6}];
+function posSub(T){if(T<B4)return 1330;if(T<B5)return 290;return 1330}
+function teksBesar(T){return cap('CUMA NOMOR PRODUK',T,kCuma,kKomputer-.1,{y:300,uk:70})+cap('KOK BISA?',T,KI(27).m,kSkener-.15,{y:300,uk:84,rot:2})
+ +cap('KTP-NYA BARANG',T,kKtp,kGaji-.3,{y:430,uk:70,rot:2})+cap('DISKON? BARCODE TETAP',T,kBarkodnya,B7-.15,{y:290,uk:58})
+ +cap('899 BUKAN TANDA<br>BUATAN INDONESIA',T,kBukan2-.05,kGS1,{y:280,uk:58,rot:-2})}
+window.EFEK=[{t:.33,sfx:'bip',vol:.32},{t:kBukan-.04,sfx:'cap',vol:.5},{t:B3-.15,sfx:'whoosh',vol:.35},{t:kHarga2-.03,sfx:'ding',vol:.35},{t:kKasirnya+.1,sfx:'klik',vol:.4},{t:kIndo2-.28,sfx:'boing',vol:.35}];
+
+window.render=function(T){
+ let h=KS.komposisi(T,BABAK);
+ h+=KS.vinyet(T,.22);
+ const isi=T>1.3&&T<D()-.85;
+ let lap='';
+ if(isi){lap+=teksBesar(T)+KS.teksLayar(T,GRUP,{y:posSub(T)});}
+ lap+=KS.watermark(T,(T>1.6&&T<B11-.3)?1:0);
+ lap+=KS.logoYT(T,D()-1.05,D()-.05,{y:1420,x:660,uk:40});
+ h+=`<div class="abs" style="inset:0">${lap}</div>`;
+ document.getElementById('V').innerHTML=h;
+};
+window.render(0);
+</script></body></html>
