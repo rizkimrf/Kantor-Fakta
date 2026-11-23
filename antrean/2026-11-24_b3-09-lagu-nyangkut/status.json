@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "cek_fakta",
   "topik": "b3-09 lagu nyangkut",
   "seri": "B",
   "dibuat": "2026-11-24T05:42",
@@ -22,6 +22,12 @@
       "oleh": "Nadia",
       "waktu": "2026-11-23",
       "hasil": "naskah.json (seri fakta) + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; baris Nadia di lembar_tim.md. Mengikuti KEPUTUSAN RAPAT Pak Bima: hook #20 senandung orisinal + #14 '(senandung di bawah) Lagu nyangkut di kepalamu, MUTER terus dari bangun tidur. Kamu nggak lagi dengerin APA-APA.' (kata kunci kata pertama, 0,0-1,0 dtk; bukan teka-teki 'siapa'). Senandung tidak menunda narasi (catatan Pak Bima): di bawah kalimat 1 -18 dB, naik ±0,4 dtk di sela napas, motif sama di akhir. Kejutan 'Survei di Finlandia: sekitar sembilan dari sepuluh orang... minimal SEMINGGU sekali' selesai ±12,9 dtk; open loop permen karet dtk 16 -> 'satu studi menemukan... Bukan jurus pasti, ya' dtk 32-45; 2 canda (DJ tanpa request, lagunya keseret); penutup komen JUDUL + share 'teman yang lagunya NGGAK pernah ganti' + loop meta 'Awas, senandung tadi bisa ikut nyangkut.' Judul 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele' (57; 'Seharian' dibuang, Raka memutuskan), sampul 'KOK MUTER TERUS?' jingga-krem. 8 adegan, 127 kata, ±55 dtk, 1 angka, 0 klip, Tebe di adegan 1, 2, 7, 8. Tanpa judul/lirik lagu nyata, saran medis, Kellaris/Zeigarnik. Skor naskah 8/9, viral 8/10. Terkait B3-04 suara rekaman. Jadwal usulan Rab 25 Nov 19.45."
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "hasil": "0 butir WAJIB narasi; judul final = 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele' (57, tanpa 'Seharian'); kata kunci terucap 0,0-1,0 dtk; caption TikTok (147) & IG tanpa ajakan pindah platform; 1 koreksi kecil komentar tersemat ('santai' -> 'netral') di unggah.json & paket_unggah.md; 4 saran opsional di cek_seo.md",
+      "tanggal": "2026-11-23"
     }
   ],
   "masalah": null,

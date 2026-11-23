@@ -5,10 +5,10 @@ Judul, sampul, caption, dan komentar tersemat tidak menyebut judul/lirik lagu ny
 
 ## YouTube Shorts
 Judul (57 huruf): Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele
-Opsi untuk Raka (cek_seo): "Kenapa Lagu Nyangkut di Kepala Seharian? Pemicunya Sepele" (58, judul kerja Raka; "seharian" kubuang karena riset tanpa data durasi) · "Lagu Nyangkut di Kepala? Ini Bukan Error, Ini Normal" (52).
+KEPUTUSAN FINAL Raka (cek_seo, 23 Nov): judul utama di atas dipakai. Opsi lain ditolak: "Kenapa Lagu Nyangkut di Kepala Seharian? Pemicunya Sepele" (58, judul kerja Raka; "seharian" kubuang karena riset tanpa data durasi) · "Lagu Nyangkut di Kepala? Ini Bukan Error, Ini Normal" (52).
 Deskripsi + sumber (7 URL dari riset.md) + 3 hashtag (#Shorts #LaguNyangkut #FaktaSains): sama dengan `unggah.json`.
 Tag: lagu nyangkut di kepala, lagu terngiang-ngiang di kepala, kenapa lagu muter terus di kepala, earworm, lagu nyantol di kepala, lagu nyangkut, kenapa lagu nyangkut di kepala, fakta unik, sains sehari-hari, ternyata begitu
-Komentar tersemat: Lagu apa yang lagi nyangkut di kepalamu sekarang? Tulis JUDULNYA aja, nanti kita lihat lagu mana yang paling banyak 'nyangkut' di sini. Bonus temuan survei: reaksi paling umum orang ke lagu nyangkut ternyata bukan kesal, tapi santai bahkan menikmati. Kalau suka hal-hal di kepala yang 'jalan sendiri', tonton juga Shorts 'Suara Sendiri di Rekaman Aneh? Temanmu Dengar yang Mirip' di channel ini.
+Komentar tersemat: Lagu apa yang lagi nyangkut di kepalamu sekarang? Tulis JUDULNYA aja, nanti kita lihat lagu mana yang paling banyak 'nyangkut' di sini. Bonus temuan survei: reaksi paling umum orang ke lagu nyangkut ternyata bukan kesal, tapi netral bahkan menikmati. Kalau suka hal-hal di kepala yang 'jalan sendiri', tonton juga Shorts 'Suara Sendiri di Rekaman Aneh? Temanmu Dengar yang Mirip' di channel ini.
 Video terkait: **B3-04 "Suara Sendiri di Rekaman Aneh? Temanmu Dengar yang Mirip"** (`youtube.terkait`, sudah tayang Sel 24 Nov 18.00).
 **Tugas manual (Raka/Bos):** `scripts/terbitkan.py` tidak membaca `komentar_tersemat` maupun `terkait` — pasang video terkait di YouTube Studio dan sematkan komentar MANUAL setelah tayang.
 
