@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "b-02 jari keriput",
   "seri": "B",
   "dibuat": "2026-11-22T05:43",
@@ -102,6 +102,13 @@
       "oleh": "Raka",
       "waktu": "2026-11-23T17:49+08:00",
       "hasil": "TikTok terkirim ke inbox (Bos tekan Posting + label AI); YouTube manual (audit belum lolos); Instagram GAGAL izin token -> manual"
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "oleh": "Bos (unggah manual, Kantor Visual)",
+      "waktu": "2026-11-24T05:45+08:00",
+      "hasil": "YouTube, TikTok, Instagram sudah tayang/terunggah"
     }
   ],
   "masalah": null,
@@ -114,16 +121,16 @@
   "thumb_url": "/_blob/737cb4789c5724c21c7a5ca220e66bb2",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "id": "manual",
+      "waktu": "2026-11-23T10:06:16.278Z"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7711301404104280085",
       "waktu": "2026-11-23T17:49+08:00"
     },
     "instagram": {
-      "gagal": 1,
-      "catatan": "token IG kurang izin halaman (pages_*) - unggah manual",
-      "error": "400 OAuthException izin pages_* belum diberikan"
+      "id": "manual",
+      "waktu": "2026-11-23T10:06:10.556Z"
     }
   }
 }

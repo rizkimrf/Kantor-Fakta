@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "b3-04 suara rekaman sendiri (pengganti b3-07 hujan panas, ditunda: syarat sumber lembaga tidak terpenuhi)",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -68,6 +68,13 @@
       "ke": "disetujui",
       "oleh": "Bos (Kantor Visual HP)",
       "waktu": "2026-11-23T12:49+08:00"
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "oleh": "Bos (unggah manual, Kantor Visual)",
+      "waktu": "2026-11-24T05:45+08:00",
+      "hasil": "YouTube, TikTok, Instagram sudah tayang/terunggah"
     }
   ],
   "masalah": null,
@@ -80,7 +87,8 @@
   "thumb_url": "/_blob/eb699353099d953b418e7e2eddf2255f",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "id": "manual",
+      "waktu": "2026-11-23T10:01:28.816Z"
     },
     "instagram": {
       "id": "manual",
