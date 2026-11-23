@@ -7,13 +7,11 @@ Sumber: rekomendasi YouTube untuk channel — tetap menonton 53–70% (target 75
 5. **Format gabungan** (`.claude/skills/naskah-viral/referensi/format-gabungan.md`): 13.00 = jalur A "Kok Bisa Jalan?" (≤90 dtk), 18.00 = jalur B fakta (≤60 dtk). Isi `seri` di status.json. Subtitle tetap gaya sekarang, posisi & ukuran disesuaikan per adegan agar tidak menutupi objek.
 Ukur tiap video: % tetap menonton, % rata-rata ditonton, share, komentar — bandingkan dengan video lama (68–89 dtk).
 
-# Evaluasi harian — 22 Nov 2026 sore (Supermetrics 7 hari; YouTube belum memuat Sambal/Rice cooker/Rem motor)
-TikTok: **Sambal (55 dtk) 2.849 views, tonton 36,6 dtk, selesai 10,8% (terbaik), komentar 6** · Rice cooker (77 dtk) 1.436, 28,5 dtk, selesai 4,1% · Rem motor (75 dtk, ±5 jam) 505, 30,7 dtk, selesai 3,9%, share 2.
-YouTube: Gunting 1.567 views/49% · durian 51% · micin 44% · Nama Indonesia tetap tertinggi 66% · subscriber +2–4 per video.
-Pola: video ≤ 55 dtk selesai 2–3x lebih banyak; jalur A 75–77 dtk tertahan di ±30 dtk. Pertanyaan pengalaman daerah ("sambal di daerahmu namanya apa?") memancing komentar terbanyak.
+# Evaluasi harian — 23 Nov 2026 sore (Supermetrics 7 hari)
+TikTok: **Suara rekaman (56 dtk, tayang hari ini) 1.539 views, selesai 13,8% (REKOR), tonton 33 dtk, komentar 5** · Sambal (55 dtk) 2.861, selesai 10,9% · Rem motor (75 dtk) 1.750, selesai 3,7% tapi **share 16** (pemicu "tag temanmu yang rem belakang doang").
+YouTube: Pedas 2.235 views/47% · Gunting 1.805/51% · Micin 1.467/44% · Toba 1.290/54% · Rice cooker 879/45% · Jari keriput, Rem motor, Sambal belum terbaca.
 
 ## 3 langkah untuk produksi besok
-1. **Jalur A juga ≤ 60 dtk** (bukan 75–90): pangkas ke 1 mekanisme inti, kejutan ≤ dtk 20.
-2. **Tutup dengan pertanyaan "di daerahmu/rumahmu ..."** yang jawabannya satu kata (pola Sambal) — catatan Bos 22 Nov: penutup wajib dekat keseharian (Jari keriput ditolak karena "sungai" tidak relate).
-3. **Hook teka-teki "siapa/apa" + tebak dulu** tetap dipakai (Nama Indonesia 66%, Sambal 10,8%); hindari banyak istilah teknis.
-Ukur besok: Rem motor & Sambal di YouTube (% ditonton > 55%?), Jari keriput versi revisi.
+1. **Pola Suara rekaman jadi acuan:** hook pertanyaan pribadi "pernah ngalamin" + tebak "siapa", ≤ 57 dtk, kejutan ≤ dtk 15.
+2. **Pemicu share = tag teman dengan kebiasaan tertentu** ("teman yang rem belakang doang" → share 16) + penutup 1 kata pilihan pengalaman.
+3. **Jalur A wajib ≤ 60 dtk** (Rem motor 75 dtk selesai 3,7%); besok Layar HP 58 dtk jadi uji — bandingkan % selesai dengan Rice cooker/Rem motor.

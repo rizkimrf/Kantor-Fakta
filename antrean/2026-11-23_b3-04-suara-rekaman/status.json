@@ -81,6 +81,15 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "instagram": {
+      "id": "manual",
+      "waktu": "2026-11-23T07:26:26.417Z"
+    },
+    "tiktok": {
+      "id": "manual",
+      "waktu": "2026-11-23",
+      "catatan": "sudah tayang di TikTok 23 Nov (terdeteksi Supermetrics, caption sama) - jangan diunggah ulang"
     }
   }
 }
