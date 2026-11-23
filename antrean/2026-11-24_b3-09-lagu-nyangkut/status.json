@@ -1,7 +1,10 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "b3-09 lagu nyangkut",
+  "seri": "B",
   "dibuat": "2026-11-24T05:42",
-  "riwayat": [],
+  "riwayat": [
+    {"tahap": "ide", "oleh": "Laras", "hasil": "riset.md selesai; skor Faktor Ternyata 8/10; 5 sumber akademik (Williamson 2012/2014, Liikkanen 2012, Jakubowski 2016, Beaman 2015); teks penuh belum bisa dibuka, angka dipakai bentuk bulat", "tanggal": "2026-11-23"}
+  ],
   "masalah": null
 }

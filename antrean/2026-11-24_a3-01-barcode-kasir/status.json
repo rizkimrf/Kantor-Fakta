@@ -1,7 +1,15 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
+  "seri": "A",
   "topik": "a3-01 barcode kasir",
   "dibuat": "2026-11-24T05:42",
-  "riwayat": [],
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "tanggal": "2026-11-23",
+      "hasil": "riset.md selesai; skor Faktor Ternyata 8/10; catatan: WebFetch ke gs1.org dkk diblokir jaringan, bukti dari hasil pencarian; kutip tanpa kata persis"
+    }
+  ],
   "masalah": null
 }
