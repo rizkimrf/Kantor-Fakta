@@ -28,6 +28,13 @@
       "tanggal": "2026-11-23",
       "hasil": "0 butir WAJIB narasi; judul final opsi 1; caption TikTok ditambah ajakan tag teman kasir (tanpa ajakan pindah platform); 4 saran. Lanjut cek_fakta (Pak Bima)."
     }
+    ,
+    {
+      "tahap": "cek_riset_naskah",
+      "oleh": "Laras",
+      "tanggal": "2026-11-23",
+      "hasil": "3 WAJIB: (1) adegan 5 'semua kasir ikut serentak' tanpa sumber -> hedge; (2) teks layar '899 ≠ BUATAN INDONESIA' ambigu -> '899 BUKAN TANDA BUATAN INDONESIA'; (3) komentar tersemat 'bukan jadi salah harga' -> 'ditolak, bukan nyasar ke barang lain'. + 5 saran; lihat cek_riset.md"
+    }
   ],
   "masalah": null
 }

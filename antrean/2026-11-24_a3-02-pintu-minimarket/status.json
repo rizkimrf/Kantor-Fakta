@@ -25,6 +25,12 @@
       "oleh": "Raka",
       "waktu": "2026-11-23",
       "hasil": "0 butir WAJIB narasi; judul final opsi 1 'Pintu Minimarket Kok Tahu Kamu Mau Masuk?' (41); sampul 'PINTU INI KOK TAHU?'; tag +2 di unggah.json; caption TikTok/IG lolos (tanpa ajakan pindah). Lanjut cek_fakta (Pak Bima)."
+    },
+    {
+      "tahap": "cek_riset_naskah",
+      "oleh": "Laras",
+      "waktu": "2026-11-23",
+      "hasil": "cek_riset.md: 1 WAJIB (caption IG 'dan bukan kamu' -> 'dan bukan orangnya') + 6 saran; klaim inti (gerak menyamping lemah/paten US 5481266, gelombang mikro 'di banyak pintu', GERAKAN bukan orang, sensor kedua infra merah batal nutup) didukung riset.md."
     }
   ],
   "masalah": null
