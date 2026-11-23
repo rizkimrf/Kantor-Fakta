@@ -12,7 +12,9 @@
       "pintu geser otomatis kok bisa",
       "sensor gerak",
       "kok bisa jalan",
-      "ternyata begitu"
+      "ternyata begitu",
+      "pintu otomatis",
+      "minimarket"
     ],
     "komentar_tersemat": "Pintunya cuek, kamu tim LAMBAI atau tim MUNDUR? Satu kata aja. Bonus: di banyak pintu, sensor pembuka dan sensor keselamatan ternyata bisa ada dalam SATU kotak yang sama di atas kusen.",
     "terkait": {
@@ -20,7 +22,8 @@
       "judul": "Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu",
       "url": null,
       "catatan": "Shorts jalur A 'Kok Bisa Jalan?' sebelumnya (tayang Sel 24 Nov 13.00), tema sama-sama 'sensor sehari-hari'. Isi url setelah tayang lalu pasang related video manual. Ganti ke video panjang 'Benda yang bereaksi pada gerakanmu' bila sudah ada."
-    }
+    },
+    "judul_final": "Pintu Minimarket Kok Tahu Kamu Mau Masuk?"
   },
   "tiktok": {
     "caption": "Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat? Ternyata ada yang dia cari. #pintuotomatis #TernyataBegitu #FaktaUnik"
@@ -33,6 +36,6 @@
     "2026-11-26T13:00:00+08:00"
   ],
   "label_konten_ai": true,
-  "sampul": "frame pertama video (0 ms): PINTU INI KOK TAHU?",
+  "sampul": "frame pertama video (0 ms): PINTU INI KOK TAHU? (baris 1 kecil 'PINTU INI', baris 2 besar 'KOK TAHU?')",
   "_catatan": "jadwal dibaca terbitkan.py dari status.json -> jadwal_tayang (diisi otomatis di slot kosong; usulan di sini). komentar_tersemat & terkait dipasang manual."
 }

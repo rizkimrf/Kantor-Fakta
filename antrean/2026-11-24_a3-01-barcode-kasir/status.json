@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "cek_fakta",
   "seri": "A",
   "topik": "a3-01 barcode kasir",
   "dibuat": "2026-11-24T05:42",
@@ -21,6 +21,12 @@
       "oleh": "Nadia",
       "tanggal": "2026-11-23",
       "hasil": "naskah.json (seri cara-kerja) + naskah_baca.txt + naskah_suara.txt + unggah.json (terkait layar HP) + paket_unggah.md + baris Nadia & janji konten di lembar_tim.md. Hook #1 kamu salah (keputusan rapat Pak Bima): 'Kasir bip BARCODE, harga muncul. Selama ini kamu kira harganya di garis itu? BUKAN.' (barcode ±0,8 dtk, tanpa intro, loop #26 'Dia pasti hafal bunyi ini...'). Kejutan inti 'barcode di kemasan biasa cuma bawa NOMOR produk, harganya di komputer TOKO' ±9 dtk; mekanisme sinar/nelan/mantul → angka; canda KTP-gaji; diskon tanpa ganti barcode; tambahan tunggal 899 bukan tanda BUATAN Indonesia (GS1 Indonesia, pabrik bisa di mana aja); penutup SAMA/SUHU + share 'teman yang pernah jadi KASIR'. Judul kerja 'Barcode Kasir: Harganya Ternyata Nggak Ada di Garis Itu' (56; 2 opsi lain). Sampul 'HARGANYA DI MANA?' putih-merah. 7 adegan, 126 kata, ±56 dtk, 1 angka (899), 0 klip, Tebe 4x. Tanpa merek, tanpa klaim mutlak, tanpa kutipan kata persis GS1; digit cek hanya di komentar tersemat. Skor naskah 8/9, viral 9/10. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "tanggal": "2026-11-23",
+      "hasil": "0 butir WAJIB narasi; judul final opsi 1; caption TikTok ditambah ajakan tag teman kasir (tanpa ajakan pindah platform); 4 saran. Lanjut cek_fakta (Pak Bima)."
     }
   ],
   "masalah": null

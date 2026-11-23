@@ -4,7 +4,7 @@ Sama persis dengan `unggah.json`. Judul, sampul, caption TikTok/IG tidak memboco
 **Jadwal (dari rencana_marketing):** Selasa 24 Nov 2026, 19.45 WITA bila disetujui Bos sebelum 19.32; cadangan Rabu 25 Nov 13.00. Jadwal resmi ditulis saat `/terbitkan`.
 
 ## YouTube Shorts
-Judul (56 huruf): Barcode Kasir: Harganya Ternyata Nggak Ada di Garis Itu
+Judul FINAL (Raka, cek_seo; 56 huruf): Barcode Kasir: Harganya Ternyata Nggak Ada di Garis Itu
 Opsi lain untuk Raka: "Barcode Kasir Kok Bisa Tahu Harga? Ternyata Cuma Nomor" (54) · "Selama Ini Kamu Salah Soal Barcode Kasir" (40)
 Deskripsi + sumber (11 URL dari riset.md) + 3 hashtag (#Shorts #barcode #TernyataBegitu): sama dengan `unggah.json`.
 Tag: barcode kasir, cara kerja barcode scanner, isi barcode itu apa, kenapa barcode bisa muncul harga, arti angka barcode, barcode 899, cara kerja barcode, kok bisa jalan, ternyata begitu
@@ -13,7 +13,7 @@ Video terkait: Shorts "Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu" (`20
 **Tugas manual (Raka/Bos):** `scripts/terbitkan.py` tidak membaca `komentar_tersemat` maupun `terkait` - sematkan komentar dan pasang related video MANUAL setelah tayang. Balas komentar di jam pertama (terutama yang mengaku pernah jadi kasir).
 
 ## TikTok (kata kunci di awal, tanpa jawaban, tanpa ajakan pindah platform)
-Kasir bip barcode, harga muncul. Kamu kira harganya ada di garis-garis itu? #barcode #kasir #TernyataBegitu #FaktaUnik  (115 huruf, ≤150)
+Kasir bip barcode, harga muncul. Kamu kira harganya ada di garis-garis itu? Tag teman mantan kasir #barcode #kasir #TernyataBegitu #FaktaUnik  (143 huruf, ≤150)
 
 ## Instagram Reels (tanpa ajakan pindah platform)
 Kasir bip barcode, harga langsung muncul. Kamu kira harganya ada di garis-garis itu?

@@ -4,7 +4,7 @@ Sama persis dengan `unggah.json`. Judul, sampul, caption, dan awal deskripsi TID
 **Jadwal (dari rencana_marketing):** Rabu 25 Nov 2026, 13.00 WITA (cadangan Kamis 26 Nov 13.00). Jadwal resmi ditulis saat `/terbitkan`.
 
 ## YouTube Shorts
-Judul (41 huruf): Pintu Minimarket Kok Tahu Kamu Mau Masuk?
+Judul FINAL (41 huruf, diputuskan Raka di cek_seo): Pintu Minimarket Kok Tahu Kamu Mau Masuk?
 Opsi lain untuk Raka: "Pintu Minimarket Kok Cuek Pas Kamu Lewat Samping?" (49) · "Kok Pintu Minimarket Nggak Nutup Pas Kamu Diam?" (46)
 Deskripsi + sumber (7 URL dari riset.md) + 3 hashtag (#Shorts #PintuOtomatis #KokBisaJalan): sama dengan `unggah.json`.
 Tag: pintu minimarket, kenapa pintu minimarket bisa terbuka sendiri, pintu otomatis minimarket, cara kerja pintu otomatis, sensor pintu otomatis, pintu geser otomatis kok bisa, sensor gerak, kok bisa jalan, ternyata begitu
@@ -23,3 +23,6 @@ Pintunya cuek, kamu tim LAMBAI atau tim MUNDUR? Satu kata.
 
 ## Jam tayang
 YouTube, TikTok & Reels 13.00 WITA (slot jalur A), Rabu 25 Nov 2026 (cadangan Kamis 26 Nov 13.00). Label konten AI menyala. Tanpa ajakan pindah ke YouTube di caption TikTok/IG.
+
+## Keputusan cek_seo (Raka)
+Judul = opsi 1. Teks sampul = "PINTU INI KOK TAHU?" (kata kunci 'pintu' tertulis di frame 0). Tag +pintu otomatis, +minimarket. Detail: cek_seo.md.
