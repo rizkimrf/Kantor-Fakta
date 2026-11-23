@@ -1,5 +1,5 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "seri": "A",
   "topik": "a3-01 barcode kasir",
   "dibuat": "2026-11-24T05:42",
@@ -9,6 +9,12 @@
       "oleh": "Laras",
       "tanggal": "2026-11-23",
       "hasil": "riset.md selesai; skor Faktor Ternyata 8/10; catatan: WebFetch ke gs1.org dkk diblokir jaringan, bukti dari hasil pencarian; kutip tanpa kata persis"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "tanggal": "2026-11-23",
+      "hasil": "LANJUT 16/20; rencana_marketing.md + seo.md selesai; judul kerja 'Barcode Kasir: Harganya Ternyata Nggak Ada di Garis Itu'; volume kata kunci tanpa data; cadangan slot Rab 25 Nov 13.00"
     }
   ],
   "masalah": null
