@@ -8,7 +8,8 @@ from pathlib import Path
 from google_auth_oauthlib.flow import InstalledAppFlow
 
 ROOT = Path(__file__).resolve().parent.parent
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.force-ssl"]
+SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.force-ssl",
+          "https://www.googleapis.com/auth/youtube.readonly", "https://www.googleapis.com/auth/yt-analytics.readonly"]  # + baca statistik (Bos 24 Nov)
 cred = InstalledAppFlow.from_client_secrets_file(str(ROOT / "client_secret.json"), SCOPES).run_local_server(
     port=0, access_type="offline", prompt="consent")
 (ROOT / "youtube_refresh_token.txt").write_text(cred.refresh_token, encoding="utf-8")

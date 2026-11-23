@@ -19,7 +19,7 @@ verifier = secrets.token_urlsafe(48)
 challenge = hashlib.sha256(verifier.encode()).hexdigest()  # TikTok desktop: SHA256 dalam heksadesimal
 state = secrets.token_urlsafe(16)
 url = "https://www.tiktok.com/v2/auth/authorize/?" + urllib.parse.urlencode({
-    "client_key": key, "scope": "user.info.basic,video.upload", "response_type": "code",
+    "client_key": key, "scope": "user.info.basic,user.info.stats,video.list,video.upload", "response_type": "code",
     "redirect_uri": REDIRECT, "state": state, "code_challenge": challenge, "code_challenge_method": "S256"})
 hasil = {}
 
