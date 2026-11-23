@@ -28,6 +28,12 @@
       "oleh": "Raka",
       "hasil": "0 butir WAJIB narasi; judul final = 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele' (57, tanpa 'Seharian'); kata kunci terucap 0,0-1,0 dtk; caption TikTok (147) & IG tanpa ajakan pindah platform; 1 koreksi kecil komentar tersemat ('santai' -> 'netral') di unggah.json & paket_unggah.md; 4 saran opsional di cek_seo.md",
       "tanggal": "2026-11-23"
+    },
+    {
+      "tahap": "cek_riset_naskah",
+      "oleh": "Laras",
+      "hasil": "2 WAJIB (\"pemicunya sering sepele\"/judul \"Ternyata Sepele\" tanpa data frekuensi -> \"bisa sepele\"; deskripsi \"tidak berlaku pada semua peserta\" -> \"belum tentu berlaku untuk semua orang\") + 6 saran; angka survei aman (89,2% N 12.519 vs 91,7% >11.000 -> pakai \"sekitar 9 dari 10\"); lihat cek_riset.md",
+      "tanggal": "2026-11-23"
     }
   ],
   "masalah": null,

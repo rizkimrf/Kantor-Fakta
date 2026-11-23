@@ -8,7 +8,7 @@ Kejutan 2/3 (bukan "aneh/error", tapi nyaris semua orang tiap minggu + pemicunya
 
 ## Uji 5 pertanyaan
 1. Anggapan umum: lagu nyangkut itu "gangguan"/tanda ada yang salah, atau cuma terjadi pada lagu yang kamu SUKA dan lagi kamu dengar.
-2. Fakta pembalik: ±92% orang mengalaminya sedikitnya seminggu sekali (survei Finlandia); pemicunya sering bukan musik sama sekali, melainkan kata, tempat, suasana hati, atau saat perhatian longgar.
+2. Fakta pembalik: sekitar 9 dari 10 responden survei daring Finlandia mengalaminya sedikitnya seminggu sekali (koreksi 23 Nov: abstrak Liikkanen 2012 = 89,2% dari N=12.519; makalah konferensi Goldsmiths = 91,7% dari >11.000; pakai bentuk bulat saja); pemicunya BISA bukan musik, melainkan kata, tempat, suasana hati, atau saat perhatian longgar (frekuensi tiap kategori belum terverifikasi; paparan musik juga salah satu pemicu).
 3. Kenapa: otak "memutar ulang" musik dari memori tanpa disuruh; pemicu = (a) baru/sering dengar lagunya, (b) pengingat nonmusik (kata, gambar, tempat), (c) suasana hati, (d) perhatian rendah/melamun (Williamson dkk. 2012). Lagu yang gampang nyangkut: lebih cepat temponya, bentuk melodi umum (naik lalu turun) + ada lompatan/pengulangan nada tak biasa (Jakubowski dkk. 2016).
 4. Hubungan: "jadi itu sebabnya pas mandi/ngelamun/nunggu angkot lagu itu muncul."
 5. Kejutan kedua (akhir): studi 3 eksperimen (98 sukarelawan di eksperimen utama menurut siaran pers Univ. Reading): MENGUNYAH permen karet mengurangi lagu yang "terdengar" di kepala, karena otak membayangkan nyanyian memakai program gerak mulut/ucapan yang sama (Beaman dkk. 2015). Sajikan sebagai FAKTA studi, bukan saran.

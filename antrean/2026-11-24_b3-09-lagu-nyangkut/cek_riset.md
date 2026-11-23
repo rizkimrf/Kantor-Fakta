@@ -1,0 +1,14 @@
+# Cek riset naskah B3-09 Lagu nyangkut (Laras, 23 Nov 2026) — "Mana sumbernya?"
+Hasil: 2 WAJIB + 6 saran. Lolos tanpa Kellaris, Zeigarnik, durasi 15-30 dtk, OCD/gangguan, saran medis, judul/lirik lagu nyata (diperiksa di narasi, teks layar, deskripsi, komentar, caption).
+WAJIB 1. "Pemicunya sering SEPELE" (adegan 4 + teks layar "PEMICUNYA SEPELE", caption IG "sering sepele", judul "Ternyata Sepele"): kata "sering" butuh data frekuensi, padahal Williamson 2012 hanya memberi 4 kategori (paparan musik, pemicu memori, suasana hati, perhatian rendah) dan persentasenya tidak terverifikasi; paparan musik justru salah satunya. Ganti jadi "Pemicunya bisa SEPELE" / "kadang sepele"; judul usul "Pemicunya Bisa Sepele" (Raka putuskan). Riset.md Uji 5 no.2 sudah saya koreksi.
+WAJIB 2. Deskripsi: "hasilnya dari lab dan tidak berlaku pada semua peserta" = klaim tentang peserta yang hanya dari laporan sekunder. Ganti: "hasilnya dari eksperimen lab dan belum tentu berlaku untuk semua orang."
+Angka survei (aman, tidak perlu ubah naskah): "sekitar sembilan dari sepuluh" dan ">11.000 responden" benar pada kedua versi. Abstrak Liikkanen 2012 = N 12.519 dan 89,2% mingguan; makalah konferensi Goldsmiths = >11.000 dan 91,7%. Jangan tampilkan persen persis; riset.md sudah dicatat. Survei daring Finlandia (bukan sampel acak).
+Pemicu: "kata/obrolan", "warung" (tempat), "seneng atau galau" (suasana hati), "bengong" (perhatian rendah) cocok dengan 4 kategori Williamson 2012; warung/angkot ilustrasi, bukan temuan. Lolos.
+Permen karet: "satu studi menemukan... lagu di kepala berkurang", "jalur gerak mulut", "Bukan jurus pasti" cocok Beaman 2015 dan batas riset; bukan saran. Lolos. Ciri lagu (tempo cepat, melodi umum + lompatan/pengulangan tak biasa) hanya di deskripsi, dibingkai "kecenderungan, bukan resep". Lolos.
+Saran 1. Teks layar "9 DARI 10 ORANG" mudah terbaca sebagai semua orang; tambah "SURVEI FINLANDIA" kecil atau "RESPONDEN".
+Saran 2. Deskripsi: "9 dari 10 orang mengalaminya" -> "9 dari 10 respondennya".
+Saran 3. Adegan 7 "Kata penelitinya" -> "Dugaan penelitinya" (mekanisme otak belum tuntas; deskripsi sudah "diduga").
+Saran 4. Komentar tersemat: "ternyata bukan kesal" -> "umumnya bukan kesal" (sebagian responden tetap terganggu; sumber Williamson 2014, 1.046 laporan).
+Saran 5. Komentar tersemat: "hal-hal di kepala yang 'jalan sendiri'" kurang nyambung ke B3-04 (suara sendiri lewat tulang); ganti "suara di kepala/telinga". Cek judul B3-04 persis sama dengan unggahan.
+Saran 6. Visual adegan 7: pita kaset melar/melambat bisa terbaca "lagu jadi lambat"; studi hanya menyebut berkurang. Utamakan gelembung meredup (jangan hilang total).
+Sumber catatan: Williamson 2012 dan Liikkanen 2012 hanya dicek lewat abstrak/pencarian; PMC, APA, Reading tidak bisa dibuka dari sesi ini. Baca ulang teks penuh bila domain dibuka.
