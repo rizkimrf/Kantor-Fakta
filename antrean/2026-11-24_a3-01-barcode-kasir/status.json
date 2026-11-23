@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "seri": "A",
   "topik": "a3-01 barcode kasir",
   "dibuat": "2026-11-24T05:42",
@@ -47,6 +47,16 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-24T05:58+08:00",
       "hasil": "cek_fakta LULUS setelah R1 (3 WAJIB Laras), skor 8/9, viral 8/10; jadwal Sel 24 Nov 19.45 bila disetujui Bos sebelum 19.32, cadangan Kam 26 Nov 19.45"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-24T06:40+08:00",
+      "hasil": "final.mp4 55,4 dtk / 13,5 MB (crf 23, maxrate 3M); suara ElevenLabs v4 SEKALI 866 huruf ≈ 450 kredit (aset/log_kredit.csv), tanpa JEDA; set baru studio-aset/aset-barcode.js (meja kasir siang krem-merah, dalam barcode, komputer toko + lemari daftar, peta pabrik), 12 babak; catatan wajib Pak Bima dipenuhi: barcode FIKTIF (pola acak, digit cek salah), bungkus polos, KTP fiktif tanpa lambang/NIK, tanpa kata 'laser', layar kasir berganti berurutan, Tebe 3 cameo (sampul/loop, gag KTP, laci 899), ujung bendera saja + dicoret, bip hanya dtk 0; SFX baru bip.wav & cap.wav (sintesis sendiri, scripts/buat_sfx_barcode.py); musik belanja-ceria; outro logo YouTube ±1 dtk; loop ke sampul; thumbnail.png 'HARGANYA / DI MANA?' merah-putih; cek_mulus LULUS, cek_video LULUS",
+      "durasi": 55.4,
+      "mb": 13.5,
+      "kredit": 450
     }
   ],
   "masalah": null,
