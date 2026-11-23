@@ -1,5 +1,5 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "seri": "A",
   "topik": "a3-01 barcode kasir",
   "dibuat": "2026-11-24T05:42",
@@ -57,9 +57,31 @@
       "durasi": 55.4,
       "mb": 13.5,
       "kredit": 450
+    },
+    {
+      "dari": "review",
+      "ke": "review",
+      "revisi": "R1",
+      "oleh": "Yoga",
+      "waktu": "2026-11-24T07:05+08:00",
+      "hasil": "R1 (catatan review Pak Bima): bendera merah-putih di laci 899 DIHAPUS total; yang dicoret kini label 'BUATAN?' + ikon pabrik generik, lalu 3 ikon pabrik kecil tanpa bendera + teks layar 'PABRIK BISA DI MANA AJA' (adegan peta). Tidak ada bendera negara mana pun di video maupun sampul. narasi.mp3 dipakai ulang (0 kredit). final.mp4 55,4 dtk / 13,7 MB; cek_mulus LULUS, cek_video LULUS",
+      "durasi": 55.4,
+      "mb": 13.7,
+      "kredit": 0
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T06:18+08:00",
+      "hasil": "Review LULUS setelah R1 visual (bendera dihapus), 55,4 dtk, 13,7 MB, uji 3 dtk 8/10; jadwal Sel 24 Nov 19.45 WITA bila disetujui sebelum 19.32"
     }
   ],
   "masalah": null,
   "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-24T19:45:00+08:00"
+  "jadwal_tayang": "2026-11-24T19:45:00+08:00",
+  "video_asset_id": "e311807dc169e820ee8fbe0df3eaccf5",
+  "thumb_asset_id": "74d8b3fd0b231e8d8c53f41f9a849f28",
+  "video_url": "/_blob/e311807dc169e820ee8fbe0df3eaccf5",
+  "thumb_url": "/_blob/74d8b3fd0b231e8d8c53f41f9a849f28"
 }

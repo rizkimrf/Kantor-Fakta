@@ -2,7 +2,7 @@
 <!-- A3-01 Barcode kasir: harganya di mana? — Yoga, 23 Nov 2026. Kontrak window.render(T); waktu mengikuti audio/waktu_kata.json (narasi SEKALI, tanpa JEDA).
      Render: python scripts/render_html.py antrean/2026-11-24_a3-01-barcode-kasir --musik-vol 0.2
      Catatan wajib Pak Bima: barcode FIKTIF (pola acak, digit cek salah), bungkus polos tanpa merek, KTP kartun fiktif (tanpa lambang/format NIK),
-     TANPA kata "laser", layar kasir berganti BERURUTAN, Tebe cameo 3 (sampul/loop, gag KTP, laci 899), laci 899 tanpa bendera penuh,
+     TANPA kata "laser", layar kasir berganti BERURUTAN, Tebe cameo 3 (sampul/loop, gag KTP, laci 899), R1: TANPA bendera negara mana pun (label 'BUATAN?' yang dicoret),
      sampul "HARGANYA / DI MANA?" merah-putih, bip hanya di detik 0, loop: komposisi akhir = sampul frame 0; outro ikon YouTube kecil tanpa ajakan.
      Set BARU: studio-aset/aset-barcode.js (meja kasir siang krem-merah, dalam barcode, komputer toko + lemari daftar, peta pabrik). -->
 <script src="../../../studio-aset/tebe-rig.js"></script>
@@ -205,7 +205,7 @@ function setDiskon(T){const u=T-B6;
  const z=1.0+.05*ioS(lin(u,0,6)),cx=540+u*10;
  return latar('#FFF1EC')+kamera(svgW(1080,1920,s),1080,cx,960+u*6,z)}
 
-// ===== S7 LACI 899 — laci "899" keluar & menyala; ujung bendera dicoret dan tenggelam; label "GS1 INDONESIA" (kode); Tebe kaget, jambul ? → !
+// ===== S7 LACI 899 — laci "899" keluar & menyala; label 'BUATAN?' (ikon pabrik, tanpa bendera) dicoret → 3 pabrik kecil; label "GS1 INDONESIA" (kode); Tebe kaget, jambul ? → !
 const kTerus=KI(85).m,kAwalan=KI(86).m,k899=KI(87).m,kBukan2=KI(91).m,kBuatan=KI(93).m,kArtinya=KI(95).m,kAwalannya=KI(96).m,kGS1=KI(98).m,kIndo2=KI(101).m,B8=cel(102);
 const L7={x:540,y:1000,s:1},LACI7=7;
 const AT7=tebeAnimasi([{t:0,pose:'penasaran'},{t:kGS1-.3,pose:'kaget',transisi:.25},{t:kIndo2-.3,pose:'kaget',tanda:'!'}],{benih:7});
@@ -215,10 +215,12 @@ function setLaci(T){const u=T-B7;
  const bk=lin(T,k899-.3,k899+.25),so=lin(T,k899-.2,k899+.2)*(1-.5*lin(T,kArtinya,kArtinya+.5));
  s+=A.lemariDaftar(L7.x,L7.y,L7.s,T,{buka:{i:LACI7,k:bk},sorot:{i:LACI7,k:so},label:{i:LACI7,teks:'899'}});
  const [lx,ly]=A.posLaci(L7.x,L7.y,L7.s,LACI7),fy=ly+70-54*1.35; // tepi atas laci terbuka
- // ujung bendera mengintip (tidak tampil penuh), dicoret, lalu tenggelam
- const bn=halus(lin(T,KI(89).m,KI(90).m+.1))*(1-halus(lin(T,kBukan2+.25,kBuatan+.4)));
- if(bn>0){const h=46*bn;s+=`<defs><clipPath id="cb7"><rect x="${lx-160}" y="${fy-120}" width="320" height="120"/></clipPath></defs><g clip-path="url(#cb7)"><g transform="translate(${lx-40} ${(fy+60-h-40).toFixed(1)})"><rect x="-4" y="0" width="8" height="140" fill="#9A7A5A"/><rect x="4" y="2" width="96" height="30" fill="${M}"/><rect x="4" y="32" width="96" height="30" fill="#FFFFFF"/></g></g>`;
-  s+=A.capSilang(lx+10,fy-30,.24,lin(T,kBukan2-.05,kBukan2+.2)*bn)}
+ // label "BUATAN?" (ikon pabrik generik, TANPA bendera apa pun) dicoret, lalu jadi 3 pabrik kecil "bisa di mana aja"
+ const bt=halus(lin(T,KI(89).m-.1,KI(90).m+.1))*(1-halus(lin(T,kBuatan+.2,kBuatan+.6)));
+ if(bt>0){s+=`<g transform="translate(${lx} ${(fy-70).toFixed(1)}) scale(${(.7+.3*bt).toFixed(3)})" opacity="${bt.toFixed(3)}"><rect x="-150" y="-46" width="300" height="92" rx="18" fill="#000" opacity=".15" transform="translate(6 8)"/><rect x="-150" y="-46" width="300" height="92" rx="18" fill="#FFFFFF"/><g transform="translate(-100 6) scale(.62)"><path d="M-40 30 L-40 -10 L-16 -28 L-16 -10 L8 -28 L8 -10 L32 -28 L32 -40 L44 -40 L44 30Z" fill="${M}"/></g><text x="30" y="17" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="46" fill="${HT}">BUATAN?</text></g>`;
+  s+=A.capSilang(lx,fy-70,.3,lin(T,kBukan2-.05,kBukan2+.2)*bt)}
+ const pb=lin(T,kBuatan+.3,kBuatan+1.0);
+ if(pb>0)[[-230,-70],[-120,-110],[-10,-60]].forEach(([dx,dy],i)=>{s+=A.ikonPabrik(lx+dx,fy+dy,.8,cl(pb*3-i),T)});
  // label GS1 INDONESIA menempel di laci (teks lewat kode, tanpa logo)
  const gl=lin(T,kAwalannya-.1,kAwalannya+.3);
  if(gl>0){const e=halus(gl);s+=`<g transform="translate(${lx} ${(ly+130).toFixed(1)}) rotate(${(-4*e).toFixed(1)}) scale(${(.6+.4*e).toFixed(3)})" opacity="${Math.min(1,gl*2).toFixed(3)}"><rect x="-215" y="-44" width="430" height="88" rx="16" fill="#000" opacity=".18" transform="translate(8 10)"/><rect x="-215" y="-44" width="430" height="88" rx="16" fill="#FFFFFF"/><rect x="-215" y="-44" width="22" height="88" rx="8" fill="${M}"/><text x="12" y="17" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="50" fill="${HT}">GS1 INDONESIA</text></g>`}
@@ -270,7 +272,8 @@ const BABAK=[{a:0,f:setSampul},{a:B1,f:setHook,tr:'dorong',d:.5},{a:B2,f:setNomo
 function posSub(T){if(T<B4)return 1330;if(T<B5)return 290;return 1330}
 function teksBesar(T){return cap('CUMA NOMOR PRODUK',T,kCuma,kKomputer-.1,{y:300,uk:70})+cap('KOK BISA?',T,KI(27).m,kSkener-.15,{y:300,uk:84,rot:2})
  +cap('KTP-NYA BARANG',T,kKtp,kGaji-.3,{y:430,uk:70,rot:2})+cap('DISKON? BARCODE TETAP',T,kBarkodnya,B7-.15,{y:290,uk:58})
- +cap('899 BUKAN TANDA<br>BUATAN INDONESIA',T,kBukan2-.05,kGS1,{y:280,uk:58,rot:-2})}
+ +cap('899 BUKAN TANDA<br>BUATAN INDONESIA',T,kBukan2-.05,kGS1,{y:280,uk:58,rot:-2})
+ +cap('PABRIK BISA DI MANA AJA',T,kPabrik-.05,B9-.1,{y:300,uk:62,rot:2})}
 window.EFEK=[{t:.33,sfx:'bip',vol:.32},{t:kBukan-.04,sfx:'cap',vol:.5},{t:B3-.15,sfx:'whoosh',vol:.35},{t:kHarga2-.03,sfx:'ding',vol:.35},{t:kKasirnya+.1,sfx:'klik',vol:.4},{t:kIndo2-.28,sfx:'boing',vol:.35}];
 
 window.render=function(T){
