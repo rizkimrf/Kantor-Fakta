@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_fakta",
+  "tahap": "produksi",
   "topik": "b3-09 lagu nyangkut",
   "seri": "B",
   "dibuat": "2026-11-24T05:42",
@@ -34,8 +34,25 @@
       "oleh": "Laras",
       "hasil": "2 WAJIB (\"pemicunya sering sepele\"/judul \"Ternyata Sepele\" tanpa data frekuensi -> \"bisa sepele\"; deskripsi \"tidak berlaku pada semua peserta\" -> \"belum tentu berlaku untuk semua orang\") + 6 saran; angka survei aman (89,2% N 12.519 vs 91,7% >11.000 -> pakai \"sekitar 9 dari 10\"); lihat cek_riset.md",
       "tanggal": "2026-11-23"
+    },
+    {
+      "dari": "naskah",
+      "ke": "cek_fakta",
+      "oleh": "Nadia",
+      "waktu": "2026-11-23",
+      "revisi": "R1 (satu kali)",
+      "hasil": "2 WAJIB cek_riset Laras dikerjakan: (1) 'Pemicunya sering SEPELE' -> 'Pemicunya bisa SEPELE' (narasi adegan 4, teks layar 'PEMICUNYA BISA SEPELE', caption IG); judul final keputusan Pak Bima 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele' (53) di naskah.json, unggah.json, paket_unggah.md; (2) deskripsi '...hasilnya dari eksperimen lab dan belum tentu berlaku untuk semua orang.' Saran: teks layar adegan 2 + label kecil 'SURVEI FINLANDIA'; deskripsi '9 dari 10 respondennya'; adegan 7 'Dugaan penelitinya'; komentar tersemat 'umumnya bukan kesal, tapi netral bahkan menikmati' (perbaikan Raka dipertahankan, kini juga di naskah.json) + rujukan B3-04 'suara di kepala dan telinga'; visual adegan 7 gelembung MEREDUP (bukan pita melambat). naskah_baca.txt & naskah_suara.txt diselaraskan (tag tetap 5). Jumlah kata tetap 127, durasi tetap ±55 dtk (<=57). Hook, loop, sampul tidak berubah. Skor jujur tetap naskah 8/9, viral 8/10. Audio belum dibuat."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T06:25+08:00",
+      "hasil": "cek_fakta LULUS setelah R1 (2 WAJIB Laras), skor 8/9, viral 8/10; hook #20 tetap; jadwal Rab 25 Nov 19.45"
     }
   ],
   "masalah": null,
-  "pilar": "Sains & tubuh manusia"
+  "pilar": "Sains & tubuh manusia",
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-25T19:45:00+08:00"
 }
