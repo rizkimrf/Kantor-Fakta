@@ -5,6 +5,6 @@ Rasa yang dikejar (kagum / kaget / geli / haru): geli-lega ("ternyata bukan cuma
 - Raka (marketing)  : LANJUT 16/20. Kata kunci "lagu nyangkut di kepala" (tanpa data volume), terucap ≤5 dtk. Hook tebak pribadi "siapa yang nyalain?", kejutan ≤ dtk 15, penutup 1 kata (judul lagu yang lagi nyangkut) + tag teman. Sampul beda dari berry-magenta/indigo: jingga-krem. Masukan Nadia: tanpa lirik/judul nyata, permen karet = temuan studi bukan saran. Masukan Yoga: kepala tembus pandang + notasi "lalala". Masukan Pak Bima: pilar Benda sudah 67%, mohon diseimbangkan.
 - Nadia (naskah)    : (diisi Nadia)
 - Yoga (editor)     : (diisi Yoga)
-- Pak Bima (manajer): (diisi Pak Bima)
+- Pak Bima (manajer): KEPUTUSAN RAPAT — hook #20 suara aneh + #14 sudut pandang orang: buka dengan senandung pendek ORISINAL (bukan lagu nyata) + 'Dari bangun tidur, potongan lagu ini muter terus di kepalamu. Kamu nggak lagi dengerin apa-apa.' Bukan 'siapa yang nyalain' (teka-teki 'siapa' sudah 3x di 5 video terakhir). Kata kunci 'lagu nyangkut' ≤ 2 dtk; kejutan ≤ dtk 15: sekitar 9 dari 10 orang tiap minggu (angka bulat, sebut 'survei'). Kejutan akhir permen karet = 'satu studi menemukan', BUKAN saran. Tanpa judul/lirik lagu nyata, tanpa saran medis. ≤ 57 dtk. Penutup: komen JUDUL lagu yang nyangkut + tag teman yang lagunya nggak pernah ganti + loop ke senandung. Sampul: teks 'KOK MUTER TERUS?' (beda dari 'SIAPA YANG NYURUH?'), jingga-krem.
 
 ## Paraf setelah produksi
