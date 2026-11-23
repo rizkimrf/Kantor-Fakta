@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "seri": "A",
   "topik": "a3-02 pintu minimarket",
   "dibuat": "2026-11-24T05:42",
@@ -13,6 +13,12 @@
       "tahap": "pilih",
       "oleh": "Raka",
       "hasil": "LANJUT skor 16/20 (penasaran 4, pengalaman 5, share 4, momen 3); rencana_marketing.md + seo.md; judul kerja 'Pintu minimarket kok tahu kamu mau masuk?'; sampul teks 'KOK TAHU?'; durasi <=57 dtk"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "waktu": "2026-11-23",
+      "hasil": "naskah.json (seri cara-kerja) + naskah_baca.txt + naskah_suara.txt + unggah.json (terkait Layar HP) + paket_unggah.md + baris Nadia di lembar_tim.md. Hook #14 pengalaman tubuh (keputusan rapat Pak Bima): 'Kamu lewat depan pintu minimarket, pintunya CUEK. Kamu melangkah ke arahnya... eh, KEBUKA.' (kata kunci ≤2 dtk, tanpa kuis/'siapa', loop #26). Judul: 'Pintu Minimarket Kok Tahu Kamu Mau Masuk?' (41; 2 opsi lain untuk Raka). Sampul 'PINTU INI KOK TAHU?' (oranye-krem + hijau-mint). Kejutan 'Dia nyari GERAKAN, bukan orang' ±12,5 dtk; tapi 'menyamping cuma berubah DIKIT, sering nggak KEBACA'; kejutan kedua 'sensor KEDUA, pintu BATAL nutup'; penutup DUA tugas + LAMBAI/MUNDUR + tag teman 'yang suka NGETES pintu' + loop. 7 adegan, 126 kata, ±55 dtk, 0 angka, 0 klip, Tebe 6 adegan (cameo/peraga, 1 reaksi utama). 'Sensor gerak'/'di banyak pintu'/'sering', tanpa merek/ting-nong/saran mengakali/'nggak pernah menjepit'. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
     }
   ],
   "masalah": null

@@ -1,0 +1,15 @@
+Arahan rasa: santai, senyum, seperti cerita ke teman sambil antre di kasir; kalimat pertama ringan "eh, pernah kan?", lalu "BUKAN" tegas tapi iseng (bukan marah). Heran-penasaran di "Kok bisa jadi nomor?", menahan tawa di "gajimu nggak ditulis di situ", nada "nah, ini dia" di bagian delapan sembilan sembilan. Kalimat terakhir pelan dan digantung (nada naik, jangan ditutup). Tempo biasa, jangan dipercepat; jeda antar kalimat pendek saja.
+NASKAH BACA — A3-01 Barcode kasir (R0, ±56 detik, 126 kata, TANPA intro)
+Tanda "/" = jeda napas pendek. Kata KAPITAL = ditekan. "..." = tahan napas sebentar. Angka di kiri = detik mulai di video (patokan).
+
+00  Kasir bip BARCODE, / harga muncul. / Selama ini kamu kira / harganya di garis itu? / BUKAN.   (langsung bicara di detik 0, tanpa salam)
+06  Barcode di kemasan biasa / cuma bawa NOMOR produk. / Harganya ada / di komputer TOKO.   (santai, "ketahuan!")
+12  Kok bisa jadi nomor? / Scanner umumnya / nyorotin sinar. / Garis hitam NELAN cahaya, / celah putih mantul. / Pantulan panjang-pendek itu / jadi ANGKA.   (penasaran, lalu menjelaskan santai)
+20  Barcode itu mirip KTP-mu: / ada NOMOR-nya, / tapi gajimu / nggak ditulis di situ. / Komputer kasir / nyari nomor itu di daftar, / muncul nama / dan HARGA.   (menahan tawa di "gajimu")
+31  Makanya pas diskon, / barcode-nya nggak perlu diganti. / Harga diubah sekali di komputer, / semua kasir / langsung IKUT.   (ringan, "praktis kan")
+38  Terus, / awalan delapan sembilan sembilan itu / bukan tanda BUATAN Indonesia. / Artinya, / nomornya dibagiin / GS1 Indonesia. / Pabriknya / bisa di MANA aja.   (nada "nah, ini dia", sedikit berbisik)
+47  Dulu ngira juga? / Komen SAMA. / Udah tahu? / Komen SUHU. / Kirim ke teman / yang pernah jadi KASIR. / Dia pasti hafal / bunyi ini...   (iseng, lalu pelan dan digantung)
+
+Cara baca: barcode = "bar-kod" · scanner = "ske-ner" · KTP = "ka-te-pe" · GS1 = "ji-es-wan" · 899 dibaca "delapan sembilan sembilan" (per angka).
+Cara rekam: HP, ruangan sepi (kamar dengan gorden/kasur meredam gema), jarak mulut ±15 cm, satu kali baca tanpa berhenti. Mulai bicara langsung begitu tombol rekam ditekan (Yoga memotong hening di depan).
+Salah ucap? Ulangi kalimat itu saja lalu lanjut — nanti dipotong.

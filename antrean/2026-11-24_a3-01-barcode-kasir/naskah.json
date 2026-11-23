@@ -1,0 +1,241 @@
+{
+  "format": "shorts",
+  "seri": "cara-kerja",
+  "jalur": "A \"Kok Bisa Jalan?\"",
+  "revisi": "R0 (Nadia, 23 Nov 2026). KEPUTUSAN RAPAT Pak Bima dipenuhi: hook #1 'kamu salah selama ini' (bukan tebak/teka-teki), kata 'barcode' terucap ±0,8 dtk, kejutan inti (NOMOR produk, harga di komputer toko) ±9 dtk, tambahan SATU saja = 899 awalan nomor GS1 Indonesia bukan tanda buatan Indonesia (digit cek hanya di komentar tersemat). Selalu 'barcode di kemasan biasa', 'scanner umumnya'; tanpa merek toko/produk, tanpa kutipan kata persis GS1. ±56 dtk (≤57), 126 kata, 7 adegan, 0 klip, penutup 1 kata SAMA/SUHU + share 'teman yang pernah jadi KASIR' + loop ke 'bip'.",
+  "judul": "Barcode Kasir: Harganya Ternyata Nggak Ada di Garis Itu",
+  "judul_opsi": [
+    "Barcode Kasir: Harganya Ternyata Nggak Ada di Garis Itu",
+    "Barcode Kasir Kok Bisa Tahu Harga? Ternyata Cuma Nomor",
+    "Selama Ini Kamu Salah Soal Barcode Kasir"
+  ],
+  "judul_catatan": "Opsi 1 (56 huruf) = pilihan kerja Raka, kata kunci utama di depan, kontra-intuisi yang dibayar di dtk ±9 ('cuma bawa NOMOR produk, harganya di komputer TOKO'); 'garis itu' = barcode kemasan biasa (hedge ada di narasi & deskripsi). Opsi 2 (54) bocor sedikit tapi paling jelas. Opsi 3 (40) senada dengan hook #1, tapi tanpa objek konkret. Raka memutuskan di cek_seo.",
+  "thumbnail_teks": "HARGANYA DI MANA?",
+  "thumbnail_visual": "Bright clean white background with strong red accents (red-white palette); a HUGE generic barcode (fictional random bars, no real digits, no brand) tilted diagonally toward the camera like a giant fence, a sharp red laser line slicing across it with a soft red glow; one thick red hand-drawn arrow points at ONE single black bar; Tebe small at the lower left corner, shocked face, wide eyes, '?' cowlick, mustard hoodie, holding a magnifying glass up to the bar; no price tags, no numbers, no store logo, no product brand; flat style without black outlines; empty space at the top for the text overlay 'HARGANYA / DI MANA?' (DI MANA in red).",
+  "deskripsi": "Kasir bip barcode di bungkus mie, harga langsung muncul di layar. Tapi barcode batang di kemasan biasa cuma membawa nomor pengenal produk; nama dan harganya dicari komputer kasir di daftar milik toko, makanya harga bisa diganti tanpa mengganti barcode. Awalan 899 juga bukan tanda buatan Indonesia, melainkan tanda nomor itu dibagikan GS1 Indonesia.\n\nCatatan: penjelasan ini disederhanakan. Ada pengecualian, misalnya kode khusus untuk barang yang ditimbang (aturannya ditentukan masing-masing organisasi GS1 negara) dan kode 2D yang bisa memuat data tambahan.\n\nSumber:\n- GS1 Support, Are the description and price of the item included in the barcode?: https://support.gs1.org/support/solutions/articles/43000734158-are-the-description-and-price-of-the-item-included-in-the-barcode-\n- GS1 Support, How do GS1 GTINs and barcodes work?: https://support.gs1.org/support/solutions/articles/43000734095-how-do-gs1-gtins-and-barcodes-work-\n- GS1 Australia FAQ: https://www.gs1au.org/resources/faq/verified-by-gs1\n- GS1 Prefixes: https://gs1.org/prefixes\n- GS1 UK, variable measure items: https://gs1uk.org/knowledge-hub/barcodes/how-to-barcode-variable-measure-items\n- GS1 UK, how to calculate your check digit: https://www.gs1uk.org/sites/default/files/how_to_calculate_your_check_digit.pdf\n- Shopify, How do barcode scanners work: https://www.shopify.com/blog/how-do-barcode-scanners-work\n- Explain That Stuff, Barcode scanners: https://www.explainthatstuff.com/barcodescanners.html\n- Paten US 5151580, Light emitting diode scanner: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5151580\n- Wikipedia, International Article Number: https://en.wikipedia.org/wiki/International_Article_Number\n- Wikipedia, List of GS1 country codes: https://en.wikipedia.org/wiki/List_of_GS1_country_codes\n\n#Shorts #barcode #TernyataBegitu",
+  "caption_komentar": "Dulu kamu juga ngira 899 artinya buatan Indonesia? Komen SAMA. Udah tahu dari dulu? Komen SUHU. Bonus buat yang pernah jadi kasir: angka paling kanan di barcode itu digit cek, hasil hitungan dari angka-angka lainnya. Makanya barcode yang salah kebaca biasanya ditolak, bukan jadi salah harga.",
+  "caption_komentar_catatan": "Disematkan MANUAL setelah tayang. Bonus = digit cek dari riset.md (mekanisme 5: digit cek modulo 10 menangkap salah baca, 'salah baca ditolak, bukan salah harga'), di-hedge 'biasanya'. Tidak menyebut bobot 1/3 atau 95 modul (terlalu teknis).",
+  "caption_tiktok": "Kasir bip barcode, harga muncul. Kamu kira harganya ada di garis-garis itu? #barcode #kasir #TernyataBegitu #FaktaUnik",
+  "caption_instagram": "Kasir bip barcode, harga langsung muncul. Kamu kira harganya ada di garis-garis itu?\nKirim ke teman yang pernah jadi kasir.\nDulu kamu juga ngira 899 artinya buatan Indonesia? Komen SAMA. Udah tahu? Komen SUHU.\n#barcode #kasir #carakerja #minimarket #faktaunik #TernyataBegitu",
+  "tag": [
+    "barcode kasir",
+    "cara kerja barcode scanner",
+    "isi barcode itu apa",
+    "kenapa barcode bisa muncul harga",
+    "arti angka barcode",
+    "barcode 899",
+    "cara kerja barcode",
+    "kok bisa jalan",
+    "ternyata begitu"
+  ],
+  "pola_hook": "Tipe #1 'kamu salah selama ini' (KEPUTUSAN RAPAT Pak Bima): \"Kasir bip BARCODE, harga muncul. Selama ini kamu kira harganya di garis itu? BUKAN.\" + loop #26 ('Dia pasti hafal bunyi ini...' → 'Kasir bip...'). Beda dari 5 video terakhir: layar HP #18, suara rekaman #5+tebak, rem motor #3, jari keriput #6, sambal #12. #1 terakhir dipakai bau hujan (15 Nov), jauh di luar jendela 5.",
+  "hook_kandidat": [
+    {
+      "tipe": 1,
+      "teks": "Kasir bip BARCODE, harga muncul. Selama ini kamu kira harganya di garis itu? BUKAN.",
+      "skor": 9,
+      "alasan": "14 kata; adegan yang semua orang alami (bip di kasir) + 'barcode' ±0,8 dtk + keyakinan umum dibantah dengan satu kata tegas 'BUKAN' di ±5 dtk. 'Kamu kira' = taruhan personal. TERPILIH."
+    },
+    {
+      "tipe": 1,
+      "teks": "Garis-garis barcode di bungkus mie itu nggak nyimpen harga.",
+      "skor": 7,
+      "alasan": "Kamu-salah paling ringkas, tapi tanpa 'kasir bip' momen pengalamannya hilang dan kalimatnya terlalu mutlak tanpa 'kemasan biasa'."
+    },
+    {
+      "tipe": 6,
+      "teks": "Kasir bip bungkus mie, harga muncul. Menurutmu harganya tertulis di garis itu?",
+      "skor": 8,
+      "alasan": "Usulan Raka, terbukti; tapi tebak/teka-teki sudah dipakai 3 dari 5 video terakhir (keputusan rapat: ganti)."
+    },
+    {
+      "tipe": 11,
+      "teks": "Ternyata barcode itu nggak tahu harga barangnya sendiri.",
+      "skor": 7,
+      "alasan": "Lucu (barcode dipersonifikasi), tapi membocorkan jawaban dan kata 'kasir' tidak terucap."
+    },
+    {
+      "tipe": 2,
+      "teks": "Angka 899 di barcode artinya buatan Indonesia? Bukan.",
+      "skor": 8,
+      "alasan": "Mitos kuat dan sangat Indonesia, tapi itu kejutan TAMBAHAN; kalau dijadikan hook, inti harga-di-komputer jadi anak tiri. Dipakai di adegan 6 + komentar."
+    },
+    {
+      "tipe": 7,
+      "teks": "Harga di kasir itu bukan dari barcode. Ada yang nyimpen diam-diam.",
+      "skor": 6,
+      "alasan": "Nuansa rahasia memancing, tapi 'diam-diam' melebihkan (database toko bukan rahasia) dan berisiko menyesatkan."
+    },
+    {
+      "tipe": 5,
+      "teks": "Pernah lihat kasir bip berkali-kali karena barcode-mu bandel?",
+      "skor": 6,
+      "alasan": "Relatable, tapi tidak menjanjikan kejutan; cocok jadi pemicu share, bukan pembuka."
+    },
+    {
+      "tipe": 10,
+      "teks": "Barang sama, barcode sama, tapi harganya beda di toko sebelah.",
+      "skor": 7,
+      "alasan": "Kontras yang benar (riset Uji 4), tapi pengalaman 'beda harga' tidak se-universal 'bip'; dipindah ke ide konsekuensi."
+    },
+    {
+      "tipe": 24,
+      "teks": "Kalau nggak tahu ini, kamu salah paham tiap kali belanja.",
+      "skor": 5,
+      "alasan": "Konsekuensi terlalu umum, tanpa objek konkret, terdengar clickbait."
+    },
+    {
+      "tipe": 21,
+      "teks": "Aku dulu kira harga ada di garis barcode. Ternyata bukan.",
+      "skor": 6,
+      "alasan": "Pengakuan Tebe terasa jujur, tapi Tebe jadi pusat (format gabungan: cameo) dan 'kamu' hilang."
+    }
+  ],
+  "peta_retensi": "0,0-6,2 dtk → HOOK #1 + TARUHAN: sampul frame 0 'HARGANYA DI MANA?' (barcode raksasa miring + laser merah, putih-merah); narasi 0,0 'Kasir bip BARCODE' (kata kunci ±0,8 dtk, teks 'BARCODE KASIR'); 1,2 kamera mundur ke meja kasir, bip + harga muncul di layar kasir; 'kamu kira harganya di garis itu?' = taruhan personal; 'BUKAN' = pattern interrupt (garis dicap silang)\n6,2-12,0 dtk → INTI KEJUTAN (selesai ±12 dtk): garis berubah jadi deret NOMOR, kartu nomor terbang ke komputer toko → OPEN LOOP 1 'kok garis bisa jadi nomor?'\n12,0-20,5 dtk → 'Kok bisa?' + MEKANISME: kamera masuk ke garis, sinar merah menyapu, garis hitam menelan cahaya, celah putih memantul (kilat), pita panjang-pendek → ANGKA\n20,5-30,7 dtk → REAKSI TEBE + CANDA 1 'mirip KTP-mu: ada NOMOR-nya, gajimu nggak ditulis di situ' (KTP kartun barang) → komputer kasir mencari nomor di lemari daftar, muncul nama + HARGA (bayar hook)\n30,7-37,8 dtk → AKIBAT/TAPI 1: diskon tanpa ganti barcode, harga diubah sekali, semua layar kasir ikut berganti serentak (pattern interrupt: label harga lama 'meledak' jadi baru)\n37,8-47,2 dtk → KEJUTAN KEDUA (membalik keyakinan Indonesia): laci 899 disorot, 'bukan tanda BUATAN Indonesia', label 'GS1 INDONESIA' bukan bendera, peta pabrik berkedip di banyak titik 'di MANA aja'\n47,2-56,1 dtk → PEMICU KOMENTAR 1 kata 'Dulu ngira juga? SAMA / Udah tahu? SUHU' + PEMICU SHARE 'teman yang pernah jadi KASIR' + LOOP 'Dia pasti hafal bunyi ini...' → kamera mendorong ke barcode = komposisi frame 0 → 'Kasir bip BARCODE'; outro logo YouTube kecil ≤1 dtk sambil kalimat terakhir",
+  "durasi_target": "±56 dtk (≤57, batas keras 60)",
+  "jumlah_kata": 126,
+  "skor_naskah": {
+    "hook": 2,
+    "taruhan": 1,
+    "penahan": 1,
+    "kejutan_kedua": 2,
+    "bahasa_lisan": 1,
+    "payoff": 1,
+    "total": 8
+  },
+  "skor_naskah_catatan": "Jujur 8/9. Hook 2: momen 'bip' yang semua orang alami + bantahan tegas 'BUKAN', kata kunci ±0,8 dtk, visual sampul laser merah. Taruhan 1: 'selama ini kamu kira' di detik 2-5. Penahan 1 (bukan 2): open loop 'kok bisa jadi nomor?' + 'tapi' diskon + kejutan 899, pattern interrupt tiap 4-7 dtk, 1 canda + 1 reaksi Tebe; TAPI adegan 5 (diskon/semua kasir ikut) relatif datar dan lompatan ke 899 berganti topik tanpa jembatan kuat. Kejutan kedua 2: '899 bukan tanda buatan Indonesia, pabriknya bisa di mana aja' membalik keyakinan yang sangat lokal dan benar (GS1 Prefixes + Wikipedia). Bahasa lisan 1: kalimat 2-12 kata, istilah teknis nol (tanpa GTIN/database/POS/modul), GS1 disebut sekali dan langsung diterangkan 'nomornya dibagiin'. Payoff 1: 'harganya di garis itu? BUKAN' dibayar di ±9 dtk ('harganya ada di komputer TOKO') lalu ditegaskan ±30 dtk (nama + HARGA muncul dari daftar); loop ke 'bip'. Tambahan rubrik: gaya ngobrol YA (canda KTP/gaji, tanpa menggurui, tanpa saran belanja); SEO YA ('kasir... BARCODE' 0-1 dtk + teks layar 'BARCODE KASIR' + judul opsi 1).",
+  "skor_viral": {
+    "hook": {
+      "skor": 2,
+      "alasan": "Semua orang pernah dengar bip kasir; 'kamu kira harganya di garis itu? BUKAN' membantah dugaan diam-diam yang hampir semua orang punya."
+    },
+    "jarak_kejutan": {
+      "skor": 2,
+      "alasan": "Dua pembalikan yang benar dan bersumber: garis cuma NOMOR (harga di komputer toko) + 899 bukan tanda buatan Indonesia."
+    },
+    "retensi": {
+      "skor": 1,
+      "alasan": "Kejutan inti ±9 dtk, celah baru tiap ±7-10 dtk, ±56 dtk; adegan diskon sedikit datar dan video tetap melewati titik turun ±45 dtk."
+    },
+    "layak_dibagikan": {
+      "skor": 2,
+      "alasan": "'Eh, 899 itu bukan berarti buatan Indonesia' = fakta pamer yang langsung bisa dicek di bungkus apa pun di rumah; pemicu 'teman yang pernah jadi KASIR' spesifik dan berbasis identitas."
+    },
+    "pemicu_komentar": {
+      "skor": 2,
+      "alasan": "Kubu pengakuan 1 kata SAMA/SUHU (orang senang mengaku 'aku juga!'), kasir diundang bercerita di komentar tersemat, loop 'Dia pasti hafal bunyi ini...' memancing tonton ulang."
+    },
+    "total": 9
+  },
+  "pelafalan": {
+    "barcode": "bar-kod (ditulis 'barkod' di naskah_suara.txt)",
+    "scanner": "ske-ner (ditulis 'skener')",
+    "KTP": "ka-te-pe",
+    "GS1": "ji-es-wan",
+    "899": "delapan sembilan sembilan (dieja per angka, bukan 'delapan ratus sembilan puluh sembilan')"
+  },
+  "seo": {
+    "kata_kunci_utama": "barcode kasir",
+    "kata_kunci_turunan": [
+      "cara kerja barcode scanner",
+      "isi barcode itu apa",
+      "kenapa barcode bisa muncul harga",
+      "barcode di kemasan arti angkanya"
+    ],
+    "catatan": "Utama: 'Kasir bip BARCODE' (dua kata kunci terucap 0-1 dtk) + teks layar pertama 'BARCODE KASIR' + judul opsi 1 + tag no.1 + kalimat 1 deskripsi. Turunan di narasi: 'Scanner umumnya nyorotin sinar... jadi ANGKA' (cara kerja barcode scanner), 'cuma bawa NOMOR produk' (isi barcode), 'Komputer kasir nyari nomor itu... muncul nama dan HARGA' (kenapa barcode bisa muncul harga), 'awalan delapan sembilan sembilan' (arti angka)."
+  },
+  "catatan_fakta": "Setiap kalimat dari riset.md (Laras). Adegan 1 'kasir bip barcode, harga muncul' = pengalaman bersama; 'kamu kira harganya di garis itu? Bukan' = Uji 1 → Uji 2. Adegan 2 'barcode di kemasan biasa cuma bawa NOMOR produk; harganya ada di komputer toko' = kalimat aman riset (GS1 FAQ + GS1 GTIN + Shopify), hedge 'kemasan biasa'. Adegan 3 'scanner umumnya nyorotin sinar; garis hitam nelan cahaya, celah putih mantul; pantulan panjang-pendek jadi angka' = mekanisme 1-3 (Shopify, paten 5151580, Explain That Stuff), 'umumnya' sesuai larangan laser/kamera. Adegan 4 'mirip KTP-mu: ada nomornya, gajimu nggak ditulis di situ' = analogi canda dari 'hanya pengenal unik' (bukan klaim baru); 'komputer kasir nyari nomor itu di daftar, muncul nama dan harga' = mekanisme 6. Adegan 5 'pas diskon barcode nggak perlu diganti; harga diubah sekali di komputer, semua kasir ikut' = Uji 4 + mekanisme 6. Adegan 6 '899 bukan tanda buatan Indonesia; nomornya dibagiin GS1 Indonesia; pabriknya bisa di mana aja' = kejutan kedua riset + GS1 Prefixes ('perusahaan bisa memproduksi di mana saja') + Wikipedia GS1 country codes. Adegan 7 = pertanyaan & share murni pengalaman. TIDAK dipakai: 'tidak pernah memuat harga', kode timbangan Indonesia, laser vs kamera, 95 modul/paritas, arti digit pabrik/item, merek toko/produk, kutipan kata persis GS1, biaya/lama pengurusan GS1, 'harga beda antar toko' (dipangkas demi durasi).",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Kasir bip BARCODE, harga muncul. Selama ini kamu kira harganya di garis itu? BUKAN.",
+      "teks_layar": "BARCODE KASIR",
+      "visual": "Frame 0 = cover: bright white world with red accents, a HUGE fictional barcode (random bars, no real digits) tilted diagonally toward the camera, a sharp red laser line slicing across it, one thick red arrow at one single black bar, Tebe small at the lower left corner holding a magnifying glass, shocked, '?' cowlick, mustard hoodie; at 1.2 s the camera pulls back fast to a daytime cashier counter (cream and red): a generic handheld scanner beeps at a plain unbranded noodle pack, a small cashier screen pops a price made of simple cartoon digits; at 4.0 s the camera snaps back to the barcode lines and a big red cartoon cross stamps over them on 'BUKAN'; flat style without black outlines; no brands, no logos, no readable real product names.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 6.2,
+      "set": "BARU: barcodeRaksasa (putih + laser merah) → mejaKasir siang krem-merah (aset-barcode.js)",
+      "tebe": "sampul: kecil, kiri bawah, kaca pembesar, kaget; keluar bingkai saat kamera mundur",
+      "aksi": "0,0 narasi + sampul; 0,8 'BARCODE' teks layar 'BARCODE KASIR'; 1,2 kamera mundur ke meja kasir, scanner bip ke bungkus mie polos; 2,0 harga muncul di layar kasir; 2,8 kamera kembali ke garis, garis berkedip curiga 'kamu kira...'; 4,8 cap silang merah 'BUKAN!' (pattern interrupt)",
+      "catatan_yoga": "Narasi di 0,0-0,3 dtk, tanpa intro. Sampul bertahan ±1,2 dtk. Barcode FIKTIF (pola acak, digit cek salah, tak bisa dipindai). Bungkus mie polos tanpa merek/tulisan. Bunyi 'bip' SFX berlisensi/buatan sendiri tepat di kata 'bip'."
+    },
+    {
+      "no": 2,
+      "narasi": "Barcode di kemasan biasa cuma bawa NOMOR produk. Harganya ada di komputer TOKO.",
+      "teks_layar": "CUMA NOMOR PRODUK",
+      "visual": "Close-up on the barcode: the black bars melt and rearrange into a plain row of cartoon number cards (no real product code), clearly no price symbol among them; the number card peels off and flies like a paper plane out of the frame toward a friendly cartoon store computer at the back of the shop, where a tall filing cabinet of drawers labelled only with numbers waits; flat style without black outlines; no currency signs on the barcode, no brand.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 5.8,
+      "set": "barcodeRaksasa close-up → kartu nomor terbang → komputerToko + lemariDaftar (BARU)",
+      "tebe": "-",
+      "aksi": "6,2 garis meleleh jadi deret kartu nomor; 8,4 'NOMOR' kartu menyala; 9,6 kartu terbang ke belakang toko; 11,0 komputer toko + lemari laci muncul 'TOKO'",
+      "catatan_yoga": "INTI KEJUTAN selesai ±12 dtk. Kartu nomor = angka kartun acak, bukan GTIN nyata."
+    },
+    {
+      "no": 3,
+      "narasi": "Kok bisa jadi nomor? Scanner umumnya nyorotin sinar. Garis hitam NELAN cahaya, celah putih mantul. Pantulan panjang-pendek itu jadi ANGKA.",
+      "teks_layar": "KOK BISA?",
+      "visual": "Camera dives INTO the barcode, bars become tall black walls with white gaps between them; a red light beam sweeps across: each black wall swallows the light like a sponge (beam disappears), each white gap bounces it back as a bright white flash; under it a pulse strip blinks long-short-long in rhythm with the flashes, then the pulse strip folds into a row of cartoon digits; flat style without black outlines; no real numbers, no text other than simple digit shapes.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 8.5,
+      "set": "dalamBarcode: tembok garis hitam + celah putih + sinar merah menyapu + pita on-off",
+      "tebe": "-",
+      "aksi": "12,0 'Kok bisa?' kamera menyelam ke garis (pattern interrupt); 13,8 sinar merah menyapu; 15,6 garis hitam 'menelan' cahaya; 16,8 celah putih memantul (kilat putih); 18,4 pita panjang-pendek berdenyut; 19,6 pita melipat jadi deret ANGKA",
+      "catatan_yoga": "Peragaan PERSIS kata: 'nelan' = cahaya hilang ke spons hitam, 'mantul' = kilat. Tanpa label 'laser' atau 'modul'. Scanner generik tanpa merek."
+    },
+    {
+      "no": 4,
+      "narasi": "Barcode itu mirip KTP-mu: ada NOMOR-nya, tapi gajimu nggak ditulis di situ. Komputer kasir nyari nomor itu di daftar, muncul nama dan HARGA.",
+      "teks_layar": "KTP-NYA BARANG",
+      "visual": "Gag: the noodle pack holds up a tiny cartoon ID card with only a blank photo square and a row of dots for a number (no real ID layout, no national emblem, no readable fields); a little thought bubble with a money bag gets a red cross, 'not written here'; small Tebe pops in at the lower right corner (safe zone), points at the card and laughs; then the number card slides into the store computer, a drawer in the filing cabinet pops open by itself, and a name tag plus a price tag float up onto the cashier screen; flat style without black outlines; no brand, no real ID card design.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 10.2,
+      "set": "gag ktpBarang → komputerToko + lemariDaftar: laci terbuka → layar kasir",
+      "tebe": "REAKSI 1: kecil, pojok kanan bawah, menunjuk KTP barang, tertawa",
+      "aksi": "20,5 bungkus mie mengangkat KTP kartun; 22,6 gelembung kantong uang dicoret ('gajimu nggak ditulis'); 23,4 Tebe tertawa; 25,6 kartu nomor masuk komputer; 27,0 laci cocok terbuka; 29,2 nama + HARGA melayang ke layar kasir (bayar hook)",
+      "catatan_yoga": "KTP kartun HARUS fiktif (tanpa lambang Garuda, tanpa format NIK, tanpa kolom asli). Harga = angka kartun tanpa Rp nyata."
+    },
+    {
+      "no": 5,
+      "narasi": "Makanya pas diskon, barcode-nya nggak perlu diganti. Harga diubah sekali di komputer, semua kasir langsung IKUT.",
+      "teks_layar": "DISKON? BARCODE TETAP",
+      "visual": "Back at the store computer: a cartoon hand edits ONE price tag in the open drawer, a big red 'sale' style burst (no text) pops; the barcode on the noodle pack stays exactly the same with a little calm smile; then three cashier counters in a row, their screens flip to the new price at the same instant like dominoes; flat style without black outlines; no store name, no brand, no readable prices.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 7.1,
+      "set": "komputerToko → barisan 3 mejaKasir (layar berganti serentak)",
+      "tebe": "-",
+      "aksi": "30,7 ledakan diskon di laci (pattern interrupt); 32,4 barcode di bungkus tetap sama, tersenyum tenang; 34,4 tangan kartun mengubah 1 label; 35,8 tiga layar kasir berganti serentak 'IKUT'",
+      "catatan_yoga": "Ledakan diskon tanpa tulisan 'SALE'/persen. Tidak menyebut Harbolnas di visual."
+    },
+    {
+      "no": 6,
+      "narasi": "Terus, awalan delapan sembilan sembilan itu bukan tanda BUATAN Indonesia. Artinya, nomornya dibagiin GS1 Indonesia. Pabriknya bisa di MANA aja.",
+      "teks_layar": "899 ≠ BUATAN INDONESIA",
+      "visual": "Hard cut to the filing cabinet: one drawer marked with the three cartoon digits 8 9 9 slides out and glows; a red-white flag that was about to pop out of it gets swapped for a plain label card (the text label is added in code, not in the image); Tebe stands on the drawer, surprised, jambul turning from '?' to '!'; then the drawer opens into a simple flat world map where small cartoon factory icons blink in many different places; flat style without black outlines; no real company logos, no country flags on the map.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 9.4,
+      "set": "lemariDaftar: laci 899 disorot → peta dunia datar + ikon pabrik berkedip",
+      "tebe": "REAKSI 2: berdiri di laci 899, kaget, jambul '?' → '!'",
+      "aksi": "37,8 potongan keras ke laci 899 (pattern interrupt); 39,4 bendera 'meletup' diganti kartu label; 41,2 label 'GS1 INDONESIA' (kode); 43,2 Tebe kaget, jambul jadi '!'; 44,8 laci jadi peta, pabrik berkedip di banyak titik 'di MANA aja'",
+      "catatan_yoga": "Laci 899 disorot 1 kali sesuai baris Yoga. Bendera tidak tampil penuh (cuma ujung yang diganti label) supaya tidak terbaca 'tanda negara'. Tulisan 'GS1 INDONESIA' lewat kode, tanpa logo GS1."
+    },
+    {
+      "no": 7,
+      "narasi": "Dulu ngira juga? Komen SAMA. Udah tahu? Komen SUHU. Kirim ke teman yang pernah jadi KASIR. Dia pasti hafal bunyi ini...",
+      "teks_layar": "SAMA / SUHU?",
+      "visual": "Back at the daytime cashier counter from scene 1; two big choice cards as code overlay pop up one after another; Tebe (small, inside the scene on the counter) mimes sending the video to a friend on a generic phone with a cheeky grin, then picks up the generic handheld scanner and points it at the noodle pack; the camera pushes in through the scanner beam to end on exactly the same composition as frame 0 (huge tilted barcode, red laser line, red arrow at one bar) so the loop is seamless; flat style without black outlines; no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.9,
+      "set": "mejaKasir (sama dengan adegan 1) → kartu pilihan (kode) → kamera mendorong ke barcodeRaksasa = komposisi frame 0",
+      "tebe": "di meja kasir, pura-pura kirim video ke teman, lalu mengangkat scanner ke bungkus mie",
+      "aksi": "47,2 kembali ke meja kasir; 47,8 kartu SAMA; 49,4 kartu SUHU; 50,8 Tebe kirim ke teman; 53,0 Tebe mengangkat scanner; 54,4 kamera mendorong ke barcode = frame 0; 'bunyi ini...' digantung (bip terdengar saat video berulang)",
+      "catatan_yoga": "Komposisi akhir = frame 0 (loop: 'Dia pasti hafal bunyi ini...' → 'Kasir bip BARCODE'). JANGAN bunyikan bip di akhir — bip-nya milik detik 0,0 saat video berulang. Logo YouTube kecil + 'Ternyata Begitu' ≤1 dtk di zona aman SAMBIL kalimat terakhir, tanpa ekor kosong. Bila final > 57 dtk: pangkas jeda dulu, jangan buang kubu atau loop."
+    }
+  ]
+}

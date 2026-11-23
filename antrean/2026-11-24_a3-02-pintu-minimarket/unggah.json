@@ -1,0 +1,38 @@
+{
+  "label_ai": true,
+  "youtube": {
+    "judul": "Pintu Minimarket Kok Tahu Kamu Mau Masuk?",
+    "deskripsi": "Pintu minimarket kok bisa kebuka sendiri pas kamu mau masuk, tapi kadang cuek pas kamu cuma lewat di depannya? Ternyata yang dicari kotak kecil di atas pintu itu bukan orang. Plus satu sensor lagi yang jarang disadari.\n\nCatatan lengkap (spoiler, baca setelah nonton): Kotak di atas pintu otomatis umumnya adalah sensor gerak. Di banyak pintu, sensor ini memancarkan gelombang mikro ke depan lalu membandingkan pantulannya dengan sinyal yang dikirim; benda yang bergerak menggeser frekuensi pantulan (efek Doppler), dan sinyal itu membuat motor menggeser daun pintu di relnya. Gerak ke arah atau menjauhi sensor paling mudah terbaca; gerak menyamping sering hanya mengubah pantulan sedikit. Orang yang berhenti di celah pintu dijaga sensor lain: sensor keselamatan (berkas/tirai infra merah) membuat pintu hanya menutup bila celah bebas dan membuka lagi bila berkasnya terputus saat menutup. Jenis sensor tiap pintu berbeda (ada juga yang memakai infra merah pasif); penjelasan di sini disederhanakan dari paten dan sumber produsen. Video ini menjelaskan cara kerja, bukan panduan memasang atau mengakali pintu.\n\nSumber:\n- ScienceABC, How Do Automatic Doors Work: https://www.scienceabc.com/innovation/automatic-sliding-doors-working-motion-detector-pressure-sensor-infrared\n- Door Parts UK, How Automatic Doors Work: https://www.doorparts.co.uk/blogs/news/operation_of_automatic_doors\n- Optex, Microwave door sensors: https://www.optex-europe.com/products/automatic-door-sensors/microwave\n- ASSA ABLOY, Opening and safety sensors: https://www.assaabloy.com/id/en/solutions/products/entrance-automation/automatic-pedestrian-doors/accessories/sensors-and-detection-devices/opening-safety-sensors\n- DirectIndustry, sensor kombinasi pembuka + keselamatan: https://www.directindustry.com/prod/bircher-reglomat/product-5583-733379.html\n- Paten US 4009476 (kontrol pintu otomatis, Doppler): https://patents.justia.com/patent/4009476\n- Paten US 5481266 (sensor gerak, respons arah): https://patents.google.com/patent/US5481266\n\n#Shorts #PintuOtomatis #KokBisaJalan",
+    "tag": [
+      "pintu minimarket",
+      "kenapa pintu minimarket bisa terbuka sendiri",
+      "pintu otomatis minimarket",
+      "cara kerja pintu otomatis",
+      "sensor pintu otomatis",
+      "pintu geser otomatis kok bisa",
+      "sensor gerak",
+      "kok bisa jalan",
+      "ternyata begitu"
+    ],
+    "komentar_tersemat": "Pintunya cuek, kamu tim LAMBAI atau tim MUNDUR? Satu kata aja. Bonus: di banyak pintu, sensor pembuka dan sensor keselamatan ternyata bisa ada dalam SATU kotak yang sama di atas kusen.",
+    "terkait": {
+      "folder": "2026-11-23_a3-06-layar-hp-tangan-basah",
+      "judul": "Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu",
+      "url": null,
+      "catatan": "Shorts jalur A 'Kok Bisa Jalan?' sebelumnya (tayang Sel 24 Nov 13.00), tema sama-sama 'sensor sehari-hari'. Isi url setelah tayang lalu pasang related video manual. Ganti ke video panjang 'Benda yang bereaksi pada gerakanmu' bila sudah ada."
+    }
+  },
+  "tiktok": {
+    "caption": "Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat? Ternyata ada yang dia cari. #pintuotomatis #TernyataBegitu #FaktaUnik"
+  },
+  "instagram": {
+    "caption": "Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat di depannya? Ternyata ada yang dia cari, dan bukan kamu.\nKirim ke teman yang suka ngetes pintu minimarket.\nPintunya cuek, kamu tim LAMBAI atau tim MUNDUR? Satu kata.\n#pintuotomatis #pintuminimarket #carakerja #minimarket #faktaunik #sains #TernyataBegitu"
+  },
+  "jadwal_tayang_usulan": "2026-11-25T13:00:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-26T13:00:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): PINTU INI KOK TAHU?",
+  "_catatan": "jadwal dibaca terbitkan.py dari status.json -> jadwal_tayang (diisi otomatis di slot kosong; usulan di sini). komentar_tersemat & terkait dipasang manual."
+}

@@ -1,0 +1,241 @@
+{
+  "format": "shorts",
+  "seri": "cara-kerja",
+  "jalur": "A \"Kok Bisa Jalan?\"",
+  "revisi": "R0 (Nadia, 23 Nov 2026). KEPUTUSAN RAPAT Pak Bima dipenuhi: hook #14 sudut pandang orang dari pengalaman TUBUH (lewat depan pintu vs melangkah ke arahnya), bukan kuis/teka-teki 'siapa'; kata kunci 'pintu minimarket' terucap ±1,2-2,0 dtk; kejutan inti 'dia nyari GERAKAN, bukan orang' ±12,5 dtk (≤15); 'tapi' = lewat menyamping cuma berubah DIKIT (bayar hook) + kejutan kedua sensor KEDUA di celah; ±55 dtk (≤57), 126 kata, 0 angka, 0 klip; penutup 1 kata LAMBAI/MUNDUR + tag teman 'yang suka NGETES pintu' + loop ke kalimat pertama. Selalu 'sensor gerak' / 'di banyak pintu' / 'sering'; tanpa merek, tanpa ting-nong, tanpa saran mengakali pintu, tanpa klaim 'nggak pernah menjepit'.",
+  "judul": "Pintu Minimarket Kok Tahu Kamu Mau Masuk?",
+  "judul_opsi": [
+    "Pintu Minimarket Kok Tahu Kamu Mau Masuk?",
+    "Pintu Minimarket Kok Cuek Pas Kamu Lewat Samping?",
+    "Kok Pintu Minimarket Nggak Nutup Pas Kamu Diam?"
+  ],
+  "judul_catatan": "Opsi 1 (41 huruf) = sudut utama rencana_marketing, kata kunci di depan, pertanyaan pribadi yang jujur (dijawab di ±12 dtk). Opsi 2 (49) = sudut hook 'cuek' (dibayar di ±27 dtk, isi pakai 'sering'). Opsi 3 (46) = sudut kejutan kedua usulan Raka. Raka memutuskan di cek_seo.",
+  "thumbnail_teks": "PINTU INI KOK TAHU?",
+  "thumbnail_teks_catatan": "Gabungan usul Raka ('KOK TAHU?') + Yoga ('PINTU INI / KOK TAHU?'): baris 1 'PINTU INI' kecil krem, baris 2 'KOK TAHU?' besar, 'TAHU' hijau-mint. Bila Raka ingin 2 kata saja: 'KOK TAHU?'. Tidak membocorkan 'gerakan'.",
+  "thumbnail_visual": "Low-angle view in front of a generic glass sliding door of a small convenience store at dusk, warm orange-cream light spilling from inside the shop, plain shelves blurred behind the glass (no brand, no logo, no readable signs or prices); a big boxy motion sensor above the door frame shoots a soft translucent mint-green cone of curved wave arcs down toward Tebe; Tebe stands in front of the half-open door waving one hand up at the sensor, curious-surprised face, '?' cowlick, mustard hoodie, medium size at lower center-left; one thick red hand-drawn arrow points at the sensor box; flat style without black outlines; no letters or numbers in the illustration; empty space at the top for the text overlay.",
+  "deskripsi": "Pintu minimarket kok bisa kebuka sendiri pas kamu mau masuk, tapi kadang cuek pas kamu cuma lewat di depannya? Ternyata yang dicari kotak kecil di atas pintu itu bukan orang. Plus satu sensor lagi yang jarang disadari.\n\nCatatan lengkap (spoiler, baca setelah nonton): Kotak di atas pintu otomatis umumnya adalah sensor gerak. Di banyak pintu, sensor ini memancarkan gelombang mikro ke depan lalu membandingkan pantulannya dengan sinyal yang dikirim; benda yang bergerak menggeser frekuensi pantulan (efek Doppler), dan sinyal itu membuat motor menggeser daun pintu di relnya. Gerak ke arah atau menjauhi sensor paling mudah terbaca; gerak menyamping sering hanya mengubah pantulan sedikit. Orang yang berhenti di celah pintu dijaga sensor lain: sensor keselamatan (berkas/tirai infra merah) membuat pintu hanya menutup bila celah bebas dan membuka lagi bila berkasnya terputus saat menutup. Jenis sensor tiap pintu berbeda (ada juga yang memakai infra merah pasif); penjelasan di sini disederhanakan dari paten dan sumber produsen. Video ini menjelaskan cara kerja, bukan panduan memasang atau mengakali pintu.\n\nSumber:\n- ScienceABC, How Do Automatic Doors Work: https://www.scienceabc.com/innovation/automatic-sliding-doors-working-motion-detector-pressure-sensor-infrared\n- Door Parts UK, How Automatic Doors Work: https://www.doorparts.co.uk/blogs/news/operation_of_automatic_doors\n- Optex, Microwave door sensors: https://www.optex-europe.com/products/automatic-door-sensors/microwave\n- ASSA ABLOY, Opening and safety sensors: https://www.assaabloy.com/id/en/solutions/products/entrance-automation/automatic-pedestrian-doors/accessories/sensors-and-detection-devices/opening-safety-sensors\n- DirectIndustry, sensor kombinasi pembuka + keselamatan: https://www.directindustry.com/prod/bircher-reglomat/product-5583-733379.html\n- Paten US 4009476 (kontrol pintu otomatis, Doppler): https://patents.justia.com/patent/4009476\n- Paten US 5481266 (sensor gerak, respons arah): https://patents.google.com/patent/US5481266\n\n#Shorts #PintuOtomatis #KokBisaJalan",
+  "caption_komentar": "Pintunya cuek, kamu tim LAMBAI atau tim MUNDUR? Satu kata aja. Bonus: di banyak pintu, sensor pembuka dan sensor keselamatan ternyata bisa ada dalam SATU kotak yang sama di atas kusen.",
+  "caption_komentar_catatan": "Disematkan MANUAL setelah tayang. Bonus = fakta cadangan riset.md (Optex: sensor kombinasi mikrowave + tirai IR), di-hedge 'di banyak pintu', tanpa merek. Pertanyaan tidak punya jawaban benar dan bukan saran (tidak menjelaskan mana yang 'berhasil').",
+  "caption_tiktok": "Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat? Ternyata ada yang dia cari. #pintuotomatis #TernyataBegitu #FaktaUnik",
+  "caption_instagram": "Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat di depannya? Ternyata ada yang dia cari, dan bukan kamu.\nKirim ke teman yang suka ngetes pintu minimarket.\nPintunya cuek, kamu tim LAMBAI atau tim MUNDUR? Satu kata.\n#pintuotomatis #pintuminimarket #carakerja #minimarket #faktaunik #sains #TernyataBegitu",
+  "tag": [
+    "pintu minimarket",
+    "kenapa pintu minimarket bisa terbuka sendiri",
+    "pintu otomatis minimarket",
+    "cara kerja pintu otomatis",
+    "sensor pintu otomatis",
+    "pintu geser otomatis kok bisa",
+    "sensor gerak",
+    "kok bisa jalan",
+    "ternyata begitu"
+  ],
+  "pola_hook": "Tipe #14 sudut pandang orang dari pengalaman TUBUH (keputusan rapat Pak Bima): \"Kamu lewat depan pintu minimarket, pintunya CUEK. Kamu melangkah ke arahnya... eh, KEBUKA.\" — kontras dua gerakan tubuh dalam satu tarikan napas, penonton langsung jadi pelakunya. + loop #26 ('Pas dia lewat depan pintu minimarket...' → 'Kamu lewat depan pintu minimarket...'). Beda dari 5 video terakhir: layar HP #18 kuis tebak dulu, suara rekaman #5+tebak 'siapa', jari keriput #6 teka-teki 'siapa', rem motor #3, sambal #12 (rice cooker #20). #14 terakhir dipakai Gunting 18 Nov (di luar jendela 5). Tanpa kuis/teka-teki 'siapa'.",
+  "hook_kandidat": [
+    {
+      "tipe": 14,
+      "teks": "Kamu lewat depan pintu minimarket, pintunya CUEK. Kamu melangkah ke arahnya... eh, KEBUKA.",
+      "skor": 9,
+      "alasan": "Kalimat pertama 7 kata, kata kunci terucap ±1,2-2,0 dtk; dua gerakan tubuh yang SEMUA orang pernah alami (lewat vs mendekat) jadi kontras lucu, dan langsung peragaan visual (Tebe lewat → pintu diam; Tebe belok → pintu meluncur). Janji 'kok bisa beda?' dibayar ±27 dtk dengan riset (gerak menyamping cuma berubah dikit). TERPILIH."
+    },
+    {
+      "tipe": 14,
+      "teks": "Kamu jalan pelan ke pintu minimarket, pintunya diam aja. Kamu lambai tangan, eh kebuka.",
+      "skor": 7,
+      "alasan": "Contoh Pak Bima, rasanya pas; tapi 'jalan pelan → pintu diam' tidak didukung riset.md (riset bicara ARAH gerak, bukan kecepatan) dan 15 kata. Semangatnya dipakai, versinya diganti 'lewat depan' yang ada sumbernya; 'lambai' dipindah ke penutup."
+    },
+    {
+      "tipe": 5,
+      "teks": "Pernah jalan ke minimarket, pintunya udah kebuka sebelum kamu sentuh?",
+      "skor": 7,
+      "alasan": "Usulan seo.md, relatable; tapi #5 baru dipakai Suara rekaman (5 terakhir) dan kurang ada ketegangan, pintu kebuka itu hal yang biasa."
+    },
+    {
+      "tipe": 6,
+      "teks": "Pintunya ngeliat kamu... atau ngerasain apa? Tebak dulu.",
+      "skor": 6,
+      "alasan": "Kuis/teka-teki sudah 3 dari 5 video terakhir; dilarang keputusan rapat."
+    },
+    {
+      "tipe": 9,
+      "teks": "Kamu berhenti di tengah pintu minimarket. Kok nggak kejepit?",
+      "skor": 7,
+      "alasan": "Menegangkan, tapi menyiratkan 'pintu nggak pernah menjepit' (TIDAK boleh menurut riset.md) dan melompati kejutan inti. Dipakai sebagai open loop 2 dengan rumusan aman 'Pintunya nutup, dong?'."
+    },
+    {
+      "tipe": 1,
+      "teks": "Pintu minimarket itu nggak tahu kamu ada di situ.",
+      "skor": 6,
+      "alasan": "Kamu-salah, tapi terlalu mutlak dan langsung membocorkan jawaban di detik 2."
+    },
+    {
+      "tipe": 18,
+      "teks": "Coba besok lewat menyamping di depan pintu minimarket.",
+      "skor": 5,
+      "alasan": "Terdengar seperti saran mengakali pintu dan menjanjikan hasil 'pasti' (dilarang); #18 juga baru dipakai Layar HP."
+    },
+    {
+      "tipe": 22,
+      "teks": "Tim lambai tangan atau tim mundur dikit di pintu minimarket?",
+      "skor": 6,
+      "alasan": "Kubu yang lucu tapi tanpa 'kok bisa' di awal; dipindah jadi pertanyaan 1 kata di penutup."
+    },
+    {
+      "tipe": 11,
+      "teks": "Ternyata pintu minimarket punya DUA penjaga, tugasnya beda.",
+      "skor": 7,
+      "alasan": "Janji jelas, tapi membocorkan kejutan kedua di detik 1 dan tidak ada pengalaman tubuh."
+    },
+    {
+      "tipe": 13,
+      "teks": "Cuma orang Indonesia yang ngelambai ke pintu minimarket.",
+      "skor": 4,
+      "alasan": "Klaim identitas tanpa sumber (riset hanya menyebut pengalaman, bukan 'cuma orang Indonesia'). Dibuang."
+    }
+  ],
+  "peta_retensi": "0,0-5,6 dtk → HOOK #14 + TARUHAN: sampul frame 0 'PINTU INI KOK TAHU?' (low-angle, kerucut hijau ke Tebe melambai); 0,0 narasi 'Kamu lewat depan pintu minimarket' (kata kunci ±1,2-2,0 dtk), 1,2 kamera mundur ke trotoar: Tebe lewat menyamping, pintu diam (CUEK); 3,6 Tebe belok mendekat → pintu meluncur (KEBUKA) = OPEN LOOP 1 (kok beda?)\n5,6-13,6 dtk → 'Kok tahu?' + INTI KEJUTAN (±12,5 dtk): kamera tilt naik ke kotak kecil di atas kusen (pattern interrupt), lingkaran merah; 'Dia nyari GERAKAN, bukan orang': Tebe membeku = kotak tenang, Tebe goyang = kotak menyala\n13,6-21,2 dtk → MEKANISME: penampang x-ray kotak, busur gelombang mint memancar, memantul dari Tebe yang melangkah; pantulan merapat & berubah warna = 'BERUBAH' → pintu meluncur di rel\n21,2-28,6 dtk → TAPI 1 (bayar hook) + REAKSI TEBE + CANDA: Tebe lewat menyamping, pantulan nyaris sama ('berubah DIKIT'), pintu diam; Tebe tersinggung melipat tangan, kotak bersiul pura-pura polos → 'Pintunya bukan sombong, kamu cuma sering nggak KEBACA'\n28,6-33,2 dtk → OPEN LOOP 2: Tebe BERHENTI tepat di celah, diam kaku; daun pintu mulai bergerak menutup → 'Pintunya nutup, dong?' (ketegangan, potongan cepat)\n33,2-41,2 dtk → KEJUTAN KEDUA: sorot ke bawah, tirai berkas infra merah tipis muncul di celah ('sensor KEDUA'), berkas putus di badan Tebe dan berpendar, daun pintu yang sudah bergerak mundur lagi ('BATAL nutup')\n41,2-55,4 dtk → PAYOFF + PERTANYAAN + SHARE + LOOP: layar terbelah 'mau masuk?' (kerucut atas) vs 'ada orang di tengah?' (tirai bawah); kartu LAMBAI / MUNDUR (pertanyaan 1 kata); Tebe pura-pura kirim video ke teman; 'Pas dia lewat depan pintu minimarket...' → kamera turun ke trotoar = komposisi awal (Tebe lewat, pintu cuek) → loop ke kalimat pertama; logo YouTube kecil ≤1 dtk sambil kalimat terakhir, tanpa ekor kosong",
+  "durasi_target": "±55 dtk (≤57, arahan laporan harian & Pak Bima)",
+  "jumlah_kata": 126,
+  "skor_naskah": {
+    "hook": 2,
+    "taruhan": 1,
+    "penahan": 2,
+    "kejutan_kedua": 1,
+    "bahasa_lisan": 1,
+    "payoff": 1,
+    "total": 8
+  },
+  "skor_naskah_catatan": "Jujur 8/9. Hook 2: pengalaman tubuh yang semua orang pernah (lewat → cuek, mendekat → kebuka), kontras terbaca tanpa suara, kata kunci ≤2 dtk. Taruhan 1: 'kamu' pelaku di detik 0, setiap orang yang masuk minimarket. Penahan 2: 2 open loop (cuek vs kebuka → dibayar ±27 dtk; 'nutup, dong?' → dibayar ±40 dtk), pattern interrupt tiap 4-8 dtk, 1 canda + reaksi Tebe. Kejutan kedua 1: sensor KEDUA di celah membalik anggapan 'satu sensor di atas', tapi sebagian penonton bisa menebak 'pasti ada sensor lagi', jadi belum 'wah' penuh. Bahasa lisan 1: kalimat 4-12 kata, istilah hanya 'sensor gerak', 'gelombang mikro', 'infra merah' (semua langsung diperagakan), 'Doppler' tidak diucapkan. Payoff 1: 'kok tahu?' dijawab (gerakan) + 'kok cuek?' dijawab (menyamping), lalu loop. Gaya ngobrol YA ('bukan sombong, kamu cuma sering nggak KEBACA'; tanpa menggurui, tanpa tips). SEO YA ('pintu minimarket' ≤2 dtk + judul opsi 1).",
+  "skor_viral": {
+    "hook": {
+      "skor": 2,
+      "alasan": "Semua orang pernah lewat depan pintu otomatis yang nggak kebuka lalu kebuka pas didekati; kontras dua gerakan tubuh bikin penonton berhenti karena 'eh iya, kok gitu ya?'."
+    },
+    "jarak_kejutan": {
+      "skor": 1,
+      "alasan": "'Yang dicari GERAKAN, bukan orang' + 'menyamping cuma berubah dikit' benar dan menjelaskan pengalaman nyata; jaraknya sedang (banyak yang sudah samar tahu 'ada sensor'), tidak sejauh 'layar baca listrik'."
+    },
+    "retensi": {
+      "skor": 2,
+      "alasan": "±55 dtk (≤57), kejutan ±12,5 dtk, celah baru tiap ±6-8 dtk (kok tahu → menyamping → berhenti di tengah → sensor kedua), tidak ada bagian datar."
+    },
+    "layak_dibagikan": {
+      "skor": 1,
+      "alasan": "Pemicu 'teman yang suka NGETES pintu' spesifik dan lucu (pola Rem motor), tapi identitasnya lebih ringan dari 'rem belakang doang'."
+    },
+    "pemicu_komentar": {
+      "skor": 2,
+      "alasan": "Pertanyaan 1 kata pengalaman LAMBAI/MUNDUR tanpa jawaban benar + loop 'Pas dia lewat depan pintu minimarket...' yang menyambung mulus ke kalimat pertama."
+    },
+    "total": 8
+  },
+  "pelafalan": {
+    "minimarket": "mini-market",
+    "infra merah": "in-fra me-rah",
+    "nggak": "nggak",
+    "ngetes": "nge-tes"
+  },
+  "seo": {
+    "kata_kunci_utama": "pintu minimarket",
+    "kata_kunci_turunan": [
+      "kenapa pintu minimarket bisa terbuka sendiri",
+      "pintu otomatis minimarket",
+      "cara kerja pintu otomatis",
+      "sensor pintu otomatis"
+    ],
+    "catatan": "Utama terucap ±1,2-2,0 dtk ('Kamu lewat depan pintu minimarket') dan diulang di kalimat terakhir (loop) + judul opsi 1 + tag no.1 + kalimat 1 deskripsi + teks layar pertama 'PINTU MINIMARKET CUEK?'. Turunan: 'sensor gerak' terucap (adegan 2) + teks layar 'SENSOR GERAK'; 'pintu otomatis', 'cara kerja', 'terbuka sendiri' di deskripsi/tag/caption (tidak dijejalkan ke narasi agar tetap ≤57 dtk)."
+  },
+  "catatan_fakta": "Setiap kalimat dari riset.md (Laras). Adegan 1 'lewat depan → cuek, melangkah ke arahnya → kebuka' = pengalaman bersama + rantai 3 (Doppler peka gerak ke arah/menjauhi sensor, menyamping geseran kecil/nol; paten US 5481266); adegan hook berupa skenario pengalaman, klaimnya di-hedge 'sering' di adegan 4. Adegan 2 'kotak kecil di atasnya, sensor gerak, nyari GERAKAN bukan orang' = Uji 2 (bereaksi pada GERAKAN, bukan 'ada orang') + rantai 1 (sensor pembuka di atas pintu). Adegan 3 'Di banyak pintu, nembak gelombang mikro, nangkep pantulan, kamu mendekat pantulannya berubah, pintu meluncur' = rantai 1-2 ('banyak pintu' sesuai catatan diperdebatkan; ScienceABC, Optex, US 4009476, doorparts). Adegan 4 'menyamping cuma berubah DIKIT, sering nggak kebaca' = rantai 3 ('bisa/sering kurang peka', bukan 'pasti'). Adegan 5 'berhenti di tengah pintu, nutup dong?' = rantai 4 (orang diam di celah). Adegan 6 'banyak pintu punya sensor KEDUA, berkas infra merah di celah; badanmu motong berkas, pintu BATAL nutup' = rantai 4 (menutup hanya bila celah bebas, membuka lagi bila berkas terputus; doorparts, ASSA ABLOY, Optex). Adegan 7 'satu pintu DUA tugas: nebak mau masuk, jaga di tengah' = rantai 5; LAMBAI/MUNDUR & tag teman = pertanyaan pengalaman riset (bukan klaim, bukan saran). TIDAK dipakai: 'semua pintu gelombang mikro', PIR sebagai satu-satunya, merek, tipe pintu minimarket Indonesia, ting-nong, angka frekuensi/daya/Hz, radiasi, standar EN/DIN, 'pintu nggak pernah menjepit', saran mengakali/memperbaiki pintu, 'jalan pelan → pintu diam' (tak bersumber).",
+  "adegan": [
+    {
+      "no": 1,
+      "narasi": "Kamu lewat depan pintu minimarket, pintunya CUEK. Kamu melangkah ke arahnya... eh, KEBUKA.",
+      "teks_layar": "PINTU MINIMARKET CUEK?",
+      "visual": "Frame 0 = cover: low-angle view of a generic glass sliding door of a small convenience store at dusk, warm orange-cream light from inside, blurred plain shelves (no brand, no logo, no readable signs), a big boxy sensor above the door frame shooting a soft mint-green cone of wave arcs at Tebe who waves up at it in front of the half-open door, one red arrow at the sensor box; at 1.2 s the camera pulls back and swings to a side view along the sidewalk: the door is fully closed, Tebe walks sideways past the front of the door, the door stays still; at 3.6 s Tebe turns and steps straight toward the door and the glass panels slide open smoothly with little cartoon motion lines; flat style without black outlines; no text, no brands, no numbers in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 5.6,
+      "set": "tokoMalam (oranye-krem senja) + BARU aset-pintu.js: pintuGeserKaca generik + kotakSensor di atas kusen",
+      "tebe": "sampul: sedang, kiri-tengah bawah, melambai ke kotak sensor; lalu jadi 'kamu' yang lewat menyamping dan belok mendekat",
+      "aksi": "0,0 narasi + sampul; 1,2 kamera mundur & geser ke samping trotoar; 1,6 teks 'PINTU MINIMARKET CUEK?'; 2,0 Tebe lewat menyamping, pintu diam ('CUEK'); 3,6 Tebe belok mendekat; 4,8 pintu meluncur terbuka ('KEBUKA')",
+      "catatan_yoga": "Narasi di 0,0-0,3 dtk, tanpa intro. Sampul ±1,2 dtk. Pintu & toko generik: tanpa merek, warna toko netral (hindari kombinasi warna khas minimarket tertentu), tanpa tulisan di kaca. Jeda kecil di '...' sebelum 'eh, KEBUKA' supaya pintu meluncur tepat di kata itu."
+    },
+    {
+      "no": 2,
+      "narasi": "Kok tahu kamu mau masuk? Lihat kotak kecil di ATASNYA. Itu sensor gerak. Dia nyari GERAKAN, bukan orang.",
+      "teks_layar": "SENSOR GERAK",
+      "visual": "The camera tilts up fast from Tebe to the small grey box above the door frame, a red cartoon circle pops around it; then a playful test: Tebe freezes like a statue in front of the door and the box stays calm and dim; Tebe wiggles his arms and the box lights up mint green with a little 'ping' glow; flat style without black outlines; no text, no brand on the box.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.0,
+      "set": "tokoMalam → zoom ke kotakSensor di atas kusen",
+      "tebe": "kecil di bawah: membeku seperti patung lalu menggoyangkan tangan (peraga, bukan reaksi)",
+      "aksi": "5,6 'Kok tahu?' kamera tilt naik cepat (pattern interrupt); 7,4 lingkaran merah di kotak kecil; 9,0 teks 'SENSOR GERAK'; 10,6 Tebe membeku, kotak redup; 12,0 Tebe bergoyang, kotak menyala hijau saat 'GERAKAN'",
+      "catatan_yoga": "INTI KEJUTAN ±12,5 dtk. Masukanmu dipakai: 'kotak kecil di atas pintu' biar penonton menoleh ke benda nyata. Kotak polos tanpa logo/lampu merek."
+    },
+    {
+      "no": 3,
+      "narasi": "Di banyak pintu, kotak itu nembak gelombang mikro, lalu nangkep PANTULANNYA. Kamu mendekat, pantulannya BERUBAH, pintu meluncur.",
+      "teks_layar": "PANTULANNYA BERUBAH",
+      "visual": "X-ray cutaway of the sensor box and the door header: from the box, soft mint-green curved wave arcs spread forward and down toward the sidewalk, hit Tebe and bounce back; as Tebe steps closer, the returning arcs bunch together tighter and shift to a brighter mint tone, a small spark runs from the box along a wire to a motor in the header, a belt turns and the glass panel glides along its rail; flat style without black outlines; no text or numbers in the image.",
+      "maskot": false,
+      "jenis_visual": "gambar",
+      "durasi": 7.6,
+      "set": "aset-pintu.js penampang x-ray: kotakSensor + kerucut gelombang mint + rel, sabuk, motor di kepala pintu",
+      "tebe": "siluet kecil yang melangkah (subjek gelombang, bukan reaksi)",
+      "aksi": "13,6 potong ke penampang x-ray; 14,4 busur gelombang memancar mengikuti 'nembak'; 16,6 busur memantul balik dari Tebe ('PANTULANNYA'); 18,4 Tebe melangkah, pantulan merapat & lebih terang ('BERUBAH'); 19,8 percik ke motor, sabuk berputar, pintu meluncur",
+      "catatan_yoga": "Peragaan persis kata. Tanpa label 'Doppler', tanpa angka. 'Motor dapat perintah' cukup visual (percik → motor → sabuk), tidak diucapkan."
+    },
+    {
+      "no": 4,
+      "narasi": "Tapi kalau kamu lewat menyamping, pantulannya cuma berubah DIKIT. Pintunya bukan sombong, kamu cuma sering nggak KEBACA.",
+      "teks_layar": "BUKAN SOMBONG",
+      "visual": "Same x-ray view: Tebe walks sideways across the front of the door, the returning wave arcs stay almost the same spacing and color, the box barely flickers and the door stays shut; gag: Tebe stops, crosses his arms and pouts at the door like he got ignored, while the sensor box 'looks away' and whistles innocently with a tiny cartoon music note; flat style without black outlines; no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 7.4,
+      "set": "penampang x-ray yang sama → kembali ke tokoMalam (pintu tertutup)",
+      "tebe": "REAKSI 1: tersinggung, melipat tangan, cemberut ke pintu (pojok bawah, zona aman)",
+      "aksi": "21,2 'Tapi' = Tebe lewat menyamping (pattern interrupt arah gerak); 23,0 pantulan nyaris sama, kotak cuma berkedip ('DIKIT'); 25,4 Tebe berhenti, melipat tangan; 26,6 kotak buang muka & bersiul (canda); 27,8 teks 'BUKAN SOMBONG'",
+      "catatan_yoga": "Bayar hook: penonton harus lihat bedanya dengan adegan 3 (pantulan TIDAK merapat). 'Sering', jadi kotak boleh berkedip kecil, bukan mati total."
+    },
+    {
+      "no": 5,
+      "narasi": "Nah, kalau kamu BERHENTI di tengah pintu? Pintunya nutup, dong?",
+      "teks_layar": "NUTUP, DONG?",
+      "visual": "Front view, slightly low: Tebe stands frozen exactly in the middle of the open doorway, stiff like a statue, eyes darting; above him the sensor box goes dim (no movement), and the two glass panels start sliding inward toward him with a tense slow push, quick zoom on Tebe's nervous face; flat style without black outlines; no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 4.6,
+      "set": "tokoMalam: celah pintu terbuka, tampak depan",
+      "tebe": "peraga: berdiri kaku di celah, mata melirik kiri-kanan (tegang, bukan takut berlebihan)",
+      "aksi": "28,6 potong ke tampak depan; 29,6 Tebe berhenti kaku ('BERHENTI'), kotak redup; 31,4 daun pintu mulai bergerak masuk; 32,4 zoom cepat ke wajah Tebe saat 'dong?'",
+      "catatan_yoga": "Ketegangan, bukan horor. Pintu TIDAK menyentuh Tebe di adegan ini (jangan memberi kesan menjepit)."
+    },
+    {
+      "no": 6,
+      "narasi": "Ternyata, banyak pintu punya sensor KEDUA: berkas infra merah di celahnya. Badanmu motong berkas itu, pintu BATAL nutup.",
+      "teks_layar": "SENSOR KEDUA",
+      "visual": "The camera drops down to the door edge: thin glowing red-pink infrared beams appear like a see-through curtain across the doorway; the beams hitting Tebe's body break and the broken ends pulse brightly; the sliding panels stop and glide back open; Tebe relaxes, wipes his forehead with relief; flat style without black outlines; no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 8.0,
+      "set": "aset-pintu.js: tirai berkas infra merah di celah pintu (BARU)",
+      "tebe": "lega, mengusap dahi (reaksi kecil, bukan pusat)",
+      "aksi": "33,2 kamera turun ke tepi pintu; 34,4 tirai berkas merah-pink muncul ('sensor KEDUA', teks layar); 37,6 berkas putus di badan Tebe, ujungnya berpendar ('motong'); 39,4 daun pintu berhenti lalu mundur ('BATAL nutup'); 40,6 Tebe lega",
+      "catatan_yoga": "KEJUTAN KEDUA. Berkas tetap terlihat 'teknis' (garis tipis), bukan laser film aksi. Warna berkas merah-pink supaya beda dari gelombang mint sensor gerak."
+    },
+    {
+      "no": 7,
+      "narasi": "Jadi satu pintu, DUA tugas: nebak kamu mau masuk, jaga kamu di tengah. Pintu cuek? Kamu tim LAMBAI atau MUNDUR? Kirim ke teman yang suka NGETES pintu. Pas dia lewat depan pintu minimarket...",
+      "teks_layar": "LAMBAI / MUNDUR?",
+      "visual": "Split frame: top half the mint wave cone from the box labeled by an icon of a walking figure, bottom half the red-pink beam curtain with an icon of a standing figure; then back to the same dusk sidewalk from scene 1: two big choice cards appear (a waving hand, a little step-back arrow) as code overlay; Tebe on the sidewalk mimes sending the video to a friend on a phone with a cheeky grin, then steps aside; the camera settles on exactly the same side view as scene 1 (closed glass door, warm shop light, a figure starting to walk sideways past the door) so the loop is seamless; flat style without black outlines; no logos, no text in the image.",
+      "maskot": true,
+      "jenis_visual": "gambar",
+      "durasi": 14.2,
+      "set": "layar terbelah (kerucut mint vs tirai merah) → tokoMalam trotoar = komposisi adegan 1",
+      "tebe": "di trotoar, pura-pura kirim video ke teman, nyengir, lalu minggir",
+      "aksi": "41,2 layar terbelah dua ('DUA tugas'); 43,6 ikon 'mau masuk' / 'di tengah' menyala bergantian; 46,4 kembali ke trotoar, kartu LAMBAI / MUNDUR muncul satu-satu mengikuti suara; 50,4 Tebe kirim video ke teman ('NGETES'); 53,0 kamera diam di tampak samping = adegan 1, sosok mulai lewat menyamping ('Pas dia lewat...')",
+      "catatan_yoga": "Loop: kalimat terakhir digantung (nada naik) → 'Kamu lewat depan pintu minimarket...'. Logo YouTube kecil + 'Ternyata Begitu' ≤1 dtk di zona aman SAMBIL kalimat terakhir, tanpa ekor kosong. Kartu LAMBAI/MUNDUR = pilihan pengalaman, jangan beri tanda centang/'yang benar'. Bila final >57 dtk: pangkas jeda di adegan 7 & 3 dulu, jangan buang pertanyaan atau loop."
+    }
+  ]
+}
