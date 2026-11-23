@@ -16,7 +16,7 @@ Video terkait: Shorts "Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu" (`20
 Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat? Ternyata ada yang dia cari. #pintuotomatis #TernyataBegitu #FaktaUnik  (±143 huruf, ≤150)
 
 ## Instagram Reels (tanpa ajakan pindah platform)
-Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat di depannya? Ternyata ada yang dia cari, dan bukan kamu.
+Pintu minimarket kok tahu kamu mau masuk, tapi cuek pas kamu cuma lewat di depannya? Ternyata ada yang dia cari, dan bukan orangnya.
 Kirim ke teman yang suka ngetes pintu minimarket.
 Pintunya cuek, kamu tim LAMBAI atau tim MUNDUR? Satu kata.
 #pintuotomatis #pintuminimarket #carakerja #minimarket #faktaunik #sains #TernyataBegitu

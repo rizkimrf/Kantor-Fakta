@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_fakta",
+  "tahap": "produksi",
   "seri": "A",
   "topik": "a3-02 pintu minimarket",
   "dibuat": "2026-11-24T05:42",
@@ -31,7 +31,16 @@
       "oleh": "Laras",
       "waktu": "2026-11-23",
       "hasil": "cek_riset.md: 1 WAJIB (caption IG 'dan bukan kamu' -> 'dan bukan orangnya') + 6 saran; klaim inti (gerak menyamping lemah/paten US 5481266, gelombang mikro 'di banyak pintu', GERAKAN bukan orang, sensor kedua infra merah batal nutup) didukung riset.md."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T05:54+08:00",
+      "hasil": "cek_fakta LULUS (1 WAJIB caption IG diperbaiki Pak Bima; cek_seo 0 wajib), skor 8/9, viral 8/10; Tebe cameo saja; jadwal Rab 25 Nov 13.00"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-25T13:00:00+08:00"
 }
