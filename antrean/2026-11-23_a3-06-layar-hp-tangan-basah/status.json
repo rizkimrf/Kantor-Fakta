@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "terjadwal",
   "topik": "a3-06 layar hp tangan basah",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -56,6 +56,12 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-23T09:20+08:00",
       "hasil": "Review LULUS (58,4 dtk, 13,2 MB), uji 3 dtk 8/10; jadwal Sel 24 Nov 13.00 WITA"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "oleh": "Bos (Kantor Visual HP)",
+      "waktu": "2026-11-23T12:49+08:00"
     }
   ],
   "masalah": null,
@@ -65,5 +71,10 @@
   "video_asset_id": "1ac165e9085ace686197df7856c97855",
   "thumb_asset_id": "f0c9f78c50b8e0906afe80097ccd23be",
   "video_url": "/_blob/1ac165e9085ace686197df7856c97855",
-  "thumb_url": "/_blob/f0c9f78c50b8e0906afe80097ccd23be"
+  "thumb_url": "/_blob/f0c9f78c50b8e0906afe80097ccd23be",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    }
+  }
 }
