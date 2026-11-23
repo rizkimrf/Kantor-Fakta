@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "menunggu_persetujuan",
   "topik": "b3-09 lagu nyangkut",
   "seri": "B",
   "dibuat": "2026-11-24T05:42",
@@ -49,10 +49,28 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-24T06:00+08:00",
       "hasil": "cek_fakta LULUS setelah R1 (2 WAJIB Laras), skor 8/9, viral 8/10; hook #20 tetap; jadwal Rab 25 Nov 19.45"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-24T07:10+08:00",
+      "hasil": "final.mp4 56,6 dtk, 16,7 MB, 1080x1920; cek_mulus LULUS (13 transisi), cek_video LULUS; narasi ElevenLabs eleven_v4 sekali (907 huruf ≈ 472 kredit, tercatat di aset/log_kredit.csv); senandung orisinal sintesis sendiri (scripts/buat_sfx_lagu.py, aset/sfx/SUMBER.md) di bawah narasi, motif sama di akhir untuk loop; set baru studio-aset/aset-lagu.js; Tebe adegan 1,2,7,8; adegan 7 gelembung meredup + lencana 1 STUDI; thumbnail.png = frame 0 'KOK MUTER TERUS?' biru langit+krem aksen jingga; outro logo YouTube ±1 dtk"
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T06:40+08:00",
+      "hasil": "Review LULUS (56,6 dtk, 16,7 MB), uji 3 dtk 8/10; jadwal Rab 25 Nov 19.45 WITA"
     }
   ],
   "masalah": null,
   "pilar": "Sains & tubuh manusia",
   "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-25T19:45:00+08:00"
+  "jadwal_tayang": "2026-11-25T19:45:00+08:00",
+  "video_asset_id": "66aaadf7de7e20c3108a9a806f4fddb3",
+  "thumb_asset_id": "e42795f5422f1cde895abe4290efaa5b",
+  "video_url": "/_blob/66aaadf7de7e20c3108a9a806f4fddb3",
+  "thumb_url": "/_blob/e42795f5422f1cde895abe4290efaa5b"
 }

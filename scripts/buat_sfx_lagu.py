@@ -161,6 +161,6 @@ if __name__ == "__main__":
     s, m = ROOT / "aset/sfx", ROOT / "aset/musik"
     # level: narasi ±−17 dB RMS → senandung buka ±−35 dB RMS (−18 dB relatif), puncak sela napas ±−28
     simpan(s / "senandung_buka.wav", buka(), rms_db=-34)
-    simpan(s / "senandung_akhir.wav", akhir(), rms_db=-21)
+    simpan(s / "senandung_akhir.wav", akhir(), rms_db=-24)
     simpan(s / "kaset_klik.wav", klik(), .7); simpan(s / "tek.wav", tek(), .6); simpan(s / "dj.wav", dj(), .6)
     simpan(m / "pagi-senandung.wav", latar(), .5)

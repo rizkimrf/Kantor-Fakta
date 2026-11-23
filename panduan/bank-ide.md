@@ -47,8 +47,8 @@ Mutu tidak turun: naskah wajib skor ≥ 8/10 dan lolos semua gerbang; bila gugur
 Mulai produksi Jum 27 Nov kembali 2 Shorts/hari + video panjang Min 29 Nov. Ide TAHAN tidak masuk jadwal.
 | Hari | 13.00 jalur A | 18.00 jalur B | 19.45 terkuat |
 |---|---|---|---|
-| Sel 24 Nov | A3-06 layar HP & tangan basah (terjadwal) | B3-04 suara rekaman sendiri (terjadwal) | A3-01 barcode (hanya bila disetujui Bos sebelum 19.32; bila tidak, geser ke slot kosong berikut) |
-| Rab 25 Nov | A3-02 pintu minimarket terbuka sendiri | B3-02 foto WA burik (syarat: sumber resmi WA) | B3-09 lagu nyangkut (komentar judul lagu) |
+| Sel 24 Nov | A3-06 layar HP & tangan basah (terjadwal) | B3-04 suara rekaman sendiri (terjadwal) | A3-01 barcode (**menunggu persetujuan Bos 24 Nov**; tayang bila disetujui sebelum 19.32, bila tidak geser ke slot kosong berikut) |
+| Rab 25 Nov | A3-02 pintu minimarket (**menunggu persetujuan Bos 24 Nov**) | B3-02 foto WA burik (syarat: sumber resmi WA) — **belum diproduksi, slot kosong** | B3-09 lagu nyangkut (**menunggu persetujuan Bos 24 Nov**) |
 | Kam 26 Nov | A3-05 sabun & minyak piring | B3-03 lupa di ambang pintu (versi "ilmuwan berdebat") | B3-10 nyamuk pilih-pilih |
 | Jum 27 Nov | A3-04 panci presto | B3-05 tersentak mau tidur | A3-07 remote TV & kamera HP (bila sudah terjadwal) |
 | Sab 28 Nov | A3-10 kompor "tek-tek" (syarat: 1 sumber lagi) | B3-01 plat nomor (syarat: dikunci ke Perpol) | — |
@@ -62,3 +62,5 @@ Cadangan bila ada yang gugur: A3-09 penghapus, A3-08 pulpen. TAHAN: B3-06, B3-08
 Alternatif bila A3-06 menang di Shorts: "Layar sentuh/HP" (layar kapiler, tangan basah, remote IR, WA kompresi) — tema HP lebih luas penonton.
 
 **Keputusan Pak Bima (Senin 23 Nov, laporan mingguan):** video panjang Min 29 Nov diganti tema **Pedas & Sambal** (Pedas = views YouTube tertinggi, Sambal = selesai-ditonton TikTok tertinggi); "Rahasia Dapur" jadi cadangan. Semua Shorts ≤ 60 dtk termasuk jalur A.
+
+**Catatan Pak Bima (Sel 24 Nov):** pilar 7 hari terakhir didominasi Benda & kebiasaan sehari-hari (hitungan Raka ±67%, melanggar batas 40%). Produksi berikut utamakan B3-01 plat nomor (Geografi), ide Sejarah/Alam/Uang baru dari Laras, sebelum ide 'benda' lain.
