@@ -1,7 +1,8 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
+  "seri": "A",
   "topik": "a3-02 pintu minimarket",
   "dibuat": "2026-11-24T05:42",
-  "riwayat": [],
+  "riwayat": [{"tahap": "ide", "oleh": "Laras", "hasil": "riset.md; skor Faktor Ternyata 8/10; 2+ sumber (ScienceABC, Optex, paten US 4009476 & 5481266, Door Parts UK, ASSA ABLOY)"}],
   "masalah": null
 }
