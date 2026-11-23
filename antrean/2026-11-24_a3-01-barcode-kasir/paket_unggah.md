@@ -13,7 +13,7 @@ Video terkait: Shorts "Kenapa Layar HP Error Saat Tangan Basah? Tebak Dulu" (`20
 **Tugas manual (Raka/Bos):** `scripts/terbitkan.py` tidak membaca `komentar_tersemat` maupun `terkait` - sematkan komentar dan pasang related video MANUAL setelah tayang. Balas komentar di jam pertama (terutama yang mengaku pernah jadi kasir).
 
 ## TikTok (kata kunci di awal, tanpa jawaban, tanpa ajakan pindah platform)
-Kasir bip barcode, harga muncul. Kamu kira harganya ada di garis-garis itu? Tag teman mantan kasir #barcode #kasir #TernyataBegitu #FaktaUnik  (143 huruf, ≤150)
+Kasir bip barcode, harga muncul. Kamu kira harganya ada di garis-garis itu? Tag teman mantan kasir #barcode #kasir #TernyataBegitu #FaktaUnik  (141 huruf, ≤150)
 
 ## Instagram Reels (tanpa ajakan pindah platform)
 Kasir bip barcode, harga langsung muncul. Kamu kira harganya ada di garis-garis itu?
