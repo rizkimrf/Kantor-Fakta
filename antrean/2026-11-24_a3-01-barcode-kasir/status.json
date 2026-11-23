@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_fakta",
+  "tahap": "produksi",
   "seri": "A",
   "topik": "a3-01 barcode kasir",
   "dibuat": "2026-11-24T05:42",
@@ -27,14 +27,29 @@
       "oleh": "Raka",
       "tanggal": "2026-11-23",
       "hasil": "0 butir WAJIB narasi; judul final opsi 1; caption TikTok ditambah ajakan tag teman kasir (tanpa ajakan pindah platform); 4 saran. Lanjut cek_fakta (Pak Bima)."
-    }
-    ,
+    },
     {
       "tahap": "cek_riset_naskah",
       "oleh": "Laras",
       "tanggal": "2026-11-23",
       "hasil": "3 WAJIB: (1) adegan 5 'semua kasir ikut serentak' tanpa sumber -> hedge; (2) teks layar '899 ≠ BUATAN INDONESIA' ambigu -> '899 BUKAN TANDA BUATAN INDONESIA'; (3) komentar tersemat 'bukan jadi salah harga' -> 'ditolak, bukan nyasar ke barang lain'. + 5 saran; lihat cek_riset.md"
+    },
+    {
+      "tahap": "naskah",
+      "revisi": "R1",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-23",
+      "hasil": "R1: 3 WAJIB cek_riset diterapkan: (1) adegan 5 → 'Harga cukup diganti di daftar toko, kasirnya IKUT' (tanpa sekali/semua/serentak) + visual layar berganti berurutan; (2) teks layar adegan 6 → '899 BUKAN TANDA BUATAN INDONESIA'; (3) komentar tersemat → 'kalau satu angka salah kebaca, scanner umumnya menolaknya, bukan nyasar ke barang lain'. Saran: 'nomornya' → 'awalannya dibagiin GS1 Indonesia' (narasi + deskripsi); sumber GS1 FAQ 43000734188 ditambah (12 URL). 125 kata, ±56 dtk (≤57). Disinkronkan di naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md (caption TikTok Raka ikut di naskah.json). Skor tetap 8/9, viral 9/10. Tahap tetap cek_fakta."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T06:05+08:00",
+      "hasil": "cek_fakta LULUS setelah R1 (3 WAJIB Laras), skor 8/9, viral 8/10; jadwal Sel 24 Nov 19.45 bila disetujui Bos sebelum 19.32, cadangan Kam 26 Nov 19.45"
     }
   ],
-  "masalah": null
+  "masalah": null,
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-24T19:45:00+08:00"
 }
