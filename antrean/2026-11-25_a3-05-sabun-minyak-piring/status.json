@@ -17,6 +17,16 @@
       "tahap": "naskah",
       "oleh": "Nadia",
       "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; hook #18, kejutan ±11 dtk, ±54 dtk/120 kata, skor naskah 8/9, viral 8/10"
+    },
+    {
+      "tahap": "cek_riset",
+      "oleh": "Laras",
+      "hasil": "cek_riset.md: 4 WAJIB (langsung kesat; air cuma geser; puluhan molekul; sumber deskripsi belum dibuka teks penuh) + saran; saling dorong AMAN"
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "hasil": "cek_seo.md: 1 WAJIB (deskripsi: kata kunci di 2 kalimat pertama, ke Nadia, tanpa ubah naskah/suara) + 7 saran; judul_final = opsi 1; tag +2; tahap tidak diubah (menunggu Laras)"
     }
   ],
   "masalah": null,

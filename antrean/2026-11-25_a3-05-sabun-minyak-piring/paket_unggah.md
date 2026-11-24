@@ -25,4 +25,4 @@ Kamu nyuci duluan GELAS, PIRING, atau WAJAN? Satu kata.
 YouTube, TikTok & Reels 13.00 WITA (slot jalur A), Kamis 26 Nov 2026 (cadangan Jumat 27 Nov 13.00). Label konten AI menyala. Tanpa ajakan pindah ke YouTube di caption TikTok/IG.
 
 ## Keputusan cek_seo (Raka)
-(diisi Raka)
+Lihat cek_seo.md. Judul final = opsi 1 (57 huruf). Tag ditambah 'sabun cuci piring' & 'wajan berminyak'. 1 butir WAJIB di deskripsi (kata kunci masuk 2 kalimat pertama).

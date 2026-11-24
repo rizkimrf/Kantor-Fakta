@@ -1,0 +1,39 @@
+{
+  "label_ai": true,
+  "youtube": {
+    "judul": "Kenapa Nyamuk Suka Gigit Kamu? Ini Bukan Kebetulan",
+    "deskripsi": "Kenapa nyamuk suka gigit kamu, seolah nyamuk pilih kamu duluan pas nongkrong di teras? Penelitian di jurnal Cell (2022, dirangkum NIH Research Matters) mengaitkan 'magnet nyamuk' dengan zat asam tertentu di kulit, dan satu studi kembar kecil di PLOS ONE (2015) menduga gen ikut berperan. Tonton sampai habis, lalu jawab di komentar: korban nyamuk di tongkronganmu KAMU atau DIA?\n\nCatatan lengkap (spoiler, baca setelah nonton): Nyamuk Aedes aegypti betina biasanya memakai CO2 dari napas sebagai petunjuk jarak jauh (lebih dari sekitar 1 meter), lalu saat dekat memakai panas, kelembapan, dan bau kulit; urutan ini tidak mutlak karena isyaratnya saling berinteraksi. Dalam studi Cell 2022, 64 relawan memakai sarung nilon di lengan selama 6 jam, lalu nilonnya diuji ke nyamuk. Orang yang paling menarik bagi nyamuk punya kadar asam karboksilat di kulit jauh lebih tinggi, kadarnya stabil lebih dari setahun, dan satu relawan 'magnet' yang diikuti beberapa tahun tetap jadi favorit nyamuk. Ini baru hubungan (asosiasi), bukan sebab-akibat yang terbukti; ada juga relawan berkadar tinggi yang tidak menarik nyamuk. Hasil di lab untuk Aedes aegypti belum tentu sama untuk semua jenis nyamuk. Video ini menjelaskan perilaku nyamuk, bukan nasihat kesehatan.\n\nSumber:\n- NIH Research Matters, Skin compounds associated with attractiveness to mosquitoes: https://nih.gov/news-events/nih-research-matters/skin-compounds-associated-attractiveness-mosquitoes\n- Rockefeller University, Why some people are mosquito magnets: https://www.rockefeller.edu/news/33019-why-mosquitoes-bite-some-people-more/\n- De Obaldia dkk. (2022), Cell (PMC10069481): https://pmc.ncbi.nlm.nih.gov/articles/PMC10069481\n- ScienceDaily (27 Okt 2022): https://www.sciencedaily.com/releases/2022/10/221027124001.htm\n- Fernandez-Grandon dkk. (2015), studi kembar, PLOS ONE (PMC4406498): https://pmc.ncbi.nlm.nih.gov/articles/PMC4406498\n- Smithsonian, genes and mosquito attraction: https://www.smithsonianmag.com/science-nature/genes-make-some-people-more-attractive-mosquitoes-180955075/\n- Isyarat CO2 & jarak dekat: https://pmc.ncbi.nlm.nih.gov/articles/PMC4019456 · https://pmc.ncbi.nlm.nih.gov/articles/PMC4007582\n- eLife 2022: https://elifesciences.org/articles/76663\n- Scientific American: https://www.scientificamerican.com/article/some-people-really-are-mosquito-magnets-and-theyre-stuck-that-way\n\n#Shorts #Nyamuk #TernyataBegitu",
+    "tag": [
+      "kenapa nyamuk suka gigit saya",
+      "kenapa nyamuk gigit saya",
+      "magnet nyamuk",
+      "nyamuk pilih-pilih",
+      "kenapa cuma saya yang digigit nyamuk",
+      "nyamuk tertarik bau kulit",
+      "fakta nyamuk",
+      "fakta unik",
+      "ternyata begitu"
+    ],
+    "komentar_tersemat": "Korban nyamuk di tongkronganmu siapa? Komen KAMU atau DIA, lalu tag orangnya. Bonus dari satu studi eLife 2022: cukup beberapa detik hembusan CO2 buatan (seperti napas), nyamuk betina bisa tetap 'mode berburu' lebih dari sepuluh menit. Jadi napasnya sudah pergi, nyamuknya belum tentu.",
+    "terkait": {
+      "folder": null,
+      "judul": null,
+      "url": null,
+      "catatan": "Belum ada video panjang/Shorts terkait (rencana_marketing Raka: kosong dulu). Kandidat video panjang: 'Hewan yang memilih kamu' bila share/komentar tinggi."
+    }
+  },
+  "tiktok": {
+    "caption": "Nyamuk selalu pilih kamu pas nongkrong di teras? Di tongkronganmu, korban nyamuknya KAMU atau DIA? Tag orangnya. #nyamuk #faktaunik #TernyataBegitu"
+  },
+  "instagram": {
+    "caption": "Duduk berdua di teras, kakimu bentol-bentol, temanmu santai aja.\nTernyata nyamuk itu pilih-pilih, dan satu studi nemu 'magnet nyamuk' bisa tetap magnet bertahun-tahun.\nTag teman yang selalu jadi korban nyamuk.\nDi tongkronganmu, korban nyamuknya KAMU atau DIA? Komen satu kata.\n#nyamuk #magnetnyamuk #faktanyamuk #faktaunik #faktasains #TernyataBegitu"
+  },
+  "jadwal_tayang_usulan": "2026-11-25T19:45:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-26T19:45:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): NYAMUK PILIH KAMU? (KAMU hijau limau), teras malam biru dongker + hijau limau neon + aksen merah bentol, TANPA ungu",
+  "musik_catatan": "SFX dengung nyamuk buatan sendiri/berlisensi (dicatat Yoga di aset/sfx/SUMBER.md); tanpa lagu berhak cipta. Jangan menambah lagu tren TikTok/IG saat unggah.",
+  "_catatan": "Slot Rab 25 Nov 19.45 kosong karena B3-09 diunggah manual Bos 24 Nov malam (status.json B3-09); cadangan Kam 26 Nov 19.45. Jadwal resmi diputuskan Pak Bima/Raka dan ditulis ke status.json -> jadwal_tayang saat /terbitkan. komentar_tersemat dipasang manual. Caption IG 'bisa tetap magnet bertahun-tahun' = satu relawan diikuti beberapa tahun (riset Fakta 3), dibingkai 'satu studi nemu ... bisa'."
+}
