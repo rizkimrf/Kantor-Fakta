@@ -17,7 +17,7 @@ Nyamuk selalu pilih kamu pas nongkrong di teras? Di tongkronganmu, korban nyamuk
 
 ## Instagram Reels (tanpa ajakan pindah platform)
 Duduk berdua di teras, kakimu bentol-bentol, temanmu santai aja.
-Ternyata nyamuk itu pilih-pilih, dan satu studi nemu 'magnet nyamuk' bisa tetap magnet bertahun-tahun.
+Ternyata nyamuk itu pilih-pilih, dan satu studi nemu 'magnet nyamuk' tetap magnet sampai beberapa tahun.
 Tag teman yang selalu jadi korban nyamuk.
 Di tongkronganmu, korban nyamuknya KAMU atau DIA? Komen satu kata.
 #nyamuk #magnetnyamuk #faktanyamuk #faktaunik #faktasains #TernyataBegitu
