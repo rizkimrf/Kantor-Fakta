@@ -62,5 +62,9 @@
  "seri": "A",
  "skor_manajer": 8,
  "jadwal_tayang": "2026-11-26T13:00:00+08:00",
- "agen": null
+ "agen": null,
+ "video_asset_id": "c6887b97d18e0f3effd95e909b899494",
+ "thumb_asset_id": "64dc8030e12bb34d1e87ebd804069ee0",
+ "video_url": "/_blob/c6887b97d18e0f3effd95e909b899494",
+ "thumb_url": "/_blob/64dc8030e12bb34d1e87ebd804069ee0"
 }
