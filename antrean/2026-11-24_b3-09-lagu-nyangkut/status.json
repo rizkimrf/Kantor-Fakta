@@ -1,93 +1,109 @@
 {
-  "tahap": "disetujui",
-  "topik": "b3-09 lagu nyangkut",
-  "seri": "B",
-  "dibuat": "2026-11-24T05:42",
-  "riwayat": [
-    {
-      "tahap": "ide",
-      "oleh": "Laras",
-      "hasil": "riset.md selesai; skor Faktor Ternyata 8/10; 5 sumber akademik (Williamson 2012/2014, Liikkanen 2012, Jakubowski 2016, Beaman 2015); teks penuh belum bisa dibuka, angka dipakai bentuk bulat",
-      "tanggal": "2026-11-23"
-    },
-    {
-      "tahap": "pilih",
-      "oleh": "Raka",
-      "hasil": "LANJUT skor 16/20; judul kerja 'Kenapa Lagu Nyangkut di Kepala Seharian?'; Sains 33% (skenario slot 25 Nov) / 43% bila barcode+pintu bergeser; Benda 67% sudah melanggar; rencana_marketing.md & seo.md ditulis",
-      "tanggal": "2026-11-23"
-    },
-    {
-      "dari": "naskah",
-      "ke": "cek_seo",
-      "oleh": "Nadia",
-      "waktu": "2026-11-23",
-      "hasil": "naskah.json (seri fakta) + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; baris Nadia di lembar_tim.md. Mengikuti KEPUTUSAN RAPAT Pak Bima: hook #20 senandung orisinal + #14 '(senandung di bawah) Lagu nyangkut di kepalamu, MUTER terus dari bangun tidur. Kamu nggak lagi dengerin APA-APA.' (kata kunci kata pertama, 0,0-1,0 dtk; bukan teka-teki 'siapa'). Senandung tidak menunda narasi (catatan Pak Bima): di bawah kalimat 1 -18 dB, naik ±0,4 dtk di sela napas, motif sama di akhir. Kejutan 'Survei di Finlandia: sekitar sembilan dari sepuluh orang... minimal SEMINGGU sekali' selesai ±12,9 dtk; open loop permen karet dtk 16 -> 'satu studi menemukan... Bukan jurus pasti, ya' dtk 32-45; 2 canda (DJ tanpa request, lagunya keseret); penutup komen JUDUL + share 'teman yang lagunya NGGAK pernah ganti' + loop meta 'Awas, senandung tadi bisa ikut nyangkut.' Judul 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele' (57; 'Seharian' dibuang, Raka memutuskan), sampul 'KOK MUTER TERUS?' jingga-krem. 8 adegan, 127 kata, ±55 dtk, 1 angka, 0 klip, Tebe di adegan 1, 2, 7, 8. Tanpa judul/lirik lagu nyata, saran medis, Kellaris/Zeigarnik. Skor naskah 8/9, viral 8/10. Terkait B3-04 suara rekaman. Jadwal usulan Rab 25 Nov 19.45."
-    },
-    {
-      "tahap": "cek_seo",
-      "oleh": "Raka",
-      "hasil": "0 butir WAJIB narasi; judul final = 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele' (57, tanpa 'Seharian'); kata kunci terucap 0,0-1,0 dtk; caption TikTok (147) & IG tanpa ajakan pindah platform; 1 koreksi kecil komentar tersemat ('santai' -> 'netral') di unggah.json & paket_unggah.md; 4 saran opsional di cek_seo.md",
-      "tanggal": "2026-11-23"
-    },
-    {
-      "tahap": "cek_riset_naskah",
-      "oleh": "Laras",
-      "hasil": "2 WAJIB (\"pemicunya sering sepele\"/judul \"Ternyata Sepele\" tanpa data frekuensi -> \"bisa sepele\"; deskripsi \"tidak berlaku pada semua peserta\" -> \"belum tentu berlaku untuk semua orang\") + 6 saran; angka survei aman (89,2% N 12.519 vs 91,7% >11.000 -> pakai \"sekitar 9 dari 10\"); lihat cek_riset.md",
-      "tanggal": "2026-11-23"
-    },
-    {
-      "dari": "naskah",
-      "ke": "cek_fakta",
-      "oleh": "Nadia",
-      "waktu": "2026-11-23",
-      "revisi": "R1 (satu kali)",
-      "hasil": "2 WAJIB cek_riset Laras dikerjakan: (1) 'Pemicunya sering SEPELE' -> 'Pemicunya bisa SEPELE' (narasi adegan 4, teks layar 'PEMICUNYA BISA SEPELE', caption IG); judul final keputusan Pak Bima 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele' (53) di naskah.json, unggah.json, paket_unggah.md; (2) deskripsi '...hasilnya dari eksperimen lab dan belum tentu berlaku untuk semua orang.' Saran: teks layar adegan 2 + label kecil 'SURVEI FINLANDIA'; deskripsi '9 dari 10 respondennya'; adegan 7 'Dugaan penelitinya'; komentar tersemat 'umumnya bukan kesal, tapi netral bahkan menikmati' (perbaikan Raka dipertahankan, kini juga di naskah.json) + rujukan B3-04 'suara di kepala dan telinga'; visual adegan 7 gelembung MEREDUP (bukan pita melambat). naskah_baca.txt & naskah_suara.txt diselaraskan (tag tetap 5). Jumlah kata tetap 127, durasi tetap ±55 dtk (<=57). Hook, loop, sampul tidak berubah. Skor jujur tetap naskah 8/9, viral 8/10. Audio belum dibuat."
-    },
-    {
-      "dari": "cek_fakta",
-      "ke": "produksi",
-      "oleh": "Pak Bima",
-      "waktu": "2026-11-24T06:00+08:00",
-      "hasil": "cek_fakta LULUS setelah R1 (2 WAJIB Laras), skor 8/9, viral 8/10; hook #20 tetap; jadwal Rab 25 Nov 19.45"
-    },
-    {
-      "dari": "produksi",
-      "ke": "review",
-      "oleh": "Yoga",
-      "waktu": "2026-11-24T07:10+08:00",
-      "hasil": "final.mp4 56,6 dtk, 16,7 MB, 1080x1920; cek_mulus LULUS (13 transisi), cek_video LULUS; narasi ElevenLabs eleven_v4 sekali (907 huruf ≈ 472 kredit, tercatat di aset/log_kredit.csv); senandung orisinal sintesis sendiri (scripts/buat_sfx_lagu.py, aset/sfx/SUMBER.md) di bawah narasi, motif sama di akhir untuk loop; set baru studio-aset/aset-lagu.js; Tebe adegan 1,2,7,8; adegan 7 gelembung meredup + lencana 1 STUDI; thumbnail.png = frame 0 'KOK MUTER TERUS?' biru langit+krem aksen jingga; outro logo YouTube ±1 dtk"
-    },
-    {
-      "dari": "review",
-      "ke": "menunggu_persetujuan",
-      "oleh": "Pak Bima",
-      "waktu": "2026-11-24T06:40+08:00",
-      "hasil": "Review LULUS (56,6 dtk, 16,7 MB), uji 3 dtk 8/10; jadwal Rab 25 Nov 19.45 WITA"
-    },
-    {
-      "dari": "menunggu_persetujuan",
-      "ke": "disetujui",
-      "oleh": "Bos (Kantor Visual HP)",
-      "waktu": "2026-11-24T08:31+08:00"
-    },
-    {
-      "catatan": "Bos minta unggah manual malam ini (Sel 24 Nov ±21.00) di YouTube, TikTok, Instagram; slot Rab 25 Nov 19.45 jadi kosong",
-      "oleh": "Pak Bima atas perintah Bos",
-      "waktu": "2026-11-24T20:58+08:00"
-    }
-  ],
-  "masalah": null,
-  "pilar": "Sains & tubuh manusia",
-  "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-24T21:00:00+08:00",
-  "video_asset_id": "66aaadf7de7e20c3108a9a806f4fddb3",
-  "thumb_asset_id": "e42795f5422f1cde895abe4290efaa5b",
-  "video_url": "/_blob/66aaadf7de7e20c3108a9a806f4fddb3",
-  "thumb_url": "/_blob/e42795f5422f1cde895abe4290efaa5b",
-  "terbit": {
-    "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
-    }
+ "tahap": "tayang",
+ "topik": "b3-09 lagu nyangkut",
+ "seri": "B",
+ "dibuat": "2026-11-24T05:42",
+ "riwayat": [
+  {
+   "tahap": "ide",
+   "oleh": "Laras",
+   "hasil": "riset.md selesai; skor Faktor Ternyata 8/10; 5 sumber akademik (Williamson 2012/2014, Liikkanen 2012, Jakubowski 2016, Beaman 2015); teks penuh belum bisa dibuka, angka dipakai bentuk bulat",
+   "tanggal": "2026-11-23"
   },
-  "unggah_manual_bos": true
+  {
+   "tahap": "pilih",
+   "oleh": "Raka",
+   "hasil": "LANJUT skor 16/20; judul kerja 'Kenapa Lagu Nyangkut di Kepala Seharian?'; Sains 33% (skenario slot 25 Nov) / 43% bila barcode+pintu bergeser; Benda 67% sudah melanggar; rencana_marketing.md & seo.md ditulis",
+   "tanggal": "2026-11-23"
+  },
+  {
+   "dari": "naskah",
+   "ke": "cek_seo",
+   "oleh": "Nadia",
+   "waktu": "2026-11-23",
+   "hasil": "naskah.json (seri fakta) + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; baris Nadia di lembar_tim.md. Mengikuti KEPUTUSAN RAPAT Pak Bima: hook #20 senandung orisinal + #14 '(senandung di bawah) Lagu nyangkut di kepalamu, MUTER terus dari bangun tidur. Kamu nggak lagi dengerin APA-APA.' (kata kunci kata pertama, 0,0-1,0 dtk; bukan teka-teki 'siapa'). Senandung tidak menunda narasi (catatan Pak Bima): di bawah kalimat 1 -18 dB, naik ±0,4 dtk di sela napas, motif sama di akhir. Kejutan 'Survei di Finlandia: sekitar sembilan dari sepuluh orang... minimal SEMINGGU sekali' selesai ±12,9 dtk; open loop permen karet dtk 16 -> 'satu studi menemukan... Bukan jurus pasti, ya' dtk 32-45; 2 canda (DJ tanpa request, lagunya keseret); penutup komen JUDUL + share 'teman yang lagunya NGGAK pernah ganti' + loop meta 'Awas, senandung tadi bisa ikut nyangkut.' Judul 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele' (57; 'Seharian' dibuang, Raka memutuskan), sampul 'KOK MUTER TERUS?' jingga-krem. 8 adegan, 127 kata, ±55 dtk, 1 angka, 0 klip, Tebe di adegan 1, 2, 7, 8. Tanpa judul/lirik lagu nyata, saran medis, Kellaris/Zeigarnik. Skor naskah 8/9, viral 8/10. Terkait B3-04 suara rekaman. Jadwal usulan Rab 25 Nov 19.45."
+  },
+  {
+   "tahap": "cek_seo",
+   "oleh": "Raka",
+   "hasil": "0 butir WAJIB narasi; judul final = 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Ternyata Sepele' (57, tanpa 'Seharian'); kata kunci terucap 0,0-1,0 dtk; caption TikTok (147) & IG tanpa ajakan pindah platform; 1 koreksi kecil komentar tersemat ('santai' -> 'netral') di unggah.json & paket_unggah.md; 4 saran opsional di cek_seo.md",
+   "tanggal": "2026-11-23"
+  },
+  {
+   "tahap": "cek_riset_naskah",
+   "oleh": "Laras",
+   "hasil": "2 WAJIB (\"pemicunya sering sepele\"/judul \"Ternyata Sepele\" tanpa data frekuensi -> \"bisa sepele\"; deskripsi \"tidak berlaku pada semua peserta\" -> \"belum tentu berlaku untuk semua orang\") + 6 saran; angka survei aman (89,2% N 12.519 vs 91,7% >11.000 -> pakai \"sekitar 9 dari 10\"); lihat cek_riset.md",
+   "tanggal": "2026-11-23"
+  },
+  {
+   "dari": "naskah",
+   "ke": "cek_fakta",
+   "oleh": "Nadia",
+   "waktu": "2026-11-23",
+   "revisi": "R1 (satu kali)",
+   "hasil": "2 WAJIB cek_riset Laras dikerjakan: (1) 'Pemicunya sering SEPELE' -> 'Pemicunya bisa SEPELE' (narasi adegan 4, teks layar 'PEMICUNYA BISA SEPELE', caption IG); judul final keputusan Pak Bima 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele' (53) di naskah.json, unggah.json, paket_unggah.md; (2) deskripsi '...hasilnya dari eksperimen lab dan belum tentu berlaku untuk semua orang.' Saran: teks layar adegan 2 + label kecil 'SURVEI FINLANDIA'; deskripsi '9 dari 10 respondennya'; adegan 7 'Dugaan penelitinya'; komentar tersemat 'umumnya bukan kesal, tapi netral bahkan menikmati' (perbaikan Raka dipertahankan, kini juga di naskah.json) + rujukan B3-04 'suara di kepala dan telinga'; visual adegan 7 gelembung MEREDUP (bukan pita melambat). naskah_baca.txt & naskah_suara.txt diselaraskan (tag tetap 5). Jumlah kata tetap 127, durasi tetap ±55 dtk (<=57). Hook, loop, sampul tidak berubah. Skor jujur tetap naskah 8/9, viral 8/10. Audio belum dibuat."
+  },
+  {
+   "dari": "cek_fakta",
+   "ke": "produksi",
+   "oleh": "Pak Bima",
+   "waktu": "2026-11-24T06:00+08:00",
+   "hasil": "cek_fakta LULUS setelah R1 (2 WAJIB Laras), skor 8/9, viral 8/10; hook #20 tetap; jadwal Rab 25 Nov 19.45"
+  },
+  {
+   "dari": "produksi",
+   "ke": "review",
+   "oleh": "Yoga",
+   "waktu": "2026-11-24T07:10+08:00",
+   "hasil": "final.mp4 56,6 dtk, 16,7 MB, 1080x1920; cek_mulus LULUS (13 transisi), cek_video LULUS; narasi ElevenLabs eleven_v4 sekali (907 huruf ≈ 472 kredit, tercatat di aset/log_kredit.csv); senandung orisinal sintesis sendiri (scripts/buat_sfx_lagu.py, aset/sfx/SUMBER.md) di bawah narasi, motif sama di akhir untuk loop; set baru studio-aset/aset-lagu.js; Tebe adegan 1,2,7,8; adegan 7 gelembung meredup + lencana 1 STUDI; thumbnail.png = frame 0 'KOK MUTER TERUS?' biru langit+krem aksen jingga; outro logo YouTube ±1 dtk"
+  },
+  {
+   "dari": "review",
+   "ke": "menunggu_persetujuan",
+   "oleh": "Pak Bima",
+   "waktu": "2026-11-24T06:40+08:00",
+   "hasil": "Review LULUS (56,6 dtk, 16,7 MB), uji 3 dtk 8/10; jadwal Rab 25 Nov 19.45 WITA"
+  },
+  {
+   "dari": "menunggu_persetujuan",
+   "ke": "disetujui",
+   "oleh": "Bos (Kantor Visual HP)",
+   "waktu": "2026-11-24T08:31+08:00"
+  },
+  {
+   "catatan": "Bos minta unggah manual malam ini (Sel 24 Nov ±21.00) di YouTube, TikTok, Instagram; slot Rab 25 Nov 19.45 jadi kosong",
+   "oleh": "Pak Bima atas perintah Bos",
+   "waktu": "2026-11-24T20:58+08:00"
+  },
+  {
+   "dari": "disetujui",
+   "ke": "tayang",
+   "oleh": "Pak Bima",
+   "waktu": "2026-11-25T05:45+08:00",
+   "hasil": "YouTube, TikTok & Instagram diunggah manual oleh Bos (Kantor Visual, 24 Nov malam)"
+  }
+ ],
+ "masalah": null,
+ "pilar": "Sains & tubuh manusia",
+ "skor_manajer": 8,
+ "jadwal_tayang": "2026-11-24T21:00:00+08:00",
+ "video_asset_id": "66aaadf7de7e20c3108a9a806f4fddb3",
+ "thumb_asset_id": "e42795f5422f1cde895abe4290efaa5b",
+ "video_url": "/_blob/66aaadf7de7e20c3108a9a806f4fddb3",
+ "thumb_url": "/_blob/e42795f5422f1cde895abe4290efaa5b",
+ "terbit": {
+  "youtube": {
+   "id": "manual",
+   "waktu": "2026-11-24T13:06:19.647Z"
+  },
+  "instagram": {
+   "id": "manual",
+   "waktu": "2026-11-24T13:03:31.658Z"
+  },
+  "tiktok": {
+   "id": "manual",
+   "waktu": "2026-11-24T13:06:13.310Z"
+  }
+ },
+ "unggah_manual_bos": true
 }

@@ -1,5 +1,5 @@
 {
- "tahap": "disetujui",
+ "tahap": "tayang",
  "seri": "A",
  "topik": "a3-01 barcode kasir",
  "dibuat": "2026-11-24T05:42",
@@ -81,6 +81,13 @@
    "ke": "disetujui",
    "oleh": "Bos (Kantor Visual HP)",
    "waktu": "2026-11-24T08:31+08:00"
+  },
+  {
+   "dari": "disetujui",
+   "ke": "tayang",
+   "oleh": "Pak Bima",
+   "waktu": "2026-11-25T05:45+08:00",
+   "hasil": "YouTube, TikTok & Instagram diunggah manual oleh Bos (Kantor Visual, 24 Nov malam)"
   }
  ],
  "masalah": null,
@@ -92,13 +99,16 @@
  "thumb_url": "/_blob/74d8b3fd0b231e8d8c53f41f9a849f28",
  "terbit": {
   "youtube": {
-   "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+   "id": "manual",
+   "waktu": "2026-11-24T11:42:28.369Z"
   },
   "tiktok": {
-   "catatan": "unggah manual - kunci API kosong di sesi cloud 19.32 (24 Nov)"
+   "id": "manual",
+   "waktu": "2026-11-24T11:40:12.537Z"
   },
   "instagram": {
-   "catatan": "unggah manual - kunci API kosong di sesi cloud 19.32 (24 Nov)"
+   "id": "manual",
+   "waktu": "2026-11-24T11:42:27.167Z"
   }
  }
 }
