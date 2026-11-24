@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "a3-05 sabun minyak piring",
   "dibuat": "2026-11-25T05:43",
   "riwayat": [
@@ -12,8 +12,13 @@
       "tahap": "pilih",
       "oleh": "Raka",
       "hasil": "LANJUT skor 16/20; rencana_marketing.md + seo.md; slot Kam 26 Nov 13.00, <=55 dtk"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; hook #18, kejutan ±11 dtk, ±54 dtk/120 kata, skor naskah 8/9, viral 8/10"
     }
   ],
   "masalah": null,
-  "seri": "A"
+  "seri": "cara-kerja"
 }
