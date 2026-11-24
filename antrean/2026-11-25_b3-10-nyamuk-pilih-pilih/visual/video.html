@@ -22,6 +22,8 @@ window.DURASI=+(AKHIR+0.72).toFixed(2);
 window.MUSIK='teras-malam';
 const D=()=>window.DURASI;
 const puls=(T,a,d)=>Math.pow(Math.sin(Math.PI*cl((T-a)/d)),2);
+// kedip dengan dataran (naik 4 frame, tahan ±4 frame, turun 4 frame) → tidak terbaca 'frame dobel' oleh cek_mulus
+const kedip=(T,a)=>halus(lin(T,a,a+.13))*(1-halus(lin(T,a+.26,a+.39)));
 
 // ---------- helper ----------
 function tebeX(p,w,o={}){let svg=tebeRigSVG(p).replace('width="400" height="520"','width="100%"');
@@ -138,7 +140,7 @@ function setB3(T){const u=T-B3;
  let s=N.terasMalam(-600,-800,3600,3400,T,{lantai:1335,dindingX:-600,dindingW:3600,atap:0});
  // jendela-jendela rumah di dinding
  for(let i=0;i<4;i++){const x=150+i*560;s+=`<rect x="${x}" y="420" width="300" height="360" rx="14" fill="#16294F"/><rect x="${x+12}" y="432" width="276" height="336" rx="8" fill="#203A6E"/><rect x="${x+144}" y="432" width="12" height="336" fill="#16294F"/>`}
- s+=N.bohlam(1580,560,1,T,{tali:620,kedip:puls(T,kKabar-.05,.22)+puls(T,kBuruk+.05,.22)});
+ s+=N.bohlam(1580,560,1,T,{tali:620,kedip:kedip(T,kKabar-.25)+kedip(T,kBuruk+.02)});
  // bangku panjang
  s+=`<rect x="0" y="905" width="2100" height="40" rx="14" fill="#7A5A3E"/><rect x="0" y="940" width="2100" height="14" fill="#5E432C"/>${[60,700,1400,2040].map(x=>`<rect x="${x}" y="950" width="24" height="390" fill="#5E432C"/>`).join('')}`;
  KAKI.forEach(([x,o,w,pola],i)=>{s+=N.kakiDuduk(x,1335,.92,o);
@@ -150,7 +152,7 @@ function setB3(T){const u=T-B3;
  s+=N.nyamuk(mx,my,1.1,T,{arah:lerp(1,-1,halus(lin(T,B3,B3+.01))) ,ekspresi:tol>.5?'seringai':'biasa',kepala:-12*tol,lihat:[-6*tol,6*tol],glow:.5});
  const cx=lerp(330,1460,ioS(lin(T,B3,kKorban)))+u*4, z=1.12+.03*Math.sin(u*.8)+.08*tol, cy=930-40*tol;
  // gelap sebentar saat bohlam berkedip
- const gelap=.35*(puls(T,kKabar-.05,.22)+puls(T,kBuruk+.05,.22));
+ const gelap=.28*(kedip(T,kKabar-.25)+kedip(T,kBuruk+.02));
  return latar(C.LANGIT)+kamera(svgBesar(s),cx,cy,z)+`<div class="abs" style="inset:0;background:#030816;opacity:${gelap.toFixed(3)}"></div>`}
 
 // ===== BABAK 4-6: LAB GENERIK — lengan relawan + sarung nilon → "prasmanan" nyamuk → rebutan vs kurang laku → zat asam → dikaitkan "?" → satu nilon dicuekin =====
@@ -245,11 +247,11 @@ function setB7(T){const u=T-B7;
  const tebeHtml=`<div class="abs" style="left:-20px;top:${(800+Math.sin(T*1.6)*3).toFixed(1)}px">${KS.tebe(tb,430)}</div>`;
  const depan=`<rect x="-1000" y="1250" width="3600" height="1400" fill="${C.MEJA2}"/><rect x="-1000" y="1250" width="3600" height="70" fill="${C.MEJA}"/><rect x="-1000" y="1320" width="3600" height="10" fill="#8FB1A8"/>`;
  // siang–malam menyapu meja saat waktu berlalu
- const sapu=waktuLalu>0&&waktuLalu<1?.5-.5*Math.cos((T-kDipantau)*Math.PI*2*1.6):0;
+ const fs=(Math.max(0,T-kDipantau)*1.25)%1, envS=halus(lin(T,kDipantau,kDipantau+.3))*(1-halus(lin(T,kTetap2-.35,kTetap2))), sapu=envS*halus(lin(fs,.05,.4))*(1-halus(lin(fs,.55,.9)));
  const goyang=Math.exp(-Math.max(0,T-kMagnet2)*7)*Math.sin(Math.max(0,T-kMagnet2)*40)*(T>kMagnet2?14:0);
  const z=1.0+.03*ioS(lin(u,0,2))+.05*halus(lin(T,kTetap2-.2,kMagnet2+.2)), cy=1000+goyang;
  return latar(C.LAB)+kamera(svgBesar(s)+tebeHtml+svgW(1080,1920,depan+mq),540,cy,z)
-  +`<div class="abs" style="inset:0;background:${C.DONGKER};opacity:${(sapu*.32).toFixed(3)}"></div>`+`<div class="abs" style="inset:0;background:#FFF3C4;opacity:${((1-sapu)*.1*(waktuLalu>0&&waktuLalu<1?1:0)).toFixed(3)}"></div>`}
+  +`<div class="abs" style="inset:0;background:${C.DONGKER};opacity:${(sapu*.32).toFixed(3)}"></div>`+`<div class="abs" style="inset:0;background:#FFF3C4;opacity:${((envS-sapu)*.1).toFixed(3)}"></div>`}
 
 // ===== BABAK 8: kembali ke teras — lencana KAMU / DIA, Tebe menandai teman, menepuk kursi kosong → kamera mendarat di sampul (loop) =====
 const kDi=KI(109).m,kKamu=KI(113).m,kDia=KI(115).m,kKomen=KI(116).m,kTag=KI(119).m,kDia2=KI(120).m,kAjak=KI(121).m,kDuduk=KI(122).m,kTeras=KI(125).m,kLagi=KI(126).m;
