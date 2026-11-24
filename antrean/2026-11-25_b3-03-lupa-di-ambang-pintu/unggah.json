@@ -1,0 +1,37 @@
+{
+  "label_ai": true,
+  "youtube": {
+    "judul": "Lupa Mau Ngapain Pas Masuk Kamar: Gara-gara Pintu?",
+    "deskripsi": "Lupa mau ngapain pas masuk kamar, padahal di ruang tamu tadi ingat banget? Banyak yang bilang itu gara-gara pintu. Ternyata ilmuwan belum sepakat.\n\nCatatan lengkap (spoiler, baca setelah nonton): Radvansky & Copeland (2006) dan Radvansky, Krawietz & Tamplin (2011) menemukan bahwa melewati pintu menurunkan ingatan peserta tentang benda yang dibawa atau disimpan, dibanding berjalan sama jauh di dalam satu ruangan, baik di lingkungan virtual maupun di dunia nyata. Yang diukur adalah ingatan tentang benda, bukan 'lupa mau ngapain'. Studi ulang McFadyen dkk. (2021, BMC Psychology) menguji empat cara (VR, VR dengan beban pikiran, menonton video, dan berjalan nyata) dan tidak menemukan efek pintu yang berarti pada kondisi dasar; efeknya baru muncul saat peserta sambil mengerjakan tugas hitung yang sulit. Penjelasan yang sering dipakai (otak memotong pengalaman menjadi 'adegan', pindah ruangan memulai adegan baru) masih berupa dugaan; tim 2021 menduga yang lebih berpengaruh adalah pindah ke lingkungan yang berbeda, bukan pintunya. Video ini membahas penelitian tentang ingatan sehari-hari, bukan nasihat kesehatan.\n\nSumber:\n- Radvansky & Copeland (2006), Memory & Cognition: https://link.springer.com/article/10.3758/BF03193261\n- Repositori USM: https://aquila.usm.edu/fac_pubs/2333\n- Radvansky, Krawietz & Tamplin (2011), QJEP: https://nowiknow.com/wp-content/uploads/2012/01/Radvansky-Krawietz-Tamplin-2011-QJEP-1.pdf\n- University of Notre Dame: https://provost.nd.edu/news/walking-through-doorways-causes-forgetting-new-research-shows\n- McFadyen dkk. (2021), BMC Psychology: https://link.springer.com/article/10.1186/s40359-021-00536-3\n- PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC7938580\n- Bond University: https://research.bond.edu.au/en/publications/doorways-do-not-always-cause-forgetting-a-multimodal-investigatio/\n- UCL, penjelasan penulis (2021): https://www.ucl.ac.uk/news/2021/mar/analysis-its-not-just-doorways-make-us-forget-what-we-came-next-room\n- BPS Research Digest: https://www.bps.org.uk/research-digest/how-walking-through-doorway-increases-forgetting\n- BPS Research Digest (membayangkan pintu): https://bps.org.uk/research-digest/imagining-walking-through-doorway-triggers-increased-forgetting\n\n#Shorts #LupaMauNgapain #FaktaSains",
+    "tag": [
+      "lupa mau ngapain pas masuk kamar",
+      "kenapa lupa pas masuk ruangan",
+      "lupa mau ngambil apa",
+      "doorway effect",
+      "efek ambang pintu",
+      "location updating effect",
+      "lupa pas masuk kamar",
+      "fakta psikologi",
+      "sains sehari-hari",
+      "ternyata begitu"
+    ],
+    "komentar_tersemat": "Kamu paling sering lupa di mana: KAMAR, DAPUR, atau WARUNG? Jawab 1 kata, terus tag temanmu yang bolak-balik ambil barang. Bonus: satu studi lain menemukan, cuma MEMBAYANGKAN jalan lewat pintu saja sudah menurunkan ingatan. Tapi temuan itu pun termasuk yang masih diperdebatkan. Kalau suka soal isi kepala, tonton juga Shorts 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele' di channel ini.",
+    "terkait": {
+      "folder": "2026-11-24_b3-09-lagu-nyangkut",
+      "judul": "Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele",
+      "url": null,
+      "catatan": "B3-09 sudah tayang manual Bos Sel 24 Nov malam (id YouTube 'manual', belum tercatat). Relevan: pilar sama, tema 'isi kepala sehari-hari'. Bos/Raka memasang video terkait di YouTube Studio."
+    }
+  },
+  "tiktok": {
+    "caption": "Lupa mau ngapain pas masuk kamar? Gara-gara pintu? Kamu paling sering lupa di KAMAR, DAPUR, atau WARUNG? #lupamaungapain #faktasains #TernyataBegitu"
+  },
+  "instagram": {
+    "caption": "Lupa mau ngapain pas masuk kamar, padahal tadi di ruang tamu ingat banget.\nBanyak yang bilang itu gara-gara pintu. Ternyata ilmuwan belum sepakat.\nTag temanmu yang bolak-balik ambil barang.\nKamu paling sering lupa di mana: KAMAR, DAPUR, atau WARUNG?\n#lupamaungapain #doorwayeffect #efekambangpintu #faktasains #faktaunik #TernyataBegitu"
+  },
+  "jadwal_tayang_usulan": "2026-11-25T18:00:00+08:00",
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): PINTUNYA / YANG SALAH?",
+  "musik_catatan": "Hanya musik/SFX berlisensi atau buatan sendiri (SFX cap karet di adegan 5); jangan menambah lagu tren TikTok/IG saat unggah.",
+  "_catatan": "Jadwal dibaca terbitkan.py dari status.json -> jadwal_tayang (slot B Rab 25 Nov 18.00 WITA). komentar_tersemat & terkait dipasang manual. Caption TikTok 149 huruf (<=150). Tanpa ajakan pindah ke YouTube di TikTok/IG."
+}
