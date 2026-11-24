@@ -1,39 +1,48 @@
 {
-  "tahap": "cek_fakta",
-  "topik": "a3-05 sabun minyak piring",
-  "dibuat": "2026-11-25T05:43",
-  "riwayat": [
-    {
-      "tahap": "ide",
-      "oleh": "Laras",
-      "hasil": "riset.md selesai, skor Faktor Ternyata 8/10, lolos"
-    },
-    {
-      "tahap": "pilih",
-      "oleh": "Raka",
-      "hasil": "LANJUT skor 16/20; rencana_marketing.md + seo.md; slot Kam 26 Nov 13.00, <=55 dtk"
-    },
-    {
-      "tahap": "naskah",
-      "oleh": "Nadia",
-      "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; hook #18, kejutan ±11 dtk, ±54 dtk/120 kata, skor naskah 8/9, viral 8/10"
-    },
-    {
-      "tahap": "cek_riset",
-      "oleh": "Laras",
-      "hasil": "cek_riset.md: 4 WAJIB (langsung kesat; air cuma geser; puluhan molekul; sumber deskripsi belum dibuka teks penuh) + saran; saling dorong AMAN"
-    },
-    {
-      "tahap": "cek_seo",
-      "oleh": "Raka",
-      "hasil": "cek_seo.md: 1 WAJIB (deskripsi: kata kunci di 2 kalimat pertama, ke Nadia, tanpa ubah naskah/suara) + 7 saran; judul_final = opsi 1; tag +2; tahap tidak diubah (menunggu Laras)"
-    },
-    {
-      "tahap": "naskah",
-      "oleh": "Nadia",
-      "hasil": "R1: semua WAJIB cek_seo + cek_riset + 5 keputusan Pak Bima ('Kasih sabun, gosok, bilas: KESAT' + kilap hilang setelah bilas; 'air doang susah ngangkat minyaknya, paling cuma GESER'; 'BANYAK molekul'; deskripsi 'bermuatan sama, umumnya saling tolak', sumber tetap; kalimat 1 deskripsi = kata kunci). Saran: IG 'masih ada', komentar tersemat versi Laras, opsi 2/tag 'susah', TikTok pancing GELAS/PIRING/WAJAN. Tetap 120 kata ±54 dtk, kejutan ±11,3 dtk; skor 8/9, viral 8/10. naskah.json, naskah_baca, naskah_suara, unggah.json, paket_unggah sinkron."
-    }
-  ],
-  "masalah": null,
-  "seri": "cara-kerja"
+ "tahap": "produksi",
+ "topik": "a3-05 sabun minyak piring",
+ "dibuat": "2026-11-25T05:43",
+ "riwayat": [
+  {
+   "tahap": "ide",
+   "oleh": "Laras",
+   "hasil": "riset.md selesai, skor Faktor Ternyata 8/10, lolos"
+  },
+  {
+   "tahap": "pilih",
+   "oleh": "Raka",
+   "hasil": "LANJUT skor 16/20; rencana_marketing.md + seo.md; slot Kam 26 Nov 13.00, <=55 dtk"
+  },
+  {
+   "tahap": "naskah",
+   "oleh": "Nadia",
+   "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; hook #18, kejutan ±11 dtk, ±54 dtk/120 kata, skor naskah 8/9, viral 8/10"
+  },
+  {
+   "tahap": "cek_riset",
+   "oleh": "Laras",
+   "hasil": "cek_riset.md: 4 WAJIB (langsung kesat; air cuma geser; puluhan molekul; sumber deskripsi belum dibuka teks penuh) + saran; saling dorong AMAN"
+  },
+  {
+   "tahap": "cek_seo",
+   "oleh": "Raka",
+   "hasil": "cek_seo.md: 1 WAJIB (deskripsi: kata kunci di 2 kalimat pertama, ke Nadia, tanpa ubah naskah/suara) + 7 saran; judul_final = opsi 1; tag +2; tahap tidak diubah (menunggu Laras)"
+  },
+  {
+   "tahap": "naskah",
+   "oleh": "Nadia",
+   "hasil": "R1: semua WAJIB cek_seo + cek_riset + 5 keputusan Pak Bima ('Kasih sabun, gosok, bilas: KESAT' + kilap hilang setelah bilas; 'air doang susah ngangkat minyaknya, paling cuma GESER'; 'BANYAK molekul'; deskripsi 'bermuatan sama, umumnya saling tolak', sumber tetap; kalimat 1 deskripsi = kata kunci). Saran: IG 'masih ada', komentar tersemat versi Laras, opsi 2/tag 'susah', TikTok pancing GELAS/PIRING/WAJAN. Tetap 120 kata ±54 dtk, kejutan ±11,3 dtk; skor 8/9, viral 8/10. naskah.json, naskah_baca, naskah_suara, unggah.json, paket_unggah sinkron."
+  },
+  {
+   "dari": "cek_fakta",
+   "ke": "produksi",
+   "oleh": "Pak Bima",
+   "waktu": "2026-11-25T05:57+08:00",
+   "hasil": "cek_fakta LULUS setelah R1 (4 WAJIB Laras + 1 WAJIB Raka), skor 8/9, viral 8/10; jadwal Kam 26 Nov 13.00"
+  }
+ ],
+ "masalah": null,
+ "seri": "A",
+ "skor_manajer": 8,
+ "jadwal_tayang": "2026-11-26T13:00:00+08:00"
 }
