@@ -1,9 +1,11 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "b3-03 lupa di ambang pintu",
   "dibuat": "2026-11-25T05:45",
   "riwayat": [
-    "2026-11-24 Laras: riset.md selesai, skor Faktor Ternyata 8/10, lolos dengan sudut 'ilmuwan masih berdebat' (teks penuh jurnal belum terbuka, domain diblokir)"
+    "2026-11-24 Laras: riset.md selesai, skor Faktor Ternyata 8/10, lolos dengan sudut 'ilmuwan masih berdebat' (teks penuh jurnal belum terbuka, domain diblokir)",
+    "2026-11-24 Raka: pilih LANJUT skor 15/20; rencana_marketing.md + seo.md selesai; sudut wajib 'masih diperdebatkan'; tahap -> naskah"
   ],
-  "masalah": null
+  "masalah": null,
+  "seri": "B3"
 }
