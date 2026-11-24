@@ -69,12 +69,17 @@
       "ke": "disetujui",
       "oleh": "Bos (Kantor Visual HP)",
       "waktu": "2026-11-24T08:31+08:00"
+    },
+    {
+      "catatan": "Bos minta unggah manual malam ini (Sel 24 Nov ±21.00) di YouTube, TikTok, Instagram; slot Rab 25 Nov 19.45 jadi kosong",
+      "oleh": "Pak Bima atas perintah Bos",
+      "waktu": "2026-11-24T20:58+08:00"
     }
   ],
   "masalah": null,
   "pilar": "Sains & tubuh manusia",
   "skor_manajer": 8,
-  "jadwal_tayang": "2026-11-25T19:45:00+08:00",
+  "jadwal_tayang": "2026-11-24T21:00:00+08:00",
   "video_asset_id": "66aaadf7de7e20c3108a9a806f4fddb3",
   "thumb_asset_id": "e42795f5422f1cde895abe4290efaa5b",
   "video_url": "/_blob/66aaadf7de7e20c3108a9a806f4fddb3",
@@ -83,5 +88,6 @@
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
     }
-  }
+  },
+  "unggah_manual_bos": true
 }
