@@ -1,14 +1,15 @@
 # Paket unggah - 2026-11-25_b3-03-lupa-di-ambang-pintu
-Nadia (R0, 24 Nov 2026) - Shorts 9:16 jalur B "Ternyata Begitu" (`seri: fakta`), ±54 dtk, tanpa intro - label konten AI: NYALA (semua platform; Instagram dinyalakan manual di aplikasi) - sampul = frame 0 (teks "PINTUNYA / YANG SALAH?", SALAH salmon; Tebe di TENGAH tepat di ambang pintu rumah, ruang tamu salmon di belakang, kamar hijau botol tua di depan, gelembung pikiran putih tulang kosong "?", 1 panah ke kusen), tanpa sampul terpisah.
+Nadia (R1, 24 Nov 2026; WAJIB cek_riset Laras: deskripsi "satu dari empat percobaan... salah mengenali benda... belum terbukti"; baris "Sumber utama"; URL nowiknow.com dihapus; komentar tersemat 2 kalimat; tag +2 dari Raka; judul tetap) - Shorts 9:16 jalur B "Ternyata Begitu" (`seri: fakta`), ±54 dtk, tanpa intro - label konten AI: NYALA (semua platform; Instagram dinyalakan manual di aplikasi) - sampul = frame 0 (teks "PINTUNYA / YANG SALAH?", SALAH salmon; Tebe di TENGAH tepat di ambang pintu rumah, ruang tamu salmon di belakang, kamar hijau botol tua di depan, gelembung pikiran putih tulang kosong "?", 1 panah ke kusen), tanpa sampul terpisah.
 Judul, sampul, caption, dan komentar tidak memakai "terbukti", "mitos", "dibantah", tips daya ingat, atau kata pikun; semua klaim pintu bertanda tanya atau "masih diperdebatkan". Isi sama persis dengan `unggah.json`.
 **Jadwal:** Rabu 25 Nov 2026, 18.00 WITA (slot jalur B). Jadwal resmi ditulis saat `/terbitkan`.
 
 ## YouTube Shorts
 Judul (51 huruf): Lupa Mau Ngapain Pas Masuk Kamar: Gara-gara Pintu?
-Opsi cadangan: "Benarkah Pintu Bikin Kita Lupa? Ilmuwan Belum Sepakat" (53, bila CTR awal rendah) · "Masuk Kamar Lupa Mau Ngambil Apa? Ini Yang Diperdebatkan" (56).
-Deskripsi + sumber (10 URL dari riset.md) + 3 hashtag (#Shorts #LupaMauNgapain #FaktaSains): sama dengan `unggah.json`.
-Tag: lupa mau ngapain pas masuk kamar, kenapa lupa pas masuk ruangan, lupa mau ngambil apa, doorway effect, efek ambang pintu, location updating effect, lupa pas masuk kamar, fakta psikologi, sains sehari-hari, ternyata begitu
-Komentar tersemat: Kamu paling sering lupa di mana: KAMAR, DAPUR, atau WARUNG? Jawab 1 kata, terus tag temanmu yang bolak-balik ambil barang. Bonus: satu studi lain menemukan, cuma MEMBAYANGKAN jalan lewat pintu saja sudah menurunkan ingatan. Tapi temuan itu pun termasuk yang masih diperdebatkan. Kalau suka soal isi kepala, tonton juga Shorts 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele' di channel ini.
+Judul TETAP (keputusan Pak Bima). Cadangan bila CTR awal rendah: "Lupa Mau Ngapain Pas Masuk Kamar? Ilmuwan Masih Debat" (53, cek_seo Raka) · "Benarkah Pintu Bikin Kita Lupa? Ilmuwan Belum Sepakat" (53).
+Deskripsi: baris "Sumber utama" di atas catatan panjang + catatan lengkap + sumber (9 URL dari riset.md; salinan PDF nowiknow.com dihapus, studi 2011 dirujuk lewat ringkasan resmi Notre Dame) + 3 hashtag (#Shorts #LupaMauNgapain #FaktaSains): sama dengan `unggah.json`.
+Tag: lupa mau ngapain pas masuk kamar, kenapa lupa pas masuk ruangan, lupa mau ngambil apa, doorway effect, efek ambang pintu, location updating effect, lupa pas masuk kamar, fakta psikologi, sains sehari-hari, ternyata begitu, kenapa sering lupa, lupa mau ngapain
+Komentar tersemat (2 kalimat): Kamu paling sering lupa di mana, KAMAR, DAPUR, atau WARUNG (jawab 1 kata, lalu tag temanmu yang bolak-balik ambil barang)? Kalau suka soal isi kepala, tonton juga Shorts 'Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele' di channel ini.
+Balasan komentar pertama (jam pertama, manual): Bonus: satu studi lain menemukan, cuma MEMBAYANGKAN jalan lewat pintu saja sudah menurunkan ingatan. Tapi temuan itu pun termasuk yang masih diperdebatkan.
 Video terkait: **B3-09 "Kenapa Lagu Nyangkut di Kepala? Pemicunya Bisa Sepele"** (`youtube.terkait`, sudah tayang manual Sel 24 Nov malam).
 **Tugas manual (Raka/Bos):** `scripts/terbitkan.py` tidak membaca `komentar_tersemat` maupun `terkait` — pasang video terkait di YouTube Studio dan sematkan komentar MANUAL setelah tayang.
 
