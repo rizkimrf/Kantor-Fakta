@@ -75,6 +75,15 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7711595084210309127",
+      "waktu": "2026-11-24T12:49+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "catatan": "unggah manual - token IG kehilangan izin Halaman (OAuthException 190, pages_* permission)",
+      "waktu": "2026-11-24T12:49+08:00"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "disetujui",
   "seri": "A",
   "topik": "a3-01 barcode kasir",
   "dibuat": "2026-11-24T05:42",
@@ -75,6 +75,12 @@
       "oleh": "Pak Bima",
       "waktu": "2026-11-24T06:18+08:00",
       "hasil": "Review LULUS setelah R1 visual (bendera dihapus), 55,4 dtk, 13,7 MB, uji 3 dtk 8/10; jadwal Sel 24 Nov 19.45 WITA bila disetujui sebelum 19.32"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "oleh": "Bos (Kantor Visual HP)",
+      "waktu": "2026-11-24T08:3x+08:00"
     }
   ],
   "masalah": null,
