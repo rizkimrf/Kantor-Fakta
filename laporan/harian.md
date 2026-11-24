@@ -7,11 +7,11 @@ Sumber: rekomendasi YouTube untuk channel — tetap menonton 53–70% (target 75
 5. **Format gabungan** (`.claude/skills/naskah-viral/referensi/format-gabungan.md`): 13.00 = jalur A "Kok Bisa Jalan?" (≤90 dtk), 18.00 = jalur B fakta (≤60 dtk). Isi `seri` di status.json. Subtitle tetap gaya sekarang, posisi & ukuran disesuaikan per adegan agar tidak menutupi objek.
 Ukur tiap video: % tetap menonton, % rata-rata ditonton, share, komentar — bandingkan dengan video lama (68–89 dtk).
 
-# Evaluasi harian — 23 Nov 2026 sore (Supermetrics 7 hari)
-TikTok: **Suara rekaman (56 dtk, tayang hari ini) 1.539 views, selesai 13,8% (REKOR), tonton 33 dtk, komentar 5** · Sambal (55 dtk) 2.861, selesai 10,9% · Rem motor (75 dtk) 1.750, selesai 3,7% tapi **share 16** (pemicu "tag temanmu yang rem belakang doang").
-YouTube: Pedas 2.235 views/47% · Gunting 1.805/51% · Micin 1.467/44% · Toba 1.290/54% · Rice cooker 879/45% · Jari keriput, Rem motor, Sambal belum terbaca.
+# Evaluasi harian — 24 Nov 2026 sore (Supermetrics, TikTok 7 hari + YouTube 14 hari)
+TikTok: **Suara rekaman (56 dtk) 2.620 views, selesai 15,7% (REKOR), tonton 35,6 dtk** · Jari keriput (59 dtk) 2.444, selesai 7,9%, **komentar 11** · Rem motor (75 dtk) 1.759, selesai 3,7%, share 16 · Layar HP (58 dtk, tayang ±5 jam) 418, selesai 3,3%, tonton 24 dtk (masih muda).
+YouTube: Pedas 2.656/48% · Gunting 1.880/53% · Rice cooker 1.603/49% · Cabai 1.344/**70%** · Asal nama Indonesia 66%; Rem motor, Jari keriput, Suara rekaman, Layar HP belum terbaca di Supermetrics.
 
 ## 3 langkah untuk produksi besok
-1. **Pola Suara rekaman jadi acuan:** hook pertanyaan pribadi "pernah ngalamin" + tebak "siapa", ≤ 57 dtk, kejutan ≤ dtk 15.
-2. **Pemicu share = tag teman dengan kebiasaan tertentu** ("teman yang rem belakang doang" → share 16) + penutup 1 kata pilihan pengalaman.
-3. **Jalur A wajib ≤ 60 dtk** (Rem motor 75 dtk selesai 3,7%); besok Layar HP 58 dtk jadi uji — bandingkan % selesai dengan Rice cooker/Rem motor.
+1. **Hook "pengalaman pribadi + reaksi"** (Suara rekaman 15,7%, Jari keriput) lebih kuat daripada hook kuis "tebak dulu" dingin (Layar HP 3,3% sementara) — pakai pengalaman konkret di kalimat pertama, tebak sesudahnya.
+2. **Penutup pilihan 1 kata dari kebiasaan sehari-hari** (MANDI/BAJU/PIRING → komentar 11) + tag teman berkebiasaan tertentu (share 16) tetap dipakai.
+3. **Jalur A cara kerja: target ≤ 55 dtk** dengan kejutan ≤ dtk 12; Sabtu bandingkan Layar HP vs Barcode/Pintu (hook pengalaman) di YouTube.

@@ -1,5 +1,5 @@
 {
-  "tahap": "terjadwal",
+  "tahap": "tayang",
   "topik": "a3-06 layar hp tangan basah",
   "dibuat": "2026-11-23T05:55",
   "riwayat": [
@@ -62,6 +62,13 @@
       "ke": "disetujui",
       "oleh": "Bos (Kantor Visual HP)",
       "waktu": "2026-11-23T12:49+08:00"
+    },
+    {
+      "dari": "terjadwal",
+      "ke": "tayang",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T17:50+08:00",
+      "hasil": "YouTube & Instagram diunggah manual oleh Bos (Kantor Visual), TikTok via API inbox 12.49"
     }
   ],
   "masalah": null,
@@ -74,16 +81,16 @@
   "thumb_url": "/_blob/f0c9f78c50b8e0906afe80097ccd23be",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "id": "manual",
+      "waktu": "2026-11-24T04:52:04.004Z"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7711595084210309127",
       "waktu": "2026-11-24T12:49+08:00"
     },
     "instagram": {
-      "gagal": 1,
-      "catatan": "unggah manual - token IG kehilangan izin Halaman (OAuthException 190, pages_* permission)",
-      "waktu": "2026-11-24T12:49+08:00"
+      "id": "manual",
+      "waktu": "2026-11-24T04:52:01.815Z"
     }
   }
 }

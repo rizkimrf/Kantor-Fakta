@@ -89,5 +89,10 @@
   "video_asset_id": "e311807dc169e820ee8fbe0df3eaccf5",
   "thumb_asset_id": "74d8b3fd0b231e8d8c53f41f9a849f28",
   "video_url": "/_blob/e311807dc169e820ee8fbe0df3eaccf5",
-  "thumb_url": "/_blob/74d8b3fd0b231e8d8c53f41f9a849f28"
+  "thumb_url": "/_blob/74d8b3fd0b231e8d8c53f41f9a849f28",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    }
+  }
 }
