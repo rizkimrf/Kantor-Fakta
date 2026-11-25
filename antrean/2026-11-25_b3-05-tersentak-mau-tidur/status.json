@@ -1,7 +1,11 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "b3-05 tersentak mau tidur",
+  "seri": "B",
+  "pilar": "Sains & tubuh manusia",
   "dibuat": "2026-11-25T21:43",
-  "riwayat": [],
+  "riwayat": [
+    "ide: riset.md selesai (Laras, 2026-11-25), skor Faktor Ternyata 8/10"
+  ],
   "masalah": null
 }

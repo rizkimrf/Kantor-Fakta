@@ -1,7 +1,10 @@
 {
-  "tahap": "ide",
+  "tahap": "ditunda",
   "topik": "b3-07 hujan panas",
   "dibuat": "2026-11-25T21:43",
-  "riwayat": [],
-  "masalah": null
+  "seri": "B",
+  "riwayat": [
+    {"tahap": "ide", "oleh": "Laras", "tanggal": "2026-11-25", "hasil": "ditunda: mekanisme sunshower belum terkunci di lembaga"}
+  ],
+  "masalah": "Mekanisme hujan-saat-terik (angin membawa tetes dari awan di luar pandangan / awan buyar setelah menjatuhkan tetes / sudut matahari) hanya cocok di media & Wikipedia (Weather.com, WQAD, Wikipedia, Own Your Weather). Lembaga: tidak ada halaman BMKG/NOAA/NWS/Met Office/UCAR yang menjelaskan sunshower; BMKG hanya membahas hujan konvektif (siang panas sore hujan) = fenomena BERBEDA, dilarang dicampur. Satu-satunya jejak lembaga: blog ilmuwan GLOBE/NOAA-FSL 2006 (tetes dari awan di balik pandangan), tapi itu dugaan penulis dan halaman tidak bisa dibuka penuh (host diblokir sesi). Syarat Bos (min. 1 lembaga) tidak terpenuhi. Buka lagi bila ada sumber lembaga, mis. glosarium NWS/Met Office/Environment Canada atau BMKG tentang 'hujan lokal saat cerah'."
 }
