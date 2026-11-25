@@ -1,9 +1,17 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "b3-11 cicak nggak jatuh dari langit-langit",
   "seri": "B",
   "pilar": "Alam & hewan aneh",
   "dibuat": "2026-11-25T21:44",
-  "riwayat": [],
-  "masalah": null
+  "riwayat": [
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "waktu": "2026-11-25",
+      "hasil": "LANJUT 16/20"
+    }
+  ],
+  "masalah": null,
+  "jadwal_tayang": "2026-11-27T18:00:00+08:00"
 }
