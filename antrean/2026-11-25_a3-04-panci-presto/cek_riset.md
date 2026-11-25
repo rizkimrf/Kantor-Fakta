@@ -1,0 +1,13 @@
+# Cek riset naskah A3-04 Panci presto (Laras, 25 Nov 2026)
+Hasil: 1 WAJIB + 6 saran. Inti (air bisa mendidih sekitar 120 °C karena tekanan naik; matang jauh lebih singkat; katup; Papin 1682) didukung riset.md. Mana sumbernya? Ada, kecuali yang di bawah.
+Kunci angka ±120 °C: HyperPhysics/Wikipedia/Modernist Cuisine TETAP tidak bisa dibuka (domain diblokir sesi ini). Lewat ringkasan pencarian: HyperPhysics = presto buang uap pada ±15 psi di atas tekanan udara → ±121 °C; tabel Wikipedia 1,0 bar (15 psi) = 121 °C (satu tabel turunan menulis ±120 °C); ±2 atm absolut ≈ ±120 °C (soal fisika, Physics Forums). Kesimpulan: "sekitar 120" AMAN dengan "bisa/sekitar"; rentang 114–121 (deskripsi) tetap dari riset (Modernist Cuisine belum terbaca ulang). IPB (±110 °C komersial) bertentangan, jadi jangan "umumnya/pasti". Catatan: HyperPhysics ditulis 257 °F oleh ringkasan (121 °C = 250 °F), jangan pakai °F.
+**WAJIB (1)**
+1. Adegan 1 (visual + catatan_yoga "tanpa air bergolak") dan teks layar "±120°C" jam 6,8: narasi bilang air MENDIDIH di ±120, tapi visual menahan air TENANG sampai termometer lewat 120 → bertentangan (di suhu didihnya air bergolak). Perbaikan: air tenang hanya saat termometer melewati garis 100; begitu mendekati ±120, gelembung halus mulai muncul (ubah catatan_yoga "kunci visual" jadi "melewati 100 tanpa bergolak, bergolak halus di ±120").
+**Saran**
+2. Adegan 5 "matang jauh lebih singkat" menjawab hook "kok cepat EMPUK?": riset hanya mendukung waktu masak (UF/IFAS, Utah), mekanisme empuk (kolagen→gelatin) belum bersumber. Aman: "daging empuk jauh lebih SINGKAT" tanpa menjelaskan sebab empuk.
+3. Adegan 7 "kuncinya bukan api gede, tapi TEKANAN": api tetap perlu membuat uap; lebih tepat "bukan CUMA api gede" (pola rem motor).
+4. Adegan 3 "uap nggak bisa kabur" lalu adegan 6 katup buang uap: ganti "uap nggak bisa kabur begitu saja" atau biarkan "TAPI" yang menjawab.
+5. Adegan 4 "MENANG lawan tekanan": riset = tekanan uap menyamai tekanan sekitar; "menang" sebagai perumpamaan boleh, jangan tampil sebagai definisi di teks layar tambahan.
+6. Teks layar "±120°C" tanpa "bisa": narasi sudah "bisa... sekitar", cukup; hindari "120°C" polos. "MENTOK 100°C" benar untuk panci terbuka di dataran rendah (99,97 °C, 1 atm).
+7. Judul opsi 2 & hook kandidat 2 "lebih panas dari air MENDIDIH" kurang tepat (air di presto juga mendidih, hanya di suhu lebih tinggi); jangan dipakai. Judul opsi 1 terpilih aman. Komentar tersemat: 1682/Evelyn/"selunak keju"/"para ilmuwan" didukung (Atlas Obscura, Royal Society, St Andrews); "akhir 1600-an" aman (1680-an lebih persis). Deskripsi: ubah "umumnya bisa mencapai" jadi "bisa mencapai".
+Cadangan: Papin lalu mencoba ide mesin uap dari alat yang sama.
