@@ -1,0 +1,40 @@
+{
+  "label_ai": true,
+  "youtube": {
+    "judul": "Kenapa Cicak Bisa Nempel? Ternyata Bukan Pakai Lem",
+    "deskripsi": "Kenapa cicak bisa nempel di dinding dan langit-langit tanpa jatuh? Ternyata bukan pakai lem dan bukan sedotan: menurut penelitian pada tokek (Autumn dkk., PNAS 2002 dan Nature 2000), telapak kakinya penuh rambut super kecil yang ujungnya sangat halus, lalu menempel lewat gaya tarik antarmolekul (van der Waals) yang lemah per ujung tapi dikali jutaan. Tonton sampai habis untuk bagian paling anehnya: cara cicak melepas kakinya, lalu ceritakan di komentar: cicak di rumahmu paling sering nongkrong di mana?\n\nCatatan jujur: penelitian utamanya dilakukan pada tokek (tokek Tokay, Gekko gecko), kerabat besar cicak rumah (Hemidactylus frenatus) dari keluarga yang sama; cicak rumah diduga memakai mekanisme serupa. Gaya antarmolekul adalah penjelasan utama, tapi peran lapisan uap air tipis di tingkat nano masih diperdebatkan ilmuwan. Satu rambut yang ditarik lurus tetap kuat, sedangkan bila dimiringkan (sekitar 30 derajat) ujungnya mudah lepas; karena itu kaki dilepas dengan dikelupas, bukan disentak. Daya rekat bisa turun di permukaan basah, berminyak, atau berdebu.\n\nSumber:\n- Autumn dkk. (2002), Evidence for van der Waals adhesion in gecko setae, PNAS: https://pmc.ncbi.nlm.nih.gov/articles/PMC129431 · https://is.tuebingen.mpg.de/publications/autumn2002evidence\n- Autumn dkk. (2000), Adhesive force of a single gecko foot-hair, Nature: https://www.nature.com/articles/35015203\n- UC Berkeley (2002): https://newsarchive.berkeley.edu/news/media/releases/2002/08/26_gecko.html\n- Huber dkk. (2005), kontribusi kapiler, PNAS: https://pmc.ncbi.nlm.nih.gov/articles/PMC1283435\n- Scientific American, How Geckos Get a Grip: https://www.scientificamerican.com/article/how-geckos-get-a-grip\n- Wikipedia, Gecko feet: https://en.wikipedia.org/wiki/Gecko_feet\n- IDN Times: https://www.idntimes.com/science/discovery/bagaimana-tokek-bisa-menempel-di-dinding-tanpa-lem-00-7szf2-t8csvr\n\n#Shorts #Cicak #TernyataBegitu",
+    "tag": [
+      "kenapa cicak bisa nempel di dinding",
+      "cicak nempel tanpa lem",
+      "kenapa cicak nggak jatuh",
+      "cicak jatuh dari langit-langit",
+      "kaki cicak",
+      "kaki tokek",
+      "fakta cicak",
+      "fakta unik",
+      "ternyata begitu"
+    ],
+    "komentar_tersemat": "Cicak di rumahmu paling sering nongkrong di mana? Komen 1 kata: KAMAR, DAPUR, LAMPU, atau KAMAR MANDI. Bonus: kamu Tim CICAK atau Tim TOKEK?",
+    "terkait": {
+      "folder": null,
+      "judul": null,
+      "url": null,
+      "catatan": "Belum ada video panjang setema (rencana Raka). Kandidat tema video panjang: 'hewan/benda yang nempel' bila performa di atas rata-rata."
+    },
+    "judul_final": "Kenapa Cicak Bisa Nempel? Ternyata Bukan Pakai Lem"
+  },
+  "tiktok": {
+    "caption": "Cicak di langit-langit kok nggak jatuh? Ternyata bukan lem. Cicak di rumahmu nongkrong di mana? #cicak #faktaunik #TernyataBegitu"
+  },
+  "instagram": {
+    "caption": "Rebahan, cicak nempel di langit-langit pas di atas mukamu. Kok nggak jatuh?\nTernyata bukan lem, bukan sedotan. Dan cara dia lepas lebih aneh lagi.\nTag teman yang takut cicak.\nCicak di rumahmu nongkrongnya di mana? KAMAR, DAPUR, atau LAMPU? Komen satu kata.\n#cicak #faktacicak #tokek #faktaunik #faktasains #TernyataBegitu"
+  },
+  "jadwal_tayang_usulan": "2026-11-27T18:00:00+08:00",
+  "jadwal_cadangan": [
+    "2026-11-27T19:45:00+08:00"
+  ],
+  "label_konten_ai": true,
+  "sampul": "frame pertama video (0 ms): teks 'BUKAN LEM!' (pil kuning standar), kamar malam tosca + aksen fuchsia, Tebe rebahan menatap cicak besar terbalik di langit-langit, 1 panah merah",
+  "musik_catatan": "SFX buatan sendiri/berlisensi (catat di aset/sfx/SUMBER.md); suara 'tokek' kartun, bukan rekaman tokek dari internet; tanpa lagu berhak cipta. Jangan menambah lagu tren saat unggah.",
+  "_catatan": "Judul final = opsi 1 Nadia (keputusan Raka, cek_seo.md). TikTok dipangkas dari 186 ke <=150 huruf (WAJIB cek_seo). Deskripsi: kalimat 2 kini menyebut sumber (Autumn dkk.) + pertanyaan komentar. Jadwal resmi ditulis saat /terbitkan; status.json jadwal_tayang sudah 2026-11-27T18:00+08:00. Komentar tersemat dipasang MANUAL setelah tayang."
+}

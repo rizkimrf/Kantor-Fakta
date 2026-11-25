@@ -14,7 +14,7 @@ Kaget pas mau tidur, badan kayak jatuh? Sains belum tahu pasti. Posisimu: MIRING
 Teks sampul: KAYAK JATUH?
 
 ## Instagram Reels (tanpa ajakan pindah platform)
-Kaget pas mau tidur, badan tiba-tiba tersentak kayak jatuh dari tangga, jantung deg-degan.
+Kaget pas mau tidur, badan tiba-tiba tersentak kayak jatuh dari tangga, kadang jantung ikut deg-degan.
 Ternyata ilmuwan sendiri belum tahu pasti penyebabnya, yang ada baru dugaan.
 Tag teman yang tidurnya suka nyentak.
 Terakhir kali kesentak, posisimu apa? Komen 1 kata: MIRING, TELENTANG, atau TENGKURAP.

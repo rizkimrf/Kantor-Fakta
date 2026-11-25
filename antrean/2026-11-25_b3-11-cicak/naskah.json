@@ -1,199 +1,264 @@
 {
-  "format": "shorts",
-  "seri": "fakta",
-  "jalur": "B \"Ternyata Begitu\"",
-  "revisi": "R0 (Nadia, 25 Nov 2026): mengikuti KEPUTUSAN RAPAT Pak Bima di lembar_tim.md. Hook rebahan + cicak terbalik di langit-langit, kata 'CICAK' +-0,9 dtk (<=2). Kejutan 'BUKAN lem. Bukan sedotan juga.' mulai +-6,2 dtk (<=8), 'pakai... RAMBUT' +-11 dtk. Inti: jutaan ujung halus -> gaya tarik antarmolekul, lemah per ujung, dikali jutaan. Kejutan kedua: cara LEPAS (ditarik lurus kuat, dimiringin copot, jari dikelupas) tanpa angka derajat. Kejujuran: 'Yang diteliti sih kerabat besarnya, TOKEK.' Tanpa 'tanpa air sama sekali', tanpa jumlah rambut, tanpa 'semua permukaan', tanpa tips mengusir, tanpa mitos kejatuhan cicak. 106 kata, +-48 dtk (<=50). Penutup KAMAR/DAPUR/LAMPU + share 'teman yang takut cicak' + loop 'suruh dia lihat ke ATAS' -> langit-langit frame 0.",
-  "judul": "Kenapa Cicak Bisa Nempel? Ternyata Bukan Pakai Lem",
-  "judul_opsi": [
-    "Kenapa Cicak Bisa Nempel? Ternyata Bukan Pakai Lem",
-    "Cicak Nempel di Langit-Langit, Ternyata Bukan Pakai Lem",
-    "Kenapa Cicak Nggak Jatuh? Rahasianya di Cara Lepasnya"
+ "format": "shorts",
+ "seri": "fakta",
+ "jalur": "B \"Ternyata Begitu\"",
+ "revisi": "R0 (Nadia, 25 Nov 2026): mengikuti KEPUTUSAN RAPAT Pak Bima di lembar_tim.md. Hook rebahan + cicak terbalik di langit-langit, kata 'CICAK' +-0,9 dtk (<=2). Kejutan 'BUKAN lem. Bukan sedotan juga.' mulai +-6,2 dtk (<=8), 'pakai... RAMBUT' +-11 dtk. Inti: jutaan ujung halus -> gaya tarik antarmolekul, lemah per ujung, dikali jutaan. Kejutan kedua: cara LEPAS (ditarik lurus kuat, dimiringin copot, jari dikelupas) tanpa angka derajat. Kejujuran: 'Yang diteliti sih kerabat besarnya, TOKEK.' Tanpa 'tanpa air sama sekali', tanpa jumlah rambut, tanpa 'semua permukaan', tanpa tips mengusir, tanpa mitos kejatuhan cicak. 106 kata, +-48 dtk (<=50). Penutup KAMAR/DAPUR/LAMPU + share 'teman yang takut cicak' + loop 'suruh dia lihat ke ATAS' -> langit-langit frame 0.",
+ "judul": "Kenapa Cicak Bisa Nempel? Ternyata Bukan Pakai Lem",
+ "judul_opsi": [
+  "Kenapa Cicak Bisa Nempel? Ternyata Bukan Pakai Lem",
+  "Cicak Nempel di Langit-Langit, Ternyata Bukan Pakai Lem",
+  "Kenapa Cicak Nggak Jatuh? Rahasianya di Cara Lepasnya"
+ ],
+ "judul_catatan": "Utama (50 huruf) = sudut #1 Raka ('Ternyata Bukan Pakai Lem') dengan bagian depan diganti kata kunci utama seo.md 'kenapa cicak bisa nempel' supaya rubrik SEO 'kata kunci di judul' kuat, dan judul = pertanyaan yang diucapkan di hook ('Kok bisa nggak JATUH?'). Opsi 2 (55) = rekomendasi Raka persis (lebih visual 'langit-langit', tanpa 'kenapa'). Opsi 3 (53) = sudut kejutan kedua, cadangan uji. Semua jujur: video memang membantah lem & sedotan. Raka memutuskan di cek_seo.",
+ "thumbnail_teks": "BUKAN LEM!",
+ "thumbnail_visual": "Night bedroom seen from the bed, flat cartoon without black outlines, NEW palette: bright teal/tosca dominant background (ceiling and walls) with hot fuchsia-pink accents (blanket, rim light, one small fuchsia lamp glow), standard yellow keyword pill reserved for the text; one BIG cute cartoon house gecko (cicak, slim, pale beige-grey with tiny dark speckles, big round eyes) clinging UPSIDE DOWN on the ceiling at top-center-right, toes spread wide showing soft ridged toe pads, looking down at the viewer with a smug calm face; Tebe (chibi, mustard hoodie, '?' cowlick) lying on his back on the bed at the bottom-left, medium-large, eyes wide staring straight up at the gecko, blanket pulled to his chin, cowlick shaking (shocked-curious, different pose from the porch slap and the bed jolt covers); one cartoon glue tube with a big fuchsia cross mark floating small at mid-left (generic, no brand, no letters); ONE red arrow from the gecko's toe pad pointing down to Tebe's face to show 'right above you'; empty space top-left/middle (y 260-620) for the text 'BUKAN LEM!'; no letters or numbers inside the illustration.",
+ "deskripsi": "Kenapa cicak bisa nempel di dinding dan langit-langit tanpa jatuh? Ternyata bukan pakai lem dan bukan sedotan: menurut penelitian pada tokek (Autumn dkk., PNAS 2002 dan Nature 2000), telapak kakinya penuh rambut super kecil yang ujungnya sangat halus, lalu menempel lewat gaya tarik antarmolekul (van der Waals) yang lemah per ujung tapi dikali jutaan. Tonton sampai habis untuk bagian paling anehnya: cara cicak melepas kakinya, lalu ceritakan di komentar: cicak di rumahmu paling sering nongkrong di mana?\n\nCatatan jujur: penelitian utamanya dilakukan pada tokek (tokek Tokay, Gekko gecko), kerabat besar cicak rumah (Hemidactylus frenatus) dari keluarga yang sama; cicak rumah diduga memakai mekanisme serupa. Gaya antarmolekul adalah penjelasan utama, tapi peran lapisan uap air tipis di tingkat nano masih diperdebatkan ilmuwan. Satu rambut yang ditarik lurus tetap kuat, sedangkan bila dimiringkan (sekitar 30 derajat) ujungnya mudah lepas; karena itu kaki dilepas dengan dikelupas, bukan disentak. Daya rekat bisa turun di permukaan basah, berminyak, atau berdebu.\n\nSumber:\n- Autumn dkk. (2002), Evidence for van der Waals adhesion in gecko setae, PNAS: https://pmc.ncbi.nlm.nih.gov/articles/PMC129431 · https://is.tuebingen.mpg.de/publications/autumn2002evidence\n- Autumn dkk. (2000), Adhesive force of a single gecko foot-hair, Nature: https://www.nature.com/articles/35015203\n- UC Berkeley (2002): https://newsarchive.berkeley.edu/news/media/releases/2002/08/26_gecko.html\n- Huber dkk. (2005), kontribusi kapiler, PNAS: https://pmc.ncbi.nlm.nih.gov/articles/PMC1283435\n- Scientific American, How Geckos Get a Grip: https://www.scientificamerican.com/article/how-geckos-get-a-grip\n- Wikipedia, Gecko feet: https://en.wikipedia.org/wiki/Gecko_feet\n- IDN Times: https://www.idntimes.com/science/discovery/bagaimana-tokek-bisa-menempel-di-dinding-tanpa-lem-00-7szf2-t8csvr\n\n#Shorts #Cicak #TernyataBegitu",
+ "caption_komentar": "Cicak di rumahmu paling sering nongkrong di mana? Komen 1 kata: KAMAR, DAPUR, LAMPU, atau KAMAR MANDI. Bonus: kamu Tim CICAK atau Tim TOKEK?",
+ "caption_komentar_catatan": "Disematkan MANUAL setelah tayang. Tanpa fakta baru (fakta 'membersihkan diri' BELUM terverifikasi, tidak dipakai). Video terkait: belum ada video panjang setema.",
+ "caption_tiktok": "Cicak di langit-langit kok nggak jatuh? Ternyata bukan lem. Cicak di rumahmu nongkrong di mana? #cicak #faktaunik #TernyataBegitu",
+ "caption_instagram": "Rebahan, cicak nempel di langit-langit pas di atas mukamu. Kok nggak jatuh?\nTernyata bukan lem, bukan sedotan. Dan cara dia lepas lebih aneh lagi.\nTag teman yang takut cicak.\nCicak di rumahmu nongkrongnya di mana? KAMAR, DAPUR, atau LAMPU? Komen satu kata.\n#cicak #faktacicak #tokek #faktaunik #faktasains #TernyataBegitu",
+ "tag": [
+  "kenapa cicak bisa nempel di dinding",
+  "cicak nempel tanpa lem",
+  "kenapa cicak nggak jatuh",
+  "cicak jatuh dari langit-langit",
+  "kaki cicak",
+  "kaki tokek",
+  "fakta cicak",
+  "fakta unik",
+  "ternyata begitu"
+ ],
+ "pola_hook": "#2 Mitos vs fakta: mitos populer diajukan sebagai pertanyaan lalu digantung ('Kok bisa nggak JATUH? Pakai lem?' -> dibantah 'BUKAN lem. Bukan sedotan juga.' di +-6,2 dtk), dalam bingkai adegan rebahan yang diwajibkan rapat Pak Bima, + loop #26 ('suruh dia lihat ke ATAS' -> langit-langit frame 0). Beda dari 5 video terakhir: Sabun #18, Nyamuk #10, Lupa #25, Pintu #14, Barcode #1 (juga Lagu #20/#14). Catatan jujur: bingkai 'rebahan ... di atas mukamu' berbau skenario #14, tapi yang menghentikan jempol dan membentuk kejutan adalah mitos 'pakai lem?' yang langsung dibantah. Naskah Tersentak (B3-05) & Presto (A3-04) belum ada di folder saat naskah ini ditulis -> #2 DIKUNCI untuk Cicak; mohon Tersentak/Presto tidak memakai #2.",
+ "hook_kandidat": [
+  {
+   "tipe": "2",
+   "teks": "Rebahan, CICAK nempel di langit-langit, di atas mukamu. Kok bisa nggak JATUH? Pakai lem?",
+   "skor": 9,
+   "alasan": "TERPILIH. Adegan rapat + taruhan 'di atas MUKAMU' (takut kejatuhan, semua orang pernah) + mitos 'pakai lem?' yang langsung dijawab di dtk 6. 'CICAK' +-0,9 dtk, 'cicak nempel' + 'kok bisa nggak jatuh' = kata kunci lisan <=4 dtk. 14 kata."
+  },
+  {
+   "tipe": "2",
+   "teks": "Kaki cicak pakai LEM? Itu cuma kata orang.",
+   "skor": 7,
+   "alasan": "Mitos murni, cicak di dtk 0, tapi tanpa adegan & taruhan personal, terasa seperti kuis sekolah."
+  },
+  {
+   "tipe": "1",
+   "teks": "Cicak di atas kepalamu itu nggak pakai lem. Terus pakai apa?",
+   "skor": 8,
+   "alasan": "Hook alternatif Raka, kuat dan singkat; tapi tipe #1 dipakai Barcode (5 video terakhir) dan langsung membuka jawaban tanpa mitos dulu."
+  },
+  {
+   "tipe": "14",
+   "teks": "Rebahan, lihat cicak diam terbalik semalaman... kok dia nggak jatuh?",
+   "skor": 8,
+   "alasan": "Hook rencana Raka, sangat relatable; tapi tipe #14 dipakai Pintu (5 terakhir) dan tanpa lawan 'lem' sehingga kejutan dtk 6 kurang menghentak. Bahannya dipakai di kandidat terpilih."
+  },
+  {
+   "tipe": "3",
+   "teks": "Cicak nempel terbalik pakai RAMBUT. Serius, rambut.",
+   "skor": 7,
+   "alasan": "Mustahil tapi nyata, lucu; tapi membakar inti kejutan di dtk 0 dan tanpa adegan."
+  },
+  {
+   "tipe": "6",
+   "teks": "Tebak: cicak nempel di langit-langit pakai apa?",
+   "skor": 7,
+   "alasan": "Tebak dulu sudah sering (Suara rekaman, Layar HP); terasa dingin tanpa taruhan."
+  },
+  {
+   "tipe": "22",
+   "teks": "Tim lem atau tim sedotan? Kaki cicak dua-duanya salah.",
+   "skor": 7,
+   "alasan": "Pilih kubu lucu, tapi kata 'cicak' baru di +-2,5 dtk dan kubunya dibuat-buat (orang tidak berdebat soal ini)."
+  },
+  {
+   "tipe": "24",
+   "teks": "Kalau cicak pakai lem, langit-langit kamarmu udah belang-belang.",
+   "skor": 7,
+   "alasan": "Cerdas dan didukung riset (tanpa residu), tapi butuh mikir dulu sebelum lucu; dipakai sebagai ide visual (tanpa bekas lem) saja."
+  },
+  {
+   "tipe": "21",
+   "teks": "Aku dulu kira kaki cicak itu kayak selotip.",
+   "skor": 6,
+   "alasan": "Pengakuan Tebe hangat, tapi Tebe cameo dan visualnya lemah di dtk 0."
+  },
+  {
+   "tipe": "9",
+   "teks": "Cicak ini lepas dari langit-langit kayak nyopot stiker.",
+   "skor": 6,
+   "alasan": "Mulai dari akhir, tapi membakar kejutan kedua dan membingungkan tanpa konteks."
+  }
+ ],
+ "peta_retensi": "0,0-6,2 dtk -> HOOK #2 + TARUHAN: narasi <=0,3 dtk 'Rebahan, CICAK nempel di langit-langit, di atas mukamu.' (cicak bergerak sedikit di frame 0, 'CICAK' +-0,9 dtk) -> 'Kok bisa nggak JATUH?' (kamera zoom ke cicak, kaki Tebe menarik selimut) -> mitos 'Pakai lem?' (tabung lem kartun muncul)\n6,2-12,5 dtk -> PATTERN INTERRUPT + INTI KEJUTAN: 'BUKAN lem.' (lem disilang) 'Bukan sedotan juga.' (sedotan karet disilang) -> jeda 0,5 -> 'pakai... RAMBUT.' (zoom ke telapak, REAKSI TEBE 1 jambul ? -> !) -> OPEN LOOP 'Lepasnya malah lebih ANEH.'\n12,5-17,0 dtk -> ANAK TANGGA 1: zoom mikroskopis satu dunia, rambut bercabang-cabang jadi JUTAAN ujung halus\n17,0-21,9 dtk -> ANAK TANGGA 2: ujung nyentuh dinding RAPAT, gaya TARIK antarmolekul muncul sebagai kilau tarikan kecil\n21,9-27,7 dtk -> ANAK TANGGA 3 + CANDA: 'LEMAH banget' (satu koin receh) -> 'kayak receh SEKARUNG' (karung receh jatuh berdebum) -> PAYOFF 1 'Makanya nggak JATUH.'\n27,7-30,4 dtk -> PATTERN INTERRUPT + KEJUJURAN: tokek muncul di dinding 'TOKEK!' (SFX buatan sendiri), REAKSI TEBE 2 kaget\n30,4-38,4 dtk -> KEJUTAN KEDUA (bayar open loop): 'Rambutnya ditarik lurus? Tetap KUAT. Dimiringin? Gampang COPOT.' -> 'jarinya DIKELUPAS, kayak nyopot stiker' (peragaan stiker + jari cicak menggulung)\n38,4-47,8 dtk -> PERTANYAAN PENGALAMAN 1 kata KAMAR/DAPUR/LAMPU + PEMICU SHARE 'Tag teman yang takut cicak' + LOOP 'suruh dia lihat ke ATAS' -> kamera naik ke langit-langit = komposisi frame 0; logo YouTube kecil + 'Ternyata Begitu' <=1 dtk di atas kalimat terakhir",
+ "durasi_target": "106 kata x patokan Nyamuk/B3-09 (+-0,446 dtk/kata termasuk jeda) = +-47,3 dtk + jeda 0,5 sebelum 'RAMBUT' -> video +-47,5-48,5 dtk, batas 50. Bila audio asli > 49,5 dtk, potong berurutan: (1) 'Makanya nggak JATUH.' -> jadi teks layar saja; (2) 'malah' di adegan 2; (3) 'super' di adegan 3. JANGAN buang: 'Bukan sedotan juga', 'Per ujung, LEMAH banget', 'Yang diteliti sih kerabat besarnya, TOKEK', 'Rambutnya ditarik lurus? Tetap KUAT', kalimat loop.",
+ "jumlah_kata": 106,
+ "skor_naskah": {
+  "hook": 2,
+  "taruhan": 1,
+  "penahan": 2,
+  "kejutan_kedua": 1,
+  "bahasa_lisan": 1,
+  "payoff": 1,
+  "total": 8
+ },
+ "skor_naskah_catatan": "Jujur 8/9. Hook 2: cicak terbalik di atas muka + 'pakai lem?' dalam 4 dtk, objek konkret, bergerak di frame 0. Taruhan 1: 'di atas MUKAMU' = takut kejatuhan, penonton tokohnya. Penahan 2: open loop 'Lepasnya malah lebih ANEH' (+-11 dtk) dibayar +-30-38 dtk; interrupt tiap 3-6 dtk (lem disilang, sedotan disilang, rambut, zoom mikro, receh sekarung, TOKEK, stiker); 1 canda besar (receh sekarung) + 2 kecil (TOKEK, lihat ke ATAS). Kejutan kedua 1 (bukan 2): 'ditarik lurus kuat, dimiringin copot' benar-benar berlawanan intuisi, tapi perbandingan stiker membuatnya cepat terasa masuk akal, jadi kagetnya sedang. Bahasa lisan 1: kalimat 1-9 kata, tanpa angka sama sekali, istilah 'antarmolekul' muncul SETELAH idenya dijelaskan, 'van der Waals/setae/spatula' tidak diucapkan. Payoff 1: 'kok bisa nggak jatuh, pakai lem?' dibayar 'BUKAN lem -> RAMBUT -> dikali jutaan -> makanya nggak JATUH' + loop. Tambahan rubrik: gaya ngobrol YA (rebahan, mukamu, receh sekarung, suruh dia lihat ke atas; tanpa menggurui, tanpa tips); SEO YA ('CICAK nempel' +-0,9-1,3 dtk, 'kok bisa nggak JATUH' +-3,5 dtk; 'kenapa cicak bisa nempel' di judul utama).",
+ "skor_viral": {
+  "hook": {
+   "skor": 2,
+   "alasan": "Hampir semua rumah Indonesia punya cicak di langit-langit; 'di atas mukamu' + 'pakai lem?' bikin berhenti tanpa konteks apa pun."
+  },
+  "jarak_kejutan": {
+   "skor": 1,
+   "alasan": "'Bukan lem, pakai RAMBUT' cukup jauh dan benar, tapi sebagian penonton sudah tahu 'kaki cicak punya bulu halus' dari artikel (IDN Times/Mojok)."
+  },
+  "retensi": {
+   "skor": 2,
+   "alasan": "+-48 dtk, open loop 'lepasnya lebih aneh' menahan sampai dtk 30, tiap 3-6 dtk ada perubahan; tidak ada blok penjelasan > 5 dtk tanpa peragaan."
+  },
+  "layak_dibagikan": {
+   "skor": 2,
+   "alasan": "'Tag teman yang takut cicak' sangat spesifik dan iseng; 'ditarik lurus kuat, dimiringin copot' bikin pengirim terlihat pintar."
+  },
+  "pemicu_komentar": {
+   "skor": 1,
+   "alasan": "KAMAR/DAPUR/LAMPU = kebiasaan sehari-hari 1 kata (pola MANDI/BAJU/PIRING), tapi lebih 'survei' daripada berkubu; kalimat loop 'suruh dia lihat ke ATAS' memancing tonton ulang."
+  },
+  "total": 8
+ },
+ "pelafalan": {
+  "antarmolekul": "an-tar-mo-le-kul",
+  "langit-langit": "la-ngit la-ngit",
+  "tokek": "to-kek",
+  "dimiringin": "di-mi-ri-ngin",
+  "dikelupas": "di-ke-lu-pas"
+ },
+ "seo": {
+  "kata_kunci_utama": "kenapa cicak bisa nempel di dinding",
+  "kata_kunci_turunan": [
+   "cicak nggak jatuh",
+   "cicak nempel tanpa lem",
+   "cicak jatuh dari langit-langit",
+   "kaki cicak",
+   "kaki tokek"
   ],
-  "judul_catatan": "Utama (50 huruf) = sudut #1 Raka ('Ternyata Bukan Pakai Lem') dengan bagian depan diganti kata kunci utama seo.md 'kenapa cicak bisa nempel' supaya rubrik SEO 'kata kunci di judul' kuat, dan judul = pertanyaan yang diucapkan di hook ('Kok bisa nggak JATUH?'). Opsi 2 (55) = rekomendasi Raka persis (lebih visual 'langit-langit', tanpa 'kenapa'). Opsi 3 (53) = sudut kejutan kedua, cadangan uji. Semua jujur: video memang membantah lem & sedotan. Raka memutuskan di cek_seo.",
-  "thumbnail_teks": "BUKAN LEM!",
-  "thumbnail_visual": "Night bedroom seen from the bed, flat cartoon without black outlines, NEW palette: bright teal/tosca dominant background (ceiling and walls) with hot fuchsia-pink accents (blanket, rim light, one small fuchsia lamp glow), standard yellow keyword pill reserved for the text; one BIG cute cartoon house gecko (cicak, slim, pale beige-grey with tiny dark speckles, big round eyes) clinging UPSIDE DOWN on the ceiling at top-center-right, toes spread wide showing soft ridged toe pads, looking down at the viewer with a smug calm face; Tebe (chibi, mustard hoodie, '?' cowlick) lying on his back on the bed at the bottom-left, medium-large, eyes wide staring straight up at the gecko, blanket pulled to his chin, cowlick shaking (shocked-curious, different pose from the porch slap and the bed jolt covers); one cartoon glue tube with a big fuchsia cross mark floating small at mid-left (generic, no brand, no letters); ONE red arrow from the gecko's toe pad pointing down to Tebe's face to show 'right above you'; empty space top-left/middle (y 260-620) for the text 'BUKAN LEM!'; no letters or numbers inside the illustration.",
-  "deskripsi": "Kenapa cicak bisa nempel di dinding dan langit-langit tanpa jatuh? Ternyata bukan pakai lem dan bukan sedotan: telapak kakinya penuh rambut super kecil yang ujungnya sangat halus, lalu menempel lewat gaya tarik antarmolekul (van der Waals) yang lemah per ujung tapi dikali jutaan. Tonton sampai habis untuk bagian paling anehnya: cara cicak melepas kakinya.\n\nCatatan jujur: penelitian utamanya dilakukan pada tokek (tokek Tokay, Gekko gecko), kerabat besar cicak rumah (Hemidactylus frenatus) dari keluarga yang sama; cicak rumah diduga memakai mekanisme serupa. Gaya antarmolekul adalah penjelasan utama, tapi peran lapisan uap air tipis di tingkat nano masih diperdebatkan ilmuwan. Satu rambut yang ditarik lurus tetap kuat, sedangkan bila dimiringkan (sekitar 30 derajat) ujungnya mudah lepas; karena itu kaki dilepas dengan dikelupas, bukan disentak. Daya rekat bisa turun di permukaan basah, berminyak, atau berdebu.\n\nSumber:\n- Autumn dkk. (2002), Evidence for van der Waals adhesion in gecko setae, PNAS: https://pmc.ncbi.nlm.nih.gov/articles/PMC129431 · https://is.tuebingen.mpg.de/publications/autumn2002evidence\n- Autumn dkk. (2000), Adhesive force of a single gecko foot-hair, Nature: https://www.nature.com/articles/35015203\n- UC Berkeley (2002): https://newsarchive.berkeley.edu/news/media/releases/2002/08/26_gecko.html\n- Huber dkk. (2005), kontribusi kapiler, PNAS: https://pmc.ncbi.nlm.nih.gov/articles/PMC1283435\n- Scientific American, How Geckos Get a Grip: https://www.scientificamerican.com/article/how-geckos-get-a-grip\n- Wikipedia, Gecko feet: https://en.wikipedia.org/wiki/Gecko_feet\n- IDN Times: https://www.idntimes.com/science/discovery/bagaimana-tokek-bisa-menempel-di-dinding-tanpa-lem-00-7szf2-t8csvr\n\n#Shorts #Cicak #TernyataBegitu",
-  "caption_komentar": "Cicak di rumahmu paling sering nongkrong di mana? Komen 1 kata: KAMAR, DAPUR, LAMPU, atau KAMAR MANDI. Bonus: kamu Tim CICAK atau Tim TOKEK?",
-  "caption_komentar_catatan": "Disematkan MANUAL setelah tayang. Tanpa fakta baru (fakta 'membersihkan diri' BELUM terverifikasi, tidak dipakai). Video terkait: belum ada video panjang setema.",
-  "caption_tiktok": "Cicak di langit-langit kok nggak jatuh? Ternyata bukan lem. Cicak di rumahmu nongkrongnya di mana: KAMAR, DAPUR, atau LAMPU? Tag teman yang takut cicak. #cicak #faktaunik #TernyataBegitu",
-  "caption_instagram": "Rebahan, cicak nempel di langit-langit pas di atas mukamu. Kok nggak jatuh?\nTernyata bukan lem, bukan sedotan. Dan cara dia lepas lebih aneh lagi.\nTag teman yang takut cicak.\nCicak di rumahmu nongkrongnya di mana? KAMAR, DAPUR, atau LAMPU? Komen satu kata.\n#cicak #faktacicak #tokek #faktaunik #faktasains #TernyataBegitu",
-  "tag": [
-    "kenapa cicak bisa nempel di dinding",
-    "cicak nempel tanpa lem",
-    "kenapa cicak nggak jatuh",
-    "cicak jatuh dari langit-langit",
-    "kaki cicak",
-    "kaki tokek",
-    "fakta cicak",
-    "fakta unik",
-    "ternyata begitu"
-  ],
-  "pola_hook": "#2 Mitos vs fakta: mitos populer diajukan sebagai pertanyaan lalu digantung ('Kok bisa nggak JATUH? Pakai lem?' -> dibantah 'BUKAN lem. Bukan sedotan juga.' di +-6,2 dtk), dalam bingkai adegan rebahan yang diwajibkan rapat Pak Bima, + loop #26 ('suruh dia lihat ke ATAS' -> langit-langit frame 0). Beda dari 5 video terakhir: Sabun #18, Nyamuk #10, Lupa #25, Pintu #14, Barcode #1 (juga Lagu #20/#14). Catatan jujur: bingkai 'rebahan ... di atas mukamu' berbau skenario #14, tapi yang menghentikan jempol dan membentuk kejutan adalah mitos 'pakai lem?' yang langsung dibantah. Naskah Tersentak (B3-05) & Presto (A3-04) belum ada di folder saat naskah ini ditulis -> #2 DIKUNCI untuk Cicak; mohon Tersentak/Presto tidak memakai #2.",
-  "hook_kandidat": [
-    {"tipe": "2", "teks": "Rebahan, CICAK nempel di langit-langit, di atas mukamu. Kok bisa nggak JATUH? Pakai lem?", "skor": 9, "alasan": "TERPILIH. Adegan rapat + taruhan 'di atas MUKAMU' (takut kejatuhan, semua orang pernah) + mitos 'pakai lem?' yang langsung dijawab di dtk 6. 'CICAK' +-0,9 dtk, 'cicak nempel' + 'kok bisa nggak jatuh' = kata kunci lisan <=4 dtk. 14 kata."},
-    {"tipe": "2", "teks": "Kaki cicak pakai LEM? Itu cuma kata orang.", "skor": 7, "alasan": "Mitos murni, cicak di dtk 0, tapi tanpa adegan & taruhan personal, terasa seperti kuis sekolah."},
-    {"tipe": "1", "teks": "Cicak di atas kepalamu itu nggak pakai lem. Terus pakai apa?", "skor": 8, "alasan": "Hook alternatif Raka, kuat dan singkat; tapi tipe #1 dipakai Barcode (5 video terakhir) dan langsung membuka jawaban tanpa mitos dulu."},
-    {"tipe": "14", "teks": "Rebahan, lihat cicak diam terbalik semalaman... kok dia nggak jatuh?", "skor": 8, "alasan": "Hook rencana Raka, sangat relatable; tapi tipe #14 dipakai Pintu (5 terakhir) dan tanpa lawan 'lem' sehingga kejutan dtk 6 kurang menghentak. Bahannya dipakai di kandidat terpilih."},
-    {"tipe": "3", "teks": "Cicak nempel terbalik pakai RAMBUT. Serius, rambut.", "skor": 7, "alasan": "Mustahil tapi nyata, lucu; tapi membakar inti kejutan di dtk 0 dan tanpa adegan."},
-    {"tipe": "6", "teks": "Tebak: cicak nempel di langit-langit pakai apa?", "skor": 7, "alasan": "Tebak dulu sudah sering (Suara rekaman, Layar HP); terasa dingin tanpa taruhan."},
-    {"tipe": "22", "teks": "Tim lem atau tim sedotan? Kaki cicak dua-duanya salah.", "skor": 7, "alasan": "Pilih kubu lucu, tapi kata 'cicak' baru di +-2,5 dtk dan kubunya dibuat-buat (orang tidak berdebat soal ini)."},
-    {"tipe": "24", "teks": "Kalau cicak pakai lem, langit-langit kamarmu udah belang-belang.", "skor": 7, "alasan": "Cerdas dan didukung riset (tanpa residu), tapi butuh mikir dulu sebelum lucu; dipakai sebagai ide visual (tanpa bekas lem) saja."},
-    {"tipe": "21", "teks": "Aku dulu kira kaki cicak itu kayak selotip.", "skor": 6, "alasan": "Pengakuan Tebe hangat, tapi Tebe cameo dan visualnya lemah di dtk 0."},
-    {"tipe": "9", "teks": "Cicak ini lepas dari langit-langit kayak nyopot stiker.", "skor": 6, "alasan": "Mulai dari akhir, tapi membakar kejutan kedua dan membingungkan tanpa konteks."}
-  ],
-  "peta_retensi": "0,0-6,2 dtk -> HOOK #2 + TARUHAN: narasi <=0,3 dtk 'Rebahan, CICAK nempel di langit-langit, di atas mukamu.' (cicak bergerak sedikit di frame 0, 'CICAK' +-0,9 dtk) -> 'Kok bisa nggak JATUH?' (kamera zoom ke cicak, kaki Tebe menarik selimut) -> mitos 'Pakai lem?' (tabung lem kartun muncul)\n6,2-12,5 dtk -> PATTERN INTERRUPT + INTI KEJUTAN: 'BUKAN lem.' (lem disilang) 'Bukan sedotan juga.' (sedotan karet disilang) -> jeda 0,5 -> 'pakai... RAMBUT.' (zoom ke telapak, REAKSI TEBE 1 jambul ? -> !) -> OPEN LOOP 'Lepasnya malah lebih ANEH.'\n12,5-17,0 dtk -> ANAK TANGGA 1: zoom mikroskopis satu dunia, rambut bercabang-cabang jadi JUTAAN ujung halus\n17,0-21,9 dtk -> ANAK TANGGA 2: ujung nyentuh dinding RAPAT, gaya TARIK antarmolekul muncul sebagai kilau tarikan kecil\n21,9-27,7 dtk -> ANAK TANGGA 3 + CANDA: 'LEMAH banget' (satu koin receh) -> 'kayak receh SEKARUNG' (karung receh jatuh berdebum) -> PAYOFF 1 'Makanya nggak JATUH.'\n27,7-30,4 dtk -> PATTERN INTERRUPT + KEJUJURAN: tokek muncul di dinding 'TOKEK!' (SFX buatan sendiri), REAKSI TEBE 2 kaget\n30,4-38,4 dtk -> KEJUTAN KEDUA (bayar open loop): 'Rambutnya ditarik lurus? Tetap KUAT. Dimiringin? Gampang COPOT.' -> 'jarinya DIKELUPAS, kayak nyopot stiker' (peragaan stiker + jari cicak menggulung)\n38,4-47,8 dtk -> PERTANYAAN PENGALAMAN 1 kata KAMAR/DAPUR/LAMPU + PEMICU SHARE 'Tag teman yang takut cicak' + LOOP 'suruh dia lihat ke ATAS' -> kamera naik ke langit-langit = komposisi frame 0; logo YouTube kecil + 'Ternyata Begitu' <=1 dtk di atas kalimat terakhir",
-  "durasi_target": "106 kata x patokan Nyamuk/B3-09 (+-0,446 dtk/kata termasuk jeda) = +-47,3 dtk + jeda 0,5 sebelum 'RAMBUT' -> video +-47,5-48,5 dtk, batas 50. Bila audio asli > 49,5 dtk, potong berurutan: (1) 'Makanya nggak JATUH.' -> jadi teks layar saja; (2) 'malah' di adegan 2; (3) 'super' di adegan 3. JANGAN buang: 'Bukan sedotan juga', 'Per ujung, LEMAH banget', 'Yang diteliti sih kerabat besarnya, TOKEK', 'Rambutnya ditarik lurus? Tetap KUAT', kalimat loop.",
-  "jumlah_kata": 106,
-  "skor_naskah": {
-    "hook": 2,
-    "taruhan": 1,
-    "penahan": 2,
-    "kejutan_kedua": 1,
-    "bahasa_lisan": 1,
-    "payoff": 1,
-    "total": 8
+  "catatan": "Terucap: 'CICAK nempel di langit-langit' +-0,9-2,3 dtk; 'Kok bisa nggak JATUH?' +-3,5 dtk (versi lisan 'kenapa cicak bisa nempel' + turunan 'cicak nggak jatuh'); 'BUKAN lem' +-6,2 dtk (turunan 'cicak nempel tanpa lem'); 'Cicak nempel pakai RAMBUT' +-9-11 dtk; 'Telapaknya' (kaki cicak) +-12,5 dtk; 'TOKEK' +-29 dtk. 'Dinding' terucap +-17 dtk. Teks layar pertama setelah sampul: 'CICAK NGGAK JATUH?' (seo.md); sampul 'BUKAN LEM!'. Kata kunci utama di judul utama, kalimat pertama deskripsi, tag pertama."
+ },
+ "catatan_fakta": "Setiap kalimat dari riset.md (Laras). Adegan 1 'Rebahan, CICAK nempel di langit-langit, di atas mukamu. Kok bisa nggak JATUH? Pakai lem?' = pengalaman bersama riset (rebahan, cicak terbalik di langit-langit) + anggapan umum 'kaki lengket seperti lem' sebagai pertanyaan. Adegan 2 'BUKAN lem. Bukan sedotan juga.' = Fakta (tanpa kelenjar lem, tanpa hisapan). 'Cicak nempel pakai... RAMBUT.' = telapak penuh 'rambut' mikroskopis (setae); mekanisme sefamili, kejujuran tokek di adegan 6. 'Lepasnya malah lebih ANEH.' = open loop (penilaian, bukan klaim). Adegan 3 'Telapaknya penuh rambut super KECIL. Bercabang-cabang, jadi JUTAAN ujung halus.' = setae bercabang jadi spatula +-200 nm; 'jutaan ujung' = frasa aman riset, tanpa angka persis. Adegan 4 'Ujungnya nyentuh dinding RAPAT banget. Sedekat itu, gaya TARIK antarmolekul mulai kerja.' = ujung lentur menyentuh permukaan di celah mikroskopis; van der Waals hanya bekerja pada jarak super dekat. Adegan 5 'Per ujung, LEMAH banget. Tapi dikali jutaan, kayak receh SEKARUNG. Makanya nggak JATUH.' = 'amat lemah per ujung, tapi dikali jutaan'; receh = perbandingan/canda; 'makanya' = gaya antarmolekul sebagai penjelasan UTAMA (aman menurut riset), TIDAK mengklaim 'tanpa air sama sekali' (debat uap air ada di deskripsi). Adegan 6 'Yang diteliti sih kerabat besarnya, TOKEK.' = penelitian dasar pada tokek Tokay, tidak mengklaim cicak rumah diuji. Adegan 7 'Rambutnya ditarik lurus? Tetap KUAT. Dimiringin? Gampang COPOT. Bukan disentak, jarinya DIKELUPAS, kayak nyopot stiker.' = Nature 2000: ditarik lurus tetap kuat, dimiringkan +-30 derajat lepas mudah; cicak mengelupas jari, bukan menyentak (angka derajat hanya di deskripsi). Adegan 8 = pertanyaan pengalaman riset + pemicu share + loop (tanpa klaim). Tidak dipakai: jumlah rambut, '10 atmosfer', 'semua permukaan', membersihkan diri (belum terverifikasi), produk perekat/merek, tips mengusir, arti kejatuhan cicak. Catatan verifikasi Laras: teks penuh sumber belum terbuka (domain diblokir); klaim inti cocok di >=3 sumber ringkasan -> mohon Pak Bima cek ulang di cek_fakta bila sempat.",
+ "sfx": "SFX buatan sendiri/berlisensi (catat di aset/sfx/SUMBER.md): (1) 'tek' kecil langkah cicak di frame 0 pelan di bawah narasi; (2) 'boing' karet sedotan disilang adegan 2; (3) 'BRUK' karung receh adegan 5; (4) suara 'tokek!' kartun adegan 6 (JANGAN rekaman tokek asli dari internet tanpa lisensi); (5) 'srettt' stiker dikelupas adegan 7. Pelan, tidak menunda narasi.",
+ "adegan": [
+  {
+   "no": 1,
+   "narasi": "Rebahan, CICAK nempel di langit-langit, di atas mukamu. Kok bisa nggak JATUH? Pakai lem?",
+   "teks_layar": "CICAK NGGAK JATUH?",
+   "catatan_teks": "Frame 0-+-0,8 dtk = teks sampul 'BUKAN LEM!' (pil kuning standar) di y 260-620 (bila Raka/Yoga menilai membocorkan kejutan, sampul cukup dipakai di thumbnail.png dan frame 0 langsung 'CICAK NGGAK JATUH?'); lalu 'CICAK NGGAK JATUH?' besar saat 'nggak JATUH'; 'PAKAI LEM?' kecil saat 'Pakai lem?'. Subtitle jangan menutupi cicak di langit-langit.",
+   "visual": "Frame 0 = cover composition: night bedroom seen from the bed, flat cartoon without black outlines, teal/tosca ceiling and walls with hot fuchsia accents (blanket, small lamp glow); one big cute cartoon house gecko (cicak, slim pale beige-grey with tiny speckles, big round eyes) clinging upside down on the ceiling top-center-right, toes spread showing ridged toe pads, ONE red arrow from its toe pad down to Tebe's face; Tebe (chibi, mustard hoodie) lying on his back bottom-left, blanket to the chin, staring up. Motion from 0.0 s: the gecko takes one tiny step and its tail curls (alive, not a still picture); on 'di atas mukamu' the camera tilts to Tebe's point of view so the gecko is directly overhead; on 'nggak JATUH' a small dust speck drops from the ceiling past the camera and Tebe pulls the blanket up to his nose; on 'Pakai lem?' a generic cartoon glue tube with a question mark pops in next to the gecko's foot; no text or letters in the image.",
+   "maskot": true,
+   "jenis_visual": "gambar",
+   "durasi": 6.2,
+   "set": "set BARU/variasi `kamar-malam-tosca`: langit-langit & dinding tosca, selimut fuchsia, lampu tidur kecil; cicak kartun bermata besar (aset baru `cicak`, juga dipakai adegan 2-8)",
+   "tebe": "kiri bawah, rebahan telentang, menatap ke atas, selimut sampai dagu -> sampai hidung",
+   "aksi": "0,0 narasi + cicak melangkah kecil + ekor melengkung; 0,8 teks sampul lepas; 0,9 'CICAK'; 2,3 'di atas mukamu' kamera miring ke sudut pandang Tebe; 3,5 'nggak JATUH' debu jatuh lewat kamera, Tebe tarik selimut; 5,3 'Pakai lem?' tabung lem generik + '?' muncul",
+   "catatan_yoga": "Narasi mulai <=0,3 dtk, TANPA intro. Cicak WAJIB sudah ada & bergerak di frame 0. Tabung lem tanpa merek/tulisan. Pose Tebe beda dari Tersentak (terlonjak) dan Nyamuk (tepuk betis)."
   },
-  "skor_naskah_catatan": "Jujur 8/9. Hook 2: cicak terbalik di atas muka + 'pakai lem?' dalam 4 dtk, objek konkret, bergerak di frame 0. Taruhan 1: 'di atas MUKAMU' = takut kejatuhan, penonton tokohnya. Penahan 2: open loop 'Lepasnya malah lebih ANEH' (+-11 dtk) dibayar +-30-38 dtk; interrupt tiap 3-6 dtk (lem disilang, sedotan disilang, rambut, zoom mikro, receh sekarung, TOKEK, stiker); 1 canda besar (receh sekarung) + 2 kecil (TOKEK, lihat ke ATAS). Kejutan kedua 1 (bukan 2): 'ditarik lurus kuat, dimiringin copot' benar-benar berlawanan intuisi, tapi perbandingan stiker membuatnya cepat terasa masuk akal, jadi kagetnya sedang. Bahasa lisan 1: kalimat 1-9 kata, tanpa angka sama sekali, istilah 'antarmolekul' muncul SETELAH idenya dijelaskan, 'van der Waals/setae/spatula' tidak diucapkan. Payoff 1: 'kok bisa nggak jatuh, pakai lem?' dibayar 'BUKAN lem -> RAMBUT -> dikali jutaan -> makanya nggak JATUH' + loop. Tambahan rubrik: gaya ngobrol YA (rebahan, mukamu, receh sekarung, suruh dia lihat ke atas; tanpa menggurui, tanpa tips); SEO YA ('CICAK nempel' +-0,9-1,3 dtk, 'kok bisa nggak JATUH' +-3,5 dtk; 'kenapa cicak bisa nempel' di judul utama).",
-  "skor_viral": {
-    "hook": {"skor": 2, "alasan": "Hampir semua rumah Indonesia punya cicak di langit-langit; 'di atas mukamu' + 'pakai lem?' bikin berhenti tanpa konteks apa pun."},
-    "jarak_kejutan": {"skor": 1, "alasan": "'Bukan lem, pakai RAMBUT' cukup jauh dan benar, tapi sebagian penonton sudah tahu 'kaki cicak punya bulu halus' dari artikel (IDN Times/Mojok)."},
-    "retensi": {"skor": 2, "alasan": "+-48 dtk, open loop 'lepasnya lebih aneh' menahan sampai dtk 30, tiap 3-6 dtk ada perubahan; tidak ada blok penjelasan > 5 dtk tanpa peragaan."},
-    "layak_dibagikan": {"skor": 2, "alasan": "'Tag teman yang takut cicak' sangat spesifik dan iseng; 'ditarik lurus kuat, dimiringin copot' bikin pengirim terlihat pintar."},
-    "pemicu_komentar": {"skor": 1, "alasan": "KAMAR/DAPUR/LAMPU = kebiasaan sehari-hari 1 kata (pola MANDI/BAJU/PIRING), tapi lebih 'survei' daripada berkubu; kalimat loop 'suruh dia lihat ke ATAS' memancing tonton ulang."},
-    "total": 8
+  {
+   "no": 2,
+   "narasi": "BUKAN lem. Bukan sedotan juga. Cicak nempel pakai... RAMBUT. Lepasnya malah lebih ANEH.",
+   "teks_layar": "BUKAN LEM!",
+   "catatan_teks": "'BUKAN LEM!' saat 'BUKAN lem' -> 'BUKAN SEDOTAN' saat 'sedotan' -> diam di jeda '...' -> 'PAKAI RAMBUT?!' besar saat 'RAMBUT' -> kecil 'LEPASNYA LEBIH ANEH...' saat kalimat terakhir.",
+   "visual": "On 'BUKAN lem' the glue tube gets a big fuchsia cross and squeaks away; on 'sedotan' a red rubber suction cup (generic, like an octopus sucker) pops onto the gecko's foot, gets a fuchsia cross and falls off with a boing (funny beat); during the pause the camera rushes in toward the gecko's toe pad on the ceiling; on 'RAMBUT' the toe pad reveals a soft carpet of tiny hairs like a fluffy brush; small Tebe in the lower-left corner peeks up, cowlick flips from '?' to '!'; on 'Lepasnya malah lebih ANEH' the gecko lifts one toe slightly as a teaser and the camera freezes for a beat; flat style without black outlines; no text in the image.",
+   "maskot": true,
+   "jenis_visual": "gambar",
+   "durasi": 6.3,
+   "set": "kamar-malam-tosca (dunia sama), kamera mendekat ke kaki cicak; tabung lem generik + sedotan karet merah generik",
+   "tebe": "REAKSI 1: kecil pojok kiri bawah, jambul ? -> ! saat 'RAMBUT'",
+   "aksi": "6,2 'BUKAN lem' lem disilang; 7,4 'sedotan' sedotan karet nempel lalu disilang + boing; 8,8 jeda 0,5 kamera melesat ke telapak; 10,8 'RAMBUT' bulu halus terlihat + jambul Tebe ?->!; 11,4 'lebih ANEH' satu jari terangkat sedikit lalu kamera berhenti",
+   "catatan_yoga": "INTI KEJUTAN 'BUKAN lem' mulai <=8 dtk (ukur di audio asli). Jeda 0,5 dtk sebelum 'RAMBUT' (naskah_suara '...'). Jari terangkat = teaser open loop, jangan tunjukkan cara mengelupas di sini."
   },
-  "pelafalan": {
-    "antarmolekul": "an-tar-mo-le-kul",
-    "langit-langit": "la-ngit la-ngit",
-    "tokek": "to-kek",
-    "dimiringin": "di-mi-ri-ngin",
-    "dikelupas": "di-ke-lu-pas"
+  {
+   "no": 3,
+   "narasi": "Telapaknya penuh rambut super KECIL. Bercabang-cabang, jadi JUTAAN ujung halus.",
+   "teks_layar": "JUTAAN UJUNG HALUS",
+   "catatan_teks": "'RAMBUT SUPER KECIL' saat 'KECIL' -> 'JUTAAN UJUNG HALUS' saat 'JUTAAN'. Tanpa angka/ukuran nanometer di layar.",
+   "visual": "Same world, continuous zoom (like a microscope dive): from the toe pad into rows of tiny hairs, then into one hair that splits into branches, and each branch splits again into many super thin flat tips, like a tree of bristles; the camera pulls back a little to show the whole pad shimmering with countless tiny tips (sparkle effect, no counting numbers); soft teal and fuchsia glow on the tips; flat style without black outlines; no text in the image.",
+   "maskot": false,
+   "jenis_visual": "gambar",
+   "durasi": 4.5,
+   "set": "zoom mikroskopis kaki cicak: deretan rambut -> satu rambut bercabang -> ujung-ujung pipih halus (aset baru `rambut-cicak-zoom`)",
+   "tebe": "-",
+   "aksi": "12,5 zoom ke deretan rambut; 13,8 'KECIL' satu rambut tersorot; 14,6 'Bercabang-cabang' cabang tumbuh bertingkat; 15,8 'JUTAAN' kamera mundur, seluruh telapak berkilau",
+   "catatan_yoga": "Peragakan kata persis: 'bercabang-cabang' = cabang tumbuh bertingkat. Jangan tampilkan angka jumlah."
   },
-  "seo": {
-    "kata_kunci_utama": "kenapa cicak bisa nempel di dinding",
-    "kata_kunci_turunan": [
-      "cicak nggak jatuh",
-      "cicak nempel tanpa lem",
-      "cicak jatuh dari langit-langit",
-      "kaki cicak",
-      "kaki tokek"
-    ],
-    "catatan": "Terucap: 'CICAK nempel di langit-langit' +-0,9-2,3 dtk; 'Kok bisa nggak JATUH?' +-3,5 dtk (versi lisan 'kenapa cicak bisa nempel' + turunan 'cicak nggak jatuh'); 'BUKAN lem' +-6,2 dtk (turunan 'cicak nempel tanpa lem'); 'Cicak nempel pakai RAMBUT' +-9-11 dtk; 'Telapaknya' (kaki cicak) +-12,5 dtk; 'TOKEK' +-29 dtk. 'Dinding' terucap +-17 dtk. Teks layar pertama setelah sampul: 'CICAK NGGAK JATUH?' (seo.md); sampul 'BUKAN LEM!'. Kata kunci utama di judul utama, kalimat pertama deskripsi, tag pertama."
+  {
+   "no": 4,
+   "narasi": "Ujungnya nyentuh dinding RAPAT banget. Sedekat itu, gaya TARIK antarmolekul mulai kerja.",
+   "teks_layar": "GAYA TARIK ANTARMOLEKUL",
+   "catatan_teks": "'RAPAT BANGET' saat 'RAPAT' -> 'GAYA TARIK ANTARMOLEKUL' saat 'TARIK' + teks kecil di bawahnya 'gaya van der Waals' (ukuran kecil, keputusan rapat).",
+   "visual": "Cross-section view: the tiny flat tips press down onto a bumpy ceiling surface (shown as gentle hills and valleys at micro scale), bending to fill the little gaps so they hug the surface closely; on 'TARIK' tiny glowing fuchsia pull-lines (like little springs or hands holding) appear between each tip and the surface, gently tugging; NOT magnets, NOT glue drops, NOT water drops; flat style without black outlines; no text in the image.",
+   "maskot": false,
+   "jenis_visual": "gambar",
+   "durasi": 4.9,
+   "set": "penampang mikro: ujung rambut menempel di permukaan bergelombang + garis tarik kecil fuchsia",
+   "tebe": "-",
+   "aksi": "17,0 penampang muncul, ujung turun ke permukaan; 18,4 'RAPAT' ujung melentur mengisi celah; 19,6 'Sedekat itu' kamera zoom ke satu ujung; 20,6 'TARIK' garis tarik kecil berpendar",
+   "catatan_yoga": "Jangan pakai ikon magnet (bisa dikira magnet) atau tetes air/lem (riset melarang kesan lem; peran air masih diperdebatkan)."
   },
-  "catatan_fakta": "Setiap kalimat dari riset.md (Laras). Adegan 1 'Rebahan, CICAK nempel di langit-langit, di atas mukamu. Kok bisa nggak JATUH? Pakai lem?' = pengalaman bersama riset (rebahan, cicak terbalik di langit-langit) + anggapan umum 'kaki lengket seperti lem' sebagai pertanyaan. Adegan 2 'BUKAN lem. Bukan sedotan juga.' = Fakta (tanpa kelenjar lem, tanpa hisapan). 'Cicak nempel pakai... RAMBUT.' = telapak penuh 'rambut' mikroskopis (setae); mekanisme sefamili, kejujuran tokek di adegan 6. 'Lepasnya malah lebih ANEH.' = open loop (penilaian, bukan klaim). Adegan 3 'Telapaknya penuh rambut super KECIL. Bercabang-cabang, jadi JUTAAN ujung halus.' = setae bercabang jadi spatula +-200 nm; 'jutaan ujung' = frasa aman riset, tanpa angka persis. Adegan 4 'Ujungnya nyentuh dinding RAPAT banget. Sedekat itu, gaya TARIK antarmolekul mulai kerja.' = ujung lentur menyentuh permukaan di celah mikroskopis; van der Waals hanya bekerja pada jarak super dekat. Adegan 5 'Per ujung, LEMAH banget. Tapi dikali jutaan, kayak receh SEKARUNG. Makanya nggak JATUH.' = 'amat lemah per ujung, tapi dikali jutaan'; receh = perbandingan/canda; 'makanya' = gaya antarmolekul sebagai penjelasan UTAMA (aman menurut riset), TIDAK mengklaim 'tanpa air sama sekali' (debat uap air ada di deskripsi). Adegan 6 'Yang diteliti sih kerabat besarnya, TOKEK.' = penelitian dasar pada tokek Tokay, tidak mengklaim cicak rumah diuji. Adegan 7 'Rambutnya ditarik lurus? Tetap KUAT. Dimiringin? Gampang COPOT. Bukan disentak, jarinya DIKELUPAS, kayak nyopot stiker.' = Nature 2000: ditarik lurus tetap kuat, dimiringkan +-30 derajat lepas mudah; cicak mengelupas jari, bukan menyentak (angka derajat hanya di deskripsi). Adegan 8 = pertanyaan pengalaman riset + pemicu share + loop (tanpa klaim). Tidak dipakai: jumlah rambut, '10 atmosfer', 'semua permukaan', membersihkan diri (belum terverifikasi), produk perekat/merek, tips mengusir, arti kejatuhan cicak. Catatan verifikasi Laras: teks penuh sumber belum terbuka (domain diblokir); klaim inti cocok di >=3 sumber ringkasan -> mohon Pak Bima cek ulang di cek_fakta bila sempat.",
-  "sfx": "SFX buatan sendiri/berlisensi (catat di aset/sfx/SUMBER.md): (1) 'tek' kecil langkah cicak di frame 0 pelan di bawah narasi; (2) 'boing' karet sedotan disilang adegan 2; (3) 'BRUK' karung receh adegan 5; (4) suara 'tokek!' kartun adegan 6 (JANGAN rekaman tokek asli dari internet tanpa lisensi); (5) 'srettt' stiker dikelupas adegan 7. Pelan, tidak menunda narasi.",
-  "adegan": [
-    {
-      "no": 1,
-      "narasi": "Rebahan, CICAK nempel di langit-langit, di atas mukamu. Kok bisa nggak JATUH? Pakai lem?",
-      "teks_layar": "CICAK NGGAK JATUH?",
-      "catatan_teks": "Frame 0-+-0,8 dtk = teks sampul 'BUKAN LEM!' (pil kuning standar) di y 260-620 (bila Raka/Yoga menilai membocorkan kejutan, sampul cukup dipakai di thumbnail.png dan frame 0 langsung 'CICAK NGGAK JATUH?'); lalu 'CICAK NGGAK JATUH?' besar saat 'nggak JATUH'; 'PAKAI LEM?' kecil saat 'Pakai lem?'. Subtitle jangan menutupi cicak di langit-langit.",
-      "visual": "Frame 0 = cover composition: night bedroom seen from the bed, flat cartoon without black outlines, teal/tosca ceiling and walls with hot fuchsia accents (blanket, small lamp glow); one big cute cartoon house gecko (cicak, slim pale beige-grey with tiny speckles, big round eyes) clinging upside down on the ceiling top-center-right, toes spread showing ridged toe pads, ONE red arrow from its toe pad down to Tebe's face; Tebe (chibi, mustard hoodie) lying on his back bottom-left, blanket to the chin, staring up. Motion from 0.0 s: the gecko takes one tiny step and its tail curls (alive, not a still picture); on 'di atas mukamu' the camera tilts to Tebe's point of view so the gecko is directly overhead; on 'nggak JATUH' a small dust speck drops from the ceiling past the camera and Tebe pulls the blanket up to his nose; on 'Pakai lem?' a generic cartoon glue tube with a question mark pops in next to the gecko's foot; no text or letters in the image.",
-      "maskot": true,
-      "jenis_visual": "gambar",
-      "durasi": 6.2,
-      "set": "set BARU/variasi `kamar-malam-tosca`: langit-langit & dinding tosca, selimut fuchsia, lampu tidur kecil; cicak kartun bermata besar (aset baru `cicak`, juga dipakai adegan 2-8)",
-      "tebe": "kiri bawah, rebahan telentang, menatap ke atas, selimut sampai dagu -> sampai hidung",
-      "aksi": "0,0 narasi + cicak melangkah kecil + ekor melengkung; 0,8 teks sampul lepas; 0,9 'CICAK'; 2,3 'di atas mukamu' kamera miring ke sudut pandang Tebe; 3,5 'nggak JATUH' debu jatuh lewat kamera, Tebe tarik selimut; 5,3 'Pakai lem?' tabung lem generik + '?' muncul",
-      "catatan_yoga": "Narasi mulai <=0,3 dtk, TANPA intro. Cicak WAJIB sudah ada & bergerak di frame 0. Tabung lem tanpa merek/tulisan. Pose Tebe beda dari Tersentak (terlonjak) dan Nyamuk (tepuk betis)."
-    },
-    {
-      "no": 2,
-      "narasi": "BUKAN lem. Bukan sedotan juga. Cicak nempel pakai... RAMBUT. Lepasnya malah lebih ANEH.",
-      "teks_layar": "BUKAN LEM!",
-      "catatan_teks": "'BUKAN LEM!' saat 'BUKAN lem' -> 'BUKAN SEDOTAN' saat 'sedotan' -> diam di jeda '...' -> 'PAKAI RAMBUT?!' besar saat 'RAMBUT' -> kecil 'LEPASNYA LEBIH ANEH...' saat kalimat terakhir.",
-      "visual": "On 'BUKAN lem' the glue tube gets a big fuchsia cross and squeaks away; on 'sedotan' a red rubber suction cup (generic, like an octopus sucker) pops onto the gecko's foot, gets a fuchsia cross and falls off with a boing (funny beat); during the pause the camera rushes in toward the gecko's toe pad on the ceiling; on 'RAMBUT' the toe pad reveals a soft carpet of tiny hairs like a fluffy brush; small Tebe in the lower-left corner peeks up, cowlick flips from '?' to '!'; on 'Lepasnya malah lebih ANEH' the gecko lifts one toe slightly as a teaser and the camera freezes for a beat; flat style without black outlines; no text in the image.",
-      "maskot": true,
-      "jenis_visual": "gambar",
-      "durasi": 6.3,
-      "set": "kamar-malam-tosca (dunia sama), kamera mendekat ke kaki cicak; tabung lem generik + sedotan karet merah generik",
-      "tebe": "REAKSI 1: kecil pojok kiri bawah, jambul ? -> ! saat 'RAMBUT'",
-      "aksi": "6,2 'BUKAN lem' lem disilang; 7,4 'sedotan' sedotan karet nempel lalu disilang + boing; 8,8 jeda 0,5 kamera melesat ke telapak; 10,8 'RAMBUT' bulu halus terlihat + jambul Tebe ?->!; 11,4 'lebih ANEH' satu jari terangkat sedikit lalu kamera berhenti",
-      "catatan_yoga": "INTI KEJUTAN 'BUKAN lem' mulai <=8 dtk (ukur di audio asli). Jeda 0,5 dtk sebelum 'RAMBUT' (naskah_suara '...'). Jari terangkat = teaser open loop, jangan tunjukkan cara mengelupas di sini."
-    },
-    {
-      "no": 3,
-      "narasi": "Telapaknya penuh rambut super KECIL. Bercabang-cabang, jadi JUTAAN ujung halus.",
-      "teks_layar": "JUTAAN UJUNG HALUS",
-      "catatan_teks": "'RAMBUT SUPER KECIL' saat 'KECIL' -> 'JUTAAN UJUNG HALUS' saat 'JUTAAN'. Tanpa angka/ukuran nanometer di layar.",
-      "visual": "Same world, continuous zoom (like a microscope dive): from the toe pad into rows of tiny hairs, then into one hair that splits into branches, and each branch splits again into many super thin flat tips, like a tree of bristles; the camera pulls back a little to show the whole pad shimmering with countless tiny tips (sparkle effect, no counting numbers); soft teal and fuchsia glow on the tips; flat style without black outlines; no text in the image.",
-      "maskot": false,
-      "jenis_visual": "gambar",
-      "durasi": 4.5,
-      "set": "zoom mikroskopis kaki cicak: deretan rambut -> satu rambut bercabang -> ujung-ujung pipih halus (aset baru `rambut-cicak-zoom`)",
-      "tebe": "-",
-      "aksi": "12,5 zoom ke deretan rambut; 13,8 'KECIL' satu rambut tersorot; 14,6 'Bercabang-cabang' cabang tumbuh bertingkat; 15,8 'JUTAAN' kamera mundur, seluruh telapak berkilau",
-      "catatan_yoga": "Peragakan kata persis: 'bercabang-cabang' = cabang tumbuh bertingkat. Jangan tampilkan angka jumlah."
-    },
-    {
-      "no": 4,
-      "narasi": "Ujungnya nyentuh dinding RAPAT banget. Sedekat itu, gaya TARIK antarmolekul mulai kerja.",
-      "teks_layar": "GAYA TARIK ANTARMOLEKUL",
-      "catatan_teks": "'RAPAT BANGET' saat 'RAPAT' -> 'GAYA TARIK ANTARMOLEKUL' saat 'TARIK' + teks kecil di bawahnya 'gaya van der Waals' (ukuran kecil, keputusan rapat).",
-      "visual": "Cross-section view: the tiny flat tips press down onto a bumpy ceiling surface (shown as gentle hills and valleys at micro scale), bending to fill the little gaps so they hug the surface closely; on 'TARIK' tiny glowing fuchsia pull-lines (like little springs or hands holding) appear between each tip and the surface, gently tugging; NOT magnets, NOT glue drops, NOT water drops; flat style without black outlines; no text in the image.",
-      "maskot": false,
-      "jenis_visual": "gambar",
-      "durasi": 4.9,
-      "set": "penampang mikro: ujung rambut menempel di permukaan bergelombang + garis tarik kecil fuchsia",
-      "tebe": "-",
-      "aksi": "17,0 penampang muncul, ujung turun ke permukaan; 18,4 'RAPAT' ujung melentur mengisi celah; 19,6 'Sedekat itu' kamera zoom ke satu ujung; 20,6 'TARIK' garis tarik kecil berpendar",
-      "catatan_yoga": "Jangan pakai ikon magnet (bisa dikira magnet) atau tetes air/lem (riset melarang kesan lem; peran air masih diperdebatkan)."
-    },
-    {
-      "no": 5,
-      "narasi": "Per ujung, LEMAH banget. Tapi dikali jutaan, kayak receh SEKARUNG. Makanya nggak JATUH.",
-      "teks_layar": "DIKALI JUTAAN",
-      "catatan_teks": "'LEMAH BANGET' kecil saat 'LEMAH' -> 'DIKALI JUTAAN' besar saat 'jutaan' -> 'NGGAK JATUH' saat 'JATUH'.",
-      "visual": "On 'LEMAH banget' one single shiny coin (generic coin, no real currency design, no numbers) sits alone on a flat teal table, tiny and unimpressive, with a little sad sparkle; on 'dikali jutaan' coins rain down and pile into a huge burlap sack that lands with a heavy thud, the table bends (funny beat); on 'Makanya nggak JATUH' hard cut back to the bedroom ceiling: the gecko hangs upside down calmly, even lets go of one foot and waves it, still stuck firmly with the other three; flat style without black outlines; no text in the image.",
-      "maskot": false,
-      "jenis_visual": "gambar",
-      "durasi": 5.8,
-      "set": "meja tosca + 1 koin generik -> karung receh -> kembali ke langit-langit kamar",
-      "tebe": "-",
-      "aksi": "21,9 satu koin sendirian; 23,3 'dikali jutaan' hujan koin; 25,0 'SEKARUNG' karung jatuh BRUK, meja melengkung; 26,3 potong ke langit-langit, cicak santai melambaikan satu kaki",
-      "catatan_yoga": "Koin generik, jangan desain rupiah asli. Cicak melambai dengan SATU kaki saja, tiga kaki tetap menempel (tanpa klaim berapa kaki yang cukup)."
-    },
-    {
-      "no": 6,
-      "narasi": "Yang diteliti sih kerabat besarnya, TOKEK.",
-      "teks_layar": "YANG DITELITI: TOKEK",
-      "catatan_teks": "'YANG DITELITI: TOKEK' saat 'TOKEK'.",
-      "visual": "Pattern interrupt: from the bedroom wall a big chunky cartoon tokay gecko (blue-grey with orange spots, bigger and rounder than the slim cicak) pops in beside the cicak like a big cousin, wearing a tiny generic lab badge (no letters), and the cicak gives a small nod; Tebe (medium, bottom-left, on the bed) jumps under the blanket in surprise as the tokek appears with a cartoon 'tokek!' sound; flat style without black outlines; no text in the image.",
-      "maskot": true,
-      "jenis_visual": "gambar",
-      "durasi": 2.7,
-      "set": "kamar-malam-tosca + tokek Tokay kartun (aset baru `tokek`) di samping cicak",
-      "tebe": "REAKSI 2: sedang, kiri bawah, terlonjak kaget lalu ngumpet di selimut",
-      "aksi": "27,7 tokek nongol dari tepi dinding; 28,8 'TOKEK' SFX 'tokek!' + Tebe terlonjak; 29,6 cicak mengangguk ke tokek",
-      "catatan_yoga": "Tokek digambar jelas BEDA dari cicak (lebih besar, bertotol jingga) supaya kejujuran terbaca. SFX 'tokek!' buatan sendiri."
-    },
-    {
-      "no": 7,
-      "narasi": "Nah, cara lepasnya. Rambutnya ditarik lurus? Tetap KUAT. Dimiringin? Gampang COPOT. Bukan disentak, jarinya DIKELUPAS, kayak nyopot stiker.",
-      "teks_layar": "DIKELUPAS, BUKAN DITARIK",
-      "catatan_teks": "'DITARIK LURUS: KUAT' saat 'KUAT' -> 'DIMIRINGIN: COPOT' saat 'COPOT' -> 'DIKELUPAS, BUKAN DITARIK' saat 'DIKELUPAS'. Tanpa angka derajat di layar.",
-      "visual": "'Nah' = hard cut to a clean teal micro stage: one single hair tip stuck on a surface; a cartoon tug-rope pulls it straight up, the hair stretches but holds firm (strong-man grunt pose of the hair, funny); then the rope tilts the hair sideways and the tip pops off easily with a light 'tik'; cut back to the gecko on the ceiling in close-up: it lifts its foot by rolling each toe up from the tip, like peeling, side-by-side with a split-screen of a hand peeling a generic round sticker off a book cover in the same motion (no letters on the sticker); flat style without black outlines; no text in the image.",
-      "maskot": false,
-      "jenis_visual": "gambar",
-      "durasi": 8.0,
-      "set": "panggung mikro tosca: satu rambut + tali tarik -> close-up kaki cicak menggulung jari + layar terbelah tangan mengelupas stiker generik",
-      "tebe": "-",
-      "aksi": "30,4 'Nah' potong keras; 31,6 'ditarik lurus' tali tarik ke atas; 32,7 'KUAT' rambut bertahan; 33,6 'Dimiringin' tali miring; 34,4 'COPOT' ujung lepas 'tik'; 35,3 kaki cicak close-up; 36,4 'DIKELUPAS' jari menggulung dari ujung + layar terbelah stiker dikelupas 'srettt'",
-      "catatan_yoga": "BAYAR open loop adegan 2. Gerak jari cicak = menggulung dari ujung (bukan menyentak), sama arah dengan stiker. Tanpa busur derajat/angka."
-    },
-    {
-      "no": 8,
-      "narasi": "Cicak di rumahmu nongkrong di MANA? KAMAR, DAPUR, atau LAMPU? Tag teman yang takut cicak, terus suruh dia lihat ke ATAS.",
-      "teks_layar": "KAMAR / DAPUR / LAMPU?",
-      "catatan_teks": "'KAMAR / DAPUR / LAMPU?' besar saat pilihan disebut + kecil 'KOMEN 1 KATA' -> 'TAG TEMAN YANG TAKUT CICAK' kecil saat 'Tag' -> kalimat terakhir cukup subtitle lalu langsung loop.",
-      "visual": "Quick three-panel swipe, each a flat icon-like mini scene with the same cicak: on a bedroom ceiling, on a kitchen wall near a generic shelf, next to a glowing ceiling lamp with tiny moths; then back to the bedroom: Tebe sits up holding a generic phone, grinning mischievously, mimes tagging a friend; on 'lihat ke ATAS' Tebe slowly lies back down and points up, the camera tilts up to the ceiling and settles on the exact frame 0 cover composition (gecko upside down top-center-right with red arrow, Tebe lying bottom-left with blanket to chin) so the loop into 'Rebahan, CICAK nempel di langit-langit' is seamless; flat style without black outlines; no text in the image.",
-      "maskot": true,
-      "jenis_visual": "gambar",
-      "durasi": 9.4,
-      "set": "3 panel mini (kamar, dapur, lampu) -> kamar-malam-tosca komposisi frame 0",
-      "tebe": "duduk nyengir pegang HP pura-pura menandai teman -> rebahan lagi menunjuk ke atas -> pose frame 0",
-      "aksi": "38,4 panel KAMAR; 40,0 panel DAPUR; 40,8 panel LAMPU; 41,6 kembali ke kamar, Tebe duduk pegang HP; 43,4 'Tag teman' Tebe menandai; 45,4 'lihat ke ATAS' Tebe rebahan menunjuk, kamera naik; 46,8 komposisi frame 0 + langkah kecil cicak 'tek'",
-      "catatan_yoga": "Logo YouTube kecil + 'Ternyata Begitu' <=1 dtk di zona aman di atas kalimat terakhir, tanpa ekor kosong. Video total <= 50 dtk. Frame terakhir = frame 0 (loop)."
-    }
-  ]
+  {
+   "no": 5,
+   "narasi": "Per ujung, LEMAH banget. Tapi dikali jutaan, kayak receh SEKARUNG. Makanya nggak JATUH.",
+   "teks_layar": "DIKALI JUTAAN",
+   "catatan_teks": "'LEMAH BANGET' kecil saat 'LEMAH' -> 'DIKALI JUTAAN' besar saat 'jutaan' -> 'NGGAK JATUH' saat 'JATUH'.",
+   "visual": "On 'LEMAH banget' one single shiny coin (generic coin, no real currency design, no numbers) sits alone on a flat teal table, tiny and unimpressive, with a little sad sparkle; on 'dikali jutaan' coins rain down and pile into a huge burlap sack that lands with a heavy thud, the table bends (funny beat); on 'Makanya nggak JATUH' hard cut back to the bedroom ceiling: the gecko hangs upside down calmly, even lets go of one foot and waves it, still stuck firmly with the other three; flat style without black outlines; no text in the image.",
+   "maskot": false,
+   "jenis_visual": "gambar",
+   "durasi": 5.8,
+   "set": "meja tosca + 1 koin generik -> karung receh -> kembali ke langit-langit kamar",
+   "tebe": "-",
+   "aksi": "21,9 satu koin sendirian; 23,3 'dikali jutaan' hujan koin; 25,0 'SEKARUNG' karung jatuh BRUK, meja melengkung; 26,3 potong ke langit-langit, cicak santai melambaikan satu kaki",
+   "catatan_yoga": "Koin generik, jangan desain rupiah asli. Cicak melambai dengan SATU kaki saja, tiga kaki tetap menempel (tanpa klaim berapa kaki yang cukup)."
+  },
+  {
+   "no": 6,
+   "narasi": "Yang diteliti sih kerabat besarnya, TOKEK.",
+   "teks_layar": "YANG DITELITI: TOKEK",
+   "catatan_teks": "'YANG DITELITI: TOKEK' saat 'TOKEK'.",
+   "visual": "Pattern interrupt: from the bedroom wall a big chunky cartoon tokay gecko (blue-grey with orange spots, bigger and rounder than the slim cicak) pops in beside the cicak like a big cousin, wearing a tiny generic lab badge (no letters), and the cicak gives a small nod; Tebe (medium, bottom-left, on the bed) jumps under the blanket in surprise as the tokek appears with a cartoon 'tokek!' sound; flat style without black outlines; no text in the image.",
+   "maskot": true,
+   "jenis_visual": "gambar",
+   "durasi": 2.7,
+   "set": "kamar-malam-tosca + tokek Tokay kartun (aset baru `tokek`) di samping cicak",
+   "tebe": "REAKSI 2: sedang, kiri bawah, terlonjak kaget lalu ngumpet di selimut",
+   "aksi": "27,7 tokek nongol dari tepi dinding; 28,8 'TOKEK' SFX 'tokek!' + Tebe terlonjak; 29,6 cicak mengangguk ke tokek",
+   "catatan_yoga": "Tokek digambar jelas BEDA dari cicak (lebih besar, bertotol jingga) supaya kejujuran terbaca. SFX 'tokek!' buatan sendiri."
+  },
+  {
+   "no": 7,
+   "narasi": "Nah, cara lepasnya. Rambutnya ditarik lurus? Tetap KUAT. Dimiringin? Gampang COPOT. Bukan disentak, jarinya DIKELUPAS, kayak nyopot stiker.",
+   "teks_layar": "DIKELUPAS, BUKAN DITARIK",
+   "catatan_teks": "'DITARIK LURUS: KUAT' saat 'KUAT' -> 'DIMIRINGIN: COPOT' saat 'COPOT' -> 'DIKELUPAS, BUKAN DITARIK' saat 'DIKELUPAS'. Tanpa angka derajat di layar.",
+   "visual": "'Nah' = hard cut to a clean teal micro stage: one single hair tip stuck on a surface; a cartoon tug-rope pulls it straight up, the hair stretches but holds firm (strong-man grunt pose of the hair, funny); then the rope tilts the hair sideways and the tip pops off easily with a light 'tik'; cut back to the gecko on the ceiling in close-up: it lifts its foot by rolling each toe up from the tip, like peeling, side-by-side with a split-screen of a hand peeling a generic round sticker off a book cover in the same motion (no letters on the sticker); flat style without black outlines; no text in the image.",
+   "maskot": false,
+   "jenis_visual": "gambar",
+   "durasi": 8.0,
+   "set": "panggung mikro tosca: satu rambut + tali tarik -> close-up kaki cicak menggulung jari + layar terbelah tangan mengelupas stiker generik",
+   "tebe": "-",
+   "aksi": "30,4 'Nah' potong keras; 31,6 'ditarik lurus' tali tarik ke atas; 32,7 'KUAT' rambut bertahan; 33,6 'Dimiringin' tali miring; 34,4 'COPOT' ujung lepas 'tik'; 35,3 kaki cicak close-up; 36,4 'DIKELUPAS' jari menggulung dari ujung + layar terbelah stiker dikelupas 'srettt'",
+   "catatan_yoga": "BAYAR open loop adegan 2. Gerak jari cicak = menggulung dari ujung (bukan menyentak), sama arah dengan stiker. Tanpa busur derajat/angka."
+  },
+  {
+   "no": 8,
+   "narasi": "Cicak di rumahmu nongkrong di MANA? KAMAR, DAPUR, atau LAMPU? Tag teman yang takut cicak, terus suruh dia lihat ke ATAS.",
+   "teks_layar": "KAMAR / DAPUR / LAMPU?",
+   "catatan_teks": "'KAMAR / DAPUR / LAMPU?' besar saat pilihan disebut + kecil 'KOMEN 1 KATA' -> 'TAG TEMAN YANG TAKUT CICAK' kecil saat 'Tag' -> kalimat terakhir cukup subtitle lalu langsung loop.",
+   "visual": "Quick three-panel swipe, each a flat icon-like mini scene with the same cicak: on a bedroom ceiling, on a kitchen wall near a generic shelf, next to a glowing ceiling lamp with tiny moths; then back to the bedroom: Tebe sits up holding a generic phone, grinning mischievously, mimes tagging a friend; on 'lihat ke ATAS' Tebe slowly lies back down and points up, the camera tilts up to the ceiling and settles on the exact frame 0 cover composition (gecko upside down top-center-right with red arrow, Tebe lying bottom-left with blanket to chin) so the loop into 'Rebahan, CICAK nempel di langit-langit' is seamless; flat style without black outlines; no text in the image.",
+   "maskot": true,
+   "jenis_visual": "gambar",
+   "durasi": 9.4,
+   "set": "3 panel mini (kamar, dapur, lampu) -> kamar-malam-tosca komposisi frame 0",
+   "tebe": "duduk nyengir pegang HP pura-pura menandai teman -> rebahan lagi menunjuk ke atas -> pose frame 0",
+   "aksi": "38,4 panel KAMAR; 40,0 panel DAPUR; 40,8 panel LAMPU; 41,6 kembali ke kamar, Tebe duduk pegang HP; 43,4 'Tag teman' Tebe menandai; 45,4 'lihat ke ATAS' Tebe rebahan menunjuk, kamera naik; 46,8 komposisi frame 0 + langkah kecil cicak 'tek'",
+   "catatan_yoga": "Logo YouTube kecil + 'Ternyata Begitu' <=1 dtk di zona aman di atas kalimat terakhir, tanpa ekor kosong. Video total <= 50 dtk. Frame terakhir = frame 0 (loop)."
+  }
+ ]
 }
