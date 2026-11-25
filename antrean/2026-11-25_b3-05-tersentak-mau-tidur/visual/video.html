@@ -219,9 +219,9 @@ function setLampu(T){
 const kSemua=KI(87).m,kItu=KI(88).m,kMasih=KI(89).m,kDugaanA=KI(90).m,B7c=cel(91);
 function setPapan2(T){const u=T-B7b;
  const bg=A.kamar(T,{redup:.15});
- const t0=[0,1,2,3].map(i=>kSemua+.24*i), st=[t0[0]+.18,t0[1]+.18,t0[2]+.18,kDugaanA];
+ const t0=[0,1,2,3].map(i=>kSemua+.15+.22*i), st=[t0[0]+.16,t0[1]+.16,t0[2]+.16,kDugaanA];
  const kartu=[0,1,2,3].map(i=>({buka:halus(lin(T,t0[i]-.12,t0[i]+.16)),isi:['otot','pohon','',''][i],stempel:lin(T,st[i]-.02,st[i]+.16)}));
- const bs=.94+.06*ioS(lin(u,0,1.8)), goy=T>kDugaanA?Math.exp(-(T-kDugaanA)*9)*Math.sin((T-kDugaanA)*40)*6:0;
+ const bs=.84+.16*oCub(lin(T,B7b-.2,B7b+1.3)), goy=T>kDugaanA?Math.exp(-(T-kDugaanA)*9)*Math.sin((T-kDugaanA)*40)*6:0;
  return latar(C.DINDING)+kamera(svgBesar(bg),540,700,1.05)+svgW(A.papanGabus(540,940+goy,bs,T,{kartu}))}
 
 // ===== BABAK 7c: kamera mundur ke kasur kosong; jeda meredup; "KASURMU" lampu sorot + bantal berkilau + tali beludru =====
