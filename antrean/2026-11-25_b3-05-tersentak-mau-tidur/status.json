@@ -1,11 +1,13 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "b3-05 tersentak mau tidur",
   "seri": "B",
   "pilar": "Sains & tubuh manusia",
   "dibuat": "2026-11-25T21:43",
   "riwayat": [
-    "ide: riset.md selesai (Laras, 2026-11-25), skor Faktor Ternyata 8/10"
+    "ide: riset.md selesai (Laras, 2026-11-25), skor Faktor Ternyata 8/10",
+    "pilih: LANJUT 18/20 (Raka, 2026-11-25); rencana_marketing.md + seo.md; slot Kam 26 Nov 19.45"
   ],
-  "masalah": null
+  "masalah": null,
+  "jadwal_tayang": "2026-11-26T19:45:00+08:00"
 }

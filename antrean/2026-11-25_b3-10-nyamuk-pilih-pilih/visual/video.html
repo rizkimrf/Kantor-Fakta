@@ -247,11 +247,11 @@ function setB7(T){const u=T-B7;
  const tebeHtml=`<div class="abs" style="left:-20px;top:${(800+Math.sin(T*1.6)*3).toFixed(1)}px">${KS.tebe(tb,430)}</div>`;
  const depan=`<rect x="-1000" y="1250" width="3600" height="1400" fill="${C.MEJA2}"/><rect x="-1000" y="1250" width="3600" height="70" fill="${C.MEJA}"/><rect x="-1000" y="1320" width="3600" height="10" fill="#8FB1A8"/>`;
  // siang–malam menyapu meja saat waktu berlalu
- const fs=(Math.max(0,T-kDipantau)*1.25)%1, envS=halus(lin(T,kDipantau,kDipantau+.3))*(1-halus(lin(T,kTetap2-.35,kTetap2))), sapu=envS*halus(lin(fs,.05,.4))*(1-halus(lin(fs,.55,.9)));
+ const fs=(Math.max(0,T-kDipantau)*.85)%1, envS=halus(lin(T,kDipantau,kDipantau+.3))*(1-halus(lin(T,kTetap2-.35,kTetap2))), sapu=envS*halus(lin(fs,0,.45))*(1-halus(lin(fs,.5,1)));
  const goyang=Math.exp(-Math.max(0,T-kMagnet2)*7)*Math.sin(Math.max(0,T-kMagnet2)*40)*(T>kMagnet2?14:0);
  const z=1.0+.03*ioS(lin(u,0,2))+.05*halus(lin(T,kTetap2-.2,kMagnet2+.2)), cy=1000+goyang;
  return latar(C.LAB)+kamera(svgBesar(s)+tebeHtml+svgW(1080,1920,depan+mq),540,cy,z)
-  +`<div class="abs" style="inset:0;background:${C.DONGKER};opacity:${(sapu*.32).toFixed(3)}"></div>`+`<div class="abs" style="inset:0;background:#FFF3C4;opacity:${((envS-sapu)*.1).toFixed(3)}"></div>`}
+  +`<div class="abs" style="inset:0;background:${C.DONGKER};opacity:${(sapu*.16).toFixed(3)}"></div>`+`<div class="abs" style="inset:0;background:#FFF3C4;opacity:${((envS-sapu)*.1).toFixed(3)}"></div>`}
 
 // ===== BABAK 8: kembali ke teras — lencana KAMU / DIA, Tebe menandai teman, menepuk kursi kosong → kamera mendarat di sampul (loop) =====
 const kDi=KI(109).m,kKamu=KI(113).m,kDia=KI(115).m,kKomen=KI(116).m,kTag=KI(119).m,kDia2=KI(120).m,kAjak=KI(121).m,kDuduk=KI(122).m,kTeras=KI(125).m,kLagi=KI(126).m;

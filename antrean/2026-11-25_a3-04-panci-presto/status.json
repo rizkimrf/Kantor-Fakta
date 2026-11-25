@@ -1,9 +1,17 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "seri": "A",
   "pilar": "Benda & kebiasaan sehari-hari",
   "topik": "a3-04 panci presto",
   "dibuat": "2026-11-25T21:43",
-  "riwayat": [],
-  "masalah": null
+  "riwayat": [
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "tanggal": "2026-11-25",
+      "hasil": "LANJUT 16/20"
+    }
+  ],
+  "masalah": null,
+  "jadwal_tayang": "2026-11-27T13:00:00+08:00"
 }
