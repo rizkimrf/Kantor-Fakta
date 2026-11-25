@@ -26,6 +26,7 @@
 | 2026-11-24 (naskah, slot Rab 25 Nov 18.00) | Shorts jalur B (fakta) | Sains & tubuh manusia | Lupa mau ngapain pas masuk kamar: studi lama nuduh pintu (ingat BENDA, bukan niat, jarak sama); dicek ulang tim lain (VR, video, jalan nyata) nggak ketemu; baru muncul pas otak sibuk ngitung; "adegan" = dugaan; ilmuwan masih debat | #25 misteri belum terpecahkan dari pengalaman ("Masuk kamar, BENGONG. Tadi mau ngambil apa, ya?" → tersangka PINTUNYA) + loop #26 | 2026-11-25_b3-03-lupa-di-ambang-pintu |
 | 2026-11-24 13.00 (TikTok otomatis via kotak masuk 12.49; IG gagal izin token Halaman → manual Bos; YouTube manual Bos) | Shorts jalur A (cara kerja) | Benda & kebiasaan sehari-hari | Layar HP kapasitif merasakan LISTRIK dari jari, bukan tekanan; air bisa dikira jari, jari basah lebih mengacaukan daripada setetes air | #18 kuis tebak dulu + loop #26 | 2026-11-23_a3-06-layar-hp-tangan-basah |
 | 2026-11-25 13.00 (TERBIT: TikTok inbox otomatis 12.49 menunggu Bos Posting; YouTube & Instagram manual Bos) | Shorts jalur A | Benda & kebiasaan sehari-hari | Pintu minimarket (lihat baris naskah di atas) | #14 + loop #26 | 2026-11-24_a3-02-pintu-minimarket |
+| 2026-11-25 18.00 (TERBIT: TikTok inbox otomatis 17.49 menunggu Bos Posting; Instagram gagal izin token Halaman → manual Bos; YouTube manual Bos) | Shorts jalur B (fakta) | Sains & tubuh manusia | Lupa di ambang pintu (lihat baris naskah di atas) | #25 + loop #26 | 2026-11-25_b3-03-lupa-di-ambang-pintu |
 
 ## Log sampul (konsep · posisi Tebe · warna dominan)
 | Tanggal | Folder | Konsep | Posisi Tebe | Warna |
