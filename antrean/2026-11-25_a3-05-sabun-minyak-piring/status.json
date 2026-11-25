@@ -1,70 +1,81 @@
 {
- "tahap": "menunggu_persetujuan",
- "topik": "a3-05 sabun minyak piring",
- "dibuat": "2026-11-25T05:43",
- "riwayat": [
-  {
-   "tahap": "ide",
-   "oleh": "Laras",
-   "hasil": "riset.md selesai, skor Faktor Ternyata 8/10, lolos"
-  },
-  {
-   "tahap": "pilih",
-   "oleh": "Raka",
-   "hasil": "LANJUT skor 16/20; rencana_marketing.md + seo.md; slot Kam 26 Nov 13.00, <=55 dtk"
-  },
-  {
-   "tahap": "naskah",
-   "oleh": "Nadia",
-   "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; hook #18, kejutan ±11 dtk, ±54 dtk/120 kata, skor naskah 8/9, viral 8/10"
-  },
-  {
-   "tahap": "cek_riset",
-   "oleh": "Laras",
-   "hasil": "cek_riset.md: 4 WAJIB (langsung kesat; air cuma geser; puluhan molekul; sumber deskripsi belum dibuka teks penuh) + saran; saling dorong AMAN"
-  },
-  {
-   "tahap": "cek_seo",
-   "oleh": "Raka",
-   "hasil": "cek_seo.md: 1 WAJIB (deskripsi: kata kunci di 2 kalimat pertama, ke Nadia, tanpa ubah naskah/suara) + 7 saran; judul_final = opsi 1; tag +2; tahap tidak diubah (menunggu Laras)"
-  },
-  {
-   "tahap": "naskah",
-   "oleh": "Nadia",
-   "hasil": "R1: semua WAJIB cek_seo + cek_riset + 5 keputusan Pak Bima ('Kasih sabun, gosok, bilas: KESAT' + kilap hilang setelah bilas; 'air doang susah ngangkat minyaknya, paling cuma GESER'; 'BANYAK molekul'; deskripsi 'bermuatan sama, umumnya saling tolak', sumber tetap; kalimat 1 deskripsi = kata kunci). Saran: IG 'masih ada', komentar tersemat versi Laras, opsi 2/tag 'susah', TikTok pancing GELAS/PIRING/WAJAN. Tetap 120 kata ±54 dtk, kejutan ±11,3 dtk; skor 8/9, viral 8/10. naskah.json, naskah_baca, naskah_suara, unggah.json, paket_unggah sinkron."
-  },
-  {
-   "dari": "cek_fakta",
-   "ke": "produksi",
-   "oleh": "Pak Bima",
-   "waktu": "2026-11-25T05:57+08:00",
-   "hasil": "cek_fakta LULUS setelah R1 (4 WAJIB Laras + 1 WAJIB Raka), skor 8/9, viral 8/10; jadwal Kam 26 Nov 13.00"
-  },
-  {
-   "dari": "produksi",
-   "ke": "review",
-   "oleh": "Yoga",
-   "waktu": "2026-11-25T06:40+08:00",
-   "hasil": "final.mp4 53,5 dtk / 13,7 MB; suara ElevenLabs v4 SEKALI 854 huruf ≈ 444 kredit (aset/log_kredit.csv; pelafalan nge-rubung, ke-kurung, nge-yel); tanpa JEDA; set BARU studio-aset/aset-sabun.js (bak cuci kuning hangat + wajan berminyak, penampang wajan, dunia x-ray ungu, kecebong & misel, topi kurir, ikon kartu); 8 babak; urutan tetes→gosok→bilas→baru kesat; 2 serpih ikut air, genangan cuma geser; tanpa angka/merek; Tebe 3 cameo (sampul+tangan, kaget '!', kirim); teks besar menggantikan subtitle saat tampil (tidak dobel); outro logo YouTube ±1 dtk; loop ke sampul; thumbnail.png 'MINYAKNYA / MASIH ADA' ungu tua + kuning lemon; musik jenaka-ringan 0,2; 6 SFX; cek_mulus LULUS, cek_video LULUS",
-   "durasi": 53.5,
-   "mb": 13.7,
-   "kredit": 444
-  },
-  {
-   "dari": "review",
-   "ke": "menunggu_persetujuan",
-   "oleh": "Pak Bima",
-   "waktu": "2026-11-25T06:22+08:00",
-   "hasil": "Review LULUS (53,5 dtk, 13,7 MB), uji 3 dtk 8/10; jadwal Kam 26 Nov 13.00 WITA"
+  "tahap": "disetujui",
+  "topik": "a3-05 sabun minyak piring",
+  "dibuat": "2026-11-25T05:43",
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "hasil": "riset.md selesai, skor Faktor Ternyata 8/10, lolos"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "hasil": "LANJUT skor 16/20; rencana_marketing.md + seo.md; slot Kam 26 Nov 13.00, <=55 dtk"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt + unggah.json + paket_unggah.md; hook #18, kejutan ±11 dtk, ±54 dtk/120 kata, skor naskah 8/9, viral 8/10"
+    },
+    {
+      "tahap": "cek_riset",
+      "oleh": "Laras",
+      "hasil": "cek_riset.md: 4 WAJIB (langsung kesat; air cuma geser; puluhan molekul; sumber deskripsi belum dibuka teks penuh) + saran; saling dorong AMAN"
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "hasil": "cek_seo.md: 1 WAJIB (deskripsi: kata kunci di 2 kalimat pertama, ke Nadia, tanpa ubah naskah/suara) + 7 saran; judul_final = opsi 1; tag +2; tahap tidak diubah (menunggu Laras)"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "hasil": "R1: semua WAJIB cek_seo + cek_riset + 5 keputusan Pak Bima ('Kasih sabun, gosok, bilas: KESAT' + kilap hilang setelah bilas; 'air doang susah ngangkat minyaknya, paling cuma GESER'; 'BANYAK molekul'; deskripsi 'bermuatan sama, umumnya saling tolak', sumber tetap; kalimat 1 deskripsi = kata kunci). Saran: IG 'masih ada', komentar tersemat versi Laras, opsi 2/tag 'susah', TikTok pancing GELAS/PIRING/WAJAN. Tetap 120 kata ±54 dtk, kejutan ±11,3 dtk; skor 8/9, viral 8/10. naskah.json, naskah_baca, naskah_suara, unggah.json, paket_unggah sinkron."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-25T05:57+08:00",
+      "hasil": "cek_fakta LULUS setelah R1 (4 WAJIB Laras + 1 WAJIB Raka), skor 8/9, viral 8/10; jadwal Kam 26 Nov 13.00"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-25T06:40+08:00",
+      "hasil": "final.mp4 53,5 dtk / 13,7 MB; suara ElevenLabs v4 SEKALI 854 huruf ≈ 444 kredit (aset/log_kredit.csv; pelafalan nge-rubung, ke-kurung, nge-yel); tanpa JEDA; set BARU studio-aset/aset-sabun.js (bak cuci kuning hangat + wajan berminyak, penampang wajan, dunia x-ray ungu, kecebong & misel, topi kurir, ikon kartu); 8 babak; urutan tetes→gosok→bilas→baru kesat; 2 serpih ikut air, genangan cuma geser; tanpa angka/merek; Tebe 3 cameo (sampul+tangan, kaget '!', kirim); teks besar menggantikan subtitle saat tampil (tidak dobel); outro logo YouTube ±1 dtk; loop ke sampul; thumbnail.png 'MINYAKNYA / MASIH ADA' ungu tua + kuning lemon; musik jenaka-ringan 0,2; 6 SFX; cek_mulus LULUS, cek_video LULUS",
+      "durasi": 53.5,
+      "mb": 13.7,
+      "kredit": 444
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-25T06:22+08:00",
+      "hasil": "Review LULUS (53,5 dtk, 13,7 MB), uji 3 dtk 8/10; jadwal Kam 26 Nov 13.00 WITA"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "oleh": "Bos (Kantor Visual HP)",
+      "waktu": "2026-11-25T02:48:14Z"
+    }
+  ],
+  "masalah": null,
+  "seri": "A",
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-26T13:00:00+08:00",
+  "agen": null,
+  "video_asset_id": "c6887b97d18e0f3effd95e909b899494",
+  "thumb_asset_id": "64dc8030e12bb34d1e87ebd804069ee0",
+  "video_url": "/_blob/c6887b97d18e0f3effd95e909b899494",
+  "thumb_url": "/_blob/64dc8030e12bb34d1e87ebd804069ee0",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    }
   }
- ],
- "masalah": null,
- "seri": "A",
- "skor_manajer": 8,
- "jadwal_tayang": "2026-11-26T13:00:00+08:00",
- "agen": null,
- "video_asset_id": "c6887b97d18e0f3effd95e909b899494",
- "thumb_asset_id": "64dc8030e12bb34d1e87ebd804069ee0",
- "video_url": "/_blob/c6887b97d18e0f3effd95e909b899494",
- "thumb_url": "/_blob/64dc8030e12bb34d1e87ebd804069ee0"
 }

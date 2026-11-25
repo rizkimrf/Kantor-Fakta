@@ -73,6 +73,14 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7711965613924829185",
+      "waktu": "2026-11-25T12:49+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "error": "asli (15271 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re || aman (15271 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re || aman-minimal (15271 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re"
     }
   }
 }
