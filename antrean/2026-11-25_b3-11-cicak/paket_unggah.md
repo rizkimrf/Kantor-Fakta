@@ -6,7 +6,8 @@ Tanpa tips mengusir cicak, tanpa mitos arti kejatuhan cicak, tanpa merek perekat
 ## YouTube Shorts
 Judul FINAL (50 huruf, keputusan Raka di cek_seo): Kenapa Cicak Bisa Nempel? Ternyata Bukan Pakai Lem
 Deskripsi (kalimat 1 kata kunci, kalimat 2 sumber + pertanyaan komentar) + catatan jujur tokek + 7 sumber + 3 hashtag (#Shorts #Cicak #TernyataBegitu): lihat unggah.json.
-Tag: kenapa cicak bisa nempel di dinding, cicak nempel tanpa lem, kenapa cicak nggak jatuh, cicak jatuh dari langit-langit, kaki cicak, kaki tokek, fakta cicak, fakta unik, ternyata begitu
+R1 Nadia (cek_riset Laras): catatan jujur kini "Satu rambut yang digeser sejajar permukaan tetap kuat menempel, sedangkan bila dimiringkan dan diangkat ujungnya mudah lepas; karena itu kaki dilepas dengan dikelupas, bukan disentak." (tanpa angka derajat); kalimat "permukaan basah/berminyak/berdebu" dihapus; URL Nature = https://www.nature.com/articles/35015073 (DOI 10.1038/35015073).
+Tag: kenapa cicak bisa nempel di dinding, cicak nempel tanpa lem, kenapa cicak nggak jatuh, kaki cicak, kaki tokek, fakta cicak, fakta unik, ternyata begitu
 Komentar tersemat (MANUAL): Cicak di rumahmu paling sering nongkrong di mana? Komen 1 kata: KAMAR, DAPUR, LAMPU, atau KAMAR MANDI. Bonus: kamu Tim CICAK atau Tim TOKEK?
 Video terkait: belum ada.
 

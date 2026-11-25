@@ -1,0 +1,596 @@
+{
+ "model": "eleven_v4",
+ "kata": [
+  {
+   "kata": "Kaget",
+   "mulai": 0.069,
+   "selesai": 0.4
+  },
+  {
+   "kata": "pas",
+   "mulai": 0.48,
+   "selesai": 0.56
+  },
+  {
+   "kata": "mau",
+   "mulai": 0.6,
+   "selesai": 0.72
+  },
+  {
+   "kata": "tidur,",
+   "mulai": 0.84,
+   "selesai": 1.28
+  },
+  {
+   "kata": "badanmu",
+   "mulai": 1.44,
+   "selesai": 1.76
+  },
+  {
+   "kata": "tersentak",
+   "mulai": 1.92,
+   "selesai": 2.48
+  },
+  {
+   "kata": "kayak",
+   "mulai": 2.507,
+   "selesai": 2.72
+  },
+  {
+   "kata": "jatuh",
+   "mulai": 2.8,
+   "selesai": 3.04
+  },
+  {
+   "kata": "dari",
+   "mulai": 3.12,
+   "selesai": 3.28
+  },
+  {
+   "kata": "tangga.",
+   "mulai": 3.32,
+   "selesai": 3.92
+  },
+  {
+   "kata": "Kadang",
+   "mulai": 4.16,
+   "selesai": 4.48
+  },
+  {
+   "kata": "jantung",
+   "mulai": 4.56,
+   "selesai": 4.88
+  },
+  {
+   "kata": "ikut",
+   "mulai": 5.0,
+   "selesai": 5.12
+  },
+  {
+   "kata": "deg-degan,",
+   "mulai": 5.2,
+   "selesai": 6.0
+  },
+  {
+   "kata": "padahal",
+   "mulai": 6.08,
+   "selesai": 6.48
+  },
+  {
+   "kata": "kamu",
+   "mulai": 6.64,
+   "selesai": 6.8
+  },
+  {
+   "kata": "cuma",
+   "mulai": 6.88,
+   "selesai": 7.04
+  },
+  {
+   "kata": "rebahan.",
+   "mulai": 7.12,
+   "selesai": 7.76
+  },
+  {
+   "kata": "Kok",
+   "mulai": 7.984,
+   "selesai": 8.08
+  },
+  {
+   "kata": "bisa?",
+   "mulai": 8.12,
+   "selesai": 8.76
+  },
+  {
+   "kata": "Ilmuwan",
+   "mulai": 8.96,
+   "selesai": 9.28
+  },
+  {
+   "kata": "sendiri",
+   "mulai": 9.4,
+   "selesai": 9.68
+  },
+  {
+   "kata": "belum",
+   "mulai": 9.8,
+   "selesai": 9.92
+  },
+  {
+   "kata": "tahu",
+   "mulai": 9.96,
+   "selesai": 10.08
+  },
+  {
+   "kata": "pasti.",
+   "mulai": 10.16,
+   "selesai": 10.96
+  },
+  {
+   "kata": "Sebagian",
+   "mulai": 11.04,
+   "selesai": 11.36
+  },
+  {
+   "kata": "besar",
+   "mulai": 11.44,
+   "selesai": 11.6
+  },
+  {
+   "kata": "orang",
+   "mulai": 11.68,
+   "selesai": 11.92
+  },
+  {
+   "kata": "pernah",
+   "mulai": 12.0,
+   "selesai": 12.16
+  },
+  {
+   "kata": "ngalamin,",
+   "mulai": 12.2,
+   "selesai": 12.96
+  },
+  {
+   "kata": "namanya",
+   "mulai": 13.08,
+   "selesai": 13.52
+  },
+  {
+   "kata": "hipnik",
+   "mulai": 13.68,
+   "selesai": 14.08
+  },
+  {
+   "kata": "jerk.",
+   "mulai": 14.16,
+   "selesai": 14.88
+  },
+  {
+   "kata": "Ada",
+   "mulai": 14.96,
+   "selesai": 15.04
+  },
+  {
+   "kata": "beberapa",
+   "mulai": 15.08,
+   "selesai": 15.36
+  },
+  {
+   "kata": "dugaan.",
+   "mulai": 15.44,
+   "selesai": 16.24
+  },
+  {
+   "kata": "Salah",
+   "mulai": 16.28,
+   "selesai": 16.4
+  },
+  {
+   "kata": "satunya",
+   "mulai": 16.48,
+   "selesai": 17.04
+  },
+  {
+   "kata": "bawa-bawa",
+   "mulai": 17.08,
+   "selesai": 17.52
+  },
+  {
+   "kata": "pohon.",
+   "mulai": 17.56,
+   "selesai": 18.4
+  },
+  {
+   "kata": "Dugaan",
+   "mulai": 18.44,
+   "selesai": 18.72
+  },
+  {
+   "kata": "pertama:",
+   "mulai": 18.8,
+   "selesai": 19.6
+  },
+  {
+   "kata": "pas",
+   "mulai": 19.68,
+   "selesai": 19.76
+  },
+  {
+   "kata": "mau",
+   "mulai": 19.84,
+   "selesai": 19.96
+  },
+  {
+   "kata": "tidur,",
+   "mulai": 20.0,
+   "selesai": 20.56
+  },
+  {
+   "kata": "ototmu",
+   "mulai": 20.64,
+   "selesai": 21.04
+  },
+  {
+   "kata": "mulai",
+   "mulai": 21.12,
+   "selesai": 21.28
+  },
+  {
+   "kata": "kendor.",
+   "mulai": 21.36,
+   "selesai": 22.08
+  },
+  {
+   "kata": "Otakmu",
+   "mulai": 22.16,
+   "selesai": 22.48
+  },
+  {
+   "kata": "salah",
+   "mulai": 22.56,
+   "selesai": 22.72
+  },
+  {
+   "kata": "baca,",
+   "mulai": 22.76,
+   "selesai": 23.28
+  },
+  {
+   "kata": "dikira",
+   "mulai": 23.32,
+   "selesai": 23.76
+  },
+  {
+   "kata": "kamu",
+   "mulai": 23.8,
+   "selesai": 23.92
+  },
+  {
+   "kata": "lagi",
+   "mulai": 24.0,
+   "selesai": 24.16
+  },
+  {
+   "kata": "jatuh.",
+   "mulai": 24.2,
+   "selesai": 24.96
+  },
+  {
+   "kata": "Dug...",
+   "mulai": 25.0,
+   "selesai": 25.2
+  },
+  {
+   "kata": "badan",
+   "mulai": 25.48,
+   "selesai": 25.84
+  },
+  {
+   "kata": "disentak.",
+   "mulai": 25.96,
+   "selesai": 26.8
+  },
+  {
+   "kata": "Kayak",
+   "mulai": 26.84,
+   "selesai": 26.96
+  },
+  {
+   "kata": "satpam",
+   "mulai": 27.04,
+   "selesai": 27.36
+  },
+  {
+   "kata": "kaget",
+   "mulai": 27.44,
+   "selesai": 27.76
+  },
+  {
+   "kata": "lihat",
+   "mulai": 27.8,
+   "selesai": 27.92
+  },
+  {
+   "kata": "bayangan",
+   "mulai": 28.0,
+   "selesai": 28.24
+  },
+  {
+   "kata": "sendiri.",
+   "mulai": 28.32,
+   "selesai": 29.12
+  },
+  {
+   "kata": "Ada",
+   "mulai": 29.2,
+   "selesai": 29.28
+  },
+  {
+   "kata": "juga",
+   "mulai": 29.36,
+   "selesai": 29.6
+  },
+  {
+   "kata": "yang",
+   "mulai": 29.64,
+   "selesai": 29.68
+  },
+  {
+   "kata": "menduga:",
+   "mulai": 29.72,
+   "selesai": 30.56
+  },
+  {
+   "kata": "warisan",
+   "mulai": 30.64,
+   "selesai": 30.96
+  },
+  {
+   "kata": "nenek",
+   "mulai": 31.04,
+   "selesai": 31.2
+  },
+  {
+   "kata": "moyang",
+   "mulai": 31.28,
+   "selesai": 31.6
+  },
+  {
+   "kata": "yang",
+   "mulai": 31.68,
+   "selesai": 31.76
+  },
+  {
+   "kata": "tidur",
+   "mulai": 31.84,
+   "selesai": 32.16
+  },
+  {
+   "kata": "di",
+   "mulai": 32.24,
+   "selesai": 32.32
+  },
+  {
+   "kata": "pohon.",
+   "mulai": 32.453,
+   "selesai": 33.12
+  },
+  {
+   "kata": "Lemas",
+   "mulai": 33.2,
+   "selesai": 33.36
+  },
+  {
+   "kata": "di",
+   "mulai": 33.44,
+   "selesai": 33.52
+  },
+  {
+   "kata": "dahan,",
+   "mulai": 33.56,
+   "selesai": 34.08
+  },
+  {
+   "kata": "ya",
+   "mulai": 34.16,
+   "selesai": 34.24
+  },
+  {
+   "kata": "jatuh",
+   "mulai": 34.28,
+   "selesai": 34.48
+  },
+  {
+   "kata": "beneran.",
+   "mulai": 34.56,
+   "selesai": 35.36
+  },
+  {
+   "kata": "Sentakan",
+   "mulai": 35.48,
+   "selesai": 35.84
+  },
+  {
+   "kata": "ini",
+   "mulai": 36.0,
+   "selesai": 36.16
+  },
+  {
+   "kata": "mungkin",
+   "mulai": 36.293,
+   "selesai": 36.56
+  },
+  {
+   "kata": "sisa",
+   "mulai": 36.6,
+   "selesai": 36.88
+  },
+  {
+   "kata": "alarmnya.",
+   "mulai": 37.08,
+   "selesai": 37.92
+  },
+  {
+   "kata": "Masalahnya,",
+   "mulai": 38.0,
+   "selesai": 38.72
+  },
+  {
+   "kata": "semua",
+   "mulai": 38.8,
+   "selesai": 39.04
+  },
+  {
+   "kata": "itu",
+   "mulai": 39.2,
+   "selesai": 39.36
+  },
+  {
+   "kata": "masih",
+   "mulai": 39.48,
+   "selesai": 39.68
+  },
+  {
+   "kata": "dugaan.",
+   "mulai": 39.76,
+   "selesai": 40.64
+  },
+  {
+   "kata": "Jadi",
+   "mulai": 40.72,
+   "selesai": 41.04
+  },
+  {
+   "kata": "ada",
+   "mulai": 41.12,
+   "selesai": 41.28
+  },
+  {
+   "kata": "misteri",
+   "mulai": 41.32,
+   "selesai": 41.64
+  },
+  {
+   "kata": "sains",
+   "mulai": 41.68,
+   "selesai": 42.0
+  },
+  {
+   "kata": "yang",
+   "mulai": 42.08,
+   "selesai": 42.16
+  },
+  {
+   "kata": "nongol...",
+   "mulai": 42.2,
+   "selesai": 42.7
+  },
+  {
+   "kata": "di",
+   "mulai": 42.84,
+   "selesai": 42.96
+  },
+  {
+   "kata": "kasurmu",
+   "mulai": 43.08,
+   "selesai": 43.44
+  },
+  {
+   "kata": "sendiri.",
+   "mulai": 43.56,
+   "selesai": 44.24
+  },
+  {
+   "kata": "Terakhir",
+   "mulai": 44.309,
+   "selesai": 44.56
+  },
+  {
+   "kata": "kali",
+   "mulai": 44.613,
+   "selesai": 44.72
+  },
+  {
+   "kata": "kesentak,",
+   "mulai": 44.8,
+   "selesai": 45.36
+  },
+  {
+   "kata": "posisimu",
+   "mulai": 45.44,
+   "selesai": 45.84
+  },
+  {
+   "kata": "apa?",
+   "mulai": 46.0,
+   "selesai": 46.48
+  },
+  {
+   "kata": "Komen",
+   "mulai": 46.56,
+   "selesai": 46.8
+  },
+  {
+   "kata": "satu",
+   "mulai": 46.84,
+   "selesai": 46.96
+  },
+  {
+   "kata": "kata:",
+   "mulai": 47.04,
+   "selesai": 47.6
+  },
+  {
+   "kata": "miring,",
+   "mulai": 47.64,
+   "selesai": 48.24
+  },
+  {
+   "kata": "telentang,",
+   "mulai": 48.28,
+   "selesai": 48.88
+  },
+  {
+   "kata": "atau",
+   "mulai": 49.0,
+   "selesai": 49.16
+  },
+  {
+   "kata": "tengkurap.",
+   "mulai": 49.2,
+   "selesai": 50.0
+  },
+  {
+   "kata": "Tag",
+   "mulai": 50.08,
+   "selesai": 50.16
+  },
+  {
+   "kata": "temanmu",
+   "mulai": 50.24,
+   "selesai": 50.56
+  },
+  {
+   "kata": "yang",
+   "mulai": 50.64,
+   "selesai": 50.72
+  },
+  {
+   "kata": "tidurnya",
+   "mulai": 50.8,
+   "selesai": 51.08
+  },
+  {
+   "kata": "suka",
+   "mulai": 51.12,
+   "selesai": 51.28
+  },
+  {
+   "kata": "begini.",
+   "mulai": 51.36,
+   "selesai": 52.0
+  }
+ ],
+ "catatan_yoga": "25 Nov: batas 'Dug...|badan' & 'nongol...|di' disesuaikan ke hening asli (RMS < -45 dB) supaya JEDA tidak memotong awal kata."
+}

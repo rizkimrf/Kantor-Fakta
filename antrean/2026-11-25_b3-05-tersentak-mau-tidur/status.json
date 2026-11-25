@@ -1,20 +1,20 @@
 {
- "tahap": "produksi",
- "topik": "b3-05 tersentak mau tidur",
- "seri": "B",
- "pilar": "Sains & tubuh manusia",
- "dibuat": "2026-11-25T21:43",
- "riwayat": [
-  "ide: riset.md selesai (Laras, 2026-11-25), skor Faktor Ternyata 8/10",
-  "pilih: LANJUT 18/20 (Raka, 2026-11-25); rencana_marketing.md + seo.md; slot Kam 26 Nov 19.45",
-  "naskah: R0 selesai (Nadia, 2026-11-25) — naskah.json + naskah_baca.txt + naskah_suara.txt, 8 adegan, 115 kata (±51-52 dtk), hook #9 mulai dari akhir, skor naskah 8/9, viral 8/10 → cek_seo",
-  {
-   "waktu": "2026-11-26T08:00+08:00",
-   "oleh": "Pak Bima",
-   "catatan": "cek_fakta LULUS (R1) -> produksi"
-  }
- ],
- "masalah": null,
- "jadwal_tayang": "2026-11-26T19:45:00+08:00",
- "skor_manajer": 8
+  "tahap": "produksi",
+  "topik": "b3-05 tersentak mau tidur",
+  "seri": "B",
+  "pilar": "Sains & tubuh manusia",
+  "dibuat": "2026-11-25T21:43",
+  "riwayat": [
+    "ide: riset.md selesai (Laras, 2026-11-25), skor Faktor Ternyata 8/10",
+    "pilih: LANJUT 18/20 (Raka, 2026-11-25); rencana_marketing.md + seo.md; slot Kam 26 Nov 19.45",
+    "naskah: R0 selesai (Nadia, 2026-11-25) — naskah.json + naskah_baca.txt + naskah_suara.txt, 8 adegan, 115 kata (±51-52 dtk), hook #9 mulai dari akhir, skor naskah 8/9, viral 8/10 → cek_seo",
+    {
+      "waktu": "2026-11-26T08:00+08:00",
+      "oleh": "Pak Bima",
+      "catatan": "cek_fakta LULUS (R1) -> produksi"
+    }
+  ],
+  "masalah": null,
+  "jadwal_tayang": "2026-11-26T19:45:00+08:00",
+  "skor_manajer": 8
 }
