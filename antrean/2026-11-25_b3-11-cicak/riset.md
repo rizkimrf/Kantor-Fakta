@@ -37,7 +37,7 @@ Sesi ini hanya bisa memakai ringkasan pencarian; halaman penuh (PMC, Nature, Wik
 
 ## Sumber
 - Autumn dkk., "Evidence for van der Waals adhesion in gecko setae", PNAS 99(19):12252-12256, 2002 — https://is.tuebingen.mpg.de/publications/autumn2002evidence · https://pmc.ncbi.nlm.nih.gov/articles/PMC129431
-- Autumn dkk., "Adhesive force of a single gecko foot-hair", Nature 405, 2000 — https://www.nature.com/articles/35015203
+- Autumn dkk., "Adhesive force of a single gecko foot-hair", Nature 405, 2000 — https://www.nature.com/articles/35015073 (DOI 10.1038/35015073; URL lama 35015203 dikoreksi Laras 25 Nov)
 - Siaran pers UC Berkeley 2000 & 2002 — https://newsarchive.berkeley.edu/news/media/releases/2002/08/26_gecko.html
 - Huber dkk., "Evidence for capillary contributions to gecko adhesion...", PNAS 2005 — https://pmc.ncbi.nlm.nih.gov/articles/PMC1283435
 - Wikipedia "Gecko feet" (pendukung umum, bukan kunci) — https://en.wikipedia.org/wiki/Gecko_feet
