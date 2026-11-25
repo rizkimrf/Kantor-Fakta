@@ -1,0 +1,222 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- A3-04 Cara kerja panci presto: kenapa daging cepat empuk? — Yoga, 26 Nov 2026. Kontrak window.render(T); waktu mengikuti audio/waktu_kata.json (narasi SEKALI, tanpa JEDA).
+     Render: python scripts/render_html.py antrean/2026-11-25_a3-04-panci-presto --musik-vol 0.18
+     Catatan wajib cek_fakta: (1) adegan 1 air TENANG saat termometer melewati garis 100, gelembung halus baru muncul mendekati ±120 (teks "±120°C" ±6,3–7,2 dtk);
+     (2) [laughs] dipindah ke gag angkot, sebelum "Air harus lebih panas dulu" jadi [curious]; (3) ≤50 dtk, sampul merah bata/marun + krem + putih uap "LEBIH DARI 100".
+     Set BARU: studio-aset/aset-presto.js (dapur marun-bata, presto generik tanpa merek, x-ray presto, permukaan air, angkot sesak tanpa wajah). -->
+<script src="../../../studio-aset/tebe-rig.js"></script>
+<script src="../../../studio-aset/aset-set.js"></script>
+<script src="../../../studio-aset/aset-jari.js"></script>
+<script src="../../../studio-aset/aset-presto.js"></script>
+<script src="../../../studio-aset/kerangka-shorts.js"></script>
+<style>*{box-sizing:border-box;margin:0}body{width:1080px;height:1920px;overflow:hidden;background:#45121B}
+.abs{position:absolute}#V{position:absolute;inset:0;overflow:hidden}</style></head><body><div id="V"></div>
+<script>
+const {cl,lin,oExp,ioS,oCub,oBack,sinIO,lerp,halus}=KS, A=ASET, P=A.PRESTO, DP=A.DAPUR, PEN=A.PEN;
+const W=KS.waktu(window.WAKTU_KATA||[],[]);
+window.JEDA=W.JEDA;
+const KK=W.kata, KI=i=>KK[i]||{m:i*0.42,s:i*0.42+0.3};
+const cel=i=>KK[i]&&KK[i-1]?(KK[i-1].s+KK[i].m)/2:i*0.42;
+const AKHIR=KK.length?KK[KK.length-1].s:46.2;
+window.DURASI=+(AKHIR+0.72).toFixed(2);
+window.MUSIK='jenaka-ringan';
+const D=()=>window.DURASI;
+
+// ---------- helper ----------
+const KULIT='#F4C9A1',GRS='#1E1E1E';
+function tebeX(p,w,o={}){let svg=tebeRigSVG(p).replace('width="400" height="520"','width="100%"');
+ const i=svg.lastIndexOf(' </g>\n</g></svg>');if(i>0&&o.tangan)svg=svg.slice(0,i)+o.tangan+svg.slice(i);
+ return `<div style="width:${w}px;${o.css||''}">${svg}</div>`}
+const kepal=H=>`<circle cx="${H[0].toFixed(1)}" cy="${H[1].toFixed(1)}" r="17" fill="${KULIT}" stroke="${GRS}" stroke-width="6"/>`;
+const hpTebe=(H,a=1)=>`<g transform="translate(${H[0].toFixed(1)} ${(H[1]-40).toFixed(1)}) rotate(-8)" opacity="${a}"><rect x="-26" y="-50" width="52" height="96" rx="10" fill="#3A2A30" stroke="${GRS}" stroke-width="5"/><rect x="-18" y="-40" width="36" height="70" rx="4" fill="#FFE3B0"/></g>`+kepal(H);
+const GRUP=KS.teks(W,{ganti:{'di-gede-in':'digedein'},
+ tekan:['alot','empuk?','seratus','dua','puluh','mentok','seratus?','iya.','digedein','di-gede-in','uap.','beda.','rapat,','numpuk,','naik.','menang','angkot','kuat.','panas','singkat.','katup','tekanan.','selalu','dipresto?','terus...'],maks:3});
+const cap=(txt,T,a,b,o={})=>{const kk=halus(lin(T,a-.05,a+.3))*(1-halus(lin(T,b-.3,b)));if(kk<=0)return '';
+ return `<div class="abs" style="left:0;width:1080px;top:${o.y||470}px;text-align:center;transform:rotate(${o.rot??-3}deg) scale(${(.86+.14*kk).toFixed(3)});opacity:${kk.toFixed(3)}"><span style="display:inline-block;padding:6px 34px 12px;border:8px solid ${o.warna||P.KREM};border-radius:24px;background:${o.bg||'rgba(69,18,27,.82)'};font:700 ${o.uk||72}px/1.05 Poppins;letter-spacing:-1px;color:#FFF8E6;text-shadow:0 6px 16px rgba(0,0,0,.5)">${txt}</span></div>`};
+const chip=(txt,x,y,a,warna='#FFE3B0',uk=44,tw='#2A1214')=>a<=0?'':`<g transform="translate(${x} ${y}) scale(${(.7+.3*halus(cl(a))).toFixed(3)})" opacity="${cl(a*2).toFixed(3)}"><rect x="${-txt.length*uk*.34-26}" y="${-uk*.95}" width="${txt.length*uk*.68+52}" height="${uk*1.4}" rx="${uk*.7}" fill="${warna}"/><text y="${uk*.18}" text-anchor="middle" font-family="Poppins" font-weight="700" font-size="${uk}" fill="${tw}">${txt}</text></g>`;
+const svgW=(w,h,s,st='')=>`<svg class="abs" width="${w}" height="${h}" style="left:0;top:0;overflow:visible;${st}">${s}</svg>`;
+const kamera=(isi,w,cx,cy,z,h=1920)=>`<div class="abs" style="left:0;top:0;width:${w}px;height:${h}px;transform:translate(${(540-cx).toFixed(1)}px,${(960-cy).toFixed(1)}px) scale(${z.toFixed(4)});transform-origin:${cx.toFixed(1)}px ${cy.toFixed(1)}px">${isi}</div>`;
+const layar=(wx,wy,cx,cy,z)=>[540+(wx-cx)*z,960+(wy-cy)*z];
+const latar=(c)=>`<div class="abs" style="inset:0;background:${c}"></div>`;
+const sp=(a,b,T)=>halus(lin(T,a,b));
+function jalur(T,K){if(T<=K[0][0])return K[0][1];for(let i=1;i<K.length;i++)if(T<=K[i][0]){const k=ioS(lin(T,K[i-1][0],K[i][0]));return Array.isArray(K[0][1])?K[i-1][1].map((v,j)=>lerp(v,K[i][1][j],k)):lerp(K[i-1][1],K[i][1],k)}return K[K.length-1][1]}
+
+// ===== SAMPUL (frame 0 = loop akhir): dapur buram + marun, presto generik besar mengepul uap putih, termometer RAKSASA cairan merah melesat
+//       melewati garis tebal (100) dengan semburan gerak; Tebe kecil kanan bawah menatap ke atas takjub; "LEBIH DARI / 100" (100 krem)
+const TB0=(()=>{const f=tebeAnimasi([{t:0,pose:'kaget'}],{benih:2});return t=>{const p=f(t);p.tanda=0;p.lihatX=-5;p.lihatY=-6;p.kepalaMiring=-8;return p}})();
+function sampul(tc,judul=1,o={}){
+ const z=1.0+.02*tc+(o.zoomEkstra||0);
+ const bg=`<div class="abs" style="inset:0;filter:blur(9px) brightness(.62) saturate(.9)">${kamera(svgW(2400,1920,A.dapurPresto(tc+2,{apiN:1,presto:{uap:1}})),2400,1640,760,1.05)}</div>`;
+ let s=`<defs><radialGradient id="sMr" cx=".5" cy=".58" r=".7"><stop offset="0" stop-color="#8A2E36" stop-opacity=".25"/><stop offset="1" stop-color="#3A0E16" stop-opacity=".92"/></radialGradient>
+  <radialGradient id="sKr" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFEBC8" stop-opacity=".85"/><stop offset="1" stop-color="#FFEBC8" stop-opacity="0"/></radialGradient></defs>
+  <rect x="-300" y="-300" width="1680" height="2520" fill="url(#sMr)"/><ellipse cx="640" cy="1080" rx="560" ry="520" fill="url(#sKr)"/>`;
+ // uap tebal di belakang
+ for(let i=0;i<7;i++){const u=(tc*.25+i/7)%1;s+=A.butirUap(700+Math.sin(u*5+i)*110+(i%2?60:-40),930-u*520,70+u*90,.75*Math.sin(Math.PI*u))}
+ s+=A.presto(700,1640,1.4,tc+1,{kunci:1,uap:1,katup:.4+.2*Math.sin(tc*6)});
+ // termometer raksasa
+ const v=1.0+.015*Math.sin(tc*5);
+ s+=A.termoTinggi(330,1640,1.25,v,{garis:.6,sorot:1,panjang:760,getar:tc*.3});
+ // semburan gerak di puncak cairan
+ const py=1640-1.25*(50+v*690);
+ for(let i=0;i<5;i++){const a=-Math.PI/2+(i-2)*.42,r1=70,r2=118+10*Math.sin(tc*8+i);s+=`<path d="M${(330+Math.cos(a)*r1).toFixed(1)} ${(py+Math.sin(a)*r1).toFixed(1)} L${(330+Math.cos(a)*r2).toFixed(1)} ${(py+Math.sin(a)*r2).toFixed(1)}" stroke="#FFE3B0" stroke-width="12" stroke-linecap="round"/>`}
+ const v2=`<defs><radialGradient id="svn" cx=".5" cy=".55" r=".72"><stop offset=".5" stop-color="#2A0810" stop-opacity="0"/><stop offset="1" stop-color="#2A0810" stop-opacity=".85"/></radialGradient></defs><rect width="1080" height="1920" fill="url(#svn)"/>`;
+ const tb=TB0(tc+1);
+ return `<div class="abs" style="inset:0">${bg}${kamera(svgW(1080,1920,s),1080,540,1020,z)}${svgW(1080,1920,v2)}
+ <div class="abs" style="left:${630+Math.sin(tc*1.4)*4}px;top:${(1290+Math.sin(tc*2)*4).toFixed(1)}px;transform:rotate(6deg)">${KS.tebe(tb,250)}</div>
+ <div class="abs" style="left:0;width:1080px;top:236px;text-align:center;opacity:${judul.toFixed(3)};font:700 128px/1.0 Poppins;letter-spacing:-3px;color:#FFFFFF;-webkit-text-stroke:22px #2A0A12;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.4);white-space:nowrap">LEBIH DARI<br><span style="font-size:200px;line-height:1.02;color:#FFE3B0">100</span></div></div>`}
+function setSampul(T){return sampul(T,1-halus(lin(T,1.05,1.3)))}
+function setSampulAkhir(T){const q=lin(T,BZ-.3,D());return sampul(T-D(),halus(lin(T,D()-.75,D()-.4)),{zoomEkstra:.12*(1-q)*(1-q)})}
+
+// ===== B1 DAPUR — garpu menekan daging mentah ALOT (memantul) → daging melompat ke presto, tutup mengunci → piring: garpu menembus daging EMPUK, terbelah
+const B1=1.15,kKok=KI(5).m,kEmpuk=KI(7).m,B2=cel(8);
+function setDapur1(T){
+ const tekan1=Math.max(0,Math.sin(Math.PI*lin(T,1.2,1.42)))*.9+Math.max(0,Math.sin(Math.PI*lin(T,1.45,1.62)))*.6;
+ const loncat=lin(T,1.5,1.85), adaDg=T<1.5;
+ const kunci=sp(1.8,1.95,T), gerak=sp(1.95,2.02,T)*(1-sp(2.2,2.4,T));
+ const tembus=sp(kEmpuk-.15,kEmpuk+.15,T), belah=sp(kEmpuk+.1,kEmpuk+.45,T);
+ const uc=ioS(lin(T,1.1,2.3)), c=[lerp(1.0,1.05,lin(T,1.1,B2+.3))-.06*Math.sin(Math.PI*uc),lerp(560,2000,uc)+30*lin(T,2.3,B2+.3),lerp(960,980,uc)];
+ // garpu: di talenan (menekan) → di piring
+ let gp=null;
+ if(T<1.65) gp={x:DP.TALENAN[0]+20,y:DP.MEJA-150+tekan1*40,rot:-12,s:.95};
+ else if(T>2.0) gp={x:DP.PIRING[0]+10,y:lerp(DP.MEJA-260,DP.MEJA-90,tembus),rot:10,s:.95};
+ let s=A.dapurPresto(T,{apiN:1,presto:{kunci,uap:sp(1.95,2.5,T)*.7,gerak},
+  daging:adaDg?{tekan:tekan1,kenyal:T>1.3?1:0}:null,piring:T>1.7?{belah,tekan:tembus*(1-belah)*.4}:null,garpu:gp});
+ // daging melompat ke presto (busur) — masuk di celah tutup sebelum terkunci
+ if(loncat>0&&loncat<1){const x=lerp(DP.TALENAN[0],DP.PRESTO[0],ioS(loncat)),y=lerp(DP.MEJA-40,DP.PRESTO[1]-420,loncat)-Math.sin(Math.PI*loncat)*420;
+  s+=A.daging(x,y,lerp(1,.55,loncat),T,{rot:loncat*200})}
+ return latar(P.KREM)+kamera(svgW(2400,1920,s),2400,c[1]+Math.sin(T*.8)*4,c[2],c[0])}
+
+// ===== B2 X-RAY PRESTO — kamera tembus ke dalam: air TENANG, termometer tinggi naik MELEWATI garis (100) — air tetap tenang;
+//       mendekati ±120 baru gelembung halus muncul; teks "±120°C"
+const kRahasia=KI(8).m,kSeratus=KI(13).m,kDua=KI(14).m,kDerajat=KI(16).m,B3=cel(17);
+const TGARIS=.62, T120=.86;
+function setXray1(T){
+ const v=lerp(.25,TGARIS,sinIO(lin(T,B2,kSeratus+.05)))+(T120-TGARIS)*sinIO(lin(T,kSeratus+.05,kDerajat+.3));
+ const lewat=sp(kSeratus-.05,kSeratus+.25,T), didih=sp(kDua-.15,kDerajat+.2,T)*.75;
+ let s=A.penampangPresto(T,{termo:v,garis:TGARIS,sorot:lewat*(1-sp(kDerajat+.4,B3,T)),didih,uap:.3*didih,apiK:1});
+ // chip 100 di garis (overlay kode)
+ const gy=PEN.DASAR-70-(50+TGARIS*690);
+ s+=chip('100°',PEN.TX-190,gy+14,lewat,'#FFE3B0',46);
+ const z=lerp(1.25,1.02,ioS(lin(T,B2-.3,kRahasia+.8))), cy=lerp(1150,1010,ioS(lin(T,B2,kSeratus)));
+ return latar(P.MARUNG)+kamera(svgW(1080,1920,s),1080,560+Math.sin(T*.7)*6,cy,z)+KS.label('TAMPAK DALAM',T,B2+.3,B3-.2,{x:600,y:240,bg:'#FFE3B0'})}
+
+// ===== B3 PANCI BIASA — Tebe REAKSI protes ("Lho"), panci terbuka mendidih, termometer MENTOK di garis; Tebe memutar kenop: api membesar,
+//       termometer tetap di garis, panas lebih KABUR bareng uap tebal → kamera geser ke presto (TUTUP RAPAT, klik) → B4 x-ray
+const kLho=KI(17).m,kBiasa=KI(23).m,kApi=KI(27).m,kGede=KI(28).m,kKabur=KI(32).m,kUap=KI(34).m,kPresto=KI(35).m,kRapat=KI(38).m,B4=cel(39);
+const AT3=tebeAnimasi([{t:0,pose:'curiga'},{t:kLho-.05,pose:'bingung',transisi:.25,loncat:true},{t:kBiasa+.4,pose:'berpikir',transisi:.35},{t:kApi-.3,pose:'semangat',transisi:.3},{t:kUap-.6,pose:'kaget',transisi:.25}],{benih:4});
+function setPanci(T){
+ const api=1+.7*sp(kGede-.05,kGede+.3,T), kenop=-120*sp(kGede-.1,kGede+.25,T);
+ const uap=.55+.45*sp(kGede+.3,kUap,T), getar=T>kGede?T:0;
+ const kunciPulse=sp(kRapat-.08,kRapat+.05,T);
+ const c=jalur(T,[[B3,[1.08,1000,900]],[kBiasa,[1.0,1000,880]],[kGede+.5,[.96,1020,860]],[kUap+.1,[.92,1060,820]],[kPresto+.1,[1.0,1640,900]],[kRapat,[1.12,1640,860]],[B4+.3,[1.3,1640,820]]]);
+ let s=A.dapurPresto(T,{apiK:api,kenopK:kenop,apiN:1,panci:{didih:1,uap,termo:TGARIS+.004*Math.sin(T*30)*(T>kGede?1:0),sorotGaris:sp(KI(20).m-.1,KI(20).m+.2,T)*(1-sp(kBiasa+.6,kBiasa+1,T))+sp(kGede+.2,kGede+.5,T)*(1-sp(kKabur+.4,kUap,T)),getar},
+  presto:{kunci:1,uap:.3,gerak:kunciPulse*(1-sp(kRapat+.35,kRapat+.6,T))}});
+ // klik tutup: cincin cahaya di bibir tutup
+ const rp=lin(T,kRapat-.05,kRapat+.5);if(rp>0&&rp<1)s+=`<ellipse cx="${DP.PRESTO[0]}" cy="${DP.PRESTO[1]-275}" rx="${(230+rp*120).toFixed(1)}" ry="${(26+rp*20).toFixed(1)}" fill="none" stroke="#FFE3B0" stroke-width="${(14*(1-rp)).toFixed(1)}"/>`;
+ const bg=latar(P.KREM)+kamera(svgW(2400,1920,s),2400,c[1]+Math.sin(T*.8)*4,c[2],c[0]);
+ // Tebe di depan meja, tangan ke kenop kiri
+ const ta=sp(kLho-.35,kLho,T)*(1-sp(kPresto-.4,kPresto,T));
+ let tb=AT3(T),tangan='';
+ const L0=290-(1-ta)*340, T0=1010+Math.sin(T*2)*3, SC=330/400;
+ const kn=layar(DP.KENOP[0][0],DP.KENOP[0][1],c[1],c[2],c[0]);
+ const hA=sp(kApi-.25,kApi+.05,T)*(1-sp(kUap-.5,kUap-.2,T));
+ if(hA>0){tb.tanganN=[lerp(tb.tanganN[0],(kn[0]-L0)/SC,hA),lerp(tb.tanganN[1],(kn[1]-T0)/SC,hA)];tb.bentukN='kepal';tb.tekukN=-1}
+ const tebeH=ta>0?`<div class="abs" style="left:${L0.toFixed(1)}px;top:${T0.toFixed(1)}px;opacity:${Math.min(1,ta*1.5).toFixed(3)}">${tebeX(tb,330)}</div>`:'';
+ return bg+tebeH}
+
+// ===== B4 X-RAY TUTUP RAPAT — butir uap naik, memantul di tutup, berdesakan (NUMPUK), panah tekanan menebal (NAIK)
+const kNggak=KI(40).m,kNumpuk=KI(43).m,kTekanan=KI(44).m,kNaik=KI(45).m,B5=cel(46);
+function setXray2(T){
+ const numpuk=sp(kNumpuk-.3,kNumpuk+.6,T), panah=sp(kTekanan-.1,kNaik+.3,T);
+ let s=A.penampangPresto(T,{termo:TGARIS-.05,garis:TGARIS,uap:.3+.7*sp(B4,kNumpuk+.3,T),numpuk,panah,apiK:1});
+ const z=lerp(1.12,1.0,ioS(lin(T,B4-.3,kNumpuk))), cy=lerp(900,980,ioS(lin(T,B4,B5)));
+ return latar(P.MARUNG)+kamera(svgW(1080,1920,s),1080,540+Math.sin(T*.7)*6,cy,z)}
+
+// ===== B5 PERMUKAAN AIR (diperbesar) — gelembung mencoba lompat, ditekan panah ("MENANG lawan tekanan")
+const kMasalah=KI(46).m,kDorongan=KI(51).m,kMenang=KI(53).m,kLawan=KI(54).m,B6=cel(56);
+function setPermukaan1(T){
+ const tekan=sp(kLawan-.3,kLawan+.3,T);
+ let s=A.permukaanAir(T,{coba:sp(kDorongan-.4,kDorongan,T),tekan,dorong:.35*sp(kMenang-.3,kMenang+.2,T)*(1-tekan*.8),panah:sp(B5,kMasalah+.6,T)});
+ const z=lerp(1.0,1.08,lin(T,B5,B6));
+ return latar(P.MARUNG)+kamera(svgW(1080,1920,s),1080,540,960,z)+KS.label('DIPERBESAR',T,B5+.3,B6-.2,{x:690,y:240,bg:'#FFE3B0'})}
+
+// ===== B6 ANGKOT SESAK (gag ±3 dtk) — penumpang dekat pintu dorong KUAT lalu lolos (boing)
+const kKayak=KI(56).m,kAngkot=KI(59).m,kDorongnya=KI(61).m,kKuat=KI(64).m,B7=cel(65);
+function setAngkot(T){
+ let s=A.angkotSesak(T,{dorong:sp(kDorongnya-.2,kDorongnya+.4,T),lolos:lin(T,kKuat-.08,kKuat+.45)});
+ const z=lerp(1.0,1.06,lin(T,B6,B7)),sh=T>kKuat-.1&&T<kKuat+.25?Math.sin(T*70)*6:0;
+ return latar('#EAD9BC')+kamera(svgW(1080,1920,s),1080,540+sh,980,z)}
+
+// ===== B7 PERMUKAAN → X-RAY — gelembung mendorong lebih kuat dan LOLOS (air lebih PANAS dulu) → daging di dalam matang (lebih SINGKAT)
+//       → kamera naik ke tutup: panah menebal, KATUP terangkat, semburan uap kecil, panah kembali stabil
+const kAir2=KI(65).m,kPanas=KI(68).m,kMakanya=KI(70).m,kDaging=KI(71).m,kSingkat=KI(75).m,kTapi=KI(76).m,kTerus=KI(80).m,kKatup=KI(82).m,kBuang=KI(84).m,kUap2=KI(86).m,B9=cel(87);
+const B8=cel(70);
+function setPermukaan2(T){
+ let s=A.permukaanAir(T,{coba:1,tekan:.6,dorong:sp(B7,kPanas-.2,T),lolos:lin(T,kPanas-.15,kPanas+.7),panah:1,panas:sp(B7,B8,T)});
+ const pz=sp(B7,B8,T);
+return latar(P.MARUNG)+kamera(svgW(1080,1920,s),1080,540,lerp(960,900,pz),lerp(1.06,1.0,pz))}
+function setXray3(T){
+ const mt=sp(kDaging-.2,kSingkat,T), tegang=sp(kTapi-.05,kTerus+.2,T), katup=sp(kKatup-.1,kKatup+.15,T)*(1-sp(kUap2+.3,kUap2+.7,T));
+ const semb=sp(kBuang-.2,kBuang+.1,T)*(1-sp(B9-.4,B9,T)), lega=sp(kUap2-.2,kUap2+.4,T);
+ const panah=.55+.45*tegang-.45*lega;
+ let s=A.penampangPresto(T,{termo:T120+.01*Math.sin(T*3),garis:TGARIS,didih:.6,uap:.75,numpuk:.55,panah,katup,semburan:semb,daging:{matang:mt,kenyal:mt>.8?1:0},panas:sp(kMakanya,kMakanya+.4,T)*(1-sp(kSingkat+.3,kTapi,T)),apiK:1,getar:(tegang>.05&&lega<.95)?T:0});
+ const c=jalur(T,[[B8,[1.05,520,1180]],[kSingkat,[1.1,470,1260]],[kTapi+.2,[1.0,540,900]],[kKatup,[1.18,540,760]],[B9,[1.1,540,800]]]);
+ return latar(P.MARUNG)+kamera(svgW(1080,1920,s),1080,c[1]+Math.sin(T*.7)*5,c[2],c[0])}
+
+// ===== B9 PAYOFF — dapur: kartu API GEDE (dicoret) vs TEKANAN; kartu IGA / AYAM / BANDENG ("apa yang SELALU dipresto?");
+//       Tebe CAMEO kirim video ke teman, lalu memutar kenop api sampai mentok (callback), nyengir, minggir → sampul (loop)
+const kJadi=KI(87).m,kBukan=KI(89).m,kApiG=KI(90).m,kTapi2=KI(92).m,kTekanan2=KI(93).m,kRumah=KI(95).m,kSelalu=KI(98).m,kDipresto=KI(99).m,kKirim=KI(100).m,kApinya=KI(106).m,kGede2=KI(107).m,kTerus2=KI(108).m,BZ=AKHIR-.55;
+const AT9=tebeAnimasi([{t:0,pose:'menjelaskan'},{t:kKirim-.2,pose:'tertawa',transisi:.25},{t:kApinya-.3,pose:'semangat',transisi:.25},{t:kTerus2,pose:'tertawa',transisi:.25,jalan:[kTerus2+.05,BZ+.6]}],{benih:9});
+function setPayoff(T){
+ const kartu1=sp(kJadi-.1,kBukan,T)*(1-sp(kRumah-.3,kRumah,T)), kartu2=sp(kRumah-.1,kSelalu,T)*(1-sp(kKirim-.25,kKirim+.1,T));
+ const api=1+.8*sp(kGede2-.1,kGede2+.25,T), kenop=-130*sp(kGede2-.15,kGede2+.2,T);
+ const c=jalur(T,[[B9,[1.15,1400,880]],[kJadi+.6,[1.0,1400,920]],[kKirim,[1.0,1380,920]],[kTerus2,[1.04,1360,940]],[BZ+.3,[1.2,1500,900]]]);
+ let s=A.dapurPresto(T,{apiK:api,kenopK:kenop,apiN:1,panci:{didih:.6,uap:.4+.5*sp(kGede2,kGede2+.4,T)},presto:{kunci:1,uap:.6}});
+ let bg=latar(P.KREM)+kamera(svgW(2400,1920,s),2400,c[1]+Math.sin(T*.7)*4,c[2],c[0]);
+ const kb=Math.max(kartu1,kartu2);
+ if(kb>0)bg=`<div class="abs" style="inset:0;filter:blur(${(7*kb).toFixed(1)}px) brightness(${(1-.3*kb).toFixed(3)})">${bg}</div>`;
+ let ov='';
+ if(kartu1>0){const cor=sp(kApiG,kApiG+.25,T);
+  ov+=A.kartuPilihan(330,760,.95,'API GEDE',A.ikonApi(T),{k:sp(kBukan-.15,kBukan+.2,T)*kartu1,rot:-5,warna:'#7A2E2A'});
+  if(cor>0)ov+=`<g opacity="${(cor*kartu1).toFixed(3)}" stroke="#E2232E" stroke-width="22" stroke-linecap="round"><path d="M${200} ${600} L${200+260*cor} ${600+300*cor}"/><path d="M${460} ${600} L${460-260*cor} ${600+300*cor}"/></g>`;
+  ov+=A.kartuPilihan(750,760,.95,'TEKANAN',A.ikonTekanan(T),{k:sp(kTapi2-.1,kTekanan2+.1,T)*kartu1,rot:5,warna:P.BATA})}
+ if(kartu2>0){ov+=A.kartuPilihan(230,700,.78,'IGA',A.ikonIga(T),{k:sp(kSelalu-.35,kSelalu,T)*kartu2,rot:-6,warna:'#8A2E36'});
+  ov+=A.kartuPilihan(540,680,.78,'AYAM',A.ikonAyam(T),{k:sp(kSelalu-.15,kSelalu+.2,T)*kartu2,rot:2,warna:P.BATA});
+  ov+=A.kartuPilihan(850,700,.78,'BANDENG',A.ikonBandeng(T),{k:sp(kSelalu+.05,kDipresto+.1,T)*kartu2,rot:6,warna:'#C9614A'});
+  ov+=chip('1 KATA AJA',540,1000,lin(T,kDipresto,kDipresto+.3)*kartu2,'#FFF3E0',42)}
+ // Tebe: kirim video lalu putar kenop
+ const tv=sp(kKirim-.3,kKirim+.15,T), L0=lerp(250,-420,sp(kTerus2+.1,BZ+.5,T))-(1-tv)*360, T0=1000+Math.sin(T*2)*3, SC=330/400;
+ let tb=AT9(T),tangan='';const hA=sp(kKirim-.05,kKirim+.3,T)*(1-sp(kApinya-.4,kApinya-.1,T));
+ if(hA>0){tb.tanganN=[lerp(tb.tanganN[0],262,hA),lerp(tb.tanganN[1],290,hA)];tb.bentukN='kepal';tb.tekukN=1;tangan=hpTebe(tb.tanganN,hA.toFixed(3))}
+ const kn=layar(DP.KENOP[0][0],DP.KENOP[0][1],c[1],c[2],c[0]);
+ const hK=sp(kApinya-.3,kApinya,T)*(1-sp(kTerus2+.1,kTerus2+.4,T));
+ if(hK>0){tb.tanganN=[lerp(tb.tanganN[0],(kn[0]-L0)/SC,hK),lerp(tb.tanganN[1],(kn[1]-T0)/SC,hK)];tb.bentukN='kepal';tb.tekukN=-1}
+ const pw=lin(T,kKirim+.5,kKirim+1.6);if(pw>0&&pw<1){const x=lerp(520,1000,pw),y=lerp(1150,560,pw)-Math.sin(Math.PI*pw)*80;ov+=`<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(-28) scale(1.5)" opacity="${(1-pw*.6).toFixed(3)}"><path d="M-40 0 L40 -20 L-10 20Z" fill="#FFF8E6"/><path d="M-10 20 L0 6 L40 -20Z" fill="#D8CDB8"/></g>`}
+ const tebeH=tv>0?`<div class="abs" style="left:${L0.toFixed(1)}px;top:${T0.toFixed(1)}px;opacity:${tv.toFixed(3)}">${tebeX(tb,330,{tangan})}</div>`:'';
+ return bg+svgW(1080,1920,ov)+tebeH}
+
+// ---------- komposisi ----------
+const BABAK=[{a:0,f:setSampul},{a:B1,f:setDapur1,tr:'dorong',d:.45},{a:B2,f:setXray1,tr:'dorong',d:.5},{a:B3,f:setPanci,tr:'dorong',d:.5},{a:B4,f:setXray2,tr:'dorong',d:.5},
+ {a:B5,f:setPermukaan1,tr:'dorong',d:.5},{a:B6,f:setAngkot,tr:'geser',d:.5},{a:B7,f:setPermukaan2,tr:'geser',d:.5},{a:B8,f:setXray3,tr:'dorong',d:.5},{a:B9,f:setPayoff,tr:'dorong',d:.5},{a:BZ,f:setSampulAkhir,tr:'dorong',d:.6}];
+function posSub(T){if((T>=B1&&T<B2)||(T>=B3&&T<B4)||(T>=B9&&T<BZ))return 320;return 1330}
+const CAPS=[['KOK CEPAT EMPUK?',()=>kKok-.05,()=>B2-.1,{y:440,uk:70,rot:-3}],['±120°C',()=>kDua-.1,()=>B3-.05,{y:330,uk:96,rot:2,warna:'#FFE3B0'}],
+ ['MENTOK 100°C',()=>KI(20).m-.05,()=>kBiasa+.5,{y:420,uk:72,rot:-2}],['TUTUP RAPAT',()=>kRapat-.1,()=>B4-.05,{y:470,uk:74,rot:2}],
+ ['HARUS MENANG',()=>kMenang-.05,()=>B6-.1,{y:430,uk:74,rot:-2}],['JAUH LEBIH SINGKAT',()=>kSingkat-.25,()=>kTapi-.05,{y:1240,uk:66,rot:2,warna:'#FFE3B0'}],
+ ['ADA KATUP',()=>kKatup-.05,()=>kUap2+.2,{y:1250,uk:74,rot:-2}]];
+function capAktif(T){return CAPS.some(c=>T>=c[1]()-.05&&T<c[2]()-.1)}
+function teksBesar(T){return CAPS.map(c=>cap(c[0],T,c[1](),c[2](),c[3])).join('')}
+window.EFEK=[{t:kSeratus+.05,sfx:'gelembung',vol:.3},{t:kGede-.02,sfx:'fwoosh',vol:.38},{t:kRapat-.05,sfx:'klik',vol:.5},{t:kKuat-.08,sfx:'boing',vol:.38},{t:kBuang-.15,sfx:'desis',vol:.36},{t:kSelalu-.3,sfx:'pop',vol:.3}];
+
+window.render=function(T){
+ let h=KS.komposisi(T,BABAK);
+ h+=KS.vinyet(T,.3);
+ const isi=T>1.25&&T<D()-.85;
+ let lap='';
+ if(isi){lap+=teksBesar(T)+(capAktif(T)?'':`<div class="abs" style="inset:0;opacity:${Math.min(1,Math.abs(T-B9)/.15).toFixed(3)}">${KS.teksLayar(T,GRUP,{y:posSub(T),ukuran:68})}</div>`);}
+ lap+=KS.watermark(T,(T>1.6&&T<BZ-.3)?1:0);
+ lap+=KS.logoYT(T,D()-1.05,D()-.05,{y:1430,x:470,uk:38});
+ h+=`<div class="abs" style="inset:0">${lap}</div>`;
+ document.getElementById('V').innerHTML=h;
+};
+window.render(0);
+</script></body></html>

@@ -78,7 +78,7 @@
   // ---------- termometer tinggi (tanpa angka; garis penanda tebal) ----------
   function termoTinggi(x, y, s, nilai, o = {}) {
     const H = o.panjang || 620, n = cl(nilai, 0, 1.08), isi = n * (H - 70), gr = o.garis ?? 0.62, gy = -50 - gr * (H - 70), sor = cl(o.sorot || 0);
-    const gt = o.getar ? Math.sin(o.getar * 40) * 2.5 : 0;
+    const gt = o.getar ? Math.sin(o.getar * 9) * 2 : 0;
     let q = `<g transform="translate(${f1(gt)} 0)">`;
     q += `<rect x="-38" y="${-H - 8}" width="76" height="${H + 8}" rx="38" fill="#000" opacity=".18" transform="translate(10 10)"/>`;
     q += `<rect x="-36" y="${-H}" width="72" height="${H}" rx="36" fill="#FBF6EE"/><circle cx="0" cy="0" r="58" fill="#FBF6EE"/>`;
@@ -162,7 +162,7 @@
     tt += `<path d="M-180 -310 Q-60 -340 60 -340" stroke="#FFFFFF" stroke-width="10" fill="none" opacity=".6" stroke-linecap="round"/>`;
     tt += `<path d="M200 -306 L470 -300 Q502 -298 502 -282 Q502 -268 470 -268 L200 -276Z" fill="#4A3230"/>`;
     // katup + pemberat
-    tt += `<rect x="-14" y="-384" width="28" height="30" rx="6" fill="${P.BAJAG}"/><g transform="translate(0 ${f1(-kt * 22 + Math.sin(t * 40) * 2 * kt)})"><rect x="-30" y="-414" width="60" height="38" rx="12" fill="#3A3A40"/><rect x="-20" y="-410" width="16" height="10" rx="4" fill="#6A6A72"/></g>`;
+    tt += `<rect x="-14" y="-384" width="28" height="30" rx="6" fill="${P.BAJAG}"/><g transform="translate(0 ${f1(-kt * 22 + Math.sin(t * 10) * 2 * kt)})"><rect x="-30" y="-414" width="60" height="38" rx="12" fill="#3A3A40"/><rect x="-20" y="-410" width="16" height="10" rx="4" fill="#6A6A72"/></g>`;
     q += `<g transform="translate(${f1(geser)} ${f1(-angkat)})">${tt}</g>`;
     if (o.gerak && ku > 0.98) q += `<path d="M300 -330 l30 -26 M330 -306 l40 -10 M300 -356 l14 -36" stroke="#FFF3E0" stroke-width="8" stroke-linecap="round" opacity="${f2(o.gerak)}"/>`;
     // uap dari katup
@@ -258,7 +258,7 @@
     s += `<path d="M${L - 60} ${ATAS} Q${L - 40} ${ATAS - 110} ${KX} ${ATAS - 120} Q${R + 40} ${ATAS - 110} ${R + 60} ${ATAS}Z" fill="${P.BAJAT}"/><rect x="${L - 60}" y="${ATAS - 12}" width="${R - L + 120}" height="24" rx="10" fill="${P.BAJAG}"/>`;
     s += `<path d="M${L - 20} ${ATAS - 30} Q${KX - 200} ${ATAS - 95} ${KX - 80} ${ATAS - 100}" stroke="#FFFFFF" stroke-width="12" fill="none" opacity=".55" stroke-linecap="round"/>`;
     const kt = cl(o.katup || 0);
-    s += `<rect x="${KX - 22}" y="${KY - 10}" width="44" height="40" rx="8" fill="${P.BAJAG}"/><g transform="translate(0 ${f1(-kt * 34 + Math.sin(t * 40) * 3 * kt)})"><rect x="${KX - 50}" y="${KY - 70}" width="100" height="64" rx="18" fill="#3A3A40"/><rect x="${KX - 32}" y="${KY - 62}" width="26" height="16" rx="6" fill="#6A6A72"/></g>`;
+    s += `<rect x="${KX - 22}" y="${KY - 10}" width="44" height="40" rx="8" fill="${P.BAJAG}"/><g transform="translate(0 ${f1(-kt * 34 + Math.sin(t * 10) * 3 * kt)})"><rect x="${KX - 50}" y="${KY - 70}" width="100" height="64" rx="18" fill="#3A3A40"/><rect x="${KX - 32}" y="${KY - 62}" width="26" height="16" rx="6" fill="#6A6A72"/></g>`;
     // semburan uap kecil dari katup
     const sb = cl(o.semburan || 0);
     if (sb > 0) for (let i = 0; i < 6; i++) { const q = (t * 1.4 + i / 6) % 1; s += butirUap(KX + Math.sin(q * 6 + i) * 30 + (i % 2 ? 20 : -20), KY - 40 - q * 260, 18 + q * 30, sb * Math.sin(Math.PI * q) * 0.9); }
@@ -278,7 +278,11 @@
     let s = latarXray(t);
     s += `<rect x="-400" y="-400" width="1880" height="${Y + 400}" fill="#FFFFFF" opacity=".1"/>`;
     let d = `M-400 ${Y}`; for (let x = -400; x <= 1480; x += 40) d += ` L${x} ${f1(Y + Math.sin(x * 0.02 + t * 3) * 10)}`; d += ` L1480 2400 L-400 2400Z`;
-    s += `<path d="${d}" fill="${P.AIR}"/><path d="${d.replace(/L1480 2400 L-400 2400Z/, "")}" stroke="${P.AIRT}" stroke-width="14" fill="none"/>`;
+    const ga = uid("pa"), pn = cl(o.panas || 0);
+    s += `<defs><linearGradient id="${ga}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${P.AIR}"/><stop offset="1" stop-color="${mix("#3E8CB0", "#C8643A", pn * 0.55)}"/></linearGradient></defs>`;
+    s += `<path d="${d}" fill="url(#${ga})"/><path d="${d.replace(/L1480 2400 L-400 2400Z/, "")}" stroke="${P.AIRT}" stroke-width="14" fill="none"/>`;
+    { const rr = acak(9); for (let i = 0; i < 22; i++) { const bx = rr() * 1080, q = (t * (0.4 + rr() * 0.5) + rr()) % 1, r0 = 5 + rr() * 8;
+      s += `<circle cx="${f1(bx + Math.sin(q * 7 + i) * 10)}" cy="${f1(1900 - q * (1900 - Y - 60))}" r="${f1(r0)}" fill="none" stroke="${P.AIRT}" stroke-width="4" opacity="${f2(0.55 * Math.min(1, (1 - q) * 3))}"/>`; } }
     // gelembung mencoba naik lalu ditekan
     const tk = cl(o.tekan || 0), co = cl(o.coba ?? 1), lo = cl(o.lolos || 0);
     const BX = [180, 360, 720, 900];

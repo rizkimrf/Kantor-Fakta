@@ -1,29 +1,44 @@
 {
-  "tahap": "produksi",
-  "seri": "A",
-  "pilar": "Benda & kebiasaan sehari-hari",
-  "topik": "a3-04 panci presto",
-  "dibuat": "2026-11-25T21:43",
-  "riwayat": [
-    {
-      "tahap": "pilih",
-      "oleh": "Raka",
-      "tanggal": "2026-11-25",
-      "hasil": "LANJUT 16/20"
-    },
-    {
-      "tahap": "naskah",
-      "oleh": "Nadia",
-      "tanggal": "2026-11-25",
-      "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt; hook #7 rahasia + pengalaman ('Daging alot di panci presto, kok cepat EMPUK? Rahasianya: airnya bisa mendidih sekitar SERATUS DUA PULUH derajat.'), kejutan ±7 dtk, 109 kata ±48,7 dtk, 7 adegan, Papin ke komentar tersemat; skor naskah 8/9, viral 8/10"
-    },
-    {
-      "waktu": "2026-11-26T07:20+08:00",
-      "oleh": "Pak Bima",
-      "catatan": "cek_fakta LULUS -> produksi"
-    }
-  ],
-  "masalah": null,
-  "jadwal_tayang": "2026-11-27T13:00:00+08:00",
-  "skor_manajer": 8
+ "tahap": "menunggu_persetujuan",
+ "seri": "A",
+ "pilar": "Benda & kebiasaan sehari-hari",
+ "topik": "a3-04 panci presto",
+ "dibuat": "2026-11-25T21:43",
+ "riwayat": [
+  {
+   "tahap": "pilih",
+   "oleh": "Raka",
+   "tanggal": "2026-11-25",
+   "hasil": "LANJUT 16/20"
+  },
+  {
+   "tahap": "naskah",
+   "oleh": "Nadia",
+   "tanggal": "2026-11-25",
+   "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt; hook #7 rahasia + pengalaman ('Daging alot di panci presto, kok cepat EMPUK? Rahasianya: airnya bisa mendidih sekitar SERATUS DUA PULUH derajat.'), kejutan ±7 dtk, 109 kata ±48,7 dtk, 7 adegan, Papin ke komentar tersemat; skor naskah 8/9, viral 8/10"
+  },
+  {
+   "waktu": "2026-11-26T07:20+08:00",
+   "oleh": "Pak Bima",
+   "catatan": "cek_fakta LULUS -> produksi"
+  },
+  {
+   "waktu": "2026-11-26T08:30+08:00",
+   "oleh": "Yoga",
+   "tahap": "produksi",
+   "hasil": "final.mp4 47,0 dtk / 13,5 MB + thumbnail.png; suara v4 sekali (763 huruf ≈ 397 kredit); set baru aset-presto.js; cek_mulus LULUS, cek_video LULUS -> review"
+  },
+  {
+   "waktu": "2026-11-26T09:00+08:00",
+   "oleh": "Pak Bima",
+   "catatan": "review LULUS -> menunggu_persetujuan"
+  }
+ ],
+ "masalah": null,
+ "jadwal_tayang": "2026-11-27T13:00:00+08:00",
+ "skor_manajer": 8,
+ "video_asset_id": "9cca1d31a0f61d5101b5c1d0e701c243",
+ "thumb_asset_id": "81f1cbf9725f854e7da93cf02ba8c1c8",
+ "video_url": "/_blob/9cca1d31a0f61d5101b5c1d0e701c243",
+ "thumb_url": "/_blob/81f1cbf9725f854e7da93cf02ba8c1c8"
 }
