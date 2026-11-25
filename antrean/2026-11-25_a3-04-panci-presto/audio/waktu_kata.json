@@ -1,0 +1,550 @@
+{
+ "model": "eleven_v4",
+ "kata": [
+  {
+   "kata": "Daging",
+   "mulai": 0.08,
+   "selesai": 0.4
+  },
+  {
+   "kata": "alot",
+   "mulai": 0.48,
+   "selesai": 0.8
+  },
+  {
+   "kata": "di",
+   "mulai": 0.84,
+   "selesai": 0.88
+  },
+  {
+   "kata": "panci",
+   "mulai": 0.96,
+   "selesai": 1.12
+  },
+  {
+   "kata": "presto,",
+   "mulai": 1.2,
+   "selesai": 1.68
+  },
+  {
+   "kata": "kok",
+   "mulai": 1.92,
+   "selesai": 2.0
+  },
+  {
+   "kata": "cepat",
+   "mulai": 2.08,
+   "selesai": 2.24
+  },
+  {
+   "kata": "empuk?",
+   "mulai": 2.32,
+   "selesai": 2.88
+  },
+  {
+   "kata": "Rahasianya:",
+   "mulai": 3.2,
+   "selesai": 4.16
+  },
+  {
+   "kata": "airnya",
+   "mulai": 4.32,
+   "selesai": 4.64
+  },
+  {
+   "kata": "bisa",
+   "mulai": 4.68,
+   "selesai": 4.88
+  },
+  {
+   "kata": "mendidih",
+   "mulai": 4.987,
+   "selesai": 5.28
+  },
+  {
+   "kata": "sekitar",
+   "mulai": 5.36,
+   "selesai": 5.68
+  },
+  {
+   "kata": "seratus",
+   "mulai": 5.76,
+   "selesai": 6.16
+  },
+  {
+   "kata": "dua",
+   "mulai": 6.24,
+   "selesai": 6.36
+  },
+  {
+   "kata": "puluh",
+   "mulai": 6.4,
+   "selesai": 6.533
+  },
+  {
+   "kata": "derajat.",
+   "mulai": 6.56,
+   "selesai": 7.12
+  },
+  {
+   "kata": "Lho,",
+   "mulai": 7.424,
+   "selesai": 7.6
+  },
+  {
+   "kata": "bukannya",
+   "mulai": 7.84,
+   "selesai": 8.16
+  },
+  {
+   "kata": "air",
+   "mulai": 8.24,
+   "selesai": 8.4
+  },
+  {
+   "kata": "mentok",
+   "mulai": 8.52,
+   "selesai": 8.72
+  },
+  {
+   "kata": "di",
+   "mulai": 8.76,
+   "selesai": 8.8
+  },
+  {
+   "kata": "seratus?",
+   "mulai": 8.88,
+   "selesai": 9.44
+  },
+  {
+   "kata": "Di",
+   "mulai": 9.76,
+   "selesai": 9.84
+  },
+  {
+   "kata": "panci",
+   "mulai": 9.92,
+   "selesai": 10.08
+  },
+  {
+   "kata": "biasa,",
+   "mulai": 10.16,
+   "selesai": 10.72
+  },
+  {
+   "kata": "iya.",
+   "mulai": 10.8,
+   "selesai": 11.4
+  },
+  {
+   "kata": "Api",
+   "mulai": 11.6,
+   "selesai": 11.84
+  },
+  {
+   "kata": "di-gede-in",
+   "mulai": 11.88,
+   "selesai": 12.32
+  },
+  {
+   "kata": "pun,",
+   "mulai": 12.4,
+   "selesai": 12.8
+  },
+  {
+   "kata": "panas",
+   "mulai": 12.88,
+   "selesai": 13.04
+  },
+  {
+   "kata": "lebihnya",
+   "mulai": 13.12,
+   "selesai": 13.52
+  },
+  {
+   "kata": "kabur",
+   "mulai": 13.6,
+   "selesai": 13.92
+  },
+  {
+   "kata": "bareng",
+   "mulai": 14.0,
+   "selesai": 14.24
+  },
+  {
+   "kata": "uap.",
+   "mulai": 14.28,
+   "selesai": 14.64
+  },
+  {
+   "kata": "Presto",
+   "mulai": 14.96,
+   "selesai": 15.36
+  },
+  {
+   "kata": "beda.",
+   "mulai": 15.44,
+   "selesai": 15.92
+  },
+  {
+   "kata": "Tutupnya",
+   "mulai": 16.16,
+   "selesai": 16.56
+  },
+  {
+   "kata": "rapat,",
+   "mulai": 16.68,
+   "selesai": 17.2
+  },
+  {
+   "kata": "uap",
+   "mulai": 17.28,
+   "selesai": 17.52
+  },
+  {
+   "kata": "nggak",
+   "mulai": 17.56,
+   "selesai": 17.68
+  },
+  {
+   "kata": "bisa",
+   "mulai": 17.733,
+   "selesai": 17.84
+  },
+  {
+   "kata": "kabur.",
+   "mulai": 17.92,
+   "selesai": 18.4
+  },
+  {
+   "kata": "Numpuk,",
+   "mulai": 18.64,
+   "selesai": 19.2
+  },
+  {
+   "kata": "tekanannya",
+   "mulai": 19.28,
+   "selesai": 19.76
+  },
+  {
+   "kata": "naik.",
+   "mulai": 19.84,
+   "selesai": 20.24
+  },
+  {
+   "kata": "Masalahnya,",
+   "mulai": 20.56,
+   "selesai": 21.36
+  },
+  {
+   "kata": "air",
+   "mulai": 21.44,
+   "selesai": 21.68
+  },
+  {
+   "kata": "baru",
+   "mulai": 21.76,
+   "selesai": 21.92
+  },
+  {
+   "kata": "mendidih",
+   "mulai": 22.027,
+   "selesai": 22.4
+  },
+  {
+   "kata": "kalau",
+   "mulai": 22.48,
+   "selesai": 22.64
+  },
+  {
+   "kata": "dorongan",
+   "mulai": 22.72,
+   "selesai": 23.04
+  },
+  {
+   "kata": "uapnya",
+   "mulai": 23.12,
+   "selesai": 23.44
+  },
+  {
+   "kata": "menang",
+   "mulai": 23.52,
+   "selesai": 23.84
+  },
+  {
+   "kata": "lawan",
+   "mulai": 23.92,
+   "selesai": 24.08
+  },
+  {
+   "kata": "tekanan.",
+   "mulai": 24.16,
+   "selesai": 24.76
+  },
+  {
+   "kata": "Kayak",
+   "mulai": 25.52,
+   "selesai": 25.76
+  },
+  {
+   "kata": "turun",
+   "mulai": 25.84,
+   "selesai": 26.0
+  },
+  {
+   "kata": "dari",
+   "mulai": 26.08,
+   "selesai": 26.24
+  },
+  {
+   "kata": "angkot",
+   "mulai": 26.32,
+   "selesai": 26.48
+  },
+  {
+   "kata": "sesak,",
+   "mulai": 26.56,
+   "selesai": 27.12
+  },
+  {
+   "kata": "dorongnya",
+   "mulai": 27.16,
+   "selesai": 27.6
+  },
+  {
+   "kata": "harus",
+   "mulai": 27.68,
+   "selesai": 28.0
+  },
+  {
+   "kata": "lebih",
+   "mulai": 28.04,
+   "selesai": 28.24
+  },
+  {
+   "kata": "kuat.",
+   "mulai": 28.32,
+   "selesai": 28.64
+  },
+  {
+   "kata": "Air",
+   "mulai": 28.88,
+   "selesai": 29.12
+  },
+  {
+   "kata": "harus",
+   "mulai": 29.2,
+   "selesai": 29.36
+  },
+  {
+   "kata": "lebih",
+   "mulai": 29.4,
+   "selesai": 29.6
+  },
+  {
+   "kata": "panas",
+   "mulai": 29.68,
+   "selesai": 29.84
+  },
+  {
+   "kata": "dulu.",
+   "mulai": 29.92,
+   "selesai": 30.4
+  },
+  {
+   "kata": "Makanya",
+   "mulai": 30.64,
+   "selesai": 31.2
+  },
+  {
+   "kata": "daging",
+   "mulai": 31.28,
+   "selesai": 31.52
+  },
+  {
+   "kata": "matang",
+   "mulai": 31.6,
+   "selesai": 31.92
+  },
+  {
+   "kata": "jauh",
+   "mulai": 32.08,
+   "selesai": 32.36
+  },
+  {
+   "kata": "lebih",
+   "mulai": 32.4,
+   "selesai": 32.56
+  },
+  {
+   "kata": "singkat.",
+   "mulai": 32.64,
+   "selesai": 33.28
+  },
+  {
+   "kata": "Tapi",
+   "mulai": 33.387,
+   "selesai": 33.6
+  },
+  {
+   "kata": "tekanannya",
+   "mulai": 33.68,
+   "selesai": 34.16
+  },
+  {
+   "kata": "nggak",
+   "mulai": 34.2,
+   "selesai": 34.32
+  },
+  {
+   "kata": "naik",
+   "mulai": 34.36,
+   "selesai": 34.56
+  },
+  {
+   "kata": "terus.",
+   "mulai": 34.64,
+   "selesai": 35.2
+  },
+  {
+   "kata": "Ada",
+   "mulai": 35.28,
+   "selesai": 35.36
+  },
+  {
+   "kata": "katup",
+   "mulai": 35.44,
+   "selesai": 35.84
+  },
+  {
+   "kata": "yang",
+   "mulai": 35.92,
+   "selesai": 36.0
+  },
+  {
+   "kata": "buang",
+   "mulai": 36.08,
+   "selesai": 36.32
+  },
+  {
+   "kata": "kelebihan",
+   "mulai": 36.36,
+   "selesai": 36.72
+  },
+  {
+   "kata": "uap.",
+   "mulai": 36.8,
+   "selesai": 37.28
+  },
+  {
+   "kata": "Jadi",
+   "mulai": 37.36,
+   "selesai": 37.68
+  },
+  {
+   "kata": "kuncinya",
+   "mulai": 37.84,
+   "selesai": 38.24
+  },
+  {
+   "kata": "bukan",
+   "mulai": 38.32,
+   "selesai": 38.48
+  },
+  {
+   "kata": "api",
+   "mulai": 38.6,
+   "selesai": 38.72
+  },
+  {
+   "kata": "gede,",
+   "mulai": 38.84,
+   "selesai": 39.28
+  },
+  {
+   "kata": "tapi",
+   "mulai": 39.36,
+   "selesai": 39.52
+  },
+  {
+   "kata": "tekanan.",
+   "mulai": 39.6,
+   "selesai": 40.64
+  },
+  {
+   "kata": "Di",
+   "mulai": 40.68,
+   "selesai": 40.72
+  },
+  {
+   "kata": "rumahmu,",
+   "mulai": 40.8,
+   "selesai": 41.36
+  },
+  {
+   "kata": "apa",
+   "mulai": 41.48,
+   "selesai": 41.6
+  },
+  {
+   "kata": "yang",
+   "mulai": 41.64,
+   "selesai": 41.68
+  },
+  {
+   "kata": "selalu",
+   "mulai": 41.76,
+   "selesai": 42.0
+  },
+  {
+   "kata": "dipresto?",
+   "mulai": 42.053,
+   "selesai": 42.8
+  },
+  {
+   "kata": "Kirim",
+   "mulai": 42.88,
+   "selesai": 43.04
+  },
+  {
+   "kata": "ke",
+   "mulai": 43.08,
+   "selesai": 43.12
+  },
+  {
+   "kata": "teman",
+   "mulai": 43.2,
+   "selesai": 43.44
+  },
+  {
+   "kata": "yang",
+   "mulai": 43.52,
+   "selesai": 43.6
+  },
+  {
+   "kata": "tiap",
+   "mulai": 43.64,
+   "selesai": 43.76
+  },
+  {
+   "kata": "masak,",
+   "mulai": 43.84,
+   "selesai": 44.32
+  },
+  {
+   "kata": "apinya",
+   "mulai": 44.44,
+   "selesai": 44.8
+  },
+  {
+   "kata": "di-gede-in",
+   "mulai": 44.84,
+   "selesai": 45.44
+  },
+  {
+   "kata": "terus...",
+   "mulai": 45.52,
+   "selesai": 46.24
+  }
+ ]
+}

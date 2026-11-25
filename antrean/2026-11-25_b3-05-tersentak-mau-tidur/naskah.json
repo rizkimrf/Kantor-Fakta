@@ -83,23 +83,23 @@
   "adegan": [
     {
       "no": 1,
-      "narasi": "Kaget pas mau tidur, badanmu tersentak kayak JATUH dari tangga. Jantung DEG-DEGAN, padahal kamu cuma rebahan.",
+      "narasi": "Kaget pas mau tidur, badanmu tersentak kayak JATUH dari tangga. Kadang jantung ikut DEG-DEGAN, padahal kamu cuma rebahan.",
       "teks_layar": "KAGET PAS MAU TIDUR?",
       "catatan_teks": "Frame 0-+-1,0 dtk = teks sampul 'KAYAK JATUH?' (JATUH koral) di y 260-620; lalu berganti 'KAGET PAS MAU TIDUR?' saat kata kunci selesai (+-1,8). Subtitle 2-4 kata mengikuti suara ('kayak JATUH' / 'DEG-DEGAN' / 'cuma rebahan'). Jangan menutupi celah Tebe-kasur.",
       "visual": "Frame 0 = cover composition: cozy bedroom at night, warm orange-yellow lamp glow, cream walls, coral sheet; Tebe (chibi, mustard hoodie) frozen mid-air a hand-width above the mattress, limbs flung out, eyes wide, cowlick '!', motion lines, ONE red arrow to the gap under him. From 0.0 s he drops back onto the mattress with a soft bounce, blanket waves rippling; on 'kayak JATUH dari tangga' a pale dreamy outline of a staircase appears beneath the bed and one step vanishes under a tiny cartoon foot (simile icon only, clearly imaginary, no dream bubble); on 'DEG-DEGAN' a small coral heart icon thumps twice on his hoodie chest; on 'cuma rebahan' the camera pulls back to a wide top-down view: Tebe lying flat and stiff on a perfectly ordinary bed, nothing below him, he blinks at the ceiling; flat style without black outlines; no text in the image.",
       "maskot": true,
       "jenis_visual": "gambar",
-      "durasi": 7.0,
+      "durasi": 7.6,
       "set": "aset-set.js BARU `kamar-malam-hangat`: kamar tidur malam jingga-kuning lampu tidur, dinding krem, seprai koral, bantal, jam dinding tanpa angka; tangga 'ilusi' garis pucat",
       "tebe": "UTAMA (sampul): terlonjak di udara, jambul '!'; lalu jatuh ke kasur, terkapar kaku menatap langit-langit",
-      "aksi": "0,0 SFX dug+boing, narasi mulai <=0,3, Tebe jatuh ke kasur; 1,0 teks sampul lepas -> 'KAGET PAS MAU TIDUR?'; 2,4 'JATUH dari tangga' anak tangga pucat hilang; 4,4 'DEG-DEGAN' hati koral berdetak 2x + SFX detak; 5,8 'cuma rebahan' kamera mundur ke atas, Tebe berkedip",
+      "aksi": "0,0 SFX dug+boing, narasi mulai <=0,3, Tebe jatuh ke kasur; 1,0 teks sampul lepas -> 'KAGET PAS MAU TIDUR?'; 2,4 'JATUH dari tangga' anak tangga pucat hilang; 4,4 'Kadang jantung ikut' -> 5,0 'DEG-DEGAN' hati koral berdetak 2x + SFX detak; 6,4 'cuma rebahan' kamera mundur ke atas, Tebe berkedip (R1: +2 kata, semua stempel waktu sesudahnya bergeser +-0,6 dtk; ukur ulang dari audio asli)",
       "catatan_yoga": "Narasi mulai <=0,3 dtk, TANPA intro. Tangga = perumpamaan (garis pucat, bukan adegan mimpi). Tanpa bayangan gelap/makhluk/hantu di kamar."
     },
     {
       "no": 2,
       "narasi": "Kok bisa? Ilmuwan sendiri BELUM tahu pasti.",
-      "teks_layar": "ILMUWAN BELUM TAHU",
-      "catatan_teks": "'KOK BISA?' saat 'Kok bisa' -> 'ILMUWAN BELUM TAHU' besar saat 'BELUM'.",
+      "teks_layar": "ILMUWAN BELUM TAHU PASTI",
+      "catatan_teks": "R1 (saran Raka): 'KENAPA KAGET?' saat 'Kok bisa?' (kata kunci turunan di layar) -> 'ILMUWAN BELUM TAHU PASTI' besar saat 'BELUM' (kata PASTI ikut tampil, jangan dipotong).",
       "visual": "Quick zoom into Tebe's face, his cowlick flips from '!' to a giant '?'; hard cut: three generic cartoon scientists in plain lab coats (no logos, no names) stand around a big cardboard case file labelled only with a huge '?' symbol, they open it and it is empty, one shrugs, one scratches his head, one turns the empty folder upside down and a single feather floats out (funny beat); warm orange-cream palette continues; flat style without black outlines; no text in the image.",
       "maskot": false,
       "jenis_visual": "gambar",
@@ -121,7 +121,7 @@
       "set": "perumahan malam generik (rumah + rusun kecil, jendela hangat) -> papan gabus dengan 4 kartu dugaan tertutup",
       "tebe": "-",
       "aksi": "10,2 kamera keluar jendela; 11,0 selimut di beberapa jendela tersentak bergantian; 13,0 'hypnic jerk' papan gabus; 14,6 kartu bergoyang; 15,6 'POHON' satu kartu terbalik sekilas (siluet pohon) lalu tertutup",
-      "catatan_yoga": "OPEN LOOP: pohon cuma terlihat <=0,6 dtk. 'Sebagian besar' = beberapa jendela saja, jangan semua jendela."
+      "catatan_yoga": "OPEN LOOP: pohon cuma terlihat <=0,6 dtk. 'Sebagian besar' = beberapa jendela saja, jangan semua jendela. R1 (Laras): hanya kartu 1 (otot) & 2 (pohon) yang punya isi; kartu 3-4 tidak pernah menampilkan gambar apa pun."
     },
     {
       "no": 4,
@@ -140,8 +140,8 @@
     {
       "no": 5,
       "narasi": "Otakmu salah baca, dikira kamu lagi jatuh. DUG, badan disentak. Kayak satpam kaget lihat bayangan sendiri.",
-      "teks_layar": "OTAK SALAH BACA",
-      "catatan_teks": "'SALAH BACA' saat 'salah baca' -> 'DUG!' besar 0,5 dtk -> 'SATPAM' kecil saat canda. 'DUGAAN 1' masih di pojok.",
+      "teks_layar": "OTAK SALAH BACA?",
+      "catatan_teks": "R1 (saran Laras): 'OTAK SALAH BACA?' DENGAN tanda tanya saat 'salah baca' (hedge terbaca tanpa suara) -> 'DUG!' besar 0,5 dtk -> 'SATPAM' kecil saat canda. 'DUGAAN 1' masih di pojok.",
       "visual": "Inside the head: a cute generic cartoon brain (pink-coral, no medical labels) watches a dashboard where a needle drops toward a little 'falling' icon (a tiny stick figure falling), the brain's eyes widen, it slams a big red button; 'DUG': hard shake, Tebe's whole body jolts up off the mattress with impact lines and the pillow pops into the air (pattern interrupt); then the brain appears wearing a tiny security-guard cap holding a flashlight in a dark corridor, it sees its own shadow on the wall, jumps and drops the flashlight (funny beat); flat style without black outlines; no text in the image.",
       "maskot": false,
       "jenis_visual": "gambar",
@@ -163,7 +163,7 @@
       "set": "aset-set.js BARU `hutan-purba-malam`: pohon raksasa, dahan tebal, sosok manusia purba generik (BUKAN kera), cahaya bulan amber, daun krem, buah koral; lonceng alarm kartun terbang ke kamar modern",
       "tebe": "REAKSI 1: meringkuk di dahan, melorot, tersentak memeluk dahan, jambul '!'",
       "aksi": "27,0 kartu 2 terbalik -> hutan purba; 28,4 sosok purba tidur di dahan; 30,0 'POHON' kamera naik ke Tebe di dahan; 31,6 'Lemas' lengan Tebe lepas, melorot; 32,8 'jatuh beneran' Tebe tersentak memeluk dahan; 34,4 'SISA alarmnya' lonceng berdering lalu terbang ke kamar modern",
-      "catatan_yoga": "Label 'DUGAAN 2' wajib terlihat. Manusia purba = siluet manusia sederhana, jangan kera/monyet (larangan riset). Tanpa jatuh beneran sampai cedera."
+      "catatan_yoga": "Label 'DUGAAN 2' wajib terlihat. Manusia purba = siluet manusia sederhana, jangan kera/monyet (larangan riset). R1 (Laras): 'ya jatuh beneran' masih bagian TEORI -> tidak ada sosok (purba maupun Tebe) yang jatuh ke tanah, cedera, berdarah, atau kesakitan; paling jauh melorot lalu memeluk dahan. Jangan beri kesan 'terbukti' (tanpa centang/stempel benar, tanpa fosil/bukti ilmiah); label 'DUGAAN 2' terlihat sepanjang adegan."
     },
     {
       "no": 7,
