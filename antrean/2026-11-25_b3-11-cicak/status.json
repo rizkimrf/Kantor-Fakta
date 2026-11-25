@@ -1,29 +1,29 @@
 {
- "tahap": "produksi",
- "topik": "b3-11 cicak nggak jatuh dari langit-langit",
- "seri": "B",
- "pilar": "Alam & hewan aneh",
- "dibuat": "2026-11-25T21:44",
- "riwayat": [
-  {
-   "tahap": "pilih",
-   "oleh": "Raka",
-   "waktu": "2026-11-25",
-   "hasil": "LANJUT 16/20"
-  },
-  {
-   "tahap": "naskah",
-   "oleh": "Nadia",
-   "waktu": "2026-11-25",
-   "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt; hook #2 mitos vs fakta + loop #26; 106 kata ±48 dtk; skor naskah 8/9, viral 8/10"
-  },
-  {
-   "waktu": "2026-11-26T08:30+08:00",
-   "oleh": "Pak Bima",
-   "catatan": "cek_fakta LULUS (R1) -> produksi"
-  }
- ],
- "masalah": null,
- "jadwal_tayang": "2026-11-27T18:00:00+08:00",
- "skor_manajer": 8
+  "tahap": "produksi",
+  "topik": "b3-11 cicak nggak jatuh dari langit-langit",
+  "seri": "B",
+  "pilar": "Alam & hewan aneh",
+  "dibuat": "2026-11-25T21:44",
+  "riwayat": [
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "waktu": "2026-11-25",
+      "hasil": "LANJUT 16/20"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "waktu": "2026-11-25",
+      "hasil": "R0: naskah.json + naskah_baca.txt + naskah_suara.txt; hook #2 mitos vs fakta + loop #26; 106 kata ±48 dtk; skor naskah 8/9, viral 8/10"
+    },
+    {
+      "waktu": "2026-11-26T08:30+08:00",
+      "oleh": "Pak Bima",
+      "catatan": "cek_fakta LULUS (R1) -> produksi"
+    }
+  ],
+  "masalah": null,
+  "jadwal_tayang": "2026-11-27T18:00:00+08:00",
+  "skor_manajer": 8
 }
