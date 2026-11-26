@@ -1,5 +1,5 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "panjang pedas dan sambal",
   "dibuat": "2026-11-27T05:55",
   "riwayat": [
@@ -8,6 +8,12 @@
       "oleh": "Laras",
       "tanggal": "2026-11-26",
       "hasil": "riset.md selesai, skor 9/10, 7 bab (susu vs air, Scoville/Pepper X, tiga jenis pedas+andaliman, pedas Asia baru+hipotesis antimikroba, mekanisme 'kebal', cabai-jamur-burung, tupai kebal). ±85% baru dari i-005/B-01. Sumber 2+ per bab kecuali 3 butir ditandai lemah; teks penuh jurnal terblokir (pmc/guinness/cornell/gmu). Nol klaim kesehatan."
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "tanggal": "2026-11-26",
+      "hasil": "LANJUT 16/20; rencana_marketing.md + seo.md (kata kunci 'kenapa pedas itu sakit', volume tanpa data; pesaing hanya artikel). Judul rekomendasi 57 huruf, sampul 16:9 biru tua+oranye 'KEBAL PEDAS?', urutan bab usul (B5 maju, B4 dipangkas), Shorts terkait i-005 & B-01, chapter & tag. Waspada: jangan klaim 'air memperburuk'."
     }
   ],
   "masalah": null,
