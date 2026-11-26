@@ -20,6 +20,12 @@
       "oleh": "Nadia",
       "tanggal": "2026-11-26",
       "hasil": "R0: naskah.json (format panjang, 16:9, 54 adegan, 9 chapter) + naskah_baca.txt + naskah_suara.txt; hook #22 pilih kubu 'Kepedasan seblak, kamu nyambar air atau SUSU? Eh, tapi kenapa pedas itu SAKIT, ya?' + janji #3 mamalia + loop #26; ±1.375 kata, ±8.900-9.100 huruf suara (perkiraan manual), narasi ±9:50 + layar akhir ≈ 10:10; isi baru ±95%; skor naskah 8/9, viral 8/10. Urutan bab ikut Raka (baris Pak Bima kosong). Judul utama = rekomendasi Raka; opsi 2 'Hewan Kebal' diajukan untuk cek_seo."
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "tanggal": "2026-11-26",
+      "hasil": "cek_seo.md: 3 WAJIB ke Nadia (judul final opsi 2 '...& Hewan Kebal'; teks sampul ganti 'KOK DIA SANTAI?'; pangkas ±303 huruf: A43, kalimat awal A25, dua kalimat awal A42, 'rem CEPAT' A27 -> ≤9.000) + 1 wajib pra-unggah (chapter dikoreksi dari render final). Kata kunci terucap ±4-5 dtk (batas, saran). Tahap tidak diubah."
     }
   ],
   "masalah": null,
