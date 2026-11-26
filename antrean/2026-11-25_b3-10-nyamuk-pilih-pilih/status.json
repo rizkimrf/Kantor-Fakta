@@ -1,5 +1,5 @@
 {
- "tahap": "menunggu_persetujuan",
+ "tahap": "disetujui",
  "topik": "b3-10 nyamuk pilih-pilih",
  "seri": "B",
  "jalur": "B",
@@ -31,6 +31,12 @@
    "waktu": "2026-11-26T06:30+08:00",
    "oleh": "Pak Bima",
    "catatan": "review LULUS -> menunggu_persetujuan"
+  },
+  {
+   "dari": "menunggu_persetujuan",
+   "ke": "disetujui",
+   "oleh": "Bos (Kantor Visual HP)",
+   "waktu": "2026-11-26T02:31:04Z"
   }
  ],
  "masalah": null,

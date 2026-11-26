@@ -1,5 +1,5 @@
 {
- "tahap": "menunggu_persetujuan",
+ "tahap": "disetujui",
  "seri": "A",
  "pilar": "Benda & kebiasaan sehari-hari",
  "topik": "a3-04 panci presto",
@@ -32,6 +32,12 @@
    "waktu": "2026-11-26T09:00+08:00",
    "oleh": "Pak Bima",
    "catatan": "review LULUS -> menunggu_persetujuan"
+  },
+  {
+   "dari": "menunggu_persetujuan",
+   "ke": "disetujui",
+   "oleh": "Bos (Kantor Visual HP)",
+   "waktu": "2026-11-26T02:31:08Z"
   }
  ],
  "masalah": null,

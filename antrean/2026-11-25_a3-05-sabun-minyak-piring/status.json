@@ -1,5 +1,5 @@
 {
-  "tahap": "disetujui",
+  "tahap": "terjadwal",
   "topik": "a3-05 sabun minyak piring",
   "dibuat": "2026-11-25T05:43",
   "riwayat": [
@@ -62,6 +62,11 @@
       "ke": "disetujui",
       "oleh": "Bos (Kantor Visual HP)",
       "waktu": "2026-11-25T02:48:14Z"
+    },
+    {
+      "waktu": "2026-11-26T12:49+08:00",
+      "oleh": "Raka",
+      "catatan": "/terbitkan: TikTok inbox OK (menunggu Bos tekan Posting); Instagram GAGAL izin token Halaman -> manual Bos; YouTube manual Bos (audit)"
     }
   ],
   "masalah": null,
@@ -76,6 +81,15 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7712337405197502516",
+      "waktu": "2026-11-26T12:49+08:00"
+    },
+    "instagram": {
+      "gagal": 2,
+      "error": "400 OAuthException code 190: izin Halaman Facebook belum diberikan ke token",
+      "catatan": "unggah manual - Instagram API gagal izin token Halaman (pages_read_engagement dll), masalah berulang sejak 23 Nov"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
- "tahap": "menunggu_persetujuan",
+ "tahap": "disetujui",
  "topik": "b3-05 tersentak mau tidur",
  "seri": "B",
  "pilar": "Sains & tubuh manusia",
@@ -22,6 +22,12 @@
    "waktu": "2026-11-26T09:30+08:00",
    "oleh": "Pak Bima",
    "catatan": "review LULUS -> menunggu_persetujuan"
+  },
+  {
+   "dari": "menunggu_persetujuan",
+   "ke": "disetujui",
+   "oleh": "Bos (Kantor Visual HP)",
+   "waktu": "2026-11-26T02:31:06Z"
   }
  ],
  "masalah": null,
