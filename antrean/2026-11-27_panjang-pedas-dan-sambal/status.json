@@ -1,8 +1,15 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "panjang pedas dan sambal",
   "dibuat": "2026-11-27T05:55",
-  "riwayat": [],
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "tanggal": "2026-11-26",
+      "hasil": "riset.md selesai, skor 9/10, 7 bab (susu vs air, Scoville/Pepper X, tiga jenis pedas+andaliman, pedas Asia baru+hipotesis antimikroba, mekanisme 'kebal', cabai-jamur-burung, tupai kebal). ±85% baru dari i-005/B-01. Sumber 2+ per bab kecuali 3 butir ditandai lemah; teks penuh jurnal terblokir (pmc/guinness/cornell/gmu). Nol klaim kesehatan."
+    }
+  ],
   "masalah": null,
   "format": "panjang",
   "jadwal_tayang": "2026-11-29T19:00:00+08:00",

@@ -1,5 +1,5 @@
 {
-  "tahap": "pilih",
+  "tahap": "naskah",
   "topik": "a3-07 remote tv dan kamera hp",
   "dibuat": "2026-11-27T05:55",
   "riwayat": [
@@ -8,6 +8,12 @@
       "oleh": "Laras",
       "tanggal": "2026-11-26",
       "hasil": "riset.md lolos 9/10; rantai IR remote >=2 sumber (UCL, HowStuffWorks, Adafruit/SparkFun, Sony support); kamera HP 'bisa', beda tiap HP, kamera depan 'sering' lebih jelas (Sony, Carolina, Instructables); teks penuh sumber belum dibuka (fetch diblokir)"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "tanggal": "2026-11-26",
+      "hasil": "LANJUT 16/20; rencana_marketing.md + seo.md (kata kunci 'cek remote TV pakai kamera HP'); judul rek. 'Remote TV Dilihat Lewat Kamera HP, Ada yang Berkedip'; penutup SOFA/MEJA/KASUR/LACI; ≤50 dtk, kejutan ≤ dtk 7; peringatan pilar Benda ±47% (>40%)"
     }
   ],
   "masalah": null,
