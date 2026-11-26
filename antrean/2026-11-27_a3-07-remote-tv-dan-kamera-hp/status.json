@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "a3-07 remote tv dan kamera hp",
   "dibuat": "2026-11-27T05:55",
   "riwayat": [
@@ -14,8 +14,15 @@
       "oleh": "Raka",
       "tanggal": "2026-11-26",
       "hasil": "LANJUT 16/20; rencana_marketing.md + seo.md (kata kunci 'cek remote TV pakai kamera HP'); judul rek. 'Remote TV Dilihat Lewat Kamera HP, Ada yang Berkedip'; penutup SOFA/MEJA/KASUR/LACI; ≤50 dtk, kejutan ≤ dtk 7; peringatan pilar Benda ±47% (>40%)"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-26",
+      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt R0; hook #3 mustahil tapi nyata 'Pencet remote TV, ujungnya GELAP. Tapi lewat kamera HP... ada yang BERKEDIP.' (beda 5 terakhir & Otak beku #1); kejutan 'nembak CAHAYA' ±6 dtk; open loop BOCOR dibayar ±26 dtk; hedge umumnya/sering/tiap HP beda, tanpa nm/kHz/servis; penutup SOFA/MEJA/KASUR/LACI + 'Tag si PENGUASA remote' + loop; 107 kata ±49 dtk; skor 8/9, viral 8/10; judul 'Remote TV Dilihat Lewat Kamera HP, Ada yang Berkedip'"
     }
   ],
+  "pola_hook": "#3 + loop #26",
   "masalah": null,
   "seri": "A",
   "jadwal_tayang": "2026-11-28T13:00:00+08:00",

@@ -1,7 +1,7 @@
 """Audio B3-11 cicak nggak jatuh (Yoga, 26 Nov 2026) — 100% sintesis sendiri (numpy), tanpa sampel unduhan / rekaman.
 Pemakaian: python scripts/buat_sfx_cicak.py   (file yang sudah ada tidak ditimpa; benih acak tetap → hasil identik)
 Keluaran:
-  aset/sfx/tokek.wav            panggilan "to-KEK!" kartun (denyut glotal + 2 formant, BUKAN rekaman tokek asli) 0,75 dtk
+  aset/sfx/tokek.wav            panggilan "to-KEK!" kartun (denyut glotal + 2 formant, BUKAN rekaman tokek asli) 0,42 dtk
   aset/sfx/receh.wav            hujan koin kartun (denting inharmonik acak makin rapat) + "BRUK" karung di akhir, 1,4 dtk
   aset/musik/langit-langit.wav  latar jenaka malam: pluk marimba + bas petik + pad tosca lembut C–Am–Dm–G, melodi gubahan Yoga,
                                 1 putaran = DURASI_VIDEO/5 → video 50,0 dtk = tepat 5 putaran (loop akhir→awal menyambung)
@@ -57,10 +57,11 @@ def suku(lama, f0, f0_akhir, formant, keras):
 
 
 def tokek():
-    to = suku(0.20, 150, 135, [(520, 120, 1.0), (950, 160, .6)], .5)
-    kek = suku(0.36, 210, 165, [(700, 140, 1.0), (1500, 220, .7), (2600, 300, .25)], .9)
+    # dibuat pendek (±0,42 dtk) supaya muat di celah narasi sesudah kata "tokek" (tidak menutupi kata)
+    to = suku(0.12, 150, 135, [(520, 120, 1.0), (950, 160, .6)], .5)
+    kek = suku(0.22, 210, 165, [(700, 140, 1.0), (1500, 220, .7), (2600, 300, .25)], .9)
     klik = np.zeros(int(0.012 * SR)); klik[:40] = rng.standard_normal(40)
-    y = np.concatenate([to, np.zeros(int(0.07 * SR)), klik * .5, kek, np.zeros(int(0.1 * SR))])
+    y = np.concatenate([to, np.zeros(int(0.04 * SR)), klik * .5, kek, np.zeros(int(0.03 * SR))])
     return y
 
 

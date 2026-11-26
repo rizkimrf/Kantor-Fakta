@@ -1,5 +1,5 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "b4-01 otak beku makan es",
   "dibuat": "2026-11-27T05:55",
   "riwayat": [
@@ -14,8 +14,15 @@
       "oleh": "Raka",
       "tanggal": "2026-11-26",
       "hasil": "LANJUT 17/20; rencana_marketing.md + seo.md (kata kunci 'kenapa makan es bikin sakit kepala'); judul rek. 'Kenapa Makan Es Bikin Dahi Sakit? Yang Kena Bukan Otakmu'; penutup GIGIT/JILAT; tanpa tips; pilar Sains ±32% aman"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-26",
+      "hasil": "naskah.json + naskah_baca.txt + naskah_suara.txt R0; hook #1 kamu salah 'Sedot es teh kenceng, DAHI langsung nyut. Otakmu BEKU? Bukan.' (DAHI ±1,2 dtk; beda 5 terakhir & Remote #3); kejutan 'langit-langit MULUT' ±6 dtk + 'jaringan otakmu sendiri nggak punya SENSOR sakit'; trigeminal + 'Diduga, otak salah BACA' + kurir salah ALAMAT; tersangka KEDUA 'satu studi kecil' aliran darah; 'Ahli masih BELUM sepakat'; tanpa tips/angka relawan/migrain; penutup GIGIT/JILAT + loop; 105 kata ±47-48 dtk; skor 8/9, viral 9/10; judul 'Kenapa Makan Es Bikin Dahi Sakit? Yang Kena Bukan Otakmu'. Catatan untuk Raka: frasa kata kunci utama terucap ±6,5-8,5 dtk (versi lisan es teh + DAHI nyut ≤2 dtk)"
     }
   ],
+  "pola_hook": "#1 + loop #26",
   "masalah": null,
   "seri": "B",
   "jadwal_tayang": "2026-11-28T18:00:00+08:00",
