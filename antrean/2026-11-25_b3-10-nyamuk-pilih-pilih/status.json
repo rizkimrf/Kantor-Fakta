@@ -1,49 +1,62 @@
 {
- "tahap": "disetujui",
- "topik": "b3-10 nyamuk pilih-pilih",
- "seri": "B",
- "jalur": "B",
- "pilar": "Alam & hewan aneh",
- "dibuat": "2026-11-25T05:43",
- "jadwal_usulan": "2026-11-25T19:45:00+08:00",
- "riwayat": [
-  "2026-11-25 Laras: riset.md selesai, skor Faktor Ternyata 8/10, tahap ide -> pilih",
-  "2026-11-25 Raka: LANJUT 17/20; rencana_marketing.md + seo.md selesai, tahap pilih -> naskah",
-  "2026-11-25 Nadia: naskah.json (seri fakta, 8 adegan, 127 kata, ±55-56 dtk) + naskah_baca.txt + naskah_suara.txt (5 tag) + unggah.json + paket_unggah.md + baris Nadia di lembar_tim.md. Hook #10 keputusan rapat + 'NYAMUK datang' (nyamuk ±1,7 dtk, kata kunci ±4,7 dtk), tanpa klaim teman tidak digigit; kejutan selesai ±13,8 dtk; kejutan terbesar akhir 'satu magnet dipantau beberapa tahun... tetap MAGNET' (±45-47 dtk); judul usulan 'Kenapa Nyamuk Suka Gigit Kamu? Ini Bukan Kebetulan' (50); skor naskah 8/9, viral 8/10; tahap naskah -> cek_seo",
-  "2026-11-25 Raka: cek_seo.md selesai, LOLOS tanpa butir wajib; judul final = opsi 1 Nadia; judul_final ditambahkan ke unggah.json; tahap TIDAK diubah (menunggu Laras cek riset)",
-  "2026-11-25 Laras: cek_riset.md selesai (2 WAJIB: caption IG 'tetap magnet sampai beberapa tahun' tanpa 'satu relawan'; komentar tersemat eLife belum terverifikasi 2 sumber; + 6 saran). Tahap tidak diubah.",
-  "2026-11-25 Nadia R1 (satu kali): 2 WAJIB Laras dikerjakan (caption IG 'satu relawan magnet yang dipantau beberapa tahun tetap magnet'; komentar tersemat tanpa fakta eLife = pertanyaan KAMU/DIA + ajakan tag; link eLife dicabut dari deskripsi). Saran keputusan Pak Bima: adegan 7 'kadar zat itu TETAP tinggi, lebih dari setahun'; adegan 6 'Ada SATU yang zatnya tinggi, tapi nyamuknya cuek'; TikTok 'sering'; IG baris 1 usulan Raka; deskripsi + 'nyamuk Aedes aegypti di lab' (+ studi kembar relawan perempuan). Penyeimbang durasi: buang 'Masalahnya,', 'sarung', 'Malah' -> tetap 127 kata, ±55-56,5 dtk (<=57). Judul final opsi 1 tetap. Hook, kejutan, loop, sampul tidak berubah; skor tetap 8/9 & viral 8/10. Sinkron: naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md. Tahap -> cek_fakta",
-  {
-   "dari": "cek_fakta",
-   "ke": "produksi",
-   "oleh": "Pak Bima",
-   "waktu": "2026-11-25T05:58+08:00",
-   "hasil": "cek_fakta LULUS setelah R1 (2 WAJIB Laras), skor 8/9, viral 9/10; jadwal Rab 25 Nov 19.45 bila disetujui sebelum 19.32, cadangan Kam 26 Nov 19.45"
-  },
-  {
-   "dari": "produksi",
-   "ke": "review",
-   "oleh": "Yoga",
-   "waktu": "2026-11-25T21:50+08:00",
-   "hasil": "final.mp4 54,6 dtk 17,8 MB; cek_mulus LULUS (setelah sapuan siang-malam babak 7 dilembutkan); cek_video LULUS; thumbnail.png = frame 0; jadwal dipindah ke Kam 26 Nov 18.00 (slot 19.45 terlewat)"
-  },
-  {
-   "waktu": "2026-11-26T06:30+08:00",
-   "oleh": "Pak Bima",
-   "catatan": "review LULUS -> menunggu_persetujuan"
-  },
-  {
-   "dari": "menunggu_persetujuan",
-   "ke": "disetujui",
-   "oleh": "Bos (Kantor Visual HP)",
-   "waktu": "2026-11-26T02:31:04Z"
+  "tahap": "disetujui",
+  "topik": "b3-10 nyamuk pilih-pilih",
+  "seri": "B",
+  "jalur": "B",
+  "pilar": "Alam & hewan aneh",
+  "dibuat": "2026-11-25T05:43",
+  "jadwal_usulan": "2026-11-25T19:45:00+08:00",
+  "riwayat": [
+    "2026-11-25 Laras: riset.md selesai, skor Faktor Ternyata 8/10, tahap ide -> pilih",
+    "2026-11-25 Raka: LANJUT 17/20; rencana_marketing.md + seo.md selesai, tahap pilih -> naskah",
+    "2026-11-25 Nadia: naskah.json (seri fakta, 8 adegan, 127 kata, ±55-56 dtk) + naskah_baca.txt + naskah_suara.txt (5 tag) + unggah.json + paket_unggah.md + baris Nadia di lembar_tim.md. Hook #10 keputusan rapat + 'NYAMUK datang' (nyamuk ±1,7 dtk, kata kunci ±4,7 dtk), tanpa klaim teman tidak digigit; kejutan selesai ±13,8 dtk; kejutan terbesar akhir 'satu magnet dipantau beberapa tahun... tetap MAGNET' (±45-47 dtk); judul usulan 'Kenapa Nyamuk Suka Gigit Kamu? Ini Bukan Kebetulan' (50); skor naskah 8/9, viral 8/10; tahap naskah -> cek_seo",
+    "2026-11-25 Raka: cek_seo.md selesai, LOLOS tanpa butir wajib; judul final = opsi 1 Nadia; judul_final ditambahkan ke unggah.json; tahap TIDAK diubah (menunggu Laras cek riset)",
+    "2026-11-25 Laras: cek_riset.md selesai (2 WAJIB: caption IG 'tetap magnet sampai beberapa tahun' tanpa 'satu relawan'; komentar tersemat eLife belum terverifikasi 2 sumber; + 6 saran). Tahap tidak diubah.",
+    "2026-11-25 Nadia R1 (satu kali): 2 WAJIB Laras dikerjakan (caption IG 'satu relawan magnet yang dipantau beberapa tahun tetap magnet'; komentar tersemat tanpa fakta eLife = pertanyaan KAMU/DIA + ajakan tag; link eLife dicabut dari deskripsi). Saran keputusan Pak Bima: adegan 7 'kadar zat itu TETAP tinggi, lebih dari setahun'; adegan 6 'Ada SATU yang zatnya tinggi, tapi nyamuknya cuek'; TikTok 'sering'; IG baris 1 usulan Raka; deskripsi + 'nyamuk Aedes aegypti di lab' (+ studi kembar relawan perempuan). Penyeimbang durasi: buang 'Masalahnya,', 'sarung', 'Malah' -> tetap 127 kata, ±55-56,5 dtk (<=57). Judul final opsi 1 tetap. Hook, kejutan, loop, sampul tidak berubah; skor tetap 8/9 & viral 8/10. Sinkron: naskah.json, naskah_baca.txt, naskah_suara.txt, unggah.json, paket_unggah.md. Tahap -> cek_fakta",
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-25T05:58+08:00",
+      "hasil": "cek_fakta LULUS setelah R1 (2 WAJIB Laras), skor 8/9, viral 9/10; jadwal Rab 25 Nov 19.45 bila disetujui sebelum 19.32, cadangan Kam 26 Nov 19.45"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-25T21:50+08:00",
+      "hasil": "final.mp4 54,6 dtk 17,8 MB; cek_mulus LULUS (setelah sapuan siang-malam babak 7 dilembutkan); cek_video LULUS; thumbnail.png = frame 0; jadwal dipindah ke Kam 26 Nov 18.00 (slot 19.45 terlewat)"
+    },
+    {
+      "waktu": "2026-11-26T06:30+08:00",
+      "oleh": "Pak Bima",
+      "catatan": "review LULUS -> menunggu_persetujuan"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "oleh": "Bos (Kantor Visual HP)",
+      "waktu": "2026-11-26T02:31:04Z"
+    }
+  ],
+  "masalah": null,
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-26T18:00:00+08:00",
+  "video_asset_id": "47a71f992f1f6d41244ce3ba707de13f",
+  "thumb_asset_id": "11abb110f1c5dab0edae7f74cb2fdf12",
+  "video_url": "/_blob/47a71f992f1f6d41244ce3ba707de13f",
+  "thumb_url": "/_blob/11abb110f1c5dab0edae7f74cb2fdf12",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7712414858737764353",
+      "waktu": "2026-11-26T17:49+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "error": "asli (17391 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re || aman (17391 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re || aman-minimal (17391 KB): 400 https://graph.facebook.com/v21.0/17841450565055831/media: b'{\"error\":{\"message\":\"Any of the pages_read_engagement, pages_manage_metadata,\\\\n        pages_re"
+    }
   }
- ],
- "masalah": null,
- "skor_manajer": 8,
- "jadwal_tayang": "2026-11-26T18:00:00+08:00",
- "video_asset_id": "47a71f992f1f6d41244ce3ba707de13f",
- "thumb_asset_id": "11abb110f1c5dab0edae7f74cb2fdf12",
- "video_url": "/_blob/47a71f992f1f6d41244ce3ba707de13f",
- "thumb_url": "/_blob/11abb110f1c5dab0edae7f74cb2fdf12"
 }
