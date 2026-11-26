@@ -412,9 +412,9 @@ ${b > 0 ? `<path d="M60 -60 L${f1(60 - 120 * b)} ${f1(-60 + 120 * b)}" stroke="$
   }
 
   // ---------- layar terbelah: kupas jari & kupas stiker (pandangan samping) ----------
-  function jalurKupas(x0, y0, L, k, arah, n = 20) {
+  function jalurKupas(x0, y0, L, k, arah, n = 20, maks = 70) {
     // strip sepanjang permukaan dari x0 ke x0+L, terkelupas dari UJUNG (x0+L) ke belakang; arah: +1 menjauh ke bawah, −1 ke atas
-    const d = L * k, pf = x0 + L - d, sudut = 20 + 70 * k, r = (sudut * Math.PI) / 180, pts = [];
+    const d = L * k, pf = x0 + L - d, sudut = 20 + maks * k, r = (sudut * Math.PI) / 180, pts = [];
     for (let i = 0; i <= n; i++) {
       const s = (L * i) / n, x = x0 + s;
       if (x <= pf) pts.push([x, y0]);
@@ -448,14 +448,15 @@ ${b > 0 ? `<path d="M60 -60 L${f1(60 - 120 * b)} ${f1(-60 + 120 * b)}" stroke="$
     const k = o.k || 0;
     let out = `<g transform="translate(${f1(x)} ${f1(y)}) scale(${f3(s)})">`;
     out += `<rect x="-520" y="0" width="1040" height="420" rx="30" fill="${C.FUCHSIA2}"/><rect x="-520" y="0" width="1040" height="30" rx="14" fill="${C.FUCHSIA}"/><rect x="-520" y="380" width="1040" height="40" fill="${C.FUCHSIA3}"/>`;
-    const pts = jalurKupas(-200, -12, 400, k, -1);
+    const pts = jalurKupas(-150, -12, 300, k * 0.75, -1, 20, 40);
     out += `<path d="M${pts.map((p) => f1(p[0]) + " " + f1(p[1])).join(" L")}" stroke="${C.KUNING}" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
     out += `<path d="M${pts.slice(0, 1 + Math.floor(pts.length * (1 - k))).map((p) => f1(p[0]) + " " + f1(p[1] + 4)).join(" L")}" stroke="#E5A91A" stroke-width="8" fill="none" stroke-linecap="round" opacity=".7"/>`;
     const e = pts[pts.length - 1];
-    // tangan (jempol + telunjuk) menjepit ujung
-    out += `<g transform="translate(${f1(e[0])} ${f1(e[1])}) rotate(${f1(-20 - 60 * k)})"><path d="M10 -10 Q120 -40 220 -10 L220 60 Q120 70 30 30Z" fill="${C.KULIT}"/>
-<path d="M0 -6 Q20 -40 60 -36" stroke="${C.KULIT2}" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M6 10 Q40 30 80 26" stroke="${C.KULIT2}" stroke-width="20" fill="none" stroke-linecap="round"/>
-<ellipse cx="60" cy="-36" rx="14" ry="10" fill="#FBE6D2"/></g>`;
+    // tangan (jempol + telunjuk) menjepit ujung, datang dari kanan atas
+    const ra = -25 - 25 * k;
+    out += `<g transform="translate(${f1(e[0])} ${f1(e[1])}) rotate(${f1(ra)})"><path d="M18 -34 Q120 -70 260 -40 L270 50 Q150 70 40 34 Q10 20 18 -34Z" fill="${C.KULIT}"/>
+<path d="M30 -28 Q0 -30 -6 -4" stroke="${C.KULIT}" stroke-width="30" fill="none" stroke-linecap="round"/><path d="M36 26 Q4 24 -2 6" stroke="${C.KULIT2}" stroke-width="26" fill="none" stroke-linecap="round"/>
+<ellipse cx="-6" cy="-8" rx="10" ry="8" fill="#FBE6D2"/><path d="M90 -44 Q110 -10 96 30" stroke="${C.KULIT2}" stroke-width="5" fill="none" opacity=".6"/></g>`;
     return out + `</g>`;
   }
 
