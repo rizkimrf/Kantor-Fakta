@@ -41,7 +41,7 @@ const cap=(txt,T,a,b,o={})=>{const kk=halus(lin(T,a-.05,a+.2))*(1-halus(lin(T,b-
  return `<div class="abs" style="left:90px;width:900px;top:${o.y||268}px;text-align:center;transform:rotate(${o.rot??-2}deg) scale(${(.86+.14*kk).toFixed(3)});opacity:${kk.toFixed(3)}"><span style="display:inline-block;max-width:880px;padding:6px 30px 12px;border:8px solid ${o.warna||C.FUCHSIA};border-radius:24px;background:${o.bg||'rgba(8,52,50,.86)'};font:700 ${o.uk||78}px/1.05 Poppins;letter-spacing:-1px;color:#FFFFFF;text-shadow:0 6px 16px rgba(0,0,0,.45)">${txt}</span>${o.kecil?`<div style="margin-top:14px;font:600 36px Poppins;color:${C.KREM};text-shadow:0 3px 8px rgba(0,0,0,.6)">${o.kecil}</div>`:''}</div>`};
 
 // ===== DUNIA KAMAR (sampul, babak 1-2, babak 6, babak 8 akhir) =====
-const BARING={cx:330,cy:1362,rot:-90,w:400};
+const BARING={cx:330,cy:1318,rot:-90,w:400};
 const CK0={x:705,y:735,s:1.22,rot:212};
 const TANGAN_BAWAH={tanganK:[134,412],tanganN:[266,412],bentukK:'kepal',bentukN:'kepal',tekukK:1,tekukN:-1};
 const ATS=tebeAnimasi([{t:0,pose:'kaget'}],{benih:3});
@@ -63,7 +63,7 @@ function kamarScene(T,st){
  const t=st.tb;let tebeHtml=t?tebeDi(t.p,t.cx,t.cy,(t.w||BARING.w),t.rot,t.extra||''):'';
  let ov=A.selimut(T,{tepi:st.sel.tepi,cy:BARING.cy,angkat:st.sel.angkat,fase:st.sel.fase});
  if(st.hp&&st.hp.a>0)ov+=`<g opacity="${st.hp.a.toFixed(3)}">${A.hp(st.hp.x,st.hp.y,st.hp.s,st.hp.rot,{tag:st.hp.tag})}</g>`;
- if(st.panah>0){const f=A.posKaki(0,c.x,c.y,c.s,c.rot);ov+=A.panahMerah(Math.round(f[0]-30),Math.round(f[1]+70),300,1236,st.panah)}
+ if(st.panah>0){const f=A.posKaki(0,c.x,c.y,c.s,c.rot);ov+=A.panahMerah(Math.round(f[0]-30),Math.round(f[1]+70),300,1192,st.panah)}
  // debu jatuh dari langit-langit melewati kamera
  if(st.debu>=0&&st.debu<1){const u=st.debu,x=lerp(640,560,u),y=lerp(760,1700,u*u),r=lerp(6,40,u*u);ov+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="${C.KREM}" opacity="${(.9*(1-u*.6)).toFixed(3)}"/>`}
  return latar(C.TOSCA2)+kamera(svgBesar(bg+pl,st.blur||0)+tebeHtml+svgW(ov),st.cam)}

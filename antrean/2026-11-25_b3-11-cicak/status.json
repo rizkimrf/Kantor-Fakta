@@ -1,5 +1,5 @@
 {
-  "tahap": "produksi",
+  "tahap": "review",
   "topik": "b3-11 cicak nggak jatuh dari langit-langit",
   "seri": "B",
   "pilar": "Alam & hewan aneh",
@@ -21,6 +21,13 @@
       "waktu": "2026-11-26T08:30+08:00",
       "oleh": "Pak Bima",
       "catatan": "cek_fakta LULUS (R1) -> produksi"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-26T23:30+08:00",
+      "hasil": "final.mp4 50,0 dtk 12,6 MB; cek_mulus LULUS; cek_video LULUS; thumbnail.png = frame 0 (BUKAN LEM!, tosca+fuchsia); narasi lama dipakai (0 kredit ElevenLabs); set baru studio-aset/aset-cicak.js; musik & SFX sintesis sendiri (scripts/buat_sfx_cicak.py)"
     }
   ],
   "masalah": null,

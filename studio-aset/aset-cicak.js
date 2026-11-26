@@ -44,7 +44,7 @@
   const rotP = (p, deg) => { const r = (deg * Math.PI) / 180, c = Math.cos(r), s = Math.sin(r); return [p[0] * c - p[1] * s, p[0] * s + p[1] * c]; };
 
   // ---------- kamar malam (koordinat layar 1080x1920 + margin) ----------
-  const KAMAR = { plafon: 1010, kasur: 1400, bantal: [190, 1372] };
+  const KAMAR = { plafon: 1010, kasur: 1356, bantal: [190, 1328] };
   function kamar(t = 0, o = {}) {
     let s = `<defs><radialGradient id="ckLampu" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="${C.FUCHSIA}" stop-opacity=".55"/><stop offset="1" stop-color="${C.FUCHSIA}" stop-opacity="0"/></radialGradient>
 <radialGradient id="ckPlafon" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="${C.TOSCA1}" stop-opacity=".55"/><stop offset="1" stop-color="${C.TOSCA1}" stop-opacity="0"/></radialGradient></defs>`;

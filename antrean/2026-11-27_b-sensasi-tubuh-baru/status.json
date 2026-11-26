@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "b4-01 otak beku makan es",
   "dibuat": "2026-11-27T05:55",
   "riwayat": [
@@ -32,11 +32,23 @@
       "oleh": "Laras",
       "tanggal": "2026-11-26",
       "hasil": "cek_riset.md: LULUS BERSYARAT, WAJIB 1 (caption TikTok & IG menyatakan 'salah alamat' sebagai fakta tanpa hedge 'diduga'), saran 5. EurekAlert/ScienceDaily tidak terbuka (domain diblokir); abstrak Serrador 2012 terkonfirmasi lewat ringkasan pencarian (13 relawan, Doppler; Saper menyangkal kausalitas)"
+    },
+    {
+      "tahap": "naskah_R1",
+      "oleh": "Nadia",
+      "tanggal": "2026-11-26",
+      "hasil": "R1: semua WAJIB dikerjakan. Teks layar adegan 1 'MAKAN ES = SAKIT KEPALA?' dtk 0,8 (suara hook tidak diubah), duplikat adegan 2 diganti 'YANG SAKIT: DAHI', catatan seo disesuaikan; judul utama 'Kenapa Makan Es Bikin Sakit Kepala? Bukan Otak yang Beku' (56 huruf); caption TikTok & IG di-hedge ('diduga' + 'Ahli masih belum sepakat soal mekanismenya'). Keputusan Pak Bima: 'cuma' dihapus; 'Diduga, jalurnya ketemu jalur dari DAHI. Jadi otak salah BACA...'; 'aliran darah di pembuluh otak'; thumbnail 'SAKITNYA SALAH ALAMAT?'; visual langit-langit = dingin/embun, bukan kristal es (catatan Yoga). Tetap 105 kata ±47-48 dtk (≤50). paket_unggah.md belum ada (Raka terapkan caption R1 saat menyusunnya)."
+    },
+    {
+      "waktu": "2026-11-27T07:20+08:00",
+      "oleh": "Pak Bima",
+      "catatan": "cek_fakta LULUS (R1) -> produksi"
     }
   ],
   "pola_hook": "#1 + loop #26",
   "masalah": null,
   "seri": "B",
   "jadwal_tayang": "2026-11-28T18:00:00+08:00",
-  "pilar": "Sains & tubuh manusia"
+  "pilar": "Sains & tubuh manusia",
+  "skor_manajer": 8
 }
