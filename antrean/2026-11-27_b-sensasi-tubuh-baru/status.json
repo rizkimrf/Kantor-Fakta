@@ -1,8 +1,15 @@
 {
-  "tahap": "ide",
-  "topik": "b sensasi tubuh baru",
+  "tahap": "pilih",
+  "topik": "b4-01 otak beku makan es",
   "dibuat": "2026-11-27T05:55",
-  "riwayat": [],
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "tanggal": "2026-11-26",
+      "hasil": "riset.md lolos 9/10; pilih otak beku (cold-stimulus headache): dingin di langit-langit, sakit terasa di dahi, studi Serrador 2012 (13 relawan) + Johns Hopkins/Texas A&M/BrainFacts; mekanisme dihedge; tanpa tips; penutup GIGIT/JILAT"
+    }
+  ],
   "masalah": null,
   "seri": "B",
   "jadwal_tayang": "2026-11-28T18:00:00+08:00",

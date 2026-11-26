@@ -1,8 +1,15 @@
 {
-  "tahap": "ide",
+  "tahap": "pilih",
   "topik": "a3-07 remote tv dan kamera hp",
   "dibuat": "2026-11-27T05:55",
-  "riwayat": [],
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "tanggal": "2026-11-26",
+      "hasil": "riset.md lolos 9/10; rantai IR remote >=2 sumber (UCL, HowStuffWorks, Adafruit/SparkFun, Sony support); kamera HP 'bisa', beda tiap HP, kamera depan 'sering' lebih jelas (Sony, Carolina, Instructables); teks penuh sumber belum dibuka (fetch diblokir)"
+    }
+  ],
   "masalah": null,
   "seri": "A",
   "jadwal_tayang": "2026-11-28T13:00:00+08:00",
