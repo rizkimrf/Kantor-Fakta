@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "produksi",
   "topik": "a3-07 remote tv dan kamera hp",
   "dibuat": "2026-11-27T05:55",
   "riwayat": [
@@ -32,11 +32,17 @@
       "oleh": "Laras",
       "tanggal": "2026-11-26",
       "hasil": "cek_riset.md: LULUS, WAJIB 0, saran 4 (hedge caption TikTok/IG, warna filter, tautan Sony). Sony MY tidak terbuka (domain diblokir); ringkasan Sony via pencarian tidak memuat kamera depan vs belakang, jadi 'sering' berpegang pada Carolina/Instructables"
+    },
+    {
+      "waktu": "2026-11-27T07:10+08:00",
+      "oleh": "Pak Bima",
+      "catatan": "cek_fakta LULUS (R0 + 1 hedge 'HP sering bisa' oleh Pak Bima) -> produksi"
     }
   ],
   "pola_hook": "#3 + loop #26",
   "masalah": null,
   "seri": "A",
   "jadwal_tayang": "2026-11-28T13:00:00+08:00",
-  "pilar": "Benda & kebiasaan sehari-hari"
+  "pilar": "Benda & kebiasaan sehari-hari",
+  "skor_manajer": 8
 }

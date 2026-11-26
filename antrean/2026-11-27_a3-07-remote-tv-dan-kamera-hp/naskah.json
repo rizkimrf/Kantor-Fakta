@@ -29,28 +29,101 @@
  ],
  "pola_hook": "#3 Mustahil tapi nyata: cahaya yang 'tidak ada' di mata ternyata tampak di kamera HP ('Pencet remote TV, ujungnya GELAP. Tapi lewat kamera HP... ada yang BERKEDIP.'), dibuka dari hasil yang terlihat di mata sesuai keputusan rapat & laporan/harian 26 Nov; + loop #26 ('suruh pencet ke kamera' -> 'Pencet remote TV'). Beda dari 5 video terakhir: Cicak #2, Nyamuk #10, Sabun #18, Presto #7, Tersentak #9 (juga Lupa #25, Pintu #14, Barcode #1). Terakhir dipakai Rem motor (22 Nov, >5 video lalu). Beda dari pasangan hari ini Otak beku (#1).",
  "hook_kandidat": [
-  {"tipe": "3", "teks": "Pencet remote TV, ujungnya GELAP. Tapi lewat kamera HP... ada yang BERKEDIP.", "skor": 9, "alasan": "TERPILIH. Hasil di mata (rapat), kontras gelap vs kedip terjadi di layar dalam 4 dtk, 'remote TV' +-0,5 dtk & 'kamera HP' +-3 dtk (kata kunci). 12 kata. Penonton bisa langsung mencoba = taruhan personal."},
-  {"tipe": "24", "teks": "Remote mati? Jangan buru-buru ganti, lihat dulu lewat kamera HP.", "skor": 8, "alasan": "Relatable, tapi bernada servis/diagnosis (dilarang riset & rapat) dan janji 'mati atau tidak' tidak dibayar."},
-  {"tipe": "11", "teks": "Ternyata remote TV-mu nembak cahaya tiap kamu pencet.", "skor": 8, "alasan": "Nama channel + kejutan jelas, tapi inti kejutan terbakar di dtk 0 tanpa gambar aneh."},
-  {"tipe": "20", "teks": "(kedip ungu di layar HP) Titik ini nggak pernah kelihatan di matamu.", "skor": 8, "alasan": "Visual aneh kuat, tapi kata 'remote TV' baru muncul +-3 dtk; dipakai sebagai komposisi frame 0 saja."},
-  {"tipe": "5", "teks": "Pernah pencet remote TV berkali-kali, TV-nya diam aja?", "skor": 7, "alasan": "Pengalaman nyata, tapi tanpa kejutan; terdengar seperti iklan baterai."},
-  {"tipe": "6", "teks": "Tebak: remote TV ngirim apa ke TV-mu?", "skor": 7, "alasan": "Tebak dulu sudah sering (Layar HP, Suara rekaman), terasa kuis."},
-  {"tipe": "14", "teks": "Kalau matamu kamera HP, ruang tamumu penuh kedip-kedip.", "skor": 7, "alasan": "Imajinatif, tapi #14 dipakai Pintu dan berlebihan (tidak semua cahaya rumah IR)."},
-  {"tipe": "22", "teks": "Tim pencet keras atau tim pencet berkali-kali? Remote nggak peduli.", "skor": 6, "alasan": "Lucu, tapi kubunya dibuat-buat dan tidak dibayar mekanisme."},
-  {"tipe": "21", "teks": "Aku dulu kira remote TV pakai sinyal gaib.", "skor": 6, "alasan": "Pengakuan Tebe hangat, tapi Tebe cameo dan visual dtk 0 lemah."},
-  {"tipe": "19", "teks": "Lampu paling sibuk di rumahmu ada di ujung remote.", "skor": 6, "alasan": "Klaim 'paling sibuk' tidak bersumber; ditolak."}
+  {
+   "tipe": "3",
+   "teks": "Pencet remote TV, ujungnya GELAP. Tapi lewat kamera HP... ada yang BERKEDIP.",
+   "skor": 9,
+   "alasan": "TERPILIH. Hasil di mata (rapat), kontras gelap vs kedip terjadi di layar dalam 4 dtk, 'remote TV' +-0,5 dtk & 'kamera HP' +-3 dtk (kata kunci). 12 kata. Penonton bisa langsung mencoba = taruhan personal."
+  },
+  {
+   "tipe": "24",
+   "teks": "Remote mati? Jangan buru-buru ganti, lihat dulu lewat kamera HP.",
+   "skor": 8,
+   "alasan": "Relatable, tapi bernada servis/diagnosis (dilarang riset & rapat) dan janji 'mati atau tidak' tidak dibayar."
+  },
+  {
+   "tipe": "11",
+   "teks": "Ternyata remote TV-mu nembak cahaya tiap kamu pencet.",
+   "skor": 8,
+   "alasan": "Nama channel + kejutan jelas, tapi inti kejutan terbakar di dtk 0 tanpa gambar aneh."
+  },
+  {
+   "tipe": "20",
+   "teks": "(kedip ungu di layar HP) Titik ini nggak pernah kelihatan di matamu.",
+   "skor": 8,
+   "alasan": "Visual aneh kuat, tapi kata 'remote TV' baru muncul +-3 dtk; dipakai sebagai komposisi frame 0 saja."
+  },
+  {
+   "tipe": "5",
+   "teks": "Pernah pencet remote TV berkali-kali, TV-nya diam aja?",
+   "skor": 7,
+   "alasan": "Pengalaman nyata, tapi tanpa kejutan; terdengar seperti iklan baterai."
+  },
+  {
+   "tipe": "6",
+   "teks": "Tebak: remote TV ngirim apa ke TV-mu?",
+   "skor": 7,
+   "alasan": "Tebak dulu sudah sering (Layar HP, Suara rekaman), terasa kuis."
+  },
+  {
+   "tipe": "14",
+   "teks": "Kalau matamu kamera HP, ruang tamumu penuh kedip-kedip.",
+   "skor": 7,
+   "alasan": "Imajinatif, tapi #14 dipakai Pintu dan berlebihan (tidak semua cahaya rumah IR)."
+  },
+  {
+   "tipe": "22",
+   "teks": "Tim pencet keras atau tim pencet berkali-kali? Remote nggak peduli.",
+   "skor": 6,
+   "alasan": "Lucu, tapi kubunya dibuat-buat dan tidak dibayar mekanisme."
+  },
+  {
+   "tipe": "21",
+   "teks": "Aku dulu kira remote TV pakai sinyal gaib.",
+   "skor": 6,
+   "alasan": "Pengakuan Tebe hangat, tapi Tebe cameo dan visual dtk 0 lemah."
+  },
+  {
+   "tipe": "19",
+   "teks": "Lampu paling sibuk di rumahmu ada di ujung remote.",
+   "skor": 6,
+   "alasan": "Klaim 'paling sibuk' tidak bersumber; ditolak."
+  }
  ],
  "peta_retensi": "0,0-5,9 dtk -> HOOK #3 + TARUHAN: narasi <=0,3 dtk 'Pencet remote TV' (jempol menekan, ujung remote GELAP), 'kamera HP' (HP masuk frame), jeda '...' lalu 'BERKEDIP' = titik ungu-putih berdenyut di layar HP (kejutan visual +-4,5 dtk)\n5,9-12,6 dtk -> INTI KEJUTAN + OPEN LOOP: 'Remote TV umumnya nembak CAHAYA, cuma matamu nggak bisa lihat' (split mata vs kamera) -> 'HP bisa, gara-gara ada yang BOCOR' (retakan kecil berkilau di lensa, kamera berhenti sebentar)\n12,6-18,4 dtk -> ANAK TANGGA 1 (x-ray): tombol -> KODE -> lampu kecil di ujung berkedip cepat; 'INFRAMERAH' pita kedip merah-gelap tak terlihat\n18,4-26,0 dtk -> ANAK TANGGA 2 + CANDA + REAKSI TEBE: tiap tombol pola BEDA (2 pita beda), sensor TV baca -> TV NURUT (TV menyala, pop), 'kayak main sandi MORSE' (Tebe berkacu Pramuka mengetuk-ngetuk, 1 dtk)\n26,0-32,7 dtk -> BAYAR OPEN LOOP: 'Soal BOCOR tadi' potong keras ke penampang kamera HP: sensor PEKA inframerah, filter dipasang biar warna wajar\n32,7-41,2 dtk -> TWIST / KEJUTAN KEDUA: filter nggak selalu SEMPURNA, kedip lolos ungu/putih; 'tiap HP beda', kamera DEPAN 'SERING' lebih jelas (lencana SERING)\n41,2-48,9 dtk -> PERTANYAAN PENGALAMAN 1 kata SOFA/MEJA/KASUR/LACI + PEMICU SHARE 'Tag si PENGUASA remote' + LOOP 'suruh pencet ke kamera' -> kamera kembali ke komposisi frame 0 (jempol di tombol); logo YouTube kecil + 'Ternyata Begitu' <=1 dtk di atas kalimat terakhir",
  "durasi_target": "107 kata x patokan Cicak (+-0,446 dtk/kata termasuk jeda) = +-47,7 dtk + jeda '...' 0,5 + napas -> video +-48,5-49 dtk, batas 50. Bila audio asli > 49,5 dtk, potong berurutan: (1) 'Tiap tombol, polanya BEDA.' (teks layar saja); (2) 'lalu' di adegan 4; (3) 'Soal BOCOR tadi.' -> jadi teks layar 'YANG BOCOR TADI'. JANGAN buang: 'umumnya', 'cuma matamu nggak bisa lihat', 'nggak selalu SEMPURNA', 'Tiap HP beda', 'sering', kalimat loop.",
  "jumlah_kata": 107,
- "skor_naskah": {"hook": 2, "taruhan": 1, "penahan": 2, "kejutan_kedua": 1, "bahasa_lisan": 1, "payoff": 1, "total": 8},
+ "skor_naskah": {
+  "hook": 2,
+  "taruhan": 1,
+  "penahan": 2,
+  "kejutan_kedua": 1,
+  "bahasa_lisan": 1,
+  "payoff": 1,
+  "total": 8
+ },
  "skor_naskah_catatan": "Jujur 8/9. Hook 2: kontras GELAP vs BERKEDIP terjadi di depan mata dalam 4 dtk, objek konkret yang ada di tiap rumah. Taruhan 1: 'remote-MU', 'matamu' + penonton bisa langsung mencoba (aksi 10 detik). Penahan 2: open loop 'ada yang BOCOR' (+-11 dtk) dibayar +-26 dtk; interrupt tiap 4-7 dtk (kedip di HP, split mata/kamera, x-ray, pita beda, TV nurut, kacu Pramuka, penampang kamera, lencana SERING, kartu pilihan). Kejutan kedua 1 (bukan 2): 'kamera justru dipasangi penghalang tapi bocor' + 'kamera depan sering lebih jelas' berlawanan intuisi, tapi sebagian penonton sudah tahu trik kamera HP sehingga kagetnya sedang. Bahasa lisan 1: kalimat 2-12 kata, nol angka, 'inframerah' satu-satunya istilah (diperagakan). Payoff 1: 'kok ada yang berkedip?' dibayar penuh (kedip cahaya kode + filter bocor) + loop. Tambahan rubrik: gaya ngobrol YA (nembak cahaya, main sandi Morse, si penguasa remote; tanpa menggurui, tanpa tips servis); SEO YA ('remote TV' +-0,5 dtk, 'kamera HP' +-3 dtk; keduanya di judul utama; frasa persis 'cek remote TV pakai kamera HP' di tag pertama & opsi judul 3).",
  "skor_viral": {
-  "hook": {"skor": 2, "alasan": "Gambar ujung remote gelap vs titik berkedip di layar HP langsung terbaca tanpa suara; semua orang punya remote."},
-  "jarak_kejutan": {"skor": 1, "alasan": "'Remote nembak cahaya yang tak terlihat' + 'filter kamera bocor' cukup jauh dan benar, tapi trik kamera HP sudah cukup dikenal dari artikel panduan."},
-  "retensi": {"skor": 2, "alasan": "+-49 dtk, open loop BOCOR menahan sampai dtk 26, perubahan visual tiap 2-4 dtk, tidak ada blok penjelasan > 5 dtk tanpa peragaan."},
-  "layak_dibagikan": {"skor": 2, "alasan": "Bisa dicoba saat itu juga + 'Tag si PENGUASA remote' (orang spesifik di tiap rumah)."},
-  "pemicu_komentar": {"skor": 1, "alasan": "SOFA/MEJA/KASUR/LACI = kebiasaan nyata 1 kata (pola MANDI/BAJU/PIRING), tapi lebih survei daripada berkubu; 'suruh pencet ke kamera' memancing tonton ulang/coba."},
+  "hook": {
+   "skor": 2,
+   "alasan": "Gambar ujung remote gelap vs titik berkedip di layar HP langsung terbaca tanpa suara; semua orang punya remote."
+  },
+  "jarak_kejutan": {
+   "skor": 1,
+   "alasan": "'Remote nembak cahaya yang tak terlihat' + 'filter kamera bocor' cukup jauh dan benar, tapi trik kamera HP sudah cukup dikenal dari artikel panduan."
+  },
+  "retensi": {
+   "skor": 2,
+   "alasan": "+-49 dtk, open loop BOCOR menahan sampai dtk 26, perubahan visual tiap 2-4 dtk, tidak ada blok penjelasan > 5 dtk tanpa peragaan."
+  },
+  "layak_dibagikan": {
+   "skor": 2,
+   "alasan": "Bisa dicoba saat itu juga + 'Tag si PENGUASA remote' (orang spesifik di tiap rumah)."
+  },
+  "pemicu_komentar": {
+   "skor": 1,
+   "alasan": "SOFA/MEJA/KASUR/LACI = kebiasaan nyata 1 kata (pola MANDI/BAJU/PIRING), tapi lebih survei daripada berkubu; 'suruh pencet ke kamera' memancing tonton ulang/coba."
+  },
   "total": 8
  },
  "pelafalan": {
@@ -90,7 +163,7 @@
   },
   {
    "no": 2,
-   "narasi": "Remote TV umumnya nembak CAHAYA, cuma matamu nggak bisa lihat. HP bisa, gara-gara ada yang BOCOR.",
+   "narasi": "Remote TV umumnya nembak CAHAYA, cuma matamu nggak bisa lihat. HP sering bisa, gara-gara ada yang BOCOR.",
    "teks_layar": "CAHAYA YANG NGGAK KELIHATAN",
    "catatan_teks": "'CAHAYA?!' besar saat 'CAHAYA' -> 'MATA: NGGAK LIHAT' kiri / 'KAMERA: LIHAT' kanan saat split -> kecil 'ADA YANG BOCOR...' saat kalimat terakhir.",
    "visual": "Whoosh: the camera pushes through the phone screen in one smooth move; split view without a cut: left half = a big cartoon eye looking at the remote tip (dark, nothing), right half = a camera lens looking at the same tip (pulsing purple-white dot); on 'nembak CAHAYA' a faint dashed beam leaves the remote tip, visible only on the camera half; on 'BOCOR' the camera lens gets a tiny glinting crack-like leak of light at its edge and the picture freezes for a beat (teaser); flat style without black outlines; no text in the image.",
