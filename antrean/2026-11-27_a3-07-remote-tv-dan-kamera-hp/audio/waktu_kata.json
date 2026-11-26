@@ -1,0 +1,555 @@
+{
+ "model": "eleven_v4",
+ "kata": [
+  {
+   "kata": "Pencet",
+   "mulai": 0.069,
+   "selesai": 0.32
+  },
+  {
+   "kata": "remote",
+   "mulai": 0.44,
+   "selesai": 0.56
+  },
+  {
+   "kata": "TV,",
+   "mulai": 0.64,
+   "selesai": 1.08
+  },
+  {
+   "kata": "ujungnya",
+   "mulai": 1.2,
+   "selesai": 1.52
+  },
+  {
+   "kata": "gelap.",
+   "mulai": 1.6,
+   "selesai": 2.2
+  },
+  {
+   "kata": "Tapi",
+   "mulai": 2.4,
+   "selesai": 2.64
+  },
+  {
+   "kata": "lewat",
+   "mulai": 2.72,
+   "selesai": 2.88
+  },
+  {
+   "kata": "kamera",
+   "mulai": 2.96,
+   "selesai": 3.28
+  },
+  {
+   "kata": "ha-pe...",
+   "mulai": 3.32,
+   "selesai": 3.92
+  },
+  {
+   "kata": "ada",
+   "mulai": 4.0,
+   "selesai": 4.16
+  },
+  {
+   "kata": "yang",
+   "mulai": 4.24,
+   "selesai": 4.32
+  },
+  {
+   "kata": "berkedip.",
+   "mulai": 4.4,
+   "selesai": 5.32
+  },
+  {
+   "kata": "Remote",
+   "mulai": 5.36,
+   "selesai": 5.6
+  },
+  {
+   "kata": "TV",
+   "mulai": 5.64,
+   "selesai": 5.92
+  },
+  {
+   "kata": "umumnya",
+   "mulai": 6.0,
+   "selesai": 6.32
+  },
+  {
+   "kata": "nembak",
+   "mulai": 6.36,
+   "selesai": 6.64
+  },
+  {
+   "kata": "cahaya,",
+   "mulai": 6.72,
+   "selesai": 7.36
+  },
+  {
+   "kata": "cuma",
+   "mulai": 7.52,
+   "selesai": 7.84
+  },
+  {
+   "kata": "matamu",
+   "mulai": 7.92,
+   "selesai": 8.32
+  },
+  {
+   "kata": "nggak",
+   "mulai": 8.36,
+   "selesai": 8.48
+  },
+  {
+   "kata": "bisa",
+   "mulai": 8.56,
+   "selesai": 8.72
+  },
+  {
+   "kata": "lihat.",
+   "mulai": 8.84,
+   "selesai": 9.4
+  },
+  {
+   "kata": "Ha-pe",
+   "mulai": 9.68,
+   "selesai": 9.92
+  },
+  {
+   "kata": "sering",
+   "mulai": 10.0,
+   "selesai": 10.24
+  },
+  {
+   "kata": "bisa,",
+   "mulai": 10.28,
+   "selesai": 10.96
+  },
+  {
+   "kata": "gara-gara",
+   "mulai": 11.04,
+   "selesai": 11.44
+  },
+  {
+   "kata": "ada",
+   "mulai": 11.52,
+   "selesai": 11.6
+  },
+  {
+   "kata": "yang",
+   "mulai": 11.68,
+   "selesai": 11.76
+  },
+  {
+   "kata": "bocor.",
+   "mulai": 11.8,
+   "selesai": 12.4
+  },
+  {
+   "kata": "Pencet",
+   "mulai": 12.8,
+   "selesai": 13.04
+  },
+  {
+   "kata": "tombol,",
+   "mulai": 13.12,
+   "selesai": 13.76
+  },
+  {
+   "kata": "remote",
+   "mulai": 13.96,
+   "selesai": 14.16
+  },
+  {
+   "kata": "ngirim",
+   "mulai": 14.2,
+   "selesai": 14.4
+  },
+  {
+   "kata": "kode:",
+   "mulai": 14.48,
+   "selesai": 15.12
+  },
+  {
+   "kata": "kedip",
+   "mulai": 15.2,
+   "selesai": 15.36
+  },
+  {
+   "kata": "cepat",
+   "mulai": 15.44,
+   "selesai": 15.76
+  },
+  {
+   "kata": "dari",
+   "mulai": 15.84,
+   "selesai": 16.0
+  },
+  {
+   "kata": "lampu",
+   "mulai": 16.08,
+   "selesai": 16.28
+  },
+  {
+   "kata": "di",
+   "mulai": 16.32,
+   "selesai": 16.4
+  },
+  {
+   "kata": "ujungnya.",
+   "mulai": 16.48,
+   "selesai": 17.12
+  },
+  {
+   "kata": "Cahayanya",
+   "mulai": 17.28,
+   "selesai": 17.84
+  },
+  {
+   "kata": "inframerah.",
+   "mulai": 17.96,
+   "selesai": 18.8
+  },
+  {
+   "kata": "Tiap",
+   "mulai": 19.12,
+   "selesai": 19.36
+  },
+  {
+   "kata": "tombol,",
+   "mulai": 19.4,
+   "selesai": 19.92
+  },
+  {
+   "kata": "polanya",
+   "mulai": 20.0,
+   "selesai": 20.32
+  },
+  {
+   "kata": "beda.",
+   "mulai": 20.44,
+   "selesai": 20.8
+  },
+  {
+   "kata": "Sensor",
+   "mulai": 21.12,
+   "selesai": 21.44
+  },
+  {
+   "kata": "TV",
+   "mulai": 21.52,
+   "selesai": 21.84
+  },
+  {
+   "kata": "baca",
+   "mulai": 21.92,
+   "selesai": 22.08
+  },
+  {
+   "kata": "kedipnya,",
+   "mulai": 22.16,
+   "selesai": 22.8
+  },
+  {
+   "kata": "lalu",
+   "mulai": 22.88,
+   "selesai": 23.04
+  },
+  {
+   "kata": "nurut.",
+   "mulai": 23.08,
+   "selesai": 23.52
+  },
+  {
+   "kata": "Kamu",
+   "mulai": 23.84,
+   "selesai": 24.08
+  },
+  {
+   "kata": "sama",
+   "mulai": 24.12,
+   "selesai": 24.32
+  },
+  {
+   "kata": "TV",
+   "mulai": 24.4,
+   "selesai": 24.64
+  },
+  {
+   "kata": "kayak",
+   "mulai": 24.693,
+   "selesai": 24.88
+  },
+  {
+   "kata": "main",
+   "mulai": 24.96,
+   "selesai": 25.04
+  },
+  {
+   "kata": "sandi",
+   "mulai": 25.08,
+   "selesai": 25.36
+  },
+  {
+   "kata": "mors.",
+   "mulai": 25.44,
+   "selesai": 25.92
+  },
+  {
+   "kata": "Soal",
+   "mulai": 26.8,
+   "selesai": 27.04
+  },
+  {
+   "kata": "bocor",
+   "mulai": 27.08,
+   "selesai": 27.36
+  },
+  {
+   "kata": "tadi.",
+   "mulai": 27.4,
+   "selesai": 27.84
+  },
+  {
+   "kata": "Sensor",
+   "mulai": 28.24,
+   "selesai": 28.56
+  },
+  {
+   "kata": "kamera",
+   "mulai": 28.667,
+   "selesai": 28.88
+  },
+  {
+   "kata": "ha-pe",
+   "mulai": 28.96,
+   "selesai": 29.28
+  },
+  {
+   "kata": "peka",
+   "mulai": 29.36,
+   "selesai": 29.68
+  },
+  {
+   "kata": "inframerah,",
+   "mulai": 29.76,
+   "selesai": 30.56
+  },
+  {
+   "kata": "jadi",
+   "mulai": 30.64,
+   "selesai": 30.96
+  },
+  {
+   "kata": "dikasih",
+   "mulai": 31.0,
+   "selesai": 31.28
+  },
+  {
+   "kata": "filter",
+   "mulai": 31.36,
+   "selesai": 31.76
+  },
+  {
+   "kata": "biar",
+   "mulai": 31.84,
+   "selesai": 32.0
+  },
+  {
+   "kata": "warna",
+   "mulai": 32.12,
+   "selesai": 32.28
+  },
+  {
+   "kata": "foto",
+   "mulai": 32.32,
+   "selesai": 32.56
+  },
+  {
+   "kata": "wajar.",
+   "mulai": 32.64,
+   "selesai": 33.2
+  },
+  {
+   "kata": "Tapi",
+   "mulai": 33.504,
+   "selesai": 33.84
+  },
+  {
+   "kata": "filternya",
+   "mulai": 34.0,
+   "selesai": 34.4
+  },
+  {
+   "kata": "nggak",
+   "mulai": 34.44,
+   "selesai": 34.56
+  },
+  {
+   "kata": "selalu",
+   "mulai": 34.64,
+   "selesai": 34.88
+  },
+  {
+   "kata": "sempurna.",
+   "mulai": 34.92,
+   "selesai": 35.52
+  },
+  {
+   "kata": "Kedipnya",
+   "mulai": 35.84,
+   "selesai": 36.16
+  },
+  {
+   "kata": "lolos,",
+   "mulai": 36.24,
+   "selesai": 36.8
+  },
+  {
+   "kata": "tampil",
+   "mulai": 36.84,
+   "selesai": 37.12
+  },
+  {
+   "kata": "ungu",
+   "mulai": 37.2,
+   "selesai": 37.52
+  },
+  {
+   "kata": "atau",
+   "mulai": 37.6,
+   "selesai": 37.72
+  },
+  {
+   "kata": "putih.",
+   "mulai": 37.76,
+   "selesai": 38.24
+  },
+  {
+   "kata": "Tiap",
+   "mulai": 38.56,
+   "selesai": 38.8
+  },
+  {
+   "kata": "ha-pe",
+   "mulai": 38.84,
+   "selesai": 39.04
+  },
+  {
+   "kata": "beda,",
+   "mulai": 39.16,
+   "selesai": 39.6
+  },
+  {
+   "kata": "kamera",
+   "mulai": 39.64,
+   "selesai": 39.92
+  },
+  {
+   "kata": "depan",
+   "mulai": 40.0,
+   "selesai": 40.24
+  },
+  {
+   "kata": "sering",
+   "mulai": 40.4,
+   "selesai": 40.64
+  },
+  {
+   "kata": "lebih",
+   "mulai": 40.72,
+   "selesai": 40.88
+  },
+  {
+   "kata": "jelas.",
+   "mulai": 40.92,
+   "selesai": 41.36
+  },
+  {
+   "kata": "Remote",
+   "mulai": 41.8,
+   "selesai": 41.84
+  },
+  {
+   "kata": "rumahmu",
+   "mulai": 41.92,
+   "selesai": 42.16
+  },
+  {
+   "kata": "nyempil",
+   "mulai": 42.24,
+   "selesai": 42.48
+  },
+  {
+   "kata": "di",
+   "mulai": 42.52,
+   "selesai": 42.56
+  },
+  {
+   "kata": "mana?",
+   "mulai": 42.72,
+   "selesai": 42.96
+  },
+  {
+   "kata": "Sofa,",
+   "mulai": 43.2,
+   "selesai": 43.84
+  },
+  {
+   "kata": "meja,",
+   "mulai": 43.96,
+   "selesai": 44.48
+  },
+  {
+   "kata": "kasur,",
+   "mulai": 44.6,
+   "selesai": 45.04
+  },
+  {
+   "kata": "laci?",
+   "mulai": 45.08,
+   "selesai": 45.52
+  },
+  {
+   "kata": "Tag",
+   "mulai": 45.92,
+   "selesai": 46.08
+  },
+  {
+   "kata": "si",
+   "mulai": 46.12,
+   "selesai": 46.16
+  },
+  {
+   "kata": "penguasa",
+   "mulai": 46.24,
+   "selesai": 46.64
+  },
+  {
+   "kata": "remote,",
+   "mulai": 46.8,
+   "selesai": 47.12
+  },
+  {
+   "kata": "suruh",
+   "mulai": 47.2,
+   "selesai": 47.36
+  },
+  {
+   "kata": "pencet",
+   "mulai": 47.4,
+   "selesai": 47.68
+  },
+  {
+   "kata": "ke",
+   "mulai": 47.72,
+   "selesai": 47.76
+  },
+  {
+   "kata": "kamera.",
+   "mulai": 47.84,
+   "selesai": 48.48
+  }
+ ]
+}

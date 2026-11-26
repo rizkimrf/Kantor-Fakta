@@ -15,3 +15,5 @@ Rasa yang dikejar (kagum / kaget / geli / haru): kaget lalu kagum (sedikit geli)
 
 ## Paraf setelah produksi
 - Yoga: paraf (26 Nov) — hasil akhir sudah saya tonton per babak, lembar transisi & zona aman sudah dilihat. "Sekali lagi, biar pas." Wajah Tebe di sampul sudah dinaikkan keluar dari zona UI bawah.
+- Laras/Nadia/Raka — paraf diwakilkan ke cek_riset.md (3 WAJIB → dipenuhi Nadia R1 + Yoga: tali menyamping), naskah R1, cek_seo.md (paket unggah).
+  PARAF Pak Bima (27 Nov): cek_fakta & review LULUS, 11 butir gerbang mutu "ya". Benar dulu, baru menarik — siap untuk Bos.
