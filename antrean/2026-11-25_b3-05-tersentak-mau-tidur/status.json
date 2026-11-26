@@ -39,7 +39,13 @@
   "thumb_url": "/_blob/7ecf2766203d805942f14a26d26da83c",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "catatan": "kunci belum diisi - unggah manual"
+    },
+    "tiktok": {
+      "catatan": "kunci belum diisi - unggah manual"
+    },
+    "instagram": {
+      "catatan": "kunci belum diisi - unggah manual"
     }
   }
 }
