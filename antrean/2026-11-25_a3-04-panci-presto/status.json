@@ -50,6 +50,15 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7712785674159638535",
+      "waktu": "2026-11-27T17:49+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "error": "400 izin pages_* belum diberikan pada token IG",
+      "catatan": "unggah manual - token IG tanpa izin halaman (pages_*)"
     }
   }
 }

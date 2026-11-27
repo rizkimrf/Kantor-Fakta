@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "disetujui",
   "topik": "b3-11 cicak nggak jatuh dari langit-langit",
   "seri": "B",
   "pilar": "Alam & hewan aneh",
@@ -33,6 +33,12 @@
       "waktu": "2026-11-27T07:35+08:00",
       "oleh": "Pak Bima",
       "catatan": "review LULUS -> menunggu_persetujuan (Jum 18.00)"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "oleh": "Bos (Kantor Visual HP)",
+      "waktu": "2026-11-27T02:54:28Z"
     }
   ],
   "masalah": null,
@@ -40,5 +46,19 @@
   "skor_manajer": 8,
   "video_asset_id": "0169909a632316fdb45f9792773d1a45",
   "video_url": "/_blob/0169909a632316fdb45f9792773d1a45",
-  "thumb_url": "/_blob/d6c4cf76ad6e08351f29350c0eececf8"
+  "thumb_url": "/_blob/d6c4cf76ad6e08351f29350c0eececf8",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7712785674159835143",
+      "waktu": "2026-11-27T17:50+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "error": "400 izin pages_* belum diberikan pada token IG",
+      "catatan": "unggah manual - token IG tanpa izin halaman (pages_*)"
+    }
+  }
 }

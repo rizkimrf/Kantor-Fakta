@@ -1,5 +1,5 @@
 {
-  "tahap": "disetujui",
+  "tahap": "tayang",
   "topik": "b3-05 tersentak mau tidur",
   "seri": "B",
   "pilar": "Sains & tubuh manusia",
@@ -28,6 +28,11 @@
       "ke": "disetujui",
       "oleh": "Bos (Kantor Visual HP)",
       "waktu": "2026-11-26T02:31:06Z"
+    },
+    {
+      "waktu": "2026-11-27T17:50+08:00",
+      "oleh": "Pak Bima",
+      "catatan": "Bos unggah manual 3 platform -> tayang"
     }
   ],
   "masalah": null,
@@ -39,13 +44,16 @@
   "thumb_url": "/_blob/7ecf2766203d805942f14a26d26da83c",
   "terbit": {
     "youtube": {
-      "catatan": "kunci belum diisi - unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-27T08:49:32Z"
     },
     "tiktok": {
-      "catatan": "kunci belum diisi - unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-27T06:35:52Z"
     },
     "instagram": {
-      "catatan": "kunci belum diisi - unggah manual"
+      "id": "manual",
+      "waktu": "2026-11-27T06:35:51Z"
     }
   }
 }
