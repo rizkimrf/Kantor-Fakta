@@ -18,6 +18,7 @@ Kamu tidak menulis naskah atau merakit video sendiri; kamu mendelegasikan dan me
 | **Nadia** | copywriting | naskah, hook, CTA, judul, deskripsi, caption, teks thumbnail |
 | **Raka** | marketing | strategi views & SEO dari awal: pilih ide, brief kata kunci sebelum naskah, cek SEO naskah/caption/suara, paket unggah YouTube-TikTok-Instagram, jadwal, upload, analisa performa |
 | **Yoga** | editor | suara narasi, gambar & klip animasi, perakitan video, thumbnail |
+| **Dimas** | qc | auditor mutu INDEPENDEN (tidak ikut membuat video): periksa video final, fakta, resep viral, kepatuhan monetisasi → PASS/REVISI/TOLAK (sejak 28 Nov) |
 
 Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di laporan (mis. "Laras sudah verifikasi 2 sumber").
 
@@ -91,7 +92,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 | `cek_seo` | marketing | `cek_seo.md` (rekomendasi naskah, judul, caption, suara) → `cek_fakta`, atau kembali ke `naskah` 1x |
 | `cek_fakta` | **manajer** | `cek_fakta.md` lulus → `produksi`, gagal → kembali ke `naskah` |
 | `produksi` | editor | `audio/`, `visual/`, `final.mp4`, `thumbnail.png` |
-| `review` | **manajer** | `review.md` → `menunggu_persetujuan`; marketing menyiapkan `paket_unggah.md` (YouTube, TikTok, Instagram) |
+| `review` | **manajer** + **qc** | `review.md` lalu `qc.md` (Dimas) harus `PASS` → `menunggu_persetujuan`; marketing menyiapkan `paket_unggah.md` (YouTube, TikTok, Instagram) |
 | `disetujui` | pemilik (`/setujui` atau tombol Setujui di Kantor Visual HP) | — |
 | `terjadwal` | marketing (`/terbitkan`, otomatis) | `unggah.json` → YouTube dijadwalkan, TikTok & Instagram diunggah saat jamnya |
 | `tayang` | marketing | catatan performa |
@@ -119,6 +120,12 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 - **Perintah Bos 21 Nov 2026:** semua video batch 21 Nov (Sambal & Rice cooker) diunggah manual oleh Bos (`unggah_manual_bos: true`). Mulai 22 Nov produksi & terbit kembali otomatis sesuai kerangka kerja.
 - **Kantor Visual HP**: https://claude.ai/artifact/3Foimf6mkjVzkA1X6vFhfx — Bos memantau, menonton video, menekan Setujui/Tolak, dan mengirim pesan dari sana.
 - **Di awal setiap sesi kerja** jalankan bagian A dari `.claude/commands/sinkron-visual.md` (ambil keputusan & pesan Bos). **Di akhir sesi** jalankan bagian B (perbarui laporan, unggah video yang menunggu persetujuan). Saat tim mulai/selesai mengerjakan sesuatu, perbarui `agen` agar Bos melihat siapa yang sedang bekerja.
+
+## Data & belajar (audit blueprint ChatGPT, 28 Nov 2026 — `laporan/2026-11-28/audit-blueprint.md`)
+- **Content ID = nama folder antrean.** Semua file video (riset, naskah, render, unggah, performa) ada di folder itu; git menyimpan versi & jejak perubahan.
+- **ID video YouTube wajib tercatat** (`terbit.youtube.id`). `scripts/statistik_youtube.py` (sesi 18.17) mengisinya otomatis dari judul + menyimpan snapshot ke `data/snapshot_youtube.csv` dan `performa` di status.json.
+- **Eksperimen** di `laporan/eksperimen.md` (1 variabel, ≥ 5 video per kelompok, median). **Pola** di `panduan/pola-terbukti.md` dengan tingkat L1–L4; resep/SOP hanya berubah dari L3 ke atas dengan persetujuan Bos.
+- Bandingkan Shorts dengan Shorts dan format dengan format; video panjang punya patokan sendiri.
 
 ## Siklus wajib: buat → tayang → ANALISA → perbaiki (perintah Bos, 16 Nov 2026)
 Konten selesai bukan berarti berhenti. Setiap video yang tayang wajib dianalisa dan hasilnya mengubah konten berikutnya:

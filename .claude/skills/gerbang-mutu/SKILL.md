@@ -22,3 +22,11 @@ Setiap kalimat didukung riset.md · judul tidak menyesatkan · tidak ada nasihat
    10. Semua paraf ada di lembar_tim.md.
    11. Resep viral: satu cerita (tanpa fakta sampingan), celah baru ≤ 18 dtk, Tebe = pelaku, subtitle kecil + chip bab tidak menutupi peragaan, tanpa perintah komen/like/kirim; `format_resep` terisi.
 Satu "tidak" → kembalikan ke orang yang bertanggung jawab dengan catatan spesifik (detik + masalah + perbaikan).
+
+## Auditor independen + kegagalan kritis (audit blueprint 28 Nov)
+- Setelah review.md LULUS, panggil agent **qc** (Dimas, auditor independen yang tidak ikut membuat video) untuk folder itu.
+  Hanya `KEPUTUSAN: PASS` di `qc.md` yang boleh dikirim ke Bos. REVISI → kembalikan ke pemiliknya; 3x REVISI → eskalasi ke Bos.
+- **Kegagalan kritis = TOLAK, apa pun hasil cek lain:** fakta utama salah/tak bersumber · aset tanpa hak pakai · visual/judul menyesatkan ·
+  pelanggaran kebijakan · topik tubuh tanpa kalimat batas aman.
+- **Kepatuhan monetisasi:** video tidak boleh hanya mengganti judul/visual pada template yang sama — topik, dunia/set, dan rantai harus berbeda dari 10 video terakhir.
+- **Content ID:** nama folder antrean = Content ID. Setelah tayang, `scripts/statistik_youtube.py` (sesi 18.17) mengisi ID video YouTube & snapshot performa.
