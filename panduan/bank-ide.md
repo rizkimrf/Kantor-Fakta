@@ -43,5 +43,9 @@ Pasangan janji seri (cliffhanger → video berikutnya format B): B4-01 → B4-02
 | Jum 4 Des | B4-04 kesemutan | |
 Cadangan: A4-03 rice cooker, A4-05 pompa air, A4-07 mesin cuci; B4-05, B4-06. Video format lama `ditunda`: A3-07 remote TV, sensasi tubuh.
 
-## Video panjang (Minggu 19.00, 8–12 menit) — tetap
-Min 29 Nov: "Pedas & Sambal" (sedang `cek_seo`). Mulai Des: tema dari Shorts resep viral yang paling tinggi "tetap menonton".
+## Video panjang (Minggu 19.00, 8–12 menit) — Bos 28 Nov: tema BARU, belum pernah ada di Shorts
+| Tanggal | Judul kerja | Calon bab "masalah → solusi" (dikunci Laras, ≥ 2 sumber per bab) |
+|---|---|---|
+| Min 6 Des | **"Kamu yang Bikin: Kereta Cepat dari Nol"** (sudut Whoosh Jakarta–Bandung, murni teknik) | kereta biasa kurang cepat → roda & rel khusus · sambungan rel bikin goyang → rel menerus dilas · listrik dari atas → pantograf · angin melawan → hidung lancip · tikungan → kemiringan rel · gunung → terowongan & jembatan panjang · berhenti dari ±350 km/jam → rem berlapis. Tanpa bahas biaya/utang/politik |
+| Cadangan | "Kamu yang Bikin: Bandara dari Nol" | landasan · lampu & garis · menara kontrol · radar · garbarata · bagasi berjalan |
+Video panjang "Pedas & Sambal" (berbasis Shorts lama) DITUNDA. Min 29 Nov tanpa video panjang supaya video pertama format baru dibuat tanpa terburu-buru.

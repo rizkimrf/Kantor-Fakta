@@ -30,6 +30,12 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 - Ilustrasi/rekonstruksi yang bisa disangka rekaman nyata → beri penanda kecil "ilustrasi". Jangan menambah angka/teks fakta di layar yang tidak ada di riset.md.
 - Visual tidak boleh mengubah makna fakta (skala, urutan, jumlah). Bila peragaan butuh mengubah makna → berhenti, bicarakan dengan penulis naskah & Laras.
 
+## Mulus & betah ditonton (Bos 28 Nov: 1 konten/hari → mutu gerak harus sangat tinggi)
+- `cek_mulus.py` kini juga GAGAL bila kecepatan frame tidak tetap 30 fps atau layar monoton > 3 dtk. Target nol peringatan, bukan sekadar lulus.
+- Semua gerak kamera & objek memakai easing (smootherstep) dan fungsi waktu kontinu; tidak ada lompatan posisi, tidak ada animasi yang berhenti mendadak.
+- Sebelum render penuh: uji setiap transisi & setiap "tapi" dengan `render_html.py --mulai <t-1> --durasi 3 --skala 0.5`, lihat frame-nya.
+- Setelah render penuh: tonton ulang lewat lembar `bedah_video.py` (hook.jpg + lembar per detik) — bandingkan ritme dengan video viral di laporan bedah.
+
 ## Kemulusan (wajib — detail: referensi/kemulusan.md)
 - Transisi 12–18 frame (0,4–0,6 dtk) dengan easing in-out, di celah antar-kalimat. Tidak ada frame warna polos, tidak ada wipe < 6 frame.
 - **TANPA intro logo (Bos, 19 Nov).** Jangan panggil `KS.intro`; `T_INTRO = 0`. Narasi mulai di 0,0–0,3 dtk, visual hook sudah bergerak di frame ke-2.

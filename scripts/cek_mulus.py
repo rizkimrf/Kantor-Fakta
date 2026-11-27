@@ -6,6 +6,7 @@ Memeriksa:
   3. Kilatan/potongan kasar: transisi yang berganti total dalam < 4 frame (wipe terlalu cepat) atau frame warna polos.
   4. Gambar beku > 1,2 dtk saat narasi berjalan.
   5. Menunggu tanpa narasi: jeda antar babak > 0,9 dtk atau suara AI diam > 1,2 dtk.
+  7. Kecepatan frame tidak tetap 30 fps, atau layar monoton > 3 dtk tanpa perubahan gambar berarti (28 Nov).
   6. Durasi melebihi batas format resep (A 120 dtk, B 75 dtk; video lama 60/90) atau suara baru mulai setelah 0,5 dtk (tanpa intro).
 Juga membuat lembar cek: _kerja/cek_transisi.jpg (6 frame di setiap transisi) dan _kerja/cek_zona_aman.jpg
 (4 frame acak dengan garis zona aman) untuk dilihat dengan mata sebelum review."""
@@ -55,6 +56,23 @@ for k in range(2, len(d) - 2):
 for k in range(3, len(d) - 3):
     if d[k] > 2 and d[k - 1] > 2 and d[k] > 1.8 * d[k - 1] and d[k - 2] > 1.8 * d[k - 1]:
         masalah.append(f"gerak patah/berbalik arah di {k / fps:.2f} dtk")
+# --- 28 Nov (Bos: "smooth, tidak nyendat, betah ditonton")
+# a) kecepatan frame harus tetap 30 fps tanpa frame hilang
+_pr = baca(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate,avg_frame_rate,nb_frames", "-of", "default=nw=1", str(v)]).decode()
+_kv = dict(x.split("=", 1) for x in _pr.split() if "=" in x)
+_rf = lambda s: (lambda a, b: float(a) / float(b) if float(b) else 0)(*s.split("/")) if "/" in s else float(s or 0)
+if abs(_rf(_kv.get("r_frame_rate", "30/1")) - 30) > 0.5 or abs(_rf(_kv.get("avg_frame_rate", "30/1")) - 30) > 0.5:
+    masalah.append(f"kecepatan frame tidak tetap 30 fps (r={_kv.get('r_frame_rate')}, rata-rata={_kv.get('avg_frame_rate')}) - render ulang dengan --fps 30")
+# b) layar monoton: > 3 dtk tanpa perubahan gambar berarti (resep U5: gambar berubah tiap 2-3 dtk)
+_jendela = int(3 * fps)
+_k = 0
+while _k + _jendela < len(d):
+    _w = d[_k:_k + _jendela]
+    if _w.max() < 1.0 and _w.sum() < 25:
+        masalah.append(f"layar monoton > 3 dtk mulai {_k / fps:.1f} dtk (tidak ada zoom/objek baru/panah) - tambah perubahan visual tiap 2-3 dtk")
+        _k += _jendela
+    else:
+        _k += fps // 2
 polos = [k for k in range(len(f)) if f[k].std() < 3]
 if polos: masalah.append(f"{len(polos)} frame warna polos (mis. di {polos[0] / fps:.2f} dtk) - layar kosong terlihat seperti kedip")
 diam = 0

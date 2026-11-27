@@ -7,6 +7,13 @@ mulai 1 Feb 2027 naik menjadi 8.000 jam (atau 20 juta tayangan Shorts/90 hari). 
 - ≤ 12 menit: kemampuan produksi & retensi kita; lebih panjang hanya bila data menunjukkan rata-rata durasi tonton > 50%.
 - Ukuran sukses: rata-rata durasi tonton ≥ 4 menit dan % ditonton ≥ 40%.
 
+## PERUBAHAN Bos 28 Nov — MENGALAHKAN bagian "Isi" di bawah
+Tema video panjang = topik **BARU yang belum pernah dibahas di Shorts** dan berpotensi viral (bukan pendalaman Shorts), supaya selalu segar.
+Format utama: **"Kamu yang bikin" versi panjang** — benda/sistem raksasa yang dikenal orang Indonesia, dibangun dari versi paling kecil,
+6–8 bab "masalah → solusi" (tiap bab 1–1,5 menit, chip bab MASALAH/SOLUSI), kejutan terbesar di bab terakhir, penutup "Makanya kalau kamu …".
+Semua aturan resep viral (frame 0 beraksi, satu cerita, peragaan persis, tanpa perintah komen) + mutu gerak tertinggi (cek_mulus tanpa peringatan) berlaku.
+Bagian "Isi" lama di bawah hanya arsip.
+
 ## Isi: PEMBAHASAN BARU yang lebih dalam, temanya dibuktikan dulu oleh Shorts (Bos, 19 Nov)
 Shorts = uji pasar. Video panjang = pendalaman BARU dari tema Shorts yang menang — bukan rekap.
 1. **Pilih tema dari Shorts pemenang** (views/% ditonton/komentar tertinggi minggu itu): topiknya sudah terbukti diminati.

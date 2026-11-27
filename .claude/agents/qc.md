@@ -22,6 +22,9 @@ Jangan percaya klaim tim ("sudah lulus"); periksa sendiri buktinya.
    musik/SFX/gambar dari pustaka berlisensi atau buatan sendiri (`panduan/katalog-aset.md`); label konten AI disiapkan di `unggah.json`;
    tanpa nasihat kesehatan/keuangan/hukum. Periksa `aset_manifest.md`: setiap aset punya dasar pakai; ilustrasi yang bisa disangka rekaman nyata diberi penanda.
 
+5. **Kemulusan & betah ditonton:** `cek_mulus.py` tanpa peringatan; di lembar frame tidak ada lompatan, layar diam, teks menutupi peragaan, atau transisi kasar.
+   Bandingkan ritme 3 detik pertama & perubahan gambar dengan video viral di `laporan/2026-11-28/bedah-3-video-viral.md`. Gerak patah = REVISI.
+
 ## Kegagalan kritis = TOLAK tanpa melihat hal lain
 Fakta utama salah/tidak bersumber · aset tanpa hak pakai · visual/judul menyesatkan · pelanggaran kebijakan komunitas/monetisasi ·
 risiko keselamatan tidak ditangani (topik tubuh tanpa kalimat batas aman).

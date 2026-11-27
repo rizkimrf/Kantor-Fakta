@@ -1,5 +1,5 @@
 {
-  "tahap": "cek_seo",
+  "tahap": "ditunda",
   "topik": "panjang pedas dan sambal",
   "dibuat": "2026-11-27T05:55",
   "riwayat": [
@@ -26,11 +26,17 @@
       "oleh": "Raka",
       "tanggal": "2026-11-26",
       "hasil": "cek_seo.md: 3 WAJIB ke Nadia (judul final opsi 2 '...& Hewan Kebal'; teks sampul ganti 'KOK DIA SANTAI?'; pangkas ±303 huruf: A43, kalimat awal A25, dua kalimat awal A42, 'rem CEPAT' A27 -> ≤9.000) + 1 wajib pra-unggah (chapter dikoreksi dari render final). Kata kunci terucap ±4-5 dtk (batas, saran). Tahap tidak diubah."
+    },
+    {
+      "dari": "cek_seo",
+      "ke": "ditunda",
+      "oleh": "Ken atas perintah Bos",
+      "waktu": "2026-11-28T03:05+08:00"
     }
   ],
-  "masalah": null,
+  "masalah": "Bos 28 Nov: video panjang harus tema baru yang belum pernah ada di Shorts → diganti 'Kamu yang Bikin: Kereta Cepat dari Nol' (Min 6 Des).",
   "format": "panjang",
   "rasio": "16:9",
-  "jadwal_tayang": "2026-11-29T19:00:00+08:00",
-  "pilar": "Sains & tubuh manusia"
+  "pilar": "Sains & tubuh manusia",
+  "tahap_sebelum_tunda": "cek_seo"
 }
