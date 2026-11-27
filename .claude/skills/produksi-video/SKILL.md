@@ -3,6 +3,8 @@ name: produksi-video
 description: Cara Yoga memproduksi video Ternyata Begitu yang mulus dan profesional - suara, animasi Tebe, transisi, teks di zona aman, musik/SFX, sampul momen dramatis, render, dan cek kemulusan.
 ---
 # Produksi Video (Yoga) — "Sekali lagi, biar pas."
+
+**STANDAR 80 (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** baca `.claude/skills/naskah-viral/referensi/standar-80.md`. Bagianmu: Y1–Y4 (frame 0 = sampul: benda ≥ 50% layar & sudah bergerak, pertanyaan ≤ 5 kata ≥ 110 px, Tebe ≤ 15% layar; suara ≤ 0,2 dtk; perubahan visual ≤ 2 dtk; tiap langkah mekanisme diperagakan; frame terakhir menyatu ke frame 0).
 Contoh acuan: `studio-aset/contoh-1menit/v8-final.html` (struktur) · `studio-aset/contoh-sampul/` (sampul).
 Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py` + `scripts/cek_video.py`.
 

@@ -3,6 +3,8 @@ name: naskah-viral
 description: Cara Nadia menulis naskah Shorts/video panjang Ternyata Begitu yang berpotensi viral - hook, retensi, gaya ngobrol, naskah suara ElevenLabs, dan skor potensi viral.
 ---
 # Naskah Viral (Nadia)
+
+**STANDAR 80 (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** baca `.claude/skills/naskah-viral/referensi/standar-80.md`. Bagianmu: N1–N7. Shorts = 70–100 kata (30–45 dtk), kalimat pertama ≤ 7 kata = pertanyaan sampul, tiap kalimat ≤ 12 kata. Jalankan `python scripts/cek_standar.py antrean/<folder>` sendiri sebelum menyerahkan; GAGAL = tulis ulang, jangan serahkan.
 Penonton memutuskan dalam 1–2 detik. Tugasmu: membuat mereka TIDAK BISA geser.
 
 ## FORMAT GABUNGAN (Bos, 19 Nov 2026) — baca `referensi/format-gabungan.md` SEBELUM menulis
@@ -12,7 +14,7 @@ ajakan komentar 1 kata berkubu di akhir, loop ke adegan awal. Isi `"seri"` di st
 
 ## Aturan baru dari data YouTube (perintah Bos, 19 Nov 2026) — MENGGANTIKAN aturan durasi sebelumnya
 Data channel: tetap menonton 53–70% (target 75–85%), rata-rata ditonton 38–66% (target 90–120%+), penonton turun setelah ±45 dtk.
-- **Shorts MAKSIMAL 60 dtk** (target nyaman 40–55 dtk; jalur A "cara kerja" ≤ 90 dtk). Fokus **1 inti kejutan** + "kok bisa" singkat + 1 candaan. Fakta pendukung lain → video lain/video panjang.
+- **Shorts 30–45 dtk / 70–100 kata (STANDAR 80, 28 Nov; batas lama 60 dtk tidak berlaku)** ( jalur A "cara kerja" ≤ 90 dtk). Fokus **1 inti kejutan** + "kok bisa" singkat + 1 candaan. Fakta pendukung lain → video lain/video panjang.
   Tetap tidak terburu-buru: tempo bicara normal, kalimat utuh, mudah dipahami — yang dibuang pengantar & pengulangan, bukan kejelasan.
 - **TANPA intro logo.** Narasi hook terdengar di detik 0,0–0,3. Tidak ada hening/salam di awal.
 - **Hook pakai 26 tipe** di `referensi/hook-26.md` (10 kandidat dari ≥5 tipe, skor ≥ 8, tipe beda dari 5 video terakhir).
@@ -45,15 +47,8 @@ Ngobrol ke teman: "kamu", kalimat pendek, 1 canda ringan per babak, tidak menggu
 Tag emosi di depan kalimat: `[excited]` hook & penutup, `[curious]` "kok bisa?", `[laughs]` setelah canda, `[whispers]` bocoran. Maks 5 tag.
 Tulis seperti diucapkan: "2006" → "dua ribu enam", "ZZ" → "zet zet". Jeda pakai "...". Titik di setiap akhir kalimat (tempat jeda aman untuk editor).
 
-## Skor Potensi Viral (jujur; ≥8/10 baru lanjut ke Raka)
-| Butir | 0–2 |
-|---|---|
-| Hook menghentikan jempol (tanpa konteks pun penasaran) | |
-| Jarak kejutan besar & benar | |
-| Retensi: celah baru tiap ±10 dtk, tidak ada bagian datar | |
-| Layak dibagikan ("eh tahu nggak…" / membuat penonton terlihat pintar) | |
-| Pemicu komentar/tonton ulang di akhir | |
-Tulis skor + 1 kalimat alasan per butir di naskah.json (`skor_viral`). Nilai < 8 → perbaiki hook dulu, bukan menambah fakta.
+## Skor Potensi Viral — DIHAPUS sebagai syarat lulus (Bos 28 Nov)
+Semua naskah lama mendapat 8 padahal hasilnya 63–78% tetap menonton. Pengganti: batas terukur STANDAR 80 + `scripts/cek_standar.py` + uji banding Raka (R1). Boleh tetap menulis 10 kandidat hook untuk memilih, tapi angka 1–10 tidak dipakai untuk meluluskan.
 
 ## Hasil
 `naskah.json` (adegan: teks, durasi, set, aksi Tebe, teks layar 1–3 kata), `naskah_baca.txt`, `naskah_suara.txt`, judul (3 opsi), caption dasar.

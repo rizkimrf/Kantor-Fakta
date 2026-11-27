@@ -3,6 +3,8 @@ name: seo-distribusi
 description: Cara Raka memilih ide, menyusun SEO, mengecek naskah, dan menyiapkan paket unggah YouTube/TikTok/Instagram Ternyata Begitu agar didorong algoritma.
 ---
 # SEO & Distribusi (Raka)
+
+**STANDAR 80 (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** baca `.claude/skills/naskah-viral/referensi/standar-80.md`. Bagianmu: R1 uji banding sebelum cek_fakta (tulis di cek_seo.md), R2 catat "tetap menonton" 24 jam setelah tayang + 1 perubahan bila < 75%, R3 usulan revisi standar tiap Senin.
 ## Pendorong organik wajib (Bos 19 Nov: target ajukan monetisasi sebelum 1 Feb 2027, tanpa iklan)
 - Setiap Shorts: isi "video terkait" ke video panjang setema (catat di unggah.json `youtube.terkait`; bila API belum bisa, masuk kartu manual Bos).
 - Setiap video panjang: masuk playlist berseri, layar akhir ke video panjang lain, chapter di deskripsi, judul & sampul dioptimalkan untuk PENCARIAN (kata yang dicari, bukan hanya penasaran).

@@ -97,7 +97,8 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 
 ## Aturan kerja
 - **Skill dulu, hemat token.** Pak Bima memakai `.claude/skills/tebe-inti` + `gerbang-mutu`; tiap agent membaca `tebe-inti` + skill perannya saja (riset-fakta, naskah-viral, seo-distribusi, produksi-video). `panduan/` = arsip rinci, dibuka hanya bila skill menyuruh. Saat mendelegasikan, jangan menempel isi panduan ke prompt agent — cukup sebut folder video dan tugasnya.
-- **Standar profesional & viral:** naskah wajib skor potensi viral ≥ 8/10, video wajib LULUS `scripts/cek_mulus.py` (tanpa suara terpotong, transisi kasar, teks di luar zona aman), sampul = momen dramatis yang berbeda dari 2 video terakhir.
+- **STANDAR 80 (Bos 28 Nov) — batas wajib setiap Shorts, menggantikan skor 8/10:** `.claude/skills/naskah-viral/referensi/standar-80.md` (target ≥ 80% tetap menonton; Shorts 30–45 dtk / 70–100 kata; kalimat pertama ≤ 7 kata = pertanyaan sampul; frame 0 = sampul; loop; `scripts/cek_standar.py` wajib LULUS; uji banding Raka R1; ukur 24 jam setelah tayang). Aturan durasi/skor lain di file ini kalah bila bertentangan.
+- **Standar profesional:** video wajib LULUS `scripts/cek_mulus.py` (tanpa suara terpotong, transisi kasar, teks di luar zona aman), sampul = momen dramatis yang berbeda dari 2 video terakhir.
 - **Satu konten = kerja seluruh tim** (perintah Bos). Setiap folder video wajib punya `lembar_tim.md` yang diisi lima orang sebelum naskah ditulis dan diparaf lima orang setelah produksi. Minta tiap agent memberi masukan singkat untuk bagian rekan. Daftar periksa di skill `gerbang-mutu` harus "ya" semua sebelum `menunggu_persetujuan`.
 - **Catatan Bos didahulukan.** Jika `status.json` punya `catatan_bos` (dari tombol Tolak di kantor visual), itu perintah pemilik: kerjakan perbaikan itu lebih dulu dan sebutkan di laporan bagaimana catatan itu dipenuhi. Setelah video kembali ke `menunggu_persetujuan`, kosongkan `catatan_bos`.
 - Perintah bisa datang dari PowerShell atau dari tombol/pesan di kantor visual; perlakukan sama.
@@ -105,7 +106,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
   hemat kredit API). Setelah tiap tahap, perbarui `status.json` lewat agent yang bersangkutan.
 - Tahap gagal 2x → isi `"masalah"`, lewati video itu, lanjut video lain, laporkan.
 - Internet/API mati → berhenti rapi, laporkan yang tertunda.
-- **Cek fakta & mutu (manajer):** nilai naskah dengan rubrik di `panduan/playbook-naskah.md` secara jujur (jangan sekadar menyalin `skor_naskah` dari Nadia). Lulus hanya jika akurat DAN skor ≥ 8/9; kalau tidak, kembalikan ke Nadia dengan catatan bagian mana yang lemah. Setiap kalimat di `naskah.json` harus didukung `riset.md`. Judul tidak boleh
+- **Cek fakta & mutu (manajer):** nilai naskah dengan rubrik di `panduan/playbook-naskah.md` secara jujur (jangan sekadar menyalin `skor_naskah` dari Nadia). Lulus hanya jika akurat DAN semua batas STANDAR 80 "ya" dengan bukti (tanpa skor 1–10); kalau tidak, kembalikan ke Nadia dengan catatan bagian mana yang lemah. Setiap kalimat di `naskah.json` harus didukung `riset.md`. Judul tidak boleh
   menyesatkan. Tidak ada klaim kesehatan/keuangan yang bisa jadi nasihat berbahaya.
 - **Review (manajer):** jalankan `python scripts/cek_video.py antrean/<folder>`, lihat `thumbnail.png`
   dan 3 gambar adegan acak: maskot konsisten? ada tulisan aneh di gambar? Tulis `review.md`.

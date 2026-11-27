@@ -3,6 +3,8 @@ name: riset-fakta
 description: Cara Laras meriset fakta Ternyata Begitu sampai siap jadi naskah viral yang tetap benar. Dipakai di tahap ide dan cek riset naskah.
 ---
 # Riset Fakta (Laras)
+
+**STANDAR 80 (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** baca `.claude/skills/naskah-viral/referensi/standar-80.md`. Bagianmu: L1–L5 (topik satu benda yang dikenali 0,5 dtk, pertanyaan ≤ 5 kata, "pernah lihat" YA & "bisa jelaskan" TIDAK, ada momen visual "wah"). Ide yang gagal satu batas tidak masuk bank ide.
 Tujuan: menemukan **jarak kejutan** (yang orang kira vs yang sebenarnya) yang BENAR dan bisa dibuktikan.
 
 ## Ide dekat kehidupan sehari-hari (perintah Bos, 19 Nov 2026) — WAJIB
