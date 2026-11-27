@@ -1,11 +1,10 @@
-/* SOTYA — tokoh pendamping Tebe (DRAF 28 Nov 2026, MENUNGGU PERSETUJUAN BOS — jangan dipakai di video sebelum disetujui).
- *
- * Nama: "Sotya" (bahasa Jawa: permata) — dibaca cepat terdengar seperti "sok tau ya". Cewek dewasa muda, ceria, cantik, yakin sekali,
- * percaya "katanya"/mitos/solusi gampang, lalu terbukti salah dan menutup dengan "Ooh… ternyata begitu."
- * Ciri tetap: jepit rambut kuning bertanda "!" (Tebe = "?" penasaran, Sotya = "!" sok yakin). Saat dibantah tandanya berubah jadi "?".
+/* NADIA (tokoh di layar) — pendamping Tebe. Nama & tampilan dipilih Bos 28 Nov 2026: "Nadia", rambut terurai, tanpa kerudung.
+ * Suara belum dipilih → jangan dipakai di video sebelum suaranya disetujui Bos.
+ * Cewek dewasa muda, cantik, ceria, sok tau: percaya "katanya"/mitos/solusi gampang, lalu terbukti salah dan menutup "Ooh… ternyata begitu."
+ * Ciri tetap: jepit rambut kuning bertanda "!" (Tebe = "?" penasaran, Nadia = "!" sok yakin). Saat dibantah tandanya berubah jadi "?".
  * Gaya sama dengan Tebe (chibi, garis hitam 6 px, kepala besar) supaya satu dunia.
  *
- * Pemakaian: sotyaSVG({ ekspresi: "yakin", varian: "rambut" | "hijab", bicara: 0..1, kedip: false })
+ * Pemakaian: nadiaSVG({ ekspresi: "yakin", bicara: 0..1, kedip: false })
  *   ekspresi: "yakin" | "katanya" | "kaget" | "malu" | "paham" | "senang"
  * Hasil: string SVG viewBox 0 0 400 520 (kaki di y≈500), sama dengan tebeSVG.
  */
@@ -83,9 +82,9 @@
     return `<g transform="rotate(${putar} ${x} ${y})"><rect x="${x - 17}" y="${y - 25}" width="34" height="50" rx="12" fill="${W.jepit}" ${G}/>${isi}</g>`;
   }
 
-  function sotyaSVG(opsi = {}) {
+  function nadiaSVG(opsi = {}) {
     const e = LENGAN[opsi.ekspresi] ? opsi.ekspresi : "yakin";
-    const hijab = opsi.varian === "hijab";
+    const hijab = false; // Bos 28 Nov: tanpa kerudung
     const L = LENGAN[e];
     const tanda = e === "kaget" || e === "malu" ? "?" : "!";
     const lengan = (d) => `<path d="${d}" fill="none" stroke="${W.garis}" stroke-width="38" stroke-linecap="round"/><path d="${d}" fill="none" stroke="${W.kardigan}" stroke-width="27" stroke-linecap="round"/>`;
@@ -133,6 +132,6 @@
   }
 
   const EKSPRESI = Object.keys(LENGAN);
-  if (typeof module !== "undefined" && module.exports) module.exports = { sotyaSVG, EKSPRESI, WARNA: W };
-  else { root.sotyaSVG = sotyaSVG; root.SOTYA_EKSPRESI = EKSPRESI; }
+  if (typeof module !== "undefined" && module.exports) module.exports = { nadiaSVG, EKSPRESI, WARNA: W };
+  else { root.nadiaSVG = nadiaSVG; root.NADIA_EKSPRESI = EKSPRESI; }
 })(typeof window !== "undefined" ? window : globalThis);

@@ -40,7 +40,7 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 - Dasar: bedah 3 video ±13 juta views (`laporan/2026-11-28/bedah-3-video-viral.md`) + data "ditonton vs digeser" channel (`laporan/2026-11-28/ditonton-vs-digeser.md`).
 - Jadwal: produksi harian 09.47 WITA (1 Shorts), terbit 18.17 untuk slot 18.30 + evaluasi harian. Terbit 12.47 dan 19.32 dimatikan.
 - Video format lama yang belum selesai (A3-07 remote TV, sensasi tubuh) `ditunda` sebagai cadangan darurat.
-- **Tokoh pendamping Tebe (MENUNGGU PERSETUJUAN BOS):** cewek dewasa muda, cantik, ceria, "sok tau" yang percaya mitos/solusi gampang lalu terbukti salah, ditutup "Ooh… ternyata begitu." Rancangan: `panduan/karakter-pendamping.md`. Jangan dipakai di video sebelum Bos menyetujui desain & suaranya.
+- **Tokoh pendamping Tebe: NADIA** (nama & tampilan dipilih Bos 28 Nov: rambut terurai, tanpa kerudung): cewek dewasa muda, cantik, ceria, "sok tau" yang percaya mitos/solusi gampang lalu terbukti salah, ditutup "Ooh… ternyata begitu." Rancangan: `panduan/karakter-pendamping.md`, gambar `studio-aset/tokoh-nadia.js`. **Belum dipakai di video sampai Bos memilih suaranya.**
 
 ## Uji iklan follower (keputusan Bos 24 Nov — mengubah keputusan "100% organik" untuk 3 video saja)
 Bos mengiklankan **3 video dengan engagement terbaik selama 5 hari (Jum 27 Nov – Sel 1 Des)** untuk menaikkan follower. Bos sendiri yang memasang & membayar iklan.
@@ -126,6 +126,8 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 - **ID video YouTube wajib tercatat** (`terbit.youtube.id`). `scripts/statistik_youtube.py` (sesi 18.17) mengisinya otomatis dari judul + menyimpan snapshot ke `data/snapshot_youtube.csv` dan `performa` di status.json.
 - **Eksperimen** di `laporan/eksperimen.md` (1 variabel, ≥ 5 video per kelompok, median). **Pola** di `panduan/pola-terbukti.md` dengan tingkat L1–L4; resep/SOP hanya berubah dari L3 ke atas dengan persetujuan Bos.
 - Bandingkan Shorts dengan Shorts dan format dengan format; video panjang punya patokan sendiri.
+- **Koordinasi & kontrak agent:** `panduan/koordinasi.md` (siapa pemilik file apa, input wajib, KPI, eskalasi, serah-terima lewat `riwayat` & `lembar_tim.md`).
+- **Skill akun Claude per agent:** `panduan/skill-tim.md` (paket social-media-skills dll. sudah aktif; agent kini punya alat Skill). Video referensi dibedah dengan skill tim `bedah-video-viral`.
 
 ## Siklus wajib: buat → tayang → ANALISA → perbaiki (perintah Bos, 16 Nov 2026)
 Konten selesai bukan berarti berhenti. Setiap video yang tayang wajib dianalisa dan hasilnya mengubah konten berikutnya:
