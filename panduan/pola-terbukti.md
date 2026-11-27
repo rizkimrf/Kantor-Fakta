@@ -1,7 +1,8 @@
 # Pola terbukti — memori belajar 4 tingkat (audit blueprint 28 Nov 2026)
 Aturan naik tingkat: L1 = 1 video (hanya pengamatan) · L2 = pola di beberapa video (jadikan hipotesis di `laporan/eksperimen.md`)
 · L3 = lolos eksperimen (≥ 5 video per kelompok, median lebih baik) → boleh jadi rekomendasi standar · L4 = masuk SOP/resep, butuh persetujuan Bos + catatan versi.
-Jangan mengubah resep/SOP dari satu video. Setiap baris menyebut bukti (Content ID & angka) dan tanggal.
+Padanan istilah paket skill ChatGPT: L1 = OBSERVATION · L2 = HYPOTHESIS/REPEATED_PATTERN · L3 = VALIDATED_LEARNING · L4 = SOP_CANDIDATE yang disetujui Bos.
+Tulis juga bukti yang BERTENTANGAN, bukan hanya yang mendukung. Jangan mengubah resep/SOP dari satu video. Setiap baris menyebut bukti (Content ID & angka) dan tanggal.
 
 | Tingkat | Pola | Bukti | Tanggal | Status |
 |---|---|---|---|---|

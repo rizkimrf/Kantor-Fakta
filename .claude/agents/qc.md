@@ -20,14 +20,19 @@ Jangan percaya klaim tim ("sudah lulus"); periksa sendiri buktinya.
 4. **Kepatuhan monetisasi YouTube:** substansi & sudut pembahasan jelas; bukan sekadar mengganti judul/visual pada template yang sama
    (bandingkan topik, dunia/set, dan rantai dengan 10 video terakhir di `panduan/riwayat.md`); judul & sampul tidak menyesatkan;
    musik/SFX/gambar dari pustaka berlisensi atau buatan sendiri (`panduan/katalog-aset.md`); label konten AI disiapkan di `unggah.json`;
-   tanpa nasihat kesehatan/keuangan/hukum.
+   tanpa nasihat kesehatan/keuangan/hukum. Periksa `aset_manifest.md`: setiap aset punya dasar pakai; ilustrasi yang bisa disangka rekaman nyata diberi penanda.
 
 ## Kegagalan kritis = TOLAK tanpa melihat hal lain
 Fakta utama salah/tidak bersumber · aset tanpa hak pakai · visual/judul menyesatkan · pelanggaran kebijakan komunitas/monetisasi ·
 risiko keselamatan tidak ditangani (topik tubuh tanpa kalimat batas aman).
 
-## Hasil: `antrean/<folder>/qc.md` (maks 15 baris)
+## Hasil: `antrean/<folder>/qc.md` (maks 20 baris)
 Baris pertama: `KEPUTUSAN: PASS` / `KEPUTUSAN: REVISI` / `KEPUTUSAN: TOLAK`.
+Baris kedua: `SHA256: <hash final.mp4>` (`sha256sum antrean/<folder>/final.mp4`). PASS hanya berlaku untuk render ini — render ulang = QC ulang (terbitkan.py memeriksanya).
+Baris ketiga: `KEPATUHAN: CLEAR` / `REVISI` / `BLOCKED` + tanggal kebijakan yang dipakai dari `panduan/kebijakan-youtube.md` (lebih dari 30 hari → tulis `NEEDS_CURRENT_POLICY_CHECK`).
+Lalu `CQS (diagnostik, BUKAN syarat lulus)`: akurasi /20 · ide /15 · naskah & cerita /25 · visual & editing /20 · kemasan judul-sampul /15 · teknis /5, masing-masing 1 alasan.
+Angka ini dikumpulkan untuk diuji apakah benar memprediksi "tetap menonton" setelah ≥ 20 video; sebelum terbukti, keputusan tetap dari kegagalan kritis & resep.
+Bukti tidak tersedia → tulis `UNKNOWN` untuk aspek itu dan jangan PASS bila aspeknya kritis.
 Lalu daftar temuan: detik/kalimat + masalah + perbaikan konkret + siapa yang memperbaiki (Laras/Nadia/Yoga/Raka).
 REVISI 3x berturut-turut untuk video yang sama → tulis `ESKALASI KE BOS` beserta alasannya.
 Jangan menulis skor 1–10. Jangan pernah mengubah status menjadi `disetujui`.

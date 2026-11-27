@@ -20,6 +20,10 @@ Pelihara `panduan/bahasa-populer.md`: frasa, mitos, ejekan, dan pertanyaan yang 
 saran pencarian "kenapa…/apakah…", tren). Perbarui tiap Senin (+5–10 frasa) dan pasangkan dengan topik di bank ide.
 Saat memilih ide & cek SEO: pastikan hook/judul sampul memakai frasa dari daftar ini, bukan istilah ahli.
 
+## rencana_marketing.md — tambahan wajib (28 Nov, dari paket skill ChatGPT)
+`Pertanyaan utama` · `Janji edukasi` (apa yang penonton pahami setelah menonton) · `Risiko miskonsepsi/sensitivitas` · `Ide turunan` (2 video seri berikutnya)
+· `Keyakinan: tinggi/sedang/rendah + alasan` (hipotesis, bukan kepastian; dibandingkan dengan hasil 72 jam untuk mengukur ketepatan pilihan Raka).
+
 ## seo.md (maks 15 baris)
 Kata kunci utama (cara orang Indonesia mengetik di pencarian) + 3 turunan · celah dari video pesaing · 3 sudut judul · alasan orang membagikan.
 

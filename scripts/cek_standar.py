@@ -84,6 +84,25 @@ def main(folder):
         if n.get("topik_tubuh") or status.get("topik_tubuh"):
             cek("B5 kalimat batas aman (topik tubuh)", re.search(r"hati-hati", narasi.lower()), "ada" if "hati-hati" in narasi.lower() else "tidak ada")
 
+    # Klaim: setiap fakta di naskah menunjuk ke tabel klaim riset.md yang terverifikasi (28 Nov, dari paket skill ChatGPT)
+    riset = f / "riset.md"
+    if riset.exists():
+        rt = riset.read_text(encoding="utf-8")
+        m = re.search(r"Status riset:\s*`?([A-Z_]+)", rt)
+        cek("K0 riset berstatus READY", m and m.group(1) == "READY", m.group(1) if m else "baris 'Status riset:' tidak ada")
+        tabel = {}
+        for baris in rt.splitlines():
+            sel = [s.strip() for s in baris.strip().strip("|").split("|")]
+            if len(sel) >= 3 and re.fullmatch(r"K\d+", sel[0]):
+                tabel[sel[0]] = sel[2].strip("` ").upper()
+        cek("K1 tabel klaim ada di riset.md", bool(tabel), f"{len(tabel)} klaim: " + ", ".join(f"{k}={v}" for k, v in list(tabel.items())[:6]))
+        dipakai = [(i + 1, k) for i, a in enumerate(adegan) for k in (a.get("klaim") or [])]
+        cek("K2 naskah menyebut ID klaim", bool(dipakai), f"{len(dipakai)} rujukan di {len({i for i, _ in dipakai})} adegan")
+        buruk = [f"adegan {i}: {k} ({tabel.get(k, 'tidak ada di tabel')})" for i, k in dipakai if tabel.get(k) not in ("VERIFIED", "PARTIALLY_SUPPORTED")]
+        cek("K3 semua klaim yang dipakai VERIFIED/PARTIALLY_SUPPORTED", not buruk, "; ".join(buruk[:4]) or "ok")
+    else:
+        cek("K0 riset.md ada", False, "riset.md tidak ditemukan")
+
     pend = [t for p, t in narasi_semua if p == "pendamping"]
     if pend:
         cek("U13 pendamping maks 3 kalimat", len(kalimat(" ".join(pend))) <= 3, f"{len(kalimat(' '.join(pend)))} kalimat")

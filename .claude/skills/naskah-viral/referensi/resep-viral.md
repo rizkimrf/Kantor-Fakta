@@ -1,4 +1,5 @@
-# RESEP VIRAL TEBE (keputusan Bos 28 Nov 2026) — WAJIB untuk setiap Shorts
+# RESEP VIRAL TEBE — versi 1.0 (keputusan Bos 28 Nov 2026) — WAJIB untuk setiap Shorts
+> Riwayat versi & alasan perubahan: `panduan/versi-resep.md`. Perubahan hanya dari pola tingkat L3+ dengan persetujuan Bos; versi lama tidak ditimpa tanpa catatan.
 Dasar: bedah 3 video ±13 juta views (`laporan/2026-11-28/bedah-3-video-viral.md`) + data channel kita (`laporan/2026-11-28/ditonton-vs-digeser.md`).
 Resep ini MENGGANTIKAN: STANDAR 80, batas 60 dtk, skor 1–10, format A/B lama, "ajakan komentar 1 kata", dan aturan loop.
 Kita meniru POLA, bukan nama seri, desain, topik terbaru, atau naskah akun lain. Fakta tetap ≥ 2 sumber ("Benar dulu, baru menarik").

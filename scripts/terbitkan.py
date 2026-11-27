@@ -185,6 +185,22 @@ PLATFORM = {"youtube": (youtube, ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRES
             "instagram": (instagram, ["IG_ACCESS_TOKEN", "IG_USER_ID"])}
 
 
+def qc_cocok(folder):
+    """True bila tidak ada qc.md/SHA256 (video lama) atau hash final.mp4 sama dengan yang diperiksa Dimas."""
+    import hashlib, re
+    q = folder / "qc.md"
+    if not q.exists():
+        return True
+    m = re.search(r"SHA256:\s*([0-9a-f]{64})", q.read_text(encoding="utf-8"))
+    if not m:
+        return True
+    h = hashlib.sha256()
+    with (folder / "final.mp4").open("rb") as f:
+        for blok in iter(lambda: f.read(1 << 20), b""):
+            h.update(blok)
+    return h.hexdigest() == m.group(1)
+
+
 def slot_berikut(panjang):
     # Jam tayang dari jam_tayang.json di repo (bukan environment), format "HH:MM" WITA.
     cfg = json.loads((ROOT / "jam_tayang.json").read_text(encoding="utf-8"))
@@ -209,6 +225,8 @@ for st_path in sorted((ROOT / "antrean").glob("*/status.json")):
         laporan.append(f"{folder.name}: dilewati (unggah manual oleh Bos)"); continue
     if not (folder / "final.mp4").exists() or not (folder / "unggah.json").exists():
         laporan.append(f"{folder.name}: final.mp4 / unggah.json belum ada"); continue
+    if not qc_cocok(folder):  # 28 Nov: PASS QC hanya berlaku untuk render yang sama
+        laporan.append(f"⚠️ {folder.name}: final.mp4 berubah setelah QC (SHA256 beda) → tidak diunggah, minta Dimas QC ulang"); continue
     u = json.loads((folder / "unggah.json").read_text(encoding="utf-8"))
     if s.get("jadwal_tayang"):
         jadwal = datetime.datetime.fromisoformat(s["jadwal_tayang"])

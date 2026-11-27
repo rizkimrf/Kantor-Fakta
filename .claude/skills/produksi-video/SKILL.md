@@ -24,6 +24,12 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 - **Tokoh pendamping (setelah disetujui Bos):** muncul hanya saat kalimatnya (`pembicara: pendamping`), ekspresi "yakin" → "kaget/malu" saat dibantah.
 - **Penutup:** kalimat terakhir (pertanyaan/janji seri) di atas adegan hasil akhir yang megah (gedung jadi, kereta lewat); lalu ±1 dtk logo YouTube kecil + "Ternyata Begitu" (Bos 19 Nov). Tanpa teks ajakan komentar, tanpa loop paksa.
 
+## Manifest aset & kejujuran visual (28 Nov, dari paket skill ChatGPT)
+- Tulis `aset_manifest.md` di folder video: `| ID | Aset (gambar/animasi/musik/SFX/suara/font) | Sumber/lokasi | Lisensi/dasar pakai | Status |`.
+  Aset buatan sendiri (kode SVG, SFX sintesis) ditulis "buatan tim". Tanpa dasar pakai yang jelas → jangan dipakai.
+- Ilustrasi/rekonstruksi yang bisa disangka rekaman nyata → beri penanda kecil "ilustrasi". Jangan menambah angka/teks fakta di layar yang tidak ada di riset.md.
+- Visual tidak boleh mengubah makna fakta (skala, urutan, jumlah). Bila peragaan butuh mengubah makna → berhenti, bicarakan dengan penulis naskah & Laras.
+
 ## Kemulusan (wajib — detail: referensi/kemulusan.md)
 - Transisi 12–18 frame (0,4–0,6 dtk) dengan easing in-out, di celah antar-kalimat. Tidak ada frame warna polos, tidak ada wipe < 6 frame.
 - **TANPA intro logo (Bos, 19 Nov).** Jangan panggil `KS.intro`; `T_INTRO = 0`. Narasi mulai di 0,0–0,3 dtk, visual hook sudah bergerak di frame ke-2.

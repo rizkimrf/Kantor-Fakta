@@ -36,8 +36,16 @@ Tambah ≥10 ide jalur A ke bank ide (kolom pilar diisi "Cara kerja").
 ## Skor Faktor Ternyata (≥7/10 baru lanjut)
 Kejutan 0–3 · Dekat dengan hidup penonton 0–3 (wajib ≥2: lolos uji "pernah ngalamin") · Bisa dibuktikan 0–2 · Bisa divisualkan 0–2.
 
-## riset.md (ringkas, maks ±60 baris)
-Klaim inti · mekanisme · 3–5 fakta pendukung (masing2 + sumber) · sudut Indonesia · yang TIDAK boleh diklaim · fakta cadangan · daftar sumber (judul + URL).
+## riset.md (ringkas, maks ±70 baris) — format tabel klaim WAJIB sejak 28 Nov (diambil dari paket skill ChatGPT)
+Baris pertama: `Status riset: READY` / `NEEDS_MORE_RESEARCH` / `BLOCKED`. Naskah hanya boleh ditulis dari riset `READY`.
+Lalu: klaim inti · mekanisme/rantai · sudut Indonesia · fakta cadangan, dan **tabel klaim**:
+| ID | Klaim | Status | Sumber (penerbit, judul, URL, tanggal) + bagian yang mendukung | Batasan | Kalimat aman untuk naskah |
+|---|---|---|---|---|---|
+| K1 | … | VERIFIED | … | … | … |
+Status: `VERIFIED` (≥ 2 sumber independen mendukung) · `PARTIALLY_SUPPORTED` (hanya sebagian → wajib pakai "kalimat aman") ·
+`CONFLICTING` (sumber kredibel berbeda → tidak boleh jadi klaim inti; boleh "ilmuwan masih berdebat") · `UNVERIFIED` · `FALSE_OR_MISLEADING` (keduanya DILARANG dipakai).
+Tambah bagian **Miskonsepsi yang harus dihindari** (mis. korelasi ≠ sebab, satu lokasi ≠ seluruh dunia, perkiraan ≠ angka pasti).
+Dua situs yang menyalin sumber yang sama = 1 sumber. Bila sumber tidak bisa dibuka, tulis begitu — jangan pernah mengarang URL/judul/penulis.
 
 ## Saat cek naskah/caption
 Setiap kalimat harus didukung riset.md. Tulis temuan di `cek_riset.md` (maks 10 baris): kalimat bermasalah → perbaikan.

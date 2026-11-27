@@ -13,8 +13,9 @@ ajakan komentar 1 kata, format A/B lama, STANDAR 80). Analisa dasarnya: `laporan
    - `"kamu-yang-bikin"` — cara kerja benda: "Kalau kamu [aksi kecil], kamu udah [bikin versi kecilnya]" → 4–7 × "Tapi … → Jadi …" → "Makanya kalau kamu …" → "Selamat, kamu baru aja nemuin [nama]. Berikutnya mau kita rakit apa?" (70–120 dtk).
    - `"katanya-ternyata"` — mitos/pengalaman tubuh & rumah: "Kenapa …?" → "Itu bukan [mitos]. Itu [jawaban]." (≤ 6 dtk) → penampang → "Terus, kenapa …?" → batas aman → "Terus, … ? Itu besok." (45–75 dtk).
 3. Tulis 3 versi 3 detik pertama, pilih yang paling cepat dipahami tanpa suara (Raka ikut memilih — uji banding R1).
-4. Tulis seluruh narasi sebagai SATU cerita. Setiap kalimat punya `aksi` (apa yang terlihat PERSIS saat kalimat itu diucapkan) dan, bila perlu, `teks_layar` = chip bab ("MASALAH: …", "SOLUSI: …", "KATANYA: …", "TERNYATA: …").
-5. Jalankan `python scripts/cek_standar.py antrean/<folder>` → harus LULUS sebelum diserahkan. GAGAL = tulis ulang bagian itu, jangan serahkan.
+4. Setiap adegan yang berisi fakta wajib punya `"klaim": ["K1", …]` (ID dari tabel klaim di riset.md, status VERIFIED atau PARTIALLY_SUPPORTED dengan kalimat aman). Kalimat tanpa dukungan klaim = bukan fakta (candaan/peragaan saja) atau dihapus. Riset belum `READY` → kembalikan ke Laras, jangan mengarang.
+5. Tulis seluruh narasi sebagai SATU cerita. Setiap kalimat punya `aksi` (apa yang terlihat PERSIS saat kalimat itu diucapkan) dan, bila perlu, `teks_layar` = chip bab ("MASALAH: …", "SOLUSI: …", "KATANYA: …", "TERNYATA: …").
+6. Jalankan `python scripts/cek_standar.py antrean/<folder>` → harus LULUS sebelum diserahkan. GAGAL = tulis ulang bagian itu, jangan serahkan.
 
 ## Bahasa (tetap berlaku)
 - **Bahasa masyarakat dulu:** kalimat yang SUDAH diucapkan orang Indonesia ("katanya masuk angin", "kalo", "nancep", "gedein", "ambrol", "kelar-kelar"). Cek `panduan/bahasa-populer.md`.

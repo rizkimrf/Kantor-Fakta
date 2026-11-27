@@ -127,6 +127,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 - **Eksperimen** di `laporan/eksperimen.md` (1 variabel, ≥ 5 video per kelompok, median). **Pola** di `panduan/pola-terbukti.md` dengan tingkat L1–L4; resep/SOP hanya berubah dari L3 ke atas dengan persetujuan Bos.
 - Bandingkan Shorts dengan Shorts dan format dengan format; video panjang punya patokan sendiri.
 - **Koordinasi & kontrak agent:** `panduan/koordinasi.md` (siapa pemilik file apa, input wajib, KPI, eskalasi, serah-terima lewat `riwayat` & `lembar_tim.md`).
+- **Dari paket skill ChatGPT (28 Nov):** riset.md wajib tabel klaim berstatus (VERIFIED/PARTIALLY_SUPPORTED/CONFLICTING/UNVERIFIED/FALSE) + `Status riset: READY`; naskah menyebut ID klaim per adegan (dicek `cek_standar.py`); `aset_manifest.md` per video; QC mengunci versi render dengan SHA256 (terbitkan.py menolak render yang berubah); CQS hanya diagnostik; riwayat resep di `panduan/versi-resep.md`; kebijakan YouTube di `panduan/kebijakan-youtube.md` (dicek ulang tiap bulan).
 - **Skill akun Claude per agent:** `panduan/skill-tim.md` (paket social-media-skills dll. sudah aktif; agent kini punya alat Skill). Video referensi dibedah dengan skill tim `bedah-video-viral`.
 
 ## Siklus wajib: buat → tayang → ANALISA → perbaiki (perintah Bos, 16 Nov 2026)
