@@ -5,10 +5,10 @@ description: Inti merek & aturan wajib channel Ternyata Begitu (penonton, Tebe, 
 # Tebe Inti — 1 halaman yang wajib diingat semua orang
 **Misi:** konten yang ditonton sampai habis, dibagikan, diingat. Urutan nilai: benar → jelas → menarik → mudah ditemukan.
 **Penonton:** Indonesia 17–35 th, suka "wah, baru tahu". Tidak kekanakan, tidak menggurui.
-**Tebe:** maskot asli (chibi, jambul "?" → "!", hoodie mustard). Pakai `studio-aset/tebe-rig.js`, jangan ubah bentuk.
+**Tebe:** maskot asli (chibi, jambul "?" → "!", hoodie mustard). Pakai `studio-aset/tebe-rig.js`, jangan ubah bentuk. Sejak 28 Nov Tebe = PELAKU "kamu" yang mengerjakan/mengalami isi video, bukan pembawa acara yang menyapa.
 **Gaya visual:** datar tanpa garis hitam di set, set berbeda tiap babak, kamera selalu bergerak, Tebe di DALAM adegan. Sumber tidak tampil di video.
 **Suara:** Dakocan (ElevenLabs v4), ngobrol santai + canda, tidak dipercepat. Label konten AI wajib saat unggah.
-**Format Shorts:** sampul di frame 0 → hook (≤3 dtk, kata kunci terucap) → intro khas 2,4 dtk → isi (celah penasaran tiap ±10 dtk) → outro. 45–90 dtk mengikuti isi.
+**Format Shorts (Bos 28 Nov): RESEP VIRAL** `.claude/skills/naskah-viral/referensi/resep-viral.md` — format A "Kamu yang bikin" (70–120 dtk) atau B "Katanya vs Ternyata" (45–75 dtk). 1 Shorts/hari, tayang 18.30 WITA. Tanpa intro.
 
 ## Peran & skill
 | Siapa | Skill | Hasil |

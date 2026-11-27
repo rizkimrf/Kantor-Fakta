@@ -31,7 +31,7 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
    - `agen`: untuk bima, laras, nadia, raka, yoga → `{status: "kerja"|"rapat"|"santai", tugas: "<pendek, maks 25 huruf>"}`.
      Saat sesi selesai, kembalikan semua ke `santai` kecuali yang masih punya pekerjaan berjalan. `rapat: true` saat sedang rapat naskah.
    - `log`: tambahkan kejadian sesi ini di depan `{waktu, siapa, teks}`, simpan maksimal 30 entri.
-1b. **Laporan & perbaikan (Bos, 19 Nov)** — dokumen `kantor/laporan` (get dulu, lalu update dengan if_version). Diisi di sesi 17.47 (evaluasi harian)
+1b. **Laporan & perbaikan (Bos, 19 Nov)** — dokumen `kantor/laporan` (get dulu, lalu update dengan if_version). Diisi di sesi 18.17 (evaluasi harian)
    dan Senin (laporan mingguan); sesi lain hanya memindahkan item yang selesai. Field:
    `diperbarui`, `ringkasan` (1–2 kalimat), `fokus` [{teks, ukur}] = 3–5 langkah yang dipakai produksi berikutnya,
    `mingguan` {tanggal, poin[]} (Senin), `harus` [{teks, prioritas 1–3, pemilik, alasan, selesai}] = daftar perbaikan yang belum beres,

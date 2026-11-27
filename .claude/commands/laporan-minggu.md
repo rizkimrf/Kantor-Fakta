@@ -24,4 +24,4 @@ Jalur unggul di ≥3 dari 5 angka selama 2 minggu berturut-turut → usulkan ke 
 
 ## Target Shorts (Bos 19 Nov 2026)
 Selalu laporkan per Shorts dan rata-rata minggu: **% tetap menonton** (target 75–85%), **% rata-rata ditonton** (target 90–120%+), share, komentar.
-Bandingkan video ≤ 60 dtk tanpa intro (aturan baru) vs video lama. Bila angka tidak tersedia di Supermetrics, minta Bos tangkapan layar YouTube Studio → Analytics → Konten → Shorts.
+Bandingkan video RESEP VIRAL (sejak 28 Nov; format A vs format B) dengan video lama. Bila angka tidak tersedia di Supermetrics, minta Bos tangkapan layar YouTube Studio → Analytics → Konten → Shorts.

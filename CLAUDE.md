@@ -24,20 +24,22 @@ Karakter lengkap setiap orang ada di `panduan/tim.md`. Sebut nama mereka di lapo
 ## Target produksi & strategi monetisasi (disetujui Bos, 15 Nov 2026)
 **Tujuan utama: lolos monetisasi YouTube secepat mungkin** dengan syarat yang berlaku untuk pendaftar baru mulai 1 Feb 2027:
 1.000 subscriber + **8.000 jam tonton video panjang dalam 365 hari** (jalur Shorts 20 juta views/90 hari dianggap bonus, bukan andalan).
-- **Keputusan Bos (15 Nov 2026): kejar kuantitas harian supaya akun terlihat aktif di niche.** Shorts **2 per hari, setiap hari** (13.00 & 18.00 WITA; slot ke-3 19.45 bila 3 Shorts/hari — lihat `jam_tayang.json`) adalah target utama. Kuantitas tidak boleh menurunkan gerbang mutu.
+- **Keputusan Bos (28 Nov 2026): KUALITAS, bukan kuantitas.** **1 Shorts per hari, tayang 18.30 WITA** (`jam_tayang.json`), dibuat di sesi produksi 09.47 dengan **RESEP VIRAL** (`.claude/skills/naskah-viral/referensi/resep-viral.md`). Setiap Shorts harus berpotensi viral; video yang gagal resep tidak dikirim — lebih baik slot kosong. (Keputusan lama 15 Nov "2 Shorts/hari" tidak berlaku.)
 - **Video panjang 16:9: 1 per minggu (Minggu 19.00), 8–12 menit (target ±10)** — mesin jam tonton monetisasi (Bos 19 Nov). Tema dari Shorts pemenang (uji pasar), isi ≥ 70% pembahasan BARU yang lebih dalam (bukan rekap), 5–7 bab, kejutan terbesar di akhir; aset visual Shorts boleh dipakai ulang. Aturan lengkap: `.claude/skills/naskah-viral/referensi/video-panjang.md`. Naik ke 2/minggu setelah kuota memungkinkan.
-- **Hemat kuota (wajib):** 1 sesi produksi pagi membuat 2 Shorts sekaligus · suara dibuat sekali (tanpa versi kedua kecuali Bos menolak) · Laras & Raka memakai model Sonnet, Nadia/Yoga/Pak Bima tetap model utama.
-- **Rem otomatis:** di laporan, Pak Bima mencatat perkiraan pemakaian kredit ElevenLabs bulan ini (`aset/log_kredit.csv`). Bila kredit tersisa < 15% sebelum tanggal 25, atau Bos menulis "hemat" di Kantor Visual → turun ke 1 Shorts/hari dan laporkan.
-- **Shorts 9:16, MAKSIMAL 60 detik (jalur A "cara kerja" ≤ 90 dtk), TANPA intro** (Bos 19 Nov, berdasar data YouTube: penonton turun setelah ±45 dtk). 1 inti kejutan, hook dari 26 tipe, loop mulus, pertanyaan terbuka + pemicu share di akhir; tetap tidak terburu-buru dan tanpa bagian "nunggu", sebagai penarik subscriber. Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
+- **Hemat kuota (wajib):** 1 sesi produksi harian membuat 1 Shorts · suara dibuat sekali (tanpa versi kedua kecuali Bos menolak) · Laras & Raka memakai model Sonnet, Nadia/Yoga/Pak Bima tetap model utama.
+- **Rem otomatis:** di laporan, Pak Bima mencatat perkiraan pemakaian kredit ElevenLabs bulan ini (`aset/log_kredit.csv`). Bila kredit tersisa < 15% sebelum tanggal 25, atau Bos menulis "hemat" di Kantor Visual → tunda video panjang minggu itu dan laporkan (Shorts 1/hari tetap jalan).
+- **Shorts 9:16 sesuai RESEP VIRAL (Bos 28 Nov, dari bedah 3 video ±13 juta views):** format A "Kamu yang bikin" 70–120 dtk atau format B "Katanya vs Ternyata" 45–75 dtk — durasi mengikuti rantai cerita, batas 60 dtk lama DICABUT. Tanpa intro, frame 0 sudah beraksi, satu cerita dengan celah baru ≤ 18 dtk, penutup 1 kalimat tanya/janji seri (tanpa perintah komen/like/kirim). Setiap Shorts diarahkan ke video panjang terkait (komentar tersemat / related video).
 - **Kualitas di atas jumlah.** YouTube tidak memonetisasi konten massal yang mirip-mirip. Lebih baik 1 Shorts bagus daripada 3 yang serupa.
 - Setiap video WAJIB punya set/visual yang sesuai topiknya (bukan set yang sama terus) — tambah aset baru ke pustaka bila perlu (`panduan/katalog-aset.md`).
-- Selalu jaga **stok minimal 3 hari** video yang sudah terjadwal.
+- Jaga **stok 1–2 Shorts siap** (menunggu persetujuan/disetujui) supaya slot 18.30 tidak kosong; jangan menumpuk stok dengan video yang belum lolos resep.
 - Pantau tiap Senin (laporan Raka): subscriber, jam tonton 365 hari, views Shorts 90 hari, rata-rata durasi tonton, CTR thumbnail. Bandingkan dengan jalur ke 8.000 jam.
 - **Narasi:** utamakan suara Bos sendiri bila Bos mengirim rekaman (paling kuat sebagai bukti konten orisinal); jika tidak ada, suara AI berkualitas tinggi. Suara robot hanya untuk uji internal, jangan ditayangkan.
 
-## Minggu 24–27 Nov 2026 (perintah Bos 24 Nov)
-- **3 Shorts/hari** (13.00, 18.00, 19.45) karena minggu ini tanpa video panjang; tiap konten kualitas terbaik & berpotensi viral (lihat urutan di `panduan/bank-ide.md`). Terbit 19.45 dijalankan tugas terjadwal 19.32 (hanya 24–27 Nov).
-- **Mulai Jumat 27 Nov (setelah reset kuota mingguan): kembali 2 Shorts/hari + 1 video panjang/minggu** (Min 29 Nov 19.00). Produksi pagi Jumat mengubah `shorts_per_hari` ke 2.
+## Keputusan Bos 28 Nov 2026 — kualitas & resep viral
+- Dasar: bedah 3 video ±13 juta views (`laporan/2026-11-28/bedah-3-video-viral.md`) + data "ditonton vs digeser" channel (`laporan/2026-11-28/ditonton-vs-digeser.md`).
+- Jadwal: produksi harian 09.47 WITA (1 Shorts), terbit 18.17 untuk slot 18.30 + evaluasi harian. Terbit 12.47 dan 19.32 dimatikan.
+- Video format lama yang belum selesai (A3-07 remote TV, sensasi tubuh) `ditunda` sebagai cadangan darurat.
+- **Tokoh pendamping Tebe (MENUNGGU PERSETUJUAN BOS):** cewek dewasa muda, cantik, ceria, "sok tau" yang percaya mitos/solusi gampang lalu terbukti salah, ditutup "Ooh… ternyata begitu." Rancangan: `panduan/karakter-pendamping.md`. Jangan dipakai di video sebelum Bos menyetujui desain & suaranya.
 
 ## Uji iklan follower (keputusan Bos 24 Nov — mengubah keputusan "100% organik" untuk 3 video saja)
 Bos mengiklankan **3 video dengan engagement terbaik selama 5 hari (Jum 27 Nov – Sel 1 Des)** untuk menaikkan follower. Bos sendiri yang memasang & membayar iklan.
@@ -61,16 +63,15 @@ Keputusan Bos 19 Nov: **tanpa iklan berbayar (100% organik) selama Nov–Des 202
 Rencana pendapatan lanjutan (Bos, 19 Nov): affiliate & kerja sama brand baru dijajaki setelah channel besar; topik "cara kerja" dijaga netral merek sampai saat itu.
 Perlindungan channel (Bos, 19 Nov): TIDAK membuat channel cadangan (aturan YouTube: bila channel utama dihentikan, channel lain milik/menampilkan pemilik ikut dilarang). Yang dijaga: semua aset & video tersimpan di repo + Kantor Visual, musik/SFX/gambar hanya berlisensi atau buatan sendiri, fakta bersumber, tanpa nasihat kesehatan/keuangan/hukum, variasi antar-video (anti "konten berulang").
 
-## Format gabungan & uji A/B (Bos, 19 Nov 2026) — pola menuju monetisasi
-Kekuatan kita dipertahankan, kekuatan akun pembanding (@barutahu.in) diterapkan: lihat `.claude/skills/naskah-viral/referensi/format-gabungan.md`.
-Jalur A "Kok Bisa Jalan?" (cara kerja benda sehari-hari, ≤ 90 dtk) slot 13.00 · Jalur B "Ternyata Begitu" (fakta sehari-hari, ≤ 60 dtk) slot 18.00.
-Raka membandingkan kedua jalur tiap Senin; jalur yang menang 2 minggu berturut-turut mendapat porsi lebih besar; pola terbukti dicatat di `panduan/pola-terbukti.md`.
+## Dua format resep viral (Bos 28 Nov 2026) — menggantikan format gabungan A/B 19 Nov
+Format A **"Kamu yang bikin"** (cara kerja benda: dari aksi kecil → 4–7 masalah "tapi → jadi" → nama asli di akhir) · Format B **"Katanya vs Ternyata"** (mitos/pengalaman tubuh & rumah: bantah ≤ 6 dtk → penampang → pertanyaan kedua → janji seri).
+Raka menyeimbangkan kedua format dan membandingkannya tiap Senin (tetap menonton, rata-rata ditonton, komentar & share per 1.000 views). Pola yang terbukti dicatat di `panduan/pola-terbukti.md`.
 
 ## Pilar konten (rotasi supaya channel tidak monoton)
 1. Sejarah yang jarang diceritakan  2. Sains & tubuh manusia  3. Alam & hewan aneh
 4. Geografi & negara  5. Uang & ekonomi sehari-hari  6. Benda & kebiasaan sehari-hari (asal-usulnya)
 Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video.
-**Semua pilar dibuka dari pengalaman sehari-hari orang Indonesia** (Bos, 19 Nov): ide harus lolos uji "pernah ngalamin", ditutup pertanyaan pengalaman supaya penonton bercerita di komentar & menandai teman. Komentar penonton jadi sumber ide berikutnya.
+**Semua pilar dibuka dari hal yang pernah DILIHAT atau DIALAMI orang Indonesia** (Bos 19 Nov, diperbarui 28 Nov): tapi tidak bisa mereka jelaskan. Penutup mengikuti resep ("Berikutnya mau kita rakit apa?" / janji seri) — usulan topik di komentar jadi sumber ide berikutnya.
 
 ## Pembeda channel (wajib — YouTube tidak memonetisasi konten massal yang generik/template)
 1. **Fakta benar dan bersumber:** minimal 2 sumber kredibel per klaim utama, sumber di deskripsi.
@@ -78,7 +79,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 3. **Sudut Indonesia** bila memungkinkan (perbandingan dengan hal yang dikenal orang Indonesia).
 4. **Maskot & gaya kartun orisinal** (`panduan/karakter.md`, `panduan/gaya-visual.md`) — jangan meniru
    karakter channel lain (termasuk Kok Bisa).
-5. **Variasi:** pola hook tidak sama dengan 5 video sebelumnya (cek `panduan/riwayat.md`).
+5. **Variasi isi:** benda/topik, dunia/set, dan rantai masalah selalu baru; pola pembuka & penutup seri boleh sama (ciri seri, seperti akun viral) tetapi kalimatnya ditulis baru setiap video (cek `panduan/riwayat.md`).
 6. **Persetujuan pemilik** sebelum upload. Tidak ada video tayang tanpa status `disetujui`.
 
 ## Alur kerja (satu video = satu folder di `antrean/`, status di `status.json`)
@@ -97,7 +98,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 
 ## Aturan kerja
 - **Skill dulu, hemat token.** Pak Bima memakai `.claude/skills/tebe-inti` + `gerbang-mutu`; tiap agent membaca `tebe-inti` + skill perannya saja (riset-fakta, naskah-viral, seo-distribusi, produksi-video). `panduan/` = arsip rinci, dibuka hanya bila skill menyuruh. Saat mendelegasikan, jangan menempel isi panduan ke prompt agent — cukup sebut folder video dan tugasnya.
-- **STANDAR 80 (Bos 28 Nov) — batas wajib setiap Shorts, menggantikan skor 8/10:** `.claude/skills/naskah-viral/referensi/standar-80.md` (target ≥ 80% tetap menonton; Shorts 30–45 dtk / 70–100 kata; kalimat pertama ≤ 7 kata = pertanyaan sampul; frame 0 = sampul; loop; `scripts/cek_standar.py` wajib LULUS; uji banding Raka R1; ukur 24 jam setelah tayang). Aturan durasi/skor lain di file ini kalah bila bertentangan.
+- **RESEP VIRAL (Bos 28 Nov) — wajib setiap Shorts, menggantikan STANDAR 80 & skor 8/10:** `.claude/skills/naskah-viral/referensi/resep-viral.md` (`scripts/cek_standar.py` wajib LULUS; uji banding Raka R1; ukur "tetap menonton" 24 jam setelah tayang, target ≥ 80%). Aturan durasi/skor lain di file ini kalah bila bertentangan.
 - **Standar profesional:** video wajib LULUS `scripts/cek_mulus.py` (tanpa suara terpotong, transisi kasar, teks di luar zona aman), sampul = momen dramatis yang berbeda dari 2 video terakhir.
 - **Satu konten = kerja seluruh tim** (perintah Bos). Setiap folder video wajib punya `lembar_tim.md` yang diisi lima orang sebelum naskah ditulis dan diparaf lima orang setelah produksi. Minta tiap agent memberi masukan singkat untuk bagian rekan. Daftar periksa di skill `gerbang-mutu` harus "ya" semua sebelum `menunggu_persetujuan`.
 - **Catatan Bos didahulukan.** Jika `status.json` punya `catatan_bos` (dari tombol Tolak di kantor visual), itu perintah pemilik: kerjakan perbaikan itu lebih dulu dan sebutkan di laporan bagaimana catatan itu dipenuhi. Setelah video kembali ke `menunggu_persetujuan`, kosongkan `catatan_bos`.
@@ -106,7 +107,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
   hemat kredit API). Setelah tiap tahap, perbarui `status.json` lewat agent yang bersangkutan.
 - Tahap gagal 2x → isi `"masalah"`, lewati video itu, lanjut video lain, laporkan.
 - Internet/API mati → berhenti rapi, laporkan yang tertunda.
-- **Cek fakta & mutu (manajer):** nilai naskah dengan rubrik di `panduan/playbook-naskah.md` secara jujur (jangan sekadar menyalin `skor_naskah` dari Nadia). Lulus hanya jika akurat DAN semua batas STANDAR 80 "ya" dengan bukti (tanpa skor 1–10); kalau tidak, kembalikan ke Nadia dengan catatan bagian mana yang lemah. Setiap kalimat di `naskah.json` harus didukung `riset.md`. Judul tidak boleh
+- **Cek fakta & mutu (manajer):** nilai naskah dengan rubrik di `panduan/playbook-naskah.md` secara jujur (jangan sekadar menyalin `skor_naskah` dari Nadia). Lulus hanya jika akurat DAN semua butir RESEP VIRAL "ya" dengan bukti (tanpa skor 1–10); kalau tidak, kembalikan ke Nadia dengan catatan bagian mana yang lemah. Setiap kalimat di `naskah.json` harus didukung `riset.md`. Judul tidak boleh
   menyesatkan. Tidak ada klaim kesehatan/keuangan yang bisa jadi nasihat berbahaya.
 - **Review (manajer):** jalankan `python scripts/cek_video.py antrean/<folder>`, lihat `thumbnail.png`
   dan 3 gambar adegan acak: maskot konsisten? ada tulisan aneh di gambar? Tulis `review.md`.
@@ -121,14 +122,14 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 
 ## Siklus wajib: buat → tayang → ANALISA → perbaiki (perintah Bos, 16 Nov 2026)
 Konten selesai bukan berarti berhenti. Setiap video yang tayang wajib dianalisa dan hasilnya mengubah konten berikutnya:
-- Harian (sesi 17.47): performa 3 hari terakhir → `laporan/harian.md` berisi 3 langkah → dibaca produksi 05.41.
-- Mingguan (Senin, di awal sesi produksi 05.41): `/laporan-minggu` → 5 langkah minggu depan + perkembangan akun menuju target monetisasi.
+- Harian (sesi 18.17): "tetap menonton" & performa video yang tayang ≥ 24 jam → `laporan/harian.md` berisi langkah perbaikan → dibaca produksi 09.47.
+- Mingguan (Senin 08.23, tugas terjadwal "laporan Senin"): `/laporan-minggu` → 5 langkah minggu depan + perkembangan akun menuju target monetisasi.
 - Data: konektor Supermetrics (uji coba gratis s.d. **29 Nov 2026**, Bos memutuskan TIDAK berlangganan). Mulai 30 Nov atau bila konektor tidak tersedia:
   Pak Bima meminta Bos lewat log Kantor Visual mengirim tangkapan layar statistik (YouTube Studio, TikTok, Instagram) setiap Senin, lalu Raka menganalisa dari gambar itu. Jangan pernah mengarang angka.
 
 ## Jadwal otomatis di cloud (perintah `/pasang-jadwal`, sekali saja)
-- 05.41 WITA produksi pagi: ambil keputusan Bos, kerjakan antrean, jaga stok, kirim pratinjau ke Kantor Visual HP.
-- 12.47 & 17.47 WITA `/terbitkan` (+ 19.32 bila 3 Shorts/hari): terapkan Setujui/Tolak dari HP, lalu unggah yang disetujui sesuai jam tayang di `jam_tayang.json` (13.00 & 18.00, slot ke-3 19.45).
+- 09.47 WITA produksi harian: ambil keputusan Bos, kerjakan antrean, buat 1 Shorts resep viral bila stok < 2, kirim pratinjau ke Kantor Visual HP.
+- 18.17 WITA `/terbitkan` + evaluasi harian: terapkan Setujui/Tolak dari HP, lalu unggah yang disetujui untuk slot 18.30 (`jam_tayang.json`). Senin 08.23 laporan mingguan.
 - Kunci API & token hanya di pengaturan environment claude.ai/code (lihat `.env.example` untuk daftar namanya), tidak pernah di repo atau chat.
 
 ## Laporan ke pemilik (selalu di akhir sesi, singkat)

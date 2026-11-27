@@ -36,7 +36,7 @@ Tulis `naskah.json` dengan format PERSIS:
 Aturan:
 - **Shorts** (`"format": "shorts"`): 6–9 adegan, total narasi 110–140 kata.
   **Video panjang** (`"format": "panjang"`): 25–60 adegan, 600–1100 kata, dengan bab: hook → pertanyaan besar → 3 bagian penjelasan → kejutan → penutup.
-- **STANDAR 80 (Bos 28 Nov) wajib:** `.claude/skills/naskah-viral/referensi/standar-80.md` (N1–N7). Shorts 70–100 kata, kalimat pertama ≤ 7 kata = pertanyaan sampul, tiap kalimat ≤ 12 kata; jalankan `python scripts/cek_standar.py antrean/<folder>` sampai LULUS sebelum menyerahkan. Skor 1–10 di bawah hanya catatan, BUKAN syarat lulus.
+- **RESEP VIRAL (Bos 28 Nov) wajib:** `.claude/skills/naskah-viral/referensi/resep-viral.md` (format A "Kamu yang bikin" 170–300 kata / B "Katanya vs Ternyata" 95–175 kata, kalimat pertama ≤ 12 kata, tiap kalimat ≤ 14 kata, isi `format_resep`); jalankan `python scripts/cek_standar.py antrean/<folder>` sampai LULUS sebelum menyerahkan. Skor 1–10 di bawah hanya catatan, BUKAN syarat lulus.
 - Tulis **10 kandidat hook**, pilih yang terbaik untuk adegan 1 (≤ 7 kata). Pola hook tidak sama dengan 5 video terakhir.
 - Ikuti **peta retensi** di playbook: taruhan personal di 4 detik pertama, minimal 1 open loop, pattern interrupt tiap 6–8 detik, kejutan kedua, payoff yang membayar janji hook.
 - Nilai naskahmu sendiri dengan **rubrik** di playbook; kalau total < 8, tulis ulang sebelum menyerahkan.

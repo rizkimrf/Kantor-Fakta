@@ -1,3 +1,5 @@
+> **DIGANTI 28 Nov 2026 oleh `resep-viral.md`.** File ini hanya arsip; jangan dipakai untuk video baru.
+
 # Format Gabungan "Ternyata Begitu" (Bos, 19 Nov 2026)
 Tujuan: menemukan pola yang TERBUKTI menaikkan views → monetisasi. Kekuatan kita dipertahankan, kekuatan akun pembanding
 (@barutahu.in: ratusan ribu–10 juta views/Reels dalam 2 bulan) diterapkan, lalu data yang memutuskan.

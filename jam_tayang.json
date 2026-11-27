@@ -1,9 +1,8 @@
 {
- "_catatan": "Jam tayang WITA. Mulai Jum 27 Nov (keputusan Bos 24 Nov): 2 Shorts/hari (13:00, 18:00) + 1 video panjang/minggu (Minggu 19:00). Slot 19:45 hanya dipakai bila ada video yang sudah terjadwal sebelumnya atau bila Bos mengaktifkan lagi 3 Shorts/hari.",
- "shorts_per_hari": 2,
+ "_catatan": "Jam tayang WITA. Keputusan Bos 28 Nov 2026: 1 Shorts per hari, kualitas di atas jumlah, tayang 18:30 (tugas terbit 18:17). Produksi harian 09:47 (1 Shorts). Video panjang Minggu 19:00 (diunggah manual Bos selama audit YouTube belum lolos).",
+ "shorts_per_hari": 1,
  "shorts": [
-  "13:00",
-  "18:00"
+  "18:30"
  ],
  "panjang": [
   "19:00"

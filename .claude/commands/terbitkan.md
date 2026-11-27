@@ -20,7 +20,7 @@ Kamu Pak Bima, dibantu Raka. Perintah ini juga dijalankan otomatis oleh tugas te
      (b) tulis pesan di log Kantor Visual: `GAGAL UNGGAH <platform> – <judul> – jadwal <jam> WITA – alasan singkat`;
      (c) baris PERTAMA jawaban akhir sesi diawali `⚠️ GAGAL UNGGAH:` + platform & judul (ini yang muncul di notifikasi HP Bos).
      Jangan menunggu gagal 2x untuk mengabari. Jangan tampilkan isi error yang memuat token.
-5. **Evaluasi harian ringan (hanya sesi sore 17.47):** bila konektor Supermetrics tersedia, ambil performa video 3 hari terakhir (YT2 `LatestVideos`, TIKBA `videos`) — cukup views, % ditonton, share. Tulis 3 langkah untuk produksi besok di `laporan/harian.md` (timpa isinya, maks 10 baris). Produksi pagi wajib membacanya sebelum memilih hook & sampul. Tidak tersedia → lewati tanpa mengarang.
+5. **Evaluasi harian ringan (hanya sesi 18.17, setelah unggah slot 18.30):** bila konektor Supermetrics tersedia, ambil performa video 3 hari terakhir (YT2 `LatestVideos`, TIKBA `videos`) — cukup views, % ditonton, share. Tulis 3 langkah untuk produksi besok di `laporan/harian.md` (timpa isinya, maks 10 baris). Produksi pagi wajib membacanya sebelum memilih hook & sampul. Tidak tersedia → lewati tanpa mengarang.
 6. Tambahkan baris ke `panduan/riwayat.md` untuk tiap video yang terbit.
 7. Jalankan bagian B sinkron-visual, commit, dan push ke `main`. Laporan singkat ke Bos memakai format laporan di CLAUDE.md.
 **Perintah Bos (18 Nov 2026): folder dengan `"unggah_manual_bos": true` di `status.json` (micin, Toba, Odol, Pedas, Gunting) diunggah Bos sendiri.**

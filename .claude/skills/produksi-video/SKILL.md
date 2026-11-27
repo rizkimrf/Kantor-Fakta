@@ -4,7 +4,7 @@ description: Cara Yoga memproduksi video Ternyata Begitu yang mulus dan profesio
 ---
 # Produksi Video (Yoga) — "Sekali lagi, biar pas."
 
-**STANDAR 80 (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** baca `.claude/skills/naskah-viral/referensi/standar-80.md`. Bagianmu: Y1–Y4 (frame 0 = sampul: benda ≥ 50% layar & sudah bergerak, pertanyaan ≤ 5 kata ≥ 110 px, Tebe ≤ 15% layar; suara ≤ 0,2 dtk; perubahan visual ≤ 2 dtk; tiap langkah mekanisme diperagakan; frame terakhir menyatu ke frame 0).
+**RESEP VIRAL (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** `.claude/skills/naskah-viral/referensi/resep-viral.md`. Bagianmu: U1 (frame 0 sudah beraksi), U5 (setiap kalimat diperagakan persis, penampang/tembus pandang), U7 (subtitle kecil + sorot kata kunci + chip bab), U9 (efek komik BRUK!/BYUR!), U12 (Tebe = pelaku "kamu"). Contoh pola: `laporan/2026-11-28/bedah-3-video-viral.md`.
 Contoh acuan: `studio-aset/contoh-1menit/v8-final.html` (struktur) · `studio-aset/contoh-sampul/` (sampul).
 Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py` + `scripts/cek_video.py`.
 
@@ -14,22 +14,20 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 3. **Uji cepat** tiap transisi: `python scripts/render_html.py antrean/<folder> --mulai <t-1> --durasi 3 --skala 0.5`.
 4. Render penuh → `cek_mulus.py` → lihat lembar cek → baru serahkan ke Pak Bima.
 
-## Format gabungan (Bos, 19 Nov) — detail `.claude/skills/naskah-viral/referensi/format-gabungan.md`
-- Visual MEMPERAGAKAN tiap kata (panah gaya, retak, aliran, penampang/x-ray). Satu dunia + kamera terus bergerak, sedikit potongan.
-- Tebe cameo 1–3 kali (reaksi kecil di zona aman atau tangan yang mengoperasikan benda); subjek memenuhi layar.
-- **Subtitle adaptif (Bos, 19 Nov):** gaya subtitle tetap seperti sekarang (2–4 kata per kelompok, mengikuti suara). Per adegan, pilih posisi
-  di dalam zona aman yang KOSONG dari objek inti: pita atas (y 260–420), tengah (y 900–1100) atau bawah (y 1250–1400).
-  Ukuran menyesuaikan ruang: normal 64–72 px; kecilkan sampai minimal 52 px bila ruang sempit; jangan pernah menutupi bagian yang
-  sedang diperagakan (panah, retak, aliran, wajah Tebe). Pindah posisi hanya saat ganti babak dan dengan fade 150 ms (tidak loncat-loncat).
-  Wajib kontur/bayangan gelap tipis agar terbaca di atas latar apa pun.
-- Detik terakhir: teks besar ajakan komentar 1 kata berkubu, lalu adegan kembali ke pembuka (loop).
-- **Outro (Bos 19 Nov):** ±1 dtk logo YouTube kecil (ikon play merah resmi, tidak diubah bentuk/warnanya) + teks "Ternyata Begitu" di zona aman,
-  menyatu dengan adegan loop — tanpa kalimat "tonton di YouTube"/"subscribe". Ikon disimpan di `studio-aset/` sebagai SVG.
+## Gaya resep viral (Bos 28 Nov) — dari bedah 3 video ±13 juta views
+- **Satu dunia, satu cerita.** Set dibangun lebih lebar dari layar; kamera dolly/zoom terus di dunia yang sama (V3: satu bidikan 70 dtk). Potong hanya bila pindah skala (kecil → raksasa).
+- **Peragaan persis:** setiap kalimat = satu aksi terlihat. Bagian dalam = penampang/tembus pandang (tanah dipotong, tabung transparan, lapisan kulit). Kegagalan diperagakan dramatis + efek kata komik (BRUK!, BYUR!, KREK!) + SFX.
+- **Format A "Kamu yang bikin":** Tebe (helm/rompi sesuai topik) = "kamu" yang mengerjakan setiap langkah sejak frame 0. Skala naik: alat kecil → mesin raksasa.
+  Chip bab kiri atas (y 240–330): label kecil "MASALAH"/"SOLUSI" + judul pendek dengan 1 kata disorot kotak biru/teal.
+- **Format B "Katanya vs Ternyata":** gaya infografis 2D (latar polos gelap/terang), baris kecil putih + KATA KUNCI BESAR berwarna di atas, gambar penampang di tengah, perbandingan berdampingan (pelan/sedang/keras).
+- **Subtitle:** kecil 44–56 px, 2–4 kata mengikuti suara, kata kunci/istilah disorot kotak warna; posisi adaptif di zona aman yang kosong dari peragaan; kontur gelap tipis. Emoji maks 3.
+- **Tokoh pendamping (setelah disetujui Bos):** muncul hanya saat kalimatnya (`pembicara: pendamping`), ekspresi "yakin" → "kaget/malu" saat dibantah.
+- **Penutup:** kalimat terakhir (pertanyaan/janji seri) di atas adegan hasil akhir yang megah (gedung jadi, kereta lewat); lalu ±1 dtk logo YouTube kecil + "Ternyata Begitu" (Bos 19 Nov). Tanpa teks ajakan komentar, tanpa loop paksa.
 
 ## Kemulusan (wajib — detail: referensi/kemulusan.md)
 - Transisi 12–18 frame (0,4–0,6 dtk) dengan easing in-out, di celah antar-kalimat. Tidak ada frame warna polos, tidak ada wipe < 6 frame.
 - **TANPA intro logo (Bos, 19 Nov).** Jangan panggil `KS.intro`; `T_INTRO = 0`. Narasi mulai di 0,0–0,3 dtk, visual hook sudah bergerak di frame ke-2.
-- Durasi maks 60 dtk. Perubahan visual tiap 2–3 dtk (zoom, objek masuk, teks baru, sudut baru). Outro ≤ 1,5 dtk dan menyambung ke awal (loop mulus).
+- Durasi mengikuti naskah (format A 70–120 dtk, format B 45–75 dtk). Perubahan visual tiap 2–3 dtk (zoom, objek masuk, teks baru, sudut baru). Outro logo ≤ 1,5 dtk setelah kalimat penutup.
 - Gerak Tebe & kamera selalu fungsi waktu kontinu (smootherstep), tidak pernah lompat posisi antar-frame.
 - Narasi TIDAK dipotong di tengah kata: `window.JEDA` hanya di akhir kalimat (skrip juga menjepret ke celah kata + fade 25 ms).
 - Musik: −12 s/d −15 dB di bawah narasi, ducking halus (sudah diatur skrip). SFX maks 4–6, mendarat tepat di aksi visual, tidak menutupi kata.
@@ -48,9 +46,8 @@ Gaya acuan seperti channel animasi edukasi besar: satu ADEGAN ilustrasi yang men
 - Teks atas 2 baris, maks 4–5 kata, huruf putih tebal berkontur gelap, 1 kata berwarna; berbentuk pertanyaan/klaim.
 - Maks 1 grafis penunjuk (panah merah / lingkaran).
 - Semua inti di y 260–1660 (grid profil memotong jadi 3:4). Beda konsep & warna dominan dari 2 sampul terakhir.
-- Frame 0 video = sampul ini DAN sekaligus adegan hook (judul sampul = teks hook), sehingga video langsung jalan tanpa jeda.
-  Komposisi sampul (teks besar + objek inti) BERTAHAN ±1 dtk pertama sambil bergerak halus — jangan langsung pindah adegan di frame 1
-  (kasus Pedas & Gunting 18 Nov: sampul hanya 1 frame → YouTube memilih gambar tengah video). Selalu unggah `thumbnail.png` ke Kantor Visual (`thumb_url`) agar Bos bisa mengunduhnya.
+- `thumbnail.png` = sampul terpisah: benda besar + pertanyaan ≤ 4 kata ("[Benda], kok …?"). Frame 0 video = aksi yang SUDAH berjalan + chip bab (U1), bukan gambar diam.
+  YouTube sering memilih frame acak sebagai sampul Shorts (kasus Pedas & Gunting 18 Nov) → selalu unggah `thumbnail.png` ke Kantor Visual (`thumb_url`) agar Bos bisa mengunduhnya.
 
 ## Selesai bila
 `cek_mulus.py` LULUS, `cek_video.py` LULUS, ukuran ≤ 18 MB, lembar cek sudah dilihat, paraf di lembar_tim.md.

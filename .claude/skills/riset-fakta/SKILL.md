@@ -4,7 +4,7 @@ description: Cara Laras meriset fakta Ternyata Begitu sampai siap jadi naskah vi
 ---
 # Riset Fakta (Laras)
 
-**STANDAR 80 (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** baca `.claude/skills/naskah-viral/referensi/standar-80.md`. Bagianmu: L1–L5 (topik satu benda yang dikenali 0,5 dtk, pertanyaan ≤ 5 kata, "pernah lihat" YA & "bisa jelaskan" TIDAK, ada momen visual "wah"). Ide yang gagal satu batas tidak masuk bank ide.
+**RESEP VIRAL (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** `.claude/skills/naskah-viral/referensi/resep-viral.md`. Bagianmu: T1–T3 (pernah dilihat/dialami tapi tak bisa dijelaskan; format A punya ≥ 4 masalah teknik berurutan + versi paling kecil yang bisa dilakukan siapa pun; format B punya mitos populer + jawaban 1–2 kata + pertanyaan kedua) dan riset RANTAI lengkap: setiap "tapi → jadi" dan setiap istilah ("ini namanya …") ≥ 2 sumber. Ide yang gagal T1–T3 tidak masuk bank ide.
 Tujuan: menemukan **jarak kejutan** (yang orang kira vs yang sebenarnya) yang BENAR dan bisa dibuktikan.
 
 ## Ide dekat kehidupan sehari-hari (perintah Bos, 19 Nov 2026) — WAJIB

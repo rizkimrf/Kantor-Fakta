@@ -6,7 +6,7 @@ Memeriksa:
   3. Kilatan/potongan kasar: transisi yang berganti total dalam < 4 frame (wipe terlalu cepat) atau frame warna polos.
   4. Gambar beku > 1,2 dtk saat narasi berjalan.
   5. Menunggu tanpa narasi: jeda antar babak > 0,9 dtk atau suara AI diam > 1,2 dtk.
-  6. Durasi > 60 dtk atau suara baru mulai setelah 0,5 dtk (tanpa intro, Bos 19 Nov).
+  6. Durasi melebihi batas format resep (A 120 dtk, B 75 dtk; video lama 60/90) atau suara baru mulai setelah 0,5 dtk (tanpa intro).
 Juga membuat lembar cek: _kerja/cek_transisi.jpg (6 frame di setiap transisi) dan _kerja/cek_zona_aman.jpg
 (4 frame acak dengan garis zona aman) untuk dilihat dengan mata sebelum review."""
 import subprocess, sys
@@ -73,14 +73,18 @@ if wk.exists():
     kt = json.loads(wk.read_text(encoding="utf-8")).get("kata", [])
     for a, b in zip(kt, kt[1:]):
         if b["mulai"] - a["selesai"] > 1.2: masalah.append(f"suara AI diam {b['mulai'] - a['selesai']:.1f} dtk setelah kata '{a['kata']}' (narasi detik {a['selesai']:.1f}) - potong/padatkan celahnya")
-# --- aturan 19 Nov: maks 60 dtk & narasi langsung mulai (tanpa intro)
+# --- aturan 28 Nov (RESEP VIRAL): durasi mengikuti format; narasi langsung mulai (tanpa intro)
 import json as _j
-_st = folder / "status.json"
-_seri = _j.loads(_st.read_text(encoding="utf-8")).get("seri") if _st.exists() else None
-_nk = folder / "naskah.json"
-_seri_n = _j.loads(_nk.read_text(encoding="utf-8")).get("seri") if _nk.exists() else None
-_maks = 90 if (_seri in ("cara-kerja", "A") or _seri_n == "cara-kerja") else 60  # jalur A "Kok Bisa Jalan?" boleh <= 90 dtk (status.json kini memakai seri "A"/"B")
-if D > _maks + 1: masalah.append(f"durasi {D:.1f} dtk > {_maks} dtk (aturan Bos 19 Nov, seri {_seri or 'fakta'})")
+_st = folder / "status.json"; _nk = folder / "naskah.json"
+_s = _j.loads(_st.read_text(encoding="utf-8")) if _st.exists() else {}
+_n = _j.loads(_nk.read_text(encoding="utf-8")) if _nk.exists() else {}
+_fmt = _n.get("format_resep") or _s.get("format_resep")
+_seri = _s.get("seri") or _n.get("seri")
+if _fmt == "kamu-yang-bikin": _maks = 120
+elif _fmt == "katanya-ternyata": _maks = 75
+else: _maks = 90 if _seri in ("cara-kerja", "A") else 60  # video format lama (sebelum 28 Nov)
+if (_s.get("format") or _n.get("format")) != "panjang" and D > _maks + 2:
+    masalah.append(f"durasi {D:.1f} dtk > {_maks} dtk (format {_fmt or _seri or 'lama'})")
 awal = next((i * h / 16000 for i in range(len(db)) if db[i] > -35), None)
 if awal is not None and awal > 0.5: masalah.append(f"suara baru terdengar di {awal:.2f} dtk - tanpa intro, narasi harus mulai <= 0,3 dtk")
 # --- lembar cek
