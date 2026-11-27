@@ -43,9 +43,16 @@ Pasangan janji seri (cliffhanger → video berikutnya format B): B4-01 → B4-02
 | Jum 4 Des | B4-04 kesemutan | |
 Cadangan: A4-03 rice cooker, A4-05 pompa air, A4-07 mesin cuci; B4-05, B4-06. Video format lama `ditunda`: A3-07 remote TV, sensasi tubuh.
 
-## Video panjang (Minggu 19.00, 8–12 menit) — Bos 28 Nov: tema BARU, belum pernah ada di Shorts
-| Tanggal | Judul kerja | Calon bab "masalah → solusi" (dikunci Laras, ≥ 2 sumber per bab) |
-|---|---|---|
-| Min 6 Des | **"Kamu yang Bikin: Kereta Cepat dari Nol"** (sudut Whoosh Jakarta–Bandung, murni teknik) | kereta biasa kurang cepat → roda & rel khusus · sambungan rel bikin goyang → rel menerus dilas · listrik dari atas → pantograf · angin melawan → hidung lancip · tikungan → kemiringan rel · gunung → terowongan & jembatan panjang · berhenti dari ±350 km/jam → rem berlapis. Tanpa bahas biaya/utang/politik |
-| Cadangan | "Kamu yang Bikin: Bandara dari Nol" | landasan · lampu & garis · menara kontrol · radar · garbarata · bagasi berjalan |
+## Video panjang (Minggu 19.00, 8–12 menit) — Bos 28 Nov: kebiasaan sehari-hari + momen BULAN itu (tidak harus pas tanggal)
+Kolam tema Desember 2026 – awal Januari 2027. Urutan tayang bebas: Ken memilih yang paling siap, Rudi mendahulukan yang paling ramai (cek tren H-7). Laras riset ≥ 2 sumber per bab.
+Shorts jembatan = 2 Shorts Kamis–Sabtu sebelum video panjangnya, keluarga tema sama.
+| No | Momen bulan ini | Tema | Rantai bab | Shorts jembatan |
+|---|---|---|---|---|
+| P-01 | Puncak musim hujan Des–Feb (BMKG, 9 Nov 2026) | **"Kamu yang Bikin: Kota yang Nggak Banjir"** — kenapa baru hujan sebentar jalan langsung tergenang | atap → talang · aspal tak menyerap → got · got tersumbat sampah → saringan & gorong-gorong · sungai meluap → tanggul & pintu air · tanah tertutup beton → resapan/biopori · kota rawa & dekat laut (sudut Banjarmasin) → polder & pompa. Tanpa gambar korban | B: bau tanah saat hujan pertama · B: jemuran nggak kering waktu mendung |
+| P-02 | Harbolnas 12.12 & belanja akhir tahun | **"Kamu yang Bikin: Paket Sampai Rumahmu"** | satu toko kirim sendiri → kurir · jutaan paket sehari → gudang sortir · salah kota → kode pos & barcode · sortir tangan lambat → mesin sortir · jarak jauh → hub antarpulau · gang sempit → kurir motor "last mile". Netral merek | A: kenapa "tinggal 3 stok" bikin buru-buru (cara kerja, tanpa nasihat belanja) · B: bubble wrap |
+| P-03 | Libur sekolah & mudik Nataru | **"Kamu yang Bikin: Jalan Tol yang Nggak Macet"** — kenapa macet muncul tanpa sebab | satu lajur → tambah lajur · satu mobil ngerem → gelombang rem merambat (macet hantu) · jarak aman · gerbang tol antre → kartu & tanpa henti · arus satu arah penuh → contraflow · rest area penuh → pembatasan | B: kenapa jalan pulang terasa lebih cepat · A: lampu lalu lintas |
+| P-04 | Hitung mundur tahun baru | **"Kamu yang Bikin: Jam Seluruh Dunia"** — kenapa tahun baru WITA duluan sejam dari WIB | satu matahari → jam matahari tiap kota beda · kereta & jadwal kacau → zona waktu · Indonesia 3 zona · garis tanggal internasional · siapa tahun baru paling dulu & paling akhir. Tanpa kembang api/petasan | B: kenapa kalender mulai 1 Januari · B: tahun kabisat |
+| P-05 | Balik kerja/sekolah setelah libur (awal Jan) | **"Kenapa Habis Libur Panjang Susah Bangun Pagi?"** (format B versi panjang) | jam biologis · cahaya pagi · begadang tahun baru menggeser jam · Senin terasa berat · alarm diulang bikin makin lemas. Wajib kalimat batas aman, tanpa saran obat/suplemen | B: kenapa nguap menular · B: kenapa Senin terasa lama |
+| Cadangan | — | "Kamu yang Bikin: Kereta Cepat dari Nol" · "Bandara dari Nol" | (lihat arsip rantai sebelumnya) | — |
+Bila Bos menyetujui format C (`laporan/2026-11-28/format-c-sitkom.md`), versi lengkap cerita serial boleh menggantikan satu tema di atas.
 Video panjang "Pedas & Sambal" (berbasis Shorts lama) DITUNDA. Min 29 Nov tanpa video panjang supaya video pertama format baru dibuat tanpa terburu-buru.

@@ -7,6 +7,19 @@ mulai 1 Feb 2027 naik menjadi 8.000 jam (atau 20 juta tayangan Shorts/90 hari). 
 - ≤ 12 menit: kemampuan produksi & retensi kita; lebih panjang hanya bila data menunjukkan rata-rata durasi tonton > 50%.
 - Ukuran sukses: rata-rata durasi tonton ≥ 4 menit dan % ditonton ≥ 40%.
 
+## PERUBAHAN Bos 28 Nov (kedua) — MENGALAHKAN semua bagian di bawahnya
+Tema video panjang = **kebiasaan sehari-hari orang Indonesia + momen yang sedang terjadi di BULAN tayangnya**
+(musim, libur, hari belanja, hari besar, peristiwa yang ramai dibicarakan). Tidak harus pas tanggalnya — cukup masih terasa bulan itu (Bos 28 Nov). Penonton harus merasa "ini lagi kualami bulan ini".
+1. **Kolam tema bulanan** di `panduan/bank-ide.md` (bagian Video panjang): 4–6 tema per bulan, disusun sebelum bulan mulai. Urutan tayang bebas — Ken memilih yang riset & produksinya paling siap, Rudi mendahulukan yang paling ramai saat itu.
+2. **Cek tren H-7** (Rudi): Google Trends Indonesia, pencarian YouTube, TikTok Discover. Bila muncul momen sehari-hari yang jauh lebih ramai, tema boleh diganti
+   asal riset Laras (≥ 2 sumber) masih sempat selesai. Rudi menulis alasannya di `rencana_marketing.md`.
+3. **Batas momen:** tanpa politik, tanpa SARA, tanpa memanfaatkan korban bencana (banjir dibahas sebagai cara kerja kota, tanpa rekaman/gambar korban),
+   tanpa cara membuat benda berbahaya (petasan, kembang api), tanpa nasihat kesehatan/keuangan.
+4. **Kolam audiens dulu (kekhawatiran Bos: video panjang < 50 views):** 2 Shorts di minggu yang sama memakai **keluarga tema yang sama** (rantai berbeda, tetap resep viral),
+   tayang Kamis–Sabtu, dengan related video ke video panjang Minggu. Video panjang tidak pernah berdiri sendiri.
+5. Judul & sampul menyebut momennya ("musim hujan", "habis 12.12", "libur Nataru") supaya ikut dicari saat momennya ramai.
+6. Format bab tetap seperti di bawah ("Kamu yang bikin" 6–8 bab masalah → solusi), boleh format B versi panjang untuk topik tubuh.
+
 ## PERUBAHAN Bos 28 Nov — MENGALAHKAN bagian "Isi" di bawah
 Tema video panjang = topik **BARU yang belum pernah dibahas di Shorts** dan berpotensi viral (bukan pendalaman Shorts), supaya selalu segar.
 Format utama: **"Kamu yang bikin" versi panjang** — benda/sistem raksasa yang dikenal orang Indonesia, dibangun dari versi paling kecil,
