@@ -31,7 +31,7 @@ listrik sampai rumah, brankas dibor, kereta belok, minyak lepas pantai, pesawat 
 | B4-06 | Kenapa nonton TV terlalu dekat dilarang? | bikin mata rusak | tidak merusak, cuma bikin capek | kenapa anak suka duduk dekat layar? | — |
 Pasangan janji seri (cliffhanger → video berikutnya format B): B4-01 → B4-02 → B4-03 → B4-04 → B4-05 → B4-06.
 
-## Urutan minggu pertama (Raka mengonfirmasi saat `pilih`; video gagal resep → cadangan, slot boleh kosong)
+## Urutan minggu pertama (Rudi mengonfirmasi saat `pilih`; video gagal resep → cadangan, slot boleh kosong)
 | Hari | 18.30 WITA | Catatan |
 |---|---|---|
 | Sab 28 Nov | B4-01 kedutan | format B lebih cepat diproduksi; janji: cegukan |

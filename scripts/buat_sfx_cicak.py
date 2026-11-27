@@ -1,9 +1,9 @@
-"""Audio B3-11 cicak nggak jatuh (Yoga, 26 Nov 2026) — 100% sintesis sendiri (numpy), tanpa sampel unduhan / rekaman.
+"""Audio B3-11 cicak nggak jatuh (Kiki, 26 Nov 2026) — 100% sintesis sendiri (numpy), tanpa sampel unduhan / rekaman.
 Pemakaian: python scripts/buat_sfx_cicak.py   (file yang sudah ada tidak ditimpa; benih acak tetap → hasil identik)
 Keluaran:
   aset/sfx/tokek.wav            panggilan "to-KEK!" kartun (denyut glotal + 2 formant, BUKAN rekaman tokek asli) 0,42 dtk
   aset/sfx/receh.wav            hujan koin kartun (denting inharmonik acak makin rapat) + "BRUK" karung di akhir, 1,4 dtk
-  aset/musik/langit-langit.wav  latar jenaka malam: pluk marimba + bas petik + pad tosca lembut C–Am–Dm–G, melodi gubahan Yoga,
+  aset/musik/langit-langit.wav  latar jenaka malam: pluk marimba + bas petik + pad tosca lembut C–Am–Dm–G, melodi gubahan Kiki,
                                 1 putaran = DURASI_VIDEO/5 → video 50,0 dtk = tepat 5 putaran (loop akhir→awal menyambung)
 """
 import wave

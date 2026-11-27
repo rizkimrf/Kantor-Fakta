@@ -33,6 +33,6 @@ Baris ketiga: `KEPATUHAN: CLEAR` / `REVISI` / `BLOCKED` + tanggal kebijakan yang
 Lalu `CQS (diagnostik, BUKAN syarat lulus)`: akurasi /20 · ide /15 · naskah & cerita /25 · visual & editing /20 · kemasan judul-sampul /15 · teknis /5, masing-masing 1 alasan.
 Angka ini dikumpulkan untuk diuji apakah benar memprediksi "tetap menonton" setelah ≥ 20 video; sebelum terbukti, keputusan tetap dari kegagalan kritis & resep.
 Bukti tidak tersedia → tulis `UNKNOWN` untuk aspek itu dan jangan PASS bila aspeknya kritis.
-Lalu daftar temuan: detik/kalimat + masalah + perbaikan konkret + siapa yang memperbaiki (Laras/Nadia/Yoga/Raka).
+Lalu daftar temuan: detik/kalimat + masalah + perbaikan konkret + siapa yang memperbaiki (Laras/Putri/Kiki/Rudi).
 REVISI 3x berturut-turut untuk video yang sama → tulis `ESKALASI KE BOS` beserta alasannya.
 Jangan menulis skor 1–10. Jangan pernah mengubah status menjadi `disetujui`.

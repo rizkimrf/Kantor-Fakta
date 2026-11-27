@@ -94,7 +94,7 @@ table.ab{width:100%;border-collapse:collapse;font-size:12px}table.ab th,table.ab
 <div class="bungkus">
   <header>
     <div class="logo" aria-hidden="true">?</div>
-    <div><h1>Kantor Ternyata Begitu</h1><small>Pak Bima · Laras · Nadia · Raka · Yoga</small></div>
+    <div><h1>Kantor Ternyata Begitu</h1><small>Ken · Laras · Putri · Rudi · Kiki</small></div>
     <div class="live mati" id="live"><i></i><span id="jam">--.--</span></div>
   </header>
 
@@ -131,9 +131,9 @@ table.ab{width:100%;border-collapse:collapse;font-size:12px}table.ab th,table.ab
   </section>
 
   <section>
-    <h2>Pesan ke Pak Bima</h2>
+    <h2>Pesan ke Ken</h2>
     <div class="kartu">
-      <label for="teksPesan" class="meta">Ditampung di sini, lalu dikerjakan Pak Bima saat sesi berikutnya dibuka di claude.ai/code.</label>
+      <label for="teksPesan" class="meta">Ditampung di sini, lalu dikerjakan Ken saat sesi berikutnya dibuka di claude.ai/code.</label>
       <textarea id="teksPesan" placeholder="Mis. Minta Laras cari 5 fakta soal laut Indonesia"></textarea>
       <div class="baris"><button class="ya" id="kirimPesan">Kirim pesan</button></div>
       <ul class="log" id="daftarPesan"></ul>
@@ -159,11 +159,11 @@ table.ab{width:100%;border-collapse:collapse;font-size:12px}table.ab th,table.ab
 <script>
 /* ================== DATA & TIM ================== */
 const TIM = {
-  bima:{nama:"Pak Bima",peran:"Manajer",sifat:"Tenang, visioner, tegas soal mutu, irit kata.",khas:"Benar dulu, baru menarik.",baju:"#2B3446",celana:"#3A4356",rambut:"#4A4A52",kulit:"#F1C9A5",ciri:"dasi"},
+  bima:{nama:"Ken",peran:"Manajer",sifat:"Tenang, tegas soal mutu, bicara pakai bukti.",khas:"Benar dulu, baru menarik.",baju:"#2B3446",celana:"#3A4356",rambut:"#4A4A52",kulit:"#F1C9A5",ciri:"dasi"},
   laras:{nama:"Laras",peran:"Riset",sifat:"Teliti, skeptis, kutu buku, pendiam tapi tajam.",khas:"Mana sumbernya?",baju:"#1F8A7E",celana:"#57534E",rambut:"#3B2416",kulit:"#E8B98F",ciri:"kacamata panjang"},
-  nadia:{nama:"Nadia",peran:"Copywriting",sifat:"Kreatif, jenaka, suka main kata.",khas:"Dua detik pertama itu segalanya.",baju:"#8B5CF6",celana:"#2B3446",rambut:"#1E1E1E",kulit:"#F3D2B3",ciri:"kuncir"},
-  raka:{nama:"Raka",peran:"Marketing",sifat:"Energik, ambisius, gila data dan tren.",khas:"Datanya bilang apa?",baju:"#3B82F6",celana:"#1E3A5F",rambut:"#3A2A1A",kulit:"#D9A47C",ciri:"topi"},
-  yoga:{nama:"Yoga",peran:"Editor",sifat:"Kalem, perfeksionis visual, suka begadang.",khas:"Sekali lagi, biar pas.",baju:"#56606E",celana:"#2B3446",rambut:"#6B3F2A",kulit:"#EFC19A",ciri:"headset"},
+  nadia:{nama:"Putri",peran:"Naskah",sifat:"Jenaka, peka bahasa sehari-hari, keras kepala soal 3 detik pertama.",khas:"Kalau nggak kebayang gambarnya, kalimatnya salah.",baju:"#8B5CF6",celana:"#2B3446",rambut:"#1E1E1E",kulit:"#F3D2B3",ciri:"kuncir"},
+  raka:{nama:"Rudi",peran:"Marketing",sifat:"Tenang, analitis, setia pada angka.",khas:"Ukur dulu, baru yakin.",baju:"#3B82F6",celana:"#1E3A5F",rambut:"#3A2A1A",kulit:"#D9A47C",ciri:"topi"},
+  yoga:{nama:"Kiki",peran:"Editor",sifat:"Cepat, rapi, terobsesi gerak yang mulus.",khas:"Tiap kalimat harus kelihatan.",baju:"#56606E",celana:"#2B3446",rambut:"#6B3F2A",kulit:"#EFC19A",ciri:"headset"},
 };
 const TAHAP = ["ide","pilih","naskah","cek_seo","cek_fakta","produksi","review","menunggu_persetujuan","disetujui","terjadwal","tayang"];
 const NAMA_TAHAP = {ide:"Riset",pilih:"Dipilih",naskah:"Naskah",cek_seo:"Cek SEO",cek_fakta:"Cek fakta",produksi:"Produksi",review:"Review",menunggu_persetujuan:"Menunggu Bos",disetujui:"Disetujui",terjadwal:"Terjadwal",tayang:"Tayang",ditunda:"Ditunda"};
@@ -496,7 +496,7 @@ function salinPaket(id, pl, kunci){ const t = ((PAKET[id] || {})[pl] || {})[kunc
 const SUDAH = {};
 async function tandaiUnggah(id, folder, pl){
   if (!db){ toast("Belum terhubung ke penyimpanan kantor."); return; }
-  try { await db.collection("unggah_manual").doc(id + "_" + pl).set({folder, platform:pl, waktu:new Date().toISOString(), diproses:false}); SUDAH[id + "_" + pl] = true; renderPanel(); toast("Dicatat. Raka akan memperbarui statusnya."); }
+  try { await db.collection("unggah_manual").doc(id + "_" + pl).set({folder, platform:pl, waktu:new Date().toISOString(), diproses:false}); SUDAH[id + "_" + pl] = true; renderPanel(); toast("Dicatat. Rudi akan memperbarui statusnya."); }
   catch(e){ toast("Gagal menyimpan, coba lagi."); }
 }
 /* ================== PANEL BOS ================== */
@@ -517,13 +517,13 @@ function renderPanel(){
   document.getElementById("hPapan").textContent = v.length;
   const st = document.getElementById("status");
   if (!terhubung) st.innerHTML = db === false ? "Penyimpanan kantor tidak tersedia di tampilan ini. Buka halaman ini dari akun Claude Anda." : "Menghubungkan ke kantor…";
-  else if (!DATA.diperbarui) st.innerHTML = "<b>Belum ada laporan dari Pak Bima.</b> Laporan muncul di sini setelah sesi berikutnya di claude.ai/code.";
-  else st.innerHTML = `<b>Laporan Pak Bima</b> · ${relatif(DATA.diperbarui)} (${jamTeks(DATA.diperbarui)} WITA)${DATA.ringkasan ? "<br>" + esc(DATA.ringkasan) : ""}`;
+  else if (!DATA.diperbarui) st.innerHTML = "<b>Belum ada laporan dari Ken.</b> Laporan muncul di sini setelah sesi berikutnya di claude.ai/code.";
+  else st.innerHTML = `<b>Laporan Ken</b> · ${relatif(DATA.diperbarui)} (${jamTeks(DATA.diperbarui)} WITA)${DATA.ringkasan ? "<br>" + esc(DATA.ringkasan) : ""}`;
   // tinjau
   const el = document.getElementById("tinjau");
   // Kartu unggah manual juga muncul segera setelah Bos menekan Setujui (tanpa menunggu sesi kantor berikutnya)
   const manual = v.filter(x => (["disetujui","terjadwal"].includes(x.tahap) || (KEPUTUSAN[idDoc(x.folder)] || {}).aksi === "setujui") && (x.manual || []).length);
-  let isi = tunggu.length ? tunggu.map(x => kartuTinjau(x)).join("") : `<div class="kosong">Belum ada video yang menunggu persetujuan. Video yang lolos review Pak Bima muncul di sini lengkap dengan pemutarnya.</div>`;
+  let isi = tunggu.length ? tunggu.map(x => kartuTinjau(x)).join("") : `<div class="kosong">Belum ada video yang menunggu persetujuan. Video yang lolos review Ken muncul di sini lengkap dengan pemutarnya.</div>`;
   if (manual.length) isi += `<h3 style="margin:18px 0 6px">Perlu Bos unggah manual (${manual.length})</h3>` + manual.map(x => kartuManual(x)).join("");
   el.innerHTML = isi;
   // papan
@@ -541,16 +541,16 @@ function renderPanel(){
 function kartuTinjau(x){
   const id = idDoc(x.folder), k = KEPUTUSAN[id], d = DRAF[id] || (DRAF[id] = {mode:null, pilihan:[], catatan:""});
   let aksi;
-  if (k && !k.diproses) aksi = `<p><span class="pill ${k.aksi === "setujui" ? "hijau" : "merah"}">${k.aksi === "setujui" ? "Disetujui Bos" : "Ditolak Bos"}</span> <span class="meta">menunggu diproses Pak Bima</span></p>
+  if (k && !k.diproses) aksi = `<p><span class="pill ${k.aksi === "setujui" ? "hijau" : "merah"}">${k.aksi === "setujui" ? "Disetujui Bos" : "Ditolak Bos"}</span> <span class="meta">menunggu diproses Ken</span></p>
       <div class="baris"><button onclick="batalKeputusan('${id}')">Batalkan keputusan</button></div>`;
-  else if (d.mode === "setujui") aksi = `<p>Setujui video ini untuk diupload dan dijadwalkan Raka?</p><div class="baris"><button class="ya" onclick="putuskan('${id}','setujui')">Ya, setujui</button><button onclick="mode('${id}',null)">Batal</button></div>`;
+  else if (d.mode === "setujui") aksi = `<p>Setujui video ini untuk diupload dan dijadwalkan Rudi?</p><div class="baris"><button class="ya" onclick="putuskan('${id}','setujui')">Ya, setujui</button><button onclick="mode('${id}',null)">Batal</button></div>`;
   else if (d.mode === "tolak") aksi = `<p class="meta">Apa yang perlu diperbaiki?</p><div class="baris">${PILIHAN_TOLAK.map(([v, n]) => `<button class="chip" aria-pressed="${d.pilihan.includes(v)}" onclick="pilih('${id}','${v}')">${n}</button>`).join("")}</div>
       <label class="meta" for="cat-${id}" style="display:block;margin-top:8px">Catatan untuk tim</label><textarea id="cat-${id}" oninput="DRAF['${id}'].catatan=this.value" placeholder="Mis. hook kurang nendang, suara terlalu cepat">${esc(d.catatan)}</textarea>
       <div class="baris"><button class="tidak" onclick="putuskan('${id}','tolak')" ${d.pilihan.length || d.catatan ? "" : "disabled"}>Kirim penolakan</button><button onclick="mode('${id}',null)">Batal</button></div>`;
   else aksi = `<div class="baris"><button class="ya" onclick="mode('${id}','setujui')">Setujui</button><button class="tidak" onclick="mode('${id}','tolak')">Tolak / minta revisi</button></div>`;
   return `<div class="kartu" data-folder="${esc(x.folder)}"><div class="vjudul">${esc(x.judul || x.folder)}</div><div class="meta">${esc(x.format || "")}${x.skor ? " · skor naskah " + esc(x.skor) : ""}${x.durasi ? " · " + esc(x.durasi) : ""}</div>
     ${x.video_url ? `<video controls playsinline preload="metadata" src="${esc(x.video_url)}" ${x.thumb_url ? `poster="${esc(x.thumb_url)}"` : ""}></video>` : x.thumb_url ? `<img src="${esc(x.thumb_url)}" alt="Thumbnail ${esc(x.judul || "")}" style="border-radius:10px;margin:8px 0">` : `<div class="kosong" style="margin:8px 0">Video belum diunggah ke halaman ini.</div>`}
-    ${x.review ? `<div class="meta">Catatan Pak Bima: ${esc(x.review)}</div>` : ""}${aksi}</div>`;
+    ${x.review ? `<div class="meta">Catatan Ken: ${esc(x.review)}</div>` : ""}${aksi}</div>`;
 }
 function mode(id, m){ DRAF[id].mode = m; renderPanel(); }
 function pilih(id, v){ const p = DRAF[id].pilihan; const i = p.indexOf(v); i < 0 ? p.push(v) : p.splice(i, 1); renderPanel(); }
@@ -558,7 +558,7 @@ async function putuskan(id, aksi){
   if (!db){ toast("Belum terhubung ke penyimpanan kantor."); return; }
   const v = (DATA.video || []).find(x => idDoc(x.folder) === id), d = DRAF[id];
   try { await db.collection("keputusan").doc(id).set({folder:v ? v.folder : id, judul:v ? (v.judul || "") : "", aksi, pilihan:aksi === "tolak" ? d.pilihan.slice() : [], catatan:aksi === "tolak" ? (d.catatan || "") : "", waktu:new Date().toISOString(), diproses:false});
-    DRAF[id] = {mode:null, pilihan:[], catatan:""}; toast(aksi === "setujui" ? "Disetujui. Raka akan mengupload di sesi berikutnya." : "Penolakan terkirim ke tim.");
+    DRAF[id] = {mode:null, pilihan:[], catatan:""}; toast(aksi === "setujui" ? "Disetujui. Rudi akan mengupload di sesi berikutnya." : "Penolakan terkirim ke tim.");
   } catch(e){ toast(e && e.code === "invalid_argument" ? "Anda tidak punya izin menulis di kantor ini." : "Gagal menyimpan, coba lagi."); }
 }
 async function batalKeputusan(id){ try { await db.collection("keputusan").doc(id).delete(); toast("Keputusan dibatalkan."); } catch(e){ toast("Gagal membatalkan."); } }
@@ -569,10 +569,10 @@ function renderPesan(){
 document.getElementById("kirimPesan").addEventListener("click", async () => {
   const el = document.getElementById("teksPesan"), t = el.value.trim(); if (!t) return;
   if (!db){ toast("Belum terhubung ke penyimpanan kantor."); return; }
-  try { await db.collection("pesan").add({teks:t.slice(0, 1000), waktu:new Date().toISOString(), diproses:false}); el.value = ""; toast("Pesan disimpan untuk Pak Bima."); }
+  try { await db.collection("pesan").add({teks:t.slice(0, 1000), waktu:new Date().toISOString(), diproses:false}); el.value = ""; toast("Pesan disimpan untuk Ken."); }
   catch(e){ toast("Gagal mengirim pesan."); }
 });
-const PERINTAH = [["/sinkron-visual","Ambil keputusan & pesan Bos, perbarui kantor ini"],["/kerjakan-antrean","Perintah utama harian"],["/video-baru 2","2 Shorts baru sampai naskah lolos"],["/isi-bank-ide 20","Laras riset, Raka urutkan"],["/produksi","Suara, visual, rakit, thumbnail"],["/status","Ringkasan + saran Pak Bima"],["/laporan-minggu","Performa minggu ini"],["/video-baru 1 panjang","Naskah video 16:9"]];
+const PERINTAH = [["/sinkron-visual","Ambil keputusan & pesan Bos, perbarui kantor ini"],["/kerjakan-antrean","Perintah utama harian"],["/video-baru 2","2 Shorts baru sampai naskah lolos"],["/isi-bank-ide 20","Laras riset, Rudi urutkan"],["/produksi","Suara, visual, rakit, thumbnail"],["/status","Ringkasan + saran Ken"],["/laporan-minggu","Performa minggu ini"],["/video-baru 1 panjang","Naskah video 16:9"]];
 document.getElementById("cmd").innerHTML = PERINTAH.map(([c, k]) => `<button data-c="${c}"><code>${c}</code><small>${k}</small></button>`).join("");
 document.getElementById("cmd").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return; const c = b.dataset.c;
@@ -589,7 +589,7 @@ function renderLaporan(){
   document.getElementById("tabLap").innerHTML = TABS_LAP.map(([k, n]) => `<button class="chip" role="tab" aria-pressed="${TAB_LAP === k}" onclick="gantiTab('${k}')">${n}</button>`).join("");
   const el = document.getElementById("isiLap"), L = LAP || {};
   document.getElementById("hLap").textContent = (L.harus || []).filter(x => !x.selesai).length + " perbaikan";
-  document.getElementById("lapWaktu").textContent = L.diperbarui ? `Diperbarui Raka & Pak Bima ${relatif(L.diperbarui)} (${jamTeks(L.diperbarui)} WITA). Data dari YouTube dulu, TikTok & Instagram sebagai jaring.` : "";
+  document.getElementById("lapWaktu").textContent = L.diperbarui ? `Diperbarui Rudi & Ken ${relatif(L.diperbarui)} (${jamTeks(L.diperbarui)} WITA). Data dari YouTube dulu, TikTok & Instagram sebagai jaring.` : "";
   if (!LAP){ el.innerHTML = `<div class="kosong">Laporan marketing muncul di sini setelah sesi berikutnya (evaluasi harian 17.47, laporan mingguan Senin pagi).</div>`; return; }
   if (TAB_LAP === "fokus"){
     el.innerHTML = `${L.ringkasan ? `<p style="margin-top:0">${esc(L.ringkasan)}</p>` : ""}<div class="meta" style="margin-bottom:4px">Langkah yang dipakai tim untuk produksi berikutnya</div>`

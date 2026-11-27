@@ -1,4 +1,4 @@
-"""Efek suara tambahan video pedas (Yoga, 18 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
+"""Efek suara tambahan video pedas (Kiki, 18 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
 Pemakaian: python scripts/buat_sfx_pedas.py   → aset/sfx/{kres,fwoosh,alarm,kicau}.wav (file yang sudah ada tidak ditimpa)."""
 import wave
 from pathlib import Path

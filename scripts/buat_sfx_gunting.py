@@ -1,4 +1,4 @@
-"""Efek suara BARU untuk video Gunting Sjafruddin (Yoga, 18 Nov 2026) — sintesis sendiri, tanpa lisensi pihak lain.
+"""Efek suara BARU untuk video Gunting Sjafruddin (Kiki, 18 Nov 2026) — sintesis sendiri, tanpa lisensi pihak lain.
 Pemakaian: /usr/bin/python3 scripts/buat_sfx_gunting.py   (butuh numpy; file yang sudah ada tidak ditimpa)
 Keluaran : aset/sfx/gunting.wav (gunting memotong kertas: dua klik logam + desis sobek) · aset/sfx/srek.wav (kertas dilipat/digeser)."""
 from pathlib import Path

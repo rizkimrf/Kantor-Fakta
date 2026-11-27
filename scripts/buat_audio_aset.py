@@ -163,7 +163,7 @@ def hujan(deras, d=20.0):
 
 
 
-# ---------------- MUSIK TAMBAHAN (Yoga, 15 Nov 2026): tanpa desir hujan, untuk tema non-hujan ----------------
+# ---------------- MUSIK TAMBAHAN (Kiki, 15 Nov 2026): tanpa desir hujan, untuk tema non-hujan ----------------
 def marimba(f, d):  # pukulan kayu lembut
     t = t_(d); e = np.exp(-9 * t) * np.minimum(1, t / 0.002)
     return e * (np.sin(2 * np.pi * f * t) + 0.25 * np.sin(2 * np.pi * 4 * f * t) * np.exp(-30 * t))

@@ -112,7 +112,7 @@ def main(folder):
     for kode, ok, bukti in hasil:
         print(f"{'LULUS' if ok else 'GAGAL'}  {kode}  — {bukti}")
     print("\nHASIL:", "LULUS" if not gagal else f"GAGAL ({len(gagal)} batas)")
-    print("Cek manual Pak Bima/Yoga: U1 frame 0 beraksi, U4 satu cerita, U5 peragaan persis, U7 teks tidak menutupi, U9, U12, T1-T3, R1.")
+    print("Cek manual Ken/Kiki: U1 frame 0 beraksi, U4 satu cerita, U5 peragaan persis, U7 teks tidak menutupi, U9, U12, T1-T3, R1.")
     return 0 if not gagal else 1
 
 

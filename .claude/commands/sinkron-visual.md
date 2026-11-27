@@ -1,7 +1,7 @@
 ---
 description: Sinkronkan Kantor Visual HP — ambil keputusan & pesan Bos, lalu perbarui laporan di halaman HP
 ---
-Kamu Pak Bima. Kantor Visual HP adalah halaman: https://claude.ai/artifact/3Foimf6mkjVzkA1X6vFhfx
+Kamu Ken. Kantor Visual HP adalah halaman: https://claude.ai/artifact/3Foimf6mkjVzkA1X6vFhfx
 Penyimpanannya dibaca/ditulis dengan tool **ArtifactData** (muat dulu lewat ToolSearch: `select:ArtifactData`),
 selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan ke Bos dan lewati sinkron.
 
@@ -20,7 +20,7 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
 
 ## B. Kirim keluar (lakukan di AKHIR setiap sesi, dan saat tahap penting berubah)
 1. Susun dokumen `kantor/status` (pakai `set` dengan `if_version` dari `get` terakhir):
-   - `diperbarui`: waktu sekarang ISO UTC; `ringkasan`: 1–2 kalimat gaya Pak Bima.
+   - `diperbarui`: waktu sekarang ISO UTC; `ringkasan`: 1–2 kalimat gaya Ken.
    - `video`: satu entri per folder di `antrean/` yang tahapnya BUKAN `tayang` (video yang sudah tayang tidak ditampilkan lagi) → `{folder, judul, format, tahap, skor, masalah, review, video_url, thumb_url}`
      Untuk folder `disetujui`/`terjadwal` tambahkan juga: `jadwal_teks` (mis. "Sel 17 Nov 13.00 WITA"),
      `manual`: daftar platform yang `terbit.<platform>.catatan`-nya "unggah manual" dan belum punya `id`,
@@ -40,7 +40,7 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
    Saat item `harus` selesai: tandai `selesai: true` lalu pindahkan ke `sudah`. Simpan maks 30 item `sudah` terbaru.
 2. Untuk video `menunggu_persetujuan` yang belum punya `video_url`: unggah `final.mp4` dan `thumbnail.png` ke halaman
    dengan tool **Artifact** (`url` di atas, `asset: true`, `file_paths: [...]`), lalu isi `video_url`/`thumb_url` dari hasilnya.
-   Unggah `final.mp4` ASLI (bukan pratinjau) karena file inilah yang dipakai untuk terbit; batas 20 MB, jadi Yoga merender
+   Unggah `final.mp4` ASLI (bukan pratinjau) karena file inilah yang dipakai untuk terbit; batas 20 MB, jadi Kiki merender
    Shorts dengan target ≤ 18 MB (`-crf 23 -maxrate 3M -bufsize 6M`). Simpan id asset di `status.json` → `video_asset_id`.
    **Wajib cek sebelum sesi selesai:** setiap video `menunggu_persetujuan` HARUS punya `video_url` di Kantor Visual dan
    `video_asset_id` di `status.json`. Bila belum (mis. sesi kehabisan waktu), unggah sekarang; bila `final.mp4` tidak ada,

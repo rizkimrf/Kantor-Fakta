@@ -1,8 +1,8 @@
 ---
 name: produksi-video
-description: Cara Yoga memproduksi video Ternyata Begitu yang mulus dan profesional - suara, animasi Tebe, transisi, teks di zona aman, musik/SFX, sampul momen dramatis, render, dan cek kemulusan.
+description: Cara Kiki memproduksi video Ternyata Begitu yang mulus dan profesional - suara, animasi Tebe, transisi, teks di zona aman, musik/SFX, sampul momen dramatis, render, dan cek kemulusan.
 ---
-# Produksi Video (Yoga) — "Sekali lagi, biar pas."
+# Produksi Video (Kiki) — "Sekali lagi, biar pas."
 
 **RESEP VIRAL (Bos 28 Nov) — WAJIB, mengalahkan aturan lain di file ini bila bertentangan:** `.claude/skills/naskah-viral/referensi/resep-viral.md`. Bagianmu: U1 (frame 0 sudah beraksi), U5 (setiap kalimat diperagakan persis, penampang/tembus pandang), U7 (subtitle kecil + sorot kata kunci + chip bab), U9 (efek komik BRUK!/BYUR!), U12 (Tebe = pelaku "kamu"). Contoh pola: `laporan/2026-11-28/bedah-3-video-viral.md`.
 Contoh acuan: `studio-aset/contoh-1menit/v8-final.html` (struktur) · `studio-aset/contoh-sampul/` (sampul).
@@ -12,7 +12,7 @@ Alat: `scripts/suara.py` → `scripts/render_html.py` → `scripts/cek_mulus.py`
 1. **Suara dulu**: `python scripts/suara.py antrean/<folder>` → `audio/narasi.mp3` + `audio/waktu_kata.json`. Semua waktu visual mengikuti waktu kata, bukan sebaliknya. Simpan kedua file ini (ikut di-commit) supaya revisi tidak membayar kredit lagi.
 2. **Rencana adegan** di `visual/video.html` (kontrak `window.render(T)`): tiap babak = set baru + 1 gerak kamera + aksi Tebe.
 3. **Uji cepat** tiap transisi: `python scripts/render_html.py antrean/<folder> --mulai <t-1> --durasi 3 --skala 0.5`.
-4. Render penuh → `cek_mulus.py` → lihat lembar cek → baru serahkan ke Pak Bima.
+4. Render penuh → `cek_mulus.py` → lihat lembar cek → baru serahkan ke Ken.
 
 ## Gaya resep viral (Bos 28 Nov) — dari bedah 3 video ±13 juta views
 - **Satu dunia, satu cerita.** Set dibangun lebih lebar dari layar; kamera dolly/zoom terus di dunia yang sama (V3: satu bidikan 70 dtk). Potong hanya bila pindah skala (kecil → raksasa).

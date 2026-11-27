@@ -1,7 +1,7 @@
-"""Audio B3-09 lagu nyangkut (Yoga, 24 Nov 2026) — 100% gubahan & sintesis sendiri (numpy), tanpa sampel unduhan, tanpa suara AI bernyanyi.
+"""Audio B3-09 lagu nyangkut (Kiki, 24 Nov 2026) — 100% gubahan & sintesis sendiri (numpy), tanpa sampel unduhan, tanpa suara AI bernyanyi.
 Pemakaian: /usr/bin/python3.13 scripts/buat_sfx_lagu.py   (file yang sudah ada tidak ditimpa; hasil identik, benih acak tetap)
 
-Melodi "senandung pagi" (gubahan Yoga): 4 birama 4/4, nada dasar F, "hmm" bervibrato (sintesis aditif + formant nasal "m").
+Melodi "senandung pagi" (gubahan Kiki): 4 birama 4/4, nada dasar F, "hmm" bervibrato (sintesis aditif + formant nasal "m").
   B1: F  A C  D. C | B2: A  G A  F— | B3: G  Bes D  C. A | B4: G F  G  A  C  (C mengantar kembali ke F → loop)
   Dicek: kontur & ritme tidak sama dengan lagu populer/anak-anak yang dikenal (bukan "Twinkle", bukan lagu daerah/pop).
 Tempo dipilih supaya video (56,64 dtk) = tepat 6 putaran motif → loop akhir→awal menyambung secara musik.

@@ -90,7 +90,7 @@ body.bersih .kendali{display:none}
 </head>
 <body>
 <canvas id="kanvas"></canvas>
-<div class="atas"><div class="logo">?</div><div class="judul">Kantor Ternyata Begitu<small>Pak Bima · Laras · Nadia · Raka · Yoga</small></div></div>
+<div class="atas"><div class="logo">?</div><div class="judul">Kantor Ternyata Begitu<small>Ken · Laras · Putri · Rudi · Kiki</small></div></div>
 <div class="live"><i></i>LIVE <span id="jam"></span></div>
 <div class="angka" id="angka"></div>
 <div class="panel"><div class="kartu"><h2>Papan tugas</h2><div id="tugas"></div></div>
@@ -102,18 +102,18 @@ body.bersih .kendali{display:none}
 <div class="petunjuk">Klik karyawan, ruangan, atau kertas di papan konten · geser untuk menjelajah · scroll untuk zoom</div>
 <div class="kendali" id="kendali"><h2>🎛️ Ruang Kendali Bos <button onclick="document.body.classList.toggle('kecil')" title="Kecilkan">▁</button></h2>
 <div class="isi">
-  <div class="jobstat" id="jobstat">Pak Bima siap menerima perintah.</div>
+  <div class="jobstat" id="jobstat">Ken siap menerima perintah.</div>
   <div class="grid">
     <button class="btn tunggu" id="btnTinjau" onclick="bukaTinjau()">📥 Tinjau video (0)</button>
     <button class="btn utama" data-cmd="kerjakan-antrean">▶ Kerjakan Antrean<small>perintah utama harian</small></button>
     <button class="btn" data-cmd="video-baru" data-arg="tanya:Berapa video Shorts baru?:2">➕ Video Baru<small>riset + naskah</small></button>
     <button class="btn" data-cmd="video-baru" data-arg="1 panjang">🎞️ Video Panjang<small>naskah 16:9</small></button>
     <button class="btn" data-cmd="produksi">🎬 Produksi<small>suara + gambar</small></button>
-    <button class="btn" data-cmd="isi-bank-ide" data-arg="tanya:Berapa ide baru?:15">💡 Isi Bank Ide<small>Laras + Raka</small></button>
+    <button class="btn" data-cmd="isi-bank-ide" data-arg="tanya:Berapa ide baru?:15">💡 Isi Bank Ide<small>Laras + Rudi</small></button>
     <button class="btn" data-cmd="laporan-minggu">📊 Laporan Minggu<small>tiap Senin</small></button>
     <button class="btn" data-cmd="status">📋 Status<small>ringkasan + saran</small></button>
   </div>
-  <div class="pesan"><textarea id="teksPesan" placeholder="Tulis pesan ke Pak Bima… mis. &quot;Minta Nadia buat 3 hook baru untuk video Tambora&quot;"></textarea>
+  <div class="pesan"><textarea id="teksPesan" placeholder="Tulis pesan ke Ken… mis. &quot;Minta Putri buat 3 hook baru untuk video Tambora&quot;"></textarea>
     <button class="btn" onclick="kirimPesan()">Kirim</button></div>
   <div class="mini"><a onclick="bukaLaporan()">Lihat laporan terakhir</a> · <a onclick="hentikan()">Hentikan perintah</a></div>
 </div></div>
@@ -121,7 +121,7 @@ body.bersih .kendali{display:none}
 <div class="modal" id="modalTinjau"><div class="kotak"><span class="x" onclick="tutupModal('modalTinjau')">×</span>
   <h3>📥 Video menunggu persetujuan Bos</h3><div class="sub">Tonton, lalu Setujui (upload terjadwal) atau Tolak dengan pilihan perbaikan.</div><div id="isiTinjau"></div></div></div>
 <div class="modal" id="modalLaporan"><div class="kotak"><span class="x" onclick="tutupModal('modalLaporan')">×</span>
-  <h3 id="lapJudul">Laporan Pak Bima</h3><div class="sub" id="lapSub"></div><div class="log2" id="lapLog"></div><div class="hasil" id="lapHasil"></div></div></div>
+  <h3 id="lapJudul">Laporan Ken</h3><div class="sub" id="lapSub"></div><div class="log2" id="lapLog"></div><div class="hasil" id="lapHasil"></div></div></div>
 <div id="info"></div>
 <script>
 const TOKEN = "__TOKEN__";
@@ -275,15 +275,15 @@ const SPOT = {
   mieYoga:{p:[15.2, 13.7], mode:"duduk", teks:"makan mi", emoji:"🍜"},
   vending:{p:[22.9, 13.6], mode:"berdiri", teks:"jajan di vending", emoji:"🥤"}};
 const TIM = {
-  manajer:{nama:"Pak Bima", jabatan:"Manajer", sifat:"Tenang, visioner, tegas soal mutu, irit kata", motto:"Benar dulu, baru menarik.",
+  manajer:{nama:"Ken", jabatan:"Manajer", sifat:"Tenang, visioner, tegas soal mutu, irit kata", motto:"Benar dulu, baru menarik.",
     baju:"#1f2937", celana:"#374151", rambut:"#3f3f46", kulit:"#f1c9a5", ciri:"dasi", meja:[26.9, 1.8], ruang:"manajer", santai:["sofaBima", "ikanBima"]},
   riset:{nama:"Laras", jabatan:"Riset", sifat:"Teliti, skeptis, kutu buku, pendiam tapi tajam", motto:"Mana sumbernya?",
     baju:"#0f766e", celana:"#57534e", rambut:"#3b2416", kulit:"#e8b98f", ciri:"kacamata+panjang", meja:[1.6, 2.5], ruang:"riset", santai:["rakLaras", "globeLaras"]},
-  copywriting:{nama:"Nadia", jabatan:"Copywriting", sifat:"Kreatif, jenaka, suka main kata, anti klise", motto:"Dua detik pertama itu segalanya.",
+  copywriting:{nama:"Putri", jabatan:"Copywriting", sifat:"Kreatif, jenaka, suka main kata, anti klise", motto:"Dua detik pertama itu segalanya.",
     baju:"#7c3aed", celana:"#1f2937", rambut:"#1e1e1e", kulit:"#f3d2b3", ciri:"kuncir", meja:[8.6, 2.5], ruang:"copywriting", santai:["kopiNadia", "sofaNadia"]},
-  marketing:{nama:"Raka", jabatan:"Marketing", sifat:"Energik, ambisius, gila data & tren, kompetitif", motto:"Datanya bilang apa?",
+  marketing:{nama:"Rudi", jabatan:"Marketing", sifat:"Energik, ambisius, gila data & tren, kompetitif", motto:"Datanya bilang apa?",
     baju:"#2563eb", celana:"#1e3a5f", rambut:"#3a2a1a", kulit:"#d9a47c", ciri:"topi", meja:[1.6, 12.0], ruang:"marketing", santai:["arcadeRaka", "pingpong"]},
-  editor:{nama:"Yoga", jabatan:"Editor", sifat:"Kalem, perfeksionis visual, suka begadang", motto:"Sekali lagi, biar pas.",
+  editor:{nama:"Kiki", jabatan:"Editor", sifat:"Kalem, perfeksionis visual, suka begadang", motto:"Sekali lagi, biar pas.",
     baju:"#4b5563", celana:"#1f2937", rambut:"#6b3f2a", kulit:"#efc19a", ciri:"headset", meja:[8.6, 12.0], ruang:"editor", santai:["mieYoga", "vending"]}};
 for (const id in TIM){ const t = TIM[id]; t.id = id; t.kursi = [t.meja[0] + 0.9, t.meja[1] - 0.5];
   t.x = t.kursi[0]; t.y = t.kursi[1]; t.rute = []; t.tujuan = t.kursi; t.modeTujuan = "duduk"; t.status = "…"; t.emoji = ""; t.kerja = false; t.alarm = null; t.iSantai = 0; }
@@ -335,7 +335,7 @@ function terapkan(){
     t.status = status; t.emoji = emoji; t.modeTujuan = mode;
     if (tujuan !== t.tujuan){ t.tujuan = tujuan; t.rute = rute([t.x, t.y], tujuan); }
   }
-  // Aliran kerja langsung dari perintah yang sedang berjalan: yang ditugaskan Pak Bima kembali ke mejanya
+  // Aliran kerja langsung dari perintah yang sedang berjalan: yang ditugaskan Ken kembali ke mejanya
   const job = DATA.job || {};
   if (job.status === "jalan"){
     const EMO = {riset:"🔎", copywriting:"✍️", marketing:"📈", editor:"🎬"};
@@ -643,7 +643,7 @@ function tutupModal(id){ document.getElementById(id).classList.remove("buka"); }
 function bukaLaporan(){ document.getElementById("modalLaporan").classList.add("buka"); isiLaporan(); }
 function isiLaporan(){
   const j = DATA.job || {}; if (!document.getElementById("modalLaporan").classList.contains("buka")) return;
-  document.getElementById("lapJudul").textContent = j.judul ? `Laporan Pak Bima · ${j.judul}` : "Laporan Pak Bima";
+  document.getElementById("lapJudul").textContent = j.judul ? `Laporan Ken · ${j.judul}` : "Laporan Ken";
   const st = {jalan: "⏳ Sedang dikerjakan", selesai: "✅ Selesai", gagal: "⚠️ Ada masalah", dihentikan: "⏹ Dihentikan", idle: "Belum ada perintah"}[j.status] || "";
   document.getElementById("lapSub").textContent = st + (j.mulai ? ` · ${lama(((j.selesai || DATA.sekarang) - j.mulai))}` : "") +
     (j.biaya != null ? ` · perkiraan biaya model $${Number(j.biaya).toFixed(2)} (masuk kuota langganan)` : "");
@@ -659,10 +659,10 @@ function tampilKendali(){
   document.getElementById("btnTinjau").style.display = menunggu.length ? "block" : "none";
   el.className = "jobstat " + (j.status === "jalan" ? "jalan" : j.status === "gagal" ? "gagal" : "");
   if (j.status === "jalan"){ const akhir = (j.baris || []).slice(-1)[0];
-    el.innerHTML = `<span class="putar"></span><b>Pak Bima bekerja:</b> ${esc(j.judul)} · ${lama(DATA.sekarang - j.mulai)}<br><span style="color:#8f92a8">${esc(akhir ? akhir.teks.slice(0, 110) : "")}</span>`; }
+    el.innerHTML = `<span class="putar"></span><b>Ken bekerja:</b> ${esc(j.judul)} · ${lama(DATA.sekarang - j.mulai)}<br><span style="color:#8f92a8">${esc(akhir ? akhir.teks.slice(0, 110) : "")}</span>`; }
   else if (j.status === "selesai") el.innerHTML = `✅ <b>Selesai:</b> ${esc(j.judul)} · <a onclick="bukaLaporan()" style="color:#93c5fd;cursor:pointer">baca laporan</a>`;
   else if (j.status === "gagal" || j.status === "dihentikan") el.innerHTML = `⚠️ <b>${j.status === "gagal" ? "Ada masalah" : "Dihentikan"}:</b> ${esc(j.judul)} · <a onclick="bukaLaporan()" style="color:#93c5fd;cursor:pointer">lihat</a>`;
-  else el.textContent = "Pak Bima siap menerima perintah.";
+  else el.textContent = "Ken siap menerima perintah.";
   document.querySelectorAll("[data-cmd], .pesan button").forEach(b => b.disabled = j.status === "jalan");
   if (jobLalu === "jalan" && j.status !== "jalan") bukaLaporan();
   jobLalu = j.status; isiLaporan();
@@ -713,10 +713,10 @@ function infoOrang(t){ const v = t.tugas;
    ${v ? `<div class="baris"><b>Video:</b> ${esc(v.judul)}<br><span class="tag">${esc(v.label)}</span><span class="tag">${v.format === "panjang" ? "video panjang" : "shorts"}</span></div>` : ""}
    <div class="baris"><b>Antrean tugas:</b> ${t.jumlahAntre || 0}</div>${t.alarm ? `<div class="baris" style="color:#b45309"><b>⚠ ${esc(t.alarm.teks)}</b></div>` : ""}`; }
 function infoRuang(r){ const isi = Object.values(TIM).filter(t => ruangDi(t.x, t.y) === r);
-  const ket = {meeting:"Pak Bima cek fakta & review bersama tim di sini. Ruang berbentuk L dengan meja rapat besar Papan konten di dinding kiri: 1 kertas = 1 video sudut diskusi santai. Papan konten di dinding: 1 kertas = 1 video, warna = tahap. Klik kertasnya.",
+  const ket = {meeting:"Ken cek fakta & review bersama tim di sini. Ruang berbentuk L dengan meja rapat besar Papan konten di dinding kiri: 1 kertas = 1 video sudut diskusi santai. Papan konten di dinding: 1 kertas = 1 video, warna = tahap. Klik kertasnya.",
     istirahat:"Pantry & kopi, kulkas, arcade, ping-pong, meja makan, vending machine & sofa. Yang tidak ada tugas istirahat di sini.",
     musholla:`Jadwal sholat: ${JADWAL_SHOLAT.map(([n, j]) => n + " " + j).join(" · ")}`,
-    manajer:"Ruang kerja Pak Bima: arah konten, gerbang mutu, laporan ke Bos. Ada akuarium & lemari piala."}[r.id] || "Ruang kerja.";
+    manajer:"Ruang kerja Ken: arah konten, gerbang mutu, laporan ke Bos. Ada akuarium & lemari piala."}[r.id] || "Ruang kerja.";
   return `<h3>${r.nama}</h3><div class="peran">${ket}</div><div class="baris"><b>Di dalam:</b> ${isi.length ? isi.map(t => `${t.nama} (${esc(t.status)})`).join(", ") : "kosong"}</div>`; }
 function infoVideo(v){
   return `<h3>${esc(v.judul)}</h3><div class="peran">${v.format === "panjang" ? "Video panjang" : "Shorts"} · ${esc(v.folder)}</div>

@@ -1,6 +1,6 @@
 # Video Panjang 16:9 — mengejar jam tonton (Bos, 19 Nov 2026)
 Jam tonton monetisasi hanya dihitung dari video panjang (bukan Shorts). Syarat sekarang 1.000 subscriber + 4.000 jam/365 hari;
-mulai 1 Feb 2027 naik menjadi 8.000 jam (atau 20 juta tayangan Shorts/90 hari). Pak Bima mengecek ulang syarat resmi tiap bulan.
+mulai 1 Feb 2027 naik menjadi 8.000 jam (atau 20 juta tayangan Shorts/90 hari). Ken mengecek ulang syarat resmi tiap bulan.
 
 ## Durasi: 8–12 menit (target ±10 menit)
 - ≥ 8 menit: nanti setelah monetisasi bisa memasang iklan di tengah video (mid-roll), dan setiap penonton menyumbang jam lebih banyak.

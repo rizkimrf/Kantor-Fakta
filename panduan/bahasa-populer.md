@@ -1,4 +1,4 @@
-# Bahasa populer — dipelihara Raka, diperbarui tiap Senin
+# Bahasa populer — dipelihara Rudi, diperbarui tiap Senin
 Frasa yang sudah hidup di masyarakat Indonesia. Pakai untuk hook & judul sampul (bukan istilah ahli).
 | Frasa / mitos / pertanyaan | Topik yang cocok | Catatan |
 |---|---|---|

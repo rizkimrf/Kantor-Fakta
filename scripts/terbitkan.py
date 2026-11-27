@@ -1,4 +1,4 @@
-"""Raka - TERBITKAN video yang SUDAH DISETUJUI Bos ke YouTube, TikTok, Instagram sesuai jam tayang.
+"""Rudi - TERBITKAN video yang SUDAH DISETUJUI Bos ke YouTube, TikTok, Instagram sesuai jam tayang.
 Pemakaian: python scripts/terbitkan.py            (semua folder antrean)
            python scripts/terbitkan.py --cek      (hanya tampilkan rencana, tidak mengunggah)
 Dijalankan otomatis oleh tugas terjadwal di cloud (lihat .claude/commands/terbitkan.md).
@@ -11,7 +11,7 @@ Aturan:
 - Sampul = frame pertama video (video_cover_timestamp_ms=0 / thumb_offset=0). Label AI: YouTube containsSyntheticMedia,
   TikTok is_aigc (mode direct; mode inbox: Bos menyalakan saat Posting). Instagram API TIDAK punya tombol label AI ->
   ingatkan Bos menyalakan "Label AI" di aplikasi setelah Reels terbit.
-- Data teks dari antrean/<folder>/unggah.json (ditulis Raka):
+- Data teks dari antrean/<folder>/unggah.json (ditulis Rudi):
   {"youtube":{"judul":"","deskripsi":"","tag":[]}, "tiktok":{"caption":""}, "instagram":{"caption":""}}
 - Platform yang kuncinya belum diisi dilewati (dicatat di status.json -> "terbit")."""
 import datetime, json, os, sys, time, urllib.parse, urllib.request, urllib.error

@@ -1,4 +1,4 @@
-"""Efek suara tambahan A-02 rice cooker & B-01 sambal (Yoga, 21 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
+"""Efek suara tambahan A-02 rice cooker & B-01 sambal (Kiki, 21 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
 Pemakaian: python scripts/buat_sfx_dapur.py → aset/sfx/{klik,desis,derit}.wav (file yang sudah ada tidak ditimpa)."""
 import wave
 from pathlib import Path

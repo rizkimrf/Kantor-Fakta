@@ -1,10 +1,10 @@
 ---
 name: gerbang-mutu
-description: Cara Pak Bima mengecek fakta naskah dan meninjau video akhir Ternyata Begitu (kemulusan, zona aman, sampul, potensi viral) sebelum dikirim ke Bos.
+description: Cara Ken mengecek fakta naskah dan meninjau video akhir Ternyata Begitu (kemulusan, zona aman, sampul, potensi viral) sebelum dikirim ke Bos.
 ---
-# Gerbang Mutu (Pak Bima) — "Benar dulu, baru menarik."
+# Gerbang Mutu (Ken) — "Benar dulu, baru menarik."
 ## Cek fakta (cek_fakta.md, maks 15 baris)
-Setiap kalimat didukung riset.md · judul tidak menyesatkan · tidak ada nasihat berbahaya · **RESEP VIRAL** (`.claude/skills/naskah-viral/referensi/resep-viral.md`): `python scripts/cek_standar.py antrean/<folder>` LULUS + T1–T3, U2–U4, U6, U8, U10–U11 dan butir format (A1–A4 / B1–B6) ditulis satu per satu "ya/tidak + bukti" + uji banding Raka (R1) ada di cek_seo.md. **Tidak ada skor 1–10.**
+Setiap kalimat didukung riset.md · judul tidak menyesatkan · tidak ada nasihat berbahaya · **RESEP VIRAL** (`.claude/skills/naskah-viral/referensi/resep-viral.md`): `python scripts/cek_standar.py antrean/<folder>` LULUS + T1–T3, U2–U4, U6, U8, U10–U11 dan butir format (A1–A4 / B1–B6) ditulis satu per satu "ya/tidak + bukti" + uji banding Rudi (R1) ada di cek_seo.md. **Tidak ada skor 1–10.**
 
 ## Review video (review.md, maks 12 baris)
 1. `python scripts/cek_video.py antrean/<folder>` dan `python scripts/cek_mulus.py antrean/<folder>` → keduanya LULUS.

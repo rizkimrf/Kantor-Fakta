@@ -2,7 +2,7 @@
 name: bedah-video-viral
 description: Cara tim Ternyata Begitu membedah video referensi yang viral (atau video kita sendiri) per detik — hook 3 detik, struktur cerita, potongan, kecepatan bicara, teks layar, suara, penutup — lalu menjadikannya pola yang diuji, bukan disalin.
 ---
-# Bedah Video Viral (Pak Bima & Raka) — metode 28 Nov 2026
+# Bedah Video Viral (Ken & Rudi) — metode 28 Nov 2026
 Dipakai saat Bos mengirim video referensi, saat laporan Senin, dan untuk membandingkan video kita dengan video viral.
 1. **Ukur:** `python scripts/bedah_video.py <video.mp4> <folder_keluar>` → `hook.jpg`, `lembar_*.jpg`, `ringkasan.json`.
    Lihat `hook.jpg` dan semua lembar dengan Read. Bila ada subtitle/teks besar, ulangi dengan `--ocr atas,bawah` (pita tinggi layar, mis. 0.60,0.72).

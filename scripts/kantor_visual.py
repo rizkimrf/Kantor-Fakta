@@ -154,7 +154,7 @@ class Job:
     def jalankan(self, judul, prompt):
         with self.kunci:
             if self.sibuk():
-                raise RuntimeError("Pak Bima masih mengerjakan perintah sebelumnya.")
+                raise RuntimeError("Ken masih mengerjakan perintah sebelumnya.")
             if not shutil.which("claude"):
                 raise RuntimeError("Claude Code (perintah 'claude') tidak ditemukan di PATH laptop ini.")
             self.reset()
@@ -162,7 +162,7 @@ class Job:
         threading.Thread(target=self._kerja, args=(prompt,), daemon=True).start()
 
     def _sesi(self):
-        """Satu percakapan per hari, supaya Pak Bima ingat perintah-perintah sebelumnya hari ini."""
+        """Satu percakapan per hari, supaya Ken ingat perintah-perintah sebelumnya hari ini."""
         hari = datetime.date.today().isoformat()
         s = baca_json(SESI_FILE)
         if s.get("tanggal") == hari and s.get("id"):
@@ -174,7 +174,7 @@ class Job:
     def _kerja(self, prompt):
         cmd = ["claude", "-p", prompt, *self._sesi(), "--permission-mode", "auto", "--permission-prompts", "none",
                "--output-format", "stream-json", "--verbose"]
-        self.tambah("📨 Perintah diterima Pak Bima.")
+        self.tambah("📨 Perintah diterima Ken.")
         try:
             self.proses = subprocess.Popen(cmd, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                                            text=True, encoding="utf-8", errors="replace",
@@ -209,12 +209,12 @@ class Job:
                         continue
                     if nama in ("Task", "Agent"):
                         jenis = inp.get("subagent_type", "")
-                        siapa = {"riset": "Laras", "copywriting": "Nadia", "marketing": "Raka", "editor": "Yoga"}.get(jenis, jenis or "tim")
+                        siapa = {"riset": "Laras", "copywriting": "Putri", "marketing": "Rudi", "editor": "Kiki"}.get(jenis, jenis or "tim")
                         tugas = inp.get("description", "") or "mengerjakan tugas"
                         if jenis in ("riset", "copywriting", "marketing", "editor"):
                             self.agen_aktif[b.get("id", tugas)] = {"agen": jenis, "tugas": tugas}
                         self.aksi = f"membagi tugas ke {siapa}"
-                        self.tambah(f"👥 Pak Bima menugaskan {siapa}: {tugas}")
+                        self.tambah(f"👥 Ken menugaskan {siapa}: {tugas}")
                     elif nama in ("Bash", "PowerShell"):
                         self.aksi = "menjalankan skrip"
                         self.tambah("⚙️ Menjalankan: " + str(inp.get("command", ""))[:160])
@@ -230,7 +230,7 @@ class Job:
             for b in d.get("message", {}).get("content", []) if isinstance(d.get("message", {}).get("content"), list) else []:
                 if b.get("type") == "tool_result" and b.get("tool_use_id") in self.agen_aktif:
                     a = self.agen_aktif.pop(b["tool_use_id"])
-                    nama = {"riset": "Laras", "copywriting": "Nadia", "marketing": "Raka", "editor": "Yoga"}[a["agen"]]
+                    nama = {"riset": "Laras", "copywriting": "Putri", "marketing": "Rudi", "editor": "Kiki"}[a["agen"]]
                     self.tambah(f"✅ {nama} selesai: {a['tugas']}")
                     self.aksi = "memeriksa hasil " + nama
         elif tipe == "result":
@@ -263,9 +263,9 @@ def setujui(folder):
     ubah_status(folder, "disetujui", masalah=None)
     if (ROOT / "client_secret.json").exists() and (ROOT / ".env").exists():
         JOB.jalankan("Upload video yang disetujui",
-                     f"Bos menyetujui video di folder antrean/{folder.name}. Delegasikan ke agent marketing (Raka) untuk upload "
+                     f"Bos menyetujui video di folder antrean/{folder.name}. Delegasikan ke agent marketing (Rudi) untuk upload "
                      "terjadwal sesuai .claude/agents/marketing.md (tahap disetujui). Laporkan jadwal tayangnya.")
-        return "Disetujui. Raka sedang meng-upload dan menjadwalkan tayang."
+        return "Disetujui. Rudi sedang meng-upload dan menjadwalkan tayang."
     return "Disetujui. Upload otomatis aktif setelah kunci YouTube (client_secret.json) dipasang."
 
 
@@ -288,7 +288,7 @@ def tolak(folder, pilihan, catatan, langsung):
         JOB.jalankan(f"Perbaikan: {label}", prompt_perintah("kerjakan-antrean") +
                      f"\n\nPRIORITAS: video antrean/{folder.name} dikembalikan Bos dengan catatan: \"{catatan_lengkap}\". "
                      "Kerjakan perbaikan itu lebih dulu, lalu lanjutkan antrean lain.")
-        return "Dikembalikan ke tim. Pak Bima langsung mengerjakan perbaikannya."
+        return "Dikembalikan ke tim. Ken langsung mengerjakan perbaikannya."
     return "Dikembalikan ke tim dengan catatan Bos." if tahap != "ditunda" else "Video ditunda."
 
 
@@ -353,14 +353,14 @@ class Handler(BaseHTTPRequestHandler):
                 if nama not in PERINTAH:
                     raise ValueError("perintah tidak dikenal")
                 JOB.jalankan(f"/{nama} {arg}".strip(), prompt_perintah(nama, arg))
-                pesan = "Perintah dikirim ke Pak Bima."
+                pesan = "Perintah dikirim ke Ken."
             elif self.path == "/aksi/pesan":
                 teks = str(isi.get("teks", "")).strip()[:2000]
                 if not teks:
                     raise ValueError("pesan kosong")
                 JOB.jalankan("Pesan Bos: " + teks[:60], f"[Pesan dari Bos lewat kantor visual]\n\n{teks}\n\n"
                              "Jawab/laporkan singkat dalam Bahasa Indonesia sesuai CLAUDE.md.")
-                pesan = "Pesan terkirim ke Pak Bima."
+                pesan = "Pesan terkirim ke Ken."
             elif self.path == "/aksi/setujui":
                 pesan = setujui(folder_aman(isi.get("folder", "")))
             elif self.path == "/aksi/tolak":

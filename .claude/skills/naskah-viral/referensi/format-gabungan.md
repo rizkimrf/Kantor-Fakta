@@ -37,7 +37,7 @@ Tujuan: menemukan pola yang TERBUKTI menaikkan views → monetisasi. Kekuatan ki
 | **B "Ternyata Begitu"** (`"seri": "fakta"`) | fakta/mitos/asal-usul sehari-hari dengan teknik 2–9 di atas | ≤ 60 dtk |
 Slot 13.00 = A, 18.00 = B (bergantian minggu berikutnya agar jam tidak membias).
 
-## Aturan keputusan (Raka tiap Senin, Pak Bima mengusulkan ke Bos)
+## Aturan keputusan (Rudi tiap Senin, Ken mengusulkan ke Bos)
 Bandingkan per jalur: views 48 jam, % tetap menonton, % rata-rata ditonton, komentar per 1.000 views, share per 1.000 views.
 - Jalur yang unggul di ≥3 dari 5 angka selama 2 minggu berturut-turut → porsinya naik (mis. 2 dari 2 slot), jalur kalah diperbaiki 1 hal saja.
 - Pola yang terbukti dicatat ke `panduan/pola-terbukti.md` (dibuat saat ada bukti pertama) — itu "resep" baku kita.

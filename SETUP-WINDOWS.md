@@ -45,7 +45,7 @@ Buka **Terminal** (klik kanan Start → Terminal), lalu jalankan satu per satu:
 Jangan kirim isi `.env`, `client_secret.json`, atau `token.json` ke siapa pun, termasuk ke chat.
 
 # Kantor Visual (menonton + memberi perintah, tanpa PowerShell)
-Klik dua kali `Buka-Kantor.bat`. Di panel kiri "Ruang Kendali Bos": tombol perintah, kotak pesan ke Pak Bima,
+Klik dua kali `Buka-Kantor.bat`. Di panel kiri "Ruang Kendali Bos": tombol perintah, kotak pesan ke Ken,
 dan "Tinjau video" untuk Setujui / Tolak. PowerShell hanya dibutuhkan sekali untuk login Claude Code pertama kali.
 
 # (cara lama) Kantor Visual lewat PowerShell

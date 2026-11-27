@@ -1,4 +1,4 @@
-# Cetak Biru Studio Remotion — untuk Yoga (dibangun & diuji di laptop Bos)
+# Cetak Biru Studio Remotion — untuk Kiki (dibangun & diuji di laptop Bos)
 
 Tujuan: membuat video kartun motion-graphic TANPA layanan gambar/video AI berbayar. Semua visual dibuat
 dengan kode (Remotion), maskot Tebe dari `studio-aset/tebe.js`, suara dari mesin suara yang dipilih di `.env`.

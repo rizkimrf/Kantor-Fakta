@@ -14,7 +14,7 @@ Suara harus jelas di speaker HP murah, tidak melelahkan, dan terasa seperti tema
 - Jeda 0,3–0,5 detik sebelum fakta kejutan; jeda 0,2 detik antar adegan (sudah diatur editor).
 - Penekanan pada SATU kata kunci per kalimat (kata yang ditulis kapital di naskah).
 
-## Kosa kata (tanggung jawab Nadia; dicek Pak Bima)
+## Kosa kata (tanggung jawab Putri; dicek Ken)
 - Pakai kata yang dipahami anak SMA: "gara-gara, ternyata, kira-kira, bayangin, coba pikir".
 - Hindari: "dikarenakan, merupakan, adapun, signifikan, fenomena" (kecuali langsung dijelaskan).
 - Nama asing ditulis cara bacanya di `pelafalan` (lihat di bawah) supaya pengisi suara tidak salah ucap.
@@ -35,8 +35,8 @@ Suara harus jelas di speaker HP murah, tidak melelahkan, dan terasa seperti tema
 
 
 ## Pilihan sumber narasi (urutan prioritas, disetujui Bos 15 Nov 2026)
-1. **Suara Bos sendiri.** Nadia menyiapkan `naskah_baca.txt` (naskah per adegan, tanda jeda `/`, kata yang ditekan dalam KAPITAL).
-   Bos merekam di HP dalam satu kali baca. Yoga memotong per adegan berdasarkan jeda (ffmpeg silencedetect), membersihkan noise ringan, menyamakan volume (-14 LUFS).
+1. **Suara Bos sendiri.** Putri menyiapkan `naskah_baca.txt` (naskah per adegan, tanda jeda `/`, kata yang ditekan dalam KAPITAL).
+   Bos merekam di HP dalam satu kali baca. Kiki memotong per adegan berdasarkan jeda (ffmpeg silencedetect), membersihkan noise ringan, menyamakan volume (-14 LUFS).
 2. **Suara AI berkualitas tinggi** (ElevenLabs) bila rekaman Bos tidak ada.
    **Suara resmi channel (dipilih Bos 15 Nov 2026): "Dakocan - Expressive, Cheerful and Clear"** (Voice Library, bahasa Indonesia),
    model **Eleven v4**, stability 50, similarity 75. Akun ElevenLabs paket Starter (lisensi komersial).
@@ -44,7 +44,7 @@ Suara harus jelas di speaker HP murah, tidak melelahkan, dan terasa seperti tema
    - Tag emosi v4 di depan kalimat: `[excited]` untuk hook & penutup, `[laughs]` setelah candaan, `[whispers]` untuk bocoran kejutan, `[curious]` untuk "Kok bisa?". Maksimal 5 tag per Shorts.
    - Angka & singkatan ditulis seperti diucapkan: "2006" → "dua ribu enam", "ZZ" → "zet zet", "WW" → "we we". DNA boleh tetap "DNA".
    - Jeda pakai "..." (bukan "/"); hapus tanda KAPITAL.
-   - Buat 2 versi, Bos/Pak Bima memilih yang terbaik. Suara ditaruh mengikuti waktu asli (jangan dipercepat); visual yang menyesuaikan suara.
+   - Buat 2 versi, Bos/Ken memilih yang terbaik. Suara ditaruh mengikuti waktu asli (jangan dipercepat); visual yang menyesuaikan suara.
    - Wajib centang label "konten sintetis/AI" saat unggah (YouTube, TikTok, Instagram).
 3. Suara bawaan Windows/robot: hanya untuk uji internal, **tidak boleh ditayangkan**.
 

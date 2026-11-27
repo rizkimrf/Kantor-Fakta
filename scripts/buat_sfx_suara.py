@@ -1,4 +1,4 @@
-"""Efek suara tambahan B3-04 suara rekaman (Yoga, 23 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
+"""Efek suara tambahan B3-04 suara rekaman (Kiki, 23 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
 Pemakaian: python scripts/buat_sfx_suara.py → aset/sfx/{tok,hapus}.wav (file yang sudah ada tidak ditimpa).
 tok   = sendok mengetuk mangkuk bakso keramik dua kali ("tok-tok": nada logam-keramik pendek berparsial tak harmonis)
 hapus = voice note dibuang ke tempat sampah (sapuan derau turun pendek + "tup" kecil)"""

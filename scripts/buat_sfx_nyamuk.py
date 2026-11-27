@@ -1,4 +1,4 @@
-"""Audio B3-10 nyamuk pilih-pilih (Yoga, 25 Nov 2026) — 100% sintesis sendiri (numpy), tanpa sampel unduhan / rekaman.
+"""Audio B3-10 nyamuk pilih-pilih (Kiki, 25 Nov 2026) — 100% sintesis sendiri (numpy), tanpa sampel unduhan / rekaman.
 Pemakaian: /usr/bin/python3.13 scripts/buat_sfx_nyamuk.py   (file yang sudah ada tidak ditimpa; benih acak tetap → hasil identik)
 Keluaran:
   aset/sfx/nging.wav        dengung nyamuk kartun 1,3 dtk (sayap ±560 Hz + harmonik, getar AM, Doppler lewat) — pelan, untuk frame 0

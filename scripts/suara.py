@@ -1,4 +1,4 @@
-"""Yoga - suara narasi SATU KALI BACA via ElevenLabs (suara resmi: Dakocan, model Eleven v4).
+"""Kiki - suara narasi SATU KALI BACA via ElevenLabs (suara resmi: Dakocan, model Eleven v4).
 Pemakaian: python scripts/suara.py antrean/<folder>
 Masukan : antrean/<folder>/naskah_suara.txt (teks + tag emosi v4, angka ditulis seperti diucapkan; lihat panduan/gaya-suara.md)
 Keluaran: audio/narasi.mp3 + audio/waktu_kata.json (detik mulai/selesai tiap kata -> teks layar & mulut Tebe pas dengan suara)

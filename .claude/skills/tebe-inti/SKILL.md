@@ -14,10 +14,10 @@ description: Inti merek & aturan wajib channel Ternyata Begitu (penonton, Tebe, 
 | Siapa | Skill | Hasil |
 |---|---|---|
 | Laras (riset) | `riset-fakta` | riset.md |
-| Raka (marketing) | `seo-distribusi` | seo.md, cek_seo.md, unggah.json |
-| Nadia (naskah) | `naskah-viral` | naskah.json, naskah_suara.txt |
-| Yoga (editor) | `produksi-video` | final.mp4, thumbnail.png |
-| Pak Bima | `gerbang-mutu` | cek_fakta.md, review.md |
+| Rudi (marketing) | `seo-distribusi` | seo.md, cek_seo.md, unggah.json |
+| Putri (naskah) | `naskah-viral` | naskah.json, naskah_suara.txt |
+| Kiki (editor) | `produksi-video` | final.mp4, thumbnail.png |
+| Ken | `gerbang-mutu` | cek_fakta.md, review.md |
 
 ## Hemat token (wajib)
 - Baca HANYA skill ini + skill peranmu. Folder `panduan/` adalah arsip rinci; buka satu file hanya bila skill menyuruh.

@@ -26,7 +26,7 @@ Pakai bahasa masyarakat yang sudah relate (sama dengan hook): "MICIN BIKIN BODOH
 - Kedalaman: latar diburamkan 6–8 px, tengah tajam, depan sedikit terpotong.
 - Warna dominan berganti antar-video (biru malam, oranye senja, hijau neon, ungu, kuning).
 
-## Uji 3 detik (Yoga + Raka, wajib)
+## Uji 3 detik (Kiki + Rudi, wajib)
 Nilai 1–10: "Kalau saya lihat ini sekilas di beranda, apakah saya penasaran dan membukanya?" Di bawah 8 → ganti konsep, bukan sekadar ganti warna.
 Kecilkan ke 15% (seukuran di beranda): apakah langsung terbaca "ada apa" + penasaran? Kalau tidak, besarkan subjek, kurangi teks.
 `studio-aset/sampul.js` hanya untuk variasi grafis sesekali (maks 1 dari 5 video).

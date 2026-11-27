@@ -1,4 +1,4 @@
-"""Raka - STATISTIK YOUTUBE per Content ID (folder antrean) — hasil audit blueprint 28 Nov 2026.
+"""Rudi - STATISTIK YOUTUBE per Content ID (folder antrean) — hasil audit blueprint 28 Nov 2026.
 
 Masalah yang ditutup: video diunggah manual oleh Bos sehingga status.json hanya berisi "manual" (tanpa ID video YouTube),
 akibatnya performa tidak bisa ditelusuri dari ide → naskah → video → angka.

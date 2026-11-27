@@ -1,4 +1,4 @@
-"""Audio B3-05 kaget pas mau tidur (Yoga, 25 Nov 2026) — 100% sintesis sendiri (numpy), tanpa sampel unduhan / rekaman.
+"""Audio B3-05 kaget pas mau tidur (Kiki, 25 Nov 2026) — 100% sintesis sendiri (numpy), tanpa sampel unduhan / rekaman.
 Pemakaian: python scripts/buat_sfx_tidur.py   (file yang sudah ada tidak ditimpa; benih acak tetap → hasil identik)
 Keluaran:
   aset/sfx/dug.wav          "dug" tumpul kartun: dentum rendah 70→45 Hz + derau kasur teredam + per kasur kecil 0,6 dtk

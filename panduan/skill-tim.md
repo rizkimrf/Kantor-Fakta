@@ -6,8 +6,8 @@ lalu ikuti skill tim kita (resep viral) bila bertentangan — resep kita berdasa
 | Agent | Skill akun (dimuat dengan alat Skill) | Dipakai untuk |
 |---|---|---|
 | Laras (riset) | `social-media-skills:content-research-and-sourcing` · `social-media-skills:educational-content-and-how-to` | melacak klaim ke sumber primer; mengajar SATU hal dengan tuntas |
-| Penulis naskah | `social-media-skills:short-form-video-script` · `social-media-skills:hook-writer` · (bila perlu) `social-media-skills:storytelling-and-narrative` | naskah ditonton sampai habis, 3 detik pertama, ketegangan cerita |
-| Raka (marketing) | `social-media-skills:youtube-shorts` · `social-media-skills:youtube-publishing-and-metadata` · Senin: `social-media-skills:experimentation-and-ab-testing`, `social-media-skills:viral-reverse-engineering`, `social-media-skills:competitor-analysis` | distribusi Shorts, judul/deskripsi, uji yang jujur, bedah pesaing |
-| Yoga (editor) | `social-media-skills:thumbnail-design` · `social-media-skills:ai-voiceover` · (bila perlu) `motion-reel:motion-reel` | sampul yang jelas di HP, arahan suara ElevenLabs, animasi kode |
+| Putri (naskah) | `social-media-skills:short-form-video-script` · `social-media-skills:hook-writer` · (bila perlu) `social-media-skills:storytelling-and-narrative` | naskah ditonton sampai habis, 3 detik pertama, ketegangan cerita |
+| Rudi (marketing) | `social-media-skills:youtube-shorts` · `social-media-skills:youtube-publishing-and-metadata` · Senin: `social-media-skills:experimentation-and-ab-testing`, `social-media-skills:viral-reverse-engineering`, `social-media-skills:competitor-analysis` | distribusi Shorts, judul/deskripsi, uji yang jujur, bedah pesaing |
+| Kiki (editor) | `social-media-skills:thumbnail-design` · `social-media-skills:ai-voiceover` · (bila perlu) `motion-reel:motion-reel` | sampul yang jelas di HP, arahan suara ElevenLabs, animasi kode |
 | Dimas (QC) | `social-media-skills:content-research-and-sourcing` | memeriksa klaim vs sumber |
-| Pak Bima | skill tim `bedah-video-viral` + `watch-video:watch-video` / `youtube-transcriber:youtube-transcriber` untuk referensi dari link | bedah video referensi mingguan |
+| Ken | skill tim `bedah-video-viral` + `watch-video:watch-video` / `youtube-transcriber:youtube-transcriber` untuk referensi dari link | bedah video referensi mingguan |

@@ -1,4 +1,4 @@
-"""Efek suara A3-01 barcode kasir (Yoga, 23 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
+"""Efek suara A3-01 barcode kasir (Kiki, 23 Nov 2026) — sintesis sendiri, tanpa unduhan/lisensi pihak lain.
 Pemakaian: python scripts/buat_sfx_barcode.py → aset/sfx/{bip,cap}.wav (file yang sudah ada tidak ditimpa).
 bip = bunyi scanner kasir generik (nada sinus 2,9 kHz pendek 110 ms, tepi halus)
 cap = stempel karet "duk" (tumbukan rendah + derau pendek) untuk cap silang merah"""

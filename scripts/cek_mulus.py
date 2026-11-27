@@ -1,4 +1,4 @@
-"""Yoga & Pak Bima — cek KEMULUSAN video sebelum review. Gagal = render ulang dulu, jangan kirim ke Bos.
+"""Kiki & Ken — cek KEMULUSAN video sebelum review. Gagal = render ulang dulu, jangan kirim ke Bos.
 Pemakaian: python scripts/cek_mulus.py antrean/<folder>     (memeriksa final.mp4)
 Memeriksa:
   1. Audio terpotong kasar (lonjakan/jatuh volume > 25 dB dalam 5 ms) -> suara "nyendat".

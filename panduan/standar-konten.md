@@ -36,16 +36,16 @@ Kita tidak pernah "menjual" dengan judul bohong, fakta dilebihkan, atau candaan 
 | Sumber fakta | Tidak tampil di video, ditulis di deskripsi | — |
 
 ## 4. Rapat konten — `lembar_tim.md` (WAJIB ada di setiap folder video)
-Sebelum naskah ditulis, Pak Bima mengumpulkan satu baris dari tiap orang. Tanpa lembar ini lengkap, naskah tidak boleh dimulai.
+Sebelum naskah ditulis, Ken mengumpulkan satu baris dari tiap orang. Tanpa lembar ini lengkap, naskah tidak boleh dimulai.
 ```
 # Lembar Tim — <judul kerja>
 Janji konten (1 kalimat, apa yang penonton dapat):
 Rasa yang dikejar (kagum / kaget / geli / haru):
 - Laras (riset)     : fakta inti + bagian paling mengejutkan + 2 sumber + hal yang TIDAK boleh diklaim
-- Raka (marketing)  : kata kunci utama + celah dari pesaing + sudut judul + alasan orang akan membagikan
-- Nadia (naskah)    : 3 kandidat hook terbaik + letak canda + kalimat penutup yang memancing komentar
-- Yoga (editor)     : set tiap babak (siang/senja/malam) + 1 momen visual "wah" + aset baru yang perlu dibuat + ide efek suara
-- Pak Bima (manajer): keputusan hook & sudut + risiko mutu yang harus dijaga
+- Rudi (marketing)  : kata kunci utama + celah dari pesaing + sudut judul + alasan orang akan membagikan
+- Putri (naskah)    : 3 kandidat hook terbaik + letak canda + kalimat penutup yang memancing komentar
+- Kiki (editor)     : set tiap babak (siang/senja/malam) + 1 momen visual "wah" + aset baru yang perlu dibuat + ide efek suara
+- Ken (manajer): keputusan hook & sudut + risiko mutu yang harus dijaga
 ```
 Setelah produksi, tiap orang menambahkan **paraf** di bawah lembar yang sama: `- Laras: fakta di video sesuai riset ✔` dst.
 Paraf hanya boleh diberikan setelah benar-benar memeriksa hasil akhirnya (naskah final, video, caption).
@@ -54,12 +54,12 @@ Paraf hanya boleh diberikan setelah benar-benar memeriksa hasil akhirnya (naskah
 | Siapa | Di tahapnya | Di tahap orang lain |
 |---|---|---|
 | **Laras** | `riset.md`: fakta, konteks Indonesia, sumber | Memeriksa naskah final & caption: tidak ada klaim melebihi riset. Memberi 1 fakta cadangan untuk komentar tersemat. |
-| **Raka** | `seo.md`, `cek_seo.md`, `paket_unggah.md` | Ikut memilih hook; menilai thumbnail & 3 detik pertama video jadi; menyarankan potongan untuk dibagikan. |
-| **Nadia** | `naskah.json`, `naskah_baca.txt`, caption dasar | Menulis teks layar bersama Yoga; menyesuaikan caption tiap platform bersama Raka; merevisi setelah masukan Laras & Raka. |
-| **Yoga** | suara, animasi, musik, efek suara, thumbnail | Memberi masukan ke naskah bila ada kalimat yang sulit divisualkan atau terlalu panjang untuk tempo; mengusulkan set & aset sejak rapat. |
-| **Pak Bima** | cek fakta, review akhir | Memimpin rapat konten, memutus bila tim berbeda pendapat, memastikan semua paraf ada sebelum minta persetujuan Bos. |
+| **Rudi** | `seo.md`, `cek_seo.md`, `paket_unggah.md` | Ikut memilih hook; menilai thumbnail & 3 detik pertama video jadi; menyarankan potongan untuk dibagikan. |
+| **Putri** | `naskah.json`, `naskah_baca.txt`, caption dasar | Menulis teks layar bersama Kiki; menyesuaikan caption tiap platform bersama Rudi; merevisi setelah masukan Laras & Rudi. |
+| **Kiki** | suara, animasi, musik, efek suara, thumbnail | Memberi masukan ke naskah bila ada kalimat yang sulit divisualkan atau terlalu panjang untuk tempo; mengusulkan set & aset sejak rapat. |
+| **Ken** | cek fakta, review akhir | Memimpin rapat konten, memutus bila tim berbeda pendapat, memastikan semua paraf ada sebelum minta persetujuan Bos. |
 
-## 6. Musik & efek suara (acuan Yoga)
+## 6. Musik & efek suara (acuan Kiki)
 - **Musik:** instrumental ringan, mengikuti suasana babak (siang ceria-tenang, malam lembut), ±12–15% di bawah narasi, turun saat Tebe bicara, fade-out 1,5 detik.
 - **Efek suara khas channel (konsisten di semua video):**
   jingle naik + "ding" di intro · "ding" ganda di outro · *whoosh* di perpindahan set · *pop* saat teks/benda muncul ·
@@ -83,15 +83,15 @@ Paraf hanya boleh diberikan setelah benar-benar memeriksa hasil akhirnya (naskah
 
 ## 7. Gerbang akhir — 12 hal yang harus "ya" sebelum minta persetujuan Bos
 1. Fakta benar, ≥ 2 sumber, sumber ada di deskripsi (Laras).
-2. Ada jarak kejutan yang jelas dan janji hook dibayar (Nadia, Laras).
-3. Tiga detik pertama: kata kunci terucap + visual langsung menarik (Raka, Yoga).
-4. Gaya ngobrol, ada canda, tidak menggurui, maksimal 3 fakta inti per Shorts (Nadia).
-5. Ada celah penasaran baru tiap ±10 detik (Nadia).
-6. Tebe asli, bergerak mulus, ada di dalam set (Yoga).
-7. Set berbeda tiap babak, minimal satu gerak kamera per adegan, tidak memakai set yang sama dengan 3 video terakhir tanpa variasi (Yoga).
-8. Sampul di frame pertama, intro lega, watermark berpindah, outro khas terpasang; suara, musik, dan efek seimbang (Yoga).
-9. Teks layar 1–3 kata mengikuti suara, terbaca di HP (Yoga, Nadia).
-10. Judul, deskripsi, tag, thumbnail sesuai `cek_seo.md`; judul tidak menyesatkan (Raka, Pak Bima).
-11. `paket_unggah.md` lengkap untuk YouTube, TikTok, Instagram (Raka).
-12. Semua paraf ada di `lembar_tim.md`; skor naskah ≥ 8/9 (Pak Bima).
+2. Ada jarak kejutan yang jelas dan janji hook dibayar (Putri, Laras).
+3. Tiga detik pertama: kata kunci terucap + visual langsung menarik (Rudi, Kiki).
+4. Gaya ngobrol, ada canda, tidak menggurui, maksimal 3 fakta inti per Shorts (Putri).
+5. Ada celah penasaran baru tiap ±10 detik (Putri).
+6. Tebe asli, bergerak mulus, ada di dalam set (Kiki).
+7. Set berbeda tiap babak, minimal satu gerak kamera per adegan, tidak memakai set yang sama dengan 3 video terakhir tanpa variasi (Kiki).
+8. Sampul di frame pertama, intro lega, watermark berpindah, outro khas terpasang; suara, musik, dan efek seimbang (Kiki).
+9. Teks layar 1–3 kata mengikuti suara, terbaca di HP (Kiki, Putri).
+10. Judul, deskripsi, tag, thumbnail sesuai `cek_seo.md`; judul tidak menyesatkan (Rudi, Ken).
+11. `paket_unggah.md` lengkap untuk YouTube, TikTok, Instagram (Rudi).
+12. Semua paraf ada di `lembar_tim.md`; skor naskah ≥ 8/9 (Ken).
 Satu saja "tidak" → kembali ke orang yang bertanggung jawab, bukan diteruskan ke Bos.

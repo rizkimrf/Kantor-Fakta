@@ -5,7 +5,7 @@ Resep ini MENGGANTIKAN: STANDAR 80, batas 60 dtk, skor 1–10, format A/B lama, 
 Kita meniru POLA, bukan nama seri, desain, topik terbaru, atau naskah akun lain. Fakta tetap ≥ 2 sumber ("Benar dulu, baru menarik").
 Jadwal: 1 Shorts per hari, tayang 18.30 WITA. Lebih baik slot kosong daripada video yang tidak lolos resep.
 
-## Dua format (pilih satu per video; Raka menyeimbangkan, data menentukan porsinya)
+## Dua format (pilih satu per video; Rudi menyeimbangkan, data menentukan porsinya)
 ### Format A — "KAMU YANG BIKIN" (cara kerja benda besar/sehari-hari, 70–120 dtk, 170–300 kata)
 Penonton "menemukan sendiri" benda itu dari versi paling kecil. Nama aslinya baru disebut di akhir.
 1. **0–3 dtk:** "Kalau kamu [aksi kecil yang pernah dilakukan semua orang], kamu udah [bikin versi kecil benda besar]."
@@ -49,9 +49,9 @@ Penonton "menemukan sendiri" benda itu dari versi paling kecil. Nama aslinya bar
 
 ## Peran
 - **Laras:** T1–T3 + riset rantai lengkap (setiap mata rantai bersumber) + istilah resmi tiap solusi.
-- **Nadia:** tulis sesuai format; jalankan `python scripts/cek_standar.py antrean/<folder>` sampai LULUS sebelum menyerahkan. Isi `naskah.json`:
+- **Putri:** tulis sesuai format; jalankan `python scripts/cek_standar.py antrean/<folder>` sampai LULUS sebelum menyerahkan. Isi `naskah.json`:
   `"format_resep": "kamu-yang-bikin"` atau `"katanya-ternyata"`, tiap adegan `narasi`, `teks_layar` (chip bab), `aksi` (peragaan persis), `pembicara` (`narator`/`pendamping`).
-- **Yoga:** U1, U5, U7, U9, U12 — frame 0 beraksi, penampang, subtitle kecil + sorot kata kunci, chip bab, efek komik, Tebe sebagai pelaku. Gaya 2D kita tetap (video 2D datar juga 13 juta views).
-- **Raka:** R1 uji banding: tulis 3 detik pertama video ini di samping pola 3 video viral (lihat laporan bedah). Kalah jelas/kalah cepat → kembalikan.
+- **Kiki:** U1, U5, U7, U9, U12 — frame 0 beraksi, penampang, subtitle kecil + sorot kata kunci, chip bab, efek komik, Tebe sebagai pelaku. Gaya 2D kita tetap (video 2D datar juga 13 juta views).
+- **Rudi:** R1 uji banding: tulis 3 detik pertama video ini di samping pola 3 video viral (lihat laporan bedah). Kalah jelas/kalah cepat → kembalikan.
   R2 24 jam setelah tayang: catat "tetap menonton", rata-rata ditonton, komentar; < 75% → tulis penyebab + 1 perubahan. R3 tiap Senin: usulkan revisi resep dari data.
-- **Pak Bima:** cek_fakta.md & review.md menulis U1–U13 + format (A1–A4/B1–B6) satu per satu "ya/tidak + bukti" (kalimat, detik, frame). Tanpa skor 1–10.
+- **Ken:** cek_fakta.md & review.md menulis U1–U13 + format (A1–A4/B1–B6) satu per satu "ya/tidak + bukti" (kalimat, detik, frame). Tanpa skor 1–10.

@@ -49,7 +49,7 @@ tidak clickbait palsu (janji hook WAJIB dibayar di akhir).
 Sapa "kamu", bahasa sehari-hari, alur masalah → tapi → jadi, istilah disebut belakangan, maks 3 fakta inti per Shorts,
 canda ringan 1–2 kali, tidak menggurui. Naskah yang terdengar seperti buku pelajaran = gagal, tulis ulang.
 
-### Kata kunci (dari Raka) — lihat `seo.md` di folder video
+### Kata kunci (dari Rudi) — lihat `seo.md` di folder video
 Kata kunci utama **diucapkan dalam 5 detik pertama** dan muncul di teks layar pertama (YouTube, TikTok, dan Instagram
 membaca suara dan teks di video untuk menentukan topiknya). Sisipkan 2–3 kata kunci turunan secara wajar di narasi.
 Jangan dijejalkan; kalau terdengar aneh diucapkan, buang.
@@ -59,7 +59,7 @@ Jangan dijejalkan; kalau terdengar aneh diucapkan, buang.
 - CTA dibungkus rasa penasaran, bukan permohonan: "Besok ada fakta yang lebih aneh soal makanan yang kamu makan hari ini."
 - Pertanyaan komentar memancing opini, bukan ya/tidak: "Menurut kamu, fakta mana yang paling bikin kaget?"
 
-## 6. Rubrik nilai naskah (dipakai Nadia untuk menilai diri, dan Pak Bima untuk gerbang mutu)
+## 6. Rubrik nilai naskah (dipakai Putri untuk menilai diri, dan Ken untuk gerbang mutu)
 | Aspek | Nilai |
 |---|---|
 | Hook memotong scroll dalam 1,5 detik | 0–2 |
