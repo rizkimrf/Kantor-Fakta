@@ -88,8 +88,15 @@ def token():
 
 
 def daftar_unggahan(auth):
-    ch = http("https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true", auth)
+    ch = http("https://www.googleapis.com/youtube/v3/channels?part=contentDetails,statistics&mine=true", auth)
     playlist = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    st = ch["items"][0].get("statistics", {})
+    (ROOT / "data").mkdir(exist_ok=True)
+    f = ROOT / "data" / "akun_sosial.csv"; baru = not f.exists()
+    with f.open("a", newline="", encoding="utf-8") as h:  # angka akun harian (subscriber) untuk jalur monetisasi
+        w = csv.writer(h)
+        if baru: w.writerow(["diambil_utc", "platform", "follower", "total_likes", "jumlah_video"])
+        w.writerow([SEKARANG.isoformat(timespec="minutes"), "youtube", st.get("subscriberCount", ""), "", st.get("videoCount", "")])
     hasil, halaman = [], ""
     while True:
         r = http(f"https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&maxResults=50&playlistId={playlist}{halaman}", auth)

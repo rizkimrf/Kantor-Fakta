@@ -124,6 +124,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 
 ## Data & belajar (audit blueprint ChatGPT, 28 Nov 2026 — `laporan/2026-11-28/audit-blueprint.md`)
 - **Content ID = nama folder antrean.** Semua file video (riset, naskah, render, unggah, performa) ada di folder itu; git menyimpan versi & jejak perubahan.
+- **Data 3 platform otomatis (sesi 18.17):** `scripts/statistik_youtube.py` + `scripts/statistik_sosial.py` (TikTok & Instagram) → `data/snapshot_*.csv` + angka akun `data/akun_sosial.csv`. Izin yang dibutuhkan & langkah Bos: `panduan/akses-data.md`. Tidak pernah memakai kata sandi akun.
 - **ID video YouTube wajib tercatat** (`terbit.youtube.id`). `scripts/statistik_youtube.py` (sesi 18.17) mengisinya otomatis dari judul + menyimpan snapshot ke `data/snapshot_youtube.csv` dan `performa` di status.json.
 - **Eksperimen** di `laporan/eksperimen.md` (1 variabel, ≥ 5 video per kelompok, median). **Pola** di `panduan/pola-terbukti.md` dengan tingkat L1–L4; resep/SOP hanya berubah dari L3 ke atas dengan persetujuan Bos.
 - Bandingkan Shorts dengan Shorts dan format dengan format; video panjang punya patokan sendiri.
