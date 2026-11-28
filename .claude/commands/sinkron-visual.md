@@ -13,6 +13,11 @@ selalu dengan `url` di atas. Jika tool itu tidak tersedia di sesi ini, katakan k
      `naskah` → tahap `naskah`; `visual`/`suara`/`rakit`/`thumbnail` → tahap `produksi` (sebutkan bagian yang diulang);
      `tunda` → tahap `ditunda`.
    - Setelah diterapkan: `update` dokumen itu `{diproses: true, diproses_pada: <waktu ISO>}` (pakai `if_version`).
+1b. **Usulan konten (Bos 29 Nov) — gerbang ide SEBELUM produksi.** `list` koleksi `keputusan_ide` (`diproses: false`) dan `get` `kantor/usulan`.
+   - `aksi: "setuju"` → status ide di `kantor/usulan.daftar` menjadi `disetujui`; ide boleh masuk riset/naskah/produksi pada tanggalnya.
+   - `aksi: "tolak"` → status `ditolak`; Laras + Rudi segera mencari **ide pengganti** (jalur utama benda & teknologi sehari-hari, memperhatikan `catatan` Bos),
+     ditambahkan ke `daftar` dengan `status: "menunggu"`, `ganti: <judul yang ditolak>`, tanggal produksi yang sama. Cadangan berstatus `cadangan` boleh dinaikkan jadi usulan pengganti.
+   - Setelah diterapkan: `update` dokumen keputusan `{diproses: true, diproses_pada}` lalu `set` `kantor/usulan` (pakai `if_version`).
 2. `list` koleksi `unggah_manual` (`diproses: false`): Bos menandai sudah mengunggah sendiri ke satu platform.
    Isi `terbit.<platform> = {id: "manual", waktu}` di `status.json` folder itu, lalu `update` dokumen `{diproses: true}`.
 3. `query` koleksi `pesan` dengan `where diproses == false`. Perlakukan setiap pesan sebagai perintah Bos

@@ -75,7 +75,8 @@ Rudi menyeimbangkan kedua format dan membandingkannya tiap Senin (tetap menonton
 ## Pilar konten (rotasi supaya channel tidak monoton)
 1. Sejarah yang jarang diceritakan  2. Sains & tubuh manusia  3. Alam & hewan aneh
 4. Geografi & negara  5. Uang & ekonomi sehari-hari  6. Benda & kebiasaan sehari-hari (asal-usulnya)
-Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video.
+**JALUR UTAMA (Bos 29 Nov 2026, dari data Facebook 10 video: pintu minimarket, barcode, lagu nyangkut teratas): "benda & teknologi yang kamu pegang/lihat tiap hari"** (minimarket, kasir, HP, motor, rumah, kota). ±70% Shorts per minggu di jalur ini; sisanya uji (maks 1 topik tubuh/minggu). Aturan lama "pilar maks 40%" tidak berlaku. Dipastikan dengan angka YouTube di laporan Senin.
+**Gerbang usulan (Bos 29 Nov):** setiap Jumat (dan setiap ada penolakan) Rudi + Laras menyusun usulan 7–9 hari ke depan + 1–2 cadangan di Kantor Visual; Bos memilih Produksi/Tolak.
 **Semua pilar dibuka dari hal yang pernah DILIHAT atau DIALAMI orang Indonesia** (Bos 19 Nov, diperbarui 28 Nov): tapi tidak bisa mereka jelaskan. Penutup mengikuti resep ("Berikutnya mau kita rakit apa?" / janji seri) — usulan topik di komentar jadi sumber ide berikutnya.
 
 ## Pembeda channel (wajib — YouTube tidak memonetisasi konten massal yang generik/template)
@@ -90,6 +91,7 @@ Aturan: dalam 7 hari terakhir, tidak ada pilar yang dipakai lebih dari 40% video
 ## Alur kerja (satu video = satu folder di `antrean/`, status di `status.json`)
 | Tahap | Dikerjakan | Hasil |
 |---|---|---|
+| `usulan` | Rudi + Laras → **Bos** | daftar di Kantor Visual (`kantor/usulan`): judul, garis besar, alasan, tanggal produksi & tayang. **Hanya ide yang Bos tekan "Produksi" yang boleh masuk riset/naskah/produksi** (Bos 29 Nov). Ditolak → tim mengusulkan pengganti di sesi berikutnya. Belum diputuskan sampai jam produksi → tidak dibuat (slot kosong, atau cadangan yang sudah disetujui) |
 | `ide` | riset | `riset.md` (fakta + sumber) |
 | `pilih` | marketing | `rencana_marketing.md` (lolos/tunda + sudut judul) + **`seo.md`** (brief kata kunci) |
 | `naskah` | copywriting | `naskah.json` + `naskah_baca.txt` (mengikuti `seo.md`) |

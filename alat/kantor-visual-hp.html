@@ -170,6 +170,7 @@ const NAMA_TAHAP = {ide:"Riset",pilih:"Dipilih",naskah:"Naskah",cek_seo:"Cek SEO
 const JADWAL_SHOLAT = [["Subuh","04:40"],["Dzuhur","12:05"],["Ashar","15:25"],["Maghrib","18:10"],["Isya","19:20"]];
 let DATA = {agen:{}, video:[], log:[], stokHari:0, bankIde:0, ringkasan:"", diperbarui:null};
 let KEPUTUSAN = {}, PESAN = [], db = null, terhubung = false;
+let USULAN = null, KEP_IDE = {}; const DRAF_IDE = {};
 
 /* ================== KANTOR 3D (mesin 3D ringan di canvas) ================== */
 const cv = document.getElementById("kanvas"), ctx = cv.getContext("2d");
@@ -513,7 +514,7 @@ function renderPanel(){
   document.getElementById("aProses").textContent = proses.length;
   document.getElementById("aStok").textContent = DATA.stokHari ?? 0;
   document.getElementById("aIde").textContent = DATA.bankIde ?? 0;
-  document.getElementById("hTinjau").textContent = tunggu.length;
+  document.getElementById("hTinjau").textContent = tunggu.length + ((USULAN && USULAN.daftar) || []).filter(u => u.status === "menunggu" && !KEP_IDE[idDoc(u.id)]).length;
   document.getElementById("hPapan").textContent = v.length;
   const st = document.getElementById("status");
   if (!terhubung) st.innerHTML = db === false ? "Penyimpanan kantor tidak tersedia di tampilan ini. Buka halaman ini dari akun Claude Anda." : "Menghubungkan ke kantor…";
@@ -523,7 +524,7 @@ function renderPanel(){
   const el = document.getElementById("tinjau");
   // Kartu unggah manual juga muncul segera setelah Bos menekan Setujui (tanpa menunggu sesi kantor berikutnya)
   const manual = v.filter(x => (["disetujui","terjadwal"].includes(x.tahap) || (KEPUTUSAN[idDoc(x.folder)] || {}).aksi === "setujui") && (x.manual || []).length);
-  let isi = tunggu.length ? tunggu.map(x => kartuTinjau(x)).join("") : `<div class="kosong">Belum ada video yang menunggu persetujuan. Video yang lolos review Ken muncul di sini lengkap dengan pemutarnya.</div>`;
+  let isi = blokUsulan() + (tunggu.length ? tunggu.map(x => kartuTinjau(x)).join("") : `<div class="kosong">Belum ada video yang menunggu persetujuan. Video yang lolos review Ken muncul di sini lengkap dengan pemutarnya.</div>`);
   if (manual.length) isi += `<h3 style="margin:18px 0 6px">Perlu Bos unggah manual (${manual.length})</h3>` + manual.map(x => kartuManual(x)).join("");
   el.innerHTML = isi;
   // papan
@@ -538,6 +539,37 @@ function renderPanel(){
   lg.innerHTML = L.length ? L.map(l => `<li><time>${jamTeks(l.waktu)}</time><b>${esc(l.siapa || "")}</b> ${esc(l.teks || "")}</li>`).join("") : `<li class="meta">Belum ada aktivitas.</li>`;
   renderPesan();
 }
+// ===== Usulan konten: Bos memilih ide SEBELUM produksi (perintah Bos 29 Nov 2026) =====
+function blokUsulan(){
+  const L = ((USULAN && USULAN.daftar) || []).slice().sort((a, b) => String(a.produksi).localeCompare(String(b.produksi)));
+  if (!L.length) return "";
+  const belum = L.filter(u => u.status === "menunggu" && !KEP_IDE[u.id]).length;
+  return `<h3 style="margin:4px 0 6px">Usulan konten — pilih yang diproduksi (${belum} menunggu)</h3>
+    <p class="meta" style="margin:0 0 8px">Ide yang Bos tolak diganti tim dengan ide baru di sesi berikutnya. Ide yang belum diputuskan sampai jam produksi tidak dibuat (slot memakai cadangan yang sudah disetujui).</p>` + L.map(kartuIde).join("") + `<h3 style="margin:18px 0 6px">Video menunggu persetujuan</h3>`;
+}
+function kartuIde(u){
+  const id = idDoc(u.id), k = KEP_IDE[id], d = DRAF_IDE[id] || (DRAF_IDE[id] = {tolak:false, catatan:""});
+  const pillSt = {menunggu:["kuning","Menunggu Bos"], disetujui:["hijau","Disetujui · masuk produksi"], ditolak:["merah","Ditolak · dicarikan pengganti"], cadangan:["","Cadangan"], dibuat:["hijau","Sudah diproduksi"]}[u.status] || ["", u.status || ""];
+  let aksi;
+  if (k && !k.diproses) aksi = `<p><span class="pill ${k.aksi === "setuju" ? "hijau" : "merah"}">${k.aksi === "setuju" ? "Bos: produksi" : "Bos: tolak"}</span> <span class="meta">dicatat, diproses tim di sesi berikutnya</span></p><div class="baris"><button onclick="batalIde('${id}')">Batalkan</button></div>`;
+  else if (u.status !== "menunggu" && u.status !== "cadangan") aksi = "";
+  else if (d.tolak) aksi = `<label class="meta" for="ci-${id}" style="display:block;margin-top:6px">Kenapa ditolak? (membantu tim mencari pengganti)</label><textarea id="ci-${id}" oninput="DRAF_IDE['${id}'].catatan=this.value" placeholder="Mis. kurang menarik, terlalu mirip video lain">${esc(d.catatan)}</textarea>
+      <div class="baris"><button class="tidak" onclick="putuskanIde('${id}','tolak')">Tolak & minta pengganti</button><button onclick="DRAF_IDE['${id}'].tolak=false;renderPanel()">Batal</button></div>`;
+  else aksi = `<div class="baris"><button class="ya" onclick="putuskanIde('${id}','setuju')">Produksi</button><button class="tidak" onclick="DRAF_IDE['${id}'].tolak=true;renderPanel()">Tolak</button></div>`;
+  const gb = Array.isArray(u.garis_besar) ? `<ol style="margin:6px 0 6px 18px;padding:0">${u.garis_besar.map(g => `<li>${esc(g)}</li>`).join("")}</ol>` : `<p>${esc(u.garis_besar || "")}</p>`;
+  return `<div class="kartu"><div class="vjudul">${esc(u.judul)}</div>
+    <div class="meta">${esc(u.format || "")} · produksi ${esc(u.produksi || "-")} · tayang ${esc(u.tayang || "-")}${u.ganti ? " · pengganti untuk: " + esc(u.ganti) : ""}</div>
+    <div style="margin-top:6px"><span class="pill ${pillSt[0]}">${esc(pillSt[1])}</span></div>${gb}
+    <p class="meta"><b>Kenapa dibuat:</b> ${esc(u.alasan || "")}</p>${u.catatan_ken ? `<p class="meta">${esc(u.catatan_ken)}</p>` : ""}${aksi}</div>`;
+}
+async function putuskanIde(id, aksi){
+  if (!db){ toast("Belum terhubung ke penyimpanan kantor."); return; }
+  const u = ((USULAN && USULAN.daftar) || []).find(x => idDoc(x.id) === id) || {};
+  try { await db.collection("keputusan_ide").doc(id).set({id:u.id || id, judul:u.judul || "", aksi, catatan:aksi === "tolak" ? (DRAF_IDE[id].catatan || "").slice(0, 500) : "", waktu:new Date().toISOString(), diproses:false});
+    DRAF_IDE[id] = {tolak:false, catatan:""}; toast(aksi === "setuju" ? "Dicatat: ide ini diproduksi." : "Ditolak. Tim mencarikan ide pengganti.");
+  } catch(e){ toast(e && e.code === "invalid_argument" ? "Anda tidak punya izin menulis di kantor ini." : "Gagal menyimpan, coba lagi."); }
+}
+async function batalIde(id){ try { await db.collection("keputusan_ide").doc(id).delete(); toast("Keputusan dibatalkan."); } catch(e){ toast("Gagal membatalkan."); } }
 function kartuTinjau(x){
   const id = idDoc(x.folder), k = KEPUTUSAN[id], d = DRAF[id] || (DRAF[id] = {mode:null, pilihan:[], catatan:""});
   let aksi;
@@ -617,6 +649,8 @@ async function hubungkan(){
   db.doc("kantor/status").onSnapshot(s => { clearTimeout(batas); terhubung = true; live.classList.remove("mati"); if (s.exists) DATA = Object.assign({agen:{}, video:[], log:[]}, s.data()); renderPanel(); },
     () => { clearTimeout(batas); terhubung = true; live.classList.add("mati"); renderPanel(); });
   db.collection("keputusan").onSnapshot(q => { KEPUTUSAN = {}; q.docs.forEach(x => KEPUTUSAN[x.id] = x.data()); renderPanel(); }, () => {});
+  db.doc("kantor/usulan").onSnapshot(s => { USULAN = s.exists ? s.data() : null; renderPanel(); }, () => {});
+  db.collection("keputusan_ide").onSnapshot(q => { KEP_IDE = {}; q.docs.forEach(x => KEP_IDE[x.id] = x.data()); renderPanel(); }, () => {});
   db.collection("unggah_manual").onSnapshot(q => { q.docs.forEach(x => SUDAH[x.id] = true); renderPanel(); }, () => {});
   db.doc("kantor/laporan").onSnapshot(s => { LAP = s.exists ? s.data() : null; renderLaporan(); }, () => renderLaporan());
   db.collection("pesan").orderBy("waktu", "desc").limit(10).onSnapshot(q => { PESAN = q.docs.map(x => x.data()); renderPesan(); }, () => {});

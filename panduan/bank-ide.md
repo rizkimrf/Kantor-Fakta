@@ -32,16 +32,16 @@ listrik sampai rumah, brankas dibor, kereta belok, minyak lepas pantai, pesawat 
 | B4-06 | Kenapa nonton TV terlalu dekat dilarang? | bikin mata rusak | tidak merusak, cuma bikin capek | kenapa anak suka duduk dekat layar? | — |
 | B4-07 | Kenapa jemuran nggak kering waktu mendung, padahal nggak hujan? (jembatan P-01) | karena nggak ada matahari | udara sudah penuh uap air (lembap), air di baju susah menguap | kenapa baju yang kering lama jadi bau apek? | — |
 | B4-08 | Kenapa kilat kelihatan dulu, baru gemuruhnya terdengar? (jembatan P-01) | kilat terjadi duluan | terjadi bersamaan, cahaya jauh lebih cepat dari suara | bisa nggak menghitung jarak petir dari jeda itu? | jangan berteduh di bawah pohon/ruang terbuka saat petir (kalimat batas aman, sumber resmi) |
-Pasangan janji seri (cliffhanger → video berikutnya format B): B4-01 → B4-02 → B4-03 → B4-07 (jemuran) → B4-08 (kilat); B4-04 kesemutan, B4-05, B4-06 menunggu sesudahnya (Bos 28 Nov: 3–5 Des diganti tema hujan).
+Pasangan janji seri (cliffhanger → video berikutnya format B): B4-01 → B4-02 → B sinyal lift → B4-07 (jemuran) → B4-08 (kilat); B4-04 kesemutan, B4-05, B4-06 menunggu sesudahnya (Bos 28 Nov: 3–5 Des diganti tema hujan).
 
 ## Urutan minggu pertama (Rudi mengonfirmasi saat `pilih`; video gagal resep → cadangan, slot boleh kosong)
 | Hari | 18.30 WITA | Catatan |
 |---|---|---|
 | Sab 28 Nov | B4-01 kedutan | format B lebih cepat diproduksi; janji: cegukan |
 | Min 29 Nov | A4-01 lift | + video panjang Pedas & Sambal 19.00 (manual Bos) |
-| Sen 30 Nov | B4-02 cegukan | bayar janji Sabtu; janji: merinding |
+| Sen 30 Nov | B4-02 cegukan | bayar janji Sabtu (disetujui Bos 29 Nov); janji: sinyal HP hilang di lift |
 | Sel 1 Des | A4-02 eskalator | |
-| Rab 2 Des | B4-03 merinding | janji: jemuran nggak kering (bukan lagi kesemutan) |
+| Rab 2 Des | B sinyal HP hilang di lift (usulan, pengganti B4-03 merinding — Bos 29 Nov jalur benda & teknologi) | janji: jemuran nggak kering |
 | Kam 3 Des | B4-07 jemuran waktu mendung | Shorts jembatan P-01 (Bos 28 Nov); related video → video panjang 6 Des; janji: kilat & gemuruh |
 | Jum 4 Des | A4-12 payung lipat | Shorts jembatan P-01 |
 | Sab 5 Des | B4-08 kilat dulu baru gemuruh | Shorts jembatan P-01; penutup mengarah ke video panjang besok |
