@@ -89,9 +89,11 @@
   "thumb_url": "/_blob/3cbfdbef217f3e7065c136b8cfcd250d",
   "terbit": {
     "youtube": {
-      "id": "manual",
+      "id": "Z-9LITxeBxI",
       "waktu": "2026-11-21T07:10:32Z",
-      "catatan": "diunggah manual oleh Bos"
+      "catatan": "diunggah manual oleh Bos",
+      "url": "https://youtube.com/shorts/Z-9LITxeBxI",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "instagram": {
       "id": "manual",
@@ -104,5 +106,15 @@
       "catatan": "diunggah manual oleh Bos"
     }
   },
-  "unggah_manual_bos": true
+  "unggah_manual_bos": true,
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "Z-9LITxeBxI",
+      "umur_jam": 171.2,
+      "views": 1639,
+      "likes": 25,
+      "komentar": 0
+    }
+  }
 }

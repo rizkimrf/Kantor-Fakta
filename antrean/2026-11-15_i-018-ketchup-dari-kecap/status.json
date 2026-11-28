@@ -93,8 +93,10 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio",
-      "id": "manual",
-      "waktu": "2026-11-17T10:08:46Z"
+      "id": "FzapTxaih0I",
+      "waktu": "2026-11-17T10:08:46Z",
+      "url": "https://youtube.com/shorts/FzapTxaih0I",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7709074853604804626",
@@ -106,6 +108,16 @@
       "catatan": "otomatis gagal 1x - unggah manual oleh Bos",
       "id": "manual",
       "waktu": "2026-11-17T10:06:58Z"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "FzapTxaih0I",
+      "umur_jam": 264.2,
+      "views": 1265,
+      "likes": 13,
+      "komentar": 2
     }
   }
 }

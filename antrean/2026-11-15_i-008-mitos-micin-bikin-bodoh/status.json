@@ -95,8 +95,10 @@
   "terbit": {
     "youtube": {
       "catatan": "unggah manual",
-      "id": "manual",
-      "waktu": "2026-11-20T05:30:14.528Z"
+      "id": "hkBA8147FRY",
+      "waktu": "2026-11-20T05:30:14.528Z",
+      "url": "https://youtube.com/shorts/hkBA8147FRY",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "catatan": "unggah manual",
@@ -109,5 +111,15 @@
       "waktu": "2026-11-20T05:23:36.733Z"
     }
   },
-  "unggah_manual_bos": true
+  "unggah_manual_bos": true,
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "hkBA8147FRY",
+      "umur_jam": 196.9,
+      "views": 1637,
+      "likes": 25,
+      "komentar": 2
+    }
+  }
 }

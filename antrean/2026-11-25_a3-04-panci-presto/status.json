@@ -1,5 +1,5 @@
 {
-  "tahap": "disetujui",
+  "tahap": "tayang",
   "seri": "A",
   "pilar": "Benda & kebiasaan sehari-hari",
   "topik": "a3-04 panci presto",
@@ -38,6 +38,11 @@
       "ke": "disetujui",
       "oleh": "Bos (Kantor Visual HP)",
       "waktu": "2026-11-26T02:31:08Z"
+    },
+    {
+      "waktu": "2026-11-28T18:17+08:00",
+      "siapa": "Ken",
+      "teks": "Bos unggah manual YouTube & Instagram → ketiga platform lengkap, tahap tayang"
     }
   ],
   "masalah": null,
@@ -49,16 +54,28 @@
   "thumb_url": "/_blob/81f1cbf9725f854e7da93cf02ba8c1c8",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "id": "IAB8g5zM-Nw",
+      "waktu": "2026-11-28T16:10+08:00",
+      "url": "https://youtube.com/shorts/IAB8g5zM-Nw",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7712785674159638535",
       "waktu": "2026-11-27T17:49+08:00"
     },
     "instagram": {
-      "gagal": 1,
-      "error": "400 izin pages_* belum diberikan pada token IG",
-      "catatan": "unggah manual - token IG tanpa izin halaman (pages_*)"
+      "id": "manual",
+      "waktu": "2026-11-28T16:10+08:00"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "IAB8g5zM-Nw",
+      "umur_jam": 25.3,
+      "views": 1458,
+      "likes": 20,
+      "komentar": 0
     }
   }
 }

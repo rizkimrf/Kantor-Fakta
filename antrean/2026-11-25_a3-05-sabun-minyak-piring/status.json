@@ -85,8 +85,10 @@
   "thumb_url": "/_blob/64dc8030e12bb34d1e87ebd804069ee0",
   "terbit": {
     "youtube": {
-      "id": "manual",
-      "waktu": "2026-11-26T09:18:58Z"
+      "id": "P3l1Qzi-1hU",
+      "waktu": "2026-11-26T09:18:58Z",
+      "url": "https://youtube.com/shorts/P3l1Qzi-1hU",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7712337405197502516",
@@ -98,6 +100,16 @@
       "catatan": "unggah manual - Instagram API gagal izin token Halaman (pages_read_engagement dll), masalah berulang sejak 23 Nov",
       "id": "manual",
       "waktu": "2026-11-26T09:18:56Z"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "P3l1Qzi-1hU",
+      "umur_jam": 49.0,
+      "views": 1487,
+      "likes": 23,
+      "komentar": 0
     }
   }
 }

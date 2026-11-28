@@ -53,8 +53,10 @@
   "thumb_url": "/_blob/11abb110f1c5dab0edae7f74cb2fdf12",
   "terbit": {
     "youtube": {
-      "id": "manual",
-      "waktu": "2026-11-26T11:20:03Z"
+      "id": "CZt9fPAnIHk",
+      "waktu": "2026-11-26T11:20:03Z",
+      "url": "https://youtube.com/shorts/CZt9fPAnIHk",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7712414858737764353",
@@ -63,6 +65,16 @@
     "instagram": {
       "id": "manual",
       "waktu": "2026-11-26T11:20:02Z"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "CZt9fPAnIHk",
+      "umur_jam": 47.0,
+      "views": 1444,
+      "likes": 12,
+      "komentar": 2
     }
   }
 }

@@ -92,7 +92,10 @@
   "thumb_url": "/_blob/c30c0c4b1b11e7887ea02b4f2e1263de",
   "terbit": {
     "youtube": {
-      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio",
+      "id": "mav4xmOov7A",
+      "url": "https://youtube.com/shorts/mav4xmOov7A",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7710852953384503317",
@@ -104,5 +107,15 @@
       "catatan": "diunggah manual oleh Bos (Kantor Visual)"
     }
   },
-  "diiklankan": "2026-11-27 s.d. 2026-12-01"
+  "diiklankan": "2026-11-27 s.d. 2026-12-01",
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "mav4xmOov7A",
+      "umur_jam": 142.3,
+      "views": 1752,
+      "likes": 44,
+      "komentar": 0
+    }
+  }
 }

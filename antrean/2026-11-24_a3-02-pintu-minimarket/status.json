@@ -1,87 +1,99 @@
 {
- "tahap": "tayang",
- "seri": "A",
- "topik": "a3-02 pintu minimarket",
- "dibuat": "2026-11-24T05:42",
- "riwayat": [
-  {
-   "tahap": "ide",
-   "oleh": "Laras",
-   "hasil": "riset.md; skor Faktor Ternyata 8/10; 2+ sumber (ScienceABC, Optex, paten US 4009476 & 5481266, Door Parts UK, ASSA ABLOY)"
+  "tahap": "tayang",
+  "seri": "A",
+  "topik": "a3-02 pintu minimarket",
+  "dibuat": "2026-11-24T05:42",
+  "riwayat": [
+    {
+      "tahap": "ide",
+      "oleh": "Laras",
+      "hasil": "riset.md; skor Faktor Ternyata 8/10; 2+ sumber (ScienceABC, Optex, paten US 4009476 & 5481266, Door Parts UK, ASSA ABLOY)"
+    },
+    {
+      "tahap": "pilih",
+      "oleh": "Raka",
+      "hasil": "LANJUT skor 16/20 (penasaran 4, pengalaman 5, share 4, momen 3); rencana_marketing.md + seo.md; judul kerja 'Pintu minimarket kok tahu kamu mau masuk?'; sampul teks 'KOK TAHU?'; durasi <=57 dtk"
+    },
+    {
+      "tahap": "naskah",
+      "oleh": "Nadia",
+      "waktu": "2026-11-23",
+      "hasil": "naskah.json (seri cara-kerja) + naskah_baca.txt + naskah_suara.txt + unggah.json (terkait Layar HP) + paket_unggah.md + baris Nadia di lembar_tim.md. Hook #14 pengalaman tubuh (keputusan rapat Pak Bima): 'Kamu lewat depan pintu minimarket, pintunya CUEK. Kamu melangkah ke arahnya... eh, KEBUKA.' (kata kunci ≤2 dtk, tanpa kuis/'siapa', loop #26). Judul: 'Pintu Minimarket Kok Tahu Kamu Mau Masuk?' (41; 2 opsi lain untuk Raka). Sampul 'PINTU INI KOK TAHU?' (oranye-krem + hijau-mint). Kejutan 'Dia nyari GERAKAN, bukan orang' ±12,5 dtk; tapi 'menyamping cuma berubah DIKIT, sering nggak KEBACA'; kejutan kedua 'sensor KEDUA, pintu BATAL nutup'; penutup DUA tugas + LAMBAI/MUNDUR + tag teman 'yang suka NGETES pintu' + loop. 7 adegan, 126 kata, ±55 dtk, 0 angka, 0 klip, Tebe 6 adegan (cameo/peraga, 1 reaksi utama). 'Sensor gerak'/'di banyak pintu'/'sering', tanpa merek/ting-nong/saran mengakali/'nggak pernah menjepit'. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
+    },
+    {
+      "tahap": "cek_seo",
+      "oleh": "Raka",
+      "waktu": "2026-11-23",
+      "hasil": "0 butir WAJIB narasi; judul final opsi 1 'Pintu Minimarket Kok Tahu Kamu Mau Masuk?' (41); sampul 'PINTU INI KOK TAHU?'; tag +2 di unggah.json; caption TikTok/IG lolos (tanpa ajakan pindah). Lanjut cek_fakta (Pak Bima)."
+    },
+    {
+      "tahap": "cek_riset_naskah",
+      "oleh": "Laras",
+      "waktu": "2026-11-23",
+      "hasil": "cek_riset.md: 1 WAJIB (caption IG 'dan bukan kamu' -> 'dan bukan orangnya') + 6 saran; klaim inti (gerak menyamping lemah/paten US 5481266, gelombang mikro 'di banyak pintu', GERAKAN bukan orang, sensor kedua infra merah batal nutup) didukung riset.md."
+    },
+    {
+      "dari": "cek_fakta",
+      "ke": "produksi",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T05:54+08:00",
+      "hasil": "cek_fakta LULUS (1 WAJIB caption IG diperbaiki Pak Bima; cek_seo 0 wajib), skor 8/9, viral 8/10; Tebe cameo saja; jadwal Rab 25 Nov 13.00"
+    },
+    {
+      "dari": "produksi",
+      "ke": "review",
+      "oleh": "Yoga",
+      "waktu": "2026-11-24T06:40+08:00",
+      "hasil": "final.mp4 52,8 dtk / 15,6 MB; suara ElevenLabs v4 SEKALI 874 huruf ≈ 454 kredit (aset/log_kredit.csv; pelafalan 'mini-market', 'nge-tes'); tanpa JEDA; set BARU studio-aset/aset-pintu.js (fasad toko senja oranye-krem, pintu geser kaca, kotak sensor, kerucut mint, tampak atas x-ray + motor/sabuk, tirai infra merah, figur penonton generik); 11 babak; Tebe 3 cameo (tersinggung, kubu LAMBAI/MUNDUR, kirim); 'kamu' = figur generik; pintu adegan 5-6 berhenti ±80 px dari badan; tanpa merek/tulisan toko; outro logo YouTube ±1 dtk; loop ke sampul; thumbnail.png 'PINTU INI / KOK TAHU?' oranye-krem + mint; musik belanja-ceria 0,2; 6 SFX; cek_mulus LULUS, cek_video LULUS",
+      "durasi": 52.8,
+      "mb": 15.6,
+      "kredit": 454
+    },
+    {
+      "dari": "review",
+      "ke": "menunggu_persetujuan",
+      "oleh": "Pak Bima",
+      "waktu": "2026-11-24T06:10+08:00",
+      "hasil": "Review LULUS (52,8 dtk, 15,6 MB), uji 3 dtk 8/10; jadwal Rab 25 Nov 13.00 WITA"
+    },
+    {
+      "dari": "menunggu_persetujuan",
+      "ke": "disetujui",
+      "oleh": "Bos (Kantor Visual HP)",
+      "waktu": "2026-11-24T08:31+08:00"
+    }
+  ],
+  "masalah": null,
+  "skor_manajer": 8,
+  "jadwal_tayang": "2026-11-25T13:00:00+08:00",
+  "video_asset_id": "4a488fcd43ab63fede88552b3e270e6c",
+  "thumb_asset_id": "d7e90fddab204a8bb693dafead6b5200",
+  "video_url": "/_blob/4a488fcd43ab63fede88552b3e270e6c",
+  "thumb_url": "/_blob/d7e90fddab204a8bb693dafead6b5200",
+  "terbit": {
+    "youtube": {
+      "id": "sorQB31Cwd4",
+      "waktu": "2026-11-25T11:10:17Z",
+      "url": "https://youtube.com/shorts/sorQB31Cwd4",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7711965613924829185",
+      "waktu": "2026-11-25T12:49+08:00"
+    },
+    "instagram": {
+      "id": "manual",
+      "waktu": "2026-11-25T07:38:10Z"
+    }
   },
-  {
-   "tahap": "pilih",
-   "oleh": "Raka",
-   "hasil": "LANJUT skor 16/20 (penasaran 4, pengalaman 5, share 4, momen 3); rencana_marketing.md + seo.md; judul kerja 'Pintu minimarket kok tahu kamu mau masuk?'; sampul teks 'KOK TAHU?'; durasi <=57 dtk"
-  },
-  {
-   "tahap": "naskah",
-   "oleh": "Nadia",
-   "waktu": "2026-11-23",
-   "hasil": "naskah.json (seri cara-kerja) + naskah_baca.txt + naskah_suara.txt + unggah.json (terkait Layar HP) + paket_unggah.md + baris Nadia di lembar_tim.md. Hook #14 pengalaman tubuh (keputusan rapat Pak Bima): 'Kamu lewat depan pintu minimarket, pintunya CUEK. Kamu melangkah ke arahnya... eh, KEBUKA.' (kata kunci ≤2 dtk, tanpa kuis/'siapa', loop #26). Judul: 'Pintu Minimarket Kok Tahu Kamu Mau Masuk?' (41; 2 opsi lain untuk Raka). Sampul 'PINTU INI KOK TAHU?' (oranye-krem + hijau-mint). Kejutan 'Dia nyari GERAKAN, bukan orang' ±12,5 dtk; tapi 'menyamping cuma berubah DIKIT, sering nggak KEBACA'; kejutan kedua 'sensor KEDUA, pintu BATAL nutup'; penutup DUA tugas + LAMBAI/MUNDUR + tag teman 'yang suka NGETES pintu' + loop. 7 adegan, 126 kata, ±55 dtk, 0 angka, 0 klip, Tebe 6 adegan (cameo/peraga, 1 reaksi utama). 'Sensor gerak'/'di banyak pintu'/'sering', tanpa merek/ting-nong/saran mengakali/'nggak pernah menjepit'. Skor naskah 8/9, viral 8/10. Lanjut ke cek_seo (Raka)."
-  },
-  {
-   "tahap": "cek_seo",
-   "oleh": "Raka",
-   "waktu": "2026-11-23",
-   "hasil": "0 butir WAJIB narasi; judul final opsi 1 'Pintu Minimarket Kok Tahu Kamu Mau Masuk?' (41); sampul 'PINTU INI KOK TAHU?'; tag +2 di unggah.json; caption TikTok/IG lolos (tanpa ajakan pindah). Lanjut cek_fakta (Pak Bima)."
-  },
-  {
-   "tahap": "cek_riset_naskah",
-   "oleh": "Laras",
-   "waktu": "2026-11-23",
-   "hasil": "cek_riset.md: 1 WAJIB (caption IG 'dan bukan kamu' -> 'dan bukan orangnya') + 6 saran; klaim inti (gerak menyamping lemah/paten US 5481266, gelombang mikro 'di banyak pintu', GERAKAN bukan orang, sensor kedua infra merah batal nutup) didukung riset.md."
-  },
-  {
-   "dari": "cek_fakta",
-   "ke": "produksi",
-   "oleh": "Pak Bima",
-   "waktu": "2026-11-24T05:54+08:00",
-   "hasil": "cek_fakta LULUS (1 WAJIB caption IG diperbaiki Pak Bima; cek_seo 0 wajib), skor 8/9, viral 8/10; Tebe cameo saja; jadwal Rab 25 Nov 13.00"
-  },
-  {
-   "dari": "produksi",
-   "ke": "review",
-   "oleh": "Yoga",
-   "waktu": "2026-11-24T06:40+08:00",
-   "hasil": "final.mp4 52,8 dtk / 15,6 MB; suara ElevenLabs v4 SEKALI 874 huruf ≈ 454 kredit (aset/log_kredit.csv; pelafalan 'mini-market', 'nge-tes'); tanpa JEDA; set BARU studio-aset/aset-pintu.js (fasad toko senja oranye-krem, pintu geser kaca, kotak sensor, kerucut mint, tampak atas x-ray + motor/sabuk, tirai infra merah, figur penonton generik); 11 babak; Tebe 3 cameo (tersinggung, kubu LAMBAI/MUNDUR, kirim); 'kamu' = figur generik; pintu adegan 5-6 berhenti ±80 px dari badan; tanpa merek/tulisan toko; outro logo YouTube ±1 dtk; loop ke sampul; thumbnail.png 'PINTU INI / KOK TAHU?' oranye-krem + mint; musik belanja-ceria 0,2; 6 SFX; cek_mulus LULUS, cek_video LULUS",
-   "durasi": 52.8,
-   "mb": 15.6,
-   "kredit": 454
-  },
-  {
-   "dari": "review",
-   "ke": "menunggu_persetujuan",
-   "oleh": "Pak Bima",
-   "waktu": "2026-11-24T06:10+08:00",
-   "hasil": "Review LULUS (52,8 dtk, 15,6 MB), uji 3 dtk 8/10; jadwal Rab 25 Nov 13.00 WITA"
-  },
-  {
-   "dari": "menunggu_persetujuan",
-   "ke": "disetujui",
-   "oleh": "Bos (Kantor Visual HP)",
-   "waktu": "2026-11-24T08:31+08:00"
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "sorQB31Cwd4",
+      "umur_jam": 74.7,
+      "views": 1427,
+      "likes": 15,
+      "komentar": 0
+    }
   }
- ],
- "masalah": null,
- "skor_manajer": 8,
- "jadwal_tayang": "2026-11-25T13:00:00+08:00",
- "video_asset_id": "4a488fcd43ab63fede88552b3e270e6c",
- "thumb_asset_id": "d7e90fddab204a8bb693dafead6b5200",
- "video_url": "/_blob/4a488fcd43ab63fede88552b3e270e6c",
- "thumb_url": "/_blob/d7e90fddab204a8bb693dafead6b5200",
- "terbit": {
-  "youtube": {
-   "id": "manual",
-   "waktu": "2026-11-25T11:10:17Z"
-  },
-  "tiktok": {
-   "id": "v_inbox_file~v2.7711965613924829185",
-   "waktu": "2026-11-25T12:49+08:00"
-  },
-  "instagram": {
-   "id": "manual",
-   "waktu": "2026-11-25T07:38:10Z"
-  }
- }
 }

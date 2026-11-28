@@ -87,8 +87,10 @@
   "terbit": {
     "youtube": {
       "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio",
-      "id": "manual",
-      "waktu": "2026-11-17T05:18:40.480Z"
+      "id": "MuE4HxtJkUE",
+      "waktu": "2026-11-17T05:18:40.480Z",
+      "url": "https://youtube.com/shorts/MuE4HxtJkUE",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7708997452331370504",
@@ -101,6 +103,16 @@
       "catatan": "otomatis gagal 1x (ProcessingFailedError rupload, non-retriable) - unggah manual oleh Bos",
       "id": "manual",
       "waktu": "2026-11-17T05:13:55.628Z"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "MuE4HxtJkUE",
+      "umur_jam": 269.1,
+      "views": 1399,
+      "likes": 23,
+      "komentar": 0
     }
   }
 }

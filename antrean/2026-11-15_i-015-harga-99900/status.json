@@ -88,8 +88,10 @@
   "jadwal_tayang": "2026-11-16T11:38:00+08:00",
   "terbit": {
     "youtube": {
-      "id": "manual",
-      "waktu": "2026-11-16T03:55:08.120Z"
+      "id": "cqKQh1LUjoI",
+      "waktu": "2026-11-16T03:55:08.120Z",
+      "url": "https://youtube.com/shorts/cqKQh1LUjoI",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "manual",
@@ -98,6 +100,16 @@
     "instagram": {
       "id": "manual",
       "waktu": "2026-11-16T03:48:30.840Z"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "cqKQh1LUjoI",
+      "umur_jam": 294.5,
+      "views": 1522,
+      "likes": 16,
+      "komentar": 2
     }
   }
 }

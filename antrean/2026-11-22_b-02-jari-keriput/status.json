@@ -121,8 +121,10 @@
   "thumb_url": "/_blob/737cb4789c5724c21c7a5ca220e66bb2",
   "terbit": {
     "youtube": {
-      "id": "manual",
-      "waktu": "2026-11-23T10:06:16.278Z"
+      "id": "Pyz-ti2A6iU",
+      "waktu": "2026-11-23T10:06:16.278Z",
+      "url": "https://youtube.com/shorts/Pyz-ti2A6iU",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "id": "v_inbox_file~v2.7711301404104280085",
@@ -133,5 +135,15 @@
       "waktu": "2026-11-23T10:06:10.556Z"
     }
   },
-  "diiklankan": "2026-11-27 s.d. 2026-12-01"
+  "diiklankan": "2026-11-27 s.d. 2026-12-01",
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "Pyz-ti2A6iU",
+      "umur_jam": 120.2,
+      "views": 3891,
+      "likes": 58,
+      "komentar": 0
+    }
+  }
 }

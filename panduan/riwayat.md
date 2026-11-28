@@ -76,3 +76,5 @@
 - 2026-11-27 13.00 WITA | Panci presto (A) | TikTok inbox API OK 17.49 (catatan: TikTok sudah ada video Presto 41 views → jangan diposting dobel); YouTube manual (audit belum lolos); IG GAGAL izin token → manual Bos
 - 2026-11-27 18.00 WITA | Cicak (B) | TikTok inbox API OK 17.50; YouTube manual (audit belum lolos); IG GAGAL izin token → manual Bos
 - 2026-11-27 | Tersentak mau tidur (B) | Bos konfirmasi unggah manual 3 platform → tayang
+- 2026-11-28 18.30 WITA | Kedutan mata (B, resep viral pertama) | TikTok inbox API OK 18.19 (Bos posting dari inbox + label AI); YouTube manual (audit belum lolos); IG GAGAL izin token → manual Bos
+- 2026-11-28 | Panci presto (A) | Bos konfirmasi unggah manual YouTube & IG → tayang

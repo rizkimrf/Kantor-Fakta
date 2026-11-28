@@ -1,5 +1,5 @@
 {
-  "tahap": "menunggu_persetujuan",
+  "tahap": "disetujui",
   "topik": "b4-01 kedutan mata",
   "dibuat": "2026-11-28T09:48",
   "format_resep": "katanya-ternyata",
@@ -66,6 +66,11 @@
       "waktu": "2026-11-28T10:35+08:00",
       "siapa": "Ken",
       "teks": "QC Dimas PASS (SHA256 cd11aea9…) setelah REVISI-1 → menunggu_persetujuan Bos untuk slot Sab 28 Nov 18.30"
+    },
+    {
+      "waktu": "2026-11-28T18:17+08:00",
+      "siapa": "Ken",
+      "teks": "Disetujui Bos di Kantor Visual (08:14 UTC) → terbit slot 18.30"
     }
   ],
   "topik_tubuh": true,
@@ -75,5 +80,19 @@
   "video_asset_id": "6ba7d803fa93c384c7813881cbdc88a3",
   "video_url": "/_blob/6ba7d803fa93c384c7813881cbdc88a3",
   "thumb_asset_id": "07f526a7faab0497496b70c5ecd03a2e",
-  "thumb_url": "/_blob/07f526a7faab0497496b70c5ecd03a2e"
+  "thumb_url": "/_blob/07f526a7faab0497496b70c5ecd03a2e",
+  "terbit": {
+    "youtube": {
+      "catatan": "audit YouTube belum lolos - unggah manual dari YouTube Studio"
+    },
+    "tiktok": {
+      "id": "v_inbox_file~v2.7713164479655364616",
+      "waktu": "2026-11-28T18:19+08:00"
+    },
+    "instagram": {
+      "gagal": 1,
+      "error": "400 izin pages_* belum diberikan pada token IG",
+      "catatan": "unggah manual - token IG tanpa izin halaman (pages_*)"
+    }
+  }
 }

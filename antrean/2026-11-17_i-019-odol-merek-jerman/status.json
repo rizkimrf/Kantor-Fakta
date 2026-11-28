@@ -78,8 +78,10 @@
   "terbit": {
     "youtube": {
       "catatan": "unggah manual",
-      "id": "manual",
-      "waktu": "2026-11-19T10:44:24.016Z"
+      "id": "m-xd9rxbUDM",
+      "waktu": "2026-11-19T10:44:24.016Z",
+      "url": "https://youtube.com/shorts/m-xd9rxbUDM",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "tiktok": {
       "catatan": "unggah manual",
@@ -90,6 +92,16 @@
       "catatan": "unggah manual",
       "id": "manual",
       "waktu": "2026-11-19T10:44:26.792Z"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "m-xd9rxbUDM",
+      "umur_jam": 217.7,
+      "views": 1150,
+      "likes": 18,
+      "komentar": 0
     }
   }
 }

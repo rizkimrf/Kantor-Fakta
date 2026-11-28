@@ -1,18 +1,23 @@
-# PERINTAH BOS 19 Nov 2026 (berlaku untuk SEMUA produksi mulai Sabtu 21 Nov, di atas langkah harian di bawah)
-Sumber: rekomendasi YouTube untuk channel — tetap menonton 53–70% (target 75–85%), rata-rata ditonton 38–66% (target 90–120%+), penonton turun setelah ±45 dtk.
-1. **Maks 60 dtk, TANPA intro**, 1 inti kejutan; tempo tetap nyaman, tidak patah-patah.
-2. **Hook dari 26 tipe** (`.claude/skills/naskah-viral/referensi/hook-26.md`), narasi mulai ≤ 0,3 dtk, visual berubah tiap 2–3 dtk.
-3. **Akhir = loop + reaksi**: kalimat terakhir menyambung ke kalimat pertama + pertanyaan terbuka/pilih kubu + pemicu share bernuansa identitas.
-4. **Ide dekat sehari-hari** (lolos uji "pernah ngalamin") + pertanyaan pengalaman di akhir supaya penonton bercerita di komentar.
-5. **Format gabungan** (`.claude/skills/naskah-viral/referensi/format-gabungan.md`): 13.00 = jalur A "Kok Bisa Jalan?" (≤90 dtk), 18.00 = jalur B fakta (≤60 dtk). Isi `seri` di status.json. Subtitle tetap gaya sekarang, posisi & ukuran disesuaikan per adegan agar tidak menutupi objek.
-Ukur tiap video: % tetap menonton, % rata-rata ditonton, share, komentar — bandingkan dengan video lama (68–89 dtk).
+# Evaluasi harian — Sab 28 Nov 2026, 18.19 WITA (Rudi; diperiksa Ken)
+Sumber: YouTube Data API (`data/snapshot_youtube.csv`, views publik 10.19 UTC) + Supermetrics YT2 LatestVideos (% ditonton, subscriber; data Analytics telat ±2 hari) + Supermetrics TikTok (TIKBA). Instagram: UNKNOWN (token tanpa izin). YouTube Analytics di skrip & TikTok video.list: izin belum ada.
+Pengganggu: Rem motor, Jari keriput, Barcode **diiklankan 27 Nov–1 Des** → dikeluarkan dari median. Jam tayang lama berbeda-beda (13.00/18.00/19.45). Belum ada video resep viral yang berumur ≥ 24 jam (Kedutan baru tayang hari ini).
 
-# Evaluasi harian — 27 Nov 2026 sore (Supermetrics, YouTube 14 hari + TikTok 7 hari)
-YouTube: **Barcode 1.654 views / 77,9% ditonton** (jalur A, retensi tertinggi) · **Jari keriput 3.849 / 74,3%** · Cabai 1.377/70% · Asal nama Indonesia 66% · Pintu 357/65% · Suara rekaman 63% · Rem motor 57% · Layar HP 51% · Rice cooker 50% · Kecap 38% (terendah). Share tertinggi: Rice cooker 7, Rem motor 6.
-TikTok: Suara rekaman 2.642 / selesai **15,6%** · Jari keriput 2.502 / 11 komen · Sabun 1.980 / **20 share** · Tersentak 1.758 / 6 komen (hari pertama) · Nyamuk 511 · Pintu 2.456 tetap 0 komen/0 share.
-Pola: YouTube suka judul "kamu kira X? ternyata bukan" (Barcode, Jari keriput); TikTok share naik saat ada benda rumah tangga yang dipegang tiap hari (Sabun, Rem).
+## FAKTA (angka asli)
+| Umur | Video (format) | YT views | YT % ditonton | YT subs/1.000 | TikTok views / share / simpan |
+|---|---|---|---|---|---|
+| ±24 jam (25 j) | Panci presto (A) | 1.458 | UNKNOWN (Analytics belum masuk) | UNKNOWN | 1.175 / 4 / 2 |
+| ±72 jam (71 j) | Lupa di ambang pintu (B) | 1.263 | 72,8% | 0,0 (0/1.231) | 1.292 / 1 / 3 |
+| ±72 jam (75 j) | Pintu minimarket (A) | 1.427 | **81,5%** (tertinggi channel) | 2,2 (3/1.376) | 2.456 / 0 / 0 (selesai 3,6%) |
+| ±7 hari (168 j) | Sambal/Cabai (B) | 1.386 | 70,1% | 0,0 | 2.999 / 2 / 10 |
+| ±7 hari (171 j) | Rice cooker (A) | 1.639 | 49,9% | 0,0 | 1.447 / 3 / 6 |
+| ±30 hari | — (video tertua 12 hari) | — | — | — | — |
+Median organik YouTube % ditonton: format lama 51,0% (9 video) · A 50,8% (3) · B 66,7% (4) · semua organik 53,6% (16). Subs/1.000 median: lama 1,49 · A 0,61 · B 0,35 (video lama sudah lebih lama mengumpulkan subscriber → tidak setara). Subscriber YouTube 38 (data 28 Nov 10.19 UTC). Cicak belum muncul di TikTok (masih di inbox?).
 
-## 3 langkah untuk produksi besok
-1. **Judul & hook pola "Kamu kira X? Ternyata bukan"** (Barcode 77,9%, Jari keriput 74%) — pakai untuk Remote TV & Sensasi tubuh Sabtu.
-2. **Jalur A tetap pendek & benda yang dipegang tiap hari** (Sabun 20 share TikTok, Barcode retensi juara); hindari pembuka sejarah panjang (Kecap 38%).
-3. **Penutup pilihan kebiasaan nyata 1 kata** tetap (Tersentak MIRING/TELENTANG/TENGKURAP → 6 komen hari pertama; Jari keriput 11); pilihan aksi lucu (Pintu) tetap 0.
+## TAFSIRAN (belum bukti)
+- Pintu minimarket: penonton YouTube bertahan, tapi TikTok 0 share & selesai 3,6% → retensi YouTube tidak otomatis menular ke TikTok.
+- B lebih tinggi % ditonton dari A di data organik, tetapi Pintu (A) adalah juara → sampel kecil, belum boleh disimpulkan (E2).
+
+## 3 langkah untuk produksi besok (09.47)
+1. Tetap resep viral; bandingkan Kedutan (resep B pertama) dengan median B organik 66,7% saat data 72 jam masuk (Sel 1 Des).
+2. Format A: tiru pembuka Pintu minimarket (benda yang dilihat tiap hari + "kok tahu?") — 81,5% ditonton; jangan buka dengan penjelasan (Rice cooker 49,9%).
+3. Sampul & caption TikTok perlu pemicu simpan/share yang konkret (Sambal 10 simpan, Pintu 0) — Rudi uji di paket unggah berikutnya.

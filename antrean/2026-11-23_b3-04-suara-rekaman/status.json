@@ -87,8 +87,10 @@
   "thumb_url": "/_blob/eb699353099d953b418e7e2eddf2255f",
   "terbit": {
     "youtube": {
-      "id": "manual",
-      "waktu": "2026-11-23T10:01:28.816Z"
+      "id": "aIlD14Q3sdw",
+      "waktu": "2026-11-23T10:01:28.816Z",
+      "url": "https://youtube.com/shorts/aIlD14Q3sdw",
+      "dicocokkan": "judul (otomatis, statistik_youtube.py)"
     },
     "instagram": {
       "id": "manual",
@@ -98,6 +100,16 @@
       "id": "manual",
       "waktu": "2026-11-23",
       "catatan": "sudah tayang di TikTok 23 Nov (terdeteksi Supermetrics, caption sama) - jangan diunggah ulang"
+    }
+  },
+  "performa": {
+    "youtube": {
+      "diambil_utc": "2026-11-28T10:19+00:00",
+      "video_id": "aIlD14Q3sdw",
+      "umur_jam": 122.9,
+      "views": 1474,
+      "likes": 26,
+      "komentar": 0
     }
   }
 }
