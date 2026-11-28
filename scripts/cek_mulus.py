@@ -63,6 +63,17 @@ _kv = dict(x.split("=", 1) for x in _pr.split() if "=" in x)
 _rf = lambda s: (lambda a, b: float(a) / float(b) if float(b) else 0)(*s.split("/")) if "/" in s else float(s or 0)
 if abs(_rf(_kv.get("r_frame_rate", "30/1")) - 30) > 0.5 or abs(_rf(_kv.get("avg_frame_rate", "30/1")) - 30) > 0.5:
     masalah.append(f"kecepatan frame tidak tetap 30 fps (r={_kv.get('r_frame_rate')}, rata-rata={_kv.get('avg_frame_rate')}) - render ulang dengan --fps 30")
+# a2) batas tepi: pinggiran hitam/bingkai menurunkan distribusi Reels Facebook ("Batas tepi video", data Meta 29 Nov)
+import re as _re
+_cd = subprocess.run(["ffmpeg", "-v", "info", "-i", str(v), "-vf", "fps=2,cropdetect=24:2:0", "-f", "null", "-"], capture_output=True, text=True).stderr
+_cr = _re.findall(r"crop=(\d+):(\d+):\d+:\d+", _cd)
+_wh = baca(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height", "-of", "csv=p=0", str(v)]).decode().strip().split(",")
+if _cr and len(_wh) == 2:
+    _W, _H = int(_wh[0]), int(_wh[1])
+    _sempit = [c for c in _cr if int(c[0]) < 0.97 * _W or int(c[1]) < 0.97 * _H]
+    if len(_sempit) > 0.3 * len(_cr):
+        _c = max(set(_sempit), key=_sempit.count)
+        masalah.append(f"pinggiran hitam/bingkai: isi gambar hanya {_c[0]}x{_c[1]} dari {_W}x{_H} di {100 * len(_sempit) // len(_cr)}% video - isi penuh layar 9:16 tanpa bar/border (Facebook menandai 'Batas tepi video')")
 # b) layar monoton: > 3 dtk tanpa perubahan gambar berarti (resep U5: gambar berubah tiap 2-3 dtk)
 _jendela = int(3 * fps)
 _k = 0
