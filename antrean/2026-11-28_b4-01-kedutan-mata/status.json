@@ -56,6 +56,11 @@
       "waktu": "2026-11-28T14:10+08:00",
       "siapa": "Kiki",
       "teks": "R1 dari review Ken: 5 potongan subtitle digabung agar negasi tidak terpisah (adegan 7 'nggak ada yang ternyata tanda penyakit saraf' jadi 1 kelompok 2 baris, sorot NGGAK); Tebe+kalender papan dinaikkan dari pita subtitle; render ulang 56,0 dtk 15,7 MB; cek_video & cek_mulus LULUS; 0 kredit baru. Tahap tetap review."
+    },
+    {
+      "waktu": "2026-11-28T15:00+08:00",
+      "siapa": "Kiki",
+      "teks": "R2 dari QC Dimas REVISI-1: sisip suara 1 kalimat ('Setahun lebih, hampir semuanya tetap kedutan biasa.', eleven_v4, 51 huruf ≈ 27 kredit, log_kredit) menggantikan kalimat lama di narasi.mp3 + waktu_kata.json; papan 14 senyum + 1 datar, Tebe/kalender tidak menutupi wajah, tidak menimpa judul; sampul ekspresi kaget; render ulang 56,6 dtk 15,7 MB; cek_video & cek_mulus LULUS; SHA256 baru di aset_manifest.md. Tahap tetap review (perlu QC ulang)."
     }
   ],
   "topik_tubuh": true,

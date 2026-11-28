@@ -287,24 +287,21 @@
   }
 
   // ---------- papan 15 wajah ----------
-  function wajahIkon(x, y, r, o = {}) {
-    const k = o.kedip || 0, n = o.nyala ?? 1;
-    return `<g transform="translate(${f1(x)} ${f1(y)})" opacity="${(0.35 + 0.65 * n).toFixed(3)}"><circle r="${r}" fill="${n > 0.5 ? C.KULIT : "#C9B3DE"}"/>
+  function wajahIkon(x, y, r, o = {}) { // o.senyum 0..1 (lengkung mulut), o.datar 1 = mulut lurus netral (tanpa merah/seram)
+    const k = o.kedip || 0, n = o.nyala ?? 1, sm = o.datar ? 0 : (o.senyum ?? 0.4);
+    const ym = r * .42, lengkung = r * (.04 + .22 * sm);
+    return `<g transform="translate(${f1(x)} ${f1(y)})" opacity="${(0.35 + 0.65 * n).toFixed(3)}">${(o.cahaya || 0) > 0.01 ? `<circle r="${f1(r * 1.22)}" fill="${C.KUNING2}" opacity="${(0.28 * o.cahaya).toFixed(3)}"/>` : ""}<circle r="${r}" fill="${n > 0.5 ? C.KULIT : "#C9B3DE"}"/>
 <circle cx="${-r * .34}" cy="${-r * .08}" r="${r * .1}" fill="${C.GARIS}"/><circle cx="${r * .34}" cy="${-r * .08}" r="${r * .1}" fill="${C.GARIS}"/>
 <path d="M${-r * .5} ${f1(r * .1 - k * r * .08)} q${r * .16} ${f1(-k * r * .06)} ${r * .32} 0" stroke="${C.MAGENTA2}" stroke-width="${f1(r * .07)}" fill="none" stroke-linecap="round" opacity="${cl(k * 3).toFixed(3)}"/>
-<path d="M${-r * .26} ${r * .42} Q0 ${r * .52} ${r * .26} ${r * .42}" stroke="${C.GARIS}" stroke-width="${f1(r * .07)}" fill="none" stroke-linecap="round"/></g>`;
+${o.datar ? `<path d="M${f1(-r * .26)} ${f1(ym)} L${f1(r * .26)} ${f1(ym)}" stroke="${C.GARIS}" stroke-width="${f1(r * .08)}" stroke-linecap="round"/>` : `<path d="M${f1(-r * .3)} ${f1(ym)} Q0 ${f1(ym + lengkung)} ${f1(r * .3)} ${f1(ym)}" stroke="${C.GARIS}" stroke-width="${f1(r * .08)}" fill="none" stroke-linecap="round"/>`}</g>`;
   }
-  function papan15(t, o = {}) {
-    let g = `<rect x="80" y="520" width="920" height="700" rx="40" fill="${C.UNGU4}"/><rect x="100" y="540" width="880" height="660" rx="30" fill="${C.UNGU1}"/>`;
-    const nyala = o.nyala ?? 15, sapu = o.sapu ?? -1;
+  function papan15(t, o = {}) { // papan ringkas y 560–1060; o.nyala 0..15, o.hasil 0..1 (14 senyum + 1 datar o.datar = indeks)
+    let g = `<rect x="80" y="565" width="920" height="500" rx="40" fill="${C.UNGU4}"/><rect x="100" y="585" width="880" height="460" rx="30" fill="${C.UNGU1}"/>`;
+    const nyala = o.nyala ?? 15, hasil = cl(o.hasil || 0);
     for (let i = 0; i < 15; i++) {
-      const c = i % 5, b = Math.floor(i / 5), x = 220 + c * 160, y = 680 + b * 190;
-      const n = cl(nyala - i), kd = n > 0.5 ? kedutPola(t * 1.15 + i * 0.37, 1) * 0.9 : 0;
-      g += wajahIkon(x, y, 58 * (0.85 + 0.15 * halus(n)), { nyala: n, kedip: kd });
-    }
-    if (sapu >= 0) { // otak kecil menyapu cahaya kuning lembut (tenang, tanpa merah)
-      const x = lerp(160, 920, halus(cl(sapu)));
-      g += `<path d="M540 600 L${f1(x - 90)} 1210 L${f1(x + 90)} 1210 Z" fill="${C.KUNING2}" opacity=".16"/>` + otak(540, 578, 0.5, {});
+      const c = i % 5, b = Math.floor(i / 5), x = 220 + c * 160, y = 665 + b * 150;
+      const n = cl(nyala - i), kd = n > 0.5 ? kedutPola(t * 1.15 + i * 0.37, 1) * 0.9 * (1 - 0.6 * hasil) : 0, datar = i === o.datar && hasil > 0.5;
+      g += wajahIkon(x, y, 54 * (0.85 + 0.15 * halus(n)), { nyala: n, kedip: kd, senyum: 0.25 + 0.75 * (i === o.datar ? 0 : hasil), datar, cahaya: i === o.datar ? 0 : hasil });
     }
     return g;
   }

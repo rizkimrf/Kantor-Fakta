@@ -468,178 +468,169 @@
   },
   {
    "kata": "Setahun",
-   "mulai": 40.48,
-   "selesai": 40.72
+   "mulai": 40.44,
+   "selesai": 40.84
   },
   {
    "kata": "lebih,",
-   "mulai": 40.8,
-   "selesai": 41.2
+   "mulai": 40.92,
+   "selesai": 41.56
   },
   {
-   "kata": "nggak",
-   "mulai": 41.28,
-   "selesai": 41.44
+   "kata": "hampir",
+   "mulai": 41.64,
+   "selesai": 42.04
   },
   {
-   "kata": "ada",
-   "mulai": 41.52,
-   "selesai": 41.76
+   "kata": "semuanya",
+   "mulai": 42.12,
+   "selesai": 42.6
   },
   {
-   "kata": "yang",
-   "mulai": 41.84,
-   "selesai": 41.92
-  },
-  {
-   "kata": "ternyata",
-   "mulai": 42.0,
-   "selesai": 42.32
-  },
-  {
-   "kata": "tanda",
-   "mulai": 42.4,
-   "selesai": 42.64
-  },
-  {
-   "kata": "penyakit",
+   "kata": "tetap",
    "mulai": 42.72,
-   "selesai": 42.96
+   "selesai": 43.0
   },
   {
-   "kata": "saraf.",
-   "mulai": 43.04,
-   "selesai": 43.76
+   "kata": "kedutan",
+   "mulai": 43.08,
+   "selesai": 43.4
+  },
+  {
+   "kata": "biasa.",
+   "mulai": 43.6,
+   "selesai": 44.44
   },
   {
    "kata": "Tapi",
-   "mulai": 43.84,
-   "selesai": 44.0
+   "mulai": 44.48,
+   "selesai": 44.64
   },
   {
    "kata": "hati-hati",
-   "mulai": 44.08,
-   "selesai": 44.56
+   "mulai": 44.72,
+   "selesai": 45.2
   },
   {
    "kata": "kalau",
-   "mulai": 44.64,
-   "selesai": 44.8
+   "mulai": 45.28,
+   "selesai": 45.44
   },
   {
    "kata": "kedutannya",
-   "mulai": 44.88,
-   "selesai": 45.28
+   "mulai": 45.52,
+   "selesai": 45.92
   },
   {
    "kata": "berminggu-minggu,",
-   "mulai": 45.36,
-   "selesai": 46.32
+   "mulai": 46.0,
+   "selesai": 46.96
   },
   {
    "kata": "bikin",
-   "mulai": 46.36,
-   "selesai": 46.56
-  },
-  {
-   "kata": "mata",
-   "mulai": 46.64,
-   "selesai": 46.8
-  },
-  {
-   "kata": "menutup",
-   "mulai": 46.88,
+   "mulai": 47.0,
    "selesai": 47.2
   },
   {
+   "kata": "mata",
+   "mulai": 47.28,
+   "selesai": 47.44
+  },
+  {
+   "kata": "menutup",
+   "mulai": 47.52,
+   "selesai": 47.84
+  },
+  {
    "kata": "rapat,",
-   "mulai": 47.32,
-   "selesai": 47.76
+   "mulai": 47.96,
+   "selesai": 48.4
   },
   {
    "kata": "atau",
-   "mulai": 47.88,
-   "selesai": 48.04
+   "mulai": 48.52,
+   "selesai": 48.68
   },
   {
    "kata": "menyebar",
-   "mulai": 48.08,
-   "selesai": 48.48
+   "mulai": 48.72,
+   "selesai": 49.12
   },
   {
    "kata": "ke",
-   "mulai": 48.52,
-   "selesai": 48.56
+   "mulai": 49.16,
+   "selesai": 49.2
   },
   {
    "kata": "wajah.",
-   "mulai": 48.64,
-   "selesai": 49.28
-  },
-  {
-   "kata": "Itu",
-   "mulai": 49.4,
-   "selesai": 49.6
-  },
-  {
-   "kata": "waktunya",
-   "mulai": 49.653,
+   "mulai": 49.28,
    "selesai": 49.92
   },
   {
-   "kata": "periksa",
-   "mulai": 50.0,
+   "kata": "Itu",
+   "mulai": 50.04,
    "selesai": 50.24
   },
   {
-   "kata": "ke",
-   "mulai": 50.28,
-   "selesai": 50.32
+   "kata": "waktunya",
+   "mulai": 50.293,
+   "selesai": 50.56
   },
   {
-   "kata": "dokter.",
-   "mulai": 50.4,
+   "kata": "periksa",
+   "mulai": 50.64,
+   "selesai": 50.88
+  },
+  {
+   "kata": "ke",
+   "mulai": 50.92,
    "selesai": 50.96
   },
   {
-   "kata": "Terus,",
-   "mulai": 51.253,
+   "kata": "dokter.",
+   "mulai": 51.04,
    "selesai": 51.6
   },
   {
+   "kata": "Terus,",
+   "mulai": 51.893,
+   "selesai": 52.24
+  },
+  {
    "kata": "kenapa",
-   "mulai": 51.68,
-   "selesai": 51.92
+   "mulai": 52.32,
+   "selesai": 52.56
   },
   {
    "kata": "kita",
-   "mulai": 52.0,
-   "selesai": 52.16
+   "mulai": 52.64,
+   "selesai": 52.8
   },
   {
    "kata": "bisa",
-   "mulai": 52.2,
-   "selesai": 52.32
+   "mulai": 52.84,
+   "selesai": 52.96
   },
   {
    "kata": "cegukan?",
-   "mulai": 52.4,
-   "selesai": 53.2
+   "mulai": 53.04,
+   "selesai": 53.84
   },
   {
    "kata": "Itu",
-   "mulai": 53.28,
-   "selesai": 53.52
+   "mulai": 53.92,
+   "selesai": 54.16
   },
   {
    "kata": "video",
-   "mulai": 53.64,
-   "selesai": 53.76
+   "mulai": 54.28,
+   "selesai": 54.4
   },
   {
    "kata": "berikutnya.",
-   "mulai": 53.84,
-   "selesai": 54.64
+   "mulai": 54.48,
+   "selesai": 55.28
   }
- ]
+ ],
+ "catatan": "R2 28 Nov: kalimat 'Setahun lebih, hampir semuanya tetap kedutan biasa.' disisipkan (eleven_v4, Dakocan, previous/next_text), sambungan crossfade 20 ms"
 }
