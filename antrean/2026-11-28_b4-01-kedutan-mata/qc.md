@@ -1,13 +1,15 @@
-KEPUTUSAN: REVISI
-SHA256: e8b647773a6a30329de0f1da9768c65ca5c99d1aad76e6b6afd509d9919f8cf7
-KEPATUHAN: REVISI (kebijakan 19 Nov 2026, masih < 30 hari) — label AI ya, aset buatan sendiri, batas aman ada; tertahan klaim K7 + visual papan (kesehatan, menenangkan berlebihan)
-CQS (diagnostik, BUKAN syarat lulus): akurasi 12/20 (K7 dilebihkan, sumber medis hanya kutipan pencarian) · ide 12/15 (mitos dekat, sudut "nggak bisa disuruh berhenti" segar) · naskah & cerita 21/25 (bantah 3,8 dtk, belokan rapat, satu cerita) · visual & editing 15/20 (penampang & cermin kuat; papan 15 wajah keliru & tertutup Tebe) · kemasan 12/15 (judul jujur, sampul jelas; ekspresi Tebe senyum, bukan kaget) · teknis 5/5 (cek_mulus & cek_standar LULUS, 56,0 dtk)
-Dicek sendiri: cek_mulus LULUS, cek_standar LULUS (B, 127 kata); lembar frame 0–3 dtk (Tebe sudah kedutan + TIK! TIK! + "KEDUTAN MATA = REZEKI?" = paham tanpa suara), tiap 5 dtk, 35–47 dtk per detik, 50–56 dtk, thumbnail.png. Sumber primer (PubMed/eutils/EyeWiki/Utah) dicoba dari sesi QC: diblokir (kode 000).
-TEMUAN
-1. [KRITIS-AKURASI] dtk 42–47 "nggak ada yang ternyata tanda penyakit saraf" + papan 15 wajah yang SEMUA menyala senyum seragam (dtk 37,7–47): riset K7 sendiri mencatat 1 dari 15 berkembang jadi hemifacial spasm (gangguan saraf wajah) di sisi yang sama. Narasi menghapus kata "awal" dari kesimpulan penulis, dan papan menggambarkan 15/15 aman = angka menyesatkan di topik kesehatan. Perbaikan: kalimat jadi "Setahun lebih, hampir semuanya tetap kedutan biasa." (atau hapus kalimat studi + papan seluruhnya; video tetap ±45 dtk, masih dalam B) — Putri; papan 14 wajah senyum + 1 wajah netral bertanda (tanpa angka baru) — Kiki; suara ulang hanya 1 kalimat (±60 huruf) — Kiki.
-2. [SUMBER] K7 hanya dari 1 makalah yang dibaca lewat kutipan pencarian, dan bacaan kutipan itu sudah sekali keliru (koreksi Ken). Untuk klaim detail angka/hasil studi di topik tubuh itu TIDAK cukup. Bila kalimat studi dipertahankan: buka abstrak penuh (mis. Europe PMC/arsip Utah dari jaringan lain) dan kutip kalimat hasilnya di riset.md — Laras. K1/K2/K4/K8 cukup (≥ 2 sumber independen yang konvergen: Mayo, Cleveland, EyeWiki/StatPearls, KlikDokter/Halodoc), catat tetap "lewat kutipan".
-3. dtk 38–47: Tebe kecil + ikon kalender menutupi wajah baris 3 kolom 1 papan (yang terlihat 14) dan ikon kuning menimpa judul "15 PASIEN" ±46,5 dtk — geser Tebe keluar papan — Kiki.
-4. Deskripsi unggah.json harus ikut kalimat baru (saat ini "pada tidak satu pun... tanda awal" + HFS; samakan dengan narasi baru) — Rudi.
-5. Minor (tidak menghambat): set kamar malam ungu-magenta mirip B3-04 suara rekaman & B3-05 tersentak; untuk B4-02 cegukan pakai dunia/warna lain — Kiki/Rudi. Ekspresi Tebe di sampul senyum, kurang "kaget" — opsional Kiki.
-Lolos: frame 0 beraksi, bantah ≤ 6 dtk, satu cerita, peragaan per kalimat (cincin otot, serat nembak, cermin, 3 panel batas aman), celah ≤ 15 dtk, penutup janji cegukan tanpa perintah komen; batas aman K8 tanpa saran obat; label AI ya; musik/SFX sintesis sendiri, font OFL, tanpa gambar AI realistis.
-Render ulang = QC ulang. Ini REVISI ke-1 untuk video ini.
+KEPUTUSAN: PASS
+SHA256: cd11aea9f5f887606ed5725f09631b2a2a9207a0635dd22e662c97ec0948a784
+KEPATUHAN: CLEAR (kebijakan 19 Nov 2026, < 30 hari) — label AI ya, aset & musik/SFX buatan sendiri, batas aman K8 tanpa saran obat, deskripsi "bukan nasihat medis"
+CQS (diagnostik, BUKAN syarat lulus): akurasi 16/20 (K7 kini hati-hati & sesuai 14/15; sumber medis masih lewat kutipan pencarian) · ide 12/15 (mitos dekat, sudut "nggak bisa disuruh berhenti") · naskah & cerita 21/25 (bantah 3,8 dtk, belokan rapat, satu cerita) · visual & editing 17/20 (penampang, cermin, papan 14+1 jelas; set kamar ungu mirip B3-04/B3-05) · kemasan 13/15 (judul jujur, sampul kaget "BUKAN REZEKI!") · teknis 5/5 (cek_mulus & cek_standar LULUS, 56,6 dtk)
+QC ulang (REVISI-1 → R2), dicek sendiri: cek_mulus LULUS, cek_standar LULUS; frame per detik 35–48 dtk, lembar 0–3 dtk & tiap 5 dtk, thumbnail.png; teks naskah.json, riset K7, unggah.json.
+Temuan REVISI-1 — status:
+1. K7 BERES: narasi & subtitle "Setahun lebih, hampir semuanya tetap kedutan biasa." (±40,4–44,4 dtk); papan 14 senyum + 1 datar (baris 3 kolom 3), tanpa wajah seram; deskripsi unggah.json menyebut 1 pasien jadi kejang separuh wajah. Riset K7 & naskah.json selaras.
+2. Sumber K7 DITERIMA bersyarat: masih 1 makalah lewat kutipan pencarian, tetapi kalimat baru benar menurut kedua bacaan abstrak (sebelum & sesudah koreksi Ken) dan sejalan dengan review StatPearls/EyeWiki (jinak). Laras: buka abstrak penuh saat domain terbuka dan tempel kutipan hasilnya di riset.md (tidak menghambat).
+3. BERES: Tebe & kalender di luar papan, ikon tidak menimpa "15 PASIEN".
+4. BERES: sampul ekspresi kaget (mulut terbuka, mata lebar), teks "BUKAN REZEKI!" sesuai isi.
+Catatan baru (tidak menghambat):
+5. Sambungan suara ±41,6–44,4 dtk: jeda wajar (0,13 dtk sebelum, 0,46 dtk sesudah "biasa."), tanpa potongan; tapi narasi kalimat sambungan ±2–3 dB lebih pelan (mean -23,1 vs -20/-21 dB tetangga, puncak -9,4 vs -4/-6). Warna suara tidak bisa saya dengar = UNKNOWN (bukan aspek kritis). Untuk render berikutnya samakan gain sambungan — Kiki.
+6. Set kamar malam ungu-magenta sudah 3 video tubuh beruntun; B4-02 cegukan wajib dunia/warna lain — Kiki/Rudi.
+Lolos resep: frame 0 beraksi, paham tanpa suara, bantah ≤ 6 dtk, satu cerita, peragaan per kalimat, celah ≤ 15 dtk, penutup janji cegukan tanpa perintah komen.
+PASS hanya untuk SHA256 di atas; render ulang = QC ulang. Status tidak diubah (bukan wewenang QC).

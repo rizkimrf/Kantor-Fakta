@@ -1,10 +1,10 @@
 {
-  "tahap": "review",
+  "tahap": "menunggu_persetujuan",
   "topik": "b4-01 kedutan mata",
   "dibuat": "2026-11-28T09:48",
   "format_resep": "katanya-ternyata",
   "pilar": "Sains & tubuh manusia",
-  "agen": "Ken",
+  "agen": null,
   "riwayat": [
     {
       "dari": "ide",
@@ -61,10 +61,19 @@
       "waktu": "2026-11-28T15:00+08:00",
       "siapa": "Kiki",
       "teks": "R2 dari QC Dimas REVISI-1: sisip suara 1 kalimat ('Setahun lebih, hampir semuanya tetap kedutan biasa.', eleven_v4, 51 huruf ≈ 27 kredit, log_kredit) menggantikan kalimat lama di narasi.mp3 + waktu_kata.json; papan 14 senyum + 1 datar, Tebe/kalender tidak menutupi wajah, tidak menimpa judul; sampul ekspresi kaget; render ulang 56,6 dtk 15,7 MB; cek_video & cek_mulus LULUS; SHA256 baru di aset_manifest.md. Tahap tetap review (perlu QC ulang)."
+    },
+    {
+      "waktu": "2026-11-28T10:35+08:00",
+      "siapa": "Ken",
+      "teks": "QC Dimas PASS (SHA256 cd11aea9…) setelah REVISI-1 → menunggu_persetujuan Bos untuk slot Sab 28 Nov 18.30"
     }
   ],
   "topik_tubuh": true,
   "catatan_putri": "2026-11-28 Putri: naskah.json + naskah_baca.txt + naskah_suara.txt R0 selesai (128 kata, ±66 dtk). Tahap SENGAJA belum dipindah ke cek_seo: cek_standar.py belum bisa dijalankan Putri (tanpa terminal) dan simulasi manual menunjukkan K3 GAGAL hanya karena format sel status K2/K7 di riset.md (keterangan dalam kurung). Setelah Laras merapikan sel itu dan cek_standar LULUS, Ken memindah ke cek_seo.",
   "masalah": null,
-  "jadwal_tayang": "2026-11-28T18:30:00+08:00"
+  "jadwal_tayang": "2026-11-28T18:30:00+08:00",
+  "video_asset_id": "6ba7d803fa93c384c7813881cbdc88a3",
+  "video_url": "/_blob/6ba7d803fa93c384c7813881cbdc88a3",
+  "thumb_asset_id": "07f526a7faab0497496b70c5ecd03a2e",
+  "thumb_url": "/_blob/07f526a7faab0497496b70c5ecd03a2e"
 }
