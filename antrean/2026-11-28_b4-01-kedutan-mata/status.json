@@ -1,10 +1,10 @@
 {
-  "tahap": "naskah",
+  "tahap": "cek_seo",
   "topik": "b4-01 kedutan mata",
   "dibuat": "2026-11-28T09:48",
   "format_resep": "katanya-ternyata",
   "pilar": "Sains & tubuh manusia",
-  "agen": "Putri",
+  "agen": "Ken",
   "riwayat": [
     {
       "dari": "ide",
@@ -19,8 +19,15 @@
       "oleh": "Rudi",
       "waktu": "2026-11-28T10:30+08:00",
       "catatan": "LANJUT 15/20 (keyakinan sedang); judul rekomendasi 'Kedutan mata kamu kira rezeki? Ternyata bukan'; sampul 'BUKAN REZEKI!'; rencana_marketing.md + seo.md; volume pencarian tanpa data"
+    },
+    {
+      "waktu": "2026-11-28T10:20+08:00",
+      "siapa": "Ken",
+      "teks": "Format sel status K2/K7 riset.md dirapikan (isi tetap); cek_standar.py LULUS → cek_seo"
     }
   ],
+  "topik_tubuh": true,
+  "catatan_putri": "2026-11-28 Putri: naskah.json + naskah_baca.txt + naskah_suara.txt R0 selesai (128 kata, ±66 dtk). Tahap SENGAJA belum dipindah ke cek_seo: cek_standar.py belum bisa dijalankan Putri (tanpa terminal) dan simulasi manual menunjukkan K3 GAGAL hanya karena format sel status K2/K7 di riset.md (keterangan dalam kurung). Setelah Laras merapikan sel itu dan cek_standar LULUS, Ken memindah ke cek_seo.",
   "masalah": null,
   "jadwal_tayang": "2026-11-28T18:30:00+08:00"
 }
