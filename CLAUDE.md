@@ -80,7 +80,7 @@ Rudi menyeimbangkan kedua format dan membandingkannya tiap Senin (tetap menonton
 **Semua pilar dibuka dari hal yang pernah DILIHAT atau DIALAMI orang Indonesia** (Bos 19 Nov, diperbarui 28 Nov): tapi tidak bisa mereka jelaskan. Penutup mengikuti resep ("Berikutnya mau kita rakit apa?" / janji seri) — usulan topik di komentar jadi sumber ide berikutnya.
 
 ## Pembeda channel (wajib — YouTube tidak memonetisasi konten massal yang generik/template)
-1. **Fakta benar dan bersumber:** minimal 2 sumber kredibel per klaim utama, sumber di deskripsi.
+1. **Fakta benar dan bersumber:** minimal 2 sumber kredibel per klaim utama, tercatat di `riset.md`. **Deskripsi YouTube (Bos 29 Nov): pendek, TANPA daftar sumber** — kalimat kata kunci + ajakan share ke teman + pertanyaan komentar + 3 hashtag (`.claude/skills/seo-distribusi`). Ajakan share/komen boleh di deskripsi; di dalam video tetap tanpa perintah (resep viral).
 2. **Penjelasan "kenapa", bukan sekadar daftar fakta.** Setiap video menjawab "kok bisa begitu?"
 3. **Sudut Indonesia** bila memungkinkan (perbandingan dengan hal yang dikenal orang Indonesia).
 4. **Maskot & gaya kartun orisinal** (`panduan/karakter.md`, `panduan/gaya-visual.md`) — jangan meniru

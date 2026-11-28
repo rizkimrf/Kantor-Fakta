@@ -35,7 +35,7 @@ Ikut menilai konsep sampul: apakah orang di grid profil/beranda berhenti? Bandin
 
 ## unggah.json (dibaca scripts/terbitkan.py)
 `{"youtube":{"judul","deskripsi","tag":[]},"tiktok":{"caption"},"instagram":{"caption"}}`
-- YouTube: deskripsi = 2 kalimat penasaran + sumber (judul + URL) + 3–5 hashtag.
+- YouTube: deskripsi PENDEK (Bos 29 Nov): baris 1 = kalimat penasaran berisi kata kunci yang dicari orang (mis. "kenapa layar HP mati sendiri saat menelepon"), baris 2 = 1 kalimat ajakan share yang spesifik ("Kirim ke teman yang selalu …"), baris 3 = 1 pertanyaan pengalaman untuk komentar ("Kamu pernah …? Tulis di komentar"), lalu 3 hashtag (#Shorts + 2 topik). TANPA daftar sumber/URL (sumber tetap di riset.md; boleh 1 baris "Sumber: <nama lembaga>" hanya untuk topik tubuh/kesehatan). Maks ±300 huruf.
 - TikTok: caption ≤150 karakter, pertanyaan pancingan + 3–5 hashtag (1 luas, 2 niche, 1 Indonesia).
 - Instagram: kalimat pembuka kuat, 2–3 baris, ajakan simpan/kirim ke teman, 5–8 hashtag.
 Label konten AI selalu dinyalakan. Jam tayang: 13.00 & 18.00 WITA (Shorts; slot ke-3 19.45 bila 3/hari), 19.00 (panjang) — sumber: `jam_tayang.json`.

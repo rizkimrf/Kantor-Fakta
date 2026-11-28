@@ -34,7 +34,7 @@ Kamu terlibat dari awal, bukan hanya saat upload. Untuk setiap ide yang LANJUT, 
 Baca `naskah.json` dan beri rekomendasi tertulis di `cek_seo.md` (maks 10 butir, konkret, bisa langsung dikerjakan):
 - Naskah & suara: kata kunci utama terucap di 5 detik pertama? kata kunci turunan masuk wajar? ada kalimat yang layak
   jadi potongan viral / dikutip? penutup memancing komentar (pertanyaan spesifik)?
-- Judul (maks 60 huruf, kata kunci di depan), deskripsi (2 kalimat pertama mengandung kata kunci + sumber fakta),
+- Judul (maks 60 huruf, kata kunci di depan), deskripsi pendek tanpa daftar sumber (lihat aturan deskripsi Bos 29 Nov di skill seo-distribusi),
   tag, teks thumbnail.
 - Retensi: bagian mana berisiko ditinggal, saran pemotongan.
 Jika ada butir "wajib", kembalikan ke Putri (tahap `naskah`) satu kali; setelah diperbaiki lanjut ke `cek_fakta`.
@@ -42,7 +42,7 @@ Rekomendasimu tidak boleh mengubah fakta atau membuat judul menyesatkan — "Ben
 
 ## Paket unggah per platform (`paket_unggah.md`) — dibuat saat video `menunggu_persetujuan`
 Shorts yang sama ditayangkan di tiga tempat; tiap platform punya cara baca berbeda:
-- **YouTube Shorts:** judul ≤ 60 huruf berisi kata kunci + rasa penasaran; deskripsi 2–3 kalimat + sumber; 3 hashtag (#Shorts + 2 topik).
+- **YouTube Shorts:** judul ≤ 60 huruf berisi kata kunci + rasa penasaran; deskripsi PENDEK (Bos 29 Nov): baris 1 = kalimat penasaran berisi kata kunci yang dicari orang (mis. "kenapa layar HP mati sendiri saat menelepon"), baris 2 = 1 kalimat ajakan share yang spesifik ("Kirim ke teman yang selalu …"), baris 3 = 1 pertanyaan pengalaman untuk komentar ("Kamu pernah …? Tulis di komentar"), lalu 3 hashtag (#Shorts + 2 topik). TANPA daftar sumber/URL (sumber tetap di riset.md; boleh 1 baris "Sumber: <nama lembaga>" hanya untuk topik tubuh/kesehatan). Maks ±300 huruf.
 - **TikTok:** caption 1–2 kalimat gaya ngobrol dengan kata kunci di awal (TikTok dipakai sebagai mesin pencari), 3–5 hashtag
   (1 luas, 2–3 spesifik, 1 khas channel #TernyataBegitu), saran teks sampul.
 - **Instagram Reels:** caption dengan kalimat pertama sebagai hook + kata kunci, ajakan simpan/bagikan, 3–5 hashtag, saran teks sampul.
