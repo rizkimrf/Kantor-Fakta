@@ -170,10 +170,10 @@ function setB4(T){
  let s=`<rect x="-200" y="-200" width="1480" height="2400" fill="${C.UNGU2}"/>`;
  for(let i=-3;i<12;i++)s+=`<rect x="${i*140}" y="-200" width="60" height="2400" fill="${C.UNGU1}" opacity=".22"/>`;
  s+=A.papan15(T,{nyala,sapu});
- s+=`<g opacity="${halus(lin(T,kSetahun-.1,kSetahun+.3)).toFixed(3)}">${A.kalender(440,1295,.45,T,{balik:7*ioS(lin(T,kSetahun,kNggakAda+.3))})}</g>`;
+ s+=`<g opacity="${halus(lin(T,kSetahun-.1,kSetahun+.3)).toFixed(3)}">${A.kalender(430,1255,.4,T,{balik:7*ioS(lin(T,kSetahun,kNggakAda+.3))})}</g>`;
  const p=AT4(T);p.lihatX=4;p.lihatY=-4;
  if(T>kNggakAda){const lega=Math.sin(Math.PI*lin(T,kNggakAda+.1,kNggakAda+1.1));p.mulutBuka=Math.max(p.mulutBuka,.35*lega)}
- s+=A.tebeSVG(p,200,1262,250,{kedut:A.kedutPola(T,.7)*(1-halus(lin(T,kNggakAda,kNggakAda+.8)))*0+A.kedutPola(T,.5)});
+ s+=A.tebeSVG(p,190,1170,230,{kedut:A.kedutPola(T,.7)*(1-halus(lin(T,kNggakAda,kNggakAda+.8)))*0+A.kedutPola(T,.5)});
  const cam=jalur(T,{cx:540,cy:960,z:1.06},[[B5,kPasien,{z:1.0,cy:930},LIN],[kSetahun-.2,kSaraf,{cx:560,cy:990,z:1.04},LIN],[kSaraf,B6+.3,{z:1.02},LIN]]);
  return latar(C.UNGU2)+kamera(svgW(s),cam)}
 
@@ -242,12 +242,22 @@ function header(T){
  return h}
 const WS={kata:W.kata.filter(k=>!/^\.+$/.test(k.kata))};
 const GRUP=KS.teks(WS,{gabung:[['lima belas','15']],ganti:{miokimia:'myokymia',hape:'HP'},maks:3,
- tekan:['kedutan','rezeki.','bukan.','otot','kelopakmu','melingkar,','karet','gelang.','miokimia.','nembak','barengan,','popcorn','begadang,','stres,','kopi,','hape.','berhenti?','perintah','cermin,','joget.','lho,','penyebab','kecil','awet.','setahun','saraf.','berminggu-minggu,','rapat,','wajah.','dokter.','cegukan?','berikutnya.']});
+ tekan:['kedutan','rezeki.','bukan.','otot','kelopakmu','melingkar,','karet','gelang.','miokimia.','nembak','barengan,','popcorn','begadang,','stres,','kopi,','hape.','berhenti?','perintah','cermin,','joget.','lho,','penyebab','kecil','awet.','setahun','nggak','berminggu-minggu,','rapat,','wajah.','dokter.','cegukan?','berikutnya.']});
+// Ken 28 Nov: potongan yang maknanya terbalik bila dibaca sendiri digabung (negasi selalu ikut)
+(function(){const satukan=(awal,n)=>{const i=GRUP.findIndex(g=>KS.norm(g.kata[0].teks)===awal&&(n.cek?n.cek(g):true));if(i<0)return;
+ const ikut=GRUP.splice(i+1,n.n);for(const g of ikut)GRUP[i].kata.push(...g.kata);GRUP[i].b=ikut[ikut.length-1].b};
+ satukan('nggak',{n:2,cek:g=>g.kata.some(w=>KS.norm(w.teks)==='ada')});            // NGGAK ADA YANG TERNYATA TANDA PENYAKIT SARAF.
+ satukan('terus',{n:1,cek:g=>g.kata.some(w=>KS.norm(w.teks)==='nggak')});          // TERUS, KENAPA NGGAK BISA DISURUH BERHENTI?
+ satukan('bukan',{n:1,cek:g=>g.kata.some(w=>KS.norm(w.teks)==='perintah')});       // BUKAN PERINTAH DARI KAMU.
+ satukan('sendiri',{n:1,cek:g=>g.kata.some(w=>KS.norm(w.teks)==='tanpa')});        // SENDIRI, TANPA KAMU SURUH.
+ satukan('aja',{n:1});                                                              // AJA BELUM DIPAHAMI PENUH.
+})();
 function subtitle(T){
  const g=GRUP.find(x=>T>=x.a&&T<x.b);if(!g)return '';
+ const pjg=g.kata.map(w=>w.teks).join(' ').length, dua=pjg>24, uk=dua?46:50;
  const k=lin(T,g.a,g.a+.12),op=k*(1-lin(T,g.b-.1,g.b))*(1-halus(lin(T,AKHIR+.1,AKHIR+.3)));
  const isi=g.kata.map(w=>{const t=w.teks.toUpperCase();return w.tekan?`<span style="display:inline-block;background:${C.MAGENTA2};border-radius:10px;padding:0 10px 3px;margin:0 6px">${t}</span>`:`<span style="display:inline-block;margin:0 6px;-webkit-text-stroke:7px rgba(23,10,40,.9);paint-order:stroke fill">${t}</span>`}).join('');
- return `<div class="abs" style="left:80px;width:800px;top:1372px;text-align:center;white-space:nowrap;opacity:${op.toFixed(3)};transform:scale(${(.9+.1*oBack(k)).toFixed(3)});font:700 50px/1.2 Poppins;color:#fff;text-shadow:0 4px 10px rgba(0,0,0,.4)">${isi}</div>`}
+ return `<div class="abs" style="left:80px;width:800px;top:${dua?1318:1372}px;text-align:center;white-space:${dua?'normal':'nowrap'};opacity:${op.toFixed(3)};transform:scale(${(.9+.1*oBack(k)).toFixed(3)});font:700 ${uk}px/1.22 Poppins;color:#fff;text-shadow:0 4px 10px rgba(0,0,0,.4)">${isi}</div>`}
 function efek(T){
  return A.efekKata('TIK! TIK!',735,720,.82,lin(T,-.25,1.05),C.KUNING,-8)
   +A.efekKata('POP!',800,980,1,lin(T,kMeletup-.05,kMeletup+1.05),C.KREM,8)

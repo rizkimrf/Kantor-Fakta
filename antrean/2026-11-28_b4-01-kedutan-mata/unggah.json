@@ -1,0 +1,40 @@
+{
+  "label_ai": true,
+  "youtube": {
+    "judul": "Kedutan mata kamu kira rezeki? Ternyata bukan",
+    "deskripsi": "Kedutan mata kamu kira tanda rezeki? Ternyata itu otot melingkar di kelopakmu yang berkedut sendiri; kedutan halus ini disebut myokymia. Biasanya dikaitkan dengan stres, kurang tidur, kafein, atau mata capek, dan umumnya hilang sendiri dalam hitungan hari sampai minggu; periksa ke dokter bila berlangsung berminggu-minggu, membuat kelopak menutup rapat, atau menyebar ke bagian wajah lain. Video ini bukan nasihat medis.\n\nCatatan jujur: penyebab pasti myokymia belum dipahami penuh. Bukti jangka panjangnya dari satu studi kecil (15 pasien kedutan kelopak kronis, diikuti >= 12 bulan; pada tidak satu pun kedutan itu tanda awal penyakit saraf, satu pasien berkembang jadi kejang separuh wajah; Banik & Miller 2004). Arti kedutan dalam kepercayaan turun-temurun berbeda di tiap daerah; sumber medis tidak menemukan dasar ilmiahnya.\n\nSumber:\n- EyeWiki AAO, Eyelid Myokymia: https://eyewiki.aao.org/Eyelid_Myokymia\n- StatPearls/NCBI, Eyelid Myokymia: https://www.ncbi.nlm.nih.gov/books/NBK560595/\n- Cleveland Clinic, Myokymia: https://my.clevelandclinic.org/health/diseases/myokymia\n- Mayo Clinic, Eye twitching: https://www.mayoclinic.org/symptoms/eye-twitching/basics/when-to-see-doctor/sym-20050838\n- NHS, Twitching eyes and muscles: https://www.nhs.uk/conditions/twitching-eyes-and-muscles/\n- Moorfields Eye Hospital: https://www.moorfields.nhs.uk/about-us/news-and-blogs/news/why-your-eyelids-twitch\n- Banik & Miller (2004), J Neuroophthalmol: https://pubmed.ncbi.nlm.nih.gov/15662242/\n- Antara News: https://m.antaranews.com/amp/berita/4823953/mata-sering-berkedut-ini-penyebab-dan-cara-mengatasinya\n- KlikDokter: https://www.klikdokter.com/info-sehat/mata/penyebab-mata-kiri-bawah-kedutan\n- CNBC Indonesia: https://www.cnbcindonesia.com/lifestyle/20250131084733-33-606889/sering-kedutan-mata-ternyata-ini-penjelasan-ilmiahnya\n\n#Shorts #KedutanMata #TernyataBegitu",
+    "tag": [
+      "kedutan mata",
+      "mata kedutan",
+      "kelopak mata berkedut",
+      "mitos kedutan mata",
+      "kenapa mata kedutan",
+      "mata kedutan penyebabnya",
+      "myokymia",
+      "fakta tubuh manusia",
+      "ternyata begitu",
+      "mata berkedut",
+      "kedutan kelopak mata"
+    ],
+    "komentar_tersemat": "Waktu kecil, orang rumahmu bilang kedutan mata itu tanda apa?",
+    "terkait": {
+      "folder": null,
+      "judul": null,
+      "url": null,
+      "catatan": "Belum ada video panjang setema. Janji seri: B4-02 cegukan (tayang Sen 30 Nov); setelah tayang, tambahkan tautannya di komentar tersemat."
+    },
+    "judul_final": "Kedutan mata kamu kira rezeki? Ternyata bukan"
+  },
+  "tiktok": {
+    "caption": "Kedutan mata kamu kira rezeki? Ternyata ototnya yang joget sendiri. Dulu katanya tanda apa? #faktaunik #kedutanmata #faktatubuh #TernyataBegitu"
+  },
+  "instagram": {
+    "caption": "Matamu kedutan sendiri, dan kamu kira itu rezeki?\nTernyata yang joget itu otot kelopakmu. Dan kamu nggak bisa menyuruhnya berhenti.\nSimpan buat nanti, atau kirim ke teman yang matanya lagi kedutan.\nWaktu kecil, orang rumahmu bilang kedutan mata itu tanda apa?\n#kedutanmata #matakedutan #faktatubuh #faktaunik #faktasains #TernyataBegitu"
+  },
+  "jadwal_tayang_usulan": "2026-11-28T18:30:00+08:00",
+  "jadwal_cadangan": [],
+  "label_konten_ai": true,
+  "sampul": "thumbnail.png 'BUKAN REZEKI!' (Tebe kaget + kaca pembesar ke cincin otot kelopak, koin disilang, ungu-magenta) bila platform menerima sampul khusus; bila tidak, frame pertama (0 ms) 'KEDUTAN MATA = REZEKI?'.",
+  "musik_catatan": "Musik & SFX sintesis sendiri (scripts/buat_sfx_kedutan.py); tanpa lagu berhak cipta. Jangan menambah lagu tren saat unggah.",
+  "_catatan": "Judul = judul naskah.json (opsi 1). Cadangan A/B: 'Kenapa kedutan mata nggak bisa disuruh berhenti?' (hanya di paket_unggah.md). Komentar tersemat dipasang MANUAL setelah tayang. Instagram: nyalakan Label AI manual di aplikasi."
+}
