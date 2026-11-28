@@ -24,6 +24,16 @@
       "waktu": "2026-11-28T10:20+08:00",
       "siapa": "Ken",
       "teks": "Format sel status K2/K7 riset.md dirapikan (isi tetap); cek_standar.py LULUS → cek_seo"
+    },
+    {
+      "waktu": "2026-11-28T10:45+08:00",
+      "siapa": "Laras",
+      "teks": "cek_riset.md: 1 WAJIB (adegan 3, 'nama medisnya myokymia' menempel ke otot, ganti 'Kedutan halusnya disebut myokymia'), 1 saran (adegan 7 'memantau' -> 'mengikuti'); popcorn, cermin, pemicu, deskripsi aman. PubMed belum bisa dibuka."
+    },
+    {
+      "waktu": "2026-11-28T11:00+08:00",
+      "siapa": "Rudi",
+      "teks": "cek_seo.md selesai: tidak ada butir WAJIB; R1 LULUS (sejajar V2, bantah +0,8 dtk, jawaban <= 6 dtk). Saran utama: judul opsi 2 agar tidak mengulang sampul 'BUKAN REZEKI!'. Tahap tidak diubah (Ken memindahkan)."
     }
   ],
   "topik_tubuh": true,
