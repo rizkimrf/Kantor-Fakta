@@ -63,10 +63,6 @@ textarea{width:100%;box-sizing:border-box;min-height:70px;resize:vertical;backgr
 .alur{display:flex;gap:3px;margin-top:8px}
 .alur i{flex:1;height:5px;border-radius:3px;background:var(--panel2)}
 .alur i.ok{background:var(--teal)}.alur i.kini{background:var(--kuning)}
-.cmd{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.cmd button{text-align:left;padding:10px 12px}
-.cmd button small{display:block;font:500 11px var(--f-teks);color:var(--redup);margin-top:2px}
-.cmd code{font:600 13px ui-monospace,monospace;color:var(--kuning)}
 a.buka{display:block;text-align:center;margin-top:10px;padding:12px;border-radius:10px;background:var(--teal);color:#fff;font-weight:700;text-decoration:none}
 .log li{list-style:none;padding:7px 0;border-bottom:1px solid var(--garis);font-size:13px}
 .log{margin:0;padding:0}
@@ -121,13 +117,23 @@ table.ab{width:100%;border-collapse:collapse;font-size:12px}table.ab th,table.ab
   </section>
 
   <section>
-    <h2>Tinjau video <span class="hit" id="hTinjau">0</span></h2>
+    <h2>Perlu disetujui Bos <span class="hit" id="hTinjau">0</span></h2>
     <div id="tinjau"></div>
+  </section>
+
+  <section>
+    <h2>Siap diunggah manual <span class="hit" id="hManual">0</span></h2>
+    <div id="manualBos"></div>
   </section>
 
   <section>
     <h2>Papan produksi <span class="hit" id="hPapan">0</span></h2>
     <div id="papan"></div>
+  </section>
+
+  <section>
+    <h2>Aktivitas terbaru</h2>
+    <ul class="log" id="log"></ul>
   </section>
 
   <section>
@@ -140,17 +146,6 @@ table.ab{width:100%;border-collapse:collapse;font-size:12px}table.ab th,table.ab
     </div>
   </section>
 
-  <section>
-    <h2>Perintah cepat</h2>
-    <div class="cmd" id="cmd"></div>
-    <a class="buka" href="https://claude.ai/code" target="_blank" rel="noopener">Buka claude.ai/code, tempel perintah</a>
-    <div class="catatan">Ketuk perintah untuk menyalinnya, lalu tempel di sesi Kantor Fakta.</div>
-  </section>
-
-  <section>
-    <h2>Aktivitas terbaru</h2>
-    <ul class="log" id="log"></ul>
-  </section>
 </div>
 
 <div class="lembar" id="lembar" hidden><div class="isi" id="lembarIsi"></div></div>
@@ -525,8 +520,9 @@ function renderPanel(){
   // Kartu unggah manual juga muncul segera setelah Bos menekan Setujui (tanpa menunggu sesi kantor berikutnya)
   const manual = v.filter(x => (["disetujui","terjadwal"].includes(x.tahap) || (KEPUTUSAN[idDoc(x.folder)] || {}).aksi === "setujui") && (x.manual || []).length);
   let isi = blokUsulan() + (tunggu.length ? tunggu.map(x => kartuTinjau(x)).join("") : `<div class="kosong">Belum ada video yang menunggu persetujuan. Video yang lolos review Ken muncul di sini lengkap dengan pemutarnya.</div>`);
-  if (manual.length) isi += `<h3 style="margin:18px 0 6px">Perlu Bos unggah manual (${manual.length})</h3>` + manual.map(x => kartuManual(x)).join("");
   el.innerHTML = isi;
+  document.getElementById("hManual").textContent = manual.length;
+  document.getElementById("manualBos").innerHTML = manual.length ? manual.map(x => kartuManual(x)).join("") : `<div class="kosong">Belum ada video yang perlu diunggah manual. Video yang Bos setujui untuk unggah manual muncul di sini lengkap dengan tombol unduh & salin teks.</div>`;
   // papan
   const pp = document.getElementById("papan");
   if (!v.length) pp.innerHTML = `<div class="kosong">Belum ada video di antrean. Mulai dengan perintah <b>/isi-bank-ide 20</b> lalu <b>/video-baru 2</b>.</div>`;
@@ -604,12 +600,7 @@ document.getElementById("kirimPesan").addEventListener("click", async () => {
   try { await db.collection("pesan").add({teks:t.slice(0, 1000), waktu:new Date().toISOString(), diproses:false}); el.value = ""; toast("Pesan disimpan untuk Ken."); }
   catch(e){ toast("Gagal mengirim pesan."); }
 });
-const PERINTAH = [["/sinkron-visual","Ambil keputusan & pesan Bos, perbarui kantor ini"],["/kerjakan-antrean","Perintah utama harian"],["/video-baru 2","2 Shorts baru sampai naskah lolos"],["/isi-bank-ide 20","Laras riset, Rudi urutkan"],["/produksi","Suara, visual, rakit, thumbnail"],["/status","Ringkasan + saran Ken"],["/laporan-minggu","Performa minggu ini"],["/video-baru 1 panjang","Naskah video 16:9"]];
-document.getElementById("cmd").innerHTML = PERINTAH.map(([c, k]) => `<button data-c="${c}"><code>${c}</code><small>${k}</small></button>`).join("");
-document.getElementById("cmd").addEventListener("click", e => {
-  const b = e.target.closest("button"); if (!b) return; const c = b.dataset.c;
-  try { navigator.clipboard.writeText(c).then(() => toast(`Disalin: ${c}`), () => toast(`Salin manual: ${c}`)); } catch(_){ toast(`Salin manual: ${c}`); }
-});
+
 
 /* ================== LAPORAN & PERBAIKAN ================== */
 let LAP = null, TAB_LAP = "fokus";
