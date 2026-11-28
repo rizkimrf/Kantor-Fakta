@@ -6,6 +6,10 @@ Pola pemenang: (1) **pertanyaan yang muncul SAAT kamu memakai benda itu** (bukan
 Kenapa v4 ditolak: "Kamu yang bikin lift/kulkas/eskalator" = topik buku pelajaran, tanpa pertanyaan yang pernah dipikirkan penonton, tanpa bantahan, tanpa kegunaan.
 **Syarat ide v5:** judul = pertanyaan sehari-hari + bantahan · frame 0 = momen memakai benda itu · 1 kegunaan nyata di akhir · teknologi/HP/kendaraan/rumah/belanja · netral merek · Bos memilih di Kantor Visual.
 
+**Pembanding: Kalau Boleh Tau (68 rb subscriber, 22 video, dilihat Bos 29 Nov).** Terpopuler: Jembatan, kok kuat? 7,3 jt · Stadion, kok nggak becek? 5,3 jt · Bendungan, kok nggak jebol? 3,2 jt · Terowongan, kok nggak runtuh? 3,1 jt · Kolam di atap, kok nggak jebol? 2,5 jt · Gedung, kok bisa tinggi? 2,1 jt.
+Rumusnya: **"[Benda], kok [nggak gagal / bisa]?"** (4–6 kata, ada rasa takut/heran) · sampul = gambar **penampang 3D** benda itu + panah + teks besar 2 baris dengan kotak biru, template sama di semua video · topik bangunan besar yang dilewati orang.
+Pelajaran untuk kita: masalah usulan v4 ada di KEMASAN, bukan hanya topik ("Kamu yang bikin kota yang nggak banjir" vs "Bendungan, kok nggak jebol?"). Kita TIDAK menyalin topik mereka (jembatan, stadion, bendungan): wilayah kita = teknologi di tangan & di jalan orang Indonesia, dengan rumus judul yang sama dan sampul penampang bergaya Tebe.
+
 | ID | Tayang | Judul | Garis besar | Status |
 |---|---|---|---|---|
 | T-07_layar-mati-telinga | Min 29 Nov 18.30 | Kenapa Layar HP Mati Sendiri Waktu Ditempel ke Telinga? Bukan Karena Panas Pipi | Frame 0: kamu nelpon, pipi nempel layar, layar gelap · Bantah ≤ 6 dtk: bukan panas pipi, ada 'mata' kecil di dekat kamera depan · Cara kerja: sensor memancarkan cahaya tak terlihat, pantulannya dari pipi = layar dimatikan · Pertanyaan kedua: kenapa pakai pelindung layar tebal kadang layar ikut mati terus? | menunggu |
