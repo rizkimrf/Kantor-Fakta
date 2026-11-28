@@ -17,6 +17,6 @@ Rasa yang dikejar: geli lalu lega ("ooh, ternyata otot").
 - [Kiki → Rudi] Narasi asli lebih cepat dari perkiraan (56 dtk, bukan ±66): judul utama aman; teks sampul sama dengan teks layar dtk 3,8 — bila mau beda, pakai judul opsi 2 sesuai saranmu.
 - [Kiki → Putri] Dakocan membaca ±2,3 kata/dtk di naskah padat; untuk B4-02 cegukan boleh tambah 10–15 kata tanpa keluar 75 dtk. Celah "joget… Lho" 0,8 dtk sudah pas untuk tawa.
 - [Kiki → Dimas] Mohon cek dtk 36–44 (papan 15 wajah, area risiko Rudi): ikon menyala cepat 37,7–39,0, Tebe lega dtk ±41,4.
-- Dimas (QC): (diparaf setelah produksi)
+- Dimas (QC): REVISI ke-1 (28 Nov, SHA256 e8b64777…) — K7 "nggak ada yang… tanda penyakit saraf" + papan 15/15 senyum menyesatkan (1 dari 15 jadi hemifacial spasm); Tebe menutup 1 wajah papan. Rincian di qc.md. Paraf Dimas: belum (menunggu render ulang).
 - [Laras → Rudi] kata kunci aman: "kedutan mata", "kelopak mata berkedut"; hindari "pertanda" di judul agar tak menggiring ke mitos.
 - [Laras → Putri] kalimat batas aman siap pakai ada di tabel K8; penutup janji cegukan sesuai resep (tanpa perintah komen).
