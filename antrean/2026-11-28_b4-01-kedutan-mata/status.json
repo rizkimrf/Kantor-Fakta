@@ -1,0 +1,26 @@
+{
+  "tahap": "naskah",
+  "topik": "b4-01 kedutan mata",
+  "dibuat": "2026-11-28T09:48",
+  "format_resep": "katanya-ternyata",
+  "pilar": "Sains & tubuh manusia",
+  "agen": "Putri",
+  "riwayat": [
+    {
+      "dari": "ide",
+      "ke": "pilih",
+      "oleh": "Laras",
+      "waktu": "2026-11-28T10:10+08:00",
+      "catatan": "riset.md READY, skor 8/10: 8 klaim berstatus (K1-K4, K8 VERIFIED; K3, K6, K7 PARTIALLY_SUPPORTED; K5 mitos FALSE sbg fakta); URL klinik belum dibuka penuh (domain diblokir), pakai 'mitos rezeki' saja agar tak bentrok dengan cegukan B4-02"
+    },
+    {
+      "dari": "pilih",
+      "ke": "naskah",
+      "oleh": "Rudi",
+      "waktu": "2026-11-28T10:30+08:00",
+      "catatan": "LANJUT 15/20 (keyakinan sedang); judul rekomendasi 'Kedutan mata kamu kira rezeki? Ternyata bukan'; sampul 'BUKAN REZEKI!'; rencana_marketing.md + seo.md; volume pencarian tanpa data"
+    }
+  ],
+  "masalah": null,
+  "jadwal_tayang": "2026-11-28T18:30:00+08:00"
+}
