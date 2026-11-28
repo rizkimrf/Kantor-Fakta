@@ -10,4 +10,4 @@
 | A2 | SFX tiktik, cring, bzzt, popkorn, hik | `scripts/buat_sfx_kedutan.py` → `aset/sfx/` | sintesis sendiri, bukan rekaman | dipakai |
 | F1 | Font Poppins | `aset/font/` | SIL Open Font License | dipakai |
 
-Render: final.mp4 56,0 dtk · 15,7 MB · 1080x1920 30 fps · SHA256 awal 4e51dd92f7c43859… (QC mengunci versi). Tidak ada gambar AI, tanpa tulisan/merek di dalam gambar; angka di layar hanya "15" (K7).
+Render: final.mp4 56,0 dtk · 15,7 MB · 1080x1920 30 fps · SHA256 e8b647773a6a3032… (R1 subtitle) (QC mengunci versi). Tidak ada gambar AI, tanpa tulisan/merek di dalam gambar; angka di layar hanya "15" (K7).
